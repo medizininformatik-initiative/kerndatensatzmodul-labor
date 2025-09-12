@@ -7,8 +7,9 @@ Context: "Observation.effective.ofType(dateTime)", "DiagnosticReport.effective.o
 * insert PR_CS_VS_Version
 * insert Publisher
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum" (exactly)
-* value[x] 1..
+* value[x] 1.. MS
 * value[x] only Coding
 * value[x] from mii-vs-labor-quelle-klinisches-bezugsdatum (required)
-* valueCoding.system 1..
-* valueCoding.code 1..
+* valueCoding MS
+* valueCoding.system 1.. MS
+* valueCoding.code 1.. MS
