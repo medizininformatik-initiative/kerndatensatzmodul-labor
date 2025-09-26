@@ -1,34 +1,28 @@
 Alias: $exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
 
 RuleSet: SupportResource (resource, expectation)
-* rest.resource[+].type = #{resource}
-* rest.resource[=].extension[0].url = $exp
-* rest.resource[=].extension[0].valueCode = {expectation}
-
-RuleSet: Profile (profile, expectation)
-* rest.resource[=].profile[+] = "{profile}"
-* rest.resource[=].profile[=].extension[0].url = $exp
-* rest.resource[=].profile[=].extension[0].valueCode = {expectation}
+* rest.resource[+]
+  * type = #{resource}
+  * extension[$exp].valueCode = {expectation}
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
 * rest.resource[=].supportedProfile[+] = "{profile}"
-* rest.resource[=].supportedProfile[=].extension[0].url = $exp
-* rest.resource[=].supportedProfile[=].extension[0].valueCode = {expectation}
+  * extension[$exp].valueCode = {expectation}
 
 RuleSet: SupportInteraction (interaction, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].interaction[+].code = {interaction}
-* rest.resource[=].interaction[=].extension[0].url = $exp
-* rest.resource[=].interaction[=].extension[0].valueCode = {expectation}
+* rest.resource[=].interaction[+]
+  * code = {interaction}
+  * extension[$exp].valueCode = {expectation}
 
 RuleSet: SupportSearchParam (name, canonical, type, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].searchParam[+].name = "{name}"
-* rest.resource[=].searchParam[=].definition = "{canonical}"
-* rest.resource[=].searchParam[=].type = {type}
-* rest.resource[=].searchParam[=].extension[0].url = $exp
-* rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
+* rest.resource[=].searchParam[+]
+  * name = "{name}"
+  * definition = "{canonical}"
+  * type = {type}
+  * extension[$exp].valueCode = {expectation}
 
 Instance: mii-cps-labor-capabilitystatement
 InstanceOf: CapabilityStatement
@@ -51,7 +45,6 @@ Usage: #definition
 
 // Observation requirements
 * insert SupportResource(Observation, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/Observation, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2025.0.2, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -93,7 +86,6 @@ Usage: #definition
 
 // DiagnosticReport requirements
 * insert SupportResource(DiagnosticReport, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/DiagnosticReport, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2025.0.2, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -116,7 +108,6 @@ Usage: #definition
 
 // ServiceRequest requirements
 * insert SupportResource(ServiceRequest, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/ServiceRequest, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2025.0.2, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)

@@ -100,7 +100,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(value[x] ^short, en-US, Value)
 * insert Translation(value[x] ^definition, en-US, Value of the analysis)
 * valueQuantity MS
-* valueQuantity.extension contains $pq-translation-ex named pqTranslation 0..*
+* valueQuantity.extension contains $quantity-translation-ex named pqTranslation 0..*
 * valueQuantity.extension[pqTranslation] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * valueQuantity.extension[pqTranslation] ^extension[=].valueCode = #draft
 * valueQuantity.value 1.. MS
