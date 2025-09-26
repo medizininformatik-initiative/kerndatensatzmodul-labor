@@ -2,7 +2,7 @@ Instance: mii-exa-labor-laborbefund
 InstanceOf: MII_PR_Labor_Laborbefund
 Usage: #example
 * identifier[befund].type = $v2-0203#FILL
-* identifier[befund].system = "https://exmple.org/fhir/sid/test-befund"
+* identifier[befund].system = "https://example.org/fhir/sid/test-befund"
 * identifier[befund].value = "0987654321"
 * identifier[befund].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[befund].assigner.identifier.value = "DIZ-ID"

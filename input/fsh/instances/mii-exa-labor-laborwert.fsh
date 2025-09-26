@@ -9,7 +9,7 @@ Usage: #example
 * status = #final
 * category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* category.coding[2] = http://exmple.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
+* category.coding[2] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
 * code = $loinc#59826-8 "Creatinin [Mol/Volumen] in Blut"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
