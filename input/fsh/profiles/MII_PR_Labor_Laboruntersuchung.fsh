@@ -41,7 +41,6 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * identifier[analyseBefundCode].system 1.. MS
 * identifier[analyseBefundCode].value 1.. MS
 * identifier[analyseBefundCode].assigner 1.. MS
-//* identifier[analyseBefundCode].assigner only $MII-Reference
 * status MS
   * ^short = "Status"
   * ^definition = "abgeschlossen"
@@ -52,7 +51,11 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
   * ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung"
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
-* category.coding MS
+* category
+  * coding MS
+    * system 1.. MS
+    * code 1.. MS
+    * display MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
@@ -64,15 +67,22 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * code MS
   * ^short = "Code"
   * ^definition = "Ein LOINC Code für den Laborparameter bzw. Labortest, der durchgeführt wurde."
+  * coding MS
+    * system 1.. MS
+    * code 1.. MS
+    * display MS
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was performed.)
 * code from $ResultsLabObservationUvIps (preferred)
 * code ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
-//* subject only $MII-Reference
+  * reference MS
+  * identifier MS
 * encounter MS
   * ^short = "Fall oder Kontakt"
   * ^definition = "Fall oder Kontakt, bei dem die Laboruntersuchung durchgeführt wurde."
+  * reference MS
+  * identifier MS
 * insert Translation(encounter ^short, en-US, Encounter)
 * insert Translation(encounter ^definition, en-US, Encounter during which the laboratory test was performed.)
 * effective[x] 1.. MS
@@ -137,22 +147,30 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * method MS
   * ^short = "Untersuchungsmethode"
   * ^definition = "Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält."
+  * coding MS
+    * system 1.. MS
+    * code 1.. MS
+    * display MS
 * insert Translation(method ^short, en-US, Method)
 * insert Translation(method ^definition, en-US, Specific examination method\, if the LOINC code for the laboratory test does not contain a method)
 * specimen MS
   * ^short = "Probenmaterial"
   * ^definition = "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden"
+  * reference MS
+  * identifier MS
 * insert Translation(specimen ^short, en-US, Specimen)
 * insert Translation(specimen ^definition, en-US, Specimen on which the laboratory tests are performed)
-* specimen.reference MS
-* specimen.identifier MS
 * device MS
   * ^short = "Gerät"
   * ^definition = "Gerät, das zur Generierung der Messwerte verwendet wurde."
+  * reference MS
+  * identifier MS
 * insert Translation(device ^short, en-US, Device)
 * insert Translation(device ^definition, en-US, The device used to generate the test data.)
 * referenceRange MS
   * ^short = "Referenzbereich"
   * ^definition = "Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird."
+  * low MS
+  * high MS
 * insert Translation(referenceRange ^short, en-US, Reference range)
 * insert Translation(referenceRange ^definition, en-US, Guidance on how to interpret the value by comparison to a normal or recommended range.)

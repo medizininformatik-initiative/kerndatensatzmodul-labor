@@ -39,7 +39,6 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * identifier[anforderung].system 1.. MS
 * identifier[anforderung].value 1.. MS
 * identifier[anforderung].assigner 1.. MS
-//* identifier[anforderung].assigner only $MII-Reference
 * status = #completed (exactly)
 * status MS
   * ^short = "Status"
@@ -58,6 +57,9 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, en-US, Classification as laboratory order)
 * category.coding MS
+  * system 1.. MS
+  * code 1.. MS
+  * display MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
@@ -69,11 +71,18 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was ordered.)
 * code from mii-vs-labor-order-codes (example)
+  * coding MS
+    * system 1.. MS
+    * code 1.. MS
+    * display MS
 * subject 1.. MS
-//* subject only $MII-Reference
+  * reference MS
+  * identifier MS
 * encounter MS
   * ^short = "Fall oder Kontakt"
   * ^definition = "Fall oder Kontakt, bei dem der Laborauftrag gestellt wurde."
+  * reference MS
+  * identifier MS
 * insert Translation(encounter ^short, en-US, Encounter)
 * insert Translation(encounter ^definition, en-US, Encounter during which the laboratory order was placed.)
 * authoredOn 1.. MS
@@ -84,9 +93,9 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * specimen MS
   * ^short = "Probenmaterial"
   * ^definition = "Eine oder mehrere Bioproben, die der Labortest verwendet."
+  * reference MS
+  * identifier MS
 * insert Translation(specimen ^short, en-US, Specimen)
 * insert Translation(specimen ^definition, en-US, One or more specimens that are used by the laboratory test.)
-* specimen.reference MS
-* specimen.identifier MS
 * bodySite ..0
 * patientInstruction ..0

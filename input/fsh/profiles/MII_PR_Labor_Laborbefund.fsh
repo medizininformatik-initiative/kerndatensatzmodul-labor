@@ -40,10 +40,11 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * identifier[befund].system 1.. MS
 * identifier[befund].value 1.. MS
 * identifier[befund].assigner 1.. MS
-//* identifier[befund].assigner only $MII-Reference
 * basedOn 1.. MS
   * ^short = "Basiert auf"
   * ^definition = "Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert."
+  * reference MS
+  * identifier MS
 * insert Translation(basedOn ^short, en-US, Based on)
 * insert Translation(basedOn ^definition, en-US, Reference to the laboratory order on which this laboratory report is based.)
 //* basedOn only $MII-Reference
@@ -58,6 +59,9 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, en-US, Classification of the report as laboratory report)
 * category.coding MS
+  * system 1.. MS
+  * code 1.. MS
+  * display MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
@@ -69,19 +73,25 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * code MS
   * ^short = "Code"
   * ^definition = "LOINC Code zur Identifikation des Befunds als Laborbefund."
+  * coding MS
+    * system 1.. MS
+    * code 1.. MS
+    * display MS
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, en-US, A LOINC code identifying the report as laboratory report.)
-* code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc-labReport 1..1 MS
 * code.coding[loinc-labReport] = $loinc#11502-2
 * subject 1.. MS
-//* subject only $MII-Reference
+  * reference MS
+  * identifier MS
 * encounter MS
   * ^short = "Fall oder Kontakt"
   * ^definition = "Fall oder Kontakt, bei dem der Laborbefund erstellt wurde."
+  * reference MS
+  * identifier MS
 * insert Translation(encounter ^short, en-US, Encounter)
 * insert Translation(encounter ^definition, en-US, Encounter during which the laboratory report was created.)
 * effective[x] 1.. MS
@@ -105,20 +115,21 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * performer MS
   * ^short = "Ausführende*r"
   * ^definition = "Verantwortliche Person oder Organisation, die für die Ausstellung des Befunds verantwortlich ist."
+  * reference MS
+  * identifier MS
 * insert Translation(performer ^short, en-US, Performer)
 * insert Translation(performer ^definition, en-US, The diagnostic service that is responsible for issuing the report.)
-* performer.reference MS
-* performer.identifier MS
 * specimen MS
   * ^short = "Probenmaterial"
   * ^definition = "Bioproben, auf denen dieser Laborbefund basiert."
+  * reference MS
+  * identifier MS
 * insert Translation(specimen ^short, en-US, Specimen)
 * insert Translation(specimen ^definition, en-US, Details about the specimens on which this diagnostic report is based.)
-* specimen.reference MS
-* specimen.identifier MS
 * result 1.. MS
   * ^short = "Ergebnis"
   * ^definition = "Laborergebnisse, die Teil dieses Laborbefunds sind."
+  * reference MS
 * insert Translation(result ^short, en-US, Result)
 * insert Translation(result ^definition, en-US, Laboratory test results that are part of this diagnostic report.)
 //* result only $MII-Reference
