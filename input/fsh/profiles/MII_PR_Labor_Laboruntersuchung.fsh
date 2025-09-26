@@ -14,11 +14,11 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * modifierExtension contains MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft named probeneigenschaft 0..* MS
 * modifierExtension[probeneigenschaft]
   * ^short = "Interpretationsbeeinflussende Probeneigenschaft"
-  * ^definition = "Beschreibung der interpretationsbeeinflussenden Probeneigenschafte."
+  * ^definition = "Beschreibung der interpretationsbeeinflussenden Probeneigenschaften."
 * insert Translation(modifierExtension[probeneigenschaft] ^short, en-US, interpretation-influencing specimen property)
 * insert Translation(modifierExtension[probeneigenschaft] ^definition, en-US, Description of interpretation-influencing specimen property)
 * ^status = #active
-* ^purpose = "Dieses Profil beschreibt eine Laborergebnis in der Medizininformatik-Initiative."
+* ^purpose = "Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative."
 * obeys mii-lab-2
 * id MS
 * meta MS

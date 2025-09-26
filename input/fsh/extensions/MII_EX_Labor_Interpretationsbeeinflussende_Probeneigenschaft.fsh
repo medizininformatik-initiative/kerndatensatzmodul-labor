@@ -11,7 +11,7 @@ Context: "Observation.value[x]"
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/Probeneigenschaft" (exactly)
 * value[x] 1.. MS
 * value[x] only Coding
-* value[x] from MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften (extensible)
+* value[x] from MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT (extensible)
 * valueCoding MS
 * valueCoding.system 1.. MS
 * valueCoding.code 1.. MS
