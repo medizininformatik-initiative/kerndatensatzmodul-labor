@@ -408,6 +408,23 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category.coding.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.display",
+        "path": "Observation.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category.coding:loinc-observation",
         "path": "Observation.category.coding",
         "sliceName": "loinc-observation",
@@ -478,9 +495,41 @@
         }
       },
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject.reference",
+        "path": "Observation.subject.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject.identifier",
+        "path": "Observation.subject.identifier",
         "mustSupport": true
       },
       {
@@ -522,6 +571,16 @@
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter.reference",
+        "path": "Observation.encounter.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter.identifier",
+        "path": "Observation.encounter.identifier",
         "mustSupport": true
       },
       {
@@ -1060,6 +1119,28 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding.system",
+        "path": "Observation.method.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding.code",
+        "path": "Observation.method.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding.display",
+        "path": "Observation.method.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.specimen",
         "path": "Observation.specimen",
         "short": "Probenmaterial",
@@ -1152,6 +1233,16 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.device.reference",
+        "path": "Observation.device.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device.identifier",
+        "path": "Observation.device.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
         "short": "Referenzbereich",
@@ -1190,6 +1281,16 @@
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
         "mustSupport": true
       }
     ]

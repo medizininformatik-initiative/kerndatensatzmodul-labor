@@ -279,6 +279,16 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.basedOn.reference",
+        "path": "DiagnosticReport.basedOn.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.basedOn.identifier",
+        "path": "DiagnosticReport.basedOn.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
         "short": "Status",
@@ -378,6 +388,23 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.category.coding.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding.display",
+        "path": "DiagnosticReport.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "DiagnosticReport.category.coding:loinc-lab",
         "path": "DiagnosticReport.category.coding",
         "sliceName": "loinc-lab",
@@ -458,6 +485,23 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.code.coding.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding.display",
+        "path": "DiagnosticReport.code.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "DiagnosticReport.code.coding:loinc-labReport",
         "path": "DiagnosticReport.code.coding",
         "sliceName": "loinc-labReport",
@@ -473,6 +517,16 @@
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.subject.reference",
+        "path": "DiagnosticReport.subject.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.subject.identifier",
+        "path": "DiagnosticReport.subject.identifier",
         "mustSupport": true
       },
       {
@@ -514,6 +568,16 @@
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.encounter.reference",
+        "path": "DiagnosticReport.encounter.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.encounter.identifier",
+        "path": "DiagnosticReport.encounter.identifier",
         "mustSupport": true
       },
       {
@@ -763,6 +827,11 @@
           ]
         },
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result.reference",
+        "path": "DiagnosticReport.result.reference",
         "mustSupport": true
       },
       {
