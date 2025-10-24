@@ -25,7 +25,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
-* identifier contains befund 1..1
+* identifier contains befund 1..1 MS
 * identifier[befund].type 1.. MS
 * identifier[befund].type = $v2-0203#FILL
 * identifier[befund].type.coding MS

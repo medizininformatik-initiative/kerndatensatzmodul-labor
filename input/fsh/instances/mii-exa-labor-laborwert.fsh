@@ -7,10 +7,10 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* category.coding[2] = http://exmple.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
-* code = $loinc#59826-8 "Creatinine [Moles/volume] in Blood"
+* category.coding[2] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
+* code = $loinc#59826-8 "Creatinin [Mol/Volumen] in Blut"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
@@ -22,7 +22,6 @@ Usage: #example
 * performer.display = "Zentrallabor des IKCL"
 * valueQuantity = 72 'umol/L' "µmol/l"
 * valueQuantity.value.extension[quantityPrecision].valueInteger = 1
-* valueQuantity.extension[pqTranslation].url = "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation"
 * valueQuantity.extension[pqTranslation].valueQuantity = 0.81 'mg/dL' "mg/dL"
 * interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low.value = 72
@@ -38,9 +37,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* code = $loinc#1755-8 "Albumin [Mass/time] in 24 hour Urine"
+* code = $loinc#1755-8 "Albumin [Masse/Zeit] in 24-Stunden-Sammelurin"
 * code.text = "Albumin (24H U) [Mass/Time]"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
@@ -62,9 +61,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* code = $loinc#5787-7 "Epithelial cells [#/area] in Urine sediment by Microscopy high power field"
+* code = $loinc#5787-7 "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrösserung"
 * code.text = "Urinsediment Epithelzellen Semi-quantitative Schätzung"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"

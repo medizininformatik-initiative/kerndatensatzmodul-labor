@@ -8,9 +8,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
-* category.coding[2] = http://exmple.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
-* code = $loinc#59826-8 "Creatinine [Moles/volume] in Blood"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
+* category.coding[2] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
+* code = $loinc#59826-8 "Creatinin [Mol/Volumen] in Blut"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"

@@ -16,7 +16,7 @@
           }
         ]
       },
-      "system": "https://exmple.org/fhir/sid/test-befund",
+      "system": "https://example.org/fhir/sid/test-befund",
       "value": "0987654321",
       "assigner": {
         "identifier": {
@@ -32,7 +32,7 @@
         {
           "code": "26436-6",
           "system": "http://loinc.org",
-          "display": "Laboratory studies (set)"
+          "display": "Laboruntersuchungen"
         },
         {
           "code": "LAB",
@@ -46,7 +46,7 @@
       {
         "code": "11502-2",
         "system": "http://loinc.org",
-        "display": "Laboratory report"
+        "display": "Laborbericht"
       }
     ]
   },
