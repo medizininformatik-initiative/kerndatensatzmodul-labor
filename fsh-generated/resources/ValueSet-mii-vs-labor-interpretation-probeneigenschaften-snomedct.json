@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT",
+  "id": "mii-vs-labor-interpretation-probeneigenschaften-snomedct",
+  "title": "MII VS Labor Interpretationsbeeinflussende Probeneigenschaften SNOMEDCT",
+  "description": "Codes zur Beschreibung von interpretationsbeeinflussenden Probeneigenschaften.",
+  "version": "2025.0.2",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-probeneigenschaften-snomedct",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "concept": [
+          {
+            "code": "118128002",
+            "display": "Specimen hemolyzed (finding)"
+          },
+          {
+            "code": "118127007",
+            "display": "Specimen lipemic (finding)"
+          },
+          {
+            "code": "118129005",
+            "display": "Specimen icteric (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}
