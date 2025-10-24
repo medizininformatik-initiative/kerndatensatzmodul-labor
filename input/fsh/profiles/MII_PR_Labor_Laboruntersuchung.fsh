@@ -107,6 +107,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueQuantity.value.extension contains $quantity-precision-ex named quantityPrecision 0..1 MS
 * valueQuantity.value.extension[quantityPrecision] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * valueQuantity.value.extension[quantityPrecision] ^extension[=].valueCode = #draft
+* valueQuantity.comparator MS
 * valueQuantity.unit 1.. MS
 * valueQuantity.system 1.. MS
 * valueQuantity.system = "http://unitsofmeasure.org" (exactly)
