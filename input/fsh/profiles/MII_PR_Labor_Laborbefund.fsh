@@ -47,29 +47,26 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
   * identifier MS
 * insert Translation(basedOn ^short, en-US, Based on)
 * insert Translation(basedOn ^definition, en-US, Reference to the laboratory order on which this laboratory report is based.)
-//* basedOn only $MII-Reference
 * status MS
   * ^short = "Status"
   * ^definition = "registriert | teilweise | vorläufig | final"
 * insert Translation(status ^short, en-US, Status)
 * insert Translation(status ^definition, en-US, registered | partial | preliminary | final)
-* category 1..1 MS
+* category 1.. MS
   * ^short = "Kategorie"
   * ^definition = "Klassifikation des Befunds als Laborbefund"
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, en-US, Classification of the report as laboratory report)
-* category.coding MS
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains lab-category 1..1 MS
+* category[lab-category] ^patternCodeableConcept.coding[0] = $loinc#26436-6
+* category[lab-category] ^patternCodeableConcept.coding[+] = $v2-0074#LAB
+* category[lab-category].coding 2.. MS
   * system 1.. MS
   * code 1.. MS
   * display MS
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains
-    loinc-lab 1..1 MS and
-    diagnostic-service-sections 1..1 MS
-* category.coding[loinc-lab] = $loinc#26436-6
-* category.coding[diagnostic-service-sections] = $v2-0074#LAB
 * code MS
   * ^short = "Code"
   * ^definition = "LOINC Code zur Identifikation des Befunds als Laborbefund."

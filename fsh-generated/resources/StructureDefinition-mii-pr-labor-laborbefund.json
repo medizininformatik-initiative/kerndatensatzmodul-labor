@@ -332,6 +332,15 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Kategorie",
         "_short": {
           "extension": [
@@ -369,63 +378,49 @@
           ]
         },
         "min": 1,
-        "max": "1",
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding",
-        "path": "DiagnosticReport.category.coding",
-        "slicing": {
-          "discriminator": [
+        "id": "DiagnosticReport.category:lab-category",
+        "path": "DiagnosticReport.category",
+        "sliceName": "lab-category",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
             {
-              "type": "pattern",
-              "path": "$this"
+              "code": "26436-6",
+              "system": "http://loinc.org"
+            },
+            {
+              "code": "LAB",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
             }
-          ],
-          "rules": "open"
+          ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category:lab-category.coding",
+        "path": "DiagnosticReport.category.coding",
         "min": 2,
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding.system",
+        "id": "DiagnosticReport.category:lab-category.coding.system",
         "path": "DiagnosticReport.category.coding.system",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding.code",
+        "id": "DiagnosticReport.category:lab-category.coding.code",
         "path": "DiagnosticReport.category.coding.code",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding.display",
+        "id": "DiagnosticReport.category:lab-category.coding.display",
         "path": "DiagnosticReport.category.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:loinc-lab",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "loinc-lab",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "26436-6",
-          "system": "http://loinc.org"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "diagnostic-service-sections",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "LAB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
         "mustSupport": true
       },
       {
