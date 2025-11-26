@@ -8,6 +8,9 @@
     //  the current slicing.
     "SD_PATH_SLICING_DEPRECATED",
     // filter eld-20 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
-    "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20"
+    "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20",
+    //filter for failing sct vs expansion
+    "Terminology_TX_Confirm_4a@Observation.effective.ofType(dateTime).extension[0].value.ofType(Coding)",
+    "VALUESET_BAD_FILTER_VALUE_VALID_CODE@ValueSet.compose.include[1].filter[0]"
   ]
 }

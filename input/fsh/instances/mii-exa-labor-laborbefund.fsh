@@ -2,7 +2,7 @@ Instance: mii-exa-labor-laborbefund
 InstanceOf: MII_PR_Labor_Laborbefund
 Usage: #example
 * insert TestDataLabel
-* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab)
 * identifier[befund].type = $v2-0203#FILL
 * identifier[befund].system = "https://example.org/fhir/sid/test-befund"
 * identifier[befund].value = "0987654321"
