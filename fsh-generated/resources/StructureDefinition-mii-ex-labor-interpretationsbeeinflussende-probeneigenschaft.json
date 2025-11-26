@@ -37,8 +37,8 @@
   "abstract": false,
   "context": [
     {
-      "expression": "Observation.value[x]",
-      "type": "fhirpath"
+      "expression": "Observation",
+      "type": "element"
     }
   ],
   "type": "Extension",
