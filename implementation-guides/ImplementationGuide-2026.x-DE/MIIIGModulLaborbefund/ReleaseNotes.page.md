@@ -11,6 +11,7 @@ Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änd
 - Erweiterte Must-Support (MS) Flags für verbesserte Interoperabilität auf den Unterelementen komplexer Datentypen
 - Verbesserte mehrsprachige Dokumentation (Deutsch/Englisch) mit Translation-Inserts für MS Elemente
 - Alle Profile: coding-Elemente (system, code, display) sind nun als MS gekennzeichnet
+- Update der IPS dependency auf 2.0.0
 
 #### MII_PR_Labor_Laboruntersuchung
 - Neue modifierExtension für interpretationsbeeinflussende Probeneigenschaften (0..* MS)
