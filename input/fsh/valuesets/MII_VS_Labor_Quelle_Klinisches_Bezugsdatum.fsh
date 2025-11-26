@@ -6,6 +6,7 @@ Description: "Kodierung der Quelle des klinischen Bezugsdatums"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^status = #active
 * ^experimental = false
 * $sct#399445004 "Specimen collection date (observable entity)"

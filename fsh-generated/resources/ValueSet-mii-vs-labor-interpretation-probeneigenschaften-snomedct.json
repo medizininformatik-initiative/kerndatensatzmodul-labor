@@ -5,7 +5,7 @@
   "id": "mii-vs-labor-interpretation-probeneigenschaften-snomedct",
   "title": "MII VS Labor Interpretationsbeeinflussende Probeneigenschaften SNOMEDCT",
   "description": "Codes zur Beschreibung von interpretationsbeeinflussenden Probeneigenschaften.",
-  "version": "2025.0.2",
+  "version": "2026.0.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-probeneigenschaften-snomedct",
   "meta": {
     "profile": [
@@ -23,12 +23,26 @@
       ]
     }
   ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "experimental": false,
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
         "concept": [
           {
             "code": "118128002",

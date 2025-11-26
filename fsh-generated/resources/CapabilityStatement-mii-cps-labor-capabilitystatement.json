@@ -13,7 +13,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2025.0.2"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -277,7 +277,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2025.0.2"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -475,7 +475,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2025.0.2"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -636,7 +636,7 @@
       "mode": "server"
     }
   ],
-  "version": "2025.0.2",
+  "version": "2026.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -648,11 +648,25 @@
       ]
     }
   ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "name": "MII_CPS_Labor_CapabilityStatement",
   "title": "MII CPS Labor CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-15",
+  "date": "2026-11-26",
   "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Labor der Medizininformatik Initiative zu implementieren.",
   "jurisdiction": [
     {

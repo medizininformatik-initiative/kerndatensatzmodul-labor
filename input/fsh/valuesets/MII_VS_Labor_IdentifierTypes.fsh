@@ -5,6 +5,7 @@ Description: "Type-Codes, um zu bestimmen, welcher Identifier für einen bestimm
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^status = #active
 * ^experimental = false
 * include codes from valueset $identifier-type|4.0.1

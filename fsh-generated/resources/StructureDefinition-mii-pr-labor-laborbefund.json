@@ -1,8 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-labor-laborbefund",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
-  "version": "2025.0.2",
+  "version": "2026.0.0",
   "name": "MII_PR_Labor_Laborbefund",
   "title": "MII PR Labor Laborbefund",
   "_title": {
@@ -128,6 +142,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Identifikator"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -138,9 +165,22 @@
             }
           ]
         },
-        "definition": "Kennung/en, unter der/denen dieser Laborbefund bekannt ist.",
+        "definition": "Eindeutige Identifikatoren, unter denen dieser Laborbefund geführt wird.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Eindeutige Identifikatoren, unter denen dieser Laborbefund geführt wird."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -150,7 +190,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Identifier/s by which this laboratory report is known."
+                  "valueString": "Identifier(s) by which this laboratory report is known."
                 }
               ]
             }
@@ -163,6 +203,68 @@
         "id": "DiagnosticReport.identifier:befund",
         "path": "DiagnosticReport.identifier",
         "sliceName": "befund",
+        "short": "Filler-Identifikator",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Filler-Identifikator"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Filler identifier"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Identifikator, der vom Laborinformationssystem (Filler) vergeben wurde.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Identifikator, der vom Laborinformationssystem (Filler) vergeben wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Identifier assigned by the laboratory information system (Filler)."
+                }
+              ]
+            }
+          ]
+        },
         "min": 1,
         "max": "1",
         "mustSupport": true
@@ -239,9 +341,22 @@
       {
         "id": "DiagnosticReport.basedOn",
         "path": "DiagnosticReport.basedOn",
-        "short": "Basiert auf",
+        "short": "basiert auf",
         "_short": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Basiert auf"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -260,6 +375,19 @@
         "definition": "Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -299,6 +427,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -312,6 +453,19 @@
         "definition": "registriert | teilweise | vorläufig | final",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "registriert | teilweise | vorläufig | final"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -332,9 +486,31 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Kategorie",
         "_short": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -350,9 +526,22 @@
             }
           ]
         },
-        "definition": "Klassifikation des Befunds als Laborbefund",
+        "definition": "Klassifikation des Befunds",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Klassifikation des Befunds"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -362,70 +551,58 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Classification of the report as laboratory report"
+                  "valueString": "Classification of the report"
                 }
               ]
             }
           ]
         },
         "min": 1,
-        "max": "1",
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding",
-        "path": "DiagnosticReport.category.coding",
-        "slicing": {
-          "discriminator": [
+        "id": "DiagnosticReport.category:lab-category",
+        "path": "DiagnosticReport.category",
+        "sliceName": "lab-category",
+        "short": "Labor-Kategorie",
+        "definition": "Kategorie-Slice für Laborbefunde",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
             {
-              "type": "pattern",
-              "path": "$this"
+              "code": "26436-6",
+              "system": "http://loinc.org"
+            },
+            {
+              "code": "LAB",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
             }
-          ],
-          "rules": "open"
+          ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category:lab-category.coding",
+        "path": "DiagnosticReport.category.coding",
         "min": 2,
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding.system",
+        "id": "DiagnosticReport.category:lab-category.coding.system",
         "path": "DiagnosticReport.category.coding.system",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding.code",
+        "id": "DiagnosticReport.category:lab-category.coding.code",
         "path": "DiagnosticReport.category.coding.code",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category.coding.display",
+        "id": "DiagnosticReport.category:lab-category.coding.display",
         "path": "DiagnosticReport.category.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:loinc-lab",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "loinc-lab",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "26436-6",
-          "system": "http://loinc.org"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
-        "path": "DiagnosticReport.category.coding",
-        "sliceName": "diagnostic-service-sections",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "LAB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
         "mustSupport": true
       },
       {
@@ -434,6 +611,19 @@
         "short": "Code",
         "_short": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -452,6 +642,19 @@
         "definition": "LOINC Code zur Identifikation des Befunds als Laborbefund.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC Code zur Identifikation des Befunds als Laborbefund."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -516,6 +719,68 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
+        "short": "Subjekt",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subjekt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subject"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Subjekt, auf welches sich der Laborbefund bezieht",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subjekt, auf welches sich der Laborbefund bezieht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subject to whom the laboratory report refers"
+                }
+              ]
+            }
+          ]
+        },
         "min": 1,
         "mustSupport": true
       },
@@ -540,6 +805,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall oder Kontakt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -550,9 +828,22 @@
             }
           ]
         },
-        "definition": "Fall oder Kontakt, bei dem der Laborbefund erstellt wurde.",
+        "definition": "Fall oder Kontakt, in dem der Laborbefund erstellt wurde.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall oder Kontakt, in dem der Laborbefund erstellt wurde."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -591,6 +882,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Klinisches Bezugsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -604,6 +908,19 @@
         "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -631,6 +948,68 @@
         "id": "DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum",
         "path": "DiagnosticReport.effective[x].extension",
         "sliceName": "QuelleKlinischesBezugsdatum",
+        "short": "Quelle des klinischen Bezugsdatums",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Quelle des klinischen Bezugsdatums"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Source of clinical reference date"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Specimen collection date | Date sample received in laboratory"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -654,6 +1033,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Dokumentationsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -667,6 +1059,19 @@
         "definition": "Zeitpunkt, an dem der Laborbefund dokumentiert wurde.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitpunkt, an dem der Laborbefund dokumentiert wurde."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -696,6 +1101,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ausführende*r"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -714,11 +1132,24 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verantwortliche Person oder Organisation, die für die Ausstellung des Befunds verantwortlich ist."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
                   "url": "content",
-                  "valueString": "The diagnostic service that is responsible for issuing the report."
+                  "valueString": "Person or organization responsible for issuing the report."
                 }
               ]
             }
@@ -747,6 +1178,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Probenmaterial"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -765,11 +1209,24 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bioproben, auf denen dieser Laborbefund basiert."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
                   "url": "content",
-                  "valueString": "Details about the specimens on which this diagnostic report is based."
+                  "valueString": "Details about the specimen on which this diagnostic report is based."
                 }
               ]
             }
@@ -798,6 +1255,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ergebnis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -811,6 +1281,19 @@
         "definition": "Laborergebnisse, die Teil dieses Laborbefunds sind.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Laborergebnisse, die Teil dieses Laborbefunds sind."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -845,6 +1328,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Schlussfolgerung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -858,6 +1354,19 @@
         "definition": "Klinische Schlussfolgerung/Interpretation der Testergebnisse",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Klinische Schlussfolgerung/Interpretation der Testergebnisse"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [

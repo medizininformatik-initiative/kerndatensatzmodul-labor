@@ -1,6 +1,8 @@
 Instance: mii-exa-labor-laboranforderung
 InstanceOf: MII_PR_Labor_Laboranforderung
 Usage: #example
+* insert TestDataLabel
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2026.0.0)
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://example.org/fhir/sid/anforderung-lab-identifier"
 * identifier[anforderung].value = "1234567890"

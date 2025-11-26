@@ -1,8 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-labor-laboruntersuchung",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
-  "version": "2025.0.2",
+  "version": "2026.0.0",
   "name": "MII_PR_Labor_Laboruntersuchung",
   "title": "MII PR Labor Laboruntersuchung",
   "_title": {
@@ -137,6 +151,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Interpretationsbeeinflussende Probeneigenschaft"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -150,6 +177,19 @@
         "definition": "Beschreibung der interpretationsbeeinflussenden Probeneigenschaften.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Beschreibung der interpretationsbeeinflussenden Probeneigenschaften."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -197,11 +237,50 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Identifikator"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
                   "url": "content",
                   "valueString": "Identifier"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Analyse-Befund-Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Laboratory analysis identifier"
                 }
               ]
             }
@@ -215,11 +294,50 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
                   "url": "content",
                   "valueString": "Identifier/s by which this laboratory test is known."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Eindeutiger und dauerhafter Identifikator für eine Laboruntersuchung."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Unique and persistent identifier for a laboratory observation instance"
                 }
               ]
             }
@@ -232,6 +350,7 @@
         "id": "Observation.identifier:analyseBefundCode",
         "path": "Observation.identifier",
         "sliceName": "analyseBefundCode",
+        "short": "Analyse-Befund-Code",
         "min": 1,
         "max": "1",
         "mustSupport": true
@@ -320,6 +439,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -333,6 +465,19 @@
         "definition": "abgeschlossen",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "abgeschlossen"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -361,6 +506,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -374,6 +532,19 @@
         "definition": "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -459,6 +630,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -469,9 +653,22 @@
             }
           ]
         },
-        "definition": "Ein LOINC Code für den Laborparameter bzw. Labortest, der durchgeführt wurde.",
+        "definition": "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -519,6 +716,68 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "short": "Subjekt",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subjekt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subject"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Subjekt auf welches sich die Laboruntersuchung bezieht.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Subjekt auf welches sich die Laboruntersuchung bezieht."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The subject the laboratory test is about."
+                }
+              ]
+            }
+          ]
+        },
         "min": 1,
         "mustSupport": true
       },
@@ -543,6 +802,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall oder Kontakt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -553,9 +825,22 @@
             }
           ]
         },
-        "definition": "Fall oder Kontakt, bei dem die Laboruntersuchung durchgeführt wurde.",
+        "definition": "Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -594,19 +879,14 @@
               "extension": [
                 {
                   "url": "lang",
-                  "valueCode": "en-US"
+                  "valueCode": "de-DE"
                 },
                 {
                   "url": "content",
-                  "valueString": "Time of observation"
+                  "valueString": "Untersuchungszeitpunkt"
                 }
               ]
-            }
-          ]
-        },
-        "definition": "Zeitpunkt des Beginns der Untersuchung",
-        "_definition": {
-          "extension": [
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -616,7 +896,38 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "The time at which the observation was made"
+                  "valueString": "Effective time"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Klinischer Bezugszeitpunkt der Laboruntersuchung",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Klinischer Bezugszeitpunkt der Laboruntersuchung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Clinical reference time for the laboratory test."
                 }
               ]
             }
@@ -651,6 +962,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Quelle klinisches Bezugsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -664,6 +988,19 @@
         "definition": "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -702,6 +1039,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Dokumentationsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -720,11 +1070,24 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
                   "url": "content",
-                  "valueString": "The point in time when the laboratory result was documented"
+                  "valueString": "The point in time when the laboratory result was documented."
                 }
               ]
             }
@@ -753,6 +1116,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Messwert"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -766,6 +1142,19 @@
         "definition": "Wert der Analyse",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Wert der Analyse"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -960,6 +1349,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Grund für fehlende Daten"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -973,6 +1375,19 @@
         "definition": "unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -1001,6 +1416,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Interpretation"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -1014,6 +1442,19 @@
         "definition": "Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -1042,6 +1483,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Hinweis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -1055,6 +1509,19 @@
         "definition": "Zusätzliche Informationen zur Laboruntersuchung als Freitext.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zusätzliche Informationen zur Laboruntersuchung als Freitext."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -1088,6 +1555,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Untersuchungsmethode"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -1101,6 +1581,19 @@
         "definition": "Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -1151,6 +1644,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Probenmaterial"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -1164,6 +1670,19 @@
         "definition": "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden"
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -1202,6 +1721,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Gerät"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -1215,6 +1747,19 @@
         "definition": "Gerät, das zur Generierung der Messwerte verwendet wurde.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Gerät, das zur Generierung der Messwerte verwendet wurde."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
@@ -1253,6 +1798,19 @@
               "extension": [
                 {
                   "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenzbereich"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
                   "valueCode": "en-US"
                 },
                 {
@@ -1266,6 +1824,19 @@
         "definition": "Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird.",
         "_definition": {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird."
+                }
+              ]
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [

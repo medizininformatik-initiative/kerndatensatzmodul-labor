@@ -2,10 +2,32 @@
   "resourceType": "DiagnosticReport",
   "id": "mii-exa-labor-laborbefund",
   "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2026.0.0"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "LAB",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        },
+        {
+          "code": "26436-6",
+          "system": "http://loinc.org",
+          "display": "Laboruntersuchungen"
+        }
+      ]
+    }
+  ],
   "identifier": [
     {
       "type": {
@@ -24,21 +46,6 @@
           "value": "DIZ-ID"
         }
       }
-    }
-  ],
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "26436-6",
-          "system": "http://loinc.org",
-          "display": "Laboruntersuchungen"
-        },
-        {
-          "code": "LAB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        }
-      ]
     }
   ],
   "code": {

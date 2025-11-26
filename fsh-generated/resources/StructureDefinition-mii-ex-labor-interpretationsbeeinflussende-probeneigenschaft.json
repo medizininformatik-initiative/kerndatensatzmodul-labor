@@ -1,8 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-ex-labor-interpretationsbeeinflussende-probeneigenschaft",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/Probeneigenschaft",
-  "version": "2025.0.2",
+  "version": "2026.0.0",
   "name": "MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft",
   "title": "MII EX Labor Interpretationsbeeinflussende Probeneigenschaft",
   "status": "active",
@@ -23,8 +37,8 @@
   "abstract": false,
   "context": [
     {
-      "expression": "Observation.value[x]",
-      "type": "fhirpath"
+      "expression": "Observation",
+      "type": "element"
     }
   ],
   "type": "Extension",
