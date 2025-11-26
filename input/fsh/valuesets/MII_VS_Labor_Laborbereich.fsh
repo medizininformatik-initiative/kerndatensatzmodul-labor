@@ -6,6 +6,7 @@ Description: "Laboruntersuchungen werden in diagnostische Fachbereiche (untersuc
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-12-12"

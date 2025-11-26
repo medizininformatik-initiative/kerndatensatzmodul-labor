@@ -30,6 +30,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata"
 * insert Version
 * insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
 * name = "MII_CPS_Labor_CapabilityStatement"
 * title = "MII CPS Labor CapabilityStatement"
 * status = #active

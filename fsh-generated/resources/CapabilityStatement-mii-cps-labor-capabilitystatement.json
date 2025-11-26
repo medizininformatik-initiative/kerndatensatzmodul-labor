@@ -636,7 +636,7 @@
       "mode": "server"
     }
   ],
-  "version": "2025.0.2",
+  "version": "2026.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -646,6 +646,20 @@
           "value": "https://www.medizininformatik-initiative.de"
         }
       ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
     }
   ],
   "name": "MII_CPS_Labor_CapabilityStatement",

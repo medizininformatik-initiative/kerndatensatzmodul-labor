@@ -6,6 +6,7 @@ Context: "Observation.effective.ofType(dateTime)", "DiagnosticReport.effective.o
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum" (exactly)
 * value[x] 1.. MS
 * value[x] only Coding

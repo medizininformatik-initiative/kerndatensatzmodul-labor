@@ -10,13 +10,16 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(^description, en-US, Result of a laboratory test)
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * modifierExtension MS
 * modifierExtension contains MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft named probeneigenschaft 0..* MS
 * modifierExtension[probeneigenschaft]
   * ^short = "Interpretationsbeeinflussende Probeneigenschaft"
   * ^definition = "Beschreibung der interpretationsbeeinflussenden Probeneigenschaften."
+* insert Translation(modifierExtension[probeneigenschaft] ^short, de-DE, Interpretationsbeeinflussende Probeneigenschaft)
 * insert Translation(modifierExtension[probeneigenschaft] ^short, en-US, interpretation-influencing specimen property)
-* insert Translation(modifierExtension[probeneigenschaft] ^definition, en-US, Description of interpretation-influencing specimen property)
+* insert Translation(modifierExtension[probeneigenschaft] ^definition, de-DE, [[Beschreibung der interpretationsbeeinflussenden Probeneigenschaften.]])
+* insert Translation(modifierExtension[probeneigenschaft] ^definition, en-US, [[Description of interpretation-influencing specimen property]])
 * ^status = #active
 * ^purpose = "Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative."
 * obeys mii-lab-2
@@ -27,12 +30,19 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * identifier MS
   * ^short = "Identifikator"
   * ^definition = "Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist."
+* insert Translation(identifier ^short, de-DE, Identifikator)
 * insert Translation(identifier ^short, en-US, Identifier)
-* insert Translation(identifier ^definition, en-US, Identifier/s by which this laboratory test is known.)
+* insert Translation(identifier ^definition, de-DE, [[Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist.]])
+* insert Translation(identifier ^definition, en-US, [[Identifier/s by which this laboratory test is known.]])
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains analyseBefundCode 1..1 MS
+* identifier[analyseBefundCode] ^short = "Analyse-Befund-Code"
+* insert Translation(identifier ^short, de-DE, Analyse-Befund-Code)
+* insert Translation(identifier ^short, en-US, Laboratory analysis identifier)
+* insert Translation(identifier ^definition, de-DE, [[Eindeutiger und dauerhafter Identifikator für eine Laboruntersuchung.]])
+* insert Translation(identifier ^definition, en-US, [[Unique and persistent identifier for a laboratory observation instance]])
 * identifier[analyseBefundCode].type 1.. MS
 * identifier[analyseBefundCode].type from mii-vs-labor-identifier-type-codes (extensible)
 * identifier[analyseBefundCode].type = $v2-0203#OBI
@@ -51,13 +61,17 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * status MS
   * ^short = "Status"
   * ^definition = "abgeschlossen"
+* insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, Status)
+* insert Translation(status ^definition, de-DE, abgeschlossen)
 * insert Translation(status ^definition, en-US, completed)
 * category 1.. MS
   * ^short = "Kategorie"
   * ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung"
+* insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
-* insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
+* insert Translation(category ^definition, de-DE, [[Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe]])
+* insert Translation(category ^definition, en-US, [[Classification of the laboratory test in the diagnostic service section and laboratory group]])
 * category
   * coding MS
     * system 1.. MS
@@ -73,49 +87,67 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * category.coding[observation-category] = $observation-category#laboratory
 * code MS
   * ^short = "Code"
-  * ^definition = "Ein LOINC Code für den Laborparameter bzw. Labortest, der durchgeführt wurde."
+  * ^definition = "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt."
   * coding MS
     * system 1.. MS
     * code 1.. MS
     * display MS
+* insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was performed.)
+* insert Translation(code ^definition, de-DE, [[LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt.]])    
+* insert Translation(code ^definition, en-US, [[A LOINC code identifying the laboratory test that was performed.]])
 * code from $ResultsLabObservationUvIps (preferred)
 * code ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
   * reference MS
   * identifier MS
+* subject ^short = "Subjekt"
+* subject ^definition = "Subjekt auf welches sich die Laboruntersuchung bezieht."
+* insert Translation(subject ^short, de-DE, Subjekt)
+* insert Translation(subject ^short, en-US, Subject)
+* insert Translation(subject ^definition, de-DE, [[Subjekt auf welches sich die Laboruntersuchung bezieht.]])
+* insert Translation(subject ^definition, en-US, [[The subject the laboratory test is about.]])
 * encounter MS
   * ^short = "Fall oder Kontakt"
-  * ^definition = "Fall oder Kontakt, bei dem die Laboruntersuchung durchgeführt wurde."
+  * ^definition = "Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde."
   * reference MS
   * identifier MS
+* insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)
-* insert Translation(encounter ^definition, en-US, Encounter during which the laboratory test was performed.)
+* insert Translation(encounter ^definition, de-DE, [[Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde.]]) 
+* insert Translation(encounter ^definition, en-US, [[Encounter during which the laboratory test was performed.]])
 * effective[x] 1.. MS
   * ^short = "Untersuchungszeitpunkt"
-  * ^definition = "Zeitpunkt des Beginns der Untersuchung"
-* insert Translation(effective[x] ^short, en-US, Time of observation)
-* insert Translation(effective[x] ^definition, en-US, The time at which the observation was made)
+  * ^definition = "Klinischer Bezugszeitpunkt der Laboruntersuchung"
+* insert Translation(effective[x] ^short, de-DE, Untersuchungszeitpunkt)
+* insert Translation(effective[x] ^short, en-US, Effective time)
+* insert Translation(effective[x] ^definition, de-DE, [[Klinischer Bezugszeitpunkt der Laboruntersuchung]])
+* insert Translation(effective[x] ^definition, en-US, [[Clinical reference time for the laboratory test.]])
 * effective[x] only dateTime
 * effective[x] obeys mii-lab-1
 * effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * effective[x].extension[QuelleKlinischesBezugsdatum]
   * ^short = "Quelle klinisches Bezugsdatum"
   * ^definition = "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor"
+* insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^short, de-DE, Quelle klinisches Bezugsdatum)
 * insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^short, en-US, Source of clinical reference date)
-* insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^definition, en-US, Specimen collection date | Date sample received in laboratory)
+* insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^definition, de-DE, [[Datum der Probenentnahme | Datum des Eingangs der Probe im Labor]])
+* insert Translation(effective[x].extension[QuelleKlinischesBezugsdatum] ^definition, en-US, [[Specimen collection date | Date sample received in laboratory]])
 * issued MS
   * ^short = "Dokumentationsdatum"
   * ^definition = "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde"
+* insert Translation(issued ^short, de-DE, Dokumentationsdatum)
 * insert Translation(issued ^short, en-US, Issued)
-* insert Translation(issued ^definition, en-US, The point in time when the laboratory result was documented)
+* insert Translation(issued ^definition, de-DE, [[Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde.]])
+* insert Translation(issued ^definition, en-US, [[The point in time when the laboratory result was documented.]])
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 * value[x] MS
   * ^short = "Messwert"
   * ^definition = "Wert der Analyse"
+* insert Translation(value[x] ^short, de-DE, Messwert)
 * insert Translation(value[x] ^short, en-US, Value)
-* insert Translation(value[x] ^definition, en-US, Value of the analysis)
+* insert Translation(value[x] ^definition, de-DE, [[Wert der Analyse]])
+* insert Translation(value[x] ^definition, en-US, [[Value of the analysis]])
 * valueQuantity MS
 * valueQuantity.extension contains $quantity-translation-ex named pqTranslation 0..*
 * valueQuantity.extension[pqTranslation] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
@@ -139,18 +171,24 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * dataAbsentReason MS
   * ^short = "Grund für fehlende Daten"
   * ^definition = "unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt"
+* insert Translation(dataAbsentReason ^short, de-DE, Grund für fehlende Daten)
 * insert Translation(dataAbsentReason ^short, en-US, Data absent reason)
-* insert Translation(dataAbsentReason ^definition, en-US, unknown | masked | not-applicable | error | not-performed)
+* insert Translation(dataAbsentReason ^definition, de-DE, [[unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt]])
+* insert Translation(dataAbsentReason ^definition, en-US, [[unknown | masked | not-applicable | error | not-performed]])
 * interpretation MS
   * ^short = "Interpretation"
   * ^definition = "Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal."
+* insert Translation(interpretation ^short, de-DE, Interpretation)
 * insert Translation(interpretation ^short, en-US, Interpretation)
-* insert Translation(interpretation ^definition, en-US, A categorical assessment of the value. For example\, high\, low\, normal.)
+* insert Translation(interpretation ^definition, de-DE, [[Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal.]])
+* insert Translation(interpretation ^definition, en-US, [[A categorical assessment of the value. For example, high, low, normal.]])
 * note MS
   * ^short = "Hinweis"
   * ^definition = "Zusätzliche Informationen zur Laboruntersuchung als Freitext."
+* insert Translation(note ^short, de-DE, Hinweis)
 * insert Translation(note ^short, en-US, Note)
-* insert Translation(note ^definition, en-US, Additional information about the laboratory test as free text.)
+* insert Translation(note ^definition, de-DE, [[Zusätzliche Informationen zur Laboruntersuchung als Freitext.]])
+* insert Translation(note ^definition, en-US, [[Additional information about the laboratory test as free text.]])
 * bodySite ..0
 * method MS
   * ^short = "Untersuchungsmethode"
@@ -159,26 +197,34 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
     * system 1.. MS
     * code 1.. MS
     * display MS
+* insert Translation(method ^short, de-DE, Untersuchungsmethode)
 * insert Translation(method ^short, en-US, Method)
-* insert Translation(method ^definition, en-US, Specific examination method\, if the LOINC code for the laboratory test does not contain a method)
+* insert Translation(method ^definition, de-DE, [[Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält.]])
+* insert Translation(method ^definition, en-US, [[Specific examination method, if the LOINC code for the laboratory test does not contain a method]])
 * specimen MS
   * ^short = "Probenmaterial"
   * ^definition = "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden"
   * reference MS
   * identifier MS
+* insert Translation(specimen ^short, de-DE, Probenmaterial)
 * insert Translation(specimen ^short, en-US, Specimen)
-* insert Translation(specimen ^definition, en-US, Specimen on which the laboratory tests are performed)
+* insert Translation(specimen ^definition, de-DE, [[Probe, auf deren Basis die Laboruntersuchungen angefertigt werden]])
+* insert Translation(specimen ^definition, en-US, [[Specimen on which the laboratory tests are performed]])
 * device MS
   * ^short = "Gerät"
   * ^definition = "Gerät, das zur Generierung der Messwerte verwendet wurde."
   * reference MS
   * identifier MS
+* insert Translation(device ^short, de-DE, Gerät)
 * insert Translation(device ^short, en-US, Device)
-* insert Translation(device ^definition, en-US, The device used to generate the test data.)
+* insert Translation(device ^definition, de-DE, [[Gerät, das zur Generierung der Messwerte verwendet wurde.]])
+* insert Translation(device ^definition, en-US, [[The device used to generate the test data.]])
 * referenceRange MS
   * ^short = "Referenzbereich"
   * ^definition = "Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird."
   * low MS
   * high MS
+* insert Translation(referenceRange ^short, de-DE, Referenzbereich)
 * insert Translation(referenceRange ^short, en-US, Reference range)
-* insert Translation(referenceRange ^definition, en-US, Guidance on how to interpret the value by comparison to a normal or recommended range.)
+* insert Translation(referenceRange ^definition, de-DE, [[Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird.]])
+* insert Translation(referenceRange ^definition, en-US, [[Guidance on how to interpret the value by comparison to a normal or recommended range.]])

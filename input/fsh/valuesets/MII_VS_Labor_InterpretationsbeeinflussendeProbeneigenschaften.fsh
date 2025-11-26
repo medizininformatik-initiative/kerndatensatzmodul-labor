@@ -5,6 +5,7 @@ Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Probenei
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^status = #active
 * ^experimental = false
 * $sct#118128002 "Specimen hemolyzed (finding)"

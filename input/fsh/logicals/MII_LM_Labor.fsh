@@ -6,6 +6,7 @@ Description: "Logische Repräsentation des Basismoduls Labor"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * . ^short = "Das Basismodul Laborbefunde enthält strukturierte Informationen zu Laboruntersuchungen als komplexe diagnostische Maßnahmen."
 * Identifikation 1..* Identifier "Identifikator des Laborbefunds" "Identifikator des Laborbefunds"
 * Status 1..1 code "Status des Laborbefunds:" "vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich)\r\nfinal (Endbefund, sollte nicht mehr geändert werden.)\r\nfinal korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem noch Änderungen vorgenommen werden.)"

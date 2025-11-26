@@ -8,6 +8,7 @@ Context: "Observation.value[x]"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/Probeneigenschaft"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/Probeneigenschaft" (exactly)
 * value[x] 1.. MS
 * value[x] only Coding
