@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Labor_Laboruntersuchung
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
-* modifierExtension[MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft].valueCoding = $sct#118128002 "Specimen hemolyzed (finding)"
+* modifierExtension[MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft].valueCoding = $sct#118128002 "Specimen hemolyzed (finding)"
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"

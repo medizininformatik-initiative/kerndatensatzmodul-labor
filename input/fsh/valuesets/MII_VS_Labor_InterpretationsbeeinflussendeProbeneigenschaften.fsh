@@ -1,7 +1,7 @@
-ValueSet: MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT
-Id: mii-vs-labor-interpretation-probeneigenschaften-snomedct
-Title: "MII VS Labor Interpretationsbeeinflussende Probeneigenschaften SNOMEDCT"
-Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Probeneigenschaften."
+ValueSet: MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT
+Id: mii-vs-labor-interpretation-eigenschaften-snomedct
+Title: "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT"
+Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Laboruntersuchung oder Probe."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher

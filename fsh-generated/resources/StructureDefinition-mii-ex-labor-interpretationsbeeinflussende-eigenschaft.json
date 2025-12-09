@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-ex-labor-interpretationsbeeinflussende-probeneigenschaft",
+  "id": "mii-ex-labor-interpretationsbeeinflussende-eigenschaft",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -15,10 +15,10 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/Probeneigenschaft",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
   "version": "2026.0.0",
-  "name": "MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft",
-  "title": "MII EX Labor Interpretationsbeeinflussende Probeneigenschaft",
+  "name": "MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft",
+  "title": "MII EX Labor Interpretationsbeeinflussende Eigenschaft",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -31,7 +31,7 @@
       ]
     }
   ],
-  "description": "Interpretationsbeeinflussenden Probeneigenschaft",
+  "description": "Interpretationsbeeinflussenden Eigenschaft einer Laboruntersuchung oder Probe.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -50,7 +50,7 @@
         "id": "Extension",
         "path": "Extension",
         "isModifier": true,
-        "isModifierReason": "Diese Extension modifiziert die Bedeutung von Observation.value[x], indem sie eine Probeneigenschaft angibt, die die klinische Interpretation beeinflussen kann (z. B. Hämolyse, Lipämie, besondere Abnahmebedingungen). Ist die Extension vorhanden, MÜSSEN Empfängersysteme diesen Qualifizierer bei der Darstellung, Trendanalyse, dem Vergleich oder der Auslösung von Entscheidungsunterstützung berücksichtigen; ein Ignorieren kann zu Fehlinterpretationen führen."
+        "isModifierReason": "Diese Extension modifiziert die Bedeutung von Observation.value[x], indem sie eine Eigenschaft angibt, die die klinische Interpretation beeinflussen kann (z. B. Hämolyse, Lipämie, besondere Abnahmebedingungen). Ist die Extension vorhanden, MÜSSEN Empfängersysteme diesen Qualifizierer bei der Darstellung, Trendanalyse, dem Vergleich oder der Auslösung von Entscheidungsunterstützung berücksichtigen; ein Ignorieren kann zu Fehlinterpretationen führen."
       },
       {
         "id": "Extension.extension",
@@ -60,7 +60,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/Probeneigenschaft"
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
       },
       {
         "id": "Extension.value[x]",
@@ -74,7 +74,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-probeneigenschaften-snomedct"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct"
         }
       },
       {

@@ -12,14 +12,14 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Publisher
 * insert LicenseCodeableCCBY40
 * modifierExtension MS
-* modifierExtension contains MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft named probeneigenschaft 0..* MS
-* modifierExtension[probeneigenschaft]
-  * ^short = "Interpretationsbeeinflussende Probeneigenschaft"
-  * ^definition = "Beschreibung der interpretationsbeeinflussenden Probeneigenschaften."
-* insert Translation(modifierExtension[probeneigenschaft] ^short, de-DE, Interpretationsbeeinflussende Probeneigenschaft)
-* insert Translation(modifierExtension[probeneigenschaft] ^short, en-US, interpretation-influencing specimen property)
-* insert Translation(modifierExtension[probeneigenschaft] ^definition, de-DE, [[Beschreibung der interpretationsbeeinflussenden Probeneigenschaften.]])
-* insert Translation(modifierExtension[probeneigenschaft] ^definition, en-US, [[Description of interpretation-influencing specimen property]])
+* modifierExtension contains MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft named interpretationsbeeinflussendeEigenschaft 0..* MS
+* modifierExtension[interpretationsbeeinflussendeEigenschaft]
+  * ^short = "Interpretationsbeeinflussende interpretationsbeeinflussendeEigenschaft"
+  * ^definition = "Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften."
+* insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^short, de-DE, Interpretationsbeeinflussende interpretationsbeeinflussendeEigenschaft)
+* insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^short, en-US, interpretation-influencing specimen property)
+* insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^definition, de-DE, [[Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften.]])
+* insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^definition, en-US, [[Description of interpretation-influencing specimen property]])
 * ^status = #active
 * ^purpose = "Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative."
 * obeys mii-lab-2
