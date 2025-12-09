@@ -11,3 +11,4 @@ Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Probenei
 * $sct#118128002 "Specimen hemolyzed (finding)"
 * $sct#118127007 "Specimen lipemic (finding)"
 * $sct#118129005 "Specimen icteric (finding)"
+* $sct#167569004 "Urine culture - mixed growth (finding)"
