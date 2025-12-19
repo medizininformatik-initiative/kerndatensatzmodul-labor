@@ -34,7 +34,7 @@ Automatisierte/teilautomatisierte/skalierbare Lösungen müssen in standartisert
 
 ### Einheiten und UCUM
 
-Die Maßeinheit muss zwingend in [UCUM-Einheiten](https://unitsofmeasure.org/ucum) angegeben werden, damit sich die Ergebnisse ineinander umrechnen lassen. Mittels [Validatoren](https://ucum.nlm.nih.gov/ucum-lhc/demo.html) sollte sichergestellt werden, dass die verwendeten Einheiten zulässig sind.
+Die Maßeinheit muss zwingend in [UCUM-Einheiten](https://ucum.org/ucum) angegeben werden, damit sich die Ergebnisse ineinander umrechnen lassen. Mittels [Validatoren](https://ucum.nlm.nih.gov/ucum-lhc/demo.html) sollte sichergestellt werden, dass die verwendeten Einheiten zulässig sind.
 
 
 
