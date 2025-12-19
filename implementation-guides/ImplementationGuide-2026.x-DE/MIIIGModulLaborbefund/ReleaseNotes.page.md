@@ -14,8 +14,8 @@ Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änd
 - Update der IPS dependency auf 2.0.0
 
 #### MII_PR_Labor_Laboruntersuchung
-- Neue modifierExtension für interpretationsbeeinflussende Probeneigenschaften (0..* MS)
-  - Ermöglicht die Kennzeichnung von Proben mit besonderen Eigenschaften (z.B. Hämolyse, Lipämie, Ikterus)
+- Neue modifierExtension für interpretationsbeeinflussende Eigenschaften (0..* MS)
+  - Ermöglicht die Kennzeichnung von Laboruntersuchungen mit besonderen Eigenschaften, die die Interpretation des Laborwerts beeinflussen (z.B. Hämolyse, Lipämie, Ikterus)
 - identifier[analyseBefundCode]: Ergänzung der Kurzbeschreibungen und Definitionen
 - value[x]: Erweiterte Must-Support Flags
   - valueQuantity.comparator ist nun MS

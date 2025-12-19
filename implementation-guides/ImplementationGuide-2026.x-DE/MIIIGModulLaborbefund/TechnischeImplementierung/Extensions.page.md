@@ -40,6 +40,8 @@ Diese Seite dokumentiert die spezifischen Extensions für das Labormodul. Diese 
 
 **Beschreibung**: Beschreibt interpretationsbeeinflussende Eigenschaften einer Laboruntersuchung oder Probe, die die klinische Interpretation des Laborwerts beeinflussen können (z.B. Hämolyse, Lipämie, besondere Abnahmebedingungen).
 
+Auf klinischen Laborbefunden findet sich diese Eigenschaft meistens in einem Freitextkommentar, der direkt einer Laboruntersuchung zugeordnet ist. Die Extension gibt die Möglichkeit, relevant häufige interpretationsbeeinflussende Eigenschaften in (SNOMED-)kodierter und damit auswertbarer Form vorliegen zu haben.
+
 **URL**: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft`
 
 **Kontext**: `Observation`

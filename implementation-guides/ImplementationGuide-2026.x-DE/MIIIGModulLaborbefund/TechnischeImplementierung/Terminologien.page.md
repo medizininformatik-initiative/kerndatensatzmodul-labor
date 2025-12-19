@@ -14,9 +14,13 @@ Eine Nutzung als Kodierhilfe und Übersetzungstabelle ist allerdings nur sehr ei
 
 ### LOINC–Kodierung am Standort
 
-LOINC-Kodierungen sollten durch die Labore selbst oder in enger Zusammenarbeit mit den Laborstandorten so passend und spezifisch wie möglich anhand der Vorgaben zur LOINC-Kodierung (Regenstriefs Institut und LOINC Committee) ausgewählt werden. Dafür stehen alle LOINC-Terme aus dem Laborbereich zur Verfügung. Für eine qualitativ zufriedenstellende Kodierung sind sowohl Kenntnisse der lokalen Laboruntersuchungen als auch Kenntnisse der [LOINC-Kodierungsempfehlungen](https://loinc.org/kb/users-guide/) notwendig.  
+LOINC-Kodierungen sollten durch die Labore selbst oder in enger Zusammenarbeit mit den Laborstandorten so passend und spezifisch wie möglich anhand der Vorgaben zur LOINC-Kodierung ausgewählt werden. Dafür stehen alle LOINC-Terme aus dem Laborbereich zur Verfügung. Für eine qualitativ zufriedenstellende Kodierung sind sowohl Kenntnisse der lokalen Laboruntersuchungen als auch Kenntnisse der LOINC-Kodierungsempfehlungen notwendig.  
 
-Als Kodierhilfe stehen zum Beispiel folgende Tools zur Verfügung:  
+#### Quellen für LOINC-Kodierungsempfehlungen:  
+-	[BfArM Anwendungsleitfaden - Kodiersysteme für Labordaten:](https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/Anwendungsleitfaden/_node.html) enthält ebenfalls Grundlagen zu SNOMED CT und UCUM
+-	[Regenstriefs Institut und LOINC Committee](https://loinc.org/kb/users-guide/)
+
+#### Tools als Kodierhilfe:  
 
 -	LOINC search: Browser-basierte LOINC-Suche mit exportfunktionen auf der [LOINC-website](https://loinc.org/search/) nach kostenloser Anmeldung
 -	[RELMA - Regenstrief LOINC Mapping Assistant](https://loinc.org/kb/relma/overview/): kostenloses Tool zum Mapping lokaler Codes auf LOINC
@@ -24,7 +28,7 @@ Als Kodierhilfe stehen zum Beispiel folgende Tools zur Verfügung:
 -	MIRACUM [Mapper und LabVisualizer](https://www.miracum.org/das-konsortium/datenintegrationszentren/miracolix-tools/#collapse_5)
 -	Kommerzielle Anbieter
 
-Wenn sich kein passender Term finden lässt, sollte in diesen Fällen ein Änderungswunsch beim Regenstrief-Institut in Rücksprache mit dem BfArM angestoßen werden (BfArM - Änderungswünsche, Change Requests).
+Wenn sich kein passender Term finden lässt, sollte in diesen Fällen ein Änderungswunsch beim Regenstrief-Institut in Rücksprache mit dem BfArM angestoßen werden [(BfArM - Änderungswünsche, Change Requests)](https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/Change-Requests/_node.html).
 Bezüglich der Kodierung sollten mindestens die lokalen Kodes hinterlegt werden, um eine LOINC-Nachkodierung zu ermöglichen. LOINCs sind als internationales System standortübergreifend einheitlich interpretierbar, aber nur die lokalen Codes können mit hoher Sicherheit eineindeutig der lokal verwendeten Untersuchungsmethode/ Assay zugeordnet werden und somit ggf. für Nachkodierungen genutzt werden und in solchen Fällen die Nachvollziehbarkeit absichern. Falls möglich und sinnvoll können in diesen Fällen auch weitere standardisierte System einbezogen werden. LOINC-Zusammenführung bei multizentrischer Datennutzung:Die LOINC-Auswahl bei multizentrischen Laborwertabfragen kann für wenige Standorte und wenige Laborparameter manuell mit entsprechender Expertise des LOINC-Systems gelöst werden.
 Automatisierte/teilautomatisierte/skalierbare Lösungen müssen in standartiserter und replizierbarer Weise noch etabliert werden.
 
