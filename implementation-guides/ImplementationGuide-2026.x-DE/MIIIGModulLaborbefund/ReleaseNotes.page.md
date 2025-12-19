@@ -2,7 +2,7 @@
 
 ### Version: 2026.0.0
 
-Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der diff-view im Github verwendet werden):
+Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der Differential-View auf Github verwendet werden).
 
 ### FHIR/Inhaltliche Änderungen:
 
@@ -33,7 +33,7 @@ Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änd
   - category[lab-category].coding mindestens 2 Codings erforderlich (system, code, display als MS)
 
 #### Extension - MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft (NEU)
-- Neue modifierExtension zur Kennzeichnung interpretationsbeeinflussender Probeneigenschaften
+- Neue modifierExtension zur Kennzeichnung interpretationsbeeinflussender Eigenschaften
 - Kontext: Observation
 - value[x]: 1.. MS, nur Coding erlaubt
 - Gebunden an neues ValueSet MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT
