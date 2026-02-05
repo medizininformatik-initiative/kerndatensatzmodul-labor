@@ -1,11 +1,17 @@
 ## {{page-title}}
 
+### Version: 2026.0.1
+Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1) verwendet werden).
+
+### FHIR/Inhaltliche Änderungen:
+#### Generell:
+- `fix:` hl7.fhir.uv.extensions wurde als dependency hinzugefügt um die snapshot Generierung von Simplifier zu unterstützen. MII_PR_Labor_Laboruntersuchung hatte bislang keinen Snapshot.
+
 ### Version: 2026.0.0
 
 Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2025.0.2...2026.0.0) verwendet werden).
 
 ### FHIR/Inhaltliche Änderungen:
-
 #### Generell:
 - Alle Profile und ValueSets enthalten nun eine CC-BY-4.0 Lizenzangabe
 - Erweiterte Must-Support (MS) Flags für verbesserte Interoperabilität auf den Unterelementen komplexer Datentypen
