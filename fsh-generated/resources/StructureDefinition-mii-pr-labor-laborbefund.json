@@ -945,6 +945,20 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.effective[x].extension",
+        "path": "DiagnosticReport.effective[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum",
         "path": "DiagnosticReport.effective[x].extension",
         "sliceName": "QuelleKlinischesBezugsdatum",
