@@ -1,7 +1,18 @@
 ## {{page-title}}
 
+### Version: 2026.0.2
+Die Version 2026.0.2 enthält im Vergleich zur Vorversion 2026.0.1 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.1...2026.0.2) verwendet werden).
+
+### FHIR/Inhaltliche Änderungen:
+#### Generell:
+- `fix:` Korrektur der Dependency von `hl7.fhir.uv.extensions` auf `hl7.fhir.uv.extensions.r4`, damit die verwendeten R4-Extensions korrekt aufgelöst werden.
+- `fix:` Versionsspezifizierung des referenzierten FHIR-ValueSets `identifier-type` auf `4.0.1`.
+
+#### Beispiele:
+- `fix:` Korrektur des LOINC-Displaytexts im Beispiel `mii-exa-labor-laborwert` ("hohe Vergrößerung").
+
 ### Version: 2026.0.1
-Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1) verwendet werden).
+Die Version 2026.0.1 enthält im Vergleich zur Vorversion 2026.0.0 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1) verwendet werden).
 
 ### FHIR/Inhaltliche Änderungen:
 #### Generell:
