@@ -66,7 +66,7 @@ Usage: #example
 * status = #final
 * category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* code = $loinc#5787-7 "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrösserung"
+* code = $loinc#5787-7 "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrößerung"
 * code.text = "Urinsediment Epithelzellen Semi-quantitative Schätzung"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"

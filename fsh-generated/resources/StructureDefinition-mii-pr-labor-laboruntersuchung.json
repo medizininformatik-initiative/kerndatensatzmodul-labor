@@ -137,6 +137,16 @@
       {
         "id": "Observation.modifierExtension",
         "path": "Observation.modifierExtension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -951,6 +961,20 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.effective[x].extension",
+        "path": "Observation.effective[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.effective[x].extension:QuelleKlinischesBezugsdatum",
         "path": "Observation.effective[x].extension",
         "sliceName": "QuelleKlinischesBezugsdatum",
@@ -1205,10 +1229,6 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
             "valueCode": "draft"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
           }
         ],
         "path": "Observation.value[x].extension",
@@ -1231,15 +1251,25 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.value[x]:valueQuantity.value.extension",
+        "path": "Observation.value[x].value.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.value[x]:valueQuantity.value.extension:quantityPrecision",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
             "valueCode": "draft"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
           }
         ],
         "path": "Observation.value[x].value.extension",
