@@ -1,7 +1,26 @@
 ## {{page-title}}
 
+### Version: 2026.0.3
+Die Version 2026.0.3 enthält im Vergleich zur Vorversion 2026.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3) verwendet werden).
+
+Hinweis: Version `2026.0.3` ist ein Package-Release zur Durchführung technischer Korrekturen. Der Implementation Guide wurde inhaltlich nicht verändert.
+
+### FHIR/Inhaltliche Änderungen:
+#### Generell:
+- `fix:` Vereinheitlichung der Versionskennzeichnung der 2026er Artefakte auf `2026.0.3`; mehrere Profile, Extensions, ValueSets und das CapabilityStatement referenzierten zuvor noch `2026.0.0`.
+- `fix:` Aktualisierung der `meta.profile`- und `supportedProfile`-Referenzen von `2026.0.0` auf `2026.0.3`.
+
+#### Beispiele:
+- `fix:` Aktualisierung der Beispielinstanzen auf die Profilversion `2026.0.3`; bisherige Profilreferenzen standen teilweise noch auf `2026.0.0`.
+
+### Implementation Guide:
+- Aktualisierung der IG-Version von `2026.0.0` auf `2026.0.3` in `package.json`, `sushi-config.yaml`, `qc/custom.rules.yaml` und den FSH-Regelsätzen.
+- Aktualisierung der Referenz auf die aktuelle stabile Version in der `README.md` von `2026.0.0` auf `2026.0.3`.
+
 ### Version: 2026.0.2
 Die Version 2026.0.2 enthält im Vergleich zur Vorversion 2026.0.1 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.1...2026.0.2) verwendet werden).
+
+Hinweis: Version `2026.0.2` ist ein Package-Release zur Durchführung technischer Korrekturen. Der Implementation Guide wurde inhaltlich nicht verändert.
 
 ### FHIR/Inhaltliche Änderungen:
 #### Generell:
@@ -13,6 +32,8 @@ Die Version 2026.0.2 enthält im Vergleich zur Vorversion 2026.0.1 folgende Änd
 
 ### Version: 2026.0.1
 Die Version 2026.0.1 enthält im Vergleich zur Vorversion 2026.0.0 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1) verwendet werden).
+
+Hinweis: Version `2026.0.1` ist ein Package-Release zur Durchführung technischer Korrekturen. Der Implementation Guide wurde inhaltlich nicht verändert.
 
 ### FHIR/Inhaltliche Änderungen:
 #### Generell:
