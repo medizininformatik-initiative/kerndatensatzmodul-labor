@@ -439,6 +439,81 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "short": "Basiert auf",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Basiert auf"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Based on"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reference to the laboratory order on which this laboratory test is based."
+                }
+              ]
+            }
+          ]
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "short": "Status",
@@ -539,7 +614,7 @@
             }
           ]
         },
-        "definition": "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung",
+        "definition": "Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe",
         "_definition": {
           "extension": [
             {
