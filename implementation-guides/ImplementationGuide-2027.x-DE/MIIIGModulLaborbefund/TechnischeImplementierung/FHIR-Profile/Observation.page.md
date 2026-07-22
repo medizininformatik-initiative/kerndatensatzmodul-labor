@@ -70,7 +70,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 |Observation.valueCodeableConcept| Für die Kodierung von semi-quantitativen (0 - +++) Ergebnissen, siehe ValueSet 'Semi_quantitative_Laborergebnisse'|
 | Observation.note      | Optionaler Text |
 | Observation.method      | Kodierte Methode zur welche verwendet wurde zur Messung von Observation.value. Nur zu befüllen falls Methode nicht implizit in Observation.code enthalten ist (z.B. im LOINC Code). Es wird keine Codierungsempfehlung angegeben, da diese Information meist nicht strukturiert vorliegt in den Quellsystemen.|
-| Observation.specimen      | Optionale Referenz; Probeninformationen sind im FHIR-Profil Specimen (Bioprobe) des Erweiterungsmoduls Biobank hinterlegt. |
+| Observation.specimen      | Optionale Referenz; Probeninformationen sind im FHIR-Profil Specimen (Specimen Bioprobe Core) des Erweiterungsmoduls Biobank hinterlegt. |
 | Observation.referenceRange      | Sollte - falls vorhanden - als high, low (SimpleQuantity) kodiert werden. Abweichend ansonsten per referenceRange.text.|
 | Observation.component | Observation.hasMember ist im Bereich der klinischen Chemie zu bevorzugen (passendere Semantik). Element ist für die Harmonisierung mit Genetischen Befunden erlaubt. |
 

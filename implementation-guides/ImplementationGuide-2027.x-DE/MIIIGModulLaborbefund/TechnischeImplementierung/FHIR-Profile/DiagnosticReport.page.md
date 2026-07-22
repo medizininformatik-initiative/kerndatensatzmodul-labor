@@ -67,7 +67,7 @@ from StructureDefinition where url = %canonical for differential.element.constra
 | DiagnosticReport.subject       | Bezug zum Patienten muss stets gegeben sein|
 | DiagnosticReport.effective[x]       | Klinischer Bezugszeitpunkt des Laborberichts und damit entweder </br>1.) Zeitpunkt der Probenentnahme (Zeitpunkt zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach) oderfalls nicht bzw. nicht ausreichend dokumentiert, </br>2.) Laboreingangszeitpunkt als am nächsten liegender und im Allgemeinen gut dokumentierter Zeitpunkt. Muss identisch sein zu Observation.effective[x]. </br>Die Information wird sowohl im DiagnosticReport als auch in der Observation gespeichert um anschließend Datenauswertungen zu erleichtern. Per Extension 'ExtensionQuelleKlinischesBezugsdatum' soll spezifiziert werden, ob es sich um einen Entnahme- oder Probeneingangszeitpunkt handelt. |
 | DiagnosticReport.issued       | Dokumentationszeitpunkt des Laborbefunds, damit Zeitpunkt der Freigabe (oder Ausgabe) des Befundes|
-| DiagnosticReport.specimen       | Optionale Referenz, Probeninformationen sind im FHIR-Profil Specimen (Bioprobe) des Erweiterungsmoduls Biobank hinterlegt.|
+| DiagnosticReport.specimen       | Optionale Referenz, Probeninformationen sind im FHIR-Profil Specimen (Specimen Bioprobe Core) des Erweiterungsmoduls Biobank hinterlegt.|
 | DiagnosticReport.result       | DiagnosticReport sollte min. ein Ergebnis in Form eines Laborergebnisses enthalten|
 | DiagnosticReport.conclusion       | Optional, Textuelle Beschreibung der abschließenden ärztlichen Bewertung des Befundes|
 
