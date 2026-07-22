@@ -86,6 +86,17 @@
                   "valueCode": "SHALL"
                 }
               ],
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-based-on",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
               "name": "category",
               "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
               "type": "token"
@@ -187,6 +198,17 @@
               ],
               "name": "identifier",
               "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "interpretation",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-interpretation",
               "type": "token"
             },
             {
