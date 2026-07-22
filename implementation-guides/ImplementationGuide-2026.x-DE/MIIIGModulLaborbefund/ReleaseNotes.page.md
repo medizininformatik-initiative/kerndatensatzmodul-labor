@@ -1,5 +1,16 @@
 ## {{page-title}}
 
+### Version: 2027.0.0
+
+Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änderungen.
+
+### FHIR/Inhaltliche Änderungen:
+#### MII_PR_Labor_Laborbefund
+- category: Die erforderlichen Codings werden als getrennte, offene Slices auf `category.coding` modelliert:
+  - `loinc-lab` (1..1 MS) mit `$loinc#26436-6`
+  - `diagnostic-service-sections` (1..1 MS) mit `$v2-0074#LAB`
+  - Weitere Codings sind zulässig.
+
 ### Version: 2026.0.3
 Die Version 2026.0.3 enthält im Vergleich zur Vorversion 2026.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3) verwendet werden).
 
