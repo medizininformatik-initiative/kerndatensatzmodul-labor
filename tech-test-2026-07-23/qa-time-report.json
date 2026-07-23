@@ -1,0 +1,517 @@
+{
+  "date" : "Thu, 23 Jul, 2026 11:57:17 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-mii-ig-labor.json",
+    "size" : 11672,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 64,
+      "length" : 15
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 14
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 65,
+      "length" : 87
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement.json",
+    "size" : 23844,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 7
+    },
+    {
+      "activity" : "load",
+      "start" : 64,
+      "length" : 11
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 65,
+      "length" : 61
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund.json",
+    "size" : 1686,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 65,
+      "length" : 38
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason.json",
+    "size" : 3151,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 64,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-range.json",
+    "size" : 2481,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio.json",
+    "size" : 2412,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert.json",
+    "size" : 3985,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-mii-exa-labor-laboranforderung.json",
+    "size" : 1502,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.json",
+    "size" : 3172,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 64,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.json",
+    "size" : 2582,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 64,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-lm-labor.json",
+    "size" : 34089,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 10
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 20
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 64,
+      "length" : 58
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-labor-laboranforderung.json",
+    "size" : 28613,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 50
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 18
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 64,
+      "length" : 96
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-labor-laborbefund.json",
+    "size" : 41523,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 12
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 22
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 64,
+      "length" : 102
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung.json",
+    "size" : 55946,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 21
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 30
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 64,
+      "length" : 119
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-identifier-type-codes.json",
+    "size" : 1543,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 40
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.json",
+    "size" : 1995,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborbereich.json",
+    "size" : 3479,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 13
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.json",
+    "size" : 2521,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 3
+    },
+    {
+      "activity" : "scan",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborergebnis-qualitativ.json",
+    "size" : 2611,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 4
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 65,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-order-codes.json",
+    "size" : 1410,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.json",
+    "size" : 1676,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 63,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 63,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 1806
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 2872
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboranforderung-intro.md",
+    "size" : 1715
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboruntersuchung-intro.md",
+    "size" : 3325
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laborbefund-intro.md",
+    "size" : 1861
+  },
+  {
+    "name" : "/input/pagecontent/terminologien.md",
+    "size" : 3641
+  },
+  {
+    "name" : "/input/pagecontent/szenarien.md",
+    "size" : 727
+  },
+  {
+    "name" : "/input/pagecontent/uml.md",
+    "size" : 821
+  },
+  {
+    "name" : "/input/pagecontent/technische-implementierung.md",
+    "size" : 402
+  },
+  {
+    "name" : "/input/pagecontent/conformance.md",
+    "size" : 199
+  },
+  {
+    "name" : "/input/pagecontent/extensions.md",
+    "size" : 3247
+  },
+  {
+    "name" : "/input/pagecontent/specimen.md",
+    "size" : 1162
+  },
+  {
+    "name" : "/input/pagecontent/capability-statement.md",
+    "size" : 1059
+  },
+  {
+    "name" : "/input/pagecontent/anwendungsfaelle.md",
+    "size" : 304
+  },
+  {
+    "name" : "/input/pagecontent/zeitpunkte-im-labor.md",
+    "size" : 1617
+  },
+  {
+    "name" : "/input/pagecontent/release-notes.md",
+    "size" : 2728
+  },
+  {
+    "name" : "/input/pagecontent/datensaetze.md",
+    "size" : 3858
+  },
+  {
+    "name" : "/input/pagecontent/kontext.md",
+    "size" : 1175
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2857
+  },
+  {
+    "name" : "/input/pagecontent/beschreibung-modul.md",
+    "size" : 9945
+  },
+  {
+    "name" : "/input/pagecontent/referenzen.md",
+    "size" : 913
+  },
+  {
+    "name" : "/input/pagecontent/fhir-profile.md",
+    "size" : 1355
+  },
+  {
+    "name" : "/input/intro-notes",
+    "size" : 0
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboranforderung-intro.md",
+    "size" : 1715
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboruntersuchung-intro.md",
+    "size" : 3325
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laborbefund-intro.md",
+    "size" : 1861
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/UML_Laborbefund.png",
+    "size" : 324545
+  },
+  {
+    "name" : "/input/images/ART-DECOR_Laboranforderung.png",
+    "size" : 20006
+  },
+  {
+    "name" : "/input/images/Warning.jpg",
+    "size" : 20393
+  },
+  {
+    "name" : "/input/images/ART-DECOR_Probenmaterial.png",
+    "size" : 42274
+  },
+  {
+    "name" : "/input/images/ART-DECOR_Laboruntersuchung.png",
+    "size" : 84628
+  },
+  {
+    "name" : "/input/images/ART-DECOR_Laborbefund.png",
+    "size" : 45034
+  },
+  {
+    "name" : "/input/images/Modul_Laborbefund.jpg",
+    "size" : 67409
+  }]
+}
