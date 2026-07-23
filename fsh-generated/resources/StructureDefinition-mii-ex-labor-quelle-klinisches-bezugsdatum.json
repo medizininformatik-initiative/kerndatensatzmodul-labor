@@ -1,0 +1,92 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-ex-labor-quelle-klinisches-bezugsdatum",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+  "version": "2026.0.0",
+  "name": "MII_EX_Labor_Quelle_Klinisches_Bezugsdatum",
+  "title": "MII EX Labor Quelle Klinisches Bezugsdatum",
+  "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Quelle des klinischen Bezugsdatums",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Observation.effective.ofType(dateTime)",
+      "type": "fhirpath"
+    },
+    {
+      "expression": "DiagnosticReport.effective.ofType(dateTime)",
+      "type": "fhirpath"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum"
+        }
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.value[x].code",
+        "path": "Extension.value[x].code",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
