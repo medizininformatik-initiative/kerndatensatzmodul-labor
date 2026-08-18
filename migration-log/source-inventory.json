@@ -1,0 +1,428 @@
+{
+  "generatedAt": "2026-08-06",
+  "source": {
+    "renderedIg": "https://simplifier.net/guide/miiigmodullaborbefund?version=2026.0.3",
+    "repository": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor",
+    "branch": "plantuml-uml",
+    "shape": "A",
+    "authoritativeNarrative": "implementation-guides/ImplementationGuide-2027.x-DE",
+    "note": "Rendered reference is 2026.0.3; repository 2027 narrative is authoritative and requires Gate-B cross-check."
+  },
+  "guideTrees": [
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE",
+      "language": "de",
+      "version": "2027 working tree",
+      "fileCount": 33,
+      "disposition": "migrate"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2026.x-DE",
+      "language": "de",
+      "version": "2026.0.3",
+      "fileCount": 33,
+      "disposition": "retain unchanged"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2025.x-DE",
+      "language": "de",
+      "version": "2025",
+      "fileCount": 31,
+      "disposition": "retain unchanged"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common",
+      "language": "shared",
+      "version": "shared",
+      "fileCount": 8,
+      "disposition": "transfer referenced assets and retain"
+    }
+  ],
+  "artifacts": [
+    {
+      "type": "Logical",
+      "name": "MII_LM_Labor",
+      "source": "input/fsh/logicals/MII_LM_Labor.fsh:1"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-labor-laborwert-data-absent-reason",
+      "source": "input/fsh/instances/mii-exa-labor-laborwert-data-absent-reason.fsh:1"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-labor-laborbefund",
+      "source": "input/fsh/instances/mii-exa-labor-laborbefund.fsh:1"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-labor-laboranforderung",
+      "source": "input/fsh/instances/mii-exa-labor-laboranforderung.fsh:1"
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Labor_Laboranforderung",
+      "source": "input/fsh/profiles/MII_PR_Labor_Laboranforderung.fsh:1"
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Labor_Laboruntersuchung",
+      "source": "input/fsh/profiles/MII_PR_Labor_Laboruntersuchung.fsh:1"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-cps-labor-capabilitystatement",
+      "source": "input/fsh/capabilitystatements/mii-cps-labor-capabilitystatement.fsh:27"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_Laborergebnis_Qualitativ",
+      "source": "input/fsh/valuesets/MII_VS_Labor_Laborergebnis_Qualitativ.fsh:1"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_Quelle_Klinisches_Bezugsdatum",
+      "source": "input/fsh/valuesets/MII_VS_Labor_Quelle_Klinisches_Bezugsdatum.fsh:1"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_Laborergbenis_Semiquantitativ",
+      "source": "input/fsh/valuesets/MII_VS_Labor_Laborergebnis_Semiquantitativ.fsh:1"
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Labor_Laborbefund",
+      "source": "input/fsh/profiles/MII_PR_Labor_Laborbefund.fsh:1"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_Laborbereich",
+      "source": "input/fsh/valuesets/MII_VS_Labor_Laborbereich.fsh:1"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_Identifier_Type_Codes",
+      "source": "input/fsh/valuesets/MII_VS_Labor_IdentifierTypes.fsh:1"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_Order_Codes",
+      "source": "input/fsh/valuesets/MII_VS_Labor_Order_Codes.fsh:1"
+    },
+    {
+      "type": "Extension",
+      "name": "MII_EX_Labor_Quelle_Klinisches_Bezugsdatum",
+      "source": "input/fsh/extensions/MII_EX_Labor_Quelle_Klinisches_Bezugsdatum.fsh:1"
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT",
+      "source": "input/fsh/valuesets/MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften.fsh:1"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-labor-laborwert",
+      "source": "input/fsh/instances/mii-exa-labor-laborwert.fsh:1"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-labor-laborwert-ratio",
+      "source": "input/fsh/instances/mii-exa-labor-laborwert.fsh:34"
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-labor-laborwert-range",
+      "source": "input/fsh/instances/mii-exa-labor-laborwert.fsh:58"
+    },
+    {
+      "type": "Extension",
+      "name": "MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft",
+      "source": "input/fsh/extensions/MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft.fsh:1"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/guide.yaml",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/AnwendungsflleInformationsmodell/Index.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/AnwendungsflleInformationsmodell/toc.yaml",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/AnwendungsflleInformationsmodell/UML.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/BeschreibungModul.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/Index.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/Referenzen.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/ReleaseNotes.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/CapabilityStatement.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/Conformance.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/Extensions.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/DiagnosticReport.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/FQL-Beschreibung.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Operations.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/FQL-Capability-REST.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/FQL-Capability-Search.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/Observation.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/ServiceRequest.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/Specimen.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/FHIR-Profile/toc.yaml",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/Index.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/Terminologien.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/toc.yaml",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/TechnischeImplementierung/ZeitpunkteImLabor.page.md",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/MIIIGModulLaborbefund/toc.yaml",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/styles/MII/master.html",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/styles/MII/settings.style",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/styles/MII/style.css",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-2027.x-DE/toc.yaml",
+      "disposition": "migrate narrative"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/ART-DECOR_Laboranforderung.png",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/ART-DECOR_Laborbefund.png",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/ART-DECOR_Laboruntersuchung.png",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/ART-DECOR_Probenmaterial.png",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/Modul_Laborbefund.jpg",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/UML_Laborbefund.png",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "implementation-guides/ImplementationGuide-Common/images/Warning.jpg",
+      "disposition": "asset seed / retain"
+    },
+    {
+      "path": "input/fsh/aliases.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/capabilitystatements/mii-cps-labor-capabilitystatement.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/extensions/MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/extensions/MII_EX_Labor_Quelle_Klinisches_Bezugsdatum.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/instances/mii-exa-labor-laboranforderung.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/instances/mii-exa-labor-laborbefund.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/instances/mii-exa-labor-laborwert-data-absent-reason.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/instances/mii-exa-labor-laborwert.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/invariants/mii-lab-1.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/invariants/mii-lab-2.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/logicals/MII_LM_Labor.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/profiles/MII_PR_Labor_Laboranforderung.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/profiles/MII_PR_Labor_Laborbefund.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/profiles/MII_PR_Labor_Laboruntersuchung.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/rulesets/license-term.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/rulesets/meta-profile.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/rulesets/test-data-label.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/rulesets/translation.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/rulesets/version.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_IdentifierTypes.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_Laborbereich.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_Laborergebnis_Qualitativ.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_Laborergebnis_Semiquantitativ.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_Order_Codes.fsh",
+      "disposition": "transfer unchanged"
+    },
+    {
+      "path": "input/fsh/valuesets/MII_VS_Labor_Quelle_Klinisches_Bezugsdatum.fsh",
+      "disposition": "transfer unchanged"
+    }
+  ],
+  "topLevelDisposition": {
+    "implementation-guides/ImplementationGuide-2025.x-DE": "retain unchanged",
+    "implementation-guides/ImplementationGuide-2026.x-DE": "retain unchanged",
+    "fsh-generated": "retain until regenerated and compared",
+    "validator": "retain; Gate-D retirement review",
+    "qc": "merge with target QC",
+    ".github": "replace/merge with template workflows; existing workflow retained until Gate A",
+    ".idea": "untracked user-local; ignore",
+    ".agents": "untracked migration-skill support; retain",
+    ".claude": "untracked migration-skill support; retain"
+  },
+  "targetTemplate": {
+    "repository": "https://github.com/forschungsgruppe-digital-health/mii-kds-module-template",
+    "commit": "1a7e3c6cbf753bc6c5f006ea4bebc3704dd899cf"
+  }
+}

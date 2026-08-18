@@ -1,0 +1,8 @@
+# Beispiele
+
+- [Laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.html)
+- [Laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.html)
+- [Laborergebnis](Observation-mii-exa-labor-laborwert.html)
+- [Ergebnis mit Data Absent Reason](Observation-mii-exa-labor-laborwert-data-absent-reason.html)
+- [Ergebnis mit Referenzbereich](Observation-mii-exa-labor-laborwert-range.html)
+- [Ergebnis als Verhältnis](Observation-mii-exa-labor-laborwert-ratio.html)

@@ -23,6 +23,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * ^status = #active
 * ^purpose = "Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative."
 * obeys mii-lab-2
+* obeys mii-lab-3
 * id MS
 * meta MS
 * meta.source MS
@@ -172,8 +173,6 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueQuantity.code ^comment = "The mandatory system is UCUM."
 * valueCodeableConcept MS
 * valueCodeableConcept.coding 1.. MS
-* valueCodeableConcept.coding.system 1.. MS
-* valueCodeableConcept.coding.code 1.. MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open
@@ -182,6 +181,10 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
     semiquantitativ 0..1 MS
 * valueCodeableConcept.coding[qualitativ] from MII_VS_Labor_Laborergebnis_Qualitativ (required)
 * valueCodeableConcept.coding[semiquantitativ] from MII_VS_Labor_Laborergbenis_Semiquantitativ (required)
+* valueCodeableConcept.coding[qualitativ].system MS
+* valueCodeableConcept.coding[qualitativ].code MS
+* valueCodeableConcept.coding[semiquantitativ].system MS
+* valueCodeableConcept.coding[semiquantitativ].code MS
 * valueRange MS
 * valueRatio MS
 * dataAbsentReason MS
