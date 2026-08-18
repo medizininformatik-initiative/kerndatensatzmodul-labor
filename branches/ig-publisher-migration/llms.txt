@@ -1,0 +1,80 @@
+# de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0: MII IG Laborbefund(en)
+
+## Pages
+
+* [Home](en/index.md)
+* [Examples](en/examples.md)
+* [Laboratory Test](en/observation.md)
+* [Datasets and Descriptions](en/datasets-and-descriptions.md)
+* [Terminology](en/terminology.md)
+* [Conformance](en/conformance.md)
+* [Handling Missing Data](en/missing-data.md)
+* [Laboratory Request](en/service-request.md)
+* [Versioning](en/version-history.md)
+* [Extensions](en/extensions.md)
+* [Guidance for Researchers](en/researcher-guidance.md)
+* [Metadata Overview](en/metadata.md)
+* [Guidance for Implementers](en/implementer-guidance.md)
+* [Must Support](en/must-support.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Laboratory Timestamps](en/laboratory-timestamps.md)
+* [Specimen](en/specimen.md)
+* [References](en/references.md)
+* [Translation Information](en/translationinfo.md)
+* [Project Context](en/project-context.md)
+* [Changelog](en/changes.md)
+* [Logical Models](en/logical-models.md)
+* [Guidance](en/guidance.md)
+* [General Requirements](en/general-requirements.md)
+* [Downloads](en/downloads.md)
+* [Security and Privacy](en/security-and-privacy.md)
+* [Capability Statements](en/capability-statements.md)
+* [Search Parameters and Operations](en/search-parameters-and-operations.md)
+* [UML Diagram](en/uml-diagrams.md)
+* [Laboratory Report](en/diagnostic-report.md)
+* [Profiles and Extensions](en/profiles-and-extensions.md)
+
+## Resources
+
+### ValueSets
+
+* [MII VS Labor Identifier Type Codes](en/ValueSet-mii-vs-labor-identifier-type-codes.md)
+* [MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT](en/ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md)
+* [MII VS Labor Laborbereich](en/ValueSet-mii-vs-labor-laborbereich.md)
+* [MII VS Labor Laborergbenis Semiquantitativ](en/ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md)
+* [MII VS Labor Laborergebnis Qualitativ](en/ValueSet-mii-vs-labor-laborergebnis-qualitativ.md)
+* [MII VS Labor Order Codes](en/ValueSet-mii-vs-labor-order-codes.md)
+* [MII VS Labor Quelle klinisches Bezugsdatum](en/ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md)
+
+### Logicals
+
+* [MII LM Labor](en/StructureDefinition-mii-lm-labor.md)
+
+### Resource Profiles
+
+* [MII PR Labor Laboranforderung](en/StructureDefinition-mii-pr-labor-laboranforderung.md)
+* [MII PR Labor Laborbefund](en/StructureDefinition-mii-pr-labor-laborbefund.md)
+* [MII PR Labor Laboruntersuchung](en/StructureDefinition-mii-pr-labor-laboruntersuchung.md)
+
+### Extensions
+
+* [MII EX Labor Interpretationsbeeinflussende Eigenschaft](en/StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md)
+* [MII EX Labor Quelle Klinisches Bezugsdatum](en/StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)
+
+### CapabilityStatements
+
+* [MII CPS Labor CapabilityStatement](en/CapabilityStatement-mii-cps-labor-capabilitystatement.md)
+
+### ImplementationGuides
+
+* [MII IG Laborbefund](en/ImplementationGuide-mii-ig-labor.md)
+
+### Examples
+
+* [mii-exa-labor-laborbefund (DiagnosticReport)](en/DiagnosticReport-mii-exa-labor-laborbefund.md)
+* [mii-exa-labor-laborwert-data-absent-reason (Observation)](en/Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [mii-exa-labor-laborwert-range (Observation)](en/Observation-mii-exa-labor-laborwert-range.md)
+* [mii-exa-labor-laborwert-ratio (Observation)](en/Observation-mii-exa-labor-laborwert-ratio.md)
+* [mii-exa-labor-laborwert (Observation)](en/Observation-mii-exa-labor-laborwert.md)
+* [111 (Patient)](en/Patient-111.md)
+* [mii-exa-labor-laboranforderung (ServiceRequest)](en/ServiceRequest-mii-exa-labor-laboranforderung.md)

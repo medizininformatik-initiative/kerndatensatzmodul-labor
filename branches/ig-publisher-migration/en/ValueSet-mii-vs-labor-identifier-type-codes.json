@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-labor-identifier-type-codes",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-identifier-type-codes</b></p><a name=\"mii-vs-labor-identifier-type-codes\"> </a><a name=\"hcmii-vs-labor-identifier-type-codes\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a> version: 4.0.2</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-identifier-type.html\">IdentifierType</a></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a><span title=\"Version is explicitly stated to be 5.0.0\"> version &#x1F4CD;5.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html#v2-0203-OBI\">OBI</a></td><td style=\"color: #cccccc\">Observation Instance Identifier</td><td>Unique and persistent identifier for an observation instance</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_Labor_Identifier_Type_Codes",
+  "title" : "MII VS Labor Identifier Type Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-18T07:40:29+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu verwenden ist.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "concept" : [{
+        "code" : "OBI"
+      }]
+    }]
+  }
+}

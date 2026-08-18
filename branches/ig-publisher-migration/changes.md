@@ -1,0 +1,34 @@
+# Changelog
+
+## 2027.0.0
+
+Changes since 2026.0.3:
+
+- DiagnosticReport category codings are represented as separate open slices on `category.coding`: `loinc-lab` with LOINC `26436-6` and `diagnostic-service-sections` with HL7 v2 `LAB`; additional codings remain permitted.
+- Codeable result codings introduce `qualitativ` and `semiquantitativ` slices with required bindings to their result ValueSets.
+
+## 2026.0.3
+
+Technical correction release without substantive IG narrative changes. Resource versions, `meta.profile`, `supportedProfile` and example profile references were aligned to 2026.0.3. Package and build configuration references were updated accordingly. See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3).
+
+## 2026.0.2
+
+Technical corrections changed the dependency to `hl7.fhir.uv.extensions.r4`, pinned the FHIR identifier-type ValueSet to 4.0.1 and corrected a LOINC display in the laboratory-result example. See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.1...2026.0.2).
+
+## 2026.0.1
+
+Added the extensions dependency needed by Simplifier to generate the Laboratory Test snapshot. See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1).
+
+## 2026.0.0
+
+Changes since 2025.0.2 included:
+
+- CC BY 4.0 licence metadata on profiles and ValueSets.
+- Additional Must Support flags on complex datatype children and coding elements.
+- Improved German/English documentation and an IPS dependency update to 2.0.0.
+- A new modifier extension and ValueSet for interpretation-affecting properties such as haemolysis, lipaemia and icterus.
+- Updated quantity-translation handling and a clarified clinical reference time on Observation.
+- Extended context for the source-of-clinical-reference-date extension to DiagnosticReport.
+- Improved timestamp documentation and refreshed examples.
+
+See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2025.0.2...2026.0.0).
