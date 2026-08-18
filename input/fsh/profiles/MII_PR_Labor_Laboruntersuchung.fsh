@@ -171,17 +171,10 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueQuantity.code 1.. MS
 * valueQuantity.code ^comment = "The mandatory system is UCUM."
 * valueCodeableConcept MS
+* valueCodeableConcept from MII_VS_Labor_Laborergebnis_Codiert (extensible)
 * valueCodeableConcept.coding 1.. MS
 * valueCodeableConcept.coding.system 1.. MS
 * valueCodeableConcept.coding.code 1.. MS
-* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains
-    qualitativ 0..1 MS and
-    semiquantitativ 0..1 MS
-* valueCodeableConcept.coding[qualitativ] from MII_VS_Labor_Laborergebnis_Qualitativ (required)
-* valueCodeableConcept.coding[semiquantitativ] from MII_VS_Labor_Laborergbenis_Semiquantitativ (required)
 * valueRange MS
 * valueRatio MS
 * dataAbsentReason MS
