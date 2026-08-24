@@ -13,7 +13,9 @@
 Changes since 2026.0.3:
 
 * DiagnosticReport category codings are represented as separate open slices on `category.coding`: `loinc-lab` with LOINC `26436-6` and `diagnostic-service-sections` with HL7 v2 `LAB`; additional codings remain permitted.
-* Codeable result codings introduce `qualitativ` and `semiquantitativ` slices with required bindings to their result ValueSets.
+* `Observation.valueCodeableConcept` is bound (extensible) to the new ValueSet [Coded laboratory results](ValueSet-mii-vs-labor-laborergebnis-codiert.md), which unions the qualitative and semiquantitative result ValueSets. The previously planned `qualitativ`/`semiquantitativ` slices were dropped because the two ValueSets overlap and could not be discriminated.
+* `Observation.code.coding` gains an open `loinc` slice with an extensible binding to the IPS laboratory results ValueSet.
+* `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
 
 ## 2026.0.3
 

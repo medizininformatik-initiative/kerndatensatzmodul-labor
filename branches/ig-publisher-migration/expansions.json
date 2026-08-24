@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "44525af4-b60b-44dc-ac99-3ed46ab9072b",
+  "id" : "fa758967-027f-479c-83c0-fcd1a30a0853",
   "meta" : {
-    "lastUpdated" : "2026-08-18T07:40:29.345+00:00"
+    "lastUpdated" : "2026-08-24T13:49:26.907+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -10,7 +10,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -22,7 +40,7 @@
       "title" : "MII VS Labor Identifier Type Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-08-18T07:40:29+00:00",
+      "date" : "2026-08-24T13:49:26+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -31,11 +49,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a4239d34-d2cc-4b91-91c0-eb0df8075087",
-        "timestamp" : "2026-08-18T07:42:25+00:00",
+        "identifier" : "urn:uuid:1ff3475b-9afe-442e-b79a-4c4dfa09ecaa",
+        "timestamp" : "2026-08-24T13:51:45+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "en"
         },
@@ -54,6 +76,10 @@
         {
           "name" : "used-valueset",
           "valueUri" : "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
         },
         {
           "name" : "used-codesystem",
@@ -170,7 +196,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -182,7 +226,7 @@
       "title" : "MII VS Labor Identifier Type Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-08-18T07:40:29+00:00",
+      "date" : "2026-08-24T13:49:26+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -191,11 +235,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a4239d34-d2cc-4b91-91c0-eb0df8075087",
-        "timestamp" : "2026-08-18T07:42:25+00:00",
+        "identifier" : "urn:uuid:1ff3475b-9afe-442e-b79a-4c4dfa09ecaa",
+        "timestamp" : "2026-08-24T13:51:45+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "en"
         },
@@ -214,6 +262,10 @@
         {
           "name" : "used-valueset",
           "valueUri" : "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
         },
         {
           "name" : "used-codesystem",
@@ -330,7 +382,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -342,7 +412,7 @@
       "title" : "MII VS Labor Identifier Type Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-08-18T07:40:29+00:00",
+      "date" : "2026-08-24T13:49:26+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -351,11 +421,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e04e3068-d289-4620-a7b1-290d618dc74c",
-        "timestamp" : "2026-08-18T07:42:26+00:00",
+        "identifier" : "urn:uuid:d8512a4f-56cc-47b7-a468-f7c374210b3e",
+        "timestamp" : "2026-08-24T13:51:47+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "de"
         },
@@ -374,6 +448,10 @@
         {
           "name" : "used-valueset",
           "valueUri" : "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
         },
         {
           "name" : "used-codesystem",
@@ -477,7 +555,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -498,11 +594,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b24117ef-19e6-455f-8083-b001bd421a8f",
-        "timestamp" : "2026-08-18T07:42:26+00:00",
+        "identifier" : "urn:uuid:e09fec9e-73d6-46d3-95a1-0e1397d5cc10",
+        "timestamp" : "2026-08-24T13:51:48+00:00",
         "total" : 20,
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "en"
         },
@@ -529,6 +629,10 @@
         {
           "name" : "used-codesystem",
           "valueUri" : "http://loinc.org|2.82"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0074|3.0.0"
         },
         {
           "name" : "used-codesystem",
@@ -642,7 +746,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -663,11 +785,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b24117ef-19e6-455f-8083-b001bd421a8f",
-        "timestamp" : "2026-08-18T07:42:26+00:00",
+        "identifier" : "urn:uuid:e09fec9e-73d6-46d3-95a1-0e1397d5cc10",
+        "timestamp" : "2026-08-24T13:51:48+00:00",
         "total" : 20,
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "en"
         },
@@ -694,6 +820,10 @@
         {
           "name" : "used-codesystem",
           "valueUri" : "http://loinc.org|2.82"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0074|3.0.0"
         },
         {
           "name" : "used-codesystem",
@@ -807,7 +937,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -828,11 +976,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5af6bd96-882a-440e-8847-3eb574e6f7f2",
-        "timestamp" : "2026-08-18T07:42:27+00:00",
+        "identifier" : "urn:uuid:cdb5a8bf-cc0b-485d-8259-2bdf487e169b",
+        "timestamp" : "2026-08-24T13:51:48+00:00",
         "total" : 20,
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "de"
         },
@@ -859,6 +1011,10 @@
         {
           "name" : "used-codesystem",
           "valueUri" : "http://loinc.org|2.82"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0074|3.0.0"
         },
         {
           "name" : "used-codesystem",
@@ -953,7 +1109,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -974,10 +1148,14 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c860b91b-73c3-4d3c-ac21-e4877a214d81",
-        "timestamp" : "2026-08-18T07:42:27+00:00",
+        "identifier" : "urn:uuid:51aad75c-f43f-4b47-87b6-6b1efdcba2a7",
+        "timestamp" : "2026-08-24T13:51:48+00:00",
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "en"
         },
@@ -6089,7 +6267,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -6110,10 +6306,14 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c860b91b-73c3-4d3c-ac21-e4877a214d81",
-        "timestamp" : "2026-08-18T07:42:27+00:00",
+        "identifier" : "urn:uuid:51aad75c-f43f-4b47-87b6-6b1efdcba2a7",
+        "timestamp" : "2026-08-24T13:51:48+00:00",
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "en"
         },
@@ -11225,7 +11425,25 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -11246,10 +11464,14 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc0804bd-8679-4e6f-91b5-6a267a85b054",
-        "timestamp" : "2026-08-18T07:42:27+00:00",
+        "identifier" : "urn:uuid:2a0ef603-b4a3-40be-9b13-2c0b42afcf68",
+        "timestamp" : "2026-08-24T13:51:49+00:00",
         "offset" : 0,
         "parameter" : [{
+          "name" : "default-valueset-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
+        },
+        {
           "name" : "displayLanguage",
           "valueCode" : "de"
         },

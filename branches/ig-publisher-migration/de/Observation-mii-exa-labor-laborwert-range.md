@@ -65,6 +65,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
   "category" : [{
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.82",
       "code" : "26436-6",
       "display" : "Laboruntersuchungen"
     },
@@ -77,6 +78,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.82",
       "code" : "5787-7",
       "display" : "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrößerung"
     }],

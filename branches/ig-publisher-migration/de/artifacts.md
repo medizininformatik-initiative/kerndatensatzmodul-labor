@@ -54,6 +54,7 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT  ](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md) | Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Laboruntersuchung oder Probe. |
 | [ MII VS Labor Laborbereich  ](ValueSet-mii-vs-labor-laborbereich.md) | Laboruntersuchungen werden in diagnostische Fachbereiche (untersuchende Fachbereiche) gruppiert. |
 | [ MII VS Labor Laborergbenis Semiquantitativ  ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md) | Kodierung für semi-quantitative Laborergebnisse |
+| [ MII VS Labor Laborergebnis Codiert  ](ValueSet-mii-vs-labor-laborergebnis-codiert.md) | Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse |
 | [ MII VS Labor Laborergebnis Qualitativ  ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md) | Kodierung für qualitative Laborergebnisse |
 | [ MII VS Labor Order Codes  ](ValueSet-mii-vs-labor-order-codes.md) | Kodierung der Beauftragungen von Laboruntersuchungen |
 | [ MII VS Labor Quelle klinisches Bezugsdatum  ](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md) | Kodierung der Quelle des klinischen Bezugsdatums |
@@ -71,4 +72,12 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ mii-exa-labor-laborwert-range  ](Observation-mii-exa-labor-laborwert-range.md) |  |
 | [ mii-exa-labor-laborwert-ratio  ](Observation-mii-exa-labor-laborwert-ratio.md) |  |
 | [ mii-exa-labor-patient  ](Patient-111.md) | Minimal reference patient for the laboratory examples. |
+
+### Sonstige 
+
+Dies sind Ressourcen, die in diesem Implementierungsleitfaden verwendet werden, die in keine der anderen Kategorien passen.
+
+| | |
+| :--- | :--- |
+| [ Expansion Parameters Manifest  ](Parameters-mii-param-labor-manifest.md) | Pinned code system versions every ValueSet in this IG is expanded against. |
 

@@ -68,6 +68,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "category" : [{
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.82",
       "code" : "26436-6",
       "display" : "Laboruntersuchungen"
     },
@@ -79,6 +80,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.82",
       "code" : "11502-2",
       "display" : "Laborbericht"
     }]

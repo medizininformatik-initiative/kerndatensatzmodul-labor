@@ -45,6 +45,7 @@ The following module-specific ValueSets are published without an embedded expans
 * [Source of clinical reference date](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md)
 * [Order codes](ValueSet-mii-vs-labor-order-codes.md)
 * [Qualitative laboratory results](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md)
+* [Coded laboratory results](ValueSet-mii-vs-labor-laborergebnis-codiert.md)
 * [Interpretation-affecting properties](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md)
 * [Identifier types](ValueSet-mii-vs-labor-identifier-type-codes.md)
 

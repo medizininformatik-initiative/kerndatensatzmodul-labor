@@ -250,7 +250,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>DiagnosticReport category codings are represented as separate open slices on <code class="language-plaintext highlighter-rouge">category.coding</code>: <code class="language-plaintext highlighter-rouge">loinc-lab</code> with LOINC <code class="language-plaintext highlighter-rouge">26436-6</code> and <code class="language-plaintext highlighter-rouge">diagnostic-service-sections</code> with HL7 v2 <code class="language-plaintext highlighter-rouge">LAB</code>; additional codings remain permitted.</li>
-  <li>Codeable result codings introduce <code class="language-plaintext highlighter-rouge">qualitativ</code> and <code class="language-plaintext highlighter-rouge">semiquantitativ</code> slices with required bindings to their result ValueSets.</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> is bound (extensible) to the new ValueSet <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">Coded laboratory results</a>, which unions the qualitative and semiquantitative result ValueSets. The previously planned <code class="language-plaintext highlighter-rouge">qualitativ</code>/<code class="language-plaintext highlighter-rouge">semiquantitativ</code> slices were dropped because the two ValueSets overlap and could not be discriminated.</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.code.coding</code> gains an open <code class="language-plaintext highlighter-rouge">loinc</code> slice with an extensible binding to the IPS laboratory results ValueSet.</li>
+  <li><code class="language-plaintext highlighter-rouge">Coding.version</code> is flagged Must Support on <code class="language-plaintext highlighter-rouge">Observation.code</code>, <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> and <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code>.</li>
 </ul>
 
 <h2 id="202603">2026.0.3</h2>
@@ -306,7 +308,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Aug 18, 2026 07:40+0000">2026-08-18</span>
+          Generated <span title="Mon, Aug 24, 2026 13:49+0000">2026-08-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- MII branding override for the fhir2.base.template footer fragment.

@@ -24,13 +24,149 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
 {
   "resourceType" : "CapabilityStatement",
   "id" : "mii-cps-labor-capabilitystatement",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecapabilitystatement",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecapabilitystatement"]
+  },
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://hl7.org/fhir/spdx-license",
         "code" : "CC-BY-4.0",
         "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+    "valueMarkdown" : "Use this CapabilityStatement to determine the minimum RESTful server capabilities required for a system that implements the corresponding module of the Medical Informatics Initiative core dataset. It lists the FHIR resource types and MII profiles that SHALL be supported, together with required interactions, supported formats, and search parameters for read and search access. Systems claiming conformance to the module are expected to implement the listed capabilities according to the stated conformance expectations."
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+    "valueDate" : "2026-08-24"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate" : "2026-08-24"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2027"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
       }]
     }
   }],
@@ -95,7 +231,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_id",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
         "type" : "token"
       },
       {
@@ -104,7 +240,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_lastUpdated",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
         "type" : "date"
       },
       {
@@ -113,7 +249,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_profile",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-profile|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-profile",
         "type" : "uri"
       },
       {
@@ -122,7 +258,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "based-on",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-based-on|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-based-on",
         "type" : "reference"
       },
       {
@@ -131,7 +267,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "category",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-category|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-category",
         "type" : "token"
       },
       {
@@ -140,7 +276,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "code",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
         "type" : "token"
       },
       {
@@ -149,7 +285,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "code-value-concept",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
         "type" : "composite"
       },
       {
@@ -158,7 +294,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "code-value-date",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-code-value-date|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-code-value-date",
         "type" : "composite"
       },
       {
@@ -167,7 +303,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "code-value-quantity",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity",
         "type" : "composite"
       },
       {
@@ -176,7 +312,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "data-absent-reason",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason",
         "type" : "token"
       },
       {
@@ -185,7 +321,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "date",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
         "type" : "date"
       },
       {
@@ -194,7 +330,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "device",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-device|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-device",
         "type" : "reference"
       },
       {
@@ -203,7 +339,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "encounter",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter",
         "type" : "reference"
       },
       {
@@ -212,7 +348,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "identifier",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-identifier|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-identifier",
         "type" : "token"
       },
       {
@@ -230,7 +366,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "method",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-method|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-method",
         "type" : "token"
       },
       {
@@ -239,7 +375,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "patient",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
         "type" : "reference"
       },
       {
@@ -248,7 +384,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "specimen",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-specimen|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-specimen",
         "type" : "reference"
       },
       {
@@ -257,7 +393,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "status",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-status|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-status",
         "type" : "token"
       },
       {
@@ -266,7 +402,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "subject",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-subject|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-subject",
         "type" : "reference"
       },
       {
@@ -275,7 +411,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "value-concept",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-value-concept|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
         "type" : "token"
       },
       {
@@ -284,7 +420,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "value-quantity",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-value-quantity|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
         "type" : "quantity"
       }]
     },
@@ -321,7 +457,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_id",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
         "type" : "token"
       },
       {
@@ -330,7 +466,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_lastUpdated",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
         "type" : "date"
       },
       {
@@ -339,7 +475,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_profile",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-profile|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-profile",
         "type" : "uri"
       },
       {
@@ -348,7 +484,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "status",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
         "type" : "token"
       },
       {
@@ -357,7 +493,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "category",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
         "type" : "token"
       },
       {
@@ -366,7 +502,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "code",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
         "type" : "token"
       },
       {
@@ -375,7 +511,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "subject",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject",
         "type" : "reference"
       },
       {
@@ -384,7 +520,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "encounter",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter",
         "type" : "reference"
       },
       {
@@ -393,7 +529,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "date",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
         "type" : "date"
       },
       {
@@ -402,7 +538,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "issued",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued",
         "type" : "date"
       },
       {
@@ -411,7 +547,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "performer",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer",
         "type" : "reference"
       },
       {
@@ -420,7 +556,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "specimen",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-specimen|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-specimen",
         "type" : "reference"
       },
       {
@@ -429,7 +565,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "result",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result",
         "type" : "reference"
       },
       {
@@ -438,7 +574,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "conclusion",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion",
         "type" : "token"
       }]
     },
@@ -475,7 +611,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_id",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
         "type" : "token"
       },
       {
@@ -484,7 +620,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_lastUpdated",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated",
         "type" : "date"
       },
       {
@@ -493,7 +629,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "_profile",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-profile|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-profile",
         "type" : "uri"
       },
       {
@@ -502,7 +638,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "code",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
         "type" : "token"
       },
       {
@@ -511,7 +647,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "subject",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-subject|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-subject",
         "type" : "reference"
       },
       {
@@ -520,7 +656,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "authored",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-authored|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-authored",
         "type" : "date"
       },
       {
@@ -529,7 +665,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "category",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-category|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-category",
         "type" : "token"
       },
       {
@@ -538,7 +674,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "status",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-status|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-status",
         "type" : "token"
       },
       {
@@ -547,7 +683,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "intent",
-        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-intent|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/ServiceRequest-intent",
         "type" : "token"
       },
       {
@@ -556,7 +692,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "encounter",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter|4.0.1",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter",
         "type" : "reference"
       }]
     }]

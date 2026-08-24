@@ -10,6 +10,18 @@
     "http://loinc.org"]
   },
   {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert",
+    "version" : "2027.0.0",
+    "status" : "active",
+    "name" : "MII_VS_Labor_Laborergebnis_Codiert",
+    "title" : "MII VS Labor Laborergebnis Codiert",
+    "description" : "Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-labor-laboruntersuchung.html" : "MII PR Labor Laboruntersuchung"
+  },
+  {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ",
     "version" : "2027.0.0",
     "status" : "active",
@@ -19,7 +31,7 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-labor-laboruntersuchung.html" : "MII PR Labor Laboruntersuchung"
+    "ValueSet-mii-vs-labor-laborergebnis-codiert.html" : "MII VS Labor Laborergebnis Codiert"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ",
@@ -31,7 +43,7 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-labor-laboruntersuchung.html" : "MII PR Labor Laboruntersuchung"
+    "ValueSet-mii-vs-labor-laborergebnis-codiert.html" : "MII VS Labor Laborergebnis Codiert"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum",

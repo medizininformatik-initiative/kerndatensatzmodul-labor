@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0 |
-| Active as of 2026-08-18 | *Computable Name*:MII_PR_Labor_Laboruntersuchung |
+| Active as of 2026-08-24 | *Computable Name*:MII_PR_Labor_Laboruntersuchung |
 
  
 Result of a laboratory test 
@@ -37,13 +37,149 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
 {
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-labor-laboruntersuchung",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"]
+  },
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://hl7.org/fhir/spdx-license",
         "code" : "CC-BY-4.0",
         "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+    "valueMarkdown" : "Use this profile as the technical FHIR representation of the corresponding Medical Informatics Initiative logical model. The profile constrains a base FHIR resource for the MII module context by specifying how elements are used, which elements are required or not used, which extensions and terminology bindings apply, and how the resource maps to the module-specific content model. Implementers should produce and consume resource instances that conform to this profile when exchanging data for the corresponding MII module."
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+    "valueDate" : "2026-08-24"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate" : "2026-08-24"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2027"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
       }]
     }
   }],
@@ -76,7 +212,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     }]
   },
   "status" : "active",
-  "date" : "2026-08-18T07:40:29+00:00",
+  "experimental" : false,
+  "date" : "2026-08-24T13:49:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -147,7 +284,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -157,15 +294,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
         "key" : "mii-lab-2",
         "severity" : "error",
         "human" : "Falls kein Laborwert verfügbar ist, muss eine dataAbsentReason angegeben werden",
-        "expression" : "hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0"
-      },
-      {
-        "key" : "mii-lab-3",
-        "severity" : "error",
-        "human" : "Every coding of a coded laboratory result contains both system and code.",
-        "expression" : "value.ofType(CodeableConcept).coding.all(system.exists() and code.exists())",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0"
+        "expression" : "hasMember.exists() or value.exists() or dataAbsentReason.exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
       }]
     },
     {
@@ -259,7 +389,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft|2027.0.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"]
       }],
       "mustSupport" : true
     },
@@ -392,7 +522,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes|2027.0.0"
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes"
       }
     },
     {
@@ -503,7 +633,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
       }],
       "mustSupport" : true
     },
@@ -725,22 +855,29 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "preferred",
-        "description" : "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }",
-        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1"
-      }
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding.system",
       "path" : "Observation.code.coding.system",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
       "mustSupport" : true
     },
     {
@@ -753,6 +890,22 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "id" : "Observation.code.coding.display",
       "path" : "Observation.code.coding.display",
       "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 0,
+      "max" : "*",
+      "patternCoding" : {
+        "system" : "http://loinc.org"
+      },
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }",
+        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips"
+      }
     },
     {
       "id" : "Observation.subject",
@@ -947,7 +1100,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
         "severity" : "error",
         "human" : "Datetime must be at least to day",
         "expression" : "($this as dateTime).hasValue() implies ($this as dateTime).toString().length() >= 8",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0"
+        "source" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
       }],
       "mustSupport" : true
     },
@@ -1021,7 +1174,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum|2027.0.0"]
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"]
       }],
       "mustSupport" : true
     },
@@ -1178,7 +1331,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.3.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
       }]
     },
     {
@@ -1211,7 +1364,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.3.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
       }],
       "mustSupport" : true
     },
@@ -1249,63 +1402,33 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "type" : [{
         "code" : "CodeableConcept"
       }],
-      "mustSupport" : true
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert"
+      }
     },
     {
       "id" : "Observation.value[x]:valueCodeableConcept.coding",
       "path" : "Observation.value[x].coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Observation.value[x]:valueCodeableConcept.coding:qualitativ",
-      "path" : "Observation.value[x].coding",
-      "sliceName" : "qualitativ",
-      "min" : 0,
-      "max" : "1",
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0"
-      }
-    },
-    {
-      "id" : "Observation.value[x]:valueCodeableConcept.coding:qualitativ.system",
+      "id" : "Observation.value[x]:valueCodeableConcept.coding.system",
       "path" : "Observation.value[x].coding.system",
+      "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Observation.value[x]:valueCodeableConcept.coding:qualitativ.code",
+      "id" : "Observation.value[x]:valueCodeableConcept.coding.version",
+      "path" : "Observation.value[x].coding.version",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]:valueCodeableConcept.coding.code",
       "path" : "Observation.value[x].coding.code",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueCodeableConcept.coding:semiquantitativ",
-      "path" : "Observation.value[x].coding",
-      "sliceName" : "semiquantitativ",
-      "min" : 0,
-      "max" : "1",
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"
-      }
-    },
-    {
-      "id" : "Observation.value[x]:valueCodeableConcept.coding:semiquantitativ.system",
-      "path" : "Observation.value[x].coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueCodeableConcept.coding:semiquantitativ.code",
-      "path" : "Observation.value[x].coding.code",
+      "min" : 1,
       "mustSupport" : true
     },
     {

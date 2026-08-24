@@ -21,7 +21,9 @@ Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änd
 * `diagnostic-service-sections` (1..1 MS) mit `$v2-0074#LAB`
 * Weitere Codings sind zulässig.
  
-* valueCodeableConcept.coding: Neue Slices `qualitativ` und `semiquantitativ` mit Required-Bindings an die jeweiligen Ergebnis-ValueSets.
+* valueCodeableConcept: Extensible-Binding an das neue ValueSet [Laborergebnis codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.md), welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices `qualitativ` und `semiquantitativ` entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.
+* code.coding: Neuer offener Slice `loinc` mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse.
+* `Coding.version` ist auf `Observation.code`, `Observation.valueCodeableConcept` und `ServiceRequest.code` als Must Support markiert.
 
 ### Version: 2026.0.3
 
