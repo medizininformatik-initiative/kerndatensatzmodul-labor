@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
-  "version": "2026.0.3",
+  "version": "2027.0.0",
   "name": "MII_PR_Labor_Laborbefund",
   "title": "MII PR Labor Laborbefund",
   "_title": {
@@ -486,15 +486,6 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "short": "Kategorie",
         "_short": {
           "extension": [
@@ -561,48 +552,41 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category:lab-category",
-        "path": "DiagnosticReport.category",
-        "sliceName": "lab-category",
-        "short": "Labor-Kategorie",
-        "definition": "Kategorie-Slice für Laborbefunde",
+        "id": "DiagnosticReport.category.coding",
+        "path": "DiagnosticReport.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc-lab",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "loinc-lab",
         "min": 1,
         "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "26436-6",
-              "system": "http://loinc.org"
-            },
-            {
-              "code": "LAB",
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-            }
-          ]
+        "patternCoding": {
+          "code": "26436-6",
+          "system": "http://loinc.org"
         },
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category:lab-category.coding",
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
         "path": "DiagnosticReport.category.coding",
-        "min": 2,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category:lab-category.coding.system",
-        "path": "DiagnosticReport.category.coding.system",
+        "sliceName": "diagnostic-service-sections",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category:lab-category.coding.code",
-        "path": "DiagnosticReport.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category:lab-category.coding.display",
-        "path": "DiagnosticReport.category.coding.display",
+        "max": "1",
+        "patternCoding": {
+          "code": "LAB",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        },
         "mustSupport": true
       },
       {

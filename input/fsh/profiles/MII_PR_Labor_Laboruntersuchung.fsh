@@ -58,6 +58,14 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * identifier[analyseBefundCode].system 1.. MS
 * identifier[analyseBefundCode].value 1.. MS
 * identifier[analyseBefundCode].assigner 1.. MS
+* basedOn only Reference(ServiceRequest)
+* basedOn MS
+  * ^short = "Basiert auf"
+  * ^definition = "Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert."
+* insert Translation(basedOn ^short, de-DE, Basiert auf)
+* insert Translation(basedOn ^short, en-US, Based on)
+* insert Translation(basedOn ^definition, de-DE, [[Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert.]])
+* insert Translation(basedOn ^definition, en-US, [[Reference to the laboratory order on which this laboratory test is based.]])
 * status MS
   * ^short = "Status"
   * ^definition = "abgeschlossen"
@@ -67,7 +75,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(status ^definition, en-US, completed)
 * category 1.. MS
   * ^short = "Kategorie"
-  * ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung"
+  * ^definition = "Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe"
 * insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, [[Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe]])
@@ -163,6 +171,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueQuantity.code 1.. MS
 * valueQuantity.code ^comment = "The mandatory system is UCUM."
 * valueCodeableConcept MS
+* valueCodeableConcept from MII_VS_Labor_Laborergebnis_Codiert (extensible)
 * valueCodeableConcept.coding 1.. MS
 * valueCodeableConcept.coding.system 1.. MS
 * valueCodeableConcept.coding.code 1.. MS
