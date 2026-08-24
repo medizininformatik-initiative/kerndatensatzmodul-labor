@@ -78,7 +78,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * category.coding contains
     loinc-lab 1..1 MS and
     diagnostic-service-sections 1..1 MS
-* category.coding[loinc-lab] = $loinc#26436-6
+* category.coding[loinc-lab] = $loinc-pattern#26436-6
 * category.coding[diagnostic-service-sections] = $v2-0074#LAB
 * code MS
   * ^short = "Code"
@@ -95,7 +95,7 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc-labReport 1..1 MS
-* code.coding[loinc-labReport] = $loinc#11502-2
+* code.coding[loinc-labReport] = $loinc-pattern#11502-2
 * subject 1.. MS
   * reference MS
   * identifier MS
