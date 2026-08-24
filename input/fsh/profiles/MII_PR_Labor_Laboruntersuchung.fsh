@@ -104,8 +104,13 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, [[LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt.]])    
 * insert Translation(code ^definition, en-US, [[A LOINC code identifying the laboratory test that was performed.]])
-* code from $ResultsLabObservationUvIps (preferred)
-* code ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains loinc 0..* MS
+* code.coding[loinc].system = $loinc
+* code.coding[loinc] from $ResultsLabObservationUvIps (extensible)
+* code.coding[loinc] ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
   * reference MS
   * identifier MS
