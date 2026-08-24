@@ -91,7 +91,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * category.coding contains
     loinc-observation 1..1 MS and
     observation-category 1..1 MS
-* category.coding[loinc-observation] = $loinc#26436-6
+* category.coding[loinc-observation] = $loinc-pattern#26436-6
 * category.coding[observation-category] = $observation-category#laboratory
 * code MS
   * ^short = "Code"

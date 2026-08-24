@@ -1,5 +1,9 @@
+// Versionsgebundene Aliase: für ValueSet-Kompositionen und Instanzen
 Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701
-Alias: $loinc = http://loinc.org
+Alias: $loinc = http://loinc.org|2.82
+// Versionslose Aliase: ausschließlich für Patterns/fixed values in Profilen
+Alias: $sct-pattern = http://snomed.info/sct
+Alias: $loinc-pattern = http://loinc.org
 Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
