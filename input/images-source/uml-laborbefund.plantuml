@@ -1,0 +1,98 @@
+@startuml UML_Laborbefund
+left to right direction
+hide empty methods
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 45
+skinparam ranksep 55
+skinparam shadowing false
+
+!define LABOR #B3E5FC
+!define EXTERN #FCE4EC
+!define FALL #D5F5E3
+
+class "Patient:in" as Patient EXTERN
+class "Gesundheitseinrichtung" as Organisation EXTERN
+class "Einrichtungskontakt" as Kontakt FALL
+
+class Laborbefund LABOR {
+  + Identifikation: Identifier [1..*]
+  + Status: code [1]
+  + KlinischerBezugszeitpunkt: dateTime [1]
+  + Dokumentationsdatum: instant [1]
+}
+
+class Laboruntersuchung LABOR {
+  + Identifikation: Identifier [1..*]
+  + Status: code [1]
+  + KlinischerBezugszeitpunkt: dateTime [1]
+  + Dokumentationsdatum: instant [0..1]
+  + Ergebnis: value[x] [0..1]
+  + Interpretation: CodeableConcept [0..*]
+  + Kommentar: Annotation [0..*]
+  + Untersuchungsmethode: CodeableConcept [0..1]
+}
+
+class Probenmaterial LABOR {
+  + Identifikation: Identifier [0..*]
+  + Ent-/Abnahmezeitpunkt: dateTime | Period [0..1]
+  + Laboreingangszeitpunkt: dateTime [0..1]
+  + Probenart: CodeableConcept [0..1]
+  + Körperstelle: CodeableConcept [0..1]
+  + Kommentar: Annotation [0..*]
+}
+
+class Laboranforderung LABOR {
+  + Identifikation: Identifier [1..*]
+  + Status: code [1]
+  + Anforderungsdatum: dateTime [1]
+}
+
+class Bereich LABOR {
+  + Kode: code [1]
+  + Bezeichnung: string [0..1]
+}
+
+class Gruppe LABOR {
+  + Kode: code [1]
+  + Bezeichnung: string [0..1]
+}
+
+class Laborparameter LABOR {
+  + Kode: CodeableConcept [1]
+  + Bezeichnung: string [0..1]
+}
+
+class Referenzbereich LABOR {
+  + Typ: CodeableConcept [0..1]
+  + Obergrenze: SimpleQuantity [0..1]
+  + Untergrenze: SimpleQuantity [0..1]
+  + Text: string [0..1]
+}
+
+Patient "1" -right- "0..*" Laborbefund : subject
+Patient "1" -down- "0..*" Kontakt : subject
+Kontakt "0..1" -right- "0..*" Laborbefund : encounter
+Organisation "0..*" -right- "0..*" Laborbefund : performer
+
+Laborbefund "0..*" -down- "1..*" Laboranforderung : basedOn
+Laborbefund "0..*" -right- "1..*" Laboruntersuchung : result
+Laborbefund "0..*" -up- "0..*" Probenmaterial : specimen
+
+Laboranforderung "0..*" -up- "0..*" Probenmaterial : specimen
+Laboranforderung "0..*" -right- "1" Laborparameter : code
+
+Laboruntersuchung "0..*" -up- "0..1" Probenmaterial : specimen
+Laboruntersuchung "0..*" -down- "0..*" Bereich : category
+Bereich "1" o-right- "0..*" Gruppe : gliedert sich in
+Laboruntersuchung "0..*" -down- "0..*" Gruppe : category
+Laboruntersuchung "0..*" -right- "1" Laborparameter : code
+Laboruntersuchung "1" *-down- "0..*" Referenzbereich : referenceRange
+
+legend left
+  |= Farbe |= Herkunft |
+  | <back:LABOR>   </back> | Modul Laborbefund |
+  | <back:EXTERN>   </back> | Modul Person / Strukturdaten |
+  | <back:FALL>   </back> | Modul Falldaten |
+endlegend
+@enduml
