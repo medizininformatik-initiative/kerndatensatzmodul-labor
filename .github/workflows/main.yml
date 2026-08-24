@@ -38,7 +38,7 @@ jobs:
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.8.15
+        uses: FirelyTeam/firely-terminal-pipeline@v0.8.23
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
@@ -82,7 +82,7 @@ jobs:
           folder: './fsh-generated/resources/'
 
       - name: Add & Commit
-        uses: EndBug/add-and-commit@v10
+        uses: EndBug/add-and-commit@v11
         with:
           committer_name: GitHub Actions Bot
           committer_email: ActionBot@github.com
