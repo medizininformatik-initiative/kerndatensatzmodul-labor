@@ -98,6 +98,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
   * ^definition = "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt."
   * coding MS
     * system 1.. MS
+    * version MS
     * code 1.. MS
     * display MS
 * insert Translation(code ^short, de-DE, Code)
@@ -174,6 +175,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueCodeableConcept from MII_VS_Labor_Laborergebnis_Codiert (extensible)
 * valueCodeableConcept.coding 1.. MS
 * valueCodeableConcept.coding.system 1.. MS
+* valueCodeableConcept.coding.version MS
 * valueCodeableConcept.coding.code 1.. MS
 * valueRange MS
 * valueRatio MS

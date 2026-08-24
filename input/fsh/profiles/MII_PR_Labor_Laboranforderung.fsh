@@ -90,6 +90,7 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * code from mii-vs-labor-order-codes (example)
   * coding MS
     * system 1.. MS
+    * version MS
     * code 1.. MS
     * display MS
 * subject 1.. MS
