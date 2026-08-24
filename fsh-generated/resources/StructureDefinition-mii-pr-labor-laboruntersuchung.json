@@ -808,17 +808,15 @@
         "sliceName": "loinc",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips",
           "description": "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
         }
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "patternUri": "http://loinc.org"
       },
       {
         "id": "Observation.subject",

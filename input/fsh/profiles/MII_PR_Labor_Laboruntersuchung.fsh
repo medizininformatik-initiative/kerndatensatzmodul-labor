@@ -108,7 +108,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc 0..* MS
-* code.coding[loinc].system = $loinc
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] from $ResultsLabObservationUvIps (extensible)
 * code.coding[loinc] ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
