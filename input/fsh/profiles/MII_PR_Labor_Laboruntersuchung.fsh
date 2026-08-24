@@ -11,6 +11,18 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-08-24)
+* insert CRMILastReviewDate(2026-08-24)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C36292)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C25294)
+* insert CRMIArtifactContributors
 * modifierExtension MS
 * modifierExtension contains MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft named interpretationsbeeinflussendeEigenschaft 0..* MS
 * modifierExtension[interpretationsbeeinflussendeEigenschaft]
@@ -21,9 +33,9 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^definition, de-DE, [[Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften.]])
 * insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^definition, en-US, [[Description of interpretation-influencing specimen property]])
 * ^status = #active
+* ^experimental = false
 * ^purpose = "Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative."
 * obeys mii-lab-2
-* obeys mii-lab-3
 * id MS
 * meta MS
 * meta.source MS
@@ -92,21 +104,27 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * category.coding contains
     loinc-observation 1..1 MS and
     observation-category 1..1 MS
-* category.coding[loinc-observation] = $loinc#26436-6
+* category.coding[loinc-observation] = $loinc-no-ver#26436-6
 * category.coding[observation-category] = $observation-category#laboratory
 * code MS
   * ^short = "Code"
   * ^definition = "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt."
   * coding MS
     * system 1.. MS
+    * version MS
     * code 1.. MS
     * display MS
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, [[LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt.]])    
 * insert Translation(code ^definition, en-US, [[A LOINC code identifying the laboratory test that was performed.]])
-* code from $ResultsLabObservationUvIps (preferred)
-* code ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains loinc 0..* MS
+* code.coding[loinc] ^patternCoding.system = $loinc-no-ver
+* code.coding[loinc] from $ResultsLabObservationUvIps (extensible)
+* code.coding[loinc] ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
   * reference MS
   * identifier MS
@@ -172,19 +190,11 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * valueQuantity.code 1.. MS
 * valueQuantity.code ^comment = "The mandatory system is UCUM."
 * valueCodeableConcept MS
+* valueCodeableConcept from MII_VS_Labor_Laborergebnis_Codiert (extensible)
 * valueCodeableConcept.coding 1.. MS
-* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains
-    qualitativ 0..1 MS and
-    semiquantitativ 0..1 MS
-* valueCodeableConcept.coding[qualitativ] from MII_VS_Labor_Laborergebnis_Qualitativ (required)
-* valueCodeableConcept.coding[semiquantitativ] from MII_VS_Labor_Laborergbenis_Semiquantitativ (required)
-* valueCodeableConcept.coding[qualitativ].system MS
-* valueCodeableConcept.coding[qualitativ].code MS
-* valueCodeableConcept.coding[semiquantitativ].system MS
-* valueCodeableConcept.coding[semiquantitativ].code MS
+* valueCodeableConcept.coding.system 1.. MS
+* valueCodeableConcept.coding.version MS
+* valueCodeableConcept.coding.code 1.. MS
 * valueRange MS
 * valueRatio MS
 * dataAbsentReason MS

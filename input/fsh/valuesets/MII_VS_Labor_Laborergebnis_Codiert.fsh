@@ -1,8 +1,9 @@
-ValueSet: MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT
-Id: mii-vs-labor-interpretation-eigenschaften-snomedct
-Title: "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT"
-Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Laboruntersuchung oder Probe."
+ValueSet: MII_VS_Labor_Laborergebnis_Codiert
+Id: mii-vs-labor-laborergebnis-codiert
+Title: "MII VS Labor Laborergebnis Codiert"
+Description: "Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert"
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
@@ -17,7 +18,7 @@ Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Eigensch
 * insert CRMIArtifactContributors
 * ^status = #active
 * ^experimental = false
-* $sct#118128002 "Specimen hemolyzed (finding)"
-* $sct#118127007 "Specimen lipemic (finding)"
-* $sct#118129005 "Specimen icteric (finding)"
-* $sct#167569004 "Urine culture - mixed growth (finding)"
+* ^date = "2026-08-18"
+//TODO: in IG erläutern
+* include codes from valueset MII_VS_Labor_Laborergebnis_Qualitativ
+* include codes from valueset MII_VS_Labor_Laborergbenis_Semiquantitativ

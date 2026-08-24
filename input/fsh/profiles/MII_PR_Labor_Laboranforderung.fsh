@@ -11,7 +11,20 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-08-24)
+* insert CRMILastReviewDate(2026-08-24)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C36292)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C25294)
+* insert CRMIArtifactContributors
 * ^status = #active
+* ^experimental = false
 * ^purpose = "Dieses Profil beschreibt eine Laboranforderung in der Medizininformatik-Initiative."
 * id MS
 * meta MS
@@ -90,6 +103,7 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * code from mii-vs-labor-order-codes (example)
   * coding MS
     * system 1.. MS
+    * version MS
     * code 1.. MS
     * display MS
 * subject 1.. MS
