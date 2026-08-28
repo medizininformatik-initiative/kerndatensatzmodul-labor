@@ -27,7 +27,11 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **Report Details**
 
-* **Code**: *Observation*
+* **Code**: [Kreatinin](Observation-mii-exa-labor-laborwert.md)
+  * **Value**: 72 µmol/l (Details: UCUM codeumol/L = 'umol/L')
+  * **Reference Range**: Normal Range: 72 - 127
+  * **Flags**: Final,Normal
+  * **Relevant Time**: 2018-11-20 12:05:00+0100
 
 
 
@@ -62,7 +66,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }
   }],
   "basedOn" : [{
-    "reference" : "ServiceRequest/111"
+    "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
   }],
   "status" : "final",
   "category" : [{
@@ -91,7 +95,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "effectiveDateTime" : "2018-11-20T12:05:00+01:00",
   "issued" : "2018-03-11T10:28:00+01:00",
   "result" : [{
-    "reference" : "Observation/test"
+    "reference" : "Observation/mii-exa-labor-laborwert"
   }]
 }
 

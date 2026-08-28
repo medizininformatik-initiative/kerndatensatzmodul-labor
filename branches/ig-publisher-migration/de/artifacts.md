@@ -65,13 +65,16 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 
 | | |
 | :--- | :--- |
+| [ mii-exa-labor-encounter  ](Encounter-555.md) | Minimal reference encounter for the laboratory examples. |
 | [ mii-exa-labor-laboranforderung  ](ServiceRequest-mii-exa-labor-laboranforderung.md) |  |
 | [ mii-exa-labor-laborbefund  ](DiagnosticReport-mii-exa-labor-laborbefund.md) |  |
 | [ mii-exa-labor-laborwert  ](Observation-mii-exa-labor-laborwert.md) |  |
 | [ mii-exa-labor-laborwert-data-absent-reason  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) |  |
 | [ mii-exa-labor-laborwert-range  ](Observation-mii-exa-labor-laborwert-range.md) |  |
 | [ mii-exa-labor-laborwert-ratio  ](Observation-mii-exa-labor-laborwert-ratio.md) |  |
+| [ mii-exa-labor-organization  ](Organization-7772.md) | Minimal reference organization (performing laboratory) for the laboratory examples. |
 | [ mii-exa-labor-patient  ](Patient-111.md) | Minimal reference patient for the laboratory examples. |
+| [ mii-exa-labor-specimen  ](Specimen-4999.md) | Minimal reference specimen for the laboratory examples. |
 
 ### Sonstige 
 

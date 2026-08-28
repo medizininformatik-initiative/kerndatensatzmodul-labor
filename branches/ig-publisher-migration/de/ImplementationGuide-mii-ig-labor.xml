@@ -137,7 +137,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-08-28T09:59:02+00:00"/>
+  <date value="2026-08-28T10:19:24+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1284,6 +1284,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/555"/>
+      </reference>
+      <name value="mii-exa-labor-encounter"/>
+      <description value="Minimal reference encounter for the laboratory examples."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
@@ -1344,6 +1355,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/7772"/>
+      </reference>
+      <name value="mii-exa-labor-organization"/>
+      <description value="Minimal reference organization (performing laboratory) for the laboratory examples."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1351,6 +1373,17 @@
       </reference>
       <name value="mii-exa-labor-patient"/>
       <description value="Minimal reference patient for the laboratory examples."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/4999"/>
+      </reference>
+      <name value="mii-exa-labor-specimen"/>
+      <description value="Minimal reference specimen for the laboratory examples."/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

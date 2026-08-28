@@ -357,7 +357,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
           "valueCode" : "SHALL"
         }],
         "name" : "interpretation",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-interpretation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
         "type" : "token"
       },
       {

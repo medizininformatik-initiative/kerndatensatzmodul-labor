@@ -24,13 +24,13 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)](Patient-111.md)
 
-**encounter**: [Encounter/555](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Encounter/555)
+**encounter**: [Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)](Encounter-555.md)
 
 **effective**: 2018-11-20 12:05:00+0100
 
 **issued**: 2018-03-11 10:28:00+0100
 
-**performer**: [Zentrallabor des IKCL](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Organization/7772)
+**performer**: [Zentrallabor des IKCL](Organization-7772.md)
 
 **value**: 2-5 /HPF
 

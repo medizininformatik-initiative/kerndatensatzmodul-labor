@@ -161,7 +161,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-28T09:59:02+00:00",
+  "date" : "2026-08-28T10:19:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1739,6 +1739,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-555.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/555"
+      },
+      "name" : "mii-exa-labor-encounter",
+      "description" : "Minimal reference encounter for the laboratory examples.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ServiceRequest"
       },
       {
@@ -1829,6 +1845,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-7772.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/7772"
+      },
+      "name" : "mii-exa-labor-organization",
+      "description" : "Minimal reference organization (performing laboratory) for the laboratory examples.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       },
       {
@@ -1840,6 +1872,22 @@
       },
       "name" : "mii-exa-labor-patient",
       "description" : "Minimal reference patient for the laboratory examples.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Specimen-4999.html"
+      }],
+      "reference" : {
+        "reference" : "Specimen/4999"
+      },
+      "name" : "mii-exa-labor-specimen",
+      "description" : "Minimal reference specimen for the laboratory examples.",
       "exampleBoolean" : true
     }],
     "page" : {

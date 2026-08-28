@@ -30,7 +30,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **authoredOn**: 2018-11-20 10:28:00+0100
 
-**specimen**: [Specimen/4999](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Specimen/4999)
+**specimen**: [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999](Specimen-4999.md)
 
 
 
