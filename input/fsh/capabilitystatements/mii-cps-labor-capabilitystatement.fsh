@@ -85,7 +85,9 @@ Usage: #definition
 //* insert SupportSearchParam(focus, http://hl7.org/fhir/SearchParameter/Observation-focus, #reference, #SHALL)
 //* insert SupportSearchParam(has-member, http://hl7.org/fhir/SearchParameter/Observation-has-member, #reference, #SHALL)
 * insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/clinical-identifier, #token, #SHALL)
-* insert SupportSearchParam(interpretation, http://hl7.org/fhir/SearchParameter/Observation-interpretation, #token, #SHALL)
+// R4 kennt keinen interpretation-SearchParameter; die MII definiert ihn im
+// Modul Meta (gepinnte Abhaengigkeit), Code und Typ sind identisch.
+* insert SupportSearchParam(interpretation, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation, #token, #SHALL)
 * insert SupportSearchParam(method, http://hl7.org/fhir/SearchParameter/Observation-method, #token, #SHALL)
 //* insert SupportSearchParam(part-of, http://hl7.org/fhir/SearchParameter/Observation-part-of, #reference, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
