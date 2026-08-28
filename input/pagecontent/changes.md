@@ -8,6 +8,7 @@ Changes since 2026.0.3:
 - `Observation.valueCodeableConcept` is bound (extensible) to the new ValueSet [Coded laboratory results](ValueSet-mii-vs-labor-laborergebnis-codiert.html), which unions the qualitative and semiquantitative result ValueSets. The previously planned `qualitativ`/`semiquantitativ` slices were dropped because the two ValueSets overlap and could not be discriminated.
 - `Observation.code.coding` gains an open `loinc` slice with an extensible binding to the IPS laboratory results ValueSet.
 - `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
+- `Observation.interpretation` is bound (extensible) to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally used scales map onto these concepts; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
 
 ## 2026.0.3
 

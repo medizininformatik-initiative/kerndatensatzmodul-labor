@@ -1768,7 +1768,42 @@
             }
           ]
         },
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation",
+          "description": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. Lokal gebräuchliche Skalen wie -- - N + ++ bzw. L N H bilden auf diese Konzepte ab. Die Bindung ist extensible: für Werte jenseits der Telefongrenze können zusätzlich die abnormal-Codes HH, LL und AA verwendet werden.",
+          "_description": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de-DE"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. Lokal gebräuchliche Skalen wie -- - N + ++ bzw. L N H bilden auf diese Konzepte ab. Die Bindung ist extensible: für Werte jenseits der Telefongrenze können zusätzlich die abnormal-Codes HH, LL und AA verwendet werden."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en-US"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Restricted selection from HL7 v3 ObservationInterpretation. Locally used scales such as -- - N + ++ or L N H map onto these concepts. The binding is extensible: for values beyond the critical notification limit the abnormal codes HH, LL and AA may additionally be used."
+                  }
+                ]
+              }
+            ]
+          }
+        }
       },
       {
         "id": "Observation.note",
