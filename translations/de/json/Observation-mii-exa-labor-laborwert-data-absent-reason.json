@@ -1,0 +1,55 @@
+{
+  "id" : "Observation-mii-exa-labor-laborwert-data-absent-reason",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Laboruntersuchungen",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Laboratory",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Creatinin [Mol/Volumen] in Blut",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Kreatinin",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Specimen collection date (observable entity)",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "Zentrallabor des IKCL",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Normal Range",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,487 @@
+{
+  "id" : "ImplementationGuide-mii-ig-labor",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Package",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "Taskforce Core Data Set",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "Interoperability Working Group",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "National Steering Committee",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.name",
+      "context" : "ImplementationGuide.name",
+      "source" : "MII_IG_Labor",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.title",
+      "context" : "ImplementationGuide.title",
+      "source" : "MII IG Laborbefund",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.publisher",
+      "context" : "ImplementationGuide.publisher",
+      "source" : "Medizininformatik Initiative",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "Medizininformatik Initiative",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.description",
+      "context" : "ImplementationGuide.description",
+      "source" : "Medizininformatik Initiative - Modul Labor",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII CPS Labor CapabilityStatement",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Labor der Medizininformatik Initiative zu implementieren.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII EX Labor Interpretationsbeeinflussende Eigenschaft",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Interpretationsbeeinflussenden Eigenschaft einer Laboruntersuchung oder Probe.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII EX Labor Quelle Klinisches Bezugsdatum",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Quelle des klinischen Bezugsdatums",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII LM Labor",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Logische Repräsentation des Basismoduls Labor",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII PR Labor Laboranforderung",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Dieses Profil beschreibt eine Laboranforderung in der Medizininformatik-Initiative.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII PR Labor Laborbefund",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Dieses Profil beschreibt einen Laborbefund in der Medizininformatik-Initiative.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII PR Labor Laboruntersuchung",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Dieses Profil beschreibt eine Laborergebnis in der Medizininformatik-Initiative.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Identifier Type Codes",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu verwenden ist.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Laboruntersuchung oder Probe.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Laborbereich",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Laboruntersuchungen werden in diagnostische Fachbereiche (untersuchende Fachbereiche) gruppiert.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Laborergbenis Semiquantitativ",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Kodierung für semi-quantitative Laborergebnisse",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Laborergebnis Codiert",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Laborergebnis Qualitativ",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Kodierung für qualitative Laborergebnisse",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Order Codes",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Kodierung der Beauftragungen von Laboruntersuchungen",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Quelle klinisches Bezugsdatum",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Kodierung der Quelle des klinischen Bezugsdatums",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-laboranforderung",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-laborbefund",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-laborwert",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-laborwert-data-absent-reason",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-laborwert-range",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-laborwert-ratio",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-patient",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Minimal reference patient for the laboratory examples.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-param-labor-manifest",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Table of Contents",
+      "target" : "Inhaltsverzeichnis"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Home",
+      "target" : "Startseite"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Guidance",
+      "target" : "Anleitung"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Guidance for Researchers",
+      "target" : "Hinweise für Forschende"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Guidance for Implementers",
+      "target" : "Hinweise für Implementierende"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Datasets and Descriptions",
+      "target" : "Datensätze und Beschreibungen"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "UML Diagram",
+      "target" : "UML-Diagramm"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Project Context",
+      "target" : "Projektkontext"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "References",
+      "target" : "Referenzen"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Laboratory Timestamps",
+      "target" : "Zeitpunkte im Labor"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Conformance",
+      "target" : "Konformität"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "General Requirements",
+      "target" : "Allgemeine Anforderungen"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Must Support",
+      "target" : "Must Support"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Handling Missing Data",
+      "target" : "Umgang mit fehlenden Daten"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Security and Privacy",
+      "target" : "Sicherheit und Datenschutz"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Profiles and Extensions",
+      "target" : "Profile und Extensions"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Laboratory Report",
+      "target" : "Laborbefund"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Laboratory Test",
+      "target" : "Laboruntersuchung"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Laboratory Request",
+      "target" : "Laboranforderung"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Specimen",
+      "target" : "Probenmaterial"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Extensions",
+      "target" : "Extensions"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Search Parameters and Operations",
+      "target" : "Suchparameter und Operationen"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Terminology",
+      "target" : "Terminologie"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Capability Statements",
+      "target" : "CapabilityStatements"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Logical Models",
+      "target" : "Logische Modelle"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Examples",
+      "target" : "Beispiele"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Downloads",
+      "target" : "Downloads"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Versioning",
+      "target" : "Versionierung"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Changelog",
+      "target" : "Änderungen"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Translation Information",
+      "target" : "Übersetzungsinformationen"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Metadata Overview",
+      "target" : "Metadatenübersicht"
+    }]
+  }]
+}

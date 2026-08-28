@@ -1,0 +1,379 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="StructureDefinition-mii-pr-labor-laboruntersuchung" original="Resource StructureDefinition-mii-pr-labor-laboruntersuchung" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>MII_PR_Labor_Laboruntersuchung</source>
+        <target>MII_PR_Labor_Laboruntersuchung</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>MII PR Labor Laboruntersuchung</source>
+        <target>MII PR Labor Laboruntersuchung</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>Medizininformatik Initiative</source>
+        <target>Medizininformatik Initiative</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Medizininformatik Initiative</source>
+        <target>Medizininformatik Initiative</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.purpose">
+             <notes>
+               <note id="n1">Explanation of why this structure definition is needed and why it has been designed as it has.</note>
+             </notes>
+        <source>Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative.</source>
+        <target>Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.mapping.workflow/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>Workflow Pattern</source>
+        <target>Workflow Pattern</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.mapping.sct-concept/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>SNOMED CT Concept Domain Binding</source>
+        <target>SNOMED CT Concept Domain Binding</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.mapping.v2/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>HL7 v2 Mapping</source>
+        <target>HL7 v2 Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.mapping.w5/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FiveWs Pattern Mapping</source>
+        <target>FiveWs Pattern Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.mapping.sct-attr/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>SNOMED CT Attribute Binding</source>
+        <target>SNOMED CT Attribute Binding</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation/constraint">
+             <notes>
+               <note id="n1">Text that can be used to describe the constraint in messages identifying that the constraint has been violated.</note>
+             </notes>
+        <source>Falls kein Laborwert verfügbar ist, muss eine dataAbsentReason angegeben werden</source>
+        <target>Falls kein Laborwert verfügbar ist, muss eine dataAbsentReason angegeben werden</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.modifierExtension:interpretationsbeeinflussendeEigenschaft/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Interpretationsbeeinflussende interpretationsbeeinflussendeEigenschaft</source>
+        <target>Interpretationsbeeinflussende interpretationsbeeinflussendeEigenschaft</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.modifierExtension:interpretationsbeeinflussendeEigenschaft/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften.</source>
+        <target>Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.identifier/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Identifikator</source>
+        <target>Identifikator</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.identifier/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist.</source>
+        <target>Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.identifier:analyseBefundCode/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Analyse-Befund-Code</source>
+        <target>Analyse-Befund-Code</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.basedOn/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Basiert auf</source>
+        <target>Basiert auf</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.basedOn/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert.</source>
+        <target>Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.status/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.status/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>abgeschlossen</source>
+        <target>abgeschlossen</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.category/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Kategorie</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.category/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe</source>
+        <target>Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.code/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Code</source>
+        <target>Code</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.code/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt.</source>
+        <target>LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.code.coding:loinc/b/desc">
+             <notes>
+               <note id="n1">Describes the intended use of this particular set of codes.</note>
+             </notes>
+        <source>Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } }</source>
+        <target>Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } }</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.subject/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Subjekt</source>
+        <target>Subjekt</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.subject/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Subjekt auf welches sich die Laboruntersuchung bezieht.</source>
+        <target>Subjekt auf welches sich die Laboruntersuchung bezieht.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.encounter/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Fall oder Kontakt</source>
+        <target>Fall oder Kontakt</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.encounter/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde.</source>
+        <target>Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.effective[x]/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Untersuchungszeitpunkt</source>
+        <target>Untersuchungszeitpunkt</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.effective[x]/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Klinischer Bezugszeitpunkt der Laboruntersuchung</source>
+        <target>Klinischer Bezugszeitpunkt der Laboruntersuchung</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.effective[x]/constraint">
+             <notes>
+               <note id="n1">Text that can be used to describe the constraint in messages identifying that the constraint has been violated.</note>
+             </notes>
+        <source>Datetime must be at least to day</source>
+        <target>Datetime must be at least to day</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.effective[x].extension:QuelleKlinischesBezugsdatum/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Quelle klinisches Bezugsdatum</source>
+        <target>Quelle klinisches Bezugsdatum</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.effective[x].extension:QuelleKlinischesBezugsdatum/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Datum der Probenentnahme | Datum des Eingangs der Probe im Labor</source>
+        <target>Datum der Probenentnahme | Datum des Eingangs der Probe im Labor</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.issued/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Dokumentationsdatum</source>
+        <target>Dokumentationsdatum</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.issued/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde</source>
+        <target>Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.value[x]/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Messwert</source>
+        <target>Messwert</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.value[x]/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Wert der Analyse</source>
+        <target>Wert der Analyse</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.value[x]:valueQuantity.code/comment">
+             <notes>
+               <note id="n1">Explanatory notes and implementation guidance about the data element, including notes about how to use the data properly, exceptions to proper use, etc. (Note: The text you are reading is specified in ElementDefinition.comment).</note>
+             </notes>
+        <source>The mandatory system is UCUM.</source>
+        <target>The mandatory system is UCUM.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.dataAbsentReason/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Grund für fehlende Daten</source>
+        <target>Grund für fehlende Daten</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.dataAbsentReason/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt</source>
+        <target>unbekannt | maskiert | nicht anwendbar | Fehler | nicht durchgeführt</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.interpretation/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Interpretation</source>
+        <target>Interpretation</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.interpretation/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal.</source>
+        <target>Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.note/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Hinweis</source>
+        <target>Hinweis</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.note/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Zusätzliche Informationen zur Laboruntersuchung als Freitext.</source>
+        <target>Zusätzliche Informationen zur Laboruntersuchung als Freitext.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.method/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Untersuchungsmethode</source>
+        <target>Untersuchungsmethode</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.method/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält.</source>
+        <target>Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.specimen/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Probenmaterial</source>
+        <target>Probenmaterial</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.specimen/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Probe, auf deren Basis die Laboruntersuchungen angefertigt werden</source>
+        <target>Probe, auf deren Basis die Laboruntersuchungen angefertigt werden</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.device/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Gerät</source>
+        <target>Gerät</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.device/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Gerät, das zur Generierung der Messwerte verwendet wurde.</source>
+        <target>Gerät, das zur Generierung der Messwerte verwendet wurde.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.referenceRange/short">
+             <notes>
+               <note id="n1">A concise description of what this element means (e.g. for use in autogenerated summaries).</note>
+             </notes>
+        <source>Referenzbereich</source>
+        <target>Referenzbereich</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-laboruntersuchung" resname="StructureDefinition.element.Observation.referenceRange/definition">
+             <notes>
+               <note id="n1">Provides a complete explanation of the meaning of the data element for human readability.  For the case of elements derived from existing elements (e.g. constraints), the definition SHALL be consistent with the base definition, but convey the meaning of the element in the particular context of use of the resource. (Note: The text you are reading is specified in ElementDefinition.definition).</note>
+             </notes>
+        <source>Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird.</source>
+        <target>Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
