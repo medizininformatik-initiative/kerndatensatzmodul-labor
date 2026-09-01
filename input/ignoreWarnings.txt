@@ -62,3 +62,13 @@ Constraint failed: eld-20: 'Element names should be simple alphanumerics with a 
 %does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-%
 %does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset%
 %does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab%
+
+# 16 INFORMATION-Meldungen an den drei Profilen. Das Modul ist R4
+# (fhirVersion 4.0.1 in sushi-config.yaml), und dort ist type=pattern der
+# korrekte Discriminator-Typ. Der Hinweis zielt auf Vorwaertskompatibilitaet
+# mit R5, wo type=value mit pattern[x] an seine Stelle traete - eine Umstellung
+# waere hier also nicht Verbesserung, sondern Fehler.
+# Die acht Slicings stammen aus unseren eigenen Profilen (identifier,
+# category.coding, code.coding), sind also nicht geerbt; die Meldung nimmt
+# geerbte Slicings ausdruecklich aus. Exakter Text, ueber alle 16 identisch.
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
