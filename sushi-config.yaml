@@ -113,11 +113,19 @@ extension:
         - system: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
           code: "C25294"
 
+# Die beiden letzten Eintraege sind DIREKT deklariert, obwohl sie ohnehin
+# transitiv hereinkommen: ohne eigene Deklaration entscheidet die
+# Abhaengigkeitsaufloesung, welche Version gewinnt, und der Publisher zieht die
+# jeweils neueste. Gemessen im Build vom 01.09.2026 kamen hl7.terminology.r4 in
+# 6.2.0, 7.1.0, 7.2.0 und 7.3.0 herein und hl7.fhir.uv.extensions.r4 in 5.2.0
+# und 5.3.0. Die Terminologie-Version bestimmt mit, gegen welche CodeSystem- und
+# ValueSet-Staende validiert wird, deshalb wird sie hier festgeschrieben.
 dependencies:
   hl7.fhir.uv.ips: 2.0.1
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  hl7.fhir.uv.extensions.r4: 5.2.0
   hl7.fhir.uv.crmi: 2.0.0
+  hl7.fhir.uv.extensions.r4: 5.2.0
+  hl7.terminology.r4: 7.1.0
 
 # Das Expansions-Manifest wird aus input/resources/ geladen; ohne diesen Eintrag
 # warnt der Publisher, dass ImplementationGuide.definition.resource.description
