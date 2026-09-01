@@ -4,10 +4,7 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# Imported from kerndatensatz-basis (main). Temporary: the terminology server
-# used for publication currently has an incomplete expansion for
-# http://hl7.org/fhir/ValueSet/all-languages, which affects every bilingual
-# (de/en) module built from this template.
+# Temporary: the terminology server used for publication currently has an incomplete expansion for http://hl7.org/fhir/ValueSet/all-languages.
 The System URI could not be determined for the code 'de' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'
 The System URI could not be determined for the code 'de-DE' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'
 The System URI could not be determined for the code 'en' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'
@@ -38,34 +35,13 @@ No definition could be found for URL value 'https://www.medizininformatik-initia
 # wurde.
 %Pinned the version of%
 
-# Folge von displayLanguage=de-DE im Expansions-Manifest: fuer Codes ohne
-# deutsche Designation meldet der Validator, dass er nur das Display der
-# Default-Sprache findet ("... which is a valid display for the default
-# language"). INFORMATION, kein Befund.
-# Unterdrueckt werden GENAU NEUN CODES, nicht ganze Systeme: mehr sind es
-# nicht. Jedes Muster nennt System, Code UND die Sprachklausel, damit eine
-# kuenftige andere Meldung zum selben System nicht mitverschluckt wird.
-# `%` wirkt nur am Anfang und am Ende eines Musters, nicht in der Mitte
-# (gemessen 01.09.2026), deshalb ein Muster pro Code statt eines gemeinsamen.
-# ERRORs unterdrueckt diese Datei ohnehin nicht - auch das wurde gemessen, mit
-# einem Testmuster auf den SNOMED-Filter-Error, der stehen blieb.
-#
-# Vier davon sind HL7-/ISO-Infrastruktur ohne deutsche Designation, an der das
-# Modul nichts aendern kann. Die fuenf v3-ObservationInterpretation-Codes sind
-# der Inhalt von mii-vs-labor-interpretation; auch sie sind modulseitig nicht
-# behebbar: das ValueSet fuehrt deutsche designation-Eintraege (siehe
-# MII_VS_Labor_Interpretation.fsh), aber der Publisher rendert die
-# compose-Tabelle aus concept.display und zieht designation nicht heran - die
-# Seite zeigt in beiden Sprachvarianten "Low"/"High". Die Designations bleiben
-# trotzdem: ein Terminologieserver, der mit displayLanguage=de-DE expandiert,
-# verwendet sie. Die deutschen Begriffe stehen ausserdem in der Tabelle in
-# guidance.md.
-%the code urn:iso:std:iso:3166#DE for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#LU for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H for language(s) 'de-DE'%
-%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#HU for language(s) 'de-DE'%
+# 140 Warnungen, 61 % aller Warnungen des Builds, alle am Logical Model.
+# eld-20 verlangt nach dem Punkt einen Kleinbuchstaben ([a-z][A-Za-z0-9]*).
+# Die Elementnamen des Modells folgen aber dem abgenommenen ART-DECOR-
+# Informationsmodell und sind deutsche CamelCase-Begriffe:
+# Laborbefund.Identifikation, Laborbefund.KlinischerBezugszeitpunkt und 53
+# weitere. Eine Umbenennung wuerde die 1:1-Entsprechung zum abgenommenen
+# Modell aufgeben - der Zweck des Logical Models. Der Constraint ist zudem
+# beratend formuliert ("or code generation tools may be broken").
+# Exakter Text, kein Platzhalter: die Meldung ist ueber alle 140 identisch.
+Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
