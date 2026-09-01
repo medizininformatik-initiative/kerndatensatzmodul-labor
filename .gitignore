@@ -6,6 +6,12 @@ fsh-index.json
 fsh-index.txt
 fsh-link-references.md
 /temp/
+# The IG Publisher unpacks the template into template/ on every build. Since
+# ig.ini references ig-template-mii-kds by repository URL, that unpack is the
+# WHOLE template repository — its own test suite and GitHub Actions workflows
+# included — and it is derived output, not a source of truth. Tracking it added
+# 18 MB of another repository's CI to this one.
+/template/
 /output/assets/css/bootstrap-fhir.css
 /output/assets/css/bootstrap-glyphicons.css
 /output/assets/css/cqf.css
