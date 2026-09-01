@@ -51,7 +51,7 @@ FHIR binds `Observation.interpretation` extensibly to [Observation Interpretatio
 
 Reports in use today carry differing local codings, for example the five-level scale `--, -, N, +, ++` or the three-level `L N H`. The table shows the mapping for the five-level variant.
 
-The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal) may additionally be used. They are not part of the module ValueSet, but they are part of the FHIR binding and therefore permitted anyway.
+Because the binding is extensible, further codes may be used in addition. The ones that matter in practice are the abnormal codes `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal) — for example for results beyond the critical notification limit, the threshold at which the laboratory must phone the requester. They are not part of the module ValueSet, but they are contained in the value set that the FHIR R4 specification uses for `Observation.interpretation`.
 
 ## Specimens
 

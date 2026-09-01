@@ -85,7 +85,7 @@ FHIR bindet `Observation.interpretation` extensible an [Observation Interpretati
 
 In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala `--, -, N, +, ++` oder die dreistufige `L N H`. Die Tabelle zeigt das Mapping der fünfstufigen Variante.
 
-Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend) verwendet werden. Sie sind nicht Bestandteil des Modul-ValueSets, aber Teil der FHIR-Bindung und damit ohnehin zulässig.
+Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden. Praktisch relevant sind die abnormal-Codes `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend) – etwa für Werte jenseits der Telefongrenze, also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss. Sie gehören nicht zum Modul-ValueSet, sind aber in dem ValueSet enthalten, das die FHIR-R4-Spezifikation für `Observation.interpretation` verwendet.
 
 ## Probenmaterial
 
