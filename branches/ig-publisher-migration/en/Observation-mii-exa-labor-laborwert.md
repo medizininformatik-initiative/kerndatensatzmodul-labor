@@ -14,7 +14,7 @@
 
 Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0
 
-Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
 **MII EX Labor Interpretationsbeeinflussende Eigenschaft**: [SNOMED CT: 118128002](http://snomed.info/id/118128002) (Specimen hemolyzed (finding)) (version = http://snomed.info/sct/900000000000207008/version/20250701 )
 
