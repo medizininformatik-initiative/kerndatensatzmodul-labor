@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor | *Version*:2027.0.0 |
-| Active as of 2026-08-28 | *Computable Name*:MII_IG_Labor |
+| Active as of 2026-09-01 | *Computable Name*:MII_IG_Labor |
 
 # MII Core Data Set Module Laboratory Report
 

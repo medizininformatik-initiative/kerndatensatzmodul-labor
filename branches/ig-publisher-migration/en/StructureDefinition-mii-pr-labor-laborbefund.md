@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_Labor_Laborbefund |
+| Active as of 2026-09-01 | *Computable Name*:MII_PR_Labor_Laborbefund |
 
  
 Laboratory report containing the results of a laboratory test. 
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-28T10:19:24+00:00",
+  "date" : "2026-09-01T07:28:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
