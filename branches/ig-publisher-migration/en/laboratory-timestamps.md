@@ -6,8 +6,6 @@
 
 ## Laboratory Timestamps
 
-# Laboratory Timestamps
-
 The [module description](guidance.md) explains the timestamps documented during a laboratory request and test. They map to FHIR as follows:
 
 | | |

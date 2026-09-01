@@ -6,8 +6,6 @@
 
 ## Metadata Overview
 
-# Metadata Overview
-
 | | |
 | :--- | :--- |
 | Package ID | `de.medizininformatikinitiative.kerndatensatz.labor` |

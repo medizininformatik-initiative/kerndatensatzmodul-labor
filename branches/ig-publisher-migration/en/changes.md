@@ -5,8 +5,6 @@
 
 ## Changelog
 
-# Changelog
-
 ## 2027.0.0
 
 Changes since 2026.0.3:

@@ -7,7 +7,5 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-# Sicherheit und Datenschutz
-
 Der Ausgangsleitfaden enthält keine modulspezifischen Sicherheits- oder Datenschutzanforderungen. Für Labordaten gelten die organisatorischen Vorgaben zu Zugriffsschutz, Protokollierung, Einwilligung und Datenschutz sowie die MII-weiten Sicherheitsvorgaben.
 

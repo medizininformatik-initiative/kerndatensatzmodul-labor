@@ -5,8 +5,6 @@
 
 ## Logical Models
 
-# Logical Models
-
 The [MII Laboratory logical model](StructureDefinition-mii-lm-labor.md) represents the module's dataset independently of the concrete FHIR resource profiles. The approved information model for the Laboratory module is available in [ART-DECOR](https://art-decor.org/art-decor/decor-datasets--mide-); it is additionally represented as a FHIR logical model:
 
 Guidance on how to interpret the contents of this table can be found[here](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)

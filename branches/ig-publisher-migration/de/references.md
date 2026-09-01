@@ -8,8 +8,6 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-## Referenzen
-
 Die Modellierung des Datensatzes zum Modul LABOR enthält Referenzen zu folgenden Projekten:
 
 * [International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/STU1.1/). Die einzelnen Referenzen auf das IPS ART-DECOR-Projekt ist bei den entsprechenden Datenelementen des Moduls Labor zu finden.

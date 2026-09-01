@@ -5,8 +5,6 @@
 
 ## Änderungen
 
-# Änderungen
-
 ### Version: 2027.0.0
 
 Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änderungen.

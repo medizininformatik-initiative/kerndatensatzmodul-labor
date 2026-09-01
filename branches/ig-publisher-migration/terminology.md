@@ -1,5 +1,3 @@
-# Terminology
-
 ## LOINC overview
 
 [LOINC](https://www.loinc.org) is an international system published by the Regenstrief Institute for identifying and coding medical observations, especially laboratory tests. Further German-language information is available from [BfArM](https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/_node.html) and the MII Academy.

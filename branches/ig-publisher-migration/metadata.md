@@ -1,5 +1,3 @@
-# Metadata Overview
-
 | Field | Value |
 |---|---|
 | Package ID | `de.medizininformatikinitiative.kerndatensatz.labor` |

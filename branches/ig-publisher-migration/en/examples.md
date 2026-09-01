@@ -5,8 +5,6 @@
 
 ## Examples
 
-# Examples
-
 * [Laboratory report](DiagnosticReport-mii-exa-labor-laborbefund.md)
 * [Laboratory request](ServiceRequest-mii-exa-labor-laboranforderung.md)
 * [Laboratory result](Observation-mii-exa-labor-laborwert.md)

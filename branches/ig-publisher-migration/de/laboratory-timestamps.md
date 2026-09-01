@@ -8,8 +8,6 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-## Zeitpunkte im Labor
-
 In der [Beschreibung des Moduls](guidance.md) wird erläutert, welche Zeitpunkte im Verlauf der Laboranforderung und -untersuchung dokumentiert werden. Diese werden wie folgt im FHIR-Modell abgebildet:
 
 | | |

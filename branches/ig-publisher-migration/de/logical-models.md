@@ -7,8 +7,6 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-# Logische Modelle
-
 Das [logische Modell MII Labor](StructureDefinition-mii-lm-labor.md) beschreibt den Datensatz unabhängig von den konkreten FHIR-Ressourcenprofilen. Die offizielle und abgenommene Version des Informationsmodells für das Modul Labor findet sich auf [ART-DECOR](https://art-decor.org/art-decor/decor-datasets--mide-). Zur Vereinheitlichung der Repräsentation wurde das Informationsmodell zusätzlich als FHIR Logical Model abgebildet:
 
 Guidance on how to interpret the contents of this table can be found[here](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
