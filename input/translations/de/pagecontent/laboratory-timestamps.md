@@ -1,5 +1,3 @@
-## Zeitpunkte im Labor
-
 In der [Beschreibung des Moduls](guidance.html) wird erläutert, welche Zeitpunkte im Verlauf der Laboranforderung und -untersuchung dokumentiert werden.
 Diese werden wie folgt im FHIR-Modell abgebildet:
 

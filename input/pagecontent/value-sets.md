@@ -1,5 +1,3 @@
-# Value Sets
-
 Alongside the international terminologies it uses, the Laboratory module defines its own ValueSets. None of them carries an embedded expansion — expand them with a terminology server before use.
 
 | ValueSet | Purpose |

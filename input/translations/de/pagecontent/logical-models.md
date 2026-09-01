@@ -1,5 +1,3 @@
-# Logische Modelle
-
 Das [logische Modell MII Labor](StructureDefinition-mii-lm-labor.html) beschreibt den Datensatz unabhängig von den konkreten FHIR-Ressourcenprofilen. Die offizielle und abgenommene Version des Informationsmodells für das Modul Labor findet sich auf [ART-DECOR](https://art-decor.org/art-decor/decor-datasets--mide-). Zur Vereinheitlichung der Repräsentation wurde das Informationsmodell zusätzlich als FHIR Logical Model abgebildet:
 
 {% include StructureDefinition-mii-lm-labor-dict.xhtml %}

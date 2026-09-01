@@ -1,5 +1,3 @@
-# Metadatenübersicht
-
 | Feld | Wert |
 |---|---|
 | Paket-ID | `de.medizininformatikinitiative.kerndatensatz.labor` |

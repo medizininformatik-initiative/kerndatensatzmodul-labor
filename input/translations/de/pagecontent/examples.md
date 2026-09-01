@@ -1,5 +1,3 @@
-# Beispiele
-
 - [Laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.html)
 - [Laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.html)
 - [Laborergebnis](Observation-mii-exa-labor-laborwert.html)

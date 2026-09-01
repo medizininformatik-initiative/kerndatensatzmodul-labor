@@ -1,7 +1,8 @@
 // Unit tests for the convention checker. Run with: node --test scripts/
 import { test } from "node:test";
+import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { evaluate, readTopLevel, readDependencies, readIgIniTemplate } from "./convention-check.mjs";
+import { evaluate, readTopLevel, readDependencies, readIgIniTemplate, scanOptionalPages } from "./convention-check.mjs";
 
 // A parameterized scaffold sushi-config, as this repo ships it.
 const SCAFFOLD = `id: mii-ig-{{MODULE_SLUG}}
@@ -31,10 +32,58 @@ function ids(findings, status) {
   return findings.filter((f) => f.status === status).map((f) => f.id);
 }
 
+function m5(canonical, release = true) {
+  const sushi = CONCRETE.replace(
+    "canonical: https://www.medizininformatik-initiative.de/fhir/modul-base",
+    `canonical: ${canonical}`
+  );
+  const { findings } = evaluate({ sushiConfig: sushi, igIni: CONCRETE_IGINI, release });
+  return findings.find((f) => f.id === "M5 canonical");
+}
+
+test("M5 accepts all three MII canonical spaces (ext/core/bare are published reality)", () => {
+  // Measured 2026-08-27 across the medizininformatik-initiative repos:
+  // ext ×14, core ×7, bare ×5 — and a canonical is immutable, so the check
+  // must accept them all (raised by the Pathologie module team).
+  for (const canonical of [
+    "https://www.medizininformatik-initiative.de/fhir/modul-base",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho",
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor",
+  ]) {
+    assert.equal(m5(canonical).status, "pass", `${canonical} must pass M5`);
+  }
+});
+
+test("M5 still rejects what is genuinely outside the canonical universe", () => {
+  for (const canonical of [
+    "https://example.org/fhir/modul-x",                                   // wrong host
+    "https://www.medizininformatik-initiative.de/fhir/ext/",              // empty module
+    "https://www.medizininformatik-initiative.de/fhir/ext/a/b",           // nested deeper
+    "https://www.medizininformatik-initiative.de/fhir/core/ext/modul-x",  // stacked spaces
+    "https://www.medizininformatik-initiative.de/fhir/Modul-X",           // uppercase
+  ]) {
+    assert.equal(m5(canonical).status, "fail", `${canonical} must fail M5`);
+  }
+  assert.match(m5("https://www.medizininformatik-initiative.de/fhir/ext/a/b").message,
+    /allowed canonical spaces/);
+});
+
+test("M5 keeps placeholder handling in the ext/core spaces", () => {
+  const finding = m5("https://www.medizininformatik-initiative.de/fhir/ext/modul-{{MODULE_SLUG}}", false);
+  assert.equal(finding.status, "parameterized");
+});
+
 test("extractors read values, strip quotes and comments", () => {
   assert.equal(readTopLevel(SCAFFOLD, "id"), "mii-ig-{{MODULE_SLUG}}");
   assert.equal(readTopLevel(CONCRETE, "version"), "2026.0.1");
   assert.equal(readTopLevel("status: active # a comment\n", "status"), "active");
+  // Quoted value WITH a trailing comment: the quotes end the value, the
+  // comment is not part of it (annotating above the line is no longer the
+  // only safe form - the measured M4 false-failure class).
+  assert.equal(readTopLevel('title: "MII Modul X" # decided 2026-08-28\n', "title"), "MII Modul X");
+  assert.equal(readTopLevel("license: 'CC0-1.0' # carried from the source\n", "license"), "CC0-1.0");
+  // A hash INSIDE the quotes is content, never a comment.
+  assert.equal(readTopLevel('title: "MII # 1"\n', "title"), "MII # 1");
   assert.equal(readDependencies(SCAFFOLD).length, 2);
   assert.equal(readIgIniTemplate(CONCRETE_IGINI), "de.medizininformatikinitiative.template#0.1.0");
 });
@@ -82,6 +131,15 @@ test("malformed concrete values fail", () => {
   assert.ok(failed.includes("M6 version"));
 });
 
+test("a CalVer prerelease suffix passes M6 (create-a-new-module.md and go-publish.yml both sanction it)", () => {
+  const rc = CONCRETE.replace('version: "2026.0.1"', 'version: "2027.0.0-ballot.rc1"');
+  const { findings } = evaluate({ sushiConfig: rc, igIni: CONCRETE_IGINI, release: false });
+  assert.ok(!ids(findings, "fail").includes("M6 version"));
+  const draft = CONCRETE.replace('version: "2026.0.1"', 'version: "2027.0.0-draft.1"');
+  const r2 = evaluate({ sushiConfig: draft, igIni: CONCRETE_IGINI, release: false });
+  assert.ok(!ids(r2.findings, "fail").includes("M6 version"));
+});
+
 test("a floating dependency pin fails M7 on every branch", () => {
   const floating = CONCRETE.replace("de.basisprofil.r4: 1.5.4", "de.basisprofil.r4: current");
   const { ok, findings } = evaluate({ sushiConfig: floating, igIni: CONCRETE_IGINI, release: false });
@@ -105,8 +163,12 @@ test("a #cibuild ig.ini template fails M7", () => {
   assert.ok(ids(findings, "fail").includes("M7 no floating pins"));
 });
 
-test("a pinned package reference and the vendored local folder both pass M7", () => {
-  for (const tmpl of ["de.medizininformatikinitiative.template#1.0.0", "#ig-template"]) {
+test("a pinned package reference, the vendored folder and the interim URL all pass M7", () => {
+  // The repository-URL form is the sanctioned interim (decision 2026-08-28,
+  // docs/concepts.md section 2): it carries no floating LABEL, and the
+  // published id#version pin replaces it once the package is on the registry.
+  for (const tmpl of ["de.medizininformatikinitiative.template#1.0.0", "#ig-template",
+    "https://github.com/medizininformatik-initiative/ig-template-mii-kds"]) {
     const { findings } = evaluate({ sushiConfig: CONCRETE, igIni: `template = ${tmpl}\n`, release: false });
     assert.ok(ids(findings, "pass").includes("M7 no floating pins"), tmpl);
   }
@@ -152,5 +214,139 @@ test("M8 — the demonstration page blocks a release, but not development", () =
     "input/translations/de/includes/menu.xml",
   ]) {
     assert.ok(msg.includes(f), `the failure message should name ${f}`);
+  }
+});
+
+test("M9 — undecided optional pages block a release, but not development", () => {
+  // The approved MII module menu marks some entries OPTIONAL (0..1). Each
+  // ships with an OPTIONAL-PAGE marker + banner; the gate is at release so the
+  // scaffold can present the choice without failing every PR.
+  const undecided = [
+    { page: "extensions.md", en: "marked", de: "marked" },
+    { page: "operations.md", en: "marked", de: "marked" },
+  ];
+  const dev = evaluate({ optionalPages: undecided, release: false });
+  const rel = evaluate({ optionalPages: undecided, release: true });
+
+  assert.equal(dev.findings.find((f) => f.id === "M9 optional pages")?.status, "pass");
+  assert.equal(dev.ok, true, "undecided optional pages must be green in development");
+  assert.equal(rel.findings.find((f) => f.id === "M9 optional pages")?.status, "fail");
+  assert.equal(rel.ok, false, "a release with undecided optional pages must fail");
+
+  // The failure message must teach both exits: keep (delete banner in both
+  // languages) and remove (the documented per-entry procedure).
+  const msg = rel.findings.find((f) => f.id === "M9 optional pages").message;
+  for (const s of ["docs/optional-pages.md", "input/translations/de/pagecontent", "menu.xml", ".po"]) {
+    assert.ok(msg.includes(s), `the failure message should mention ${s}`);
+  }
+});
+
+test("M9 — a half-applied decision (marker asymmetry) fails on every branch", () => {
+  for (const release of [false, true]) {
+    const { ok, findings } = evaluate({
+      optionalPages: [{ page: "value-sets.md", en: "unmarked", de: "marked" }],
+      release,
+    });
+    assert.equal(ok, false, `asymmetry must fail (release=${release})`);
+    const f = findings.find((x) => x.id === "M9 optional pages");
+    assert.equal(f.status, "fail");
+    assert.ok(f.message.includes("BOTH languages"));
+  }
+  // A page removed in one language only is asymmetric too.
+  const half = evaluate({
+    optionalPages: [{ page: "code-systems.md", en: "absent", de: "marked" }],
+    release: false,
+  });
+  assert.equal(half.ok, false);
+});
+
+test("M9 — decided everywhere (or no scan) yields pass / no finding", () => {
+  const decided = evaluate({ optionalPages: [], release: true });
+  assert.equal(decided.findings.find((f) => f.id === "M9 optional pages")?.status, "pass");
+  assert.equal(decided.ok, true);
+
+  // Unit-test callers that pass no tree scan get no M9 finding at all.
+  const noScan = evaluate({ release: true });
+  assert.equal(noScan.findings.find((f) => f.id === "M9 optional pages"), undefined);
+});
+
+test("M11 — scaffold illustrative examples block a release, but not development", () => {
+  // security-and-privacy.md ships a highlighted Person example in its
+  // module-specific section, marked ILLUSTRATIVE-EXAMPLE; like the M9
+  // banners it is a visible "decide me" that must not survive into a release.
+  const present = [{ page: "security-and-privacy.md", en: "marked", de: "marked" }];
+  const dev = evaluate({ illustrativeExamples: present, release: false });
+  const rel = evaluate({ illustrativeExamples: present, release: true });
+
+  assert.equal(dev.findings.find((f) => f.id === "M11 illustrative examples")?.status, "pass");
+  assert.equal(dev.ok, true, "a scaffold example must be green in development");
+  assert.equal(rel.findings.find((f) => f.id === "M11 illustrative examples")?.status, "fail");
+  assert.equal(rel.ok, false, "a release shipping a scaffold example must fail");
+
+  // The failure message must teach the exit: delete the box + marker in both
+  // languages, then write own content or adopt the default text.
+  const msg = rel.findings.find((f) => f.id === "M11 illustrative examples").message;
+  for (const s of ["input/pagecontent", "input/translations/de/pagecontent", "default text"]) {
+    assert.ok(msg.includes(s), `the failure message should mention ${s}`);
+  }
+});
+
+test("M11 — a half-removed example (marker asymmetry) fails on every branch", () => {
+  for (const release of [false, true]) {
+    const { ok, findings } = evaluate({
+      illustrativeExamples: [{ page: "security-and-privacy.md", en: "unmarked", de: "marked" }],
+      release,
+    });
+    assert.equal(ok, false, `asymmetry must fail (release=${release})`);
+    const f = findings.find((x) => x.id === "M11 illustrative examples");
+    assert.equal(f.status, "fail");
+    assert.ok(f.message.includes("BOTH languages"));
+  }
+});
+
+test("M11 — removed everywhere (or no scan) yields pass / no finding", () => {
+  const removed = evaluate({ illustrativeExamples: [], release: true });
+  assert.equal(removed.findings.find((f) => f.id === "M11 illustrative examples")?.status, "pass");
+  assert.equal(removed.ok, true);
+
+  const noScan = evaluate({ release: true });
+  assert.equal(noScan.findings.find((f) => f.id === "M11 illustrative examples"), undefined);
+});
+
+test("scanOptionalPages pairs the languages of this repository's scaffold", () => {
+  const root = new URL("..", import.meta.url).pathname;
+  const entries = scanOptionalPages(root);
+  // TEMPLATE REPO vs CREATED MODULE: a created module legitimately REMOVES
+  // optional pages and deletes the markers of KEPT ones (the M9 decision), so
+  // the full-scaffold state below holds only where the placeholders do —
+  // detected the same way the self-check does, by an unreplaced
+  // {{MODULE_SLUG}} in sushi-config.yaml (this test ships into created
+  // modules; asserting the template's committed state there broke a real
+  // migration's CI). In every repository, whatever optional pages DO exist
+  // must agree across the two languages.
+  const sushi = readFileSync(`${root}/sushi-config.yaml`, "utf8");
+  // Detected by the PARSED id value, never by a substring of the whole file:
+  // a module that keeps the placeholder documentation as COMMENTS still
+  // contains "{{MODULE_SLUG}}" textually, and the substring test forced the
+  // full-scaffold assertions below onto a real module that had legitimately
+  // removed optional pages per its M9 decision (issue #165, measured on the
+  // Onkologie migration). The full-scaffold pins further down are DELIBERATE
+  // for the template repository itself — they catch scanner regressions — and
+  // with this detection they can no longer reach a created module.
+  const isTemplateRepo = String(readTopLevel(sushi, "id") ?? "").includes("{{");
+  for (const e of entries) {
+    assert.equal(e.en, e.de,
+      `${e.page}: the EN and DE copies must agree on the OPTIONAL-PAGE marker (undecided in both, or decided in both)`);
+  }
+  if (isTemplateRepo) {
+    assert.ok(entries.length >= 7, "the scaffold ships at least 7 optional pages");
+    for (const e of entries) {
+      assert.equal(e.en, "marked", `${e.page} must carry the marker in English`);
+    }
+    const names = entries.map((e) => e.page);
+    for (const p of ["researcher-guidance.md", "extensions.md", "search-parameters.md",
+      "operations.md", "value-sets.md", "code-systems.md", "metadata.md"]) {
+      assert.ok(names.includes(p), `${p} should be scanned as optional`);
+    }
   }
 });
