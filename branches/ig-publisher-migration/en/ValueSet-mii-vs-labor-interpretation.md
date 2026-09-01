@@ -198,23 +198,43 @@ Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 Obs
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
       "concept" : [{
         "code" : "L",
-        "display" : "Low"
+        "display" : "Low",
+        "designation" : [{
+          "language" : "de-DE",
+          "value" : "Erniedrigt"
+        }]
       },
       {
         "code" : "LU",
-        "display" : "Significantly low"
+        "display" : "Significantly low",
+        "designation" : [{
+          "language" : "de-DE",
+          "value" : "Deutlich erniedrigt"
+        }]
       },
       {
         "code" : "N",
-        "display" : "Normal"
+        "display" : "Normal",
+        "designation" : [{
+          "language" : "de-DE",
+          "value" : "Normal"
+        }]
       },
       {
         "code" : "H",
-        "display" : "High"
+        "display" : "High",
+        "designation" : [{
+          "language" : "de-DE",
+          "value" : "Erhöht"
+        }]
       },
       {
         "code" : "HU",
-        "display" : "Significantly high"
+        "display" : "Significantly high",
+        "designation" : [{
+          "language" : "de-DE",
+          "value" : "Deutlich erhöht"
+        }]
       }]
     }]
   }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bd08c51e-bd4d-494e-9b35-c8a7819599b2"/>
+  <id value="8548ce5e-e447-4ec7-9787-c3a8e4a2e4f8"/>
   <meta>
-    <lastUpdated value="2026-09-01T12:41:57.445+00:00"/>
+    <lastUpdated value="2026-09-01T12:58:26.483+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -502,7 +502,7 @@
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T12:41:57+00:00"/>
+        <date value="2026-09-01T12:58:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -511,8 +511,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6dfb681e-8583-4089-b792-04e9a100e7d4"/>
-          <timestamp value="2026-09-01T12:43:29+00:00"/>
+          <identifier value="urn:uuid:5ec57c8a-c8a2-442b-a51c-6417e5217c15"/>
+          <timestamp value="2026-09-01T13:00:01+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1150,7 +1150,7 @@
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T12:41:57+00:00"/>
+        <date value="2026-09-01T12:58:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1159,8 +1159,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6dfb681e-8583-4089-b792-04e9a100e7d4"/>
-          <timestamp value="2026-09-01T12:43:29+00:00"/>
+          <identifier value="urn:uuid:5ec57c8a-c8a2-442b-a51c-6417e5217c15"/>
+          <timestamp value="2026-09-01T13:00:01+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1798,7 +1798,7 @@
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T12:41:57+00:00"/>
+        <date value="2026-09-01T12:58:26+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1807,8 +1807,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aafbcac0-f3fe-477a-bf69-2362332c7953"/>
-          <timestamp value="2026-09-01T12:43:30+00:00"/>
+          <identifier value="urn:uuid:5d660b9c-2883-4b4e-a8e2-114b273a9391"/>
+          <timestamp value="2026-09-01T13:00:03+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -2144,8 +2144,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4938e883-d67f-4633-b2af-d6e1f62e355e"/>
-          <timestamp value="2026-09-01T12:43:29+00:00"/>
+          <identifier value="urn:uuid:2ef10d46-dee7-4c3a-bf77-24fe251e71a9"/>
+          <timestamp value="2026-09-01T13:00:01+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2412,8 +2412,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4938e883-d67f-4633-b2af-d6e1f62e355e"/>
-          <timestamp value="2026-09-01T12:43:29+00:00"/>
+          <identifier value="urn:uuid:2ef10d46-dee7-4c3a-bf77-24fe251e71a9"/>
+          <timestamp value="2026-09-01T13:00:01+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2534,7 +2534,7 @@
                 <td style="white-space:nowrap">  
                   <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-L">L</a>
                 </td>
-                <td/>
+                <td>Erniedrigt</td>
                 <td>
                   <div>
                     <p>The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test procedure).</p>
@@ -2545,12 +2545,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;L&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Erniedrigt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Erniedrigt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2562,7 +2562,7 @@
                 <td style="white-space:nowrap">  
                   <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-LU">LU</a>
                 </td>
-                <td/>
+                <td>Deutlich erniedrigt</td>
                 <td>
                   <div>
                     <p>A test result that is significantly lower than the reference (normal) or therapeutic interval, but has not reached the critically low value and might need special attention, as defined by the laboratory or the clinician.</p>
@@ -2571,12 +2571,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;LU&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;LU&quot;, &quot;display&quot;: &quot;Deutlich erniedrigt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;LU&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;LU&quot;&gt;&lt;display value=&quot;Deutlich erniedrigt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2588,7 +2588,7 @@
                 <td style="white-space:nowrap">  
                   <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-N">N</a>
                 </td>
-                <td/>
+                <td>Normal</td>
                 <td>
                   <div>
                     <p>The result or observation value is within the reference range or expected norm (as defined for the respective test procedure).</p>
@@ -2599,12 +2599,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;N&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2616,7 +2616,7 @@
                 <td style="white-space:nowrap">  
                   <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-H">H</a>
                 </td>
-                <td/>
+                <td>Erhöht</td>
                 <td>
                   <div>
                     <p>The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test procedure).</p>
@@ -2627,12 +2627,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;H&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;Erhöht&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;Erhöht&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2644,7 +2644,7 @@
                 <td style="white-space:nowrap">  
                   <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-HU">HU</a>
                 </td>
-                <td/>
+                <td>Deutlich erhöht</td>
                 <td>
                   <div>
                     <p>A test result that is significantly higher than the reference (normal) or therapeutic interval, but has not reached the critically high value and might need special attention, as defined by the laboratory or the clinician.</p>
@@ -2653,12 +2653,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;HU&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;HU&quot;, &quot;display&quot;: &quot;Deutlich erhöht&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;HU&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;HU&quot;&gt;&lt;display value=&quot;Deutlich erhöht&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2680,8 +2680,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dd3afc21-1a21-4aa2-b1f4-c16880dc9d79"/>
-          <timestamp value="2026-09-01T12:43:30+00:00"/>
+          <identifier value="urn:uuid:b758879b-2289-4cc5-a740-06f7257aca3b"/>
+          <timestamp value="2026-09-01T13:00:03+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2715,22 +2715,27 @@
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
             <code value="L"/>
+            <display value="Erniedrigt"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
             <code value="LU"/>
+            <display value="Deutlich erniedrigt"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
             <code value="N"/>
+            <display value="Normal"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
             <code value="H"/>
+            <display value="Erhöht"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
             <code value="HU"/>
+            <display value="Deutlich erhöht"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3237,8 +3242,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:85d11f3e-726f-4c93-adaa-bb98c4aa042e"/>
-          <timestamp value="2026-09-01T12:43:31+00:00"/>
+          <identifier value="urn:uuid:7cbc2fdd-a6e8-4dcd-be9d-6cfae84c7d69"/>
+          <timestamp value="2026-09-01T13:00:04+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -3890,8 +3895,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:85d11f3e-726f-4c93-adaa-bb98c4aa042e"/>
-          <timestamp value="2026-09-01T12:43:31+00:00"/>
+          <identifier value="urn:uuid:7cbc2fdd-a6e8-4dcd-be9d-6cfae84c7d69"/>
+          <timestamp value="2026-09-01T13:00:04+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -4543,8 +4548,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2dc1100d-09a7-4c7e-acec-4093883766e5"/>
-          <timestamp value="2026-09-01T12:43:31+00:00"/>
+          <identifier value="urn:uuid:b6921ad9-e0f5-4ba0-bd61-b317e04fbc5b"/>
+          <timestamp value="2026-09-01T13:00:04+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -25767,8 +25772,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:56329cb1-0dd5-4a68-ab7d-e465fa132e9d"/>
-          <timestamp value="2026-09-01T12:43:31+00:00"/>
+          <identifier value="urn:uuid:ecc3f226-c2d8-4a36-9685-d8b181164184"/>
+          <timestamp value="2026-09-01T13:00:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -51958,8 +51963,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:56329cb1-0dd5-4a68-ab7d-e465fa132e9d"/>
-          <timestamp value="2026-09-01T12:43:31+00:00"/>
+          <identifier value="urn:uuid:ecc3f226-c2d8-4a36-9685-d8b181164184"/>
+          <timestamp value="2026-09-01T13:00:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -78149,8 +78154,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:578d534d-c69e-49ee-9723-ec5bd2ac4818"/>
-          <timestamp value="2026-09-01T12:43:32+00:00"/>
+          <identifier value="urn:uuid:b49902f8-5870-4ec5-b50d-c80541d48564"/>
+          <timestamp value="2026-09-01T13:00:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
