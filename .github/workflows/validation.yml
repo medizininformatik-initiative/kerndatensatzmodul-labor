@@ -54,8 +54,14 @@
 name: FHIR validation
 
 on:
+  # `master` is this repository's default and publication branch. The scaffold
+  # ships `[dev, main]`, its own scheme — neither branch exists here, so the
+  # push trigger never fired and pushes to master went unvalidated. Discover
+  # the convention, do not assume it. `pull_request` stays UNFILTERED on
+  # purpose: validation should run on every pull request whatever its base,
+  # including the migration branches.
   push:
-    branches: [dev, main]
+    branches: [master]
   pull_request:
   workflow_dispatch:
 

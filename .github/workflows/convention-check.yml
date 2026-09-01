@@ -34,10 +34,12 @@
 name: convention-check
 
 on:
+  # `master` is this repository's default branch; the scaffold's `[dev, main]`
+  # names branches that do not exist here, so neither trigger ever fired.
   push:
-    branches: [dev, main, "release/**"]
+    branches: [master, "release/**"]
   pull_request:
-    branches: [dev, main, "release/**"]
+    branches: [master, "release/**"]
   workflow_dispatch:
     inputs:
       strict:
