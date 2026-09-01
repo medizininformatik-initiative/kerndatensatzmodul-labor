@@ -12,7 +12,8 @@
 // Bei einem CalVer-Wechsel BEIDE Orte aktualisieren: diese Aliase und
 // input/resources/Parameters-expansion-manifest.json. Es gibt keinen CI-Check,
 // der die beiden gegeneinander prüft.
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701
+//
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
 Alias: $loinc = http://loinc.org|2.82
 // Versionslose Aliase: für Patterns/fixed values in Profilen — ein Pattern mit
 // versionsbehafteter `system`-URL würde nicht matchen.

@@ -17,7 +17,7 @@ Description: "Codes zur Beschreibung von interpretationsbeeinflussenden Eigensch
 * insert CRMIArtifactContributors
 * ^status = #active
 * ^experimental = false
-* $sct#118128002 "Specimen hemolyzed (finding)"
-* $sct#118127007 "Specimen lipemic (finding)"
-* $sct#118129005 "Specimen icteric (finding)"
-* $sct#167569004 "Urine culture - mixed growth (finding)"
+* $sct#118128002 "Specimen hemolyzed"
+* $sct#118127007 "Specimen lipemic"
+* $sct#118129005 "Specimen icteric"
+* $sct#167569004 "Urine culture - mixed growth"

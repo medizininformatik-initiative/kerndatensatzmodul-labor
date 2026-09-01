@@ -18,7 +18,7 @@ Usage: #example
 * encounter.reference = "Encounter/555"
 * effectiveDateTime = "2018-11-20T12:05:00+01:00"
 * effectiveDateTime.extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
-* effectiveDateTime.extension.valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* effectiveDateTime.extension.valueCoding = $sct#399445004 "Specimen collection date"
 * issued = "2018-03-11T10:28:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.display = "Zentrallabor des IKCL"

@@ -18,5 +18,5 @@ Description: "Kodierung der Quelle des klinischen Bezugsdatums"
 * insert CRMIArtifactContributors
 * ^status = #active
 * ^experimental = false
-* $sct#399445004 "Specimen collection date (observable entity)"
-* $sct#281271004 "Date sample received in laboratory (observable entity)"
+* $sct#399445004 "Specimen collection date"
+* $sct#281271004 "Date sample received in laboratory"
