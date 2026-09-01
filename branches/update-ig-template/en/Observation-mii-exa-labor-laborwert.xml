@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-labor-laborwert"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-labor-laborwert</b></p><a name="mii-exa-labor-laborwert"> </a><a name="hcmii-exa-labor-laborwert"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII PR Labor Laboruntersuchung</a> version: 2027.0.0</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Labor Interpretationsbeeinflussende Eigenschaft</b>: <a href="http://snomed.info/id/118128002">SNOMED CT: 118128002</a> (Specimen hemolyzed (finding)) (version = http://snomed.info/sct/900000000000207008/version/20250701 )</p><p><b>identifier</b>: Observation Instance Identifier/59826-8_1234567890</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://loinc.org 26436-6}, {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://example.org/fhir/sid/Laborgruppe Niere/Elektrolyte}">Laboruntersuchungen</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 59826-8}">Kreatinin</span></p><p><b>subject</b>: <a href="Patient-111.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>encounter</b>: <a href="Encounter-555.html">Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)</a></p><p><b>effective</b>: 2018-11-20 12:05:00+0100</p><p><b>issued</b>: 2018-03-11 10:28:00+0100</p><p><b>performer</b>: <a href="Organization-7772.html">Zentrallabor des IKCL</a></p><p><b>value</b>: 72 µmol/l<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeumol/L = 'umol/L')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>72</td><td>127</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}">Normal Range</span></td></tr></table></div>
+  </text>
+  <modifierExtension url="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft">
+    <valueCoding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+      <code value="118128002"/>
+      <display value="Specimen hemolyzed (finding)"/>
+    </valueCoding>
+  </modifierExtension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="OBI"/>
+      </coding>
+    </type>
+    <system value="https://example.org/fhir/sid/test-lab-results"/>
+    <value value="59826-8_1234567890"/>
+    <assigner>
+      <identifier>
+        <system value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"/>
+        <value value="DIZ-ID"/>
+      </identifier>
+    </assigner>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="26436-6"/>
+      <display value="Laboruntersuchungen"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <coding>
+      <system value="http://example.org/fhir/sid/Laborgruppe"/>
+      <code value="Niere/Elektrolyte"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="59826-8"/>
+      <display value="Creatinin [Mol/Volumen] in Blut"/>
+    </coding>
+    <text value="Kreatinin"/>
+  </code>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/555"/>
+  </encounter>
+  <effectiveDateTime value="2018-11-20T12:05:00+01:00">
+    <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum">
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20250701"/>
+        <code value="399445004"/>
+        <display value="Specimen collection date (observable entity)"/>
+      </valueCoding>
+    </extension>
+  </effectiveDateTime>
+  <issued value="2018-03-11T10:28:00+01:00"/>
+  <performer>
+    <reference value="Organization/7772"/>
+    <display value="Zentrallabor des IKCL"/>
+  </performer>
+  <valueQuantity>
+    <extension url="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation">
+      <valueQuantity>
+        <value value="0.81"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </valueQuantity>
+    </extension>
+    <value value="72">
+      <extension url="http://hl7.org/fhir/StructureDefinition/quantity-precision">
+        <valueInteger value="1"/>
+      </extension>
+    </value>
+    <unit value="µmol/l"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="umol/L"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+    </coding>
+  </interpretation>
+  <referenceRange>
+    <low>
+      <value value="72"/>
+    </low>
+    <high>
+      <value value="127"/>
+    </high>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+        <code value="normal"/>
+        <display value="Normal Range"/>
+      </coding>
+    </type>
+  </referenceRange>
+</Observation>
