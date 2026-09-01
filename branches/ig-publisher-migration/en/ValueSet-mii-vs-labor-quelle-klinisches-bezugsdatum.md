@@ -24,8 +24,6 @@ Kodierung der Quelle des klinischen Bezugsdatums
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -178,7 +176,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor Quelle klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T12:58:26+00:00",
+  "date" : "2026-09-01T13:38:20+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
