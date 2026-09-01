@@ -16,3 +16,11 @@ The value provided ('de') was not found in the value set 'All Languages' (http:/
 The value provided ('de-DE') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'de-DE' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'; The provided code '#de-DE' was not found in the value set 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1')
 The value provided ('en') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'en' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'; The provided code '#en' was not found in the value set 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1')
 The value provided ('en-US') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'en-US' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'; The provided code '#en-US' was not found in the value set 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1')
+
+# Die uri-Sub-Extension von package-source (RuleSet CRMIPackageSource in
+# input/fsh/rulesets/version.fsh) traegt die Modul-Basis-URL. Der Validator
+# versucht sie als Canonical aufzuloesen und findet nichts - das ist korrekt so,
+# denn die Basis-URL identifiziert kein Artefakt. Betrifft alle 16 Artefakte
+# plus die ImplementationGuide-Ressource; mit dem Template-Wert
+# .../fhir/modul-labor waere es dieselbe Meldung.
+No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/core/modul-labor'
