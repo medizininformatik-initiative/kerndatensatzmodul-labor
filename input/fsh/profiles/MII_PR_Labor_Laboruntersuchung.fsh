@@ -11,6 +11,18 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-08-24)
+* insert CRMILastReviewDate(2026-08-24)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C36292)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C25294)
+* insert CRMIArtifactContributors
 * modifierExtension MS
 * modifierExtension contains MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft named interpretationsbeeinflussendeEigenschaft 0..* MS
 * modifierExtension[interpretationsbeeinflussendeEigenschaft]
@@ -21,6 +33,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^definition, de-DE, [[Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften.]])
 * insert Translation(modifierExtension[interpretationsbeeinflussendeEigenschaft] ^definition, en-US, [[Description of interpretation-influencing specimen property]])
 * ^status = #active
+* ^experimental = false
 * ^purpose = "Dieses Profil beschreibt ein Laborergebnis in der Medizininformatik-Initiative."
 * obeys mii-lab-2
 * id MS
@@ -91,7 +104,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * category.coding contains
     loinc-observation 1..1 MS and
     observation-category 1..1 MS
-* category.coding[loinc-observation] = $loinc-pattern#26436-6
+* category.coding[loinc-observation] = $loinc-no-ver#26436-6
 * category.coding[observation-category] = $observation-category#laboratory
 * code MS
   * ^short = "Code"
@@ -109,7 +122,7 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc 0..* MS
-* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.system = $loinc-no-ver
 * code.coding[loinc] from $ResultsLabObservationUvIps (extensible)
 * code.coding[loinc] ^binding.description = "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
 * subject 1.. MS
@@ -198,6 +211,10 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(interpretation ^short, en-US, Interpretation)
 * insert Translation(interpretation ^definition, de-DE, [[Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal.]])
 * insert Translation(interpretation ^definition, en-US, [[A categorical assessment of the value. For example, high, low, normal.]])
+* interpretation from mii-vs-labor-interpretation (extensible)
+* interpretation ^binding.description = "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollständige ValueSet Observation Interpretation Codes; das Modul schränkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden; praktisch relevant sind die abnormal-Codes HH, LL und AA, etwa für Werte jenseits der Telefongrenze."
+* insert Translation(interpretation ^binding.description, de-DE, [[Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollständige ValueSet Observation Interpretation Codes; das Modul schränkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden; praktisch relevant sind die abnormal-Codes HH, LL und AA, etwa für Werte jenseits der Telefongrenze.]])
+* insert Translation(interpretation ^binding.description, en-US, [[Restricted selection from HL7 v3 ObservationInterpretation. FHIR binds this element extensibly to the complete Observation Interpretation Codes value set; the module narrows it to the concepts meaningful in a laboratory context. Local codings such as -- - N + ++ or L N H can be mapped onto these concepts. Because the binding is extensible, further codes may be used in addition; the ones that matter in practice are the abnormal codes HH, LL and AA, for example for results beyond the critical notification limit.]])
 * note MS
   * ^short = "Hinweis"
   * ^definition = "Zusätzliche Informationen zur Laboruntersuchung als Freitext."

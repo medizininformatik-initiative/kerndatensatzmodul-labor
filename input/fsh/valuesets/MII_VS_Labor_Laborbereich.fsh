@@ -7,26 +7,35 @@ Description: "Laboruntersuchungen werden in diagnostische Fachbereiche (untersuc
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableValueSet
+* insert CRMIPublishableValueSet
+* insert CRMIComputableValueSet
+* insert CRMIKnowledgeCapabilitiesValueSet
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C36292)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C25294)
+* insert CRMIArtifactContributors
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-12-12"
-* $loinc#18717-9 "BLOOD BANK STUDIES"
-* $loinc#18718-7 "CELL MARKER STUDIES"
-* $loinc#18719-5 "CHEMISTRY STUDIES"
-* $loinc#18720-3 "COAGULATION STUDIES"
-* $loinc#18721-1 "THERAPEUTIC DRUG MONITORING STUDIES"
-* $loinc#18722-9 "FERTILITY STUDIES"
-* $loinc#18723-7 "HEMATOLOGY STUDIES"
-* $loinc#18724-5 "HLA STUDIES"
-* $loinc#18725-2 "MICROBIOLOGY STUDIES"
-* $loinc#18727-8 "SEROLOGY STUDIES"
-* $loinc#18728-6 "TOXICOLOGY STUDIES"
-* $loinc#18729-4 "URINALYSIS STUDIES"
-* $loinc#18767-4 "BLOOD GAS STUDIES"
-* $loinc#18768-2 "CELL COUNTS+DIFFERENTIAL STUDIES"
-* $loinc#18769-0 "MICROBIAL SUSCEPTIBILITY TESTS"
-* $loinc#26435-8 "MOLECULAR PATHOLOGY STUDIES"
-* $loinc#26436-6 "LABORATORY STUDIES"
-* $loinc#26437-4 "CHEMISTRY CHALLENGE STUDIES"
-* $loinc#26438-2 "CYTOLOGY STUDIES"
-* $v2-0074#GE "Genetics"
+* $loinc#18717-9 "Blood bank studies (set)"
+* $loinc#18718-7 "Cell marker studies (set)"
+* $loinc#18719-5 "Chemistry studies (set)"
+* $loinc#18720-3 "Coagulation studies (set)"
+* $loinc#18721-1 "Therapeutic drug monitoring studies (set)"
+* $loinc#18722-9 "Fertility studies (set)"
+* $loinc#18723-7 "Hematology studies (set)"
+* $loinc#18724-5 "HLA studies (set)"
+* $loinc#18725-2 "Microbiology studies (set)"
+* $loinc#18727-8 "Serology studies (set)"
+* $loinc#18728-6 "Toxicology studies (set)"
+* $loinc#18729-4 "Urinalysis studies (set)"
+* $loinc#18767-4 "Blood gas studies (set)"
+* $loinc#18768-2 "Cell counts+Differential studies (set)"
+* $loinc#18769-0 "Microbial susceptibility tests Set"
+* $loinc#26435-8 "Molecular pathology studies (set)"
+* $loinc#26436-6 "Laboratory studies (set)"
+* $loinc#26437-4 "Chemistry challenge studies (set)"
+* $loinc#26438-2 "Cytology studies (set)"
+* $v2-0074-ver#GE "Genetics"

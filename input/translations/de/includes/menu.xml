@@ -1,0 +1,61 @@
+<!-- Deutsche Übersetzung des Menüs. Die href-Ziele sind mit
+     input/includes/menu.xml identisch — nur die Beschriftungen sind übersetzt.
+     Struktur und Abweichungen sind dort im Kopfkommentar begründet. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Startseite</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Anleitung<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="guidance.html">Modulbeschreibung</a></li>
+      <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
+      <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
+      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
+      <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
+      <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="project-context.html">Projektkontext</a></li>
+      <li><a href="references.html">Referenzen</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <!-- Der Elterneintrag und die ersten vier Einträge verweisen auf die
+         KDS-weiten Konformitätsregeln des Moduls Meta (INTERIM: Meta-Wiki). -->
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Konformität<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Konformität</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">Allgemeine Anforderungen</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Fehlende Daten</a></li>
+      <li><a href="security-and-privacy.html">Sicherheit und Datenschutz</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artefakte<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artefaktübersicht</a></li>
+      <li><a href="profiles.html">Profile</a></li>
+      <li><a href="diagnostic-report.html">Laborbefund</a></li>
+      <li><a href="observation.html">Laboruntersuchung</a></li>
+      <li><a href="service-request.html">Laboranforderung</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="capability-statements.html">CapabilityStatements</a></li>
+      <li><a href="logical-models.html">Logische Modelle</a></li>
+      <li><a href="value-sets.html">ValueSets</a></li>
+      <li><a href="examples.html">Beispiele</a></li>
+    </ul>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Änderungen</a></li>
+  <li class="dropdown">
+    <!-- Der Elterneintrag verweist bewusst auf das verpflichtende Kind
+         (Versionierung): die Metadaten-Übersicht ist optional. -->
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadaten<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="metadata.html">Metadaten-Übersicht</a></li>
+      <li><a href="version-history.html">Versionierung</a></li>
+    </ul>
+  </li>
+  <li><a href="translationinfo.html">Übersetzungen</a></li>
+</ul>

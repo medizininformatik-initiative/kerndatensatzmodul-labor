@@ -40,7 +40,7 @@
           "code": "26436-6",
           "system": "http://loinc.org",
           "version": "2.82",
-          "display": "Laboruntersuchungen"
+          "display": "Laboratory studies (set)"
         },
         {
           "code": "LAB",
@@ -55,13 +55,13 @@
         "code": "11502-2",
         "system": "http://loinc.org",
         "version": "2.82",
-        "display": "Laborbericht"
+        "display": "Laboratory report"
       }
     ]
   },
   "basedOn": [
     {
-      "reference": "ServiceRequest/111"
+      "reference": "ServiceRequest/mii-exa-labor-laboranforderung"
     }
   ],
   "status": "final",
@@ -72,7 +72,7 @@
   "issued": "2018-03-11T10:28:00+01:00",
   "result": [
     {
-      "reference": "Observation/test"
+      "reference": "Observation/mii-exa-labor-laborwert"
     }
   ]
 }

@@ -1,7 +1,40 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-labor-laboruntersuchung",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
+    ],
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+        "extension": [
+          {
+            "url": "packageId",
+            "valueId": "de.medizininformatikinitiative.kerndatensatz.labor"
+          },
+          {
+            "url": "version",
+            "valueString": "2027.0.0"
+          },
+          {
+            "url": "uri",
+            "valueUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }
+        ]
+      }
+    ]
+  },
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "semver",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "SemVer"
+      }
+    },
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
       "valueCodeableConcept": {
@@ -10,6 +43,131 @@
             "code": "CC-BY-4.0",
             "system": "http://hl7.org/fhir/spdx-license",
             "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "package",
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this profile as the technical FHIR representation of the corresponding Medical Informatics Initiative logical model. The profile constrains a base FHIR resource for the MII module context by specifying how elements are used, which elements are required or not used, which extensions and terminology bindings apply, and how the resource maps to the module-specific content model. Implementers should produce and consume resource instances that conform to this profile when exchanging data for the corresponding MII module."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+      "valueDate": "2026-08-24"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+      "valueDate": "2026-08-24"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2027"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C36292",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C25294",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "pw@gefyra.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
           }
         ]
       }
@@ -50,6 +208,7 @@
     ]
   },
   "status": "active",
+  "experimental": false,
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -1339,7 +1498,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
+              "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"
             ]
           }
         ]
@@ -1380,7 +1539,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+              "http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"
             ]
           }
         ],
@@ -1609,7 +1768,42 @@
             }
           ]
         },
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation",
+          "description": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollständige ValueSet Observation Interpretation Codes; das Modul schränkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden; praktisch relevant sind die abnormal-Codes HH, LL und AA, etwa für Werte jenseits der Telefongrenze.",
+          "_description": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de-DE"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollständige ValueSet Observation Interpretation Codes; das Modul schränkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden; praktisch relevant sind die abnormal-Codes HH, LL und AA, etwa für Werte jenseits der Telefongrenze."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en-US"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Restricted selection from HL7 v3 ObservationInterpretation. FHIR binds this element extensibly to the complete Observation Interpretation Codes value set; the module narrows it to the concepts meaningful in a laboratory context. Local codings such as -- - N + ++ or L N H can be mapped onto these concepts. Because the binding is extensible, further codes may be used in addition; the ones that matter in practice are the abnormal codes HH, LL and AA, for example for results beyond the critical notification limit."
+                  }
+                ]
+              }
+            ]
+          }
+        }
       },
       {
         "id": "Observation.note",

@@ -7,6 +7,20 @@ Description: "Logische Repräsentation des Basismoduls Labor"
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageLogicalModel
+* insert CRMIApprovalDate(2026-08-24)
+* insert CRMILastReviewDate(2026-08-24)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C36292)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C25294)
+* insert CRMIArtifactContributors
+* ^status = #active
+* ^experimental = false
 * . ^short = "Das Basismodul Laborbefunde enthält strukturierte Informationen zu Laboruntersuchungen als komplexe diagnostische Maßnahmen."
 * Identifikation 1..* Identifier "Identifikator des Laborbefunds" "Identifikator des Laborbefunds"
 * Status 1..1 code "Status des Laborbefunds:" "vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich)\r\nfinal (Endbefund, sollte nicht mehr geändert werden.)\r\nfinal korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem noch Änderungen vorgenommen werden.)"

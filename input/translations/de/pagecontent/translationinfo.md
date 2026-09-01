@@ -1,0 +1,1 @@
+Englisch ist die Standardsprache dieses IG. Die deutschen Seiten enthalten die migrierten 2027er Inhalte. Die englischen Seiten wurden während der Migration maschinell übersetzt und in Gate C freigegeben.

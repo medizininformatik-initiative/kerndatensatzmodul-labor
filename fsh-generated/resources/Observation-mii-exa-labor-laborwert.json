@@ -23,7 +23,7 @@
           }
         ]
       },
-      "system": "https://exmaple.org/fhir/sid/test-lab-results",
+      "system": "https://example.org/fhir/sid/test-lab-results",
       "value": "59826-8_1234567890",
       "assigner": {
         "identifier": {
@@ -40,7 +40,7 @@
           "code": "26436-6",
           "system": "http://loinc.org",
           "version": "2.82",
-          "display": "Laboruntersuchungen"
+          "display": "Laboratory studies (set)"
         },
         {
           "code": "laboratory",
@@ -60,8 +60,8 @@
       "valueCoding": {
         "code": "118128002",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
-        "display": "Specimen hemolyzed (finding)"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "display": "Specimen hemolyzed"
       }
     }
   ],
@@ -97,7 +97,7 @@
         "code": "59826-8",
         "system": "http://loinc.org",
         "version": "2.82",
-        "display": "Creatinin [Mol/Volumen] in Blut"
+        "display": "Creatinine [Moles/volume] in Blood"
       }
     ],
     "text": "Kreatinin"
@@ -116,8 +116,8 @@
         "valueCoding": {
           "code": "399445004",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
-          "display": "Specimen collection date (observable entity)"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+          "display": "Specimen collection date"
         }
       }
     ]

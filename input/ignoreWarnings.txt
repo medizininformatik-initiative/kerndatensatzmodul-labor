@@ -1,0 +1,29 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# Die uri-Sub-Extension von package-source traegt die Modul-Basis-URL; die identifiziert bewusst kein Artefakt.
+No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/core/modul-labor'
+
+# Quittung fuer pin-canonicals: pin-all - der Publisher meldet jede Referenz, die er auf eine Version festlegt.
+%Pinned the version of%
+
+# Die Elementnamen des Logical Models folgen dem abgenommenen ART-DECOR-Modell (deutsche CamelCase-Begriffe).
+Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+
+# Folge der Mehrfach-Profilierung: jede Extension trifft einen Slice, nur in einem der drei deklarierten Profile.
+%does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-%
+
+# Dasselbe fuer das HL7-shareablevalueset-Profil.
+%does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset%
+
+# Ein Beispiel ergaenzt an category.coding einen lokalen Laborgruppen-Code - offenes Slicing, so gewollt.
+%does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab%
+
+# Das Modul ist R4; dort ist type=pattern korrekt. Der Hinweis zielt auf R5.
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+# Das CodeSystem gehoert der FHIR-Kernspezifikation und wird dort als draft gefuehrt.
+%Reference to draft CodeSystem http://hl7.org/fhir/spdx-license%

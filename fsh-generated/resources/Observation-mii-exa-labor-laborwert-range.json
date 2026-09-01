@@ -16,7 +16,7 @@
           }
         ]
       },
-      "system": "https://exmaple.org/fhir/sid/test-lab-results",
+      "system": "https://example.org/fhir/sid/test-lab-results",
       "value": "5787-7_1234567890",
       "assigner": {
         "identifier": {
@@ -33,7 +33,7 @@
           "code": "26436-6",
           "system": "http://loinc.org",
           "version": "2.82",
-          "display": "Laboruntersuchungen"
+          "display": "Laboratory studies (set)"
         },
         {
           "code": "laboratory",
@@ -50,7 +50,7 @@
         "code": "5787-7",
         "system": "http://loinc.org",
         "version": "2.82",
-        "display": "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrößerung"
+        "display": "Epithelial cells [#/area] in Urine sediment by Microscopy high power field"
       }
     ],
     "text": "Urinsediment Epithelzellen Semi-quantitative Schätzung"
@@ -69,8 +69,8 @@
         "valueCoding": {
           "code": "399445004",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20250701",
-          "display": "Specimen collection date (observable entity)"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+          "display": "Specimen collection date"
         }
       }
     ]

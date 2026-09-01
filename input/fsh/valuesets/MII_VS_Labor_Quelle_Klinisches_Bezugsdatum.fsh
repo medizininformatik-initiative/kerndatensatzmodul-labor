@@ -7,7 +7,16 @@ Description: "Kodierung der Quelle des klinischen Bezugsdatums"
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
+* insert CRMIShareableValueSet
+* insert CRMIPublishableValueSet
+* insert CRMIComputableValueSet
+* insert CRMIKnowledgeCapabilitiesValueSet
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C36292)
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C25294)
+* insert CRMIArtifactContributors
 * ^status = #active
 * ^experimental = false
-* $sct#399445004 "Specimen collection date (observable entity)"
-* $sct#281271004 "Date sample received in laboratory (observable entity)"
+* $sct#399445004 "Specimen collection date"
+* $sct#281271004 "Date sample received in laboratory"
