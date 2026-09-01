@@ -39,7 +39,7 @@ Medical interpretations and comments are an essential part of a laboratory repor
 
 ### Which codes apply
 
-`Observation.interpretation` is bound (extensible) to [Interpretation](ValueSet-mii-vs-labor-interpretation.md), a restricted selection from HL7 v3 ObservationInterpretation:
+FHIR binds `Observation.interpretation` extensibly to [Observation Interpretation Codes](http://hl7.org/fhir/ValueSet/observation-interpretation), which covers the complete HL7 v3 ObservationInterpretation code system. The module narrows that selection to the concepts meaningful in a laboratory context and binds — also extensibly — to [Interpretation](ValueSet-mii-vs-labor-interpretation.md):
 
 | | | |
 | :--- | :--- | :--- |
@@ -51,7 +51,7 @@ Medical interpretations and comments are an essential part of a laboratory repor
 
 Reports in use today carry differing local codings, for example the five-level scale `--, -, N, +, ++` or the three-level `L N H`. The table shows the mapping for the five-level variant.
 
-The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes from the [v3-ObservationInterpretation](http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation) ValueSet may additionally be used: `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal). These are not part of the module ValueSet above.
+The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal) may additionally be used. They are not part of the module ValueSet, but they are part of the FHIR binding and therefore permitted anyway.
 
 ## Specimens
 

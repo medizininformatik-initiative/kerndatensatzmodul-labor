@@ -278,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="which-codes-apply">Which codes apply</h3>
 
-<p><code class="language-plaintext highlighter-rouge">Observation.interpretation</code> is bound (extensible) to <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>, a restricted selection from HL7 v3 ObservationInterpretation:</p>
+<p>FHIR binds <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensibly to <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, which covers the complete HL7 v3 ObservationInterpretation code system. The module narrows that selection to the concepts meaningful in a laboratory context and binds — also extensibly — to <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
 
 <table>
   <thead>
@@ -319,7 +319,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Reports in use today carry differing local codings, for example the five-level scale <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> or the three-level <code class="language-plaintext highlighter-rouge">L N H</code>. The table shows the mapping for the five-level variant.</p>
 
-<p>The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes from the <a href="http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation">v3-ObservationInterpretation</a> ValueSet may additionally be used: <code class="language-plaintext highlighter-rouge">HH</code> (critical high), <code class="language-plaintext highlighter-rouge">LL</code> (critical low) and <code class="language-plaintext highlighter-rouge">AA</code> (critical abnormal). These are not part of the module ValueSet above.</p>
+<p>The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes <code class="language-plaintext highlighter-rouge">HH</code> (critical high), <code class="language-plaintext highlighter-rouge">LL</code> (critical low) and <code class="language-plaintext highlighter-rouge">AA</code> (critical abnormal) may additionally be used. They are not part of the module ValueSet, but they are part of the FHIR binding and therefore permitted anyway.</p>
 
 <h2 id="specimens">Specimens</h2>
 
@@ -352,7 +352,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 1, 2026 07:55+0000">2026-09-01</span>
+          Generated <span title="Tue, Sep 1, 2026 08:05+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- MII branding override for the fhir2.base.template footer fragment.
