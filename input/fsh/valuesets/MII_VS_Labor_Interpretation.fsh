@@ -23,8 +23,22 @@ Description: "Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl 
 // diese fuenf Konzepte ab (Issue #81). Die Bindung ist extensible: fuer
 // Befunde jenseits der Telefongrenze koennen zusaetzlich die abnormal-Codes
 // des CodeSystems verwendet werden (HH, LL, AA).
+// Deutsche Designations. HL7 v3 ObservationInterpretation fuehrt keine, sodass
+// die deutsche ValueSet-Seite sonst "Low"/"High" zeigt, waehrend die
+// Modulbeschreibung daneben "Erniedrigt"/"Erhoeht" erklaert. Die Begriffe sind
+// mit der Tabelle in guidance.md identisch zu halten.
 * $v3-ObservationInterpretation#L "Low"
+  * ^designation[0].language = #de-DE
+  * ^designation[0].value = "Erniedrigt"
 * $v3-ObservationInterpretation#LU "Significantly low"
+  * ^designation[0].language = #de-DE
+  * ^designation[0].value = "Deutlich erniedrigt"
 * $v3-ObservationInterpretation#N "Normal"
+  * ^designation[0].language = #de-DE
+  * ^designation[0].value = "Normal"
 * $v3-ObservationInterpretation#H "High"
+  * ^designation[0].language = #de-DE
+  * ^designation[0].value = "Erhöht"
 * $v3-ObservationInterpretation#HU "Significantly high"
+  * ^designation[0].language = #de-DE
+  * ^designation[0].value = "Deutlich erhöht"

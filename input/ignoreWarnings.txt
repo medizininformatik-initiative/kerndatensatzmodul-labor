@@ -37,3 +37,35 @@ No definition could be found for URL value 'https://www.medizininformatik-initia
 # voruebergehend auskommentieren - dann steht wieder da, was worauf gepinnt
 # wurde.
 %Pinned the version of%
+
+# Folge von displayLanguage=de-DE im Expansions-Manifest: fuer Codes ohne
+# deutsche Designation meldet der Validator, dass er nur das Display der
+# Default-Sprache findet ("... which is a valid display for the default
+# language"). INFORMATION, kein Befund.
+# Unterdrueckt werden GENAU NEUN CODES, nicht ganze Systeme: mehr sind es
+# nicht. Jedes Muster nennt System, Code UND die Sprachklausel, damit eine
+# kuenftige andere Meldung zum selben System nicht mitverschluckt wird.
+# `%` wirkt nur am Anfang und am Ende eines Musters, nicht in der Mitte
+# (gemessen 01.09.2026), deshalb ein Muster pro Code statt eines gemeinsamen.
+# ERRORs unterdrueckt diese Datei ohnehin nicht - auch das wurde gemessen, mit
+# einem Testmuster auf den SNOMED-Filter-Error, der stehen blieb.
+#
+# Vier davon sind HL7-/ISO-Infrastruktur ohne deutsche Designation, an der das
+# Modul nichts aendern kann. Die fuenf v3-ObservationInterpretation-Codes sind
+# der Inhalt von mii-vs-labor-interpretation; auch sie sind modulseitig nicht
+# behebbar: das ValueSet fuehrt deutsche designation-Eintraege (siehe
+# MII_VS_Labor_Interpretation.fsh), aber der Publisher rendert die
+# compose-Tabelle aus concept.display und zieht designation nicht heran - die
+# Seite zeigt in beiden Sprachvarianten "Low"/"High". Die Designations bleiben
+# trotzdem: ein Terminologieserver, der mit displayLanguage=de-DE expandiert,
+# verwendet sie. Die deutschen Begriffe stehen ausserdem in der Tabelle in
+# guidance.md.
+%the code urn:iso:std:iso:3166#DE for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#LU for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H for language(s) 'de-DE'%
+%the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#HU for language(s) 'de-DE'%
