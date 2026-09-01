@@ -68,7 +68,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "code" : "OBI"
       }]
     },
-    "system" : "https://exmaple.org/fhir/sid/test-lab-results",
+    "system" : "https://example.org/fhir/sid/test-lab-results",
     "value" : "59826-8_1234567890",
     "assigner" : {
       "identifier" : {

@@ -52,7 +52,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
         "code" : "OBI"
       }]
     },
-    "system" : "https://exmaple.org/fhir/sid/test-lab-results",
+    "system" : "https://example.org/fhir/sid/test-lab-results",
     "value" : "1755-8_1234567890",
     "assigner" : {
       "identifier" : {
