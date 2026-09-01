@@ -62,6 +62,12 @@ Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/Va
 
 -------
 
+Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation`
+
+[ValueSet Interpretation](ValueSet-mii-vs-labor-interpretation.md)
+
+-------
+
 Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum`
 
 [ValueSet Quelle Klinisches Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md)

@@ -24,6 +24,7 @@ Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änd
 * valueCodeableConcept: Extensible-Binding an das neue ValueSet [Laborergebnis codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.md), welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices `qualitativ` und `semiquantitativ` entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.
 * code.coding: Neuer offener Slice `loinc` mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse.
 * `Coding.version` ist auf `Observation.code`, `Observation.valueCodeableConcept` und `ServiceRequest.code` als Must Support markiert.
+* interpretation: Extensible-Binding an das neue ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.md), eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Lokal gebräuchliche Skalen wie `--, -, N, +, ++` bzw. `L N H` bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes `HH`, `LL` und `AA` verwendet werden.
 
 ### Version: 2026.0.3
 

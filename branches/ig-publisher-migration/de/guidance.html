@@ -244,7 +244,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="#dokumentationszeitpunkt-des-laborberichts" id="markdown-toc-dokumentationszeitpunkt-des-laborberichts">Dokumentationszeitpunkt des Laborberichts</a></li>
     </ul>
   </li>
-  <li><a href="#interpretationen-und-kommentare" id="markdown-toc-interpretationen-und-kommentare">Interpretationen und Kommentare</a></li>
+  <li><a href="#interpretationen-und-kommentare" id="markdown-toc-interpretationen-und-kommentare">Interpretationen und Kommentare</a>    <ul>
+      <li><a href="#welche-codes-in-frage-kommen" id="markdown-toc-welche-codes-in-frage-kommen">Welche Codes in Frage kommen</a></li>
+    </ul>
+  </li>
   <li><a href="#probenmaterial" id="markdown-toc-probenmaterial">Probenmaterial</a></li>
 </ul>
 
@@ -330,6 +333,51 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
 <p>Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern nur auf einzelne Messungen (z.B. "Messung gestört"). Diese Kommentare sollten als Notiz gespeichert werden. Eine Interpretation der Lage des Messwertes in Bezug zum Referenzintervall (z.B. "+", "hoch", "-", "niedrig") können explizit angegeben werden, sind jedoch redundant, da das Referenzintervall selbst explizit abgebildet werden sollte.</p>
 
+<h3 id="welche-codes-in-frage-kommen">Welche Codes in Frage kommen</h3>
+
+<p>FHIR bindet <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensible an <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, das den vollständigen CodeSystem HL7 v3 ObservationInterpretation umfasst. Das Modul schränkt diese Auswahl auf die im Laborkontext sinnvollen Konzepte ein und bindet – ebenfalls extensible – an das ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Bedeutung</th>
+      <th>Beispiel lokaler Kodierung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LU</code></td>
+      <td>Deutlich erniedrigt</td>
+      <td><code class="language-plaintext highlighter-rouge">--</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">L</code></td>
+      <td>Erniedrigt</td>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">N</code></td>
+      <td>Normal</td>
+      <td><code class="language-plaintext highlighter-rouge">N</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">H</code></td>
+      <td>Erhöht</td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HU</code></td>
+      <td>Deutlich erhöht</td>
+      <td><code class="language-plaintext highlighter-rouge">++</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> oder die dreistufige <code class="language-plaintext highlighter-rouge">L N H</code>. Die Tabelle zeigt das Mapping der fünfstufigen Variante.</p>
+
+<p>Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden. Praktisch relevant sind die abnormal-Codes <code class="language-plaintext highlighter-rouge">HH</code> (kritisch erhöht), <code class="language-plaintext highlighter-rouge">LL</code> (kritisch erniedrigt) und <code class="language-plaintext highlighter-rouge">AA</code> (kritisch abweichend) – etwa für Werte jenseits der Telefongrenze, also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss. Sie gehören nicht zum Modul-ValueSet, sind aber in dem ValueSet enthalten, das die FHIR-R4-Spezifikation für <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> verwendet.</p>
+
 <h2 id="probenmaterial">Probenmaterial</h2>
 
 <p><strong>Abbildung des Probenmaterials im Modul LABORBEFUND:</strong></p>
@@ -370,7 +418,7 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 1, 2026 07:28+0000">2026-09-01</span>
+          Erstellt <span title="Tue, Sep 1, 2026 08:17+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- MII branding override for the fhir2.base.template footer fragment.

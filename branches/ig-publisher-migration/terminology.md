@@ -39,5 +39,6 @@ The following module-specific ValueSets are published without an embedded expans
 - [Order codes](ValueSet-mii-vs-labor-order-codes.html)
 - [Qualitative laboratory results](ValueSet-mii-vs-labor-laborergebnis-qualitativ.html)
 - [Coded laboratory results](ValueSet-mii-vs-labor-laborergebnis-codiert.html)
+- [Interpretation](ValueSet-mii-vs-labor-interpretation.html)
 - [Interpretation-affecting properties](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.html)
 - [Identifier types](ValueSet-mii-vs-labor-identifier-type-codes.html)

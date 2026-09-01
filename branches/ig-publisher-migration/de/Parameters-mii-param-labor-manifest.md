@@ -51,6 +51,10 @@
   },
   {
     "name" : "system-version",
+    "valueCanonical" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"
+  },
+  {
+    "name" : "system-version",
     "valueCanonical" : "http://terminology.hl7.org/CodeSystem/v2-0074|3.0.0"
   },
   {
@@ -308,6 +312,10 @@
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation|2027.0.0"
   }]
 }
 

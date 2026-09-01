@@ -268,6 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>valueCodeableConcept: Extensible-Binding an das neue ValueSet <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">Laborergebnis codiert</a>, welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices <code class="language-plaintext highlighter-rouge">qualitativ</code> und <code class="language-plaintext highlighter-rouge">semiquantitativ</code> entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.</li>
   <li>code.coding: Neuer offener Slice <code class="language-plaintext highlighter-rouge">loinc</code> mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse.</li>
   <li><code class="language-plaintext highlighter-rouge">Coding.version</code> ist auf <code class="language-plaintext highlighter-rouge">Observation.code</code>, <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> und <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code> als Must Support markiert.</li>
+  <li>interpretation: Extensible-Binding an das neue ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>, eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (<code class="language-plaintext highlighter-rouge">L</code>, <code class="language-plaintext highlighter-rouge">LU</code>, <code class="language-plaintext highlighter-rouge">N</code>, <code class="language-plaintext highlighter-rouge">H</code>, <code class="language-plaintext highlighter-rouge">HU</code>). Lokal gebräuchliche Skalen wie <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> bzw. <code class="language-plaintext highlighter-rouge">L N H</code> bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes <code class="language-plaintext highlighter-rouge">HH</code>, <code class="language-plaintext highlighter-rouge">LL</code> und <code class="language-plaintext highlighter-rouge">AA</code> verwendet werden.</li>
 </ul>
 
 <h3 id="version-202603">Version: 2026.0.3</h3>
@@ -426,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 1, 2026 07:28+0000">2026-09-01</span>
+          Erstellt <span title="Tue, Sep 1, 2026 08:17+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- MII branding override for the fhir2.base.template footer fragment.

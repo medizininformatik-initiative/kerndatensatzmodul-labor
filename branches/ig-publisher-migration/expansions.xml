@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="28968a1b-7787-49d3-b4d8-61a94d4a0a0b"/>
+  <id value="aed93c39-eb0d-4d66-bea0-5a2c53ad62d6"/>
   <meta>
-    <lastUpdated value="2026-09-01T07:28:55.479+00:00"/>
+    <lastUpdated value="2026-09-01T08:17:52.514+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -502,7 +502,7 @@
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T07:28:55+00:00"/>
+        <date value="2026-09-01T08:17:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -511,8 +511,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1c7e0fc7-193f-49f2-8b34-d030f194ea62"/>
-          <timestamp value="2026-09-01T07:31:01+00:00"/>
+          <identifier value="urn:uuid:b7a87dae-3606-425a-9a16-a56a9b121831"/>
+          <timestamp value="2026-09-01T08:20:01+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1150,7 +1150,7 @@
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T07:28:55+00:00"/>
+        <date value="2026-09-01T08:17:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1159,8 +1159,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1c7e0fc7-193f-49f2-8b34-d030f194ea62"/>
-          <timestamp value="2026-09-01T07:31:01+00:00"/>
+          <identifier value="urn:uuid:b7a87dae-3606-425a-9a16-a56a9b121831"/>
+          <timestamp value="2026-09-01T08:20:01+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1798,7 +1798,7 @@
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T07:28:55+00:00"/>
+        <date value="2026-09-01T08:17:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1807,8 +1807,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8dba9912-a67f-4ee9-860c-f9e4ba382c10"/>
-          <timestamp value="2026-09-01T07:31:03+00:00"/>
+          <identifier value="urn:uuid:e9ed6000-d49e-48fb-b949-6a67a6a5b449"/>
+          <timestamp value="2026-09-01T08:20:03+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1932,6 +1932,805 @@
               <code value="status"/>
               <valueCode value="N"/>
             </property>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+            <extension url="packageId">
+              <valueId value="de.medizininformatikinitiative.kerndatensatz.labor"/>
+            </extension>
+            <extension url="version">
+              <valueString value="2027.0.0"/>
+            </extension>
+            <extension url="uri">
+              <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+            </extension>
+          </extension>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v4.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-L"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-L">L</a>
+                </td>
+                <td>Low</td>
+                <td>
+                  <div>
+                    <p>The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test procedure).</p>
+
+                    <p>Synonym: Below low normal</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Low&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Low&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-LU"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-LU">LU</a>
+                </td>
+                <td>Significantly low</td>
+                <td>
+                  <div>
+                    <p>A test result that is significantly lower than the reference (normal) or therapeutic interval, but has not reached the critically low value and might need special attention, as defined by the laboratory or the clinician.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;LU&quot;, &quot;display&quot;: &quot;Significantly low&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;LU&quot;&gt;&lt;display value=&quot;Significantly low&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-N"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-N">N</a>
+                </td>
+                <td>Normal</td>
+                <td>
+                  <div>
+                    <p>The result or observation value is within the reference range or expected norm (as defined for the respective test procedure).</p>
+
+                    <p>[Note: Applies to numeric or non-numeric results.]</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-H"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-H">H</a>
+                </td>
+                <td>High</td>
+                <td>
+                  <div>
+                    <p>The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test procedure).</p>
+
+                    <p>Synonym: Above high normal</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;High&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;High&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-HU"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-HU">HU</a>
+                </td>
+                <td>Significantly high</td>
+                <td>
+                  <div>
+                    <p>A test result that is significantly higher than the reference (normal) or therapeutic interval, but has not reached the critically high value and might need special attention, as defined by the laboratory or the clinician.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;HU&quot;, &quot;display&quot;: &quot;Significantly high&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;HU&quot;&gt;&lt;display value=&quot;Significantly high&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_Labor_Interpretation"/>
+        <title value="MII VS Labor Interpretation"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-28"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:636217a1-dabf-4209-b44e-8bedba0ddf81"/>
+          <timestamp value="2026-09-01T08:20:01+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="default-valueset-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="L"/>
+            <display value="Low"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="LU"/>
+            <display value="Significantly low"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="N"/>
+            <display value="Normal"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="H"/>
+            <display value="High"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="HU"/>
+            <display value="Significantly high"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+            <extension url="packageId">
+              <valueId value="de.medizininformatikinitiative.kerndatensatz.labor"/>
+            </extension>
+            <extension url="version">
+              <valueString value="2027.0.0"/>
+            </extension>
+            <extension url="uri">
+              <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+            </extension>
+          </extension>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v4.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-L"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-L">L</a>
+                </td>
+                <td>Low</td>
+                <td>
+                  <div>
+                    <p>The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test procedure).</p>
+
+                    <p>Synonym: Below low normal</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Low&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Low&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-LU"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-LU">LU</a>
+                </td>
+                <td>Significantly low</td>
+                <td>
+                  <div>
+                    <p>A test result that is significantly lower than the reference (normal) or therapeutic interval, but has not reached the critically low value and might need special attention, as defined by the laboratory or the clinician.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;LU&quot;, &quot;display&quot;: &quot;Significantly low&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;LU&quot;&gt;&lt;display value=&quot;Significantly low&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-N"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-N">N</a>
+                </td>
+                <td>Normal</td>
+                <td>
+                  <div>
+                    <p>The result or observation value is within the reference range or expected norm (as defined for the respective test procedure).</p>
+
+                    <p>[Note: Applies to numeric or non-numeric results.]</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-H"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-H">H</a>
+                </td>
+                <td>High</td>
+                <td>
+                  <div>
+                    <p>The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test procedure).</p>
+
+                    <p>Synonym: Above high normal</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;High&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;High&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-HU"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-HU">HU</a>
+                </td>
+                <td>Significantly high</td>
+                <td>
+                  <div>
+                    <p>A test result that is significantly higher than the reference (normal) or therapeutic interval, but has not reached the critically high value and might need special attention, as defined by the laboratory or the clinician.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;HU&quot;, &quot;display&quot;: &quot;Significantly high&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;HU&quot;&gt;&lt;display value=&quot;Significantly high&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_Labor_Interpretation"/>
+        <title value="MII VS Labor Interpretation"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-28"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:636217a1-dabf-4209-b44e-8bedba0ddf81"/>
+          <timestamp value="2026-09-01T08:20:01+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="default-valueset-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="L"/>
+            <display value="Low"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="LU"/>
+            <display value="Significantly low"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="N"/>
+            <display value="Normal"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="H"/>
+            <display value="High"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="HU"/>
+            <display value="Significantly high"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+            <extension url="packageId">
+              <valueId value="de.medizininformatikinitiative.kerndatensatz.labor"/>
+            </extension>
+            <extension url="version">
+              <valueString value="2027.0.0"/>
+            </extension>
+            <extension url="uri">
+              <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+            </extension>
+          </extension>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html">codesystem ObservationInterpretation v4.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-L"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-L">L</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test procedure).</p>
+
+                    <p>Synonym: Below low normal</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;L&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-LU"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-LU">LU</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>A test result that is significantly lower than the reference (normal) or therapeutic interval, but has not reached the critically low value and might need special attention, as defined by the laboratory or the clinician.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;LU&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;LU&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-N"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-N">N</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>The result or observation value is within the reference range or expected norm (as defined for the respective test procedure).</p>
+
+                    <p>[Note: Applies to numeric or non-numeric results.]</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;N&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-H"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-H">H</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test procedure).</p>
+
+                    <p>Synonym: Above high normal</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;H&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-HU"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-HU">HU</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>A test result that is significantly higher than the reference (normal) or therapeutic interval, but has not reached the critically high value and might need special attention, as defined by the laboratory or the clinician.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;HU&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;HU&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_Labor_Interpretation"/>
+        <title value="MII VS Labor Interpretation"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-08-28"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f0fc7fae-b13c-4998-b5d4-46e07548621a"/>
+          <timestamp value="2026-09-01T08:20:03+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="default-valueset-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="L"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="LU"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="N"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="H"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="HU"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2438,8 +3237,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:85c69ab4-53c6-4a4a-93d6-18ff43d8545e"/>
-          <timestamp value="2026-09-01T07:31:04+00:00"/>
+          <identifier value="urn:uuid:a970fb5a-930d-4be6-8730-8c5eae3f1797"/>
+          <timestamp value="2026-09-01T08:20:04+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -3087,8 +3886,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:85c69ab4-53c6-4a4a-93d6-18ff43d8545e"/>
-          <timestamp value="2026-09-01T07:31:04+00:00"/>
+          <identifier value="urn:uuid:a970fb5a-930d-4be6-8730-8c5eae3f1797"/>
+          <timestamp value="2026-09-01T08:20:04+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -3736,8 +4535,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:31a4385d-1e26-4b3c-870a-a4db446e5fa9"/>
-          <timestamp value="2026-09-01T07:31:04+00:00"/>
+          <identifier value="urn:uuid:ad99a1d9-ccc7-425c-9f27-fc61b6412405"/>
+          <timestamp value="2026-09-01T08:20:04+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -24937,8 +25736,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8ddf9bb9-3381-4354-bf87-65a87bda2aea"/>
-          <timestamp value="2026-09-01T07:31:05+00:00"/>
+          <identifier value="urn:uuid:e9d42adc-8243-4d59-b5d1-3e84fa55e2a4"/>
+          <timestamp value="2026-09-01T08:20:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
@@ -51124,8 +51923,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8ddf9bb9-3381-4354-bf87-65a87bda2aea"/>
-          <timestamp value="2026-09-01T07:31:05+00:00"/>
+          <identifier value="urn:uuid:e9d42adc-8243-4d59-b5d1-3e84fa55e2a4"/>
+          <timestamp value="2026-09-01T08:20:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
@@ -77311,8 +78110,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d5a96dbf-c6e4-4670-80d6-4d9fe87e2716"/>
-          <timestamp value="2026-09-01T07:31:05+00:00"/>
+          <identifier value="urn:uuid:f519fef3-ffe6-45f9-b84d-576b6f15378f"/>
+          <timestamp value="2026-09-01T08:20:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
