@@ -38,7 +38,8 @@
 #
 # Terminology: the IG Publisher build prefers the MII terminology server
 #            (SU-TermServ) through a client-certificate nginx proxy when the repo
-#            secrets SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD are set, and
+#            organisation secrets CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD
+#            are set (the scaffold looks for SU_TERMSERV_CLIENT_* — see the step), and
 #            otherwise falls back to the public HL7 server https://tx.fhir.org
 #            with a ::notice. The build must not hard-fail without the cert;
 #            some MII-specific value sets may then not fully expand (a QA note).
@@ -218,9 +219,16 @@ jobs:
         if: ${{ steps.build.outputs.mode == 'full' }}
         shell: bash
         env:
-          SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
-          SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
-          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+          # The MII organisation stores the SU-TermServ client certificate as
+          # CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD — the names the reusable
+          # validation workflows of kerndatensatz-meta declare. The scaffold
+          # this workflow comes from expects SU_TERMSERV_CLIENT_* instead, so it
+          # found nothing and silently fell back to the public terminology
+          # server. Read the organisation's names; the local variable names stay
+          # as they are, so the steps below are unchanged.
+          SU_TERMSERV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          SU_TERMSERV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
           set -euo pipefail
           # Prefer the MII terminology server (SU-TermServ) through a client-cert
