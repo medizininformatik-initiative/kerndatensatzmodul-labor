@@ -83,6 +83,22 @@ Ein wesentlicher Teil des Laborbefundes sind die ärztlichen Interpretationen un
 
 Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern nur auf einzelne Messungen (z.B. "Messung gestört"). Diese Kommentare sollten als Notiz gespeichert werden. Eine Interpretation der Lage des Messwertes in Bezug zum Referenzintervall (z.B. "+", "hoch", "-", "niedrig") können explizit angegeben werden, sind jedoch redundant, da das Referenzintervall selbst explizit abgebildet werden sollte.
 
+### Welche Codes in Frage kommen
+
+`Observation.interpretation` ist extensible an das ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html) gebunden – eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation:
+
+| Code | Bedeutung | Beispiel lokaler Kodierung |
+|---|---|---|
+| `LU` | Deutlich erniedrigt | `--` |
+| `L` | Erniedrigt | `-` |
+| `N` | Normal | `N` |
+| `H` | Erhöht | `+` |
+| `HU` | Deutlich erhöht | `++` |
+
+In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala `--, -, N, +, ++` oder die dreistufige `L N H`. Die Tabelle zeigt das Mapping der fünfstufigen Variante.
+
+Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes desselben CodeSystems verwendet werden: `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend). Diese sind nicht Bestandteil des ValueSets.
+
 ## Probenmaterial
 
 **Abbildung des Probenmaterials im Modul LABORBEFUND:**

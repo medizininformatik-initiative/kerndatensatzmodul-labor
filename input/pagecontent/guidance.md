@@ -30,6 +30,22 @@ The ambiguous term “order time” is deliberately not used because it may mean
 
 Medical interpretations and comments are an essential part of a laboratory report. The main interpretation is usually recorded as free text; additional structured codes may be used where suitable terminology and licences are available. Comments concerning only one measurement, such as “measurement interfered with”, should be stored as a note. A coded interpretation relative to the reference interval is possible but redundant when the reference interval itself is represented explicitly.
 
+### Which codes apply
+
+`Observation.interpretation` is bound (extensible) to [Interpretation](ValueSet-mii-vs-labor-interpretation.html), a restricted selection from HL7 v3 ObservationInterpretation:
+
+| Code | Meaning | Example of a local coding |
+|---|---|---|
+| `LU` | Significantly low | `--` |
+| `L` | Low | `-` |
+| `N` | Normal | `N` |
+| `H` | High | `+` |
+| `HU` | Significantly high | `++` |
+
+Reports in use today carry differing local codings, for example the five-level scale `--, -, N, +, ++` or the three-level `L N H`. The table shows the mapping for the five-level variant.
+
+The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes of the same code system may additionally be used: `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal). These are not part of the ValueSet.
+
 ## Specimens
 
 [![ART-DECOR model of the specimen](ART-DECOR_Probenmaterial.png)](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.799&conceptEffectiveDate=2019-06-06T10%3A06%3A13&language=de-DE)
