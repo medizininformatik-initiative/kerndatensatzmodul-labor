@@ -1,7 +1,6 @@
 # Änderungen - MII IG Laborbefund v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
-* [**Versionierung**](version-history.md)
 * **Änderungen**
 
 ## Änderungen

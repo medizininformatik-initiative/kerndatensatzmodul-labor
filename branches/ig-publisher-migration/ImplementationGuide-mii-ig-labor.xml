@@ -138,7 +138,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-01T08:17:52+00:00"/>
+  <date value="2026-09-01T11:26:20+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1499,23 +1499,6 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="datasets-and-descriptions.html"/>
-          </extension>
-          <nameUrl value="datasets-and-descriptions.html"/>
-          <title value="Datasets and Descriptions">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Datensätze und Beschreibungen"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="uml-diagrams.html"/>
           </extension>
           <nameUrl value="uml-diagrams.html"/>
@@ -1526,6 +1509,40 @@
               </extension>
               <extension url="content">
                 <valueString value="UML-Diagramm"/>
+              </extension>
+            </extension>
+          </title>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="terminology.html"/>
+          </extension>
+          <nameUrl value="terminology.html"/>
+          <title value="Terminology">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Terminologie"/>
+              </extension>
+            </extension>
+          </title>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="laboratory-timestamps.html"/>
+          </extension>
+          <nameUrl value="laboratory-timestamps.html"/>
+          <title value="Laboratory Timestamps">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Zeitpunkte im Labor"/>
               </extension>
             </extension>
           </title>
@@ -1565,124 +1582,30 @@
           </title>
           <generation value="markdown"/>
         </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="laboratory-timestamps.html"/>
-          </extension>
-          <nameUrl value="laboratory-timestamps.html"/>
-          <title value="Laboratory Timestamps">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Zeitpunkte im Labor"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="conformance.html"/>
+          <valueUrl value="security-and-privacy.html"/>
         </extension>
-        <nameUrl value="conformance.html"/>
-        <title value="Conformance">
+        <nameUrl value="security-and-privacy.html"/>
+        <title value="Security and Privacy">
           <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
               <valueCode value="de"/>
             </extension>
             <extension url="content">
-              <valueString value="Konformität"/>
+              <valueString value="Sicherheit und Datenschutz"/>
             </extension>
           </extension>
         </title>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="general-requirements.html"/>
-          </extension>
-          <nameUrl value="general-requirements.html"/>
-          <title value="General Requirements">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Allgemeine Anforderungen"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="must-support.html"/>
-          </extension>
-          <nameUrl value="must-support.html"/>
-          <title value="Must Support">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Must Support"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="missing-data.html"/>
-          </extension>
-          <nameUrl value="missing-data.html"/>
-          <title value="Handling Missing Data">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Umgang mit fehlenden Daten"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="security-and-privacy.html"/>
-          </extension>
-          <nameUrl value="security-and-privacy.html"/>
-          <title value="Security and Privacy">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Sicherheit und Datenschutz"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="profiles-and-extensions.html"/>
+          <valueUrl value="profiles.html"/>
         </extension>
-        <nameUrl value="profiles-and-extensions.html"/>
-        <title value="Profiles and Extensions">
-          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-              <valueCode value="de"/>
-            </extension>
-            <extension url="content">
-              <valueString value="Profile und Extensions"/>
-            </extension>
-          </extension>
-        </title>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -1772,40 +1695,6 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="search-parameters-and-operations.html"/>
-        </extension>
-        <nameUrl value="search-parameters-and-operations.html"/>
-        <title value="Search Parameters and Operations">
-          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-              <valueCode value="de"/>
-            </extension>
-            <extension url="content">
-              <valueString value="Suchparameter und Operationen"/>
-            </extension>
-          </extension>
-        </title>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="terminology.html"/>
-        </extension>
-        <nameUrl value="terminology.html"/>
-        <title value="Terminology">
-          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-              <valueCode value="de"/>
-            </extension>
-            <extension url="content">
-              <valueString value="Terminologie"/>
-            </extension>
-          </extension>
-        </title>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="capability-statements.html"/>
         </extension>
         <nameUrl value="capability-statements.html"/>
@@ -1836,6 +1725,14 @@
             </extension>
           </extension>
         </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="value-sets.html"/>
+        </extension>
+        <nameUrl value="value-sets.html"/>
+        <title value="Value Sets"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1874,6 +1771,23 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Changelog">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Änderungen"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="version-history.html"/>
         </extension>
         <nameUrl value="version-history.html"/>
@@ -1890,16 +1804,16 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="changes.html"/>
+            <valueUrl value="metadata.html"/>
           </extension>
-          <nameUrl value="changes.html"/>
-          <title value="Changelog">
+          <nameUrl value="metadata.html"/>
+          <title value="Metadata Overview">
             <extension url="http://hl7.org/fhir/StructureDefinition/translation">
               <extension url="lang">
                 <valueCode value="de"/>
               </extension>
               <extension url="content">
-                <valueString value="Änderungen"/>
+                <valueString value="Metadatenübersicht"/>
               </extension>
             </extension>
           </title>
@@ -1918,23 +1832,6 @@
             </extension>
             <extension url="content">
               <valueString value="Übersetzungsinformationen"/>
-            </extension>
-          </extension>
-        </title>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="metadata.html"/>
-        </extension>
-        <nameUrl value="metadata.html"/>
-        <title value="Metadata Overview">
-          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-            <extension url="lang">
-              <valueCode value="de"/>
-            </extension>
-            <extension url="content">
-              <valueString value="Metadatenübersicht"/>
             </extension>
           </extension>
         </title>

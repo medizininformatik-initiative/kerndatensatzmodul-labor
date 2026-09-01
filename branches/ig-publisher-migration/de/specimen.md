@@ -1,7 +1,7 @@
 # Probenmaterial - MII IG Laborbefund v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
-* [**Profile und Extensions**](profiles-and-extensions.md)
+* [**Profiles**](profiles.md)
 * **Probenmaterial**
 
 ## Probenmaterial

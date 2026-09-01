@@ -1,7 +1,6 @@
 # Sicherheit und Datenschutz - MII IG Laborbefund v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
-* [**Konformität**](conformance.md)
 * **Sicherheit und Datenschutz**
 
 ## Sicherheit und Datenschutz

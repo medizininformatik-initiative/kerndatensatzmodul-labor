@@ -23,10 +23,28 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
   	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- MII branding override for the fhir2.base.template CSS placeholder
+    <!-- Branding override for the fhir2.base.template CSS placeholder
      (base ships includes/fragment-css.html as a single comment; it is included
-     in <head> AFTER all base stylesheets, so mii.css wins the cascade). -->
-<link href="assets/css/mii.css" rel="stylesheet"/>
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
 
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -50,33 +68,75 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14.7"}
-    h3,h4,h5,h6{--heading-prefix:"14.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.7"}
+    h3,h4,h5,h6{--heading-prefix:"13.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- MII branding override for the fhir2.base.template header placeholder
+        <!-- Branding override for the fhir2.base.template header placeholder
      (base ships includes/fragment-header.html as a single comment; it is included
      inside "#segment-header > .container", before the #ig-status block).
      Language handling: only the asset and its descriptive alt text switch on
      include.lang (the pattern kerndatensatz-basis uses); no translatable UI
      strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
      Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
-     FHIR spec) in #family-nav, and the MII logo in #project-nav. fhir-logo-www.png
-     is shipped by fhir2.base.template (content/assets/images/), so it resolves
-     from the inherited assets without shipping it here. -->
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
 <div id="family-nav">
   <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
     <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
   </a>
 </div>
 <div id="project-nav">
-  <a id="project-logo" no-external="true" href="https://www.medizininformatik-initiative.de/">
 
-    <img height="50" alt="Medical Informatics Initiative (MII)" src="assets/images/logo-en.svg"/>
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Network of University Medicine — Data Integration Center)" src="assets/images/logo-num-diz-en.svg"/>
 
   </a>
+
 </div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Font size">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Font size: default">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Font size: larger">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Font size: largest">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Back to top">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
 
 
         <div id="ig-status">
@@ -119,7 +179,29 @@
      sushi-config.yaml generates a single menu.xml that cannot be translated.
      Rules: keep the href targets identical across languages; dropdown parents
      must link to a REAL page (href="#" is rejected by the template's menu QA);
-     only one sub-menu level is supported. -->
+     only one sub-menu level is supported.
+
+     STRUCTURE: this implements the TF-KDS-agreed module menu of
+     mii-kds-module-template (v0.11.1 / v0.13.2 — identical), plus the entries
+     for this module's own pages. Deviations from the scaffold menu, all of them
+     additions rather than changes:
+     - Guidance carries four module-own pages (Terminology, Laboratory
+       Timestamps, Project Context, References).
+     - Artifacts carries the four per-resource profile pages after Profiles.
+       They are one level deep because only one sub-menu level is supported.
+     - Translations is a top-level entry: this IG is bilingual, the page exists,
+       and every narrative page must be reachable from a menu.
+     Optional (0..1) pages the module does NOT have — Search Parameters,
+     Operations, Code Systems — are absent by decision: the module defines no
+     SearchParameter, no OperationDefinition and no CodeSystem resources.
+
+     LINK-ONLY ENTRIES (no page of their own):
+     - "Datasets and Descriptions" points at the Logical Models page — the
+       module's datasets ARE its logical models.
+     - The four Conformance entries point at the KDS-wide conformance rules of
+       the Meta module. INTERIM: the Meta module has no published IG rendering
+       yet, so these link to the authoritative meta-wiki sections; switch them
+       to the Meta IG's menu entries once a stable rendering exists. -->
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li class="dropdown">
@@ -128,20 +210,24 @@
       <li><a href="guidance.html">Guidance</a></li>
       <li><a href="researcher-guidance.html">Guidance for Researchers</a></li>
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
-      <li><a href="datasets-and-descriptions.html">Datasets and Descriptions</a></li>
+      <!-- link-only entry: the module's datasets are its logical models -->
+      <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="project-context.html">Project Context</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="conformance.html" class="dropdown-toggle">Conformance<b class="caret"> </b></a>
+    <!-- The parent and the first four entries link to the KDS-wide conformance
+         rules of the Meta module (INTERIM: meta-wiki; see header note). -->
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Conformance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <li><a href="conformance.html">Conformance</a></li>
-      <li><a href="general-requirements.html">General Requirements</a></li>
-      <li><a href="must-support.html">Must Support</a></li>
-      <li><a href="missing-data.html">Handling Missing Data</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Conformance</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">General Requirements</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Handling Missing Data</a></li>
       <li><a href="security-and-privacy.html">Security and Privacy</a></li>
     </ul>
   </li>
@@ -149,34 +235,38 @@
     <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"> </b></a>
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artifacts Summary</a></li>
-      <li><a href="profiles-and-extensions.html">Profiles and Extensions</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
       <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
-      <li><a href="search-parameters-and-operations.html">Search Parameters and Operations</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
       <li><a href="examples.html">Examples</a></li>
     </ul>
   </li>
   <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Changelog</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Versioning<b class="caret"> </b></a>
+    <!-- The parent deliberately links the MANDATORY child (Versioning): the
+         Metadata Overview page is optional, and a parent pointing at it would
+         have to be re-targeted when that page is removed. -->
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
     <ul class="dropdown-menu">
+      <li><a href="metadata.html">Metadata Overview</a></li>
       <li><a href="version-history.html">Versioning</a></li>
-      <li><a href="changes.html">Changelog</a></li>
     </ul>
   </li>
-  <li><a href="metadata.html">Metadata</a></li>
   <li><a href="translationinfo.html">Translations</a></li>
 </ul>
 
             </div>  <!-- /.nav-collapse -->
 
               
+
+
 
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
@@ -191,6 +281,7 @@
 
   </div>
 </div>
+
 
 
           </div>  <!-- /.container -->
@@ -338,10 +429,10 @@
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 1, 2026 08:17+0000">2026-09-01</span>
+          Generated <span title="Tue, Sep 1, 2026 11:26+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-            <!-- MII branding override for the fhir2.base.template footer fragment.
+            <!-- Branding override for the fhir2.base.template footer fragment.
      Unlike header/css, the base footer fragment is NOT an empty placeholder: it
      renders "Links: Table of Contents | QA Report [| feedback dashboards]".
      The base uses site.data.stringsBase[include.lang][...] for the labels. The
@@ -351,15 +442,31 @@
      labels too. (The blank-label problem that first motivated this is separately
      mitigated: this repo vendors the base's own German catalogs into
      translations/ — see translations/README.md.) The override preserves the base
-     links (TOC, QA, feedback dashboards) and appends the MII information links.
-     Imprint: the MII website has separate German (/de/impressum) and English
-     (/en/legal-notice) imprint pages (both verified HTTP 200 on 2026-07-22). -->
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
 
           Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
                  
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
-                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/en/legal-notice">Legal notice</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/en/legal-notice">Legal notice</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
 
           </span>
         </p>

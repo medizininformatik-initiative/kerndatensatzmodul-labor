@@ -1,6 +1,7 @@
 # Terminologie - MII IG Laborbefund v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
+* [**Anleitung**](guidance.md)
 * **Terminologie**
 
 ## Terminologie
@@ -38,43 +39,7 @@ Wenn sich kein passender Term finden lässt, sollte in diesen Fällen ein Änder
 
 Die Maßeinheit muss zwingend in [UCUM-Einheiten](https://ucum.org/ucum) angegeben werden, damit sich die Ergebnisse ineinander umrechnen lassen. Mittels [Validatoren](https://ucum.nlm.nih.gov/ucum-lhc/demo.html) sollte sichergestellt werden, dass die verwendeten Einheiten zulässig sind.
 
--------
-
 ### ValueSets
 
-Zusätzlich zu internationalen Terminologien werden durch das Modul LABOR folgende eigene ValueSets definiert. Es sei darauf hingewiesen, dass alle ValueSets keine Expansion beinhalten. Diese muss vor der Verwendung mittels eines Terminologieservers durchgeführt werden.
-
-Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich`
-
-[ValueSet Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)
-
--------
-
-Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ`
-
-[ValueSet semiquantitative Laborergebnisse](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md)
-
--------
-
-Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert`
-
-[ValueSet codierte Laborergebnisse](ValueSet-mii-vs-labor-laborergebnis-codiert.md)
-
--------
-
-Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation`
-
-[ValueSet Interpretation](ValueSet-mii-vs-labor-interpretation.md)
-
--------
-
-Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum`
-
-[ValueSet Quelle Klinisches Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md)
-
--------
-
-Canoncial: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes`
-
-[ValueSet Order Codes](ValueSet-mii-vs-labor-order-codes.md)
+Das Modul definiert neun eigene ValueSets; sie sind mit ihrem Zweck unter [ValueSets](value-sets.md) aufgelistet.
 

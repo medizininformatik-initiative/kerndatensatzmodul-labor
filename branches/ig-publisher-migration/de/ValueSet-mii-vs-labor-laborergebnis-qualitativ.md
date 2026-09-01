@@ -16,7 +16,7 @@ Kodierung für qualitative Laborergebnisse
 
  **References** 
 
-* Included into [MII_VS_Labor_Laborergebnis_Codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.md)
+* Included into [MII VS Labor Laborergebnis Codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.md)
 
 ### Logical Definition (CLD)
 

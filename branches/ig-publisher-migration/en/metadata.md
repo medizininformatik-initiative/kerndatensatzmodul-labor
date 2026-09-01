@@ -1,6 +1,7 @@
 # Metadata Overview - MII IG Laborbefund v2027.0.0
 
 * [**Table of Contents**](toc.md)
+* [**Versioning**](version-history.md)
 * **Metadata Overview**
 
 ## Metadata Overview

@@ -1,7 +1,7 @@
 # Laboratory Test - MII IG Laborbefund v2027.0.0
 
 * [**Table of Contents**](toc.md)
-* [**Profiles and Extensions**](profiles-and-extensions.md)
+* [**Profiles**](profiles.md)
 * **Laboratory Test**
 
 ## Laboratory Test
