@@ -178,7 +178,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T10:46:34+00:00",
+  "date" : "2026-09-01T11:05:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
