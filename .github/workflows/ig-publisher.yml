@@ -89,6 +89,18 @@ on:
       - "!gh-pages"
       - "!fsh-generated"
   workflow_dispatch:
+    # DIAGNOSE, VORUEBERGEHEND. Erlaubt einen manuell ausgeloesten Lauf gegen
+    # eine andere SU-TermServ-Instanz, um zu klaeren, ob dort dieselben LOINC-
+    # und SNOMED-Codes fehlen wie in der Produktion. Push-Laeufe sind davon
+    # nicht betroffen: ohne Eingabe bleibt alles wie bisher.
+    # ENTFERNEN: diesen inputs-Block und den damit markierten sed-Aufruf im
+    # Schritt "Select terminology server" - beides in einem Commit eingefuegt,
+    # also per git revert ruecknehmbar.
+    inputs:
+      tx_host:
+        description: "SU-TermServ-Host ueberschreiben, z. B. https://ontoserver-staging.su-termserv.de (leer = Produktion)"
+        required: false
+        default: ""
 
 permissions:
   contents: write # push previews to the gh-pages branch
@@ -229,6 +241,8 @@ jobs:
           SU_TERMSERV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
           SU_TERMSERV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
           SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+          # DIAGNOSE, VORUEBERGEHEND - mit dem inputs-Block oben entfernen.
+          TX_HOST_OVERRIDE: ${{ inputs.tx_host }}
         run: |
           set -euo pipefail
           # Prefer the MII terminology server (SU-TermServ) through a client-cert
@@ -241,6 +255,13 @@ jobs:
             curl --fail --location --silent --show-error \
               "https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatz-meta/1db2e534704d92e5ee0cde663ce3e7ccd8825fa7/.github/workflows/nginx.conf" \
               --output "${nginx_dir}/nginx.conf"
+            # DIAGNOSE, VORUEBERGEHEND - zusammen mit dem inputs-Block oben
+            # entfernen. Leer bei jedem Push-Lauf, dann passiert hier nichts.
+            if [ -n "${TX_HOST_OVERRIDE}" ]; then
+              sed -i "s|proxy_pass [^;]*;|proxy_pass ${TX_HOST_OVERRIDE};|" "${nginx_dir}/nginx.conf"
+              echo "::notice::DIAGNOSE: Proxy-Ziel auf ${TX_HOST_OVERRIDE} umgestellt statt der Produktionsinstanz."
+              grep proxy_pass "${nginx_dir}/nginx.conf"
+            fi
             printf '%s' "${SU_TERMSERV_CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
             printf '%s' "${SU_TERMSERV_CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
             openssl rsa \
