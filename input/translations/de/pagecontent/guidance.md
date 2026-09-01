@@ -85,7 +85,7 @@ Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern
 
 ### Welche Codes in Frage kommen
 
-`Observation.interpretation` ist extensible an das ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html) gebunden – eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation:
+FHIR bindet `Observation.interpretation` extensible an [Observation Interpretation Codes](http://hl7.org/fhir/ValueSet/observation-interpretation), das den vollständigen CodeSystem HL7 v3 ObservationInterpretation umfasst. Das Modul schränkt diese Auswahl auf die im Laborkontext sinnvollen Konzepte ein und bindet – ebenfalls extensible – an das ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html):
 
 | Code | Bedeutung | Beispiel lokaler Kodierung |
 |---|---|---|
@@ -97,7 +97,7 @@ Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern
 
 In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala `--, -, N, +, ++` oder die dreistufige `L N H`. Die Tabelle zeigt das Mapping der fünfstufigen Variante.
 
-Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes aus dem ValueSet [v3-ObservationInterpretation](http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation) verwendet werden: `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend). Diese sind nicht Bestandteil des oben genannten Modul-ValueSets.
+Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend) verwendet werden. Sie sind nicht Bestandteil des Modul-ValueSets, aber Teil der FHIR-Bindung und damit ohnehin zulässig.
 
 ## Probenmaterial
 
