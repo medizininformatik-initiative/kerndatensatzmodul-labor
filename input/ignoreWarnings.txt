@@ -24,3 +24,16 @@ The value provided ('en-US') was not found in the value set 'All Languages' (htt
 # plus die ImplementationGuide-Ressource; mit dem Template-Wert
 # .../fhir/modul-labor waere es dieselbe Meldung.
 No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/core/modul-labor'
+
+# 684 INFORMATION-Meldungen, mehr als die Haelfte aller Info-Zeilen. Sie sind
+# die Quittung fuer `pin-canonicals: pin-all` in sushi-config.yaml: der
+# Publisher meldet jede Referenz, die er auf eine Version festlegt. Also kein
+# Befund, sondern die erwartete Ausgabe einer bewusst gesetzten Option, die
+# zusammen mit dem Expansions-Manifest fuer reproduzierbare Kanonisierung
+# sorgt. Der Schweregrad ist INFORMATION - sie zaehlen weder in die Errors
+# noch in die Warnings, verdecken in qa.html aber alles andere.
+# Gemessen 01.09.2026: Info 1200 -> 516, Errors und Warnings unveraendert.
+# Wenn eine Versionsaufloesung einmal zu klaeren ist, diese Zeile
+# voruebergehend auskommentieren - dann steht wieder da, was worauf gepinnt
+# wurde.
+%Pinned the version of%
