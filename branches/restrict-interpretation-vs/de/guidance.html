@@ -376,7 +376,7 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
 <p>In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> oder die dreistufige <code class="language-plaintext highlighter-rouge">L N H</code>. Die Tabelle zeigt das Mapping der fünfstufigen Variante.</p>
 
-<p>Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes desselben CodeSystems verwendet werden: <code class="language-plaintext highlighter-rouge">HH</code> (kritisch erhöht), <code class="language-plaintext highlighter-rouge">LL</code> (kritisch erniedrigt) und <code class="language-plaintext highlighter-rouge">AA</code> (kritisch abweichend). Diese sind nicht Bestandteil des ValueSets.</p>
+<p>Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes aus dem ValueSet <a href="http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation">v3-ObservationInterpretation</a> verwendet werden: <code class="language-plaintext highlighter-rouge">HH</code> (kritisch erhöht), <code class="language-plaintext highlighter-rouge">LL</code> (kritisch erniedrigt) und <code class="language-plaintext highlighter-rouge">AA</code> (kritisch abweichend). Diese sind nicht Bestandteil des oben genannten Modul-ValueSets.</p>
 
 <h2 id="probenmaterial">Probenmaterial</h2>
 
@@ -418,7 +418,7 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 1, 2026 07:48+0000">2026-09-01</span>
+          Erstellt <span title="Tue, Sep 1, 2026 07:55+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- MII branding override for the fhir2.base.template footer fragment.

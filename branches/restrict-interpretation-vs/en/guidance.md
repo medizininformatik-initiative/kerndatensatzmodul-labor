@@ -51,7 +51,7 @@ Medical interpretations and comments are an essential part of a laboratory repor
 
 Reports in use today carry differing local codings, for example the five-level scale `--, -, N, +, ++` or the three-level `L N H`. The table shows the mapping for the five-level variant.
 
-The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes of the same code system may additionally be used: `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal). These are not part of the ValueSet.
+The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes from the [v3-ObservationInterpretation](http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation) ValueSet may additionally be used: `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal). These are not part of the module ValueSet above.
 
 ## Specimens
 
