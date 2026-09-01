@@ -4,7 +4,7 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
 * identifier[analyseBefundCode].type = $v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
