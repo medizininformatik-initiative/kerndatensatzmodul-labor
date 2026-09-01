@@ -18,6 +18,10 @@
     "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestparameters"]
   },
   "parameter" : [{
+    "name" : "displayLanguage",
+    "valueCode" : "de-DE"
+  },
+  {
     "name" : "system-version",
     "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701"
   },
