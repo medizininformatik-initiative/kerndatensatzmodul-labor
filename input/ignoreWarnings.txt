@@ -4,71 +4,26 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-
-# Die uri-Sub-Extension von package-source (RuleSet CRMIPackageSource in
-# input/fsh/rulesets/version.fsh) traegt die Modul-Basis-URL. Der Validator
-# versucht sie als Canonical aufzuloesen und findet nichts - das ist korrekt so,
-# denn die Basis-URL identifiziert kein Artefakt. Betrifft alle 16 Artefakte
-# plus die ImplementationGuide-Ressource; mit dem Template-Wert
-# .../fhir/modul-labor waere es dieselbe Meldung.
+# Die uri-Sub-Extension von package-source traegt die Modul-Basis-URL; die identifiziert bewusst kein Artefakt.
 No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/core/modul-labor'
 
-# 684 INFORMATION-Meldungen, mehr als die Haelfte aller Info-Zeilen. Sie sind
-# die Quittung fuer `pin-canonicals: pin-all` in sushi-config.yaml: der
-# Publisher meldet jede Referenz, die er auf eine Version festlegt. Also kein
-# Befund, sondern die erwartete Ausgabe einer bewusst gesetzten Option, die
-# zusammen mit dem Expansions-Manifest fuer reproduzierbare Kanonisierung
-# sorgt. Der Schweregrad ist INFORMATION - sie zaehlen weder in die Errors
-# noch in die Warnings, verdecken in qa.html aber alles andere.
-# Gemessen 01.09.2026: Info 1200 -> 516, Errors und Warnings unveraendert.
-# Wenn eine Versionsaufloesung einmal zu klaeren ist, diese Zeile
-# voruebergehend auskommentieren - dann steht wieder da, was worauf gepinnt
-# wurde.
+# Quittung fuer pin-canonicals: pin-all - der Publisher meldet jede Referenz, die er auf eine Version festlegt.
 %Pinned the version of%
 
-# 140 Warnungen, 61 % aller Warnungen des Builds, alle am Logical Model.
-# eld-20 verlangt nach dem Punkt einen Kleinbuchstaben ([a-z][A-Za-z0-9]*).
-# Die Elementnamen des Modells folgen aber dem abgenommenen ART-DECOR-
-# Informationsmodell und sind deutsche CamelCase-Begriffe:
-# Laborbefund.Identifikation, Laborbefund.KlinischerBezugszeitpunkt und 53
-# weitere. Eine Umbenennung wuerde die 1:1-Entsprechung zum abgenommenen
-# Modell aufgeben - der Zweck des Logical Models. Der Constraint ist zudem
-# beratend formuliert ("or code generation tools may be broken").
-# Exakter Text, kein Platzhalter: die Meldung ist ueber alle 140 identisch.
+# Die Elementnamen des Logical Models folgen dem abgenommenen ART-DECOR-Modell (deutsche CamelCase-Begriffe).
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 
-# 439 INFORMATION-Meldungen, rund 85 % aller Info-Zeilen. Sie bedeuten NICHT,
-# dass Metadaten am falschen Ort stehen - wer sie so liest, faengt an, an den
-# CRMI-RuleSets zu drehen. Ursache ist die Mehrfach-Profilierung: unsere
-# ValueSets deklarieren shareable, publishable und computable gleichzeitig in
-# meta.profile, und der Validator prueft jedes Profil einzeln.
-# Die Slices sind komplementaer verteilt (geprueft in hl7.fhir.uv.crmi#2.0.0):
-# die shareable-Profile slicen versionAlgorithm und versionPolicy, die
-# publishable-Profile stattdessen author, editor, reviewer, endorser, topic und
-# 16 weitere. Jede Extension trifft also einen Slice - nur eben in einem der
-# Profile, und gilt in den anderen beiden als unmatched. Dieselbe Extension
-# wird dadurch mehrfach gemeldet. Einzige Ausnahme:
-# mii-ex-meta-license-codeable trifft in keinem Profil einen Slice, weil CRMI
-# fuer eine MII-eigene Extension keinen vorsieht.
-#
-# Das dritte Muster betrifft unser eigenes ObservationLab: ein Beispiel fuegt
-# an category.coding ein drittes Coding mit lokalem Laborgruppen-Code hinzu,
-# neben den Slices loinc-observation und observation-category. Offenes Slicing,
-# absichtlich so gebaut.
-#
-# Grenze dieser Muster: die Meldung nennt weder Extension-URL noch Slice-Namen,
-# nur den Elementindex. Eine kuenftig tatsaechlich falsch platzierte Extension
-# im selben Profil wuerde daher mitverschluckt. Enger ist es nicht formulierbar.
+# Folge der Mehrfach-Profilierung: jede Extension trifft einen Slice, nur in einem der drei deklarierten Profile.
 %does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-%
+
+# Dasselbe fuer das HL7-shareablevalueset-Profil.
 %does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset%
+
+# Ein Beispiel ergaenzt an category.coding einen lokalen Laborgruppen-Code - offenes Slicing, so gewollt.
 %does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab%
 
-# 16 INFORMATION-Meldungen an den drei Profilen. Das Modul ist R4
-# (fhirVersion 4.0.1 in sushi-config.yaml), und dort ist type=pattern der
-# korrekte Discriminator-Typ. Der Hinweis zielt auf Vorwaertskompatibilitaet
-# mit R5, wo type=value mit pattern[x] an seine Stelle traete - eine Umstellung
-# waere hier also nicht Verbesserung, sondern Fehler.
-# Die acht Slicings stammen aus unseren eigenen Profilen (identifier,
-# category.coding, code.coding), sind also nicht geerbt; die Meldung nimmt
-# geerbte Slicings ausdruecklich aus. Exakter Text, ueber alle 16 identisch.
+# Das Modul ist R4; dort ist type=pattern korrekt. Der Hinweis zielt auf R5.
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+# Das CodeSystem gehoert der FHIR-Kernspezifikation und wird dort als draft gefuehrt.
+%Reference to draft CodeSystem http://hl7.org/fhir/spdx-license%
