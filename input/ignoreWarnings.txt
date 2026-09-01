@@ -36,3 +36,29 @@ No definition could be found for URL value 'https://www.medizininformatik-initia
 # beratend formuliert ("or code generation tools may be broken").
 # Exakter Text, kein Platzhalter: die Meldung ist ueber alle 140 identisch.
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+
+# 439 INFORMATION-Meldungen, rund 85 % aller Info-Zeilen. Sie bedeuten NICHT,
+# dass Metadaten am falschen Ort stehen - wer sie so liest, faengt an, an den
+# CRMI-RuleSets zu drehen. Ursache ist die Mehrfach-Profilierung: unsere
+# ValueSets deklarieren shareable, publishable und computable gleichzeitig in
+# meta.profile, und der Validator prueft jedes Profil einzeln.
+# Die Slices sind komplementaer verteilt (geprueft in hl7.fhir.uv.crmi#2.0.0):
+# die shareable-Profile slicen versionAlgorithm und versionPolicy, die
+# publishable-Profile stattdessen author, editor, reviewer, endorser, topic und
+# 16 weitere. Jede Extension trifft also einen Slice - nur eben in einem der
+# Profile, und gilt in den anderen beiden als unmatched. Dieselbe Extension
+# wird dadurch mehrfach gemeldet. Einzige Ausnahme:
+# mii-ex-meta-license-codeable trifft in keinem Profil einen Slice, weil CRMI
+# fuer eine MII-eigene Extension keinen vorsieht.
+#
+# Das dritte Muster betrifft unser eigenes ObservationLab: ein Beispiel fuegt
+# an category.coding ein drittes Coding mit lokalem Laborgruppen-Code hinzu,
+# neben den Slices loinc-observation und observation-category. Offenes Slicing,
+# absichtlich so gebaut.
+#
+# Grenze dieser Muster: die Meldung nennt weder Extension-URL noch Slice-Namen,
+# nur den Elementindex. Eine kuenftig tatsaechlich falsch platzierte Extension
+# im selben Profil wuerde daher mitverschluckt. Enger ist es nicht formulierbar.
+%does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-%
+%does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset%
+%does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab%
