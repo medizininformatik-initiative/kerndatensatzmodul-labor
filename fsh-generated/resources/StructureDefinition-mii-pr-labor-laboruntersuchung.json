@@ -1772,7 +1772,7 @@
         "binding": {
           "strength": "extensible",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation",
-          "description": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollstaendige ValueSet Observation Interpretation Codes; das Modul schraenkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible bleibt, sind zum Beispiel fuer Werte jenseits der Telefongrenze zusaetzlich die abnormal-Codes HH, LL und AA zulaessig.",
+          "description": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollständige ValueSet Observation Interpretation Codes; das Modul schränkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden; praktisch relevant sind die abnormal-Codes HH, LL und AA, etwa für Werte jenseits der Telefongrenze.",
           "_description": {
             "extension": [
               {
@@ -1784,7 +1784,7 @@
                   },
                   {
                     "url": "content",
-                    "valueString": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollstaendige ValueSet Observation Interpretation Codes; das Modul schraenkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible bleibt, sind zum Beispiel fuer Werte jenseits der Telefongrenze zusaetzlich die abnormal-Codes HH, LL und AA zulaessig."
+                    "valueString": "Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation. FHIR bindet dieses Element extensible an das vollständige ValueSet Observation Interpretation Codes; das Modul schränkt auf die im Laborkontext sinnvollen Konzepte ein. Lokale Kodierungen wie -- - N + ++ oder L N H lassen sich darauf abbilden. Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden; praktisch relevant sind die abnormal-Codes HH, LL und AA, etwa für Werte jenseits der Telefongrenze."
                   }
                 ]
               },
@@ -1797,7 +1797,7 @@
                   },
                   {
                     "url": "content",
-                    "valueString": "Restricted selection from HL7 v3 ObservationInterpretation. FHIR binds this element extensibly to the complete Observation Interpretation Codes value set; the module narrows it to the concepts meaningful in a laboratory context. Local codings such as -- - N + ++ or L N H can be mapped onto these concepts. As the binding remains extensible, the abnormal codes HH, LL and AA are additionally permitted, for example for values beyond the critical notification limit."
+                    "valueString": "Restricted selection from HL7 v3 ObservationInterpretation. FHIR binds this element extensibly to the complete Observation Interpretation Codes value set; the module narrows it to the concepts meaningful in a laboratory context. Local codings such as -- - N + ++ or L N H can be mapped onto these concepts. Because the binding is extensible, further codes may be used in addition; the ones that matter in practice are the abnormal codes HH, LL and AA, for example for results beyond the critical notification limit."
                   }
                 ]
               }
