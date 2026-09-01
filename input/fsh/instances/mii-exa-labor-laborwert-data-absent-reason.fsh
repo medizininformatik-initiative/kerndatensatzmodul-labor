@@ -1,5 +1,7 @@
 Instance: mii-exa-labor-laborwert-data-absent-reason
 InstanceOf: MII_PR_Labor_Laboruntersuchung
+Title: "Laboratory test example, no result"
+Description: "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
@@ -10,9 +12,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
 * category.coding[2] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
-* code = $loinc#59826-8 "Creatinin [Mol/Volumen] in Blut"
+* code = $loinc#59826-8 "Creatinine [Moles/volume] in Blood"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"

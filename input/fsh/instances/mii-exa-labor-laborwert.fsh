@@ -1,5 +1,7 @@
 Instance: mii-exa-labor-laborwert
 InstanceOf: MII_PR_Labor_Laboruntersuchung
+Title: "Laboratory test example, quantitative result"
+Description: "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
@@ -10,10 +12,10 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
 * category.coding[2] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
-* code = $loinc#59826-8 "Creatinin [Mol/Volumen] in Blut"
+* code = $loinc#59826-8 "Creatinine [Moles/volume] in Blood"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
@@ -33,6 +35,8 @@ Usage: #example
 
 Instance: mii-exa-labor-laborwert-ratio
 InstanceOf: MII_PR_Labor_Laboruntersuchung
+Title: "Laboratory test example, result as a ratio"
+Description: "A laboratory test whose result is a ratio (valueRatio)."
 Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
@@ -40,9 +44,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* code = $loinc#1755-8 "Albumin [Masse/Zeit] in 24-Stunden-Sammelurin"
+* code = $loinc#1755-8 "Albumin [Mass/time] in 24 hour Urine"
 * code.text = "Albumin (24H U) [Mass/Time]"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
@@ -57,6 +61,8 @@ Usage: #example
 
 Instance: mii-exa-labor-laborwert-range
 InstanceOf: MII_PR_Labor_Laboruntersuchung
+Title: "Laboratory test example, result as a range"
+Description: "A laboratory test whose result is a range rather than a single value (valueRange)."
 Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
@@ -64,9 +70,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboruntersuchungen"
+* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
 * category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* code = $loinc#5787-7 "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrößerung"
+* code = $loinc#5787-7 "Epithelial cells [#/area] in Urine sediment by Microscopy high power field"
 * code.text = "Urinsediment Epithelzellen Semi-quantitative Schätzung"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"

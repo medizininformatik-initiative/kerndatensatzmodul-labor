@@ -78,6 +78,78 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Laboratory order example",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "A laboratory order, the request the reported tests were performed for.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Laboratory report example",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "A laboratory report grouping the laboratory test examples of this guide.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Laboratory test example, no result",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Laboratory test example, quantitative result",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Laboratory test example, result as a range",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "A laboratory test whose result is a range rather than a single value (valueRange).",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Laboratory test example, result as a ratio",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "A laboratory test whose result is a ratio (valueRatio).",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "MII CPS Labor CapabilityStatement",
       "target" : null
     },
@@ -277,42 +349,6 @@
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
       "source" : "Minimal reference encounter for the laboratory examples.",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-labor-laboranforderung",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-labor-laborbefund",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-labor-laborwert",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-labor-laborwert-data-absent-reason",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-labor-laborwert-range",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-labor-laborwert-ratio",
       "target" : null
     },
     {

@@ -18,4 +18,4 @@ Description: "Type-Codes, um zu bestimmen, welcher Identifier für einen bestimm
 * ^status = #active
 * ^experimental = false
 * include codes from valueset $identifier-type|4.0.1
-* $v2-0203#OBI
+* $v2-0203-ver#OBI

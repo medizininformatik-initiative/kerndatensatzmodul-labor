@@ -61,6 +61,66 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
+msgid "Laboratory order example"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "A laboratory order, the request the reported tests were performed for."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Laboratory report example"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "A laboratory report grouping the laboratory test examples of this guide."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Laboratory test example, no result"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Laboratory test example, quantitative result"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Laboratory test example, result as a range"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "A laboratory test whose result is a range rather than a single value (valueRange)."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "Laboratory test example, result as a ratio"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "A laboratory test whose result is a ratio (valueRatio)."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
 msgid "MII CPS Labor CapabilityStatement"
 msgstr ""
 
@@ -227,36 +287,6 @@ msgstr ""
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Minimal reference encounter for the laboratory examples."
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "mii-exa-labor-laboranforderung"
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "mii-exa-labor-laborbefund"
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "mii-exa-labor-laborwert"
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "mii-exa-labor-laborwert-data-absent-reason"
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "mii-exa-labor-laborwert-range"
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "mii-exa-labor-laborwert-ratio"
 msgstr ""
 
 # ImplementationGuide.definition.resource.name

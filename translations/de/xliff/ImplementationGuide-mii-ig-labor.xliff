@@ -91,6 +91,90 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>Laboratory order example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>A laboratory order, the request the reported tests were performed for.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Laboratory report example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>A laboratory report grouping the laboratory test examples of this guide.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Laboratory test example, no result</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Laboratory test example, quantitative result</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Laboratory test example, result as a range</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>A laboratory test whose result is a range rather than a single value (valueRange).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Laboratory test example, result as a ratio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>A laboratory test whose result is a ratio (valueRatio).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>MII CPS Labor CapabilityStatement</source>
         <target></target>
       </trans-unit>
@@ -323,48 +407,6 @@
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
         <source>Minimal reference encounter for the laboratory examples.</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-labor-laboranforderung</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-labor-laborbefund</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-labor-laborwert</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-labor-laborwert-data-absent-reason</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-labor-laborwert-range</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-labor-laborwert-ratio</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">

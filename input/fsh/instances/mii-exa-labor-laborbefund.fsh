@@ -1,5 +1,7 @@
 Instance: mii-exa-labor-laborbefund
 InstanceOf: MII_PR_Labor_Laborbefund
+Title: "Laboratory report example"
+Description: "A laboratory report grouping the laboratory test examples of this guide."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab)
@@ -11,8 +13,8 @@ Usage: #example
 * basedOn.reference = "ServiceRequest/mii-exa-labor-laboranforderung"
 * status = #final
 * category.coding[diagnostic-service-sections] = $v2-0074#LAB
-* category.coding[loinc-lab] = $loinc#26436-6 "Laboruntersuchungen"
-* code.coding[loinc-labReport] = $loinc#11502-2 "Laborbericht"
+* category.coding[loinc-lab] = $loinc#26436-6 "Laboratory studies (set)"
+* code.coding[loinc-labReport] = $loinc#11502-2 "Laboratory report"
 * subject.reference = "Patient/111"
 * effectiveDateTime = "2018-11-20T12:05:00+01:00"
 * issued = "2018-03-11T10:28:00+01:00"
