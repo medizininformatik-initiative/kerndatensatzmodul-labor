@@ -296,16 +296,6 @@
       {
         "id": "Observation.modifierExtension",
         "path": "Observation.modifierExtension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {
@@ -1220,20 +1210,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.effective[x].extension",
-        "path": "Observation.effective[x].extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.effective[x].extension:QuelleKlinischesBezugsdatum",
         "path": "Observation.effective[x].extension",
         "sliceName": "QuelleKlinischesBezugsdatum",
@@ -1508,20 +1484,6 @@
         "path": "Observation.value[x].value",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.value.extension",
-        "path": "Observation.value[x].value.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.value[x]:valueQuantity.value.extension:quantityPrecision",
