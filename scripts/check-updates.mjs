@@ -19,8 +19,8 @@
 // This implementation is kept aligned with the sibling template repo
 // (medizininformatik-initiative/ig-template-mii-kds, same file) and with
 // the sample IG's scripts/check-updates.py; this repo extends the watch list
-// with de.medizininformatikinitiative.template and a fixed set of FHIR
-// package dependencies.
+// with de.medizininformatikinitiative.template and a fixed set of FHIR package
+// dependencies.
 //
 // Usage:  node scripts/check-updates.mjs [--format=markdown]
 // Tests:  node --test scripts/check-updates.test.mjs   (offline, pure functions)
@@ -118,8 +118,9 @@ export function parseSushiDependencies(yamlText) {
 
 /**
  * Parse the `template = <id>#<version>` line of an ig.ini.
- * Returns { id, version } — version is null for a path/floating reference
- * (e.g. the vendored bring-up form `template = ig-template`).
+ * Returns { id, version } — version is null for a path/URL/floating reference
+ * (e.g. the interim repository-URL form `template = https://…`, or a bare
+ * path form `template = ig-template`).
  * INI comments (`;` and `#` at line start) are skipped. Returns null when no
  * template line exists or the input is not a string.
  */
@@ -171,8 +172,9 @@ export function latestFromPackageList(packageList) {
  * (de.medizininformatikinitiative.template) from the two possible sources:
  * the FHIR package registry metadata (null when packages.fhir.org 404s —
  * i.e. not yet published there) and, as fallback, the GitHub releases of
- * medizininformatik-initiative/ig-template-mii-kds (null when the repo
- * has no release yet). Returns { latest, source }; when neither source has
+ * the repo named by TEMPLATE_REPO (currently
+ * medizininformatik-initiative/ig-template-mii-kds; swept to the target
+ * org at transfer — null when the repo has no release yet). Returns { latest, source }; when neither source has
  * a version: { latest: null, source: "not yet published" } — graceful, not
  * an error.
  */
@@ -260,10 +262,10 @@ async function fetchJson(url, { github = false, allow404 = false } = {}) {
 }
 
 const TEMPLATE_PKG_ID = "de.medizininformatikinitiative.template";
-// The org that HOSTS the releases today; swept to the target org at transfer
-// (docs/project-status.md). The target-org repo exists only as an empty
-// placeholder — asking it reports "not yet published" forever.
-const TEMPLATE_REPO = "forschungsgruppe-digital-health/ig-template-mii-kds";
+// The repository that HOSTS the template releases — its home in the
+// medizininformatik-initiative organisation since the 2026-08-27 org move
+// (docs/org-move.md); the pre-move repository is an archived snapshot.
+const TEMPLATE_REPO = "medizininformatik-initiative/ig-template-mii-kds";
 
 // The FIXED FHIR package watch list: these always get a row, even
 // before sushi-config.yaml has landed. Extra pins found in sushi-config.yaml
@@ -273,6 +275,10 @@ const WATCHED_FHIR_DEPS = [
   "de.medizininformatikinitiative.kerndatensatz.meta",
   "hl7.fhir.uv.crmi",
   "hl7.fhir.uv.xver-r5.r4",
+  // Pinned DIRECTLY by design — the publisher injects the latest release
+  // when an IG does not declare them itself (see scripts/meta-pin-drift.mjs).
+  "hl7.terminology.r4",
+  "hl7.fhir.uv.extensions.r4",
 ];
 
 const LINKS = {
@@ -338,8 +344,10 @@ function readFileIfExists(file) {
 
 /**
  * The module template pin lives in ig.ini
- * (`template = de.medizininformatikinitiative.template#<version>`); during
- * bring-up it may be the vendored path form (`template = ig-template`).
+ * (`template = de.medizininformatikinitiative.template#<version>` — the
+ * endgame once the package is published); today it is the interim
+ * repository-URL form, or the vendored fallback `template = #ig-template`,
+ * both reported as not-a-pin.
  */
 function readTemplatePin() {
   const text = readFileIfExists("ig.ini");
@@ -354,8 +362,8 @@ function readTemplatePin() {
 
 /**
  * fhir2.base.template is pinned INSIDE the template package (the IG template's
- * package/package.json), i.e. transitively for this repo. Only a vendored
- * bring-up copy (ig-template/) carries a local pin to read.
+ * package/package.json), i.e. transitively for this repo. Only the vendored
+ * fallback copy (ig-template/) carries a local pin to read.
  */
 function readBaseTemplatePin() {
   const text = readFileIfExists("ig-template/package/package.json");
@@ -447,7 +455,7 @@ export async function collectRows() {
           ? "pin file not found (`ig.ini` missing)"
           : templatePin.state === "no-line"
             ? "pin not found (no `template =` line in `ig.ini`)"
-            : `\`${templatePin.ref}\` — not a version pin (vendored/floating); ` +
+            : `\`${templatePin.ref}\` — not a version pin (URL/vendored/floating); ` +
               "see docs/recipes/switch-template-to-published.md",
     latest:
       templateResolved.source === "not yet published"
@@ -461,7 +469,7 @@ export async function collectRows() {
   });
 
   // The base template underneath the MII IG template. Pinned transitively (in
-  // the template package); only a vendored bring-up copy has a local pin.
+  // the template package); only the vendored fallback copy has a local pin.
   const basePinned = readBaseTemplatePin();
   const baseLatest = await lookup(upstream.base2);
   const baseVendored = existsSync("ig-template/package/package.json");
