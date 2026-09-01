@@ -31,14 +31,4 @@ Units must be expressed with [UCUM](https://ucum.org/ucum) so that results can b
 
 ## Module ValueSets
 
-The following module-specific ValueSets are published without an embedded expansion. Expand them using a terminology server before use.
-
-- [Laboratory area](ValueSet-mii-vs-labor-laborbereich.html)
-- [Semiquantitative laboratory results](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html)
-- [Source of clinical reference date](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html)
-- [Order codes](ValueSet-mii-vs-labor-order-codes.html)
-- [Qualitative laboratory results](ValueSet-mii-vs-labor-laborergebnis-qualitativ.html)
-- [Coded laboratory results](ValueSet-mii-vs-labor-laborergebnis-codiert.html)
-- [Interpretation](ValueSet-mii-vs-labor-interpretation.html)
-- [Interpretation-affecting properties](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.html)
-- [Identifier types](ValueSet-mii-vs-labor-identifier-type-codes.html)
+The module publishes nine of its own ValueSets, listed with their purpose on [Value Sets](value-sets.html).
