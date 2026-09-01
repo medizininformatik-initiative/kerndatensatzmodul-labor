@@ -5,7 +5,7 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
 * modifierExtension[MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft].valueCoding = $sct#118128002 "Specimen hemolyzed (finding)"
 * identifier[analyseBefundCode].type = $v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
@@ -35,7 +35,7 @@ Instance: mii-exa-labor-laborwert-ratio
 InstanceOf: MII_PR_Labor_Laboruntersuchung
 Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "1755-8_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
@@ -59,7 +59,7 @@ Instance: mii-exa-labor-laborwert-range
 InstanceOf: MII_PR_Labor_Laboruntersuchung
 Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "5787-7_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
