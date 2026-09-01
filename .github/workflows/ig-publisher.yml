@@ -17,11 +17,11 @@
 #            file (and cleanup-gh-pages.yml); it strips only the template's own
 #            release automation.
 #
-# Triggers:  push to every branch except master / gh-pages / fsh-generated,
-#            plus manual workflow_dispatch (rebuild one branch's preview).
-#            master and tags are reserved for formal publication and are NOT
-#            previewed here. (The scaffold names that branch `main`; this
-#            repository's default and publication branch is `master`.)
+# Triggers:  push to every branch except gh-pages / fsh-generated, plus manual
+#            workflow_dispatch (rebuild one branch's preview). The scaffold also
+#            excludes the publication branch (`main` there, `master` here); this
+#            module does not, because it has no go-publish.yml and releases the
+#            package through Simplifier — see the note at `on:` below.
 #
 # Toggle:    vars.ENABLE_PREVIEW — ON by default. Set the repo variable
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
@@ -75,10 +75,16 @@
 name: IG build and preview
 
 on:
+  # The scaffold excludes the publication branch here, because go-publish.yml
+  # renders that branch to the gh-pages ROOT. This module has no go-publish.yml
+  # and releases the package through Simplifier, so nothing renders master —
+  # excluding it would leave the default branch with no rendering at all while
+  # every feature branch has one. master is therefore previewed like any other
+  # branch. Reinstate the exclusion (here and in the ref_name guards below) when
+  # a publication workflow starts rendering master.
   push:
     branches:
       - "**"
-      - "!master"
       - "!gh-pages"
       - "!fsh-generated"
   workflow_dispatch:
@@ -397,7 +403,7 @@ jobs:
         run: docker rm --force preview-nginx >/dev/null 2>&1 || true
 
       - name: Publish preview to gh-pages/branches/<branch>/
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'master' && github.ref_name != 'gh-pages' }}
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
         shell: bash
         env:
           REPO: ${{ github.repository }}
@@ -455,7 +461,7 @@ jobs:
           git push origin gh-pages
 
       - name: Preview URL
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'master' && github.ref_name != 'gh-pages' }}
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
         shell: bash
         run: |
           base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}"
@@ -468,14 +474,14 @@ jobs:
       # pipeline (Settings → Pages → GitHub Actions). Mirrors go-publish.yml's
       # tar + github-pages artifact + deploy-pages pairing (verified pins).
       - name: Package gh-pages tree as a Pages artifact
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'master' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: gh-pages
 
   deploy:
     name: Deploy GitHub Pages (Actions mode)
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'master' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -495,7 +501,7 @@ jobs:
     name: Report preview URL
     # Separate from the build job (which touches the terminology secrets) so the
     # literal repository URL is never masked in the summary or the PR comment.
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'master' && github.ref_name != 'gh-pages' }}
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
     needs: build
     runs-on: ubuntu-latest
     permissions:
