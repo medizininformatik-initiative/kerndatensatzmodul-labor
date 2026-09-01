@@ -1,10 +1,10 @@
-# mii-exa-labor-laborwert-range - MII IG Laborbefund v2027.0.0
+# Laboratory test example, result as a range - MII IG Laborbefund v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-labor-laborwert-range**
+* **Laboratory test example, result as a range**
 
-## Example Observation: mii-exa-labor-laborwert-range
+## Example Observation: Laboratory test example, result as a range
 
 -------
 
@@ -18,7 +18,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **status**: Final
 
-**category**: Laboruntersuchungen
+**category**: Laboratory studies (set)
 
 **code**: Urinsediment Epithelzellen Semi-quantitative Schätzung
 
@@ -67,7 +67,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "26436-6",
-      "display" : "Laboruntersuchungen"
+      "display" : "Laboratory studies (set)"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -80,7 +80,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "5787-7",
-      "display" : "Epithelzellen [#/Fläche] in Urinsediment mittels Lichtmikroskopie, hohe Vergrößerung"
+      "display" : "Epithelial cells [#/area] in Urine sediment by Microscopy high power field"
     }],
     "text" : "Urinsediment Epithelzellen Semi-quantitative Schätzung"
   },

@@ -137,7 +137,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-01T14:35:41+00:00"/>
+  <date value="2026-09-01T15:11:46+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1132,6 +1132,72 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/mii-exa-labor-laboranforderung"/>
+      </reference>
+      <name value="Laboratory order example"/>
+      <description value="A laboratory order, the request the reported tests were performed for."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/mii-exa-labor-laborbefund"/>
+      </reference>
+      <name value="Laboratory report example"/>
+      <description value="A laboratory report grouping the laboratory test examples of this guide."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-labor-laborwert-data-absent-reason"/>
+      </reference>
+      <name value="Laboratory test example, no result"/>
+      <description value="A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-labor-laborwert"/>
+      </reference>
+      <name value="Laboratory test example, quantitative result"/>
+      <description value="A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-labor-laborwert-range"/>
+      </reference>
+      <name value="Laboratory test example, result as a range"/>
+      <description value="A laboratory test whose result is a range rather than a single value (valueRange)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-labor-laborwert-ratio"/>
+      </reference>
+      <name value="Laboratory test example, result as a ratio"/>
+      <description value="A laboratory test whose result is a ratio (valueRatio)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -1316,66 +1382,6 @@
       <name value="mii-exa-labor-encounter"/>
       <description value="Minimal reference encounter for the laboratory examples."/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/mii-exa-labor-laboranforderung"/>
-      </reference>
-      <name value="mii-exa-labor-laboranforderung"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DiagnosticReport"/>
-      </extension>
-      <reference>
-        <reference value="DiagnosticReport/mii-exa-labor-laborbefund"/>
-      </reference>
-      <name value="mii-exa-labor-laborbefund"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-labor-laborwert"/>
-      </reference>
-      <name value="mii-exa-labor-laborwert"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-labor-laborwert-data-absent-reason"/>
-      </reference>
-      <name value="mii-exa-labor-laborwert-data-absent-reason"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-labor-laborwert-range"/>
-      </reference>
-      <name value="mii-exa-labor-laborwert-range"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-labor-laborwert-ratio"/>
-      </reference>
-      <name value="mii-exa-labor-laborwert-ratio"/>
-      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

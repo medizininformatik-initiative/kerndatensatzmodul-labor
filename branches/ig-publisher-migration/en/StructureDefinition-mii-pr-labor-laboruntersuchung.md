@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T14:35:41+00:00",
+  "date" : "2026-09-01T15:11:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1331,7 +1331,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"]
       }]
     },
     {
@@ -1364,7 +1364,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"]
       }],
       "mustSupport" : true
     },

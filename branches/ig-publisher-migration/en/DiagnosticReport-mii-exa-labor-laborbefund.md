@@ -1,10 +1,10 @@
-# mii-exa-labor-laborbefund - MII IG Laborbefund v2027.0.0
+# Laboratory report example - MII IG Laborbefund v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-labor-laborbefund**
+* **Laboratory report example**
 
-## Example DiagnosticReport: mii-exa-labor-laborbefund
+## Example DiagnosticReport: Laboratory report example
 
 -------
 
@@ -16,7 +16,7 @@ Profile: [MII PR Labor Laborbefund](StructureDefinition-mii-pr-labor-laborbefund
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
-## Laborbericht (Laboruntersuchungen) 
+## Laboratory report (Laboratory studies (set)) 
 
 | | |
 | :--- | :--- |
@@ -74,7 +74,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "26436-6",
-      "display" : "Laboruntersuchungen"
+      "display" : "Laboratory studies (set)"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
@@ -86,7 +86,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "11502-2",
-      "display" : "Laborbericht"
+      "display" : "Laboratory report"
     }]
   },
   "subject" : {

@@ -263,7 +263,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "code" : "26436-6",
-        "display" : "LABORATORY STUDIES"
+        "display" : "Laboratory studies (set)"
       },
       {
         "code" : "26437-4",
@@ -276,6 +276,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "version" : "3.0.0",
       "concept" : [{
         "code" : "GE",
         "display" : "Genetics"

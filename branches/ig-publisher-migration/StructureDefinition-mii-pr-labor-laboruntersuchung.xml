@@ -351,7 +351,7 @@
   </title>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-01T14:35:41+00:00"/>
+  <date value="2026-09-01T15:11:46+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -5492,7 +5492,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -5633,15 +5633,13 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/quantity-precision"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
         <human value="All FHIR elements must have a @value or children"/>
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <constraint>
@@ -5649,7 +5647,6 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <mustSupport value="true"/>
@@ -9477,7 +9474,7 @@
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"/>
       </type>
     </element>
     <element id="Observation.value[x]:valueQuantity.value">
@@ -9506,7 +9503,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/quantity-precision"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"/>
       </type>
       <mustSupport value="true"/>
     </element>

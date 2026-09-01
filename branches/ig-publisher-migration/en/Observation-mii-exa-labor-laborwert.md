@@ -1,10 +1,10 @@
-# mii-exa-labor-laborwert - MII IG Laborbefund v2027.0.0
+# Laboratory test example, quantitative result - MII IG Laborbefund v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-labor-laborwert**
+* **Laboratory test example, quantitative result**
 
-## Example Observation: mii-exa-labor-laborwert
+## Example Observation: Laboratory test example, quantitative result
 
 -------
 
@@ -22,7 +22,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **status**: Final
 
-**category**: Laboruntersuchungen
+**category**: Laboratory studies (set)
 
 **code**: Kreatinin
 
@@ -94,7 +94,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "26436-6",
-      "display" : "Laboruntersuchungen"
+      "display" : "Laboratory studies (set)"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -111,7 +111,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "59826-8",
-      "display" : "Creatinin [Mol/Volumen] in Blut"
+      "display" : "Creatinine [Moles/volume] in Blood"
     }],
     "text" : "Kreatinin"
   },

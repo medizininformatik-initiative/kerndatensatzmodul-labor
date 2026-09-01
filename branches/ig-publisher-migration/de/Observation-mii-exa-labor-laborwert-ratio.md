@@ -1,10 +1,10 @@
-# mii-exa-labor-laborwert-ratio - MII IG Laborbefund v2027.0.0
+# Laboratory test example, result as a ratio - MII IG Laborbefund v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-labor-laborwert-ratio**
+* **Laboratory test example, result as a ratio**
 
-## Beispiel Observation: mii-exa-labor-laborwert-ratio
+## Beispiel Observation: Laboratory test example, result as a ratio
 
 -------
 
@@ -18,7 +18,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **status**: Final
 
-**category**: Laboruntersuchungen
+**category**: Laboratory studies (set)
 
 **code**: Albumin (24H U) [Mass/Time]
 
@@ -67,7 +67,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "26436-6",
-      "display" : "Laboruntersuchungen"
+      "display" : "Laboratory studies (set)"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -80,7 +80,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "1755-8",
-      "display" : "Albumin [Masse/Zeit] in 24-Stunden-Sammelurin"
+      "display" : "Albumin [Mass/time] in 24 hour Urine"
     }],
     "text" : "Albumin (24H U) [Mass/Time]"
   },

@@ -60,8 +60,8 @@ This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md) (**Modifier**) 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)
-* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-extension-quantity-translation.html)
-* [http://hl7.org/fhir/StructureDefinition/quantity-precision](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-quantity-precision.html)
+* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-extension-quantity-translation.html)
+* [http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-quantity-precision.html)
 
 **Slices**
 
@@ -108,8 +108,8 @@ This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md) (**Modifier**) 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)
-* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-extension-quantity-translation.html)
-* [http://hl7.org/fhir/StructureDefinition/quantity-precision](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-quantity-precision.html)
+* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-extension-quantity-translation.html)
+* [http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-quantity-precision.html)
 
 **Slices**
 
@@ -309,7 +309,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T14:35:41+00:00",
+  "date" : "2026-09-01T15:11:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1427,7 +1427,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"]
       }]
     },
     {
@@ -1460,7 +1460,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"]
       }],
       "mustSupport" : true
     },

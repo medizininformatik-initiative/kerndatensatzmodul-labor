@@ -196,6 +196,7 @@ Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 Obs
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "4.0.0",
       "concept" : [{
         "code" : "L",
         "display" : "Low",

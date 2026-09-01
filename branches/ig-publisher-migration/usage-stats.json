@@ -135,7 +135,9 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation": [
-      "Observation.valueQuantity",
+      "Observation.valueQuantity"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0": [
       "Observation.value[x]"
     ],
     "http://hl7.org/fhir/StructureDefinition/package-source": [
@@ -145,7 +147,9 @@
       "ValueSet.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
-      "Observation.valueQuantity.value",
+      "Observation.valueQuantity.value"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0": [
       "Observation.value[x].value"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [

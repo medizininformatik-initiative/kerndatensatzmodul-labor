@@ -181,7 +181,7 @@
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T14:35:41+00:00",
+  "date" : "2026-09-01T15:11:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -5671,7 +5671,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -5818,15 +5818,13 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"]
       }],
-      "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
@@ -5834,7 +5832,6 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
@@ -10085,7 +10082,7 @@
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"]
       }]
     },
     {
@@ -10118,7 +10115,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"]
       }],
       "mustSupport" : true
     },

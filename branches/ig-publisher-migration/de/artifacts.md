@@ -66,13 +66,13 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 
 | | |
 | :--- | :--- |
+| [ Laboratory order example  ](ServiceRequest-mii-exa-labor-laboranforderung.md) | A laboratory order, the request the reported tests were performed for. |
+| [ Laboratory report example  ](DiagnosticReport-mii-exa-labor-laborbefund.md) | A laboratory report grouping the laboratory test examples of this guide. |
+| [ Laboratory test example, no result  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) | A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation. |
+| [ Laboratory test example, quantitative result  ](Observation-mii-exa-labor-laborwert.md) | A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation. |
+| [ Laboratory test example, result as a range  ](Observation-mii-exa-labor-laborwert-range.md) | A laboratory test whose result is a range rather than a single value (valueRange). |
+| [ Laboratory test example, result as a ratio  ](Observation-mii-exa-labor-laborwert-ratio.md) | A laboratory test whose result is a ratio (valueRatio). |
 | [ mii-exa-labor-encounter  ](Encounter-555.md) | Minimal reference encounter for the laboratory examples. |
-| [ mii-exa-labor-laboranforderung  ](ServiceRequest-mii-exa-labor-laboranforderung.md) |  |
-| [ mii-exa-labor-laborbefund  ](DiagnosticReport-mii-exa-labor-laborbefund.md) |  |
-| [ mii-exa-labor-laborwert  ](Observation-mii-exa-labor-laborwert.md) |  |
-| [ mii-exa-labor-laborwert-data-absent-reason  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) |  |
-| [ mii-exa-labor-laborwert-range  ](Observation-mii-exa-labor-laborwert-range.md) |  |
-| [ mii-exa-labor-laborwert-ratio  ](Observation-mii-exa-labor-laborwert-ratio.md) |  |
 | [ mii-exa-labor-organization  ](Organization-7772.md) | Minimal reference organization (performing laboratory) for the laboratory examples. |
 | [ mii-exa-labor-patient  ](Patient-111.md) | Minimal reference patient for the laboratory examples. |
 | [ mii-exa-labor-specimen  ](Specimen-4999.md) | Minimal reference specimen for the laboratory examples. |

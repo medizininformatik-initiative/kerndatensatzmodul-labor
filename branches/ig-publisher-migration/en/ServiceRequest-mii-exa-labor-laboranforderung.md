@@ -1,10 +1,10 @@
-# mii-exa-labor-laboranforderung - MII IG Laborbefund v2027.0.0
+# Laboratory order example - MII IG Laborbefund v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-labor-laboranforderung**
+* **Laboratory order example**
 
-## Example ServiceRequest: mii-exa-labor-laboranforderung
+## Example ServiceRequest: Laboratory order example
 
 -------
 

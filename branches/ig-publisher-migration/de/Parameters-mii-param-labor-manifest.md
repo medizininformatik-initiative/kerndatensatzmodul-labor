@@ -30,10 +30,6 @@
     "valueCanonical" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"
   },
   {
-    "name" : "system-version",
-    "valueCanonical" : "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-  },
-  {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"
   },
@@ -48,14 +44,6 @@
   {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset|2.0.0"
-  },
-  {
-    "name" : "system-version",
-    "valueCanonical" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|4.0.0"
-  },
-  {
-    "name" : "system-version",
-    "valueCanonical" : "http://terminology.hl7.org/CodeSystem/v2-0074|3.0.0"
   },
   {
     "name" : "default-valueset-version",
@@ -300,14 +288,6 @@
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.3.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/quantity-precision|5.3.0"
   },
   {
     "name" : "default-valueset-version",

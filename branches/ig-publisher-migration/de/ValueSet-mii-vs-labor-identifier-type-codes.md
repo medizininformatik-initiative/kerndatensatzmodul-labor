@@ -176,7 +176,7 @@ Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu v
   "title" : "MII VS Labor Identifier Type Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T14:35:41+00:00",
+  "date" : "2026-09-01T15:11:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -199,6 +199,7 @@ Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu v
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
       "concept" : [{
         "code" : "OBI"
       }]
