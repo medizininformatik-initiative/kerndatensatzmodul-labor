@@ -77,6 +77,20 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>Expansion Parameters Manifest</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Pinned code system versions every ValueSet in this IG is expanded against.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>MII CPS Labor CapabilityStatement</source>
         <target></target>
       </trans-unit>
@@ -189,6 +203,20 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>MII VS Labor Interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation auf die im Laborkontext sinnvollen Konzepte.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT</source>
         <target></target>
       </trans-unit>
@@ -287,6 +315,20 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>mii-exa-labor-encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Minimal reference encounter for the laboratory examples.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>mii-exa-labor-laboranforderung</source>
         <target></target>
       </trans-unit>
@@ -329,6 +371,20 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>mii-exa-labor-organization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Minimal reference organization (performing laboratory) for the laboratory examples.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>mii-exa-labor-patient</source>
         <target></target>
       </trans-unit>
@@ -343,7 +399,14 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>mii-param-labor-manifest</source>
+        <source>mii-exa-labor-specimen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Minimal reference specimen for the laboratory examples.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
@@ -385,15 +448,22 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Datasets and Descriptions</source>
-        <target>Datensätze und Beschreibungen</target>
+        <source>UML Diagram</source>
+        <target>UML-Diagramm</target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>UML Diagram</source>
-        <target>UML-Diagramm</target>
+        <source>Terminology</source>
+        <target>Terminologie</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Laboratory Timestamps</source>
+        <target>Zeitpunkte im Labor</target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
              <notes>
@@ -413,41 +483,6 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Laboratory Timestamps</source>
-        <target>Zeitpunkte im Labor</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
-        <source>Conformance</source>
-        <target>Konformität</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
-        <source>General Requirements</source>
-        <target>Allgemeine Anforderungen</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
-        <source>Must Support</source>
-        <target>Must Support</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
-        <source>Handling Missing Data</source>
-        <target>Umgang mit fehlenden Daten</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
         <source>Security and Privacy</source>
         <target>Sicherheit und Datenschutz</target>
       </trans-unit>
@@ -455,8 +490,8 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Profiles and Extensions</source>
-        <target>Profile und Extensions</target>
+        <source>Profiles</source>
+        <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
              <notes>
@@ -497,20 +532,6 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Search Parameters and Operations</source>
-        <target>Suchparameter und Operationen</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
-        <source>Terminology</source>
-        <target>Terminologie</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
         <source>Capability Statements</source>
         <target>CapabilityStatements</target>
       </trans-unit>
@@ -520,6 +541,13 @@
              </notes>
         <source>Logical Models</source>
         <target>Logische Modelle</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Value Sets</source>
+        <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
              <notes>
@@ -539,13 +567,6 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Versioning</source>
-        <target>Versionierung</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
         <source>Changelog</source>
         <target>Änderungen</target>
       </trans-unit>
@@ -553,8 +574,8 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Translation Information</source>
-        <target>Übersetzungsinformationen</target>
+        <source>Versioning</source>
+        <target>Versionierung</target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
              <notes>
@@ -562,6 +583,13 @@
              </notes>
         <source>Metadata Overview</source>
         <target>Metadatenübersicht</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Translation Information</source>
+        <target>Übersetzungsinformationen</target>
       </trans-unit>
     </body>
   </file>

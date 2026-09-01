@@ -25,8 +25,10 @@ name: Security scan
 on:
   schedule:
     - cron: "0 7 * * 1" # Mondays 07:00 UTC
+  # `master` is this repository's default branch; the scaffold's `dev` does not
+  # exist here, so this trigger never fired.
   pull_request:
-    branches: [dev]
+    branches: [master]
   workflow_dispatch:
 
 permissions:

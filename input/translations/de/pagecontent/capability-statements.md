@@ -1,12 +1,14 @@
+# CapabilityStatement
 
-## CapabilityStatement
+Um eine dezentrale Datenauswertung mittels des Deutschen Forschungsdatenportals für Gesundheit der Medizininformatik-Initiative zu ermöglichen, MUSS die [capabilities-Interaktion](https://www.hl7.org/fhir/R4/http.html#capabilities) unterstützt werden, sodass der FHIR-Server unter `[BASE_URL]/metadata` ein CapabilityStatement exponiert. Innerhalb dieses CapabilityStatement MUSS angegeben werden, welche Profile inklusive Version sowie welche Suchparameter unterstützt werden.
 
-Um eine dezentrale Datenauswertung mittel des Deutsche Forschungsdatenportal für Gesundheit der Medizininformatik-Initiative zu ermöglichen MUSS die [capabilities-Interaktion](https://www.hl7.org/fhir/R4/http.html#capabilities) untersützt werden, sodass durch durch den FHIR-Server unter ```[BASE_URL]/metadata``` ein CapabilityStatement exponiert wird. Innerhalb dieses CapabilityStatement MUSS angegeben werden welche Profile inkl. Version, sowie welche Suchparameter unterstüzt werden.
+Darüber hinaus MUSS in der jeweiligen CapabilityStatement-Instanz unter [`CapabilityStatement.instantiates`](https://www.hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.instantiates) die Konformität zu dem nachfolgenden CapabilityStatement angegeben werden.
 
-Nachfolgend wird aufgelistet weleche Inhalte verpflichtend im CapabilityStatement angegeben werden MÜSSEN. Darüber hinaus MUSS eine Konformität zu dem nachfolgenden CapabilityStatement in der jeweiligen CapabilityStatement Instanz unter [```CapabilityStatement.instantiates```](https://www.hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.instantiates) angegeben werden.
+- Canonical: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata`
+- [MII CapabilityStatement Labor](CapabilityStatement-mii-cps-labor-capabilitystatement.html)
 
-Canonical: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata```
+## Interaktionen, Suchparameter und Operationen
 
-[Link Simplifier Profil Übersicht](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.labor@2024.0.0)
+Die normativen REST-Anforderungen werden unmittelbar aus dem [MII CapabilityStatement Labor](CapabilityStatement-mii-cps-labor-capabilitystatement.html) dargestellt. Die generierte Artefaktseite ist maßgeblich und bleibt mit der FSH-Quelle synchron; der Leitfaden gibt die Tabellen zu Interaktionen, Suchparametern und Operationen daher nicht gesondert wieder.
 
-[MII CapabilityStatement Labor](CapabilityStatement-mii-cps-labor-capabilitystatement.html)
+Das aktuelle CapabilityStatement definiert Anforderungen für Observation, DiagnosticReport und ServiceRequest. Das Modul definiert keine eigenen SearchParameter-Ressourcen — der referenzierte Suchparameter für die Interpretation wird vom Modul Meta publiziert — und legt keine modulspezifischen Operationen fest.

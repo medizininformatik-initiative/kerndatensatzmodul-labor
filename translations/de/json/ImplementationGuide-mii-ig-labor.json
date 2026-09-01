@@ -66,6 +66,18 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "Expansion Parameters Manifest",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Pinned code system versions every ValueSet in this IG is expanded against.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "MII CPS Labor CapabilityStatement",
       "target" : null
     },
@@ -162,6 +174,18 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII VS Labor Interpretation",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation auf die im Laborkontext sinnvollen Konzepte.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
       "target" : null
     },
@@ -246,6 +270,18 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-encounter",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Minimal reference encounter for the laboratory examples.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "mii-exa-labor-laboranforderung",
       "target" : null
     },
@@ -282,6 +318,18 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "mii-exa-labor-organization",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Minimal reference organization (performing laboratory) for the laboratory examples.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "mii-exa-labor-patient",
       "target" : null
     },
@@ -294,7 +342,13 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-param-labor-manifest",
+      "source" : "mii-exa-labor-specimen",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Minimal reference specimen for the laboratory examples.",
       "target" : null
     },
     {
@@ -330,14 +384,20 @@
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Datasets and Descriptions",
-      "target" : "Datensätze und Beschreibungen"
+      "source" : "UML Diagram",
+      "target" : "UML-Diagramm"
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "UML Diagram",
-      "target" : "UML-Diagramm"
+      "source" : "Terminology",
+      "target" : "Terminologie"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Laboratory Timestamps",
+      "target" : "Zeitpunkte im Labor"
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
@@ -354,44 +414,14 @@
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Laboratory Timestamps",
-      "target" : "Zeitpunkte im Labor"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Conformance",
-      "target" : "Konformität"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
-      "source" : "General Requirements",
-      "target" : "Allgemeine Anforderungen"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Must Support",
-      "target" : "Must Support"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Handling Missing Data",
-      "target" : "Umgang mit fehlenden Daten"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
       "source" : "Security and Privacy",
       "target" : "Sicherheit und Datenschutz"
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Profiles and Extensions",
-      "target" : "Profile und Extensions"
+      "source" : "Profiles",
+      "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
@@ -426,18 +456,6 @@
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Search Parameters and Operations",
-      "target" : "Suchparameter und Operationen"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Terminology",
-      "target" : "Terminologie"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
       "source" : "Capability Statements",
       "target" : "CapabilityStatements"
     },
@@ -446,6 +464,12 @@
       "context" : "ImplementationGuide.definition.page.title",
       "source" : "Logical Models",
       "target" : "Logische Modelle"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Value Sets",
+      "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
@@ -462,26 +486,26 @@
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Versioning",
-      "target" : "Versionierung"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
       "source" : "Changelog",
       "target" : "Änderungen"
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Translation Information",
-      "target" : "Übersetzungsinformationen"
+      "source" : "Versioning",
+      "target" : "Versionierung"
     },
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
       "source" : "Metadata Overview",
       "target" : "Metadatenübersicht"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Translation Information",
+      "target" : "Übersetzungsinformationen"
     }]
   }]
 }

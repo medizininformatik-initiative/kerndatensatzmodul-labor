@@ -33,44 +33,6 @@ Automatisierte/teilautomatisierte/skalierbare Lösungen müssen in standartisert
 
 Die Maßeinheit muss zwingend in [UCUM-Einheiten](https://ucum.org/ucum) angegeben werden, damit sich die Ergebnisse ineinander umrechnen lassen. Mittels [Validatoren](https://ucum.nlm.nih.gov/ucum-lhc/demo.html) sollte sichergestellt werden, dass die verwendeten Einheiten zulässig sind.
 
-
-
------
-
 ### ValueSets
 
-Zusätzlich zu internationalen Terminologien werden durch das Modul LABOR folgende eigene ValueSets definiert. Es sei darauf hingewiesen, dass alle ValueSets keine Expansion beinhalten. Diese muss vor der Verwendung mittels eines Terminologieservers durchgeführt werden.
-
-Canoncial: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich```
-
-[ValueSet Laborbereich](ValueSet-mii-vs-labor-laborbereich.html)
-
------
-
-Canoncial: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ```
-
-[ValueSet semiquantitative Laborergebnisse](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html)
-
------
-
-Canoncial: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert```
-
-[ValueSet codierte Laborergebnisse](ValueSet-mii-vs-labor-laborergebnis-codiert.html)
-
------
-
-Canoncial: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation```
-
-[ValueSet Interpretation](ValueSet-mii-vs-labor-interpretation.html)
-
------
-
-Canoncial: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum```
-
-[ValueSet Quelle Klinisches Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html)
-
------
-
-Canoncial: ```https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes```
-
-[ValueSet Order Codes](ValueSet-mii-vs-labor-order-codes.html)
+Das Modul definiert neun eigene ValueSets; sie sind mit ihrem Zweck unter [ValueSets](value-sets.html) aufgelistet.

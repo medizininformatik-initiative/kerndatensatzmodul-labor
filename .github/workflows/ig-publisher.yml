@@ -17,9 +17,11 @@
 #            file (and cleanup-gh-pages.yml); it strips only the template's own
 #            release automation.
 #
-# Triggers:  push to every branch except main / gh-pages / fsh-generated, plus
-#            manual workflow_dispatch (rebuild one branch's preview). main and
-#            tags are reserved for formal publication and are NOT previewed here.
+# Triggers:  push to every branch except gh-pages / fsh-generated, plus manual
+#            workflow_dispatch (rebuild one branch's preview). The scaffold also
+#            excludes the publication branch (`main` there, `master` here); this
+#            module does not, because it has no go-publish.yml and releases the
+#            package through Simplifier — see the note at `on:` below.
 #
 # Toggle:    vars.ENABLE_PREVIEW — ON by default. Set the repo variable
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
@@ -73,10 +75,16 @@
 name: IG build and preview
 
 on:
+  # The scaffold excludes the publication branch here, because go-publish.yml
+  # renders that branch to the gh-pages ROOT. This module has no go-publish.yml
+  # and releases the package through Simplifier, so nothing renders master —
+  # excluding it would leave the default branch with no rendering at all while
+  # every feature branch has one. master is therefore previewed like any other
+  # branch. Reinstate the exclusion (here and in the ref_name guards below) when
+  # a publication workflow starts rendering master.
   push:
     branches:
       - "**"
-      - "!main"
       - "!gh-pages"
       - "!fsh-generated"
   workflow_dispatch:
@@ -99,9 +107,9 @@ env:
   # the names docs/maintenance.md tells the maintainer to edit. A workflow
   # cannot read another workflow's env:, so the three blocks are copies;
   # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
-  PUBLISHER_VERSION: "2.2.11"
-  PUBLISHER_SHA256: "a981af86bca3f3a22ee15b9d4ee3c97d63219b7a14e49d0a525e10bbfc71a911"
-  SUSHI_VERSION: "3.20.0"
+  PUBLISHER_VERSION: "2.3.2"
+  PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
+  SUSHI_VERSION: "3.20.1"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:
@@ -395,7 +403,7 @@ jobs:
         run: docker rm --force preview-nginx >/dev/null 2>&1 || true
 
       - name: Publish preview to gh-pages/branches/<branch>/
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' }}
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
         shell: bash
         env:
           REPO: ${{ github.repository }}
@@ -453,7 +461,7 @@ jobs:
           git push origin gh-pages
 
       - name: Preview URL
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' }}
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
         shell: bash
         run: |
           base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}"
@@ -466,14 +474,14 @@ jobs:
       # pipeline (Settings → Pages → GitHub Actions). Mirrors go-publish.yml's
       # tar + github-pages artifact + deploy-pages pairing (verified pins).
       - name: Package gh-pages tree as a Pages artifact
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: gh-pages
 
   deploy:
     name: Deploy GitHub Pages (Actions mode)
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -493,7 +501,7 @@ jobs:
     name: Report preview URL
     # Separate from the build job (which touches the terminology secrets) so the
     # literal repository URL is never masked in the summary or the PR comment.
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' }}
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
     needs: build
     runs-on: ubuntu-latest
     permissions:

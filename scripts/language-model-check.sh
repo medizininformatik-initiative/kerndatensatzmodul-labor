@@ -15,9 +15,10 @@
 # Legitimate hits go in ALLOW below, one "<path>|<substring>" per entry — do NOT
 # weaken PATTERNS.
 #
-# Not scanned: input/translations/de/** (the German translation itself),
-# ig-template/** (the vendored mirror — fix it in ig-template-mii-kds and
-# re-sync), and this file. Binary files are skipped by `git grep -I`.
+# Not scanned: input/translations/de/** (the German translation itself) and
+# this file. Binary files are skipped by `git grep -I`. The template itself is
+# not in the tree — ig.ini references it by repository URL — so there is
+# nothing to exclude for it; fix template text in ig-template-mii-kds.
 #
 # Bash 3.2 compatible.
 set -u
@@ -58,7 +59,6 @@ done
 
 hits="$(git grep -n -I -i -E "${args[@]}" -- . \
   ':(exclude)input/translations/de' \
-  ':(exclude)ig-template' \
   ':(exclude)scripts/language-model-check.sh')"
 rc=$?
 
