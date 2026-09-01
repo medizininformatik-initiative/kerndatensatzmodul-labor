@@ -97,7 +97,7 @@ Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern
 
 In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala `--, -, N, +, ++` oder die dreistufige `L N H`. Die Tabelle zeigt das Mapping der fünfstufigen Variante.
 
-Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes desselben CodeSystems verwendet werden: `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend). Diese sind nicht Bestandteil des ValueSets.
+Die Bindung ist bewusst extensible gehalten. Für Werte jenseits der Telefongrenze – also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss – können zusätzlich die abnormal-Codes aus dem ValueSet [v3-ObservationInterpretation](http://terminology.hl7.org/ValueSet/v3-ObservationInterpretation) verwendet werden: `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend). Diese sind nicht Bestandteil des oben genannten Modul-ValueSets.
 
 ## Probenmaterial
 
