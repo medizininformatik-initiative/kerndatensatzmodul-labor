@@ -178,7 +178,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor Quelle klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T07:36:06+00:00",
+  "date" : "2026-09-01T07:48:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -276,6 +276,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Medical interpretations and comments are an essential part of a laboratory report. The main interpretation is usually recorded as free text; additional structured codes may be used where suitable terminology and licences are available. Comments concerning only one measurement, such as “measurement interfered with”, should be stored as a note. A coded interpretation relative to the reference interval is possible but redundant when the reference interval itself is represented explicitly.</p>
 
+<h3 id="which-codes-apply">Which codes apply</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Observation.interpretation</code> is bound (extensible) to <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>, a restricted selection from HL7 v3 ObservationInterpretation:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Meaning</th>
+      <th>Example of a local coding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LU</code></td>
+      <td>Significantly low</td>
+      <td><code class="language-plaintext highlighter-rouge">--</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">L</code></td>
+      <td>Low</td>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">N</code></td>
+      <td>Normal</td>
+      <td><code class="language-plaintext highlighter-rouge">N</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">H</code></td>
+      <td>High</td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HU</code></td>
+      <td>Significantly high</td>
+      <td><code class="language-plaintext highlighter-rouge">++</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Reports in use today carry differing local codings, for example the five-level scale <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> or the three-level <code class="language-plaintext highlighter-rouge">L N H</code>. The table shows the mapping for the five-level variant.</p>
+
+<p>The binding is deliberately extensible. For results beyond the critical notification limit — the threshold at which the laboratory must phone the requester — the abnormal codes of the same code system may additionally be used: <code class="language-plaintext highlighter-rouge">HH</code> (critical high), <code class="language-plaintext highlighter-rouge">LL</code> (critical low) and <code class="language-plaintext highlighter-rouge">AA</code> (critical abnormal). These are not part of the ValueSet.</p>
+
 <h2 id="specimens">Specimens</h2>
 
 <p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.799&amp;conceptEffectiveDate=2019-06-06T10%3A06%3A13&amp;language=de-DE"><img src="ART-DECOR_Probenmaterial.png" alt="ART-DECOR model of the specimen" /></a></p>
@@ -307,7 +352,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 1, 2026 07:36+0000">2026-09-01</span>
+          Generated <span title="Tue, Sep 1, 2026 07:48+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- MII branding override for the fhir2.base.template footer fragment.
