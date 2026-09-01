@@ -176,7 +176,7 @@ Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Labo
   "title" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T13:38:20+00:00",
+  "date" : "2026-09-01T13:44:38+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -196,22 +196,22 @@ Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Labo
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "concept" : [{
         "code" : "118128002",
-        "display" : "Specimen hemolyzed (finding)"
+        "display" : "Specimen hemolyzed"
       },
       {
         "code" : "118127007",
-        "display" : "Specimen lipemic (finding)"
+        "display" : "Specimen lipemic"
       },
       {
         "code" : "118129005",
-        "display" : "Specimen icteric (finding)"
+        "display" : "Specimen icteric"
       },
       {
         "code" : "167569004",
-        "display" : "Urine culture - mixed growth (finding)"
+        "display" : "Urine culture - mixed growth"
       }]
     }]
   }

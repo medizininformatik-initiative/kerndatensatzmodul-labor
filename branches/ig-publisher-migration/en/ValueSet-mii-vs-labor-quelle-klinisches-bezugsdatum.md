@@ -176,7 +176,7 @@ Kodierung der Quelle des klinischen Bezugsdatums
   "title" : "MII VS Labor Quelle klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01T13:38:20+00:00",
+  "date" : "2026-09-01T13:44:38+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -196,14 +196,14 @@ Kodierung der Quelle des klinischen Bezugsdatums
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250701",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "concept" : [{
         "code" : "399445004",
-        "display" : "Specimen collection date (observable entity)"
+        "display" : "Specimen collection date"
       },
       {
         "code" : "281271004",
-        "display" : "Date sample received in laboratory (observable entity)"
+        "display" : "Date sample received in laboratory"
       }]
     }]
   }
