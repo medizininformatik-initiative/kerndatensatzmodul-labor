@@ -1,5 +1,3 @@
-# CapabilityStatement
-
 Um eine dezentrale Datenauswertung mittels des Deutschen Forschungsdatenportals für Gesundheit der Medizininformatik-Initiative zu ermöglichen, MUSS die [capabilities-Interaktion](https://www.hl7.org/fhir/R4/http.html#capabilities) unterstützt werden, sodass der FHIR-Server unter `[BASE_URL]/metadata` ein CapabilityStatement exponiert. Innerhalb dieses CapabilityStatement MUSS angegeben werden, welche Profile inklusive Version sowie welche Suchparameter unterstützt werden.
 
 Darüber hinaus MUSS in der jeweiligen CapabilityStatement-Instanz unter [`CapabilityStatement.instantiates`](https://www.hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.instantiates) die Konformität zu dem nachfolgenden CapabilityStatement angegeben werden.
@@ -7,7 +5,7 @@ Darüber hinaus MUSS in der jeweiligen CapabilityStatement-Instanz unter [`Capab
 - Canonical: `https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata`
 - [MII CapabilityStatement Labor](CapabilityStatement-mii-cps-labor-capabilitystatement.html)
 
-## Interaktionen, Suchparameter und Operationen
+### Interaktionen, Suchparameter und Operationen
 
 Die normativen REST-Anforderungen werden unmittelbar aus dem [MII CapabilityStatement Labor](CapabilityStatement-mii-cps-labor-capabilitystatement.html) dargestellt. Die generierte Artefaktseite ist maßgeblich und bleibt mit der FSH-Quelle synchron; der Leitfaden gibt die Tabellen zu Interaktionen, Suchparametern und Operationen daher nicht gesondert wieder.
 

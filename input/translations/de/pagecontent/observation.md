@@ -1,6 +1,4 @@
-# [MII Profil Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.html)
-
-ObservationLab bildet das Ergebnis einer einzelnen Laboruntersuchung ab.
+Das [MII Profil Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.html) — ObservationLab — bildet das Ergebnis einer einzelnen Laboruntersuchung ab.
 
 ### Metadaten
 
@@ -48,7 +46,6 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Observation.status       | Laborbefund.Laboruntersuchung.Status         |
 | Observation.category      | Laborbefund.Laboruntersuchung.Bereich |
 | Observation.category      | Laborbefund.Laboruntersuchung.Gruppe|
-| Observation.code      | Laborbefund.Laboruntersuchung.Laborparameter|
 | Observation.code      | Laborbefund.Laboruntersuchung.Laborparameter|
 | Observation.effective[x]       | Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt|
 | Observation.issued       | Laborbefund.Laboruntersuchung.Dokumentationsdatum | 

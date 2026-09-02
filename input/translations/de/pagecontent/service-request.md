@@ -1,6 +1,4 @@
-# [MII Profil Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.html)
-
-Der ServiceRequestLab bildet den Auftrag für eine Laboruntersuchung ab.
+Das [MII Profil Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.html) — ServiceRequestLab — bildet den Auftrag für eine Laboruntersuchung ab.
 
 ### Metadaten
 

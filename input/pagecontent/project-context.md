@@ -1,5 +1,10 @@
-# Project Context and Relationships to Other Modules
+### Context Within the Overall Project / Relationships to Other Modules
 
-The Laboratory module represents reports typically produced by a hospital's central laboratory. Routine laboratory reports are essential for diagnosis and therapy monitoring, and laboratory tests are an important part of many clinical studies.
+The LABORATORY module represents laboratory reports of the kind typically produced in a hospital's central laboratory. These reports play a central role in most MII use cases:
+-	Laboratory reports from routine examinations are essential for reaching a diagnosis and for monitoring therapy in most diseases
 
-Reports primarily concerned with detecting infectious agents are covered by a separate but closely related microbiology module. Pathology findings also have their own module. A laboratory report is always associated with the person from whom the specimen was obtained. Specimens retained in a biobank can be represented with the Biobank module, and individual laboratory results may be reused in other modules such as tumour documentation.
+-	Laboratory tests are an important component of many clinical studies
+
+For laboratory reports concerned primarily with detecting infectious agents (microbiology, virology), a separate but closely related module is planned, in which the individual agents can be represented with SNOMED CT. There is a module of its own for pathology findings as well.
+
+A laboratory report is always assigned to the PERSON from whom the specimen was taken. Where that specimen is kept in a biobank for further examinations, it can be represented with the profiles of the BIOBANK module. The results from a laboratory report may be included again as individual elements in various other modules, for example for tumour documentation.
