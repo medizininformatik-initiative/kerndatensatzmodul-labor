@@ -32,4 +32,4 @@ Der Abschnitt [Beispiele](examples.html) zeigt FHIR-Ressourcen, darunter ein qua
 
 **4. Zeitpunkte — welcher Zeitpunkt was bedeutet**
 
-Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Welcher davon die richtige Grundlage für eine zeitliche Auswertung ist, erklären [Zeitpunkte im Labor](laboratory-timestamps.html) und die [Modulbeschreibung](guidance.html).
+Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Welcher davon die richtige Grundlage für eine zeitliche Auswertung ist, erklären [Zeitpunkte im Labor](laboratory-timestamps.html). Wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind, beschreibt [Interpretation](interpretation.html).

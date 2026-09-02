@@ -38,7 +38,7 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 
 #### Zeitpunkte
 
-Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Die Zuordnung steht unter [Zeitpunkte im Labor](laboratory-timestamps.html), die Begründung in der [Modulbeschreibung](guidance.html).
+Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Zuordnung und Begründung stehen unter [Zeitpunkte im Labor](laboratory-timestamps.html). Die kodierte Bewertung eines Ergebnisses behandelt [Interpretation](interpretation.html), die Abbildung des Probenmaterials die Seite [Probenmaterial](specimen.html).
 
 #### Erste Schritte bei der Implementierung
 

@@ -32,4 +32,4 @@ The [Examples](examples.html) show samples of the FHIR resources, among them a q
 
 **4. Timestamps — Which Point in Time Means What**
 
-Laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. Which one is the right basis for a chronological analysis is explained under [Laboratory Timestamps](laboratory-timestamps.html) and in the [module description](guidance.html).
+Laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. Which one is the right basis for a chronological analysis is explained under [Laboratory Timestamps](laboratory-timestamps.html). How a result is assessed, and which codes are used for it, is described under [Interpretation](interpretation.html).

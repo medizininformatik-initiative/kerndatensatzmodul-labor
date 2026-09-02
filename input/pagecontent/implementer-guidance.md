@@ -38,7 +38,7 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 
 #### Timestamps
 
-Laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time. The mapping is on [Laboratory Timestamps](laboratory-timestamps.html), the reasoning in the [module description](guidance.html).
+Laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time. The mapping and the reasoning are on [Laboratory Timestamps](laboratory-timestamps.html). The coded assessment of a result is covered by [Interpretation](interpretation.html), and the representation of the specimen by [Specimen](specimen.html).
 
 #### Getting Started with Implementation
 
