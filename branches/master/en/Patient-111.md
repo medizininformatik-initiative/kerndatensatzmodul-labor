@@ -1,4 +1,4 @@
-# mii-exa-labor-patient - MII IG Laborbefund v2027.0.0-ballot.rc2
+# mii-exa-labor-patient - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Laboratory test example, quantitative result - MII IG Laborbefund v2027.0.0-ballot.rc2
+# Laboratory test example, quantitative result - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0-ballot.rc2
+Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0-ballot.rc3
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
@@ -22,7 +22,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **status**: Final
 
-**category**: Laboratory studies (set), Niere/Elektrolyte
+**category**: Laboratory, Niere/Elektrolyte
 
 **code**: Kreatinin
 
@@ -56,7 +56,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "resourceType" : "Observation",
   "id" : "mii-exa-labor-laborwert",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc2"],
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc3"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "code" : "HTEST",
@@ -91,15 +91,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "status" : "final",
   "category" : [{
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    },
+    {
       "system" : "http://loinc.org",
       "version" : "2.82",
       "code" : "26436-6",
       "display" : "Laboratory studies (set)"
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "code" : "laboratory",
-      "display" : "Laboratory"
     }]
   },
   {

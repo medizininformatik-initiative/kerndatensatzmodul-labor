@@ -1,4 +1,4 @@
-# MII VS Labor Laborergebnis Qualitativ - MII IG Laborbefund v2027.0.0-ballot.rc2
+# MII VS Labor Laborergebnis Qualitativ - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ | *Version*:2027.0.0-ballot.rc2 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ | *Version*:2027.0.0-ballot.rc3 |
 | Active as of 2023-12-12 | *Computable Name*:MII_VS_Labor_Laborergebnis_Qualitativ |
 
  
@@ -44,7 +44,7 @@ Kodierung für qualitative Laborergebnisse
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc2"
+        "valueString" : "2027.0.0-ballot.rc3"
       },
       {
         "url" : "uri",
@@ -171,7 +171,7 @@ Kodierung für qualitative Laborergebnisse
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_VS_Labor_Laborergebnis_Qualitativ",
   "title" : "MII VS Labor Laborergebnis Qualitativ",
   "status" : "active",

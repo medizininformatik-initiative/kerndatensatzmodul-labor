@@ -1,3 +1,11 @@
+### Version: 2027.0.0-ballot.rc3
+
+Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc2`.
+
+### FHIR / Content Changes:
+#### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
+- category: One open slice on `category` carrying the mandatory HL7 coding, instead of a slice whose codings were sliced again — two slices at that level are not disjoint, since a CodeableConcept holding both codes matches both patterns. LOINC `26436-6` stays permitted as a further coding but is no longer required. Measured against the category shapes of every release since 2025.0.2, including the microbiology module's: all validate.
+
 ### Version: 2027.0.0-ballot.rc2
 
 Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc1`. Release candidates prepare the ballot; they are not the balloted version.

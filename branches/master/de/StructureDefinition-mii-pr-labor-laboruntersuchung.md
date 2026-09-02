@@ -1,4 +1,4 @@
-# MII PR Labor Laboruntersuchung - MII IG Laborbefund v2027.0.0-ballot.rc2
+# MII PR Labor Laboruntersuchung - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ballot.rc3 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboruntersuchung |
 
  
@@ -49,8 +49,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 18 elements(11 nested mandatory elements)
- Must-Support: 74 elements
+Mandatory: 14 elements(13 nested mandatory elements)
+ Must-Support: 72 elements
  Fixed: 3 elements
  Prohibited: 1 element
 
@@ -70,7 +70,6 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 * The element 1 is sliced based on the value of Observation.identifier
 * The element 1 is sliced based on the value of Observation.identifier.type.coding
 * The element 1 is sliced based on the value of Observation.category
-* The element 1 is sliced based on the value of Observation.category.coding
 * The element 1 is sliced based on the value of Observation.code.coding
 * The element 1 is sliced based on the value of Observation.value[x]
 
@@ -98,8 +97,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 18 elements(11 nested mandatory elements)
- Must-Support: 74 elements
+Mandatory: 14 elements(13 nested mandatory elements)
+ Must-Support: 72 elements
  Fixed: 3 elements
  Prohibited: 1 element
 
@@ -119,7 +118,6 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 * The element 1 is sliced based on the value of Observation.identifier
 * The element 1 is sliced based on the value of Observation.identifier.type.coding
 * The element 1 is sliced based on the value of Observation.category
-* The element 1 is sliced based on the value of Observation.category.coding
 * The element 1 is sliced based on the value of Observation.code.coding
 * The element 1 is sliced based on the value of Observation.value[x]
 
@@ -143,7 +141,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc2"
+        "valueString" : "2027.0.0-ballot.rc3"
       },
       {
         "url" : "uri",
@@ -282,7 +280,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_PR_Labor_Laboruntersuchung",
   "title" : "MII PR Labor Laboruntersuchung",
   "_title" : {
@@ -311,7 +309,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T18:06:21+00:00",
+  "date" : "2026-09-02T20:13:51+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -796,7 +794,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "slicing" : {
         "discriminator" : [{
           "type" : "pattern",
-          "path" : "coding"
+          "path" : "$this"
         }],
         "rules" : "open"
       },
@@ -876,48 +874,18 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category:laboruntersuchung",
+      "id" : "Observation.category:observation-category",
       "path" : "Observation.category",
-      "sliceName" : "laboruntersuchung",
-      "short" : "Laboruntersuchungs-Kategorie",
-      "definition" : "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:laboruntersuchung.coding",
-      "path" : "Observation.category.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2
-    },
-    {
-      "id" : "Observation.category:laboruntersuchung.coding:loinc-observation",
-      "path" : "Observation.category.coding",
-      "sliceName" : "loinc-observation",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "26436-6"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:laboruntersuchung.coding:observation-category",
-      "path" : "Observation.category.coding",
       "sliceName" : "observation-category",
+      "short" : "Labor-Kategorie",
+      "definition" : "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Codings im selben Eintrag und weitere category-Eintraege sind zulaessig.",
       "min" : 1,
       "max" : "1",
-      "patternCoding" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-        "code" : "laboratory"
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
       },
       "mustSupport" : true
     },

@@ -1,9 +1,19 @@
-# Änderungen - MII IG Laborbefund v2027.0.0-ballot.rc2
+# Änderungen - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungen**
 
 ## Änderungen
+
+### Version: 2027.0.0-ballot.rc3
+
+Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc2` ab.
+
+### FHIR/Inhaltliche Änderungen:
+
+#### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
+
+* category: Ein offener Slice auf `category` mit der verpflichtenden HL7-Kodierung statt eines Slices, dessen Codings erneut gesliced wurden — zwei Slices auf dieser Ebene sind nicht disjunkt, da ein CodeableConcept mit beiden Codes auf beide Patterns trifft. LOINC `26436-6` bleibt als weiteres Coding zulässig, ist aber nicht mehr verpflichtend. Gegen die category-Formen aller Releases seit 2025.0.2 und die des Moduls Mikrobiologie geprüft: alle validieren.
 
 ### Version: 2027.0.0-ballot.rc2
 

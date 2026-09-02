@@ -1,4 +1,4 @@
-# MII PR Labor Laboruntersuchung - MII IG Laborbefund v2027.0.0-ballot.rc2
+# MII PR Labor Laboruntersuchung - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ballot.rc2 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ballot.rc3 |
 | Active as of 2026-09-02 | *Computable Name*:MII_PR_Labor_Laboruntersuchung |
 
  
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc2"
+        "valueString" : "2027.0.0-ballot.rc3"
       },
       {
         "url" : "uri",
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_PR_Labor_Laboruntersuchung",
   "title" : "MII PR Labor Laboruntersuchung",
   "_title" : {
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T18:06:21+00:00",
+  "date" : "2026-09-02T20:13:51+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -698,7 +698,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "slicing" : {
         "discriminator" : [{
           "type" : "pattern",
-          "path" : "coding"
+          "path" : "$this"
         }],
         "rules" : "open"
       },
@@ -778,48 +778,18 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category:laboruntersuchung",
+      "id" : "Observation.category:observation-category",
       "path" : "Observation.category",
-      "sliceName" : "laboruntersuchung",
-      "short" : "Laboruntersuchungs-Kategorie",
-      "definition" : "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:laboruntersuchung.coding",
-      "path" : "Observation.category.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2
-    },
-    {
-      "id" : "Observation.category:laboruntersuchung.coding:loinc-observation",
-      "path" : "Observation.category.coding",
-      "sliceName" : "loinc-observation",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "26436-6"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:laboruntersuchung.coding:observation-category",
-      "path" : "Observation.category.coding",
       "sliceName" : "observation-category",
+      "short" : "Labor-Kategorie",
+      "definition" : "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Codings im selben Eintrag und weitere category-Eintraege sind zulaessig.",
       "min" : 1,
       "max" : "1",
-      "patternCoding" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-        "code" : "laboratory"
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
       },
       "mustSupport" : true
     },

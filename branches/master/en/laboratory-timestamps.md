@@ -1,4 +1,4 @@
-# Laboratory Timestamps - MII IG Laborbefund v2027.0.0-ballot.rc2
+# Laboratory Timestamps - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

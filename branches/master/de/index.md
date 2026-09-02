@@ -1,4 +1,4 @@
-# Startseite - MII IG Laborbefund v2027.0.0-ballot.rc2
+# Startseite - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Startseite**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor | *Version*:2027.0.0-ballot.rc3 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_IG_Labor |
 
 ### Kerndatensatz-Modul Laborbefund
@@ -52,7 +52,7 @@ Das Probenmaterial wird hier nicht profiliert. Das Modul nutzt das Profil des Mo
 | | |
 | :--- | :--- |
 | Datum | noch nicht veröffentlicht |
-| Version | 2027.0.0-ballot.rc2 |
+| Version | 2027.0.0-ballot.rc3 |
 | Status | active |
 | Realm | DE |
 

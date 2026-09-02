@@ -1,4 +1,4 @@
-# MII CPS Labor CapabilityStatement - MII IG Laborbefund v2027.0.0-ballot.rc2
+# MII CPS Labor CapabilityStatement - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata | *Version*:2027.0.0-ballot.rc2 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata | *Version*:2027.0.0-ballot.rc3 |
 | Active as of 2026-11-26 | *Computable Name*:MII_CPS_Labor_CapabilityStatement |
 
  
@@ -32,7 +32,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc2"
+        "valueString" : "2027.0.0-ballot.rc3"
       },
       {
         "url" : "uri",
@@ -171,7 +171,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_CPS_Labor_CapabilityStatement",
   "title" : "MII CPS Labor CapabilityStatement",
   "status" : "active",
@@ -204,7 +204,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "Observation",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc2"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc3"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -430,7 +430,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "DiagnosticReport",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2027.0.0-ballot.rc2"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2027.0.0-ballot.rc3"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -584,7 +584,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
         "valueCode" : "SHALL"
       }],
       "type" : "ServiceRequest",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2027.0.0-ballot.rc2"],
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2027.0.0-ballot.rc3"],
       "_supportedProfile" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",

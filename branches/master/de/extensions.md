@@ -1,4 +1,4 @@
-# Extensions - MII IG Laborbefund v2027.0.0-ballot.rc2
+# Extensions - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Profiles**](profiles.md)

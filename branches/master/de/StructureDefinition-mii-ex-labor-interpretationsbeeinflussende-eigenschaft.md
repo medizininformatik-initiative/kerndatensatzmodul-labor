@@ -1,4 +1,4 @@
-# MII EX Labor Interpretationsbeeinflussende Eigenschaft - MII IG Laborbefund v2027.0.0-ballot.rc2
+# MII EX Labor Interpretationsbeeinflussende Eigenschaft - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft | *Version*:2027.0.0-ballot.rc3 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft |
 
 Interpretationsbeeinflussenden Eigenschaft einer Laboruntersuchung oder Probe.
@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-labor
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc2"
+        "valueString" : "2027.0.0-ballot.rc3"
       },
       {
         "url" : "uri",
@@ -223,12 +223,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-labor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft",
   "title" : "MII EX Labor Interpretationsbeeinflussende Eigenschaft",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T18:06:21+00:00",
+  "date" : "2026-09-02T20:13:51+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

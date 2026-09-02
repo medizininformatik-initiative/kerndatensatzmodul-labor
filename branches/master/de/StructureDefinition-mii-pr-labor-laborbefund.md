@@ -1,4 +1,4 @@
-# MII PR Labor Laborbefund - MII IG Laborbefund v2027.0.0-ballot.rc2
+# MII PR Labor Laborbefund - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ballot.rc2 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ballot.rc3 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_PR_Labor_Laborbefund |
 
  
@@ -45,8 +45,8 @@ Diese Struktur ist abgeleitet von [DiagnosticReport](http://hl7.org/fhir/R4/diag
 
 ** Summary **
 
-Mandatory: 23 elements
- Must-Support: 46 elements
+Mandatory: 21 elements
+ Must-Support: 44 elements
  Fixed: 2 elements
 
 **Extensions**
@@ -62,7 +62,6 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 * The element 1 is sliced based on the value of DiagnosticReport.identifier
 * The element 1 is sliced based on the value of DiagnosticReport.identifier.type.coding
 * The element 1 is sliced based on the value of DiagnosticReport.category
-* The element 1 is sliced based on the value of DiagnosticReport.category.coding
 * The element 1 is sliced based on the value of DiagnosticReport.code.coding
 
  **Schlüsselelemente-Ansicht** 
@@ -85,8 +84,8 @@ Diese Struktur ist abgeleitet von [DiagnosticReport](http://hl7.org/fhir/R4/diag
 
 ** Summary **
 
-Mandatory: 23 elements
- Must-Support: 46 elements
+Mandatory: 21 elements
+ Must-Support: 44 elements
  Fixed: 2 elements
 
 **Extensions**
@@ -102,7 +101,6 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 * The element 1 is sliced based on the value of DiagnosticReport.identifier
 * The element 1 is sliced based on the value of DiagnosticReport.identifier.type.coding
 * The element 1 is sliced based on the value of DiagnosticReport.category
-* The element 1 is sliced based on the value of DiagnosticReport.category.coding
 * The element 1 is sliced based on the value of DiagnosticReport.code.coding
 
  
@@ -125,7 +123,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc2"
+        "valueString" : "2027.0.0-ballot.rc3"
       },
       {
         "url" : "uri",
@@ -264,7 +262,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_PR_Labor_Laborbefund",
   "title" : "MII PR Labor Laborbefund",
   "_title" : {
@@ -293,7 +291,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T18:06:21+00:00",
+  "date" : "2026-09-02T20:13:51+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -694,7 +692,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "slicing" : {
         "discriminator" : [{
           "type" : "pattern",
-          "path" : "coding"
+          "path" : "$this"
         }],
         "rules" : "open"
       },
@@ -752,48 +750,18 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.category:laborbefund",
+      "id" : "DiagnosticReport.category:v2-lab",
       "path" : "DiagnosticReport.category",
-      "sliceName" : "laborbefund",
-      "short" : "Laborbefund-Kategorie",
-      "definition" : "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
+      "sliceName" : "v2-lab",
+      "short" : "Labor-Kategorie",
+      "definition" : "Die verpflichtende Kategorie des Laborbefunds. Weitere Codings im selben Eintrag und weitere category-Eintraege sind zulaessig.",
       "min" : 1,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.category:laborbefund.coding",
-      "path" : "DiagnosticReport.category.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2
-    },
-    {
-      "id" : "DiagnosticReport.category:laborbefund.coding:loinc-lab",
-      "path" : "DiagnosticReport.category.coding",
-      "sliceName" : "loinc-lab",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "26436-6"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.category:laborbefund.coding:diagnostic-service-sections",
-      "path" : "DiagnosticReport.category.coding",
-      "sliceName" : "diagnostic-service-sections",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-        "code" : "LAB"
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "LAB"
+        }]
       },
       "mustSupport" : true
     },
