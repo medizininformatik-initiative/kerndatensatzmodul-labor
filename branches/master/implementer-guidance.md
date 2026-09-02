@@ -35,6 +35,7 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 * [Terminology](terminology.html) — LOINC coding, the MII-300 subset, units and UCUM
 * [Capability Statements](capability-statements.html) — the REST requirements, including interactions and search parameters
 * [Examples](examples.html) — sample resources
+* [ImplementationGuide resource](ImplementationGuide-mii-ig-labor.html) — the package versions this guide actually resolves to, the global profiles and the expansion parameters
 
 ### Domain Guidance
 

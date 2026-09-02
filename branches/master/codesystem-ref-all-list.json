@@ -104,11 +104,11 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-mii-vs-labor-order-codes.html" : "MII VS Labor Order Codes",
     "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
     "file:///web/publishing/work/task-89/draft/output/ValueSet-results-laboratory-pathology-observations-uv-ips.html" : "Results Laboratory/Pathology Observation - IPS",
     "ValueSet-mii-vs-labor-laborbereich.html" : "MII VS Labor Laborbereich",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+    "ValueSet-mii-vs-labor-order-codes.html" : "MII VS Labor Order Codes"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -120,19 +120,19 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "ValueSet-mii-vs-labor-laborergebnis-qualitativ.html" : "MII VS Labor Laborergebnis Qualitativ",
-    "ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html" : "MII VS Labor Laborergbenis Semiquantitativ",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html" : "MII VS Labor Quelle klinisches Bezugsdatum",
     "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
     "ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.html" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
+    "ValueSet-mii-vs-labor-laborergebnis-qualitativ.html" : "MII VS Labor Laborergebnis Qualitativ",
+    "ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html" : "MII VS Labor Quelle klinisches Bezugsdatum",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html" : "MII VS Labor Laborergbenis Semiquantitativ",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
     "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -205,8 +205,8 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
-    "ValueSet-mii-vs-labor-identifier-type-codes.html" : "MII VS Labor Identifier Type Codes"
+    "ValueSet-mii-vs-labor-identifier-type-codes.html" : "MII VS Labor Identifier Type Codes",
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -218,8 +218,8 @@
     "oids" : ["2.16.840.1.113883.5.83"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
-    "ValueSet-mii-vs-labor-interpretation.html" : "MII VS Labor Interpretation"
+    "ValueSet-mii-vs-labor-interpretation.html" : "MII VS Labor Interpretation",
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
