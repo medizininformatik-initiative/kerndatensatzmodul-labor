@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-labor-laborergebnis-qualitativ"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.labor"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-laborergebnis-qualitativ</b></p><a name="mii-vs-labor-laborergebnis-qualitativ"> </a><a name="hcmii-vs-labor-laborergebnis-qualitativ"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/900000000000207008/version/20260701"> version &#x1F4CD;http://snomed.info/sct/900000000000207008/version/20260701</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/10828004">10828004</a></td><td>Positive (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/280416009">280416009</a></td><td>Indeterminate result (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260385009">260385009</a></td><td>Negative (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260415000">260415000</a></td><td>Not detected (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/419984006">419984006</a></td><td>Inconclusive (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260373001">260373001</a></td><td>Detected (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/52101004">52101004</a></td><td>Present (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/410594000">410594000</a></td><td>Definitely NOT present (qualifier value)</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/900000000000207008/version/20260701"> version &#x1F4CD;http://snomed.info/sct/900000000000207008/version/20260701</span> where concept  is-a 272519000 (Absence findings)</li></ul></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-laborergebnis-qualitativ</b></p><a name="de-mii-vs-labor-laborergebnis-qualitativ"> </a><a name="de-hcmii-vs-labor-laborergebnis-qualitativ"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/900000000000207008/version/20260701"> version &#x1F4CD;http://snomed.info/sct/900000000000207008/version/20260701</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/10828004">10828004</a></td><td>Positive (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/280416009">280416009</a></td><td>Indeterminate result (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260385009">260385009</a></td><td>Negative (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260415000">260415000</a></td><td>Not detected (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/419984006">419984006</a></td><td>Inconclusive (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260373001">260373001</a></td><td>Detected (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/52101004">52101004</a></td><td>Present (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/410594000">410594000</a></td><td>Definitely NOT present (qualifier value)</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/900000000000207008/version/20260701"> version &#x1F4CD;http://snomed.info/sct/900000000000207008/version/20260701</span> where concept  is-a 272519000 (Absence findings)</li></ul></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C36292"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C25294"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="pw@gefyra.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ"/>
+  <version value="2027.0.0"/>
+  <name value="MII_VS_Labor_Laborergebnis_Qualitativ"/>
+  <title value="MII VS Labor Laborergebnis Qualitativ"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-12"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Kodierung für qualitative Laborergebnisse"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positive (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="280416009"/>
+        <display value="Indeterminate result (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negative (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260415000"/>
+        <display value="Not detected (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="419984006"/>
+        <display value="Inconclusive (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260373001"/>
+        <display value="Detected (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="52101004"/>
+        <display value="Present (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="410594000"/>
+        <display value="Definitely NOT present (qualifier value)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="272519000"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>
