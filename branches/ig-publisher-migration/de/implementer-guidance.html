@@ -310,9 +310,74 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 </p>
 
-<h2 id="technische-implementierung">Technische Implementierung</h2>
+<p>Diese Seite fasst zusammen, was für die Implementierung des Moduls Labor in FHIR-basierten Systemen nötig ist.</p>
 
-<p>Diese Seite wurde absichtlich leer gelassen.</p>
+<h4 id="verständnis-der-anforderungen">Verständnis der Anforderungen</h4>
+
+<p><strong>1. Logische Modelle — fachliche Anforderungen</strong></p>
+
+<p>Die <a href="logical-models.html">Logischen Modelle</a> tragen die fachlichen und klinischen Anforderungen, unabhängig von den FHIR-Profilen:</p>
+
+<ul>
+  <li><strong>Laborbefund</strong> — Identifikation, Status, klinisches Bezugsdatum, Dokumentationsdatum</li>
+  <li><strong>Probenmaterial</strong> — Identifikation, Entnahme- und Laboreingangszeitpunkt, Probenart, Körperstelle</li>
+  <li><strong>Laboruntersuchung</strong> — Laborparameter, Messwert und Interpretation, Referenzbereich, Methode</li>
+  <li><strong>Laboranforderung</strong> — Identifikation, Status, Anforderungsdatum</li>
+</ul>
+
+<p>Datentypen und Kardinalitäten darin sind nicht verpflichtend; die verbindlichen Vorgaben machen die Profile.</p>
+
+<p><strong>2. UML-Diagramme — Datenbeziehungen</strong></p>
+
+<p>Die <a href="uml-diagrams.html">UML-Diagramme</a> veranschaulichen die Beziehungen zwischen den Elementen und die Verweise zwischen den Ressourcen.</p>
+
+<h4 id="konformität">Konformität</h4>
+
+<p>Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Modul Meta gepflegt, nicht hier wiederholt:</p>
+
+<ul>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Konformität</a> — die Regeln insgesamt</li>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">Allgemeine Anforderungen</a></li>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Fehlende Daten</a></li>
+  <li><a href="security-and-privacy.html">Sicherheit und Datenschutz</a> — modulspezifische Hinweise</li>
+</ul>
+
+<h4 id="technische-artefakte">Technische Artefakte</h4>
+
+<ul>
+  <li><a href="profiles.html">Profile</a> — die vier Profile mit ihren Einschränkungen, dazu die erläuternden Seiten je Ressource</li>
+  <li><a href="extensions.html">Extensions</a> — Quelle des klinischen Bezugsdatums, interpretationsbeeinflussende Eigenschaft</li>
+  <li><a href="value-sets.html">ValueSets</a> — die neun ValueSets des Moduls</li>
+  <li><a href="terminology.html">Terminologie</a> — LOINC-Kodierung, das MII-300-Subset, Einheiten und UCUM</li>
+  <li><a href="capability-statements.html">CapabilityStatements</a> — die REST-Anforderungen samt Interaktionen und Suchparametern</li>
+  <li><a href="examples.html">Beispiele</a> — Beispielressourcen</li>
+</ul>
+
+<h4 id="zeitpunkte">Zeitpunkte</h4>
+
+<p>Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Die Zuordnung steht unter <a href="laboratory-timestamps.html">Zeitpunkte im Labor</a>, die Begründung in der <a href="guidance.html">Modulbeschreibung</a>.</p>
+
+<h4 id="erste-schritte-bei-der-implementierung">Erste Schritte bei der Implementierung</h4>
+
+<p><strong>Downloads</strong></p>
+
+<p>Die Seite <a href="downloads.html">Downloads</a> stellt das FHIR-Package zur Validierung bereit, die Beispiele in JSON und XML sowie die maschinenlesbare ImplementationGuide-Ressource.</p>
+
+<p><strong>Terminologieserver</strong></p>
+
+<p>Für ValueSet-Expansionen und Code-Validierung steht der MII-Terminologieserver zur Verfügung:</p>
+
+<ul>
+  <li><strong>URL:</strong> <a href="https://www.ontoserver.mii-termserv.de/">https://www.ontoserver.mii-termserv.de/</a></li>
+</ul>
+
+<p>Die Versionen, auf die dieser Leitfaden festgelegt ist, stehen in seinen Expansionsparametern; eine Expansion gegen eine andere Version kann zu einer abweichenden Code-Menge führen.</p>
+
+<p><strong>Validierung</strong></p>
+
+<p>Gegen das FHIR-Package validieren, etwa mit dem <a href="https://confluence.hl7.org/spaces/FHIR/pages/35718580/Using+the+FHIR+Validator">FHIR Validator</a>.</p>
+
 
 
 
@@ -338,7 +403,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 06:57+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 07:24+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

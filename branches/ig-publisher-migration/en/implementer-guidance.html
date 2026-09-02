@@ -333,7 +333,73 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>The source page was intentionally left empty. Implementers should use the normative <a href="profiles.html">profiles</a> and <a href="extensions.html">extensions</a>, the <a href="capability-statements.html">CapabilityStatement</a>, the <a href="terminology.html">terminology guidance</a>, and the <a href="laboratory-timestamps.html">laboratory timestamp mapping</a>.</p>
+<p>This page collects what is needed to implement the Laboratory module in FHIR-based systems.</p>
+
+<h4 id="understanding-the-requirements">Understanding the Requirements</h4>
+
+<p><strong>1. Logical Models — Business Requirements</strong></p>
+
+<p>The <a href="logical-models.html">Logical Models</a> carry the business and clinical requirements, independently of the FHIR profiles:</p>
+
+<ul>
+  <li><strong>Laboratory report</strong> — identification, status, clinical reference date, documentation date</li>
+  <li><strong>Specimen</strong> — identification, collection and laboratory receipt time, specimen type, body site</li>
+  <li><strong>Laboratory test</strong> — parameter, result and interpretation, reference range, method</li>
+  <li><strong>Laboratory order</strong> — identification, status, request date</li>
+</ul>
+
+<p>Their data types and cardinalities are not normative; the profiles define the binding requirements.</p>
+
+<p><strong>2. UML Diagrams — Data Relationships</strong></p>
+
+<p>The <a href="uml-diagrams.html">UML Diagrams</a> illustrate the relationships between the elements and the references between the resources.</p>
+
+<h4 id="conformance">Conformance</h4>
+
+<p>The conformance rules apply across the whole Core Dataset and are maintained by the Meta module, not repeated here:</p>
+
+<ul>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Conformance</a> — the rules as a whole</li>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">General Requirements</a></li>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+  <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Handling Missing Data</a></li>
+  <li><a href="security-and-privacy.html">Security and Privacy</a> — module-specific notes</li>
+</ul>
+
+<h4 id="technical-artifacts">Technical Artifacts</h4>
+
+<ul>
+  <li><a href="profiles.html">Profiles</a> — the four profiles with their constraints, plus the per-resource pages explaining them</li>
+  <li><a href="extensions.html">Extensions</a> — source of the clinical reference date, interpretation-affecting property</li>
+  <li><a href="value-sets.html">Value Sets</a> — the nine value sets the module defines</li>
+  <li><a href="terminology.html">Terminology</a> — LOINC coding, the MII-300 subset, units and UCUM</li>
+  <li><a href="capability-statements.html">Capability Statements</a> — the REST requirements, including interactions and search parameters</li>
+  <li><a href="examples.html">Examples</a> — sample resources</li>
+</ul>
+
+<h4 id="timestamps">Timestamps</h4>
+
+<p>Laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time. The mapping is on <a href="laboratory-timestamps.html">Laboratory Timestamps</a>, the reasoning in the <a href="guidance.html">module description</a>.</p>
+
+<h4 id="getting-started-with-implementation">Getting Started with Implementation</h4>
+
+<p><strong>Downloads</strong></p>
+
+<p>The <a href="downloads.html">Downloads</a> page provides the FHIR package for validation, the examples in JSON and XML, and the machine-readable ImplementationGuide resource.</p>
+
+<p><strong>Terminology Service</strong></p>
+
+<p>For value set expansion and code validation, use the MII terminology server:</p>
+
+<ul>
+  <li><strong>URL:</strong> <a href="https://www.ontoserver.mii-termserv.de/">https://www.ontoserver.mii-termserv.de/</a></li>
+</ul>
+
+<p>The versions this guide is pinned to are declared in its expansion parameters; expanding against a different version can yield a different set of codes.</p>
+
+<p><strong>Validation</strong></p>
+
+<p>Validate against the FHIR package with the <a href="https://confluence.hl7.org/spaces/FHIR/pages/35718580/Using+the+FHIR+Validator">FHIR Validator</a>.</p>
 
 
 
@@ -360,7 +426,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 06:57+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 07:24+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
