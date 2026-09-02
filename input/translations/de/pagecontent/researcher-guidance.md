@@ -30,6 +30,10 @@ Der Abschnitt [Beispiele](examples.html) zeigt FHIR-Ressourcen, darunter ein qua
 * wie ein vollständiger Befund aussieht
 * wie die Ressourcen aufeinander verweisen
 
-**4. Zeitpunkte — welcher Zeitpunkt was bedeutet**
+**4. Fachliche Hinweise — was bei der Auswertung zu beachten ist**
 
-Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Welcher davon die richtige Grundlage für eine zeitliche Auswertung ist, erklären [Zeitpunkte im Labor](laboratory-timestamps.html). Wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind, beschreibt [Interpretation](interpretation.html).
+Drei Themen entscheiden darüber, ob Labordaten richtig gelesen werden:
+
+* [Zeitpunkte im Labor](laboratory-timestamps.html) — Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Die Seite erklärt, welcher davon die richtige Grundlage für eine zeitliche Auswertung ist.
+* [Interpretation](interpretation.html) — wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind.
+* [Probenmaterial](specimen.html) — woraus gemessen wurde und wie Kommentare zur Probe abgelegt sind.

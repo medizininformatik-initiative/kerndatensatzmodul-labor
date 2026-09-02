@@ -36,9 +36,13 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 * [Capability Statements](capability-statements.html) — the REST requirements, including interactions and search parameters
 * [Examples](examples.html) — sample resources
 
-### Timestamps
+### Domain Guidance
 
-Laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time. The mapping and the reasoning are on [Laboratory Timestamps](laboratory-timestamps.html). The coded assessment of a result is covered by [Interpretation](interpretation.html), and the representation of the specimen by [Specimen](specimen.html).
+Three subjects are described separately for implementation:
+
+* [Laboratory Timestamps](laboratory-timestamps.html) — laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time; the mapping and the reasoning are there.
+* [Interpretation](interpretation.html) — the coded assessment of a result and the ValueSet provided for it.
+* [Specimen](specimen.html) — the representation of specimen material via the Biobank module.
 
 ### Getting Started with Implementation
 

@@ -36,9 +36,13 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 * [CapabilityStatements](capability-statements.html) — die REST-Anforderungen samt Interaktionen und Suchparametern
 * [Beispiele](examples.html) — Beispielressourcen
 
-### Zeitpunkte
+### Fachliche Hinweise
 
-Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Zuordnung und Begründung stehen unter [Zeitpunkte im Labor](laboratory-timestamps.html). Die kodierte Bewertung eines Ergebnisses behandelt [Interpretation](interpretation.html), die Abbildung des Probenmaterials die Seite [Probenmaterial](specimen.html).
+Drei Themen sind für die Umsetzung eigens beschrieben:
+
+* [Zeitpunkte im Labor](laboratory-timestamps.html) — Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht; Zuordnung und Begründung stehen dort.
+* [Interpretation](interpretation.html) — die kodierte Bewertung eines Ergebnisses und das dafür vorgesehene ValueSet.
+* [Probenmaterial](specimen.html) — die Abbildung des Probenmaterials über das Modul Biobank.
 
 ### Erste Schritte bei der Implementierung
 

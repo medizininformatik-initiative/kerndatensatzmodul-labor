@@ -30,6 +30,10 @@ The [Examples](examples.html) show samples of the FHIR resources, among them a q
 * what a complete report looks like
 * how the resources reference one another
 
-**4. Timestamps — Which Point in Time Means What**
+**4. Domain Guidance — What to Watch Out for in an Analysis**
 
-Laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. Which one is the right basis for a chronological analysis is explained under [Laboratory Timestamps](laboratory-timestamps.html). How a result is assessed, and which codes are used for it, is described under [Interpretation](interpretation.html).
+Three subjects decide whether laboratory data is read correctly:
+
+* [Laboratory Timestamps](laboratory-timestamps.html) — laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. The page explains which one is the right basis for a chronological analysis.
+* [Interpretation](interpretation.html) — how a result is assessed and which codes are used for it.
+* [Specimen](specimen.html) — what was measured from, and where comments about the specimen are kept.
