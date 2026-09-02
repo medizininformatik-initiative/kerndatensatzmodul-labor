@@ -18,7 +18,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **status**: Final
 
-**category**: Laboratory studies (set)
+**category**: Laboratory
 
 **code**: Urinsediment Epithelzellen Semi-quantitative Schätzung
 
@@ -65,9 +65,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
   "category" : [{
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
-      "code" : "26436-6",
-      "display" : "Laboratory studies (set)"
+      "code" : "26436-6"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",

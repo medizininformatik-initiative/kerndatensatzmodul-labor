@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T13:24:46+00:00",
+  "date" : "2026-09-02T15:00:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -695,6 +695,13 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     {
       "id" : "Observation.category",
       "path" : "Observation.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "short" : "Kategorie",
       "_short" : {
         "extension" : [{
@@ -751,14 +758,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     {
       "id" : "Observation.category.coding",
       "path" : "Observation.category.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2,
       "mustSupport" : true
     },
     {
@@ -779,7 +778,35 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category.coding:loinc-observation",
+      "id" : "Observation.category:laboruntersuchung",
+      "path" : "Observation.category",
+      "sliceName" : "laboruntersuchung",
+      "short" : "Laboruntersuchungs-Kategorie",
+      "definition" : "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:laboruntersuchung.coding",
+      "path" : "Observation.category.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2
+    },
+    {
+      "id" : "Observation.category:laboruntersuchung.coding:loinc-observation",
       "path" : "Observation.category.coding",
       "sliceName" : "loinc-observation",
       "min" : 1,
@@ -791,7 +818,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category.coding:observation-category",
+      "id" : "Observation.category:laboruntersuchung.coding:observation-category",
       "path" : "Observation.category.coding",
       "sliceName" : "observation-category",
       "min" : 1,
@@ -1331,7 +1358,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
       }]
     },
     {
@@ -1364,7 +1391,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
       }],
       "mustSupport" : true
     },

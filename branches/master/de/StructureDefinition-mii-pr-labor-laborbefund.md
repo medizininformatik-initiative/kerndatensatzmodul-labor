@@ -45,8 +45,8 @@ Diese Struktur ist abgeleitet von [DiagnosticReport](http://hl7.org/fhir/R4/diag
 
 ** Summary **
 
-Mandatory: 22 elements
- Must-Support: 45 elements
+Mandatory: 23 elements
+ Must-Support: 46 elements
  Fixed: 2 elements
 
 **Extensions**
@@ -61,6 +61,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 * The element 1 is sliced based on the value of DiagnosticReport.identifier
 * The element 1 is sliced based on the value of DiagnosticReport.identifier.type.coding
+* The element 1 is sliced based on the value of DiagnosticReport.category
 * The element 1 is sliced based on the value of DiagnosticReport.category.coding
 * The element 1 is sliced based on the value of DiagnosticReport.code.coding
 
@@ -84,8 +85,8 @@ Diese Struktur ist abgeleitet von [DiagnosticReport](http://hl7.org/fhir/R4/diag
 
 ** Summary **
 
-Mandatory: 22 elements
- Must-Support: 45 elements
+Mandatory: 23 elements
+ Must-Support: 46 elements
  Fixed: 2 elements
 
 **Extensions**
@@ -100,6 +101,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 * The element 1 is sliced based on the value of DiagnosticReport.identifier
 * The element 1 is sliced based on the value of DiagnosticReport.identifier.type.coding
+* The element 1 is sliced based on the value of DiagnosticReport.category
 * The element 1 is sliced based on the value of DiagnosticReport.category.coding
 * The element 1 is sliced based on the value of DiagnosticReport.code.coding
 
@@ -291,7 +293,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T13:24:46+00:00",
+  "date" : "2026-09-02T15:00:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -689,6 +691,13 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     {
       "id" : "DiagnosticReport.category",
       "path" : "DiagnosticReport.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "short" : "Kategorie",
       "_short" : {
         "extension" : [{
@@ -743,7 +752,23 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.category.coding",
+      "id" : "DiagnosticReport.category:laborbefund",
+      "path" : "DiagnosticReport.category",
+      "sliceName" : "laborbefund",
+      "short" : "Laborbefund-Kategorie",
+      "definition" : "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.category:laborbefund.coding",
       "path" : "DiagnosticReport.category.coding",
       "slicing" : {
         "discriminator" : [{
@@ -755,7 +780,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "min" : 2
     },
     {
-      "id" : "DiagnosticReport.category.coding:loinc-lab",
+      "id" : "DiagnosticReport.category:laborbefund.coding:loinc-lab",
       "path" : "DiagnosticReport.category.coding",
       "sliceName" : "loinc-lab",
       "min" : 1,
@@ -767,7 +792,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.category.coding:diagnostic-service-sections",
+      "id" : "DiagnosticReport.category:laborbefund.coding:diagnostic-service-sections",
       "path" : "DiagnosticReport.category.coding",
       "sliceName" : "diagnostic-service-sections",
       "min" : 1,

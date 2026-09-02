@@ -49,8 +49,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 17 elements(11 nested mandatory elements)
- Must-Support: 73 elements
+Mandatory: 18 elements(11 nested mandatory elements)
+ Must-Support: 74 elements
  Fixed: 3 elements
  Prohibited: 1 element
 
@@ -60,8 +60,8 @@ This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md) (**Modifier**) 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)
-* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-extension-quantity-translation.html)
-* [http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-quantity-precision.html)
+* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-extension-quantity-translation.html)
+* [http://hl7.org/fhir/StructureDefinition/quantity-precision](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-quantity-precision.html)
 
 **Slices**
 
@@ -69,6 +69,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 * The element 1 is sliced based on the value of Observation.identifier
 * The element 1 is sliced based on the value of Observation.identifier.type.coding
+* The element 1 is sliced based on the value of Observation.category
 * The element 1 is sliced based on the value of Observation.category.coding
 * The element 1 is sliced based on the value of Observation.code.coding
 * The element 1 is sliced based on the value of Observation.value[x]
@@ -97,8 +98,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 17 elements(11 nested mandatory elements)
- Must-Support: 73 elements
+Mandatory: 18 elements(11 nested mandatory elements)
+ Must-Support: 74 elements
  Fixed: 3 elements
  Prohibited: 1 element
 
@@ -108,8 +109,8 @@ This structure refers to these extensions:
 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md) (**Modifier**) 
 * [https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)
-* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-extension-quantity-translation.html)
-* [http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-quantity-precision.html)
+* [http://hl7.org/fhir/StructureDefinition/extension-quantity-translation](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-extension-quantity-translation.html)
+* [http://hl7.org/fhir/StructureDefinition/quantity-precision](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-quantity-precision.html)
 
 **Slices**
 
@@ -117,6 +118,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 * The element 1 is sliced based on the value of Observation.identifier
 * The element 1 is sliced based on the value of Observation.identifier.type.coding
+* The element 1 is sliced based on the value of Observation.category
 * The element 1 is sliced based on the value of Observation.category.coding
 * The element 1 is sliced based on the value of Observation.code.coding
 * The element 1 is sliced based on the value of Observation.value[x]
@@ -309,7 +311,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T13:24:46+00:00",
+  "date" : "2026-09-02T15:00:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -791,6 +793,13 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     {
       "id" : "Observation.category",
       "path" : "Observation.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "short" : "Kategorie",
       "_short" : {
         "extension" : [{
@@ -847,14 +856,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     {
       "id" : "Observation.category.coding",
       "path" : "Observation.category.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2,
       "mustSupport" : true
     },
     {
@@ -875,7 +876,35 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category.coding:loinc-observation",
+      "id" : "Observation.category:laboruntersuchung",
+      "path" : "Observation.category",
+      "sliceName" : "laboruntersuchung",
+      "short" : "Laboruntersuchungs-Kategorie",
+      "definition" : "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:laboruntersuchung.coding",
+      "path" : "Observation.category.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2
+    },
+    {
+      "id" : "Observation.category:laboruntersuchung.coding:loinc-observation",
       "path" : "Observation.category.coding",
       "sliceName" : "loinc-observation",
       "min" : 1,
@@ -887,7 +916,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category.coding:observation-category",
+      "id" : "Observation.category:laboruntersuchung.coding:observation-category",
       "path" : "Observation.category.coding",
       "sliceName" : "observation-category",
       "min" : 1,
@@ -1427,7 +1456,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"]
       }]
     },
     {
@@ -1460,7 +1489,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/quantity-precision"]
       }],
       "mustSupport" : true
     },
