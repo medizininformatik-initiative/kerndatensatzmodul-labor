@@ -98,24 +98,14 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
     * system 1.. MS
     * code 1.. MS
     * display MS
-// Siehe die Begruendung im Laborbefund-Profil: das Slicing gehoert auf `category`,
-// sonst verlangt jede weitere Kategorie - etwa der Laborbereich, fuer den dieses
-// Modul das ValueSet MII_VS_Labor_Laborbereich anbietet - dieselben Pflichtcodes.
-// Discriminator ebenfalls auf `coding`, ohne eigenes patternCodeableConcept.
+// Siehe das Laborbefund-Profil: ein Slice, ein Coding im Pattern, offen.
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "coding"
+* category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category contains laboruntersuchung 1..1 MS
-* category[laboruntersuchung] ^short = "Laboruntersuchungs-Kategorie"
-* category[laboruntersuchung] ^definition = "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig."
-* category[laboruntersuchung].coding ^slicing.discriminator.type = #pattern
-* category[laboruntersuchung].coding ^slicing.discriminator.path = "$this"
-* category[laboruntersuchung].coding ^slicing.rules = #open
-* category[laboruntersuchung].coding contains
-    loinc-observation 1..1 MS and
-    observation-category 1..1 MS
-* category[laboruntersuchung].coding[loinc-observation] = $loinc-no-ver#26436-6
-* category[laboruntersuchung].coding[observation-category] = $observation-category#laboratory
+* category contains observation-category 1..1 MS
+* category[observation-category] = $observation-category#laboratory
+* category[observation-category] ^short = "Labor-Kategorie"
+* category[observation-category] ^definition = "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Codings im selben Eintrag und weitere category-Eintraege sind zulaessig."
 * code MS
   * ^short = "Code"
   * ^definition = "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt."

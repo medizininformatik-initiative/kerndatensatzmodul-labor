@@ -11,9 +11,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category[laboruntersuchung].coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
-* category[laboruntersuchung].coding[observation-category] = $observation-category#laboratory "Laboratory"
-* category[1].coding[0] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
+* category[observation-category].coding[0] = $observation-category#laboratory "Laboratory"
+* category[observation-category].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
+* category[1] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
 * code = $loinc#59826-8 "Creatinine [Moles/volume] in Blood"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"

@@ -14,13 +14,13 @@ Alias: $version-algorithm = http://hl7.org/fhir/version-algorithm
 
 // Instanz-Pfad-Variante (Instance: … InstanceOf: …, z. B. CapabilityStatement).
 RuleSet: Version
-* version = "2027.0.0-ballot.rc2"
+* version = "2027.0.0-ballot.rc3"
 * extension[+].url = $artifact-versionAlgorithm
 * extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
 // Caret-Pfad-Variante (Profile:, Extension:, Logical:, ValueSet:, CodeSystem:).
 RuleSet: PR_CS_VS_Version
-* ^version = "2027.0.0-ballot.rc2"
+* ^version = "2027.0.0-ballot.rc3"
 * ^extension[+].url = $artifact-versionAlgorithm
 * ^extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
@@ -35,7 +35,7 @@ RuleSet: CRMIPackageSource
 * meta.extension[=].extension[+].url = "packageId"
 * meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.laborbefund"
 * meta.extension[=].extension[+].url = "version"
-* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc2"
+* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc3"
 * meta.extension[=].extension[+].url = "uri"
 * meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
 
@@ -44,7 +44,7 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[=].extension[+].url = "packageId"
 * ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.laborbefund"
 * ^meta.extension[=].extension[+].url = "version"
-* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc2"
+* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc3"
 * ^meta.extension[=].extension[+].url = "uri"
 * ^meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
 

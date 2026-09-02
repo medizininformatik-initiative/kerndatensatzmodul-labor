@@ -46,7 +46,7 @@ Das Probenmaterial wird hier nicht profiliert. Das Modul nutzt das Profil des Mo
 | Veröffentlichung   |            |
 |---------|------------|
 | Datum   | noch nicht veröffentlicht |
-| Version | 2027.0.0-ballot.rc2   |
+| Version | 2027.0.0-ballot.rc3   |
 | Status  | active     |
 | Realm   | DE         | 
 

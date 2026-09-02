@@ -10,7 +10,7 @@ What is described here is preliminary. It records the current state and will cha
 |---|---|
 | Package ID | `de.medizininformatikinitiative.kerndatensatz.laborbefund` |
 | Canonical | `https://www.medizininformatik-initiative.de/fhir/core/modul-labor` |
-| Version | `2027.0.0-ballot.rc2` |
+| Version | `2027.0.0-ballot.rc3` |
 | Status | active |
 | FHIR version | R4 (`4.0.1`) |
 | Publisher | Medizininformatik Initiative |
@@ -45,7 +45,7 @@ Note that declaring several profiles at once has a visible consequence in the qu
 
 ### Versioning and Provenance
 
-`artifact-versionPolicy` is `package`: artefact versions move with the package, not independently. `artifact-versionAlgorithm` is `semver`, while the package itself carries the MII CalVer version `2027.0.0-ballot.rc2` — the algorithm describes how versions are compared, not the scheme the MII release process uses. The `-ballot.rc1` suffix marks this as the ballot candidate for 2027.0.0; it sorts before the final release under both schemes.
+`artifact-versionPolicy` is `package`: artefact versions move with the package, not independently. `artifact-versionAlgorithm` is `semver`, while the package itself carries the MII CalVer version `2027.0.0-ballot.rc3` — the algorithm describes how versions are compared, not the scheme the MII release process uses. The `-ballot.rc1` suffix marks this as the ballot candidate for 2027.0.0; it sorts before the final release under both schemes.
 
 `package-source` records package id, version and the module base URL on every artifact, so a resource taken out of context still names where it came from. The base URL identifies no artifact of its own; the validator's note about that is suppressed with a justification.
 
