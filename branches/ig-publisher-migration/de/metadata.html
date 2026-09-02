@@ -487,7 +487,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><code class="language-plaintext highlighter-rouge">pin-canonicals: pin-all</code> legt zusätzlich jede Canonical-Referenz auf eine Version fest. Der Publisher meldet jede davon als Information; sie sind unterdrückt.</p>
 
-<p>Ein Vorbehalt, der hierher gehört: Die Versionsfestlegungen liegen an <strong>drei</strong> Stellen — den Aliasen in <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code>, diesem Manifest und den ValueSet-Aliasen mit CodeSystem-Versionen. Nichts prüft sie gegeneinander; ein Versionswechsel muss alle drei von Hand erfassen.</p>
+<p>Die Versionsfestlegungen liegen an <strong>drei</strong> Stellen — den Aliasen in <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code>, diesem Manifest und den ValueSet-Aliasen mit CodeSystem-Versionen. Zusammenführen lassen sie sich nicht: SUSHI liest die Aliase, der IG Publisher das Manifest, und keiner sieht den anderen. Ein Versionswechsel muss deshalb alle drei von Hand erfassen.</p>
+
+<p>Damit das Auseinanderlaufen nicht unbemerkt bleibt, prüft <code class="language-plaintext highlighter-rouge">scripts/terminology-pins.test.mjs</code> sie gegeneinander — bei jedem Push über <code class="language-plaintext highlighter-rouge">convention-check.yml</code>. Geprüft wird zweierlei: die wörtliche Dopplung von LOINC und SNOMED zwischen Aliasen und Manifest, und die Übereinstimmung der versionsbehafteten Aliase mit dem, was das gepinnte THO- bzw. Extensions-Paket tatsächlich ausliefert.</p>
 
 <h3 id="praktischer-nutzen">Praktischer Nutzen</h3>
 
@@ -518,7 +520,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 10:47+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

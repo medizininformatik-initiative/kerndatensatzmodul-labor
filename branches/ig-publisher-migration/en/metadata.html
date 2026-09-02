@@ -516,7 +516,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><code class="language-plaintext highlighter-rouge">pin-canonicals: pin-all</code> additionally fixes every canonical reference to a version. The publisher reports each of those as an informational line; they are suppressed.</p>
 
-<p>A caveat worth stating: the pinned versions live in three places — the aliases in <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code>, this manifest, and the value-set aliases carrying code system versions. Nothing checks them against one another, so a version bump has to touch all three by hand.</p>
+<p>The pinned versions live in <strong>three</strong> places — the aliases in <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code>, this manifest, and the value-set aliases carrying code system versions. They cannot be merged into one: SUSHI reads the aliases, the IG Publisher reads the manifest, and neither can see the other. A version bump therefore has to touch all three by hand.</p>
+
+<p>So that drift does not go unnoticed, <code class="language-plaintext highlighter-rouge">scripts/terminology-pins.test.mjs</code> checks them against one another on every push, via <code class="language-plaintext highlighter-rouge">convention-check.yml</code>. Two kinds of agreement are covered: the literal duplication of LOINC and SNOMED between the aliases and the manifest, and the agreement of the versioned aliases with what the pinned THO and extensions packages actually ship.</p>
 
 <h3 id="practical-use">Practical Use</h3>
 
@@ -547,7 +549,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:47+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
