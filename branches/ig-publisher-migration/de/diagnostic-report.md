@@ -6,9 +6,7 @@
 
 ## Laborbefund
 
-# MII Profil Laborbefund
-
-Der DiagnosticReportLab bildet einen Laborbefund ab.
+Das [MII Profil Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) — DiagnosticReportLab — bildet einen Laborbefund ab.
 
 ### Metadaten
 

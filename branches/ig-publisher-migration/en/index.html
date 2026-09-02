@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -371,11 +372,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mii-core-data-set-module-laboratory-report" id="markdown-toc-mii-core-data-set-module-laboratory-report">MII Core Data Set Module Laboratory Report</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#imprint" id="markdown-toc-imprint">Imprint</a></li>
+  <li><a href="#contacts" id="markdown-toc-contacts">Contacts</a></li>
+  <li><a href="#authors-in-alphabetical-order" id="markdown-toc-authors-in-alphabetical-order">Authors (in alphabetical order)</a></li>
+  <li><a href="#copyright-notice-terms-of-use" id="markdown-toc-copyright-notice-terms-of-use">Copyright notice, terms of use</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+</ul>
 
-<h1 id="mii-core-data-set-module-laboratory-report">MII Core Data Set Module Laboratory Report</h1>
+</div>
+<h3 id="mii-core-data-set-module-laboratory-report">MII Core Data Set Module Laboratory Report</h3>
 
 <p>This specification describes the FHIR representation of the Medical Informatics Initiative (MII) core data set module Laboratory Report. It defines the module's use cases, FHIR profiles and terminology resources in their normative form.</p>
 
@@ -452,27 +461,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h2 id="imprint">Imprint</h2>
+<h3 id="imprint">Imprint</h3>
 
 <p>This guide was created within the Medical Informatics Initiative and is subject to the governance and ballot processes of the Interoperability Forum and the Technical Committees of HL7 Germany.</p>
 
-<h2 id="contacts">Contacts</h2>
-
+<h3 id="contacts">Contacts</h3>
 <ul>
   <li>Martin Federbusch, Leipzig University Hospital</li>
   <li>Danny Ammon, Jena University Hospital</li>
-  <li>Karoline Buckow, TMF – Technology, Methods, and Infrastructure for Networked Medical Research</li>
+  <li>Karoline Buckow, TMF – Technology, Methods and Infrastructure
+for Networked Medical Research</li>
 </ul>
 
-<p>Questions may be asked on <a href="https://chat.fhir.org">chat.fhir.org</a> in the <code class="language-plaintext highlighter-rouge">german/mi-initiative</code> stream. Comments and criticism are welcome as <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/issues">GitHub issues</a>.</p>
+<p>Questions on this publication may be asked at any time at <a href="https://chat.fhir.org">https://chat.fhir.org</a> in the stream 'german/mi-initiative'.</p>
 
-<h2 id="authors">Authors</h2>
+<p>Comments and criticism are received as <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/issues">GitHub issues</a>.</p>
 
-<p>Abdul Mateen, Alexander Zautke, Andreas Bietenbeck, Andreas G. Henkel, Danny Ammon, Eva-Maria Riess, Fabian Prasser, Felix Erdfelder, Gustav Vella, Heinrich Lautenbacher, Julian Saß, Kutaiba Saleh, Martin Federbusch, Matthias Löbe, Noemi Deppenwiese, Olga Davidenko, Patrick Werner, Raffael Bild, Sabine Gerber, Sylvia Thun, Thomas Ganslandt and Ulrich Sax.</p>
+<h3 id="authors-in-alphabetical-order">Authors (in alphabetical order)</h3>
 
-<h2 id="copyright-and-terms-of-use">Copyright and terms of use</h2>
+<ul>
+  <li>Abdul Mateen (HiGHmed)</li>
+  <li>Alexander Zautke (HL7 Germany)</li>
+  <li>Andreas Bietenbeck (DIFUTURE)</li>
+  <li>Andreas G. Henkel (DIFUTURE)</li>
+  <li>Danny Ammon (SMITH)</li>
+  <li>Eva-Maria Riess (HiGHmed)</li>
+  <li>Fabian Prasser (HiGHmed)</li>
+  <li>Felix Erdfelder (SMITH)</li>
+  <li>Gustav Vella (HiGHmed)</li>
+  <li>Heinrich Lautenbacher</li>
+  <li>Julian Saß (HiGHmed)</li>
+  <li>Kutaiba Saleh (SMITH)</li>
+  <li>Martin Federbusch (SMITH)</li>
+  <li>Matthias Löbe (SMITH)</li>
+  <li>Noemi Deppenwiese (MIRACUM)</li>
+  <li>Olga Davidenko (DIFUTURE)</li>
+  <li>Patrick Werner (HL7 Germany)</li>
+  <li>Raffael Bild (DIFUTURE)</li>
+  <li>Sabine Gerber (DIFUTURE)</li>
+  <li>Sylvia Thun (HL7 Germany)</li>
+  <li>Thomas Ganslandt (MIRACUM)</li>
+  <li>Ulrich Sax (HiGHmed)</li>
+</ul>
 
-<p>Copyright © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. The content of this specification is public and its reuse or republication is not restricted. The terms of the underlying FHIR specification apply. Some code systems are published and maintained by other organisations and remain subject to their respective copyright terms.</p>
+<h3 id="copyright-notice-terms-of-use">Copyright notice, terms of use</h3>
+<p>Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin</p>
+
+<p>The content of this specification is public. Claims to reuse or republication are not restricted.</p>
+
+<p>On the terms of use of the underlying FHIR technology, see the FHIR base specification.</p>
+
+<p>Some of the code systems used are issued and maintained by other organisations. The copyright of the publishers listed there applies.</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+<p>The content of this document is public. Note that parts of this document are based on FHIR version R4, for which the copyright of HL7 International applies.</p>
+
+<ul>
+  <li>Although this publication was produced with the greatest care, the authors accept no liability of any kind for direct or indirect damage that might arise from the content of this specification.</li>
+</ul>
 
 
 
@@ -499,7 +545,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

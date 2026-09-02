@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.4"}
-    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.6"}
+    h3,h4,h5,h6{--heading-prefix:"2.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -333,39 +334,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>The MII Biobank module already defines the “biospecimen” concept. This module reuses the <a href="https://simplifier.net/medizininformatikinitiative-modulbiobank/mii_pr_biobank_specimen_bioprobe_core">Specimen Bioprobe Core profile</a>, whose canonical is <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore</code>. All additional requirements of that module remain applicable.</p>
+<p>Laboratory reports frequently carry comments about the specimen as well (for example, "specimen haemolytic"). At present this information is not captured in the Laboratory Report module, but it can be captured in the FHIR profile Specimen (Specimen Bioprobe Core) of the Biobank extension module. Alternatively, comments relating to a specimen can be stored unstructured, as additional information on the corresponding measured values. That can even be the more sensible solution where the primary systems likewise handle the assignment of such comments at the level of the individual test.</p>
+
+<h3 id="existing-profiles-in-the-mii-core-dataset">Existing profiles in the MII Core Dataset</h3>
+
+<p><strong>Biobank module</strong></p>
+
+<p>The Core Dataset of the Medical Informatics Initiative already defines the concept of the "biospecimen" in the Biobank module. That specification is reused within this module.
+See the profile <a href="https://simplifier.net/medizininformatikinitiative-modulbiobank/mii_pr_biobank_specimen_bioprobe_core">"Specimen Bioprobe Core"</a>.</p>
+
+<p>Canonical URL: <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore</code></p>
+
+<p>Note that all further requirements and mandatory fields of that Core Dataset module have to be observed.</p>
+
+<p>All elements of the concept 'specimen' can be represented through the profile as follows:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Logical dataset element</th>
+      <th>Logical dataset</th>
       <th>FHIR element</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Specimen.identification</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.identifier</code></td>
+      <td>Specimen.identifier</td>
     </tr>
     <tr>
       <td>Specimen.collectionTime</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.collection.collected</code></td>
+      <td>Specimen.collection.collected</td>
     </tr>
     <tr>
-      <td>Specimen.laboratoryReceiptTime</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.receivedTime</code></td>
+      <td>Laboratory receipt time</td>
+      <td>Specimen.receivedTime</td>
     </tr>
     <tr>
+      <td>Specimen type</td>
       <td>Specimen.type</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.type</code></td>
     </tr>
     <tr>
-      <td>Specimen.bodySite</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.collection.bodySite</code></td>
+      <td>Body site</td>
+      <td>Specimen.collection.bodySite</td>
     </tr>
     <tr>
-      <td>Specimen.comment</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.note</code></td>
+      <td>Comment</td>
+      <td>Specimen.note</td>
     </tr>
   </tbody>
 </table>
@@ -395,7 +409,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

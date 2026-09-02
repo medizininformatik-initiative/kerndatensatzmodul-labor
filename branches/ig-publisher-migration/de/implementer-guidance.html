@@ -181,12 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -300,19 +301,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#verständnis-der-anforderungen" id="markdown-toc-verständnis-der-anforderungen">Verständnis der Anforderungen</a></li>
+  <li><a href="#konformität" id="markdown-toc-konformität">Konformität</a></li>
+  <li><a href="#technische-artefakte" id="markdown-toc-technische-artefakte">Technische Artefakte</a></li>
+  <li><a href="#fachliche-hinweise" id="markdown-toc-fachliche-hinweise">Fachliche Hinweise</a></li>
+  <li><a href="#erste-schritte-bei-der-implementierung" id="markdown-toc-erste-schritte-bei-der-implementierung">Erste Schritte bei der Implementierung</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <p>Diese Seite fasst zusammen, was für die Implementierung des Moduls Labor in FHIR-basierten Systemen nötig ist.</p>
 
-<h4 id="verständnis-der-anforderungen">Verständnis der Anforderungen</h4>
+<h3 id="verständnis-der-anforderungen">Verständnis der Anforderungen</h3>
 
 <p><strong>1. Logische Modelle — fachliche Anforderungen</strong></p>
 
@@ -331,7 +332,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <p>Die <a href="uml-diagrams.html">UML-Diagramme</a> veranschaulichen die Beziehungen zwischen den Elementen und die Verweise zwischen den Ressourcen.</p>
 
-<h4 id="konformität">Konformität</h4>
+<h3 id="konformität">Konformität</h3>
 
 <p>Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Modul Meta gepflegt, nicht hier wiederholt:</p>
 
@@ -343,7 +344,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="security-and-privacy.html">Sicherheit und Datenschutz</a> — modulspezifische Hinweise</li>
 </ul>
 
-<h4 id="technische-artefakte">Technische Artefakte</h4>
+<h3 id="technische-artefakte">Technische Artefakte</h3>
 
 <ul>
   <li><a href="profiles.html">Profile</a> — die vier Profile mit ihren Einschränkungen, dazu die erläuternden Seiten je Ressource</li>
@@ -354,11 +355,17 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="examples.html">Beispiele</a> — Beispielressourcen</li>
 </ul>
 
-<h4 id="zeitpunkte">Zeitpunkte</h4>
+<h3 id="fachliche-hinweise">Fachliche Hinweise</h3>
 
-<p>Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Die Zuordnung steht unter <a href="laboratory-timestamps.html">Zeitpunkte im Labor</a>, die Begründung in der <a href="guidance.html">Modulbeschreibung</a>.</p>
+<p>Drei Themen sind für die Umsetzung eigens beschrieben:</p>
 
-<h4 id="erste-schritte-bei-der-implementierung">Erste Schritte bei der Implementierung</h4>
+<ul>
+  <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a> — Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht; Zuordnung und Begründung stehen dort.</li>
+  <li><a href="interpretation.html">Interpretation</a> — die kodierte Bewertung eines Ergebnisses und das dafür vorgesehene ValueSet.</li>
+  <li><a href="specimen.html">Probenmaterial</a> — die Abbildung des Probenmaterials über das Modul Biobank.</li>
+</ul>
+
+<h3 id="erste-schritte-bei-der-implementierung">Erste Schritte bei der Implementierung</h3>
 
 <p><strong>Downloads</strong></p>
 
@@ -403,7 +410,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

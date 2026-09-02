@@ -6,8 +6,6 @@
 
 ## Extensions
 
-## Labor Extensions
-
 ### Übersicht
 
 Diese Seite dokumentiert die spezifischen Extensions für das Labormodul. Diese Extensions erweitern FHIR Ressourcen um zusätzliche Informationen, die für die Interpretation und Kontextualisierung von Laborbefunden relevant sind.

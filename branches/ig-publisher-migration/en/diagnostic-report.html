@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -329,13 +330,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#metadata" id="markdown-toc-metadata">Metadata</a></li>
+  <li><a href="#content" id="markdown-toc-content">Content</a></li>
+  <li><a href="#constraintsinvariants" id="markdown-toc-constraintsinvariants">Constraints/Invariants</a></li>
+  <li><a href="#restful-api" id="markdown-toc-restful-api">RESTful API</a></li>
+  <li><a href="#mappings" id="markdown-toc-mappings">Mappings</a></li>
+</ul>
+
 </div>
+<p>The <a href="StructureDefinition-mii-pr-labor-laborbefund.html">MII Laboratory Report profile</a> — DiagnosticReportLab — represents a laboratory report.</p>
 
-<h1 id="mii-laboratory-report-profile"><a href="StructureDefinition-mii-pr-labor-laborbefund.html">MII Laboratory Report Profile</a></h1>
+<h3 id="metadata">Metadata</h3>
 
-<p>DiagnosticReportLab represents a laboratory report.</p>
+<p>Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.</p>
+
+<h3 id="content">Content</h3>
 
 <div class="structure-tabs">
   <ul class="nav nav-tabs" role="tablist">
@@ -1115,7 +1126,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Entire report as issued<br /></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 38bdf9aa-20e4-4c40-995d-04f617be52a0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // f9abd079-d124-4d50-8d6d-3b2a6a0526fc
 document.getElementById('cbmii-pr-labor-laborbefundS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laborbefundS'), 'binding', document.getElementById('cbmii-pr-labor-laborbefundS-binding').checked, document.getElementById('ppmii-pr-labor-laborbefundS'));
 document.getElementById('cbmii-pr-labor-laborbefundS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1420,7 +1431,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Schlussfolgerung</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 38bdf9aa-20e4-4c40-995d-04f617be52a0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // f9abd079-d124-4d50-8d6d-3b2a6a0526fc
 document.getElementById('cbmii-pr-labor-laborbefundD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laborbefundD'), 'binding', document.getElementById('cbmii-pr-labor-laborbefundD-binding').checked, document.getElementById('ppmii-pr-labor-laborbefundD'));
 document.getElementById('cbmii-pr-labor-laborbefundD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1731,7 +1742,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
   &lt;/<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T09:21:54+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T10:32:32+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
@@ -8796,7 +8807,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
   },
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T09:21:54+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T10:32:32+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Medizininformatik Initiative",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -17000,93 +17011,121 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
   </div>
 </div>
 
-<p>Constraints, invariants, metadata and the base profile are displayed in the generated profile views. Required interactions and search parameters are defined by the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">CapabilityStatement</a>.</p>
+<p>&lt;/br&gt;</p>
 
-<h2 id="key-mappings-and-implementation-notes">Key mappings and implementation notes</h2>
+<h3 id="constraintsinvariants">Constraints/Invariants</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>FHIR element</th>
-      <th>Meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.identifier</code></td>
-      <td>Report identifier; no coding system is prescribed</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.basedOn</code></td>
-      <td>Must reference the initiating ServiceRequest</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.status</code></td>
-      <td>Preliminary and final reports are permitted</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.category</code></td>
-      <td>Required LOINC and HL7 v2 slices; additional codings are permitted</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.subject</code></td>
-      <td>Must reference the patient</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.effective[x]</code></td>
-      <td>Clinical reference time, normally specimen collection or laboratory receipt time; should agree with the referenced observations. The source extension identifies which time was used</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.issued</code></td>
-      <td>Documentation, release or issue time of the report</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.specimen</code></td>
-      <td>Optional reference to the Biobank module's Specimen Bioprobe Core</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code></td>
-      <td>The report should contain at least one laboratory result</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.conclusion</code></td>
-      <td>Optional final medical assessment as text</td>
-    </tr>
-  </tbody>
-</table>
+<p>Constraints and invariants are shown in the structure views on the profile page.</p>
+
+<h3 id="restful-api">RESTful API</h3>
+
+<p>The mandatory interactions and search parameters are set out in the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">CapabilityStatement</a> among the normative artifacts.</p>
+
+<h3 id="mappings">Mappings</h3>
 
 <table>
   <thead>
     <tr>
       <th>FHIR element</th>
-      <th>Logical dataset element</th>
+      <th>Explanation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.identifier</code></td>
-      <td>LaboratoryReport.identification</td>
+      <td>Patient.id</td>
+      <td>Must Support, but optional</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.status</code></td>
-      <td>LaboratoryReport.status</td>
+      <td>Patient.meta</td>
+      <td>Must Support, but optional</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.effective[x]</code></td>
-      <td>LaboratoryReport.clinicalReferenceDateTime</td>
+      <td>DiagnosticReport.identifier</td>
+      <td>Report number, no requirements are made on the coding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.issued</code></td>
-      <td>LaboratoryReport.documentationDate</td>
+      <td>DiagnosticReport.basedOn</td>
+      <td>A reference to the initiating ServiceRequest must always be present</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.specimen</code></td>
-      <td>LaboratoryReport.specimen</td>
+      <td>DiagnosticReport.status</td>
+      <td>No requirements, preliminary reports are permitted</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.category</td>
+      <td>Mandatory LOINC and HL7 v2 codes, further codings permitted</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.subject</td>
+      <td>A reference to the patient must always be present</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.effective[x]</td>
+      <td>Clinical reference time of the laboratory report, and hence either &lt;/br&gt;1.) the time of specimen collection (the point in time at which the measured property in the specimen (e.g. the concentration of an analyte) presumably corresponded to that property in the patient) or, if that is not documented or not documented with sufficient accuracy, &lt;/br&gt;2.) the laboratory receipt time, as the closest and generally well-documented point in time. Must be identical to Observation.effective[x]. &lt;/br&gt;The information is stored both in the DiagnosticReport and in the Observation, in order to facilitate subsequent data analysis. The extension 'ExtensionQuelleKlinischesBezugsdatum' is to be used to specify whether the value is a collection time or a specimen receipt time.</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.issued</td>
+      <td>Documentation time of the laboratory report, and thus the time the report was released (or issued)</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.specimen</td>
+      <td>Optional reference; specimen information is held in the FHIR profile Specimen (Specimen Bioprobe Core) of the Biobank extension module.</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.result</td>
+      <td>The DiagnosticReport should contain at least one result in the form of a laboratory result</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.conclusion</td>
+      <td>Optional, textual description of the concluding medical assessment of the report</td>
     </tr>
   </tbody>
 </table>
 
-<p><a href="DiagnosticReport-mii-exa-labor-laborbefund.html">Complete DiagnosticReport example</a></p>
+<p>&lt;/br&gt;</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR element</th>
+      <th>Logical dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DiagnosticReport.identifier</td>
+      <td>Laborbefund.Identifikation</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.status</td>
+      <td>Laborbefund.Status</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.effective[x]</td>
+      <td>Laborbefund.KlinischesBezugsdatum</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.effective[x]</td>
+      <td>Laborbefund.KlinischerBezugszeitpunkt</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.issued</td>
+      <td>Laborbefund.Dokumentationsdatum</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport.specimen</td>
+      <td>Laborbefund.Probenmaterial</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>Examples</strong></p>
+
+<p>Example (complete):</p>
+
+<p><a href="DiagnosticReport-mii-exa-labor-laborbefund.html">Complete example as a DiagnosticReport</a></p>
 
 
 
@@ -17113,7 +17152,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

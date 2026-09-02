@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -337,76 +338,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Laboratory reports group tests performed by a medical laboratory. They record whether a report is preliminary or final and several clinically relevant timestamps. A tabular mapping is available on <a href="laboratory-timestamps.html">Laboratory timestamps</a>.</p>
 
-<h2 id="clinical-reference-time">Clinical reference time</h2>
-
-<p>For every test there is a time at which the measured property in the specimen most likely represented the corresponding property in the patient. This is usually the collection time. If a sufficiently precise collection time is unavailable, the laboratory receipt time or another estimated time may be used. This clinical reference time supports chronological comparison of repeated measurements and is not the time at which the analyser performed the measurement.</p>
-
-<p>The clinical reference time of the individual test and of the laboratory report is usually identical. If tests in one report have different collection or receipt times, each test can retain its own reference time and the report can use an appropriate representative time, for example the earliest one. The value is represented both on Observation and DiagnosticReport to facilitate analysis, even though this introduces redundancy.</p>
-
-<h2 id="other-relevant-timestamps">Other relevant timestamps</h2>
+<p>This page introduces the module and points at the subjects treated in detail on their own pages:</p>
 
 <ul>
-  <li><strong>Collection time:</strong> when the specimen was obtained. It is represented on the specimen and may also serve as the clinical reference time. A collection period can be used for specimens collected over an interval.</li>
-  <li><strong>Laboratory receipt time:</strong> when the specimen arrived at the laboratory. It is often captured automatically and may be more reliable than a manually documented collection time.</li>
-  <li><strong>Request time:</strong> when the request was sent, or when the request arrived if the former is unavailable. It is represented by ServiceRequest.</li>
-  <li><strong>Observation documentation time:</strong> when the result became available to clinical staff, typically after verification by laboratory staff.</li>
-  <li><strong>Report documentation time:</strong> when the report was verified, released or issued. A preliminary report can be represented separately with the appropriate status.</li>
+  <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a> — the clinical reference time and the other times a report records</li>
+  <li><a href="interpretation.html">Interpretation</a> — coded assessment of a result and which codes apply</li>
+  <li><a href="specimen.html">Specimen</a> — how the specimen is represented, reusing the Biobank module</li>
 </ul>
-
-<p>The ambiguous term “order time” is deliberately not used because it may mean either the request time or a timestamp associated with the report.</p>
-
-<h2 id="interpretations-and-comments">Interpretations and comments</h2>
-
-<p>Medical interpretations and comments are an essential part of a laboratory report. The main interpretation is usually recorded as free text; additional structured codes may be used where suitable terminology and licences are available. Comments concerning only one measurement, such as “measurement interfered with”, should be stored as a note. A coded interpretation relative to the reference interval is possible but redundant when the reference interval itself is represented explicitly.</p>
-
-<h3 id="which-codes-apply">Which codes apply</h3>
-
-<p>FHIR binds <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensibly to <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, which covers the complete HL7 v3 ObservationInterpretation code system. The module narrows that selection to the concepts meaningful in a laboratory context and binds — also extensibly — to <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Meaning</th>
-      <th>Example of a local coding</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">LU</code></td>
-      <td>Significantly low</td>
-      <td><code class="language-plaintext highlighter-rouge">--</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">L</code></td>
-      <td>Low</td>
-      <td><code class="language-plaintext highlighter-rouge">-</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">N</code></td>
-      <td>Normal</td>
-      <td><code class="language-plaintext highlighter-rouge">N</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">H</code></td>
-      <td>High</td>
-      <td><code class="language-plaintext highlighter-rouge">+</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">HU</code></td>
-      <td>Significantly high</td>
-      <td><code class="language-plaintext highlighter-rouge">++</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Reports in use today carry differing local codings, for example the five-level scale <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> or the three-level <code class="language-plaintext highlighter-rouge">L N H</code>. The table shows the mapping for the five-level variant.</p>
-
-<p>Because the binding is extensible, further codes may be used in addition. The ones that matter in practice are the abnormal codes <code class="language-plaintext highlighter-rouge">HH</code> (critical high), <code class="language-plaintext highlighter-rouge">LL</code> (critical low) and <code class="language-plaintext highlighter-rouge">AA</code> (critical abnormal) — for example for results beyond the critical notification limit, the threshold at which the laboratory must phone the requester. They are not part of the module ValueSet, but they are contained in the value set that the FHIR R4 specification uses for <code class="language-plaintext highlighter-rouge">Observation.interpretation</code>.</p>
-
-<h2 id="specimens">Specimens</h2>
-
-<p>Comments about specimen quality may be represented with the Biobank module's Specimen profile. Alternatively they can remain as additional information on the affected measurement when this matches the source system's granularity.</p>
 
 
 
@@ -433,7 +371,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

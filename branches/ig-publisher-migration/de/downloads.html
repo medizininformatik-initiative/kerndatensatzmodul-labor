@@ -181,12 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -300,19 +301,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#package" id="markdown-toc-package">Package</a></li>
+  <li><a href="#herunterladbare-fassung-der-spezifikation" id="markdown-toc-herunterladbare-fassung-der-spezifikation">Herunterladbare Fassung der Spezifikation</a></li>
+  <li><a href="#beispiele" id="markdown-toc-beispiele">Beispiele</a></li>
+  <li><a href="#definitionen-und-expansionen" id="markdown-toc-definitionen-und-expansionen">Definitionen und Expansionen</a></li>
+  <li><a href="#zusammengeführte-csv--und-excel-darstellungen" id="markdown-toc-zusammengeführte-csv--und-excel-darstellungen">Zusammengeführte CSV- und Excel-Darstellungen</a></li>
+  <li><a href="#schematrons" id="markdown-toc-schematrons">Schematrons</a></li>
+  <li><a href="#implementationguide-ressource" id="markdown-toc-implementationguide-ressource">ImplementationGuide-Ressource</a></li>
+  <li><a href="#quellen" id="markdown-toc-quellen">Quellen</a></li>
+  <li><a href="#versionshistorie" id="markdown-toc-versionshistorie">Versionshistorie</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <p>Diese Seite verlinkt die herunterladbaren Artefakte dieses Implementierungsleitfadens.</p>
 
-<h4 id="package">Package</h4>
+<h3 id="package">Package</h3>
 
 <p>Das Package enthält alle ValueSets, Profile und Extensions dieser Version, dazu die Seitenliste und die URLs, im NPM-Format, das die meisten FHIR-Werkzeuge lesen. Es ist die erste Wahl, um Implementierungsartefakte zu erzeugen, denn es trägt sämtliche Regeln, die ein Profil gültig machen. Die Lektüre der Spezifikation ersetzt es nicht. Siehe <a href="http://hl7.org/fhir/R4/validation.html">Validating Profiles and Resources</a> in der FHIR-Spezifikation.</p>
 
@@ -327,7 +332,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="../de.medizininformatikinitiative.kerndatensatz.labor.en.tgz">Package, Englisch</a></li>
 </ul>
 
-<h4 id="herunterladbare-fassung-der-spezifikation">Herunterladbare Fassung der Spezifikation</h4>
+<h3 id="herunterladbare-fassung-der-spezifikation">Herunterladbare Fassung der Spezifikation</h3>
 
 <p>Eine Kopie dieses Leitfadens zum lokalen Betrieb:</p>
 
@@ -335,7 +340,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="../full-ig.zip">Herunterladbare Fassung (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="beispiele">Beispiele</h4>
+<h3 id="beispiele">Beispiele</h3>
 
 <p>Alle Beispiele dieses Leitfadens:</p>
 
@@ -344,7 +349,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="../examples.json.zip">JSON (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="definitionen-und-expansionen">Definitionen und Expansionen</h4>
+<h3 id="definitionen-und-expansionen">Definitionen und Expansionen</h3>
 
 <p>Die Konformitätsressourcen für sich, sowie die ValueSets mit aufgelösten Expansionen:</p>
 
@@ -353,7 +358,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="../expansions.xml.zip">Expansionen, XML</a> · <a href="../expansions.json.zip">JSON</a></li>
 </ul>
 
-<h4 id="zusammengeführte-csv--und-excel-darstellungen">Zusammengeführte CSV- und Excel-Darstellungen</h4>
+<h3 id="zusammengeführte-csv--und-excel-darstellungen">Zusammengeführte CSV- und Excel-Darstellungen</h3>
 
 <p>Alle Profilinformationen in einer Tabelle, hilfreich, um Elementeigenschaften profilübergreifend zu sichten:</p>
 
@@ -362,13 +367,13 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="../excels.zip">Excel (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="schematrons">Schematrons</h4>
+<h3 id="schematrons">Schematrons</h3>
 
 <ul>
   <li><a href="../schematrons.zip">Schematrons (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="implementationguide-ressource">ImplementationGuide-Ressource</h4>
+<h3 id="implementationguide-ressource">ImplementationGuide-Ressource</h3>
 
 <p>Die technische Definition dieser Publikation, samt Abhängigkeiten und Publikationsparametern:</p>
 
@@ -376,11 +381,11 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="ImplementationGuide-mii-ig-labor.json">ImplementationGuide-Ressource (JSON)</a></li>
 </ul>
 
-<h4 id="quellen">Quellen</h4>
+<h3 id="quellen">Quellen</h3>
 
 <p>Die FSH-Quellen und das bearbeitbare PlantUML-Diagramm werden im <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor">GitHub-Repository</a> gepflegt.</p>
 
-<h4 id="versionshistorie">Versionshistorie</h4>
+<h3 id="versionshistorie">Versionshistorie</h3>
 
 <p>Frühere Versionen und die Änderungshistorie stehen unter <a href="version-history.html">Versionierung</a>.</p>
 
@@ -409,7 +414,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

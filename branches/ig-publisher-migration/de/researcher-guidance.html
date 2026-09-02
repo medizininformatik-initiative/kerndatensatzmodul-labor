@@ -181,12 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -312,7 +313,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <p>Laboruntersuchungen sind für die meisten medizinischen Diagnosen zentral. Vorläufige Ergebnisse können in zeitkritischen Anwendungen bereits relevant sein, endgültige Ergebnisse werden sowohl in der Versorgung als auch in der Forschung genutzt. Das zentrale Dokument dieses Moduls ist der Befund eines medizinischen Labors. Da das Modul breit anwendbar ist, gibt es keine konsortiumsspezifischen Szenarien vor.</p>
 
-<h4 id="erste-schritte">Erste Schritte</h4>
+<h3 id="erste-schritte">Erste Schritte</h3>
 
 <p>Wenn Sie neu im MII-Kerndatensatz sind, empfehlen wir die Erkundung der folgenden Ressourcen:</p>
 
@@ -348,9 +349,15 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>wie die Ressourcen aufeinander verweisen</li>
 </ul>
 
-<p><strong>4. Zeitpunkte — welcher Zeitpunkt was bedeutet</strong></p>
+<p><strong>4. Fachliche Hinweise — was bei der Auswertung zu beachten ist</strong></p>
 
-<p>Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Welcher davon die richtige Grundlage für eine zeitliche Auswertung ist, erklären <a href="laboratory-timestamps.html">Zeitpunkte im Labor</a> und die <a href="guidance.html">Modulbeschreibung</a>.</p>
+<p>Drei Themen entscheiden darüber, ob Labordaten richtig gelesen werden:</p>
+
+<ul>
+  <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a> — Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Die Seite erklärt, welcher davon die richtige Grundlage für eine zeitliche Auswertung ist.</li>
+  <li><a href="interpretation.html">Interpretation</a> — wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind.</li>
+  <li><a href="specimen.html">Probenmaterial</a> — woraus gemessen wurde und wie Kommentare zur Probe abgelegt sind.</li>
+</ul>
 
 
 
@@ -377,7 +384,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

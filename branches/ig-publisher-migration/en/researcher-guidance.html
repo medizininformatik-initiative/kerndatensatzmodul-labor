@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -335,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Laboratory tests are central to most medical diagnoses. Preliminary results can matter for time-critical applications, while final results are normally used for patient care and research alike. The central document this module represents is the laboratory report produced by a medical laboratory. Because the module is broadly applicable, it does not prescribe consortium-specific scenarios.</p>
 
-<h4 id="getting-started">Getting Started</h4>
+<h3 id="getting-started">Getting Started</h3>
 
 <p>If you are new to the MII Core Dataset, we recommend exploring the following resources:</p>
 
@@ -371,9 +372,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>how the resources reference one another</li>
 </ul>
 
-<p><strong>4. Timestamps — Which Point in Time Means What</strong></p>
+<p><strong>4. Domain Guidance — What to Watch Out for in an Analysis</strong></p>
 
-<p>Laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. Which one is the right basis for a chronological analysis is explained under <a href="laboratory-timestamps.html">Laboratory Timestamps</a> and in the <a href="guidance.html">module description</a>.</p>
+<p>Three subjects decide whether laboratory data is read correctly:</p>
+
+<ul>
+  <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a> — laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. The page explains which one is the right basis for a chronological analysis.</li>
+  <li><a href="interpretation.html">Interpretation</a> — how a result is assessed and which codes are used for it.</li>
+  <li><a href="specimen.html">Specimen</a> — what was measured from, and where comments about the specimen are kept.</li>
+</ul>
 
 
 
@@ -400,7 +407,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

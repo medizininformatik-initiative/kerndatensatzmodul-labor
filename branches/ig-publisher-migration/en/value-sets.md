@@ -19,5 +19,5 @@ Alongside the international terminologies it uses, the Laboratory module defines
 | [Source of the clinical reference date](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md) | Coding of the source of the clinical reference date. |
 | [Identifier types](ValueSet-mii-vs-labor-identifier-type-codes.md) | Type codes determining which identifier to use for a given purpose. |
 
-The codes that apply to `Observation.interpretation`, and how local scales map onto them, are explained in the [module description](guidance.md).
+The codes that apply to `Observation.interpretation`, and how local scales map onto them, are explained in the [Interpretation](interpretation.md).
 

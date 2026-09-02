@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.7"}
-    h3,h4,h5,h6{--heading-prefix:"2.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8"}
+    h3,h4,h5,h6{--heading-prefix:"2.8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -333,11 +334,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<h1 id="project-context-and-relationships-to-other-modules">Project Context and Relationships to Other Modules</h1>
+<h3 id="context-within-the-overall-project--relationships-to-other-modules">Context Within the Overall Project / Relationships to Other Modules</h3>
 
-<p>The Laboratory module represents reports typically produced by a hospital's central laboratory. Routine laboratory reports are essential for diagnosis and therapy monitoring, and laboratory tests are an important part of many clinical studies.</p>
+<p>The LABORATORY module represents laboratory reports of the kind typically produced in a hospital's central laboratory. These reports play a central role in most MII use cases:</p>
+<ul>
+  <li>
+    <p>Laboratory reports from routine examinations are essential for reaching a diagnosis and for monitoring therapy in most diseases</p>
+  </li>
+  <li>
+    <p>Laboratory tests are an important component of many clinical studies</p>
+  </li>
+</ul>
 
-<p>Reports primarily concerned with detecting infectious agents are covered by a separate but closely related microbiology module. Pathology findings also have their own module. A laboratory report is always associated with the person from whom the specimen was obtained. Specimens retained in a biobank can be represented with the Biobank module, and individual laboratory results may be reused in other modules such as tumour documentation.</p>
+<p>For laboratory reports concerned primarily with detecting infectious agents (microbiology, virology), a separate but closely related module is planned, in which the individual agents can be represented with SNOMED CT. There is a module of its own for pathology findings as well.</p>
+
+<p>A laboratory report is always assigned to the PERSON from whom the specimen was taken. Where that specimen is kept in a biobank for further examinations, it can be represented with the profiles of the BIOBANK module. The results from a laboratory report may be included again as individual elements in various other modules, for example for tumour documentation.</p>
 
 
 
@@ -364,7 +375,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

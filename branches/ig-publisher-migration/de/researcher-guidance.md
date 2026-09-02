@@ -10,7 +10,7 @@
 
 Laboruntersuchungen sind für die meisten medizinischen Diagnosen zentral. Vorläufige Ergebnisse können in zeitkritischen Anwendungen bereits relevant sein, endgültige Ergebnisse werden sowohl in der Versorgung als auch in der Forschung genutzt. Das zentrale Dokument dieses Moduls ist der Befund eines medizinischen Labors. Da das Modul breit anwendbar ist, gibt es keine konsortiumsspezifischen Szenarien vor.
 
-#### Erste Schritte
+### Erste Schritte
 
 Wenn Sie neu im MII-Kerndatensatz sind, empfehlen wir die Erkundung der folgenden Ressourcen:
 
@@ -40,7 +40,11 @@ Der Abschnitt [Beispiele](examples.md) zeigt FHIR-Ressourcen, darunter ein quant
 * wie ein vollständiger Befund aussieht
 * wie die Ressourcen aufeinander verweisen
 
-**4. Zeitpunkte — welcher Zeitpunkt was bedeutet**
+**4. Fachliche Hinweise — was bei der Auswertung zu beachten ist**
 
-Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Welcher davon die richtige Grundlage für eine zeitliche Auswertung ist, erklären [Zeitpunkte im Labor](laboratory-timestamps.md) und die [Modulbeschreibung](guidance.md).
+Drei Themen entscheiden darüber, ob Labordaten richtig gelesen werden:
+
+* [Zeitpunkte im Labor](laboratory-timestamps.md) — Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Die Seite erklärt, welcher davon die richtige Grundlage für eine zeitliche Auswertung ist.
+* [Interpretation](interpretation.md) — wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind.
+* [Probenmaterial](specimen.md) — woraus gemessen wurde und wie Kommentare zur Probe abgelegt sind.
 

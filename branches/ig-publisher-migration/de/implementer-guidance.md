@@ -6,11 +6,9 @@
 
 ## Hinweise für Implementierende
 
- Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
 Diese Seite fasst zusammen, was für die Implementierung des Moduls Labor in FHIR-basierten Systemen nötig ist.
 
-#### Verständnis der Anforderungen
+### Verständnis der Anforderungen
 
 **1. Logische Modelle — fachliche Anforderungen**
 
@@ -27,7 +25,7 @@ Datentypen und Kardinalitäten darin sind nicht verpflichtend; die verbindlichen
 
 Die [UML-Diagramme](uml-diagrams.md) veranschaulichen die Beziehungen zwischen den Elementen und die Verweise zwischen den Ressourcen.
 
-#### Konformität
+### Konformität
 
 Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Modul Meta gepflegt, nicht hier wiederholt:
 
@@ -37,7 +35,7 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 * [Fehlende Daten](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten)
 * [Sicherheit und Datenschutz](security-and-privacy.md) — modulspezifische Hinweise
 
-#### Technische Artefakte
+### Technische Artefakte
 
 * [Profile](profiles.md) — die vier Profile mit ihren Einschränkungen, dazu die erläuternden Seiten je Ressource
 * [Extensions](extensions.md) — Quelle des klinischen Bezugsdatums, interpretationsbeeinflussende Eigenschaft
@@ -46,11 +44,15 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 * [CapabilityStatements](capability-statements.md) — die REST-Anforderungen samt Interaktionen und Suchparametern
 * [Beispiele](examples.md) — Beispielressourcen
 
-#### Zeitpunkte
+### Fachliche Hinweise
 
-Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Die Zuordnung steht unter [Zeitpunkte im Labor](laboratory-timestamps.md), die Begründung in der [Modulbeschreibung](guidance.md).
+Drei Themen sind für die Umsetzung eigens beschrieben:
 
-#### Erste Schritte bei der Implementierung
+* [Zeitpunkte im Labor](laboratory-timestamps.md) — Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht; Zuordnung und Begründung stehen dort.
+* [Interpretation](interpretation.md) — die kodierte Bewertung eines Ergebnisses und das dafür vorgesehene ValueSet.
+* [Probenmaterial](specimen.md) — die Abbildung des Probenmaterials über das Modul Biobank.
+
+### Erste Schritte bei der Implementierung
 
 **Downloads**
 

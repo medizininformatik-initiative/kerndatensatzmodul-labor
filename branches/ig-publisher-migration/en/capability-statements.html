@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -333,8 +334,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<h1 id="capabilitystatement">CapabilityStatement</h1>
-
 <p>To support decentralised analysis through the German Portal for Medical Research Data, a FHIR server must implement the <a href="https://www.hl7.org/fhir/R4/http.html#capabilities">capabilities interaction</a> and expose a CapabilityStatement at <code class="language-plaintext highlighter-rouge">[BASE_URL]/metadata</code>. It must state the supported profiles and versions as well as the supported search parameters.</p>
 
 <p>The server's CapabilityStatement must declare conformance to the module requirements using <a href="https://www.hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.instantiates"><code class="language-plaintext highlighter-rouge">CapabilityStatement.instantiates</code></a>.</p>
@@ -344,7 +343,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">MII Laboratory CapabilityStatement</a></li>
 </ul>
 
-<h2 id="interactions-search-parameters-and-operations">Interactions, search parameters and operations</h2>
+<h3 id="interactions-search-parameters-and-operations">Interactions, search parameters and operations</h3>
 
 <p>The normative REST requirements are rendered directly from the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">MII Laboratory CapabilityStatement</a>. That generated artifact page is authoritative and stays synchronized with the FSH source, so this guide does not restate the interaction, search-parameter and operation tables separately.</p>
 
@@ -375,7 +374,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

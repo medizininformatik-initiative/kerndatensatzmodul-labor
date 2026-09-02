@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.5"}
-    h3,h4,h5,h6{--heading-prefix:"2.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.7"}
+    h3,h4,h5,h6{--heading-prefix:"2.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -329,44 +330,56 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-
-<h2 id="loinc-overview">LOINC overview</h2>
-
-<p><a href="https://www.loinc.org">LOINC</a> is an international system published by the Regenstrief Institute for identifying and coding medical observations, especially laboratory tests. Further German-language information is available from <a href="https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/_node.html">BfArM</a> and the MII Academy.</p>
-
-<h2 id="mii-300-loinc-subset">MII-300 LOINC subset</h2>
-
-<p>The <code class="language-plaintext highlighter-rouge">MII_TOP_300_LOINC</code> subset of 8 August 2018 describes the 300 most frequently performed test groups reported to data integration centres by the 18 participating sites at that time. It is a descriptive statistic, not a simple list of 300 equivalent LOINC codes. It identifies test groups that sites should code with LOINC when they collect the corresponding data.</p>
-
-<p>The subset has limited suitability as a mapping or translation table. Even after unit conversion, values from different sites cannot automatically be assumed to be equivalent merely because codes belong to the same group or use the same LOINC code.</p>
-
-<h2 id="coding-at-a-site">Coding at a site</h2>
-
-<p>Laboratories should select the most appropriate and specific LOINC codes themselves or in close collaboration with local laboratory experts. High-quality coding requires knowledge of both the local tests and LOINC guidance.</p>
-
-<p>Useful sources and tools include:</p>
-
-<ul>
-  <li><a href="https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/Anwendungsleitfaden/_node.html">BfArM laboratory coding guide</a></li>
-  <li><a href="https://loinc.org/kb/users-guide/">LOINC users' guide</a></li>
-  <li><a href="https://loinc.org/search/">LOINC search</a></li>
-  <li><a href="https://loinc.org/kb/relma/overview/">RELMA</a></li>
-  <li>the downloadable <a href="https://loinc.org/downloads/">LOINC database</a></li>
-  <li>MIRACUM Mapper and LabVisualizer</li>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#loinc-overview" id="markdown-toc-loinc-overview">LOINC overview</a></li>
+  <li><a href="#loinc-coding-the-mii-300-loinc-subset" id="markdown-toc-loinc-coding-the-mii-300-loinc-subset">LOINC coding: the MII-300 LOINC subset</a></li>
+  <li><a href="#loinc-coding-at-a-site" id="markdown-toc-loinc-coding-at-a-site">LOINC coding at a site</a></li>
+  <li><a href="#units-and-ucum" id="markdown-toc-units-and-ucum">Units and UCUM</a></li>
+  <li><a href="#valuesets" id="markdown-toc-valuesets">ValueSets</a></li>
 </ul>
 
-<p>If no appropriate term exists, a change request should be coordinated with Regenstrief and BfArM. At least the local code should be retained so that later LOINC mapping remains possible and traceable. Scalable, reproducible methods for combining LOINC selections across many sites still need to be established.</p>
+</div>
+<h3 id="loinc-overview">LOINC overview</h3>
+<p><a href="https://www.loinc.org">LOINC</a> (Logical Observation Identifiers Names and Codes) is an international system published by the Regenstrief Institute for the unambiguous identification and coding of medical observations, in particular laboratory tests (see also <a href="https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/_node.html">BfArM</a>). An introduction to LOINC is available as a video in the <a href="https://www.medizininformatik-initiative.de/de/konsortien/mii-academy">MII Academy</a>.</p>
 
-<h2 id="units-and-ucum">Units and UCUM</h2>
+<h3 id="loinc-coding-the-mii-300-loinc-subset">LOINC coding: the MII-300 LOINC subset</h3>
 
-<p>Units must be expressed with <a href="https://ucum.org/ucum">UCUM</a> so that results can be converted. Implementers should validate that the UCUM units used are valid.</p>
+<p>The subset MII_TOP_300_LOINC 2018-08-08 is an overview of the 300 laboratory tests most frequently performed and forwarded to the data integration centres at the 18 sites participating at the time.
+It is therefore a descriptive statistic of the LOINC codes used for the 300 most frequent LOINC groups (that is, 300 different laboratory tests and hence considerably more LOINCs). These 300 LOINC groups serve as a requirement for the data integration centres as to which laboratory tests should be coded with LOINC, where data on those tests is collected at the site.
+Using it as a coding aid or translation table, however, is possible only to a very limited extent. After unit conversion, values from laboratory tests at different sites carrying LOINCs from the same LOINC group, or even the same LOINC, are mostly equivalent in magnitude, but this is at times markedly limited and can therefore not be assumed.</p>
 
-<h2 id="module-valuesets">Module ValueSets</h2>
+<h3 id="loinc-coding-at-a-site">LOINC coding at a site</h3>
 
-<p>The module publishes nine of its own ValueSets, listed with their purpose on <a href="value-sets.html">Value Sets</a>.</p>
+<p>LOINC codes should be selected by the laboratories themselves, or in close collaboration with the laboratory sites, as aptly and specifically as possible following the LOINC coding guidance. All LOINC terms from the laboratory domain are available for this. Satisfactory coding quality requires knowledge both of the local laboratory tests and of the LOINC coding recommendations.</p>
+
+<h4 id="sources-of-loinc-coding-recommendations">Sources of LOINC coding recommendations:</h4>
+<ul>
+  <li><a href="https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/Anwendungsleitfaden/_node.html">BfArM implementation guide – coding systems for laboratory data:</a> also covers the basics of SNOMED CT and UCUM</li>
+  <li><a href="https://loinc.org/kb/users-guide/">Regenstrief Institute and the LOINC Committee</a></li>
+</ul>
+
+<h4 id="tools-as-a-coding-aid">Tools as a coding aid:</h4>
+
+<ul>
+  <li>LOINC search: browser-based LOINC search with export functions on the <a href="https://loinc.org/search/">LOINC website</a>, after free registration</li>
+  <li><a href="https://loinc.org/kb/relma/overview/">RELMA – Regenstrief LOINC Mapping Assistant</a>: free tool for mapping local codes onto LOINC</li>
+  <li>the <a href="https://loinc.org/downloads/">LOINC database</a> in .csv format</li>
+  <li>MIRACUM <a href="https://www.miracum.org/das-konsortium/datenintegrationszentren/miracolix-tools/#collapse_5">Mapper and LabVisualizer</a></li>
+  <li>Commercial vendors</li>
+</ul>
+
+<p>Where no fitting term can be found, a change request should be raised with the Regenstrief Institute in consultation with BfArM <a href="https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/Change-Requests/_node.html">(BfArM – change requests)</a>.
+As regards coding, at least the local codes should be retained, so as to permit later LOINC coding. As an international system, LOINCs can be interpreted consistently across sites, but only the local codes can be assigned with high confidence, one-to-one, to the examination method or assay used locally; they can thus be used for later coding and, in such cases, safeguard traceability. Where possible and sensible, further standardised systems can be drawn on in these cases. Combining LOINC selections for multi-centre data use: the LOINC selection for multi-centre queries of laboratory values can be resolved manually for a small number of sites and laboratory parameters, given appropriate expertise in the LOINC system.
+Automated, semi-automated and scalable solutions still have to be established in a standardised and replicable manner.</p>
+
+<h3 id="units-and-ucum">Units and UCUM</h3>
+
+<p>The unit of measure must be given in <a href="https://ucum.org/ucum">UCUM units</a> so that results can be converted into one another. <a href="https://ucum.nlm.nih.gov/ucum-lhc/demo.html">Validators</a> should be used to ensure that the units used are admissible.</p>
+
+<h3 id="valuesets">ValueSets</h3>
+
+<p>The module defines nine ValueSets of its own; they are listed with their purpose under <a href="value-sets.html">Value Sets</a>.</p>
 
 
 
@@ -393,7 +406,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

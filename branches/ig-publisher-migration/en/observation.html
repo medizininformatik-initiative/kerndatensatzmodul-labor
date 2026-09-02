@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -329,13 +330,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#metadata" id="markdown-toc-metadata">Metadata</a></li>
+  <li><a href="#content" id="markdown-toc-content">Content</a></li>
+  <li><a href="#constraintsinvariants" id="markdown-toc-constraintsinvariants">Constraints/Invariants</a></li>
+  <li><a href="#restful-api" id="markdown-toc-restful-api">RESTful API</a></li>
+  <li><a href="#mappings" id="markdown-toc-mappings">Mappings</a></li>
+</ul>
+
 </div>
+<p>The <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII Laboratory Test profile</a> — ObservationLab — represents the result of a single laboratory test.</p>
 
-<h1 id="mii-laboratory-test-profile"><a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII Laboratory Test Profile</a></h1>
+<h3 id="metadata">Metadata</h3>
 
-<p>ObservationLab represents the result of a single laboratory test.</p>
+<p>Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.</p>
+
+<h3 id="content">Content</h3>
 
 <div class="structure-tabs">
   <ul class="nav nav-tabs" role="tablist">
@@ -1453,7 +1464,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br /></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 38bdf9aa-20e4-4c40-995d-04f617be52a0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // f9abd079-d124-4d50-8d6d-3b2a6a0526fc
 document.getElementById('cbmii-pr-labor-laboruntersuchungS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laboruntersuchungS'), 'binding', document.getElementById('cbmii-pr-labor-laboruntersuchungS-binding').checked, document.getElementById('ppmii-pr-labor-laboruntersuchungS'));
 document.getElementById('cbmii-pr-labor-laboruntersuchungS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1935,7 +1946,7 @@ filterDesc(document.getElementById('mii-pr-labor-laboruntersuchungS'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.0.1)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">High Range, if relevant</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 38bdf9aa-20e4-4c40-995d-04f617be52a0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // f9abd079-d124-4d50-8d6d-3b2a6a0526fc
 document.getElementById('cbmii-pr-labor-laboruntersuchungD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laboruntersuchungD'), 'binding', document.getElementById('cbmii-pr-labor-laboruntersuchungD-binding').checked, document.getElementById('ppmii-pr-labor-laboruntersuchungD'));
 document.getElementById('cbmii-pr-labor-laboruntersuchungD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2317,7 +2328,7 @@ filterDesc(document.getElementById('mii-pr-labor-laboruntersuchungD'), 'obligati
   &lt;/<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T09:21:54+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T10:32:32+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
@@ -13152,7 +13163,7 @@ The alternate way is to use the value element for actual observations and use th
   },
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T09:21:54+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T10:32:32+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Medizininformatik Initiative",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -25655,76 +25666,157 @@ The alternate way is to use the value element for actual observations and use th
   </div>
 </div>
 
-<p>Constraints, invariants, metadata and the base profile are displayed in the generated profile views. Required interactions and search parameters are defined by the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">CapabilityStatement</a>.</p>
+<p>&lt;/br&gt;</p>
 
-<h2 id="key-mappings-and-implementation-notes">Key mappings and implementation notes</h2>
+<h3 id="constraintsinvariants">Constraints/Invariants</h3>
+
+<p>Constraints and invariants are shown in the structure views on the profile page.</p>
+
+<h3 id="restful-api">RESTful API</h3>
+
+<p>The mandatory interactions and search parameters are set out in the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">CapabilityStatement</a> among the normative artifacts.</p>
+
+<h3 id="mappings">Mappings</h3>
 
 <table>
   <thead>
     <tr>
       <th>FHIR element</th>
-      <th>Meaning</th>
+      <th>Explanation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.identifier</code></td>
-      <td>Must identify the observation unambiguously; the source guide prefers a combination of LOINC code and report number</td>
+      <td>Patient.id</td>
+      <td>Must Support, but optional</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.status</code></td>
-      <td>Preliminary and final results are permitted</td>
+      <td>Patient.meta</td>
+      <td>Must Support, but optional</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.category</code></td>
-      <td>LOINC and HL7 coding slices; additional codings are permitted. A laboratory-area ValueSet may be used locally</td>
+      <td>Observation.identifier</td>
+      <td>The Observation must be unambiguously identifiable; no requirements are made on the coding, preference: 'LOINC CODE_report number'</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.code</code></td>
-      <td>Laboratory parameter, normally from the <a href="http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips">IPS laboratory LOINC ValueSet</a>; a local code may be added</td>
+      <td>Observation.status</td>
+      <td>Final and preliminary results are permitted.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.subject</code></td>
-      <td>Must reference the patient</td>
+      <td>Observation.category</td>
+      <td>LOINC and HL7 code, further codings permitted. &lt;/br&gt;No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. &lt;/br&gt;For laboratory groups, reference is made to the ValueSet <a href="https://simplifier.net/mii-basismodul-labor-2025/mii-vs-labor-laborbereich">Laborgruppe</a>. It may be used optionally.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.effective[x]</code></td>
-      <td>Clinical reference time. Prefer dateTime; a period is permitted. It is derived from collection time, laboratory receipt time or the report's reference time, and its source is identified by the module extension</td>
+      <td>Observation.code</td>
+      <td><a href="http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips">IPS LOINC ValueSet</a>; in some cases it makes sense to record the local identifier code in addition to the LOINC (see Terminology &gt; LOINC coding at a site).</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code></td>
-      <td>UCUM quantity; alternative unit coding is not permitted</td>
+      <td>Observation.subject</td>
+      <td>A reference to the patient must always be present.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code></td>
-      <td>Used for semiquantitative results such as 0 to +++</td>
+      <td>Observation.effective[x]</td>
+      <td>Test time (clinical reference time) of the laboratory test. The time should be coded as dateTime, see constraint mii-lab-1. A period is possible as well. The clinical reference time of the laboratory test should be derived from the laboratory receipt time (redundant with Specimen.receivedTime), the collection time (redundant with Specimen.collection.collected[x]) or the clinical reference time of the laboratory report (DiagnosticReport.effective[x]). These values come closest to the point in time at which the measured property in the specimen (e.g. the concentration of an analyte) presumably corresponded to that property in the patient. The extension QuelleKlinischesBezugsdatum is to be used to specify whether the value is a collection time or a specimen receipt time.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.note</code></td>
+      <td>Observation.valueQuantity</td>
+      <td>UCUM quantity — mandatory, no deviating coding permitted.</td>
+    </tr>
+    <tr>
+      <td>Observation.valueCodeableConcept</td>
+      <td>For coding semiquantitative results (0 to +++), see the ValueSet 'Semi_quantitative_Laborergebnisse'</td>
+    </tr>
+    <tr>
+      <td>Observation.note</td>
       <td>Optional text</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.method</code></td>
-      <td>Coded method where the method is not implicit in the observation code</td>
+      <td>Observation.method</td>
+      <td>Coded method that was used to measure Observation.value. Only to be populated if the method is not implicitly contained in Observation.code (in the LOINC code, for instance). No coding recommendation is given, because this information is usually not available in structured form in the source systems.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.specimen</code></td>
-      <td>Optional reference to the Biobank module's specimen profile</td>
+      <td>Observation.specimen</td>
+      <td>Optional reference; specimen information is held in the FHIR profile Specimen (Specimen Bioprobe Core) of the Biobank extension module.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.referenceRange</code></td>
-      <td>Prefer low/high SimpleQuantity; use text when a structured range is unsuitable</td>
+      <td>Observation.referenceRange</td>
+      <td>Should — where available — be coded as high, low (SimpleQuantity). Otherwise, by way of exception, via referenceRange.text.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">Observation.component</code></td>
-      <td><code class="language-plaintext highlighter-rouge">hasMember</code> is preferred in clinical chemistry; component remains allowed for alignment with genetic findings</td>
+      <td>Observation.component</td>
+      <td>Observation.hasMember is to be preferred in clinical chemistry (more fitting semantics). The element is permitted for harmonisation with genetic findings.</td>
     </tr>
   </tbody>
 </table>
 
-<p>The elements map to the corresponding laboratory-test identification, status, area/group, parameter, reference time, documentation date, result, interpretation, comment, method and reference-range elements of the logical model.</p>
+<p>&lt;/br&gt;</p>
 
-<p><a href="Observation-mii-exa-labor-laborwert.html">Complete Observation example</a></p>
+<table>
+  <thead>
+    <tr>
+      <th>FHIR element</th>
+      <th>Logical dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Observation.identifier</td>
+      <td>Laborbefund.Laboruntersuchung.Identifikation</td>
+    </tr>
+    <tr>
+      <td>Observation.status</td>
+      <td>Laborbefund.Laboruntersuchung.Status</td>
+    </tr>
+    <tr>
+      <td>Observation.category</td>
+      <td>Laborbefund.Laboruntersuchung.Bereich</td>
+    </tr>
+    <tr>
+      <td>Observation.category</td>
+      <td>Laborbefund.Laboruntersuchung.Gruppe</td>
+    </tr>
+    <tr>
+      <td>Observation.code</td>
+      <td>Laborbefund.Laboruntersuchung.Laborparameter</td>
+    </tr>
+    <tr>
+      <td>Observation.effective[x]</td>
+      <td>Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt</td>
+    </tr>
+    <tr>
+      <td>Observation.issued</td>
+      <td>Laborbefund.Laboruntersuchung.Dokumentationsdatum</td>
+    </tr>
+    <tr>
+      <td>Observation.valueQuantity</td>
+      <td>Laborbefund.Laboruntersuchung.Messwert</td>
+    </tr>
+    <tr>
+      <td>Observation.interpretation</td>
+      <td>Laborbefund.Laboruntersuchung.Interpretation</td>
+    </tr>
+    <tr>
+      <td>Observation.note</td>
+      <td>Laborbefund.Laboruntersuchung.Kommentar</td>
+    </tr>
+    <tr>
+      <td>Observation.method</td>
+      <td>Laborbefund.Laboruntersuchung.Untersuchungsmethode</td>
+    </tr>
+    <tr>
+      <td>Observation.referenceRange</td>
+      <td>Laborbefund.Laboruntersuchung.Referenzbereich</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&lt;/br&gt;</p>
+
+<p><strong>Examples</strong></p>
+
+<p>Example (complete):</p>
+
+<p><a href="Observation-mii-exa-labor-laborwert.html">Complete example as an Observation</a></p>
 
 
 
@@ -25751,7 +25843,7 @@ The alternate way is to use the value element for actual observations and use th
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

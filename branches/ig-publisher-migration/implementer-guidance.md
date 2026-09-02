@@ -1,6 +1,6 @@
 This page collects what is needed to implement the Laboratory module in FHIR-based systems.
 
-#### Understanding the Requirements
+### Understanding the Requirements
 
 **1. Logical Models — Business Requirements**
 
@@ -17,7 +17,7 @@ Their data types and cardinalities are not normative; the profiles define the bi
 
 The [UML Diagrams](uml-diagrams.html) illustrate the relationships between the elements and the references between the resources.
 
-#### Conformance
+### Conformance
 
 The conformance rules apply across the whole Core Dataset and are maintained by the Meta module, not repeated here:
 
@@ -27,7 +27,7 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 * [Handling Missing Data](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten)
 * [Security and Privacy](security-and-privacy.html) — module-specific notes
 
-#### Technical Artifacts
+### Technical Artifacts
 
 * [Profiles](profiles.html) — the four profiles with their constraints, plus the per-resource pages explaining them
 * [Extensions](extensions.html) — source of the clinical reference date, interpretation-affecting property
@@ -36,11 +36,15 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 * [Capability Statements](capability-statements.html) — the REST requirements, including interactions and search parameters
 * [Examples](examples.html) — sample resources
 
-#### Timestamps
+### Domain Guidance
 
-Laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time. The mapping is on [Laboratory Timestamps](laboratory-timestamps.html), the reasoning in the [module description](guidance.html).
+Three subjects are described separately for implementation:
 
-#### Getting Started with Implementation
+* [Laboratory Timestamps](laboratory-timestamps.html) — laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time; the mapping and the reasoning are there.
+* [Interpretation](interpretation.html) — the coded assessment of a result and the ValueSet provided for it.
+* [Specimen](specimen.html) — the representation of specimen material via the Biobank module.
+
+### Getting Started with Implementation
 
 **Downloads**
 

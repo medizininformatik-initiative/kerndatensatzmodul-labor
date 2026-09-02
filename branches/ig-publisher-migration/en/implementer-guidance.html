@@ -211,10 +211,11 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -329,13 +330,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#understanding-the-requirements" id="markdown-toc-understanding-the-requirements">Understanding the Requirements</a></li>
+  <li><a href="#conformance" id="markdown-toc-conformance">Conformance</a></li>
+  <li><a href="#technical-artifacts" id="markdown-toc-technical-artifacts">Technical Artifacts</a></li>
+  <li><a href="#domain-guidance" id="markdown-toc-domain-guidance">Domain Guidance</a></li>
+  <li><a href="#getting-started-with-implementation" id="markdown-toc-getting-started-with-implementation">Getting Started with Implementation</a></li>
+</ul>
 
+</div>
 <p>This page collects what is needed to implement the Laboratory module in FHIR-based systems.</p>
 
-<h4 id="understanding-the-requirements">Understanding the Requirements</h4>
+<h3 id="understanding-the-requirements">Understanding the Requirements</h3>
 
 <p><strong>1. Logical Models — Business Requirements</strong></p>
 
@@ -354,7 +361,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The <a href="uml-diagrams.html">UML Diagrams</a> illustrate the relationships between the elements and the references between the resources.</p>
 
-<h4 id="conformance">Conformance</h4>
+<h3 id="conformance">Conformance</h3>
 
 <p>The conformance rules apply across the whole Core Dataset and are maintained by the Meta module, not repeated here:</p>
 
@@ -366,7 +373,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="security-and-privacy.html">Security and Privacy</a> — module-specific notes</li>
 </ul>
 
-<h4 id="technical-artifacts">Technical Artifacts</h4>
+<h3 id="technical-artifacts">Technical Artifacts</h3>
 
 <ul>
   <li><a href="profiles.html">Profiles</a> — the four profiles with their constraints, plus the per-resource pages explaining them</li>
@@ -377,11 +384,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="examples.html">Examples</a> — sample resources</li>
 </ul>
 
-<h4 id="timestamps">Timestamps</h4>
+<h3 id="domain-guidance">Domain Guidance</h3>
 
-<p>Laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time. The mapping is on <a href="laboratory-timestamps.html">Laboratory Timestamps</a>, the reasoning in the <a href="guidance.html">module description</a>.</p>
+<p>Three subjects are described separately for implementation:</p>
 
-<h4 id="getting-started-with-implementation">Getting Started with Implementation</h4>
+<ul>
+  <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a> — laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time; the mapping and the reasoning are there.</li>
+  <li><a href="interpretation.html">Interpretation</a> — the coded assessment of a result and the ValueSet provided for it.</li>
+  <li><a href="specimen.html">Specimen</a> — the representation of specimen material via the Biobank module.</li>
+</ul>
+
+<h3 id="getting-started-with-implementation">Getting Started with Implementation</h3>
 
 <p><strong>Downloads</strong></p>
 
@@ -426,7 +439,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 10:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

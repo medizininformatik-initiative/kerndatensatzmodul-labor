@@ -233,7 +233,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T09:21:54+00:00",
+  "date" : "2026-09-02T10:32:32+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -2135,6 +2135,37 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "laboratory-timestamps.html"
+          }],
+          "nameUrl" : "laboratory-timestamps.html",
+          "title" : "Laboratory Timestamps",
+          "_title" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Zeitpunkte im Labor"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          },
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "interpretation.html"
+          }],
+          "nameUrl" : "interpretation.html",
+          "title" : "Interpretation",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "specimen.html"
           }],
           "nameUrl" : "specimen.html",
@@ -2170,28 +2201,6 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
               {
                 "url" : "content",
                 "valueString" : "Terminologie"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          },
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "laboratory-timestamps.html"
-          }],
-          "nameUrl" : "laboratory-timestamps.html",
-          "title" : "Laboratory Timestamps",
-          "_title" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Zeitpunkte im Labor"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
