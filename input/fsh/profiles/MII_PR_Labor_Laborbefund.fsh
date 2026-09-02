@@ -88,14 +88,14 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 // 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten fuer jede
 // Wiederholung. Auf `category.coding` gesetzt wuerde jede weitere Kategorie -
 // etwa ein Laborbereich - erneut 26436-6 und LAB verlangen.
-// Der Discriminator traegt nur EIN Coding; ein patternCodeableConcept mit zwei
-// Codings ist technisch nicht verwendbar. Das genuegt zur Unterscheidung, die
-// zweite Pflichtkodierung erzwingt das Slicing innerhalb des Slices.
+// Der Discriminator zeigt auf `coding`, nicht auf `$this`. Damit unterscheidet
+// ihn das patternCoding der inneren Slices, und der Slice braucht KEIN eigenes
+// patternCodeableConcept - das waere eine Dopplung derselben Aussage an zwei
+// Stellen (Befund aus dem Downstream-Review zu 2027.0.0-ballot.rc1).
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains laborbefund 1..1 MS
-* category[laborbefund] ^patternCodeableConcept.coding[0] = $loinc-no-ver#26436-6
 * category[laborbefund] ^short = "Laborbefund-Kategorie"
 * category[laborbefund] ^definition = "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig."
 * category[laborbefund].coding ^slicing.discriminator.type = #pattern

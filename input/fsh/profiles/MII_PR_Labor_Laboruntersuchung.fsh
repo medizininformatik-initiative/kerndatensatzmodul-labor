@@ -101,11 +101,11 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 // Siehe die Begruendung im Laborbefund-Profil: das Slicing gehoert auf `category`,
 // sonst verlangt jede weitere Kategorie - etwa der Laborbereich, fuer den dieses
 // Modul das ValueSet MII_VS_Labor_Laborbereich anbietet - dieselben Pflichtcodes.
+// Discriminator ebenfalls auf `coding`, ohne eigenes patternCodeableConcept.
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains laboruntersuchung 1..1 MS
-* category[laboruntersuchung] ^patternCodeableConcept.coding[0] = $loinc-no-ver#26436-6
 * category[laboruntersuchung] ^short = "Laboruntersuchungs-Kategorie"
 * category[laboruntersuchung] ^definition = "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig."
 * category[laboruntersuchung].coding ^slicing.discriminator.type = #pattern
