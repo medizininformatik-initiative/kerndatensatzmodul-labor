@@ -1,4 +1,76 @@
-# Resource MII IG Laborbefund
+# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0
+
+* [**Inhaltsverzeichnis**](toc.md)
+* **MII ImplementationGuide Resource**
+
+## MII ImplementationGuide Resource
+
+Diese ImplementationGuide-Ressource definiert die technischen Details dieser Publikation, einschließlich Abhängigkeiten und Veröffentlichungsparametern.
+
+* [XML](../ImplementationGuide-mii-ig-labor.xml)
+* [JSON](../ImplementationGuide-mii-ig-labor.json)
+
+### Versionsübergreifende Analyse
+
+This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (de.medizininformatikinitiative.kerndatensatz.labor.r4)](../package.r4.tgz) and [R4B (de.medizininformatikinitiative.kerndatensatz.labor.r4b)](../package.r4b.tgz) are available.
+
+### IG-Abhängigkeiten
+
+Dieser IG enthält die folgenden Abhängigkeiten von anderen IGs.
+
+
+
+
+
+
+
+> **Woher die Versionen kommen.** Jedes Paket der Tabelle ist direkt in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml) (`dependencies:`) gepinnt — auch `hl7.terminology.r4` (THO) und `hl7.fhir.uv.extensions.r4`, und diese beiden mit Bedacht: Die [Automatik des IG Publishers](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) liest ausschließlich die **eigene** Abhängigkeitsliste dieses Leitfadens; ohne direkten Pin würde jeder Build stillschweigend das jeweils aktuellste THO-/Extensions-Release injizieren — eine allein im MII-Meta-Paket gepinnte Version kann den Build nicht steuern (verifiziert im Publisher-Quellcode des gepinnten Release). Eine wöchentliche Prüfung warnt, wenn diese beiden Pins von den Vorgaben des gepinnten Meta-Pakets abweichen; die von einem konkreten Build verwendeten Versionen stehen in dessen `qa-versions.json`.
+
+### Globale Profile
+
+Dieser IG deklariert die folgenden globalen Profile — Profile, die für jede unter diesem Leitfaden ausgetauschte Instanz ihres Ressourcentyps gelten. Eine leere Tabelle bedeutet: Dieses Modul deklariert keine.
+
+*There are no Global profiles defined*
+
+### Urheberrechte
+
+This publication includes IP covered under the following statements.
+
+* ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.2.0/CodeSystem-ISO3166Part1.html): [MII_CPS_Labor_CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.md), [MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md)... Show 15 more, [MII_EX_Labor_Quelle_Klinisches_Bezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md), [MII_IG_Labor](index.md), [MII_LM_Labor](StructureDefinition-mii-lm-labor.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md), [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md), [MII_VS_Labor_Laborergbenis_Semiquantitativ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md), [MII_VS_Labor_Laborergebnis_Codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.md), [MII_VS_Labor_Laborergebnis_Qualitativ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md), [MII_VS_Labor_Order_Codes](ValueSet-mii-vs-labor-order-codes.md) and [MII_VS_Labor_Quelle_Klinisches_Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md)
+
+
+* The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
+
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md), [MII_VS_Labor_Order_Codes](ValueSet-mii-vs-labor-order-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md), [MII_EX_Labor_Quelle_Klinisches_Bezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)... Show 8 more, [MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md), [MII_VS_Labor_Laborergbenis_Semiquantitativ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md), [MII_VS_Labor_Laborergebnis_Qualitativ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md), [MII_VS_Labor_Quelle_Klinisches_Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [DataAbsentReason](http://terminology.hl7.org/7.2.0/CodeSystem-data-absent-reason.html): [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)... Show 5 more, [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [diagnosticServiceSectionId](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0074.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) and [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)
+* [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/555](Encounter-555.md)
+* [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+
+
+### IG-Parametereinstellungen und Expansionsparameter
+
+Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Operation übergeben werden können, um zu steuern, wie das ValueSet expandiert wird — also wie die vollständige Liste der Codes aus der ValueSet-Definition erzeugt wird. Die für diesen IG verwendeten [IG-Parameter](https://hl7.org/fhir/tools/en/CodeSystem-ig-parameters.html) sind in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml) (`parameters:`) deklariert. Ein Modul, das seine Expansionsparameter über ein CRMI-Manifest pinnt, verlinkt hier zusätzlich die generierte `Parameters`-Ressource (siehe die auskommentierten Manifest-Blöcke in `sushi-config.yaml` und die Seite Metadata Overview, sofern das Modul sie behält).
 
 
 
@@ -161,7 +233,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T09:10:52+00:00",
+  "date" : "2026-09-02T09:21:54+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -2473,6 +2545,15 @@
             "url" : "http://hl7.org/fhir/StructureDefinition/translation"
           }]
         },
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "ImplementationGuide-mii-ig-labor.html"
+        }],
+        "nameUrl" : "ImplementationGuide-mii-ig-labor.html",
+        "title" : "MII ImplementationGuide Resource",
         "generation" : "markdown"
       }]
     },

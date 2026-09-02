@@ -137,7 +137,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-02T09:10:52+00:00"/>
+  <date value="2026-09-02T09:21:54+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1621,6 +1621,14 @@
         </extension>
         <nameUrl value="translationinfo.html"/>
         <title value="Übersetzungsinformationen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ImplementationGuide-mii-ig-labor.html"/>
+        </extension>
+        <nameUrl value="ImplementationGuide-mii-ig-labor.html"/>
+        <title value="MII ImplementationGuide Resource"/>
         <generation value="markdown"/>
       </page>
     </page>

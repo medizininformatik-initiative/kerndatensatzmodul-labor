@@ -1,10 +1,10 @@
 MII_IG_Labor : Validation Results
 =========================================
 
-err = 37, warn = 47, info = 69
+err = 37, warn = 43, info = 69
 $--
 Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz.labor#$-- (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
- Build Errors : 0 / 8 / 0
+ Build Errors : 0 / 4 / 0
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement : 0 / 2 / 72
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund : 0 / 0 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Encounter-555 : 0 / 0 / 1
@@ -38,10 +38,6 @@ Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be de.medizininformatikinitiative.kerndatensatz.labor
 WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/de/extensions.html: The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.url,Extension.value_x_,Extension.value_x_.code,Extension.value_x_.system,end-xhtml,s-Extension,s-Extension.extension,s-Extension.id,s-Extension.url,s-Extension.value_x_,s-Extension.value_x_.code,s-Extension.value_x_.display,s-Extension.value_x_.extension,s-Extension.value_x_.id,s-Extension.value_x_.system,s-Extension.value_x_.userSelected,s-Extension.value_x_.version
 WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/en/extensions.html: The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.url,Extension.value_x_,Extension.value_x_.code,Extension.value_x_.system,end-xhtml,s-Extension,s-Extension.extension,s-Extension.id,s-Extension.url,s-Extension.value_x_,s-Extension.value_x_.code,s-Extension.value_x_.display,s-Extension.value_x_.extension,s-Extension.value_x_.id,s-Extension.value_x_.system,s-Extension.value_x_.userSelected,s-Extension.value_x_.version
-WARNING: 1: An HTML fragment from the set [ip-statements.xhtml, ip-statements.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml, dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement.json ==
 INFORMATION: CapabilityStatement/mii-cps-labor-capabilitystatement: CapabilityStatement.extension[9].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e

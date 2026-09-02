@@ -13,8 +13,8 @@
       </li>
     </ul>
     <h2>Copyright Fragment</h2>
-    <p style="color: maroon">
-      <b>This fragment is not visible to the reader</b>
+    <p>
+This fragment is available on       <a href="en/ImplementationGuide-mii-ig-labor.html">en/ImplementationGuide-mii-ig-labor.html</a>
     </p>
     <div>
       <p>This publication includes IP covered under the following statements.</p>
@@ -280,6 +280,44 @@ HL7&reg;, FHIR&reg; and the FHIR flame design are registered trademarks of Healt
       </li>
       <li>
 MII IG Laborbefund - Local Development build (v2027.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="version-history.html">src</a>
+)
+      </li>
+      <li>
+This material contains content from LOINC. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc. Show Usage
+
+
+* LOINC: DiagnosticReport/mii-exa-labor-laborbefund, MII_PR_Labor_Laboranforderung... Show 8 more, MII_PR_Labor_Laborbefund, MII_PR_Labor_Laboruntersuchung, MII_VS_Labor_Laborbereich, MII_VS_Labor_Order_Codes, Observation/mii-exa-labor-laborwert, Observation/mii-exa-labor-laborwert-data-absent-reason, Observation/mii-exa-labor-laborwert-range and Observation/mii-exa-labor-laborwert-ratio
+
+
+
+
+ (        <a href="en/ImplementationGuide-mii-ig-labor.html">src</a>
+)
+      </li>
+      <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html Show Usage
+
+
+* DataAbsentReason: Observation/mii-exa-labor-laborwert-data-absent-reason
+
+* Observation Category Codes: MII_PR_Labor_Laboranforderung, MII_PR_Labor_Laboruntersuchung... Show 5 more, Observation/mii-exa-labor-laborwert, Observation/mii-exa-labor-laborwert-data-absent-reason, Observation/mii-exa-labor-laborwert-range, Observation/mii-exa-labor-laborwert-ratio and ServiceRequest/mii-exa-labor-laboranforderung
+
+* Observation Reference Range Meaning Codes: Observation/mii-exa-labor-laborwert and Observation/mii-exa-labor-laborwert-data-absent-reason
+
+* diagnosticServiceSectionId: DiagnosticReport/mii-exa-labor-laborbefund, MII_PR_Labor_Laborbefund and MII_VS_Labor_Laborbereich
+
+* identifierType: DiagnosticReport/mii-exa-labor-laborbefund, MII_PR_Labor_Laboranforderung... Show 8 more, MII_PR_Labor_Laborbefund, MII_PR_Labor_Laboruntersuchung, MII_VS_Labor_Identifier_Type_Codes, Observation/mii-exa-labor-laborwert, Observation/mii-exa-labor-laborwert-data-absent-reason, Observation/mii-exa-labor-laborwert-range, Observation/mii-exa-labor-laborwert-ratio and ServiceRequest/mii-exa-labor-laboranforderung
+
+* ActCode: Encounter/555
+
+* ActReason: DiagnosticReport/mii-exa-labor-laborbefund, Observation/mii-exa-labor-laborwert, Observation/mii-exa-labor-laborwert-data-absent-reason and ServiceRequest/mii-exa-labor-laboranforderung
+
+* ObservationInterpretation: MII_PR_Labor_Laboruntersuchung, MII_VS_Labor_Interpretation, Observation/mii-exa-labor-laborwert and Observation/mii-exa-labor-laborwert-data-absent-reason
+
+
+
+
+ (        <a href="en/ImplementationGuide-mii-ig-labor.html">src</a>
 )
       </li>
     </ul>
@@ -676,7 +714,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Wed, Sep 2, 2026 09:10+0000">2026-09-02</span>
+          Erstellt           <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
 
                     <br/>
 
@@ -893,6 +931,130 @@ Konformität<b class="caret"> </b>          </a>
 
 
           
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/ImplementationGuide-mii-ig-labor.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">github.com</a>
+        </td>
+        <td>
+          <strong>Woher die Versionen kommen.</strong>
+ Jedes Paket der Tabelle ist direkt in
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">
+<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>          </a>
+
+(          <code class="language-plaintext highlighter-rouge">dependencies:</code>
+) gepinnt — auch           <code class="language-plaintext highlighter-rouge">hl7.terminology.r4</code>
+ (THO) und
+          <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.extensions.r4</code>
+, und diese beiden mit Bedacht: Die
+          <a href="https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages">Automatik des IG Publishers</a>
+
+liest ausschließlich die           <strong>eigene</strong>
+ Abhängigkeitsliste dieses Leitfadens;
+ohne direkten Pin würde jeder Build stillschweigend das jeweils aktuellste
+THO-/Extensions-Release injizieren — eine allein im MII-Meta-Paket gepinnte
+Version kann den Build nicht steuern (verifiziert im Publisher-Quellcode des
+gepinnten Release). Eine wöchentliche Prüfung warnt, wenn diese beiden Pins
+von den Vorgaben des gepinnten Meta-Pakets abweichen; die von einem
+konkreten Build verwendeten Versionen stehen in dessen           <code class="language-plaintext highlighter-rouge">qa-versions.json</code>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/ImplementationGuide-mii-ig-labor.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.iso.org/iso-3166-country-codes.html">www.iso.org</a>
+        </td>
+        <td>
+ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
+          <div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_1">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.2.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+:                 <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">MII_CPS_Labor_CapabilityStatement</a>
+,                 <a href="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.html">MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft</a>
+                <span onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 15 more</span>                </span>
+                <span style="display: none" id="ips2_1">
+, <a href="StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.html">MII_EX_Labor_Quelle_Klinisches_Bezugsdatum</a>, <a href="index.html">MII_IG_Labor</a>, <a href="StructureDefinition-mii-lm-labor.html">MII_LM_Labor</a>, <a href="StructureDefinition-mii-pr-labor-laboranforderung.html">MII_PR_Labor_Laboranforderung</a>, <a href="StructureDefinition-mii-pr-labor-laborbefund.html">MII_PR_Labor_Laborbefund</a>, <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII_PR_Labor_Laboruntersuchung</a>, <a href="ValueSet-mii-vs-labor-identifier-type-codes.html">MII_VS_Labor_Identifier_Type_Codes</a>, <a href="ValueSet-mii-vs-labor-interpretation.html">MII_VS_Labor_Interpretation</a>, <a href="ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.html">MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT</a>, <a href="ValueSet-mii-vs-labor-laborbereich.html">MII_VS_Labor_Laborbereich</a>, <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">MII_VS_Labor_Laborergbenis_Semiquantitativ</a>, <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">MII_VS_Labor_Laborergebnis_Codiert</a>, <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">MII_VS_Labor_Laborergebnis_Qualitativ</a>, <a href="ValueSet-mii-vs-labor-order-codes.html">MII_VS_Labor_Order_Codes</a> and <a href="ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html">MII_VS_Labor_Quelle_Klinisches_Bezugsdatum</a>                </span>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/ImplementationGuide-mii-ig-labor.html">web</a>
+        </td>
+        <td>
+          <a href="https://ucum.org/trac/wiki/TermsOfUse">ucum.org</a>
+        </td>
+        <td>
+The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.           <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a>
+          <div onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_2">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+:                 <a href="Observation-mii-exa-labor-laborwert.html">Observation/mii-exa-labor-laborwert</a>
+,                 <a href="Observation-mii-exa-labor-laborwert-range.html">Observation/mii-exa-labor-laborwert-range</a>
+ and                 <a href="Observation-mii-exa-labor-laborwert-ratio.html">Observation/mii-exa-labor-laborwert-ratio</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/ImplementationGuide-mii-ig-labor.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">github.com</a>
+        </td>
+        <td>
+Expansionsparameter sind Query-Parameter, die an eine           <code class="language-plaintext highlighter-rouge">ValueSet</code>
+-
+          <code class="language-plaintext highlighter-rouge">$expand</code>
+-Operation übergeben werden können, um zu steuern, wie das ValueSet
+expandiert wird — also wie die vollständige Liste der Codes aus der
+ValueSet-Definition erzeugt wird. Die für diesen IG verwendeten
+          <a href="https://hl7.org/fhir/tools/en/CodeSystem-ig-parameters.html">IG-Parameter</a>
+
+sind in
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">
+<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>          </a>
+
+(          <code class="language-plaintext highlighter-rouge">parameters:</code>
+) deklariert. Ein Modul, das seine Expansionsparameter über ein
+CRMI-Manifest pinnt, verlinkt hier zusätzlich die generierte
+          <code class="language-plaintext highlighter-rouge">Parameters</code>
+-Ressource (siehe die auskommentierten Manifest-Blöcke in
+          <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>
+ und die Seite Metadata Overview, sofern das Modul sie
+behält).
         </td>
       </tr>
       <tr>
@@ -1737,7 +1899,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Wed, Sep 2, 2026 09:10+0000">2026-09-02</span>
+          Generated           <span title="Wed, Sep 2, 2026 09:21+0000">2026-09-02</span>
 
                     <br/>
 
@@ -1954,6 +2116,67 @@ Conformance<b class="caret"> </b>          </a>
 
 
           
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/ImplementationGuide-mii-ig-labor.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">github.com</a>
+        </td>
+        <td>
+          <strong>Where the versions come from.</strong>
+ Every package in the table is pinned
+directly in
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">
+<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>          </a>
+
+(          <code class="language-plaintext highlighter-rouge">dependencies:</code>
+) — including           <code class="language-plaintext highlighter-rouge">hl7.terminology.r4</code>
+ (THO) and
+          <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.extensions.r4</code>
+, and those two deliberately so: the IG
+Publisher's
+          <a href="https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages">automatic-packages rule</a>
+
+consults only this guide's           <strong>own</strong>
+ dependency list, so without a direct pin
+every build would silently inject the latest THO/extensions release — a
+version pinned by the MII meta package alone cannot control the build
+(verified in the publisher source at the pinned release). A weekly check
+warns when these two pins drift from what the pinned meta package ships,
+and the exact versions a concrete build used are recorded in its
+          <code class="language-plaintext highlighter-rouge">qa-versions.json</code>
+ output.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/ImplementationGuide-mii-ig-labor.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">github.com</a>
+        </td>
+        <td>
+Expansion parameters are query parameters that can be passed to a           <code class="language-plaintext highlighter-rouge">ValueSet</code>
+
+          <code class="language-plaintext highlighter-rouge">$expand</code>
+ operation to control how the ValueSet is expanded — that is, how the
+full list of codes is generated from the ValueSet definition. The
+          <a href="https://hl7.org/fhir/tools/en/CodeSystem-ig-parameters.html">IG Parameters</a>
+
+used for this IG are declared in
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml">
+<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>          </a>
+
+(          <code class="language-plaintext highlighter-rouge">parameters:</code>
+). A module that pins its expansion parameters through a CRMI
+manifest additionally links the generated           <code class="language-plaintext highlighter-rouge">Parameters</code>
+ resource from here (see
+the commented manifest blocks in           <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>
+ and the Metadata Overview
+page, if the module keeps it).
         </td>
       </tr>
       <tr>
