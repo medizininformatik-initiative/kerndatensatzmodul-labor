@@ -49,7 +49,6 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Observation.category      | Laborbefund.Laboruntersuchung.Bereich |
 | Observation.category      | Laborbefund.Laboruntersuchung.Gruppe|
 | Observation.code      | Laborbefund.Laboruntersuchung.Laborparameter|
-| Observation.code      | Laborbefund.Laboruntersuchung.Laborparameter|
 | Observation.effective[x]       | Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt|
 | Observation.issued       | Laborbefund.Laboruntersuchung.Dokumentationsdatum | 
 | Observation.valueQuantity       | Laborbefund.Laboruntersuchung.Messwert |

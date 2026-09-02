@@ -1,24 +1,54 @@
 # [MII Laboratory Request Profile](StructureDefinition-mii-pr-labor-laboranforderung.html)
 
-ServiceRequestLab represents a request for a laboratory test.
+ServiceRequestLab represents the order for a laboratory test.
+
+### Metadata
+
+Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
+
+### Content
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboranforderung" %}
 
-Constraints, invariants, metadata and the base profile are displayed in the generated profile views. Required interactions and search parameters are defined by the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html).
+</br>
 
-## Key mappings and implementation notes
+### Constraints/Invariants
 
-| FHIR element | Meaning |
-|---|---|
-| `ServiceRequest.identifier` | Request number, uniquely identified by system and value; links the requesting and laboratory systems |
-| `ServiceRequest.status` | Fixed because the profile represents final requests |
-| `ServiceRequest.intent` | Fixed to represent a diagnostic request |
-| `ServiceRequest.category` | Fixed Laboratory coding slice from HL7 v2; additional codings are permitted |
-| `ServiceRequest.code` | Requested parameter as CodeableConcept; use text if no code is available |
-| `ServiceRequest.subject` | Must reference the patient |
-| `ServiceRequest.authoredOn` | Creation time or, if unavailable, receipt time of the request |
-| `ServiceRequest.specimen` | Optional specimen reference; other modules may impose additional requirements |
+Constraints and invariants are shown in the structure views on the profile page.
 
-These elements map to the request identification, status, laboratory parameter, request date and specimen elements of the logical model.
+### RESTful API
 
-[Complete ServiceRequest example](ServiceRequest-mii-exa-labor-laboranforderung.html)
+The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
+
+### Mappings
+
+| FHIR element | Explanation |
+|--------------|-----------|
+| Patient.id | Must Support, but optional |
+| Patient.meta | Must Support, but optional |
+| ServiceRequest.identifier | Request number of the test requested, identified unambiguously at least by system and value. Serves to link the laboratory system and the requesting system. |
+| ServiceRequest.status | Fixed value, since only final requests are to be represented. |
+| ServiceRequest.intent | Fixed value, a ServiceRequest always represents the request for diagnostics. |
+| ServiceRequest.category | Fixed Laboratory (HL7 v2) coding slice, further codings permitted. |
+| ServiceRequest.code | CodeableConcept, no restrictions. If the laboratory parameters requested are not available in coded form -> CodeableConcept.text |
+| ServiceRequest.subject | A reference to the patient must always be present |
+| ServiceRequest.authoredOn | Creation date of the request; if that is not available, the date the request was received |
+| ServiceRequest.specimen | Optional reference; future specifications of further Core Dataset modules may set out requirements in this regard. |
+
+</br>
+
+| FHIR element | Logical dataset |
+|--------------|-----------|
+| ServiceRequest.identifier | Laborbefund.Laboranforderung.Identifikation |
+| ServiceRequest.status | Laborbefund.Laboranforderung.Status |
+| ServiceRequest.code | Laborbefund.Laboranforderung.Laborparameter |
+| ServiceRequest.authoredOn | Laborbefund.Laboranforderung.Anforderungsdatum |
+| ServiceRequest.specimen | Laborbefund.Laboranforderung.Probenmaterial |
+
+---
+
+**Examples**
+
+Example (complete):
+
+[Complete example as a ServiceRequest](ServiceRequest-mii-exa-labor-laboranforderung.html)

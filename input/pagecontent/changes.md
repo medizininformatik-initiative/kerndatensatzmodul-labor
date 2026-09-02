@@ -1,35 +1,105 @@
-## 2027.0.0
+### Version: 2027.0.0
 
-Changes since 2026.0.3:
+Version 2027.0.0 contains the following changes compared to the previous version 2026.0.3.
 
-- DiagnosticReport category codings are represented as separate open slices on `category.coding`: `loinc-lab` with LOINC `26436-6` and `diagnostic-service-sections` with HL7 v2 `LAB`; additional codings remain permitted.
-- `Observation.valueCodeableConcept` is bound (extensible) to the new ValueSet [Coded laboratory results](ValueSet-mii-vs-labor-laborergebnis-codiert.html), which unions the qualitative and semiquantitative result ValueSets. The previously planned `qualitativ`/`semiquantitativ` slices were dropped because the two ValueSets overlap and could not be discriminated.
-- `Observation.code.coding` gains an open `loinc` slice with an extensible binding to the IPS laboratory results ValueSet.
+### FHIR / Content Changes:
+#### MII_PR_Labor_Laborbefund
+- category: The required codings are modelled as separate, open slices on `category.coding`:
+  - `loinc-lab` (1..1 MS) with `$loinc#26436-6`
+  - `diagnostic-service-sections` (1..1 MS) with `$v2-0074#LAB`
+  - Further codings are permitted.
+- valueCodeableConcept: Extensible binding to the new ValueSet [Coded laboratory result](ValueSet-mii-vs-labor-laborergebnis-codiert.html), which combines the qualitative and semiquantitative result ValueSets. The slices `qualitativ` and `semiquantitativ` originally foreseen have been dropped, because the two ValueSets overlap and can therefore not be discriminated.
+- code.coding: New open slice `loinc` with an extensible binding to the IPS ValueSet of laboratory results.
 - `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
-- `Observation.interpretation` is bound (extensible) to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally used scales map onto these concepts; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
+- interpretation: Extensible binding to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally common scales such as `--, -, N, +, ++` or `L N H` map onto these; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
 
-## 2026.0.3
+### Version: 2026.0.3
+Version 2026.0.3 contains the following changes compared to the previous version 2026.0.2 (for a complete overview of the changes, the [differential view on GitHub](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3) can be used).
 
-Technical correction release without substantive IG narrative changes. Resource versions, `meta.profile`, `supportedProfile` and example profile references were aligned to 2026.0.3. Package and build configuration references were updated accordingly. See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3).
+Note: Version `2026.0.3` is a package release carrying out technical corrections. The Implementation Guide was not changed in substance.
 
-## 2026.0.2
+### FHIR / Content Changes:
+#### General:
+- `fix:` Unification of the version designation of the 2026 artifacts on `2026.0.3`; several profiles, extensions, ValueSets and the CapabilityStatement still referenced `2026.0.0`.
+- `fix:` Update of the `meta.profile` and `supportedProfile` references from `2026.0.0` to `2026.0.3`.
 
-Technical corrections changed the dependency to `hl7.fhir.uv.extensions.r4`, pinned the FHIR identifier-type ValueSet to 4.0.1 and corrected a LOINC display in the laboratory-result example. See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.1...2026.0.2).
+#### Examples:
+- `fix:` Update of the example instances to profile version `2026.0.3`; some profile references still pointed at `2026.0.0`.
 
-## 2026.0.1
+### Implementation Guide:
+- Update of the IG version from `2026.0.0` to `2026.0.3` in `package.json`, `sushi-config.yaml`, `qc/custom.rules.yaml` and the FSH rule sets.
+- Update of the reference to the current stable version in `README.md` from `2026.0.0` to `2026.0.3`.
 
-Added the extensions dependency needed by Simplifier to generate the Laboratory Test snapshot. See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1).
+### Version: 2026.0.2
+Version 2026.0.2 contains the following changes compared to the previous version 2026.0.1 (for a complete overview of the changes, the [differential view on GitHub](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.1...2026.0.2) can be used).
 
-## 2026.0.0
+Note: Version `2026.0.2` is a package release carrying out technical corrections. The Implementation Guide was not changed in substance.
 
-Changes since 2025.0.2 included:
+### FHIR / Content Changes:
+#### General:
+- `fix:` Correction of the dependency from `hl7.fhir.uv.extensions` to `hl7.fhir.uv.extensions.r4`, so that the R4 extensions in use resolve correctly.
+- `fix:` Version specification of the referenced FHIR ValueSet `identifier-type` on `4.0.1`.
 
-- CC BY 4.0 licence metadata on profiles and ValueSets.
-- Additional Must Support flags on complex datatype children and coding elements.
-- Improved German/English documentation and an IPS dependency update to 2.0.0.
-- A new modifier extension and ValueSet for interpretation-affecting properties such as haemolysis, lipaemia and icterus.
-- Updated quantity-translation handling and a clarified clinical reference time on Observation.
-- Extended context for the source-of-clinical-reference-date extension to DiagnosticReport.
-- Improved timestamp documentation and refreshed examples.
+#### Examples:
+- `fix:` Correction of the LOINC display text in the example `mii-exa-labor-laborwert` ("hohe Vergrößerung").
 
-See the [GitHub comparison](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2025.0.2...2026.0.0).
+### Version: 2026.0.1
+Version 2026.0.1 contains the following changes compared to the previous version 2026.0.0 (for a complete overview of the changes, the [differential view on GitHub](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.0...2026.0.1) can be used).
+
+Note: Version `2026.0.1` is a package release carrying out technical corrections. The Implementation Guide was not changed in substance.
+
+### FHIR / Content Changes:
+#### General:
+- `fix:` hl7.fhir.uv.extensions was added as a dependency in order to support snapshot generation by Simplifier. MII_PR_Labor_Laboruntersuchung had no snapshot until then.
+
+### Version: 2026.0.0
+
+Version 2026.0.0 contains the following changes compared to the previous version 2025.0.2 (for a complete overview of the changes, the [differential view on GitHub](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2025.0.2...2026.0.0) can be used).
+
+### FHIR / Content Changes:
+#### General:
+- All profiles and ValueSets now carry a CC BY 4.0 licence statement
+- Extended Must Support (MS) flags on the child elements of complex datatypes, for better interoperability
+- Improved multilingual documentation (German/English) with translation inserts for MS elements
+- All profiles: coding elements (system, code, display) are now flagged MS
+- Update of the IPS dependency to 2.0.0
+
+#### MII_PR_Labor_Laboruntersuchung
+- New modifierExtension for interpretation-affecting properties (0..* MS)
+  - Allows laboratory tests to be marked with particular properties that affect the interpretation of the laboratory value (for example haemolysis, lipaemia, icterus)
+- identifier[analyseBefundCode]: Short descriptions and definitions added
+- value[x]: Extended Must Support flags
+  - valueQuantity.comparator is now MS
+  - valueQuantity.extension now uses [extension-quantity-translation](http://hl7.org/fhir/StructureDefinition/extension-quantity-translation) instead of the deprecated [pq-translation-ex](http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation) extension.
+- effective[x]: Definition made precise as "clinical reference time"
+
+#### MII_PR_Labor_Laboranforderung
+- Extended multilingual documentation
+
+#### MII_PR_Labor_Laborbefund
+- category: Structural change from 1..1 MS to 1.. MS
+  - New slice "lab-category" (1..1 MS) with pattern-based constraints
+  - Replaces the previous coding slices (loinc-lab, diagnostic-service-sections)
+  - category[lab-category] combines $loinc#26436-6 and $v2-0074#LAB as a pattern
+  - category[lab-category].coding requires at least 2 codings (system, code, display as MS)
+
+#### Extension - MII_EX_Labor_Interpretationsbeeinflussende_Probeneigenschaft (NEW)
+- New modifierExtension for marking interpretation-affecting properties
+- Context: Observation
+- value[x]: 1.. MS, only Coding permitted
+- Bound to the new ValueSet MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT
+- Important: Flagged as isModifier, because the interpretation of the measured value is affected
+
+#### Extension - MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
+- Context extended: DiagnosticReport.effective.ofType(dateTime) added
+- CC BY 4.0 licence added
+
+#### ValueSets
+- All ValueSets: CC BY 4.0 licence statement added
+- **NEW**: MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT
+  - Codes for haemolysis, lipaemia, icterus (SNOMED CT)
+
+### Implementation Guide:
+- Improved documentation of the timestamps in the laboratory
+- Documentation on interpretation-affecting specimen properties added
+- Updated examples for all profiles
