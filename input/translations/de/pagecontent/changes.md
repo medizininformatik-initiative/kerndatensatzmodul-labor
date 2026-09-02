@@ -6,6 +6,7 @@ Ballot-Kandidat für 2027.0.0. Er enthält im Vergleich zur Vorversion 2026.0.3 
 #### Generell:
 - Alle Profile, ValueSets, das CapabilityStatement und die ImplementationGuide-Ressource tragen CRMI-Metadaten (Shareable, Publishable, ValueSets zusätzlich Computable) samt Freigabe- und Reviewdatum, Gültigkeitszeitraum, Versionspolicy, Package-Herkunft und Beitragenden. Siehe [Metadatenübersicht](metadata.html).
 - Pattern- und Fixed-Value-Kodierungen verwenden versionslose System-URLs; eine versionsbehaftete `system`-URL würde im Pattern nicht matchen. Die ValueSet-Kompositionen bleiben versionsgebunden.
+- Auch Extension-Referenzen in `type.profile` tragen keine Version. Ein Extension-Slice matcht über `Extension.url`, in der Instanz eine `uri` ohne Version — eine Version dort legt also etwas fest, was beim Matching keine Rolle spielt. Welche Paketversion gilt, steht in den Dependencies; `pin-canonicals` legt die Versionen in der publizierten Ausgabe fest.
 - `Coding.version` ist auf `Observation.code`, `Observation.valueCodeableConcept` und `ServiceRequest.code` als Must Support markiert.
 - Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf `2027.0.0-ballot.rc3`, den Kandidaten, mit dem dieses Modul gemeinsam balloted wird. Das CapabilityStatement verweist auf dessen Observation-Suchparameter `interpretation`, den rc3 unverändert unter derselben Canonical ausliefert.
 
