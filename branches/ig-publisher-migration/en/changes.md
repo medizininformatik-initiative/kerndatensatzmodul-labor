@@ -11,6 +11,12 @@ Version 2027.0.0 contains the following changes compared to the previous version
 
 ### FHIR / Content Changes:
 
+#### General:
+
+* All profiles, ValueSets, the CapabilityStatement and the ImplementationGuide resource carry CRMI metadata (shareable, publishable, ValueSets additionally computable), including approval and review date, effective period, version policy, package provenance and contributors. See [Metadata Overview](metadata.md).
+* Pattern and fixed-value codings use unversioned system URLs; a versioned `system` URL would not match in a pattern. The ValueSet compositions remain version-bound.
+* `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
+
 #### MII_PR_Labor_Laborbefund
 
 * category: The required codings are modelled as separate, open slices on `category.coding`: 
@@ -18,10 +24,37 @@ Version 2027.0.0 contains the following changes compared to the previous version
 * `diagnostic-service-sections` (1..1 MS) with `$v2-0074#LAB`
 * Further codings are permitted.
  
+
+#### MII_PR_Labor_Laboruntersuchung
+
+* basedOn: **NEW** — reference to the laboratory order on which the laboratory test is based. Constrained to `Reference(ServiceRequest)` and flagged Must Support (issue #82).
+* code.coding: New open slice `loinc` with an extensible binding to the IPS ValueSet of laboratory results. Previously `code` itself was bound to that ValueSet as preferred.
 * valueCodeableConcept: Extensible binding to the new ValueSet [Coded laboratory result](ValueSet-mii-vs-labor-laborergebnis-codiert.md), which combines the qualitative and semiquantitative result ValueSets. The slices `qualitativ` and `semiquantitativ` originally foreseen have been dropped, because the two ValueSets overlap and can therefore not be discriminated.
-* code.coding: New open slice `loinc` with an extensible binding to the IPS ValueSet of laboratory results.
-* `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
 * interpretation: Extensible binding to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.md), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally common scales such as `--, -, N, +, ++` or `L N H` map onto these; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
+* category: Definition made precise ("classification of the laboratory test within the diagnostic discipline and the laboratory group").
+* `fix:` Invariant mii-lab-2: the expression `hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()` did not evaluate as described and now reads `hasMember.exists() or value.exists() or dataAbsentReason.exists()` — at least one of the three elements has to be present.
+
+#### MII_CPS_Labor_CapabilityStatement
+
+* Observation: search parameter `based-on` is now mandatory (SHALL); it had been commented out.
+* Observation: search parameter `interpretation` **NEW** and mandatory (SHALL). R4 defines no such search parameter; the definition in the Meta module is referenced instead, with identical code and type.
+* ServiceRequest: search parameter `requester` removed (issue #82).
+
+#### ValueSets
+
+* **NEW**: MII_VS_Labor_Interpretation — a restricted selection from HL7 v3 ObservationInterpretation for assessing a laboratory result.
+* **NEW**: MII_VS_Labor_Laborergebnis_Codiert — the qualitative and semiquantitative result ValueSets combined.
+* MII_VS_Labor_Laborbereich: displays switched to the LOINC preferred terms (for example "Blood bank studies (set)" instead of "BLOOD BANK STUDIES"). The list of concepts itself is unchanged.
+* The CodeSystem references from hl7.terminology.r4 are version-bound (v2-0074 3.0.0, v2-0203 5.0.0, v3-ObservationInterpretation 4.0.0), because the package arrives in two states and resolution would otherwise be ambiguous.
+
+#### Logical Model
+
+* MII_LM_Labor: `status` set to `active`, `experimental` to `false`.
+
+### Implementation Guide:
+
+* New page [Interpretation](interpretation.md): which codes are provided for assessing a result, how local scales map onto them, and when the abnormal codes apply.
+* The module description is split by subject: [Laboratory Timestamps](laboratory-timestamps.md), [Interpretation](interpretation.md) and [Specimen](specimen.md) are pages of their own.
 
 ### Version: 2026.0.3
 

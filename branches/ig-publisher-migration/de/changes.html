@@ -305,16 +305,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#version-202700" id="markdown-toc-version-202700">Version: 2027.0.0</a></li>
   <li><a href="#fhirinhaltliche-änderungen" id="markdown-toc-fhirinhaltliche-änderungen">FHIR/Inhaltliche Änderungen:</a></li>
+  <li><a href="#implementation-guide" id="markdown-toc-implementation-guide">Implementation Guide:</a></li>
   <li><a href="#version-202603" id="markdown-toc-version-202603">Version: 2026.0.3</a></li>
   <li><a href="#fhirinhaltliche-änderungen-1" id="markdown-toc-fhirinhaltliche-änderungen-1">FHIR/Inhaltliche Änderungen:</a></li>
-  <li><a href="#implementation-guide" id="markdown-toc-implementation-guide">Implementation Guide:</a></li>
+  <li><a href="#implementation-guide-1" id="markdown-toc-implementation-guide-1">Implementation Guide:</a></li>
   <li><a href="#version-202602" id="markdown-toc-version-202602">Version: 2026.0.2</a></li>
   <li><a href="#fhirinhaltliche-änderungen-2" id="markdown-toc-fhirinhaltliche-änderungen-2">FHIR/Inhaltliche Änderungen:</a></li>
   <li><a href="#version-202601" id="markdown-toc-version-202601">Version: 2026.0.1</a></li>
   <li><a href="#fhirinhaltliche-änderungen-3" id="markdown-toc-fhirinhaltliche-änderungen-3">FHIR/Inhaltliche Änderungen:</a></li>
   <li><a href="#version-202600" id="markdown-toc-version-202600">Version: 2026.0.0</a></li>
   <li><a href="#fhirinhaltliche-änderungen-4" id="markdown-toc-fhirinhaltliche-änderungen-4">FHIR/Inhaltliche Änderungen:</a></li>
-  <li><a href="#implementation-guide-1" id="markdown-toc-implementation-guide-1">Implementation Guide:</a></li>
+  <li><a href="#implementation-guide-2" id="markdown-toc-implementation-guide-2">Implementation Guide:</a></li>
 </ul>
 
 </div>
@@ -323,6 +324,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änderungen.</p>
 
 <h3 id="fhirinhaltliche-änderungen">FHIR/Inhaltliche Änderungen:</h3>
+<h4 id="generell">Generell:</h4>
+<ul>
+  <li>Alle Profile, ValueSets, das CapabilityStatement und die ImplementationGuide-Ressource tragen CRMI-Metadaten (Shareable, Publishable, ValueSets zusätzlich Computable) samt Freigabe- und Reviewdatum, Gültigkeitszeitraum, Versionspolicy, Package-Herkunft und Beitragenden. Siehe <a href="metadata.html">Metadatenübersicht</a>.</li>
+  <li>Pattern- und Fixed-Value-Kodierungen verwenden versionslose System-URLs; eine versionsbehaftete <code class="language-plaintext highlighter-rouge">system</code>-URL würde im Pattern nicht matchen. Die ValueSet-Kompositionen bleiben versionsgebunden.</li>
+  <li><code class="language-plaintext highlighter-rouge">Coding.version</code> ist auf <code class="language-plaintext highlighter-rouge">Observation.code</code>, <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> und <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code> als Must Support markiert.</li>
+</ul>
+
 <h4 id="mii_pr_labor_laborbefund">MII_PR_Labor_Laborbefund</h4>
 <ul>
   <li>category: Die erforderlichen Codings werden als getrennte, offene Slices auf <code class="language-plaintext highlighter-rouge">category.coding</code> modelliert:
@@ -332,10 +340,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Weitere Codings sind zulässig.</li>
     </ul>
   </li>
+</ul>
+
+<h4 id="mii_pr_labor_laboruntersuchung">MII_PR_Labor_Laboruntersuchung</h4>
+<ul>
+  <li>basedOn: <strong>NEU</strong> — Bezug zum Laborauftrag, auf dem die Laboruntersuchung basiert. Eingeschränkt auf <code class="language-plaintext highlighter-rouge">Reference(ServiceRequest)</code> und als Must Support markiert (Issue #82).</li>
+  <li>code.coding: Neuer offener Slice <code class="language-plaintext highlighter-rouge">loinc</code> mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse. Zuvor war <code class="language-plaintext highlighter-rouge">code</code> selbst preferred an dieses ValueSet gebunden.</li>
   <li>valueCodeableConcept: Extensible-Binding an das neue ValueSet <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">Laborergebnis codiert</a>, welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices <code class="language-plaintext highlighter-rouge">qualitativ</code> und <code class="language-plaintext highlighter-rouge">semiquantitativ</code> entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.</li>
-  <li>code.coding: Neuer offener Slice <code class="language-plaintext highlighter-rouge">loinc</code> mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse.</li>
-  <li><code class="language-plaintext highlighter-rouge">Coding.version</code> ist auf <code class="language-plaintext highlighter-rouge">Observation.code</code>, <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> und <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code> als Must Support markiert.</li>
   <li>interpretation: Extensible-Binding an das neue ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>, eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (<code class="language-plaintext highlighter-rouge">L</code>, <code class="language-plaintext highlighter-rouge">LU</code>, <code class="language-plaintext highlighter-rouge">N</code>, <code class="language-plaintext highlighter-rouge">H</code>, <code class="language-plaintext highlighter-rouge">HU</code>). Lokal gebräuchliche Skalen wie <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> bzw. <code class="language-plaintext highlighter-rouge">L N H</code> bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes <code class="language-plaintext highlighter-rouge">HH</code>, <code class="language-plaintext highlighter-rouge">LL</code> und <code class="language-plaintext highlighter-rouge">AA</code> verwendet werden.</li>
+  <li>category: Definition präzisiert („Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe").</li>
+  <li><code class="language-plaintext highlighter-rouge">fix:</code> Invariante mii-lab-2: Der Ausdruck <code class="language-plaintext highlighter-rouge">hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()</code> war nicht auswertbar wie beschrieben und lautet nun <code class="language-plaintext highlighter-rouge">hasMember.exists() or value.exists() or dataAbsentReason.exists()</code> — mindestens eines der drei Elemente muss vorhanden sein.</li>
+</ul>
+
+<h4 id="mii_cps_labor_capabilitystatement">MII_CPS_Labor_CapabilityStatement</h4>
+<ul>
+  <li>Observation: Suchparameter <code class="language-plaintext highlighter-rouge">based-on</code> ist nun verpflichtend (SHALL); er war zuvor auskommentiert.</li>
+  <li>Observation: Suchparameter <code class="language-plaintext highlighter-rouge">interpretation</code> <strong>NEU</strong> und verpflichtend (SHALL). R4 kennt keinen solchen Suchparameter; verwiesen wird auf die Definition im Modul Meta bei identischem Code und Typ.</li>
+  <li>ServiceRequest: Suchparameter <code class="language-plaintext highlighter-rouge">requester</code> entfernt (Issue #82).</li>
+</ul>
+
+<h4 id="valuesets">ValueSets</h4>
+<ul>
+  <li><strong>NEU</strong>: MII_VS_Labor_Interpretation — eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation für die Bewertung eines Laborergebnisses.</li>
+  <li><strong>NEU</strong>: MII_VS_Labor_Laborergebnis_Codiert — Zusammenfassung der qualitativen und semiquantitativen Ergebnis-ValueSets.</li>
+  <li>MII_VS_Labor_Laborbereich: Displays auf die LOINC-Vorzugsbezeichnungen umgestellt (z.B. „Blood bank studies (set)" statt „BLOOD BANK STUDIES"). Die Konzeptliste selbst ist unverändert.</li>
+  <li>Die CodeSystem-Referenzen aus hl7.terminology.r4 sind versionsgebunden (v2-0074 3.0.0, v2-0203 5.0.0, v3-ObservationInterpretation 4.0.0), da das Paket in zwei Ständen hereinkommt und die Auflösung sonst mehrdeutig ist.</li>
+</ul>
+
+<h4 id="logisches-modell">Logisches Modell</h4>
+<ul>
+  <li>MII_LM_Labor: <code class="language-plaintext highlighter-rouge">status</code> auf <code class="language-plaintext highlighter-rouge">active</code> gesetzt, <code class="language-plaintext highlighter-rouge">experimental</code> auf <code class="language-plaintext highlighter-rouge">false</code>.</li>
+</ul>
+
+<h3 id="implementation-guide">Implementation Guide:</h3>
+<ul>
+  <li>Neue Seite <a href="interpretation.html">Interpretation</a>: welche Codes für die Bewertung eines Ergebnisses vorgesehen sind, wie lokale Skalen darauf abbilden und wann die abnormal-Codes in Frage kommen.</li>
+  <li>Die Modulbeschreibung ist nach Themen aufgeteilt: <a href="laboratory-timestamps.html">Zeitpunkte im Labor</a>, <a href="interpretation.html">Interpretation</a> und <a href="specimen.html">Probenmaterial</a> sind eigene Seiten.</li>
 </ul>
 
 <h3 id="version-202603">Version: 2026.0.3</h3>
@@ -344,7 +384,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Hinweis: Version <code class="language-plaintext highlighter-rouge">2026.0.3</code> ist ein Package-Release zur Durchführung technischer Korrekturen. Der Implementation Guide wurde inhaltlich nicht verändert.</p>
 
 <h3 id="fhirinhaltliche-änderungen-1">FHIR/Inhaltliche Änderungen:</h3>
-<h4 id="generell">Generell:</h4>
+<h4 id="generell-1">Generell:</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Vereinheitlichung der Versionskennzeichnung der 2026er Artefakte auf <code class="language-plaintext highlighter-rouge">2026.0.3</code>; mehrere Profile, Extensions, ValueSets und das CapabilityStatement referenzierten zuvor noch <code class="language-plaintext highlighter-rouge">2026.0.0</code>.</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Aktualisierung der <code class="language-plaintext highlighter-rouge">meta.profile</code>- und <code class="language-plaintext highlighter-rouge">supportedProfile</code>-Referenzen von <code class="language-plaintext highlighter-rouge">2026.0.0</code> auf <code class="language-plaintext highlighter-rouge">2026.0.3</code>.</li>
@@ -355,7 +395,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Aktualisierung der Beispielinstanzen auf die Profilversion <code class="language-plaintext highlighter-rouge">2026.0.3</code>; bisherige Profilreferenzen standen teilweise noch auf <code class="language-plaintext highlighter-rouge">2026.0.0</code>.</li>
 </ul>
 
-<h3 id="implementation-guide">Implementation Guide:</h3>
+<h3 id="implementation-guide-1">Implementation Guide:</h3>
 <ul>
   <li>Aktualisierung der IG-Version von <code class="language-plaintext highlighter-rouge">2026.0.0</code> auf <code class="language-plaintext highlighter-rouge">2026.0.3</code> in <code class="language-plaintext highlighter-rouge">package.json</code>, <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code>, <code class="language-plaintext highlighter-rouge">qc/custom.rules.yaml</code> und den FSH-Regelsätzen.</li>
   <li>Aktualisierung der Referenz auf die aktuelle stabile Version in der <code class="language-plaintext highlighter-rouge">README.md</code> von <code class="language-plaintext highlighter-rouge">2026.0.0</code> auf <code class="language-plaintext highlighter-rouge">2026.0.3</code>.</li>
@@ -367,7 +407,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Hinweis: Version <code class="language-plaintext highlighter-rouge">2026.0.2</code> ist ein Package-Release zur Durchführung technischer Korrekturen. Der Implementation Guide wurde inhaltlich nicht verändert.</p>
 
 <h3 id="fhirinhaltliche-änderungen-2">FHIR/Inhaltliche Änderungen:</h3>
-<h4 id="generell-1">Generell:</h4>
+<h4 id="generell-2">Generell:</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Korrektur der Dependency von <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.extensions</code> auf <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.extensions.r4</code>, damit die verwendeten R4-Extensions korrekt aufgelöst werden.</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Versionsspezifizierung des referenzierten FHIR-ValueSets <code class="language-plaintext highlighter-rouge">identifier-type</code> auf <code class="language-plaintext highlighter-rouge">4.0.1</code>.</li>
@@ -384,7 +424,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Hinweis: Version <code class="language-plaintext highlighter-rouge">2026.0.1</code> ist ein Package-Release zur Durchführung technischer Korrekturen. Der Implementation Guide wurde inhaltlich nicht verändert.</p>
 
 <h3 id="fhirinhaltliche-änderungen-3">FHIR/Inhaltliche Änderungen:</h3>
-<h4 id="generell-2">Generell:</h4>
+<h4 id="generell-3">Generell:</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> hl7.fhir.uv.extensions wurde als dependency hinzugefügt um die snapshot Generierung von Simplifier zu unterstützen. MII_PR_Labor_Laboruntersuchung hatte bislang keinen Snapshot.</li>
 </ul>
@@ -394,7 +434,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Die Version 2026.0.0 enthält im Vergleich zur Vorversion 2025.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2025.0.2...2026.0.0">Differential-View auf Github</a> verwendet werden).</p>
 
 <h3 id="fhirinhaltliche-änderungen-4">FHIR/Inhaltliche Änderungen:</h3>
-<h4 id="generell-3">Generell:</h4>
+<h4 id="generell-4">Generell:</h4>
 <ul>
   <li>Alle Profile und ValueSets enthalten nun eine CC-BY-4.0 Lizenzangabe</li>
   <li>Erweiterte Must-Support (MS) Flags für verbesserte Interoperabilität auf den Unterelementen komplexer Datentypen</li>
@@ -403,7 +443,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Update der IPS dependency auf 2.0.0</li>
 </ul>
 
-<h4 id="mii_pr_labor_laboruntersuchung">MII_PR_Labor_Laboruntersuchung</h4>
+<h4 id="mii_pr_labor_laboruntersuchung-1">MII_PR_Labor_Laboruntersuchung</h4>
 <ul>
   <li>Neue modifierExtension für interpretationsbeeinflussende Eigenschaften (0..* MS)
     <ul>
@@ -452,7 +492,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>CC-BY-4.0 Lizenz hinzugefügt</li>
 </ul>
 
-<h4 id="valuesets">ValueSets</h4>
+<h4 id="valuesets-1">ValueSets</h4>
 <ul>
   <li>Alle ValueSets: CC-BY-4.0 Lizenzangabe hinzugefügt</li>
   <li><strong>NEU</strong>: MII_VS_Labor_InterpretationsbeeinflussendeProbeneigenschaften_SNOMEDCT
@@ -462,7 +502,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<h3 id="implementation-guide-1">Implementation Guide:</h3>
+<h3 id="implementation-guide-2">Implementation Guide:</h3>
 <ul>
   <li>Verbesserte Dokumentation der Zeitpunkte im Labor</li>
   <li>Ergänzung der Dokumentation zu interpretationsbeeinflussenden Probeneigenschaften</li>
@@ -494,7 +534,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 10:47+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:41+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
