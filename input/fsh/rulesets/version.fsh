@@ -33,7 +33,7 @@ RuleSet: PR_CS_VS_Version
 RuleSet: CRMIPackageSource
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/package-source"
 * meta.extension[=].extension[+].url = "packageId"
-* meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.labor"
+* meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.laborbefund"
 * meta.extension[=].extension[+].url = "version"
 * meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
 * meta.extension[=].extension[+].url = "uri"
@@ -42,7 +42,7 @@ RuleSet: CRMIPackageSource
 RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/package-source"
 * ^meta.extension[=].extension[+].url = "packageId"
-* ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.labor"
+* ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.laborbefund"
 * ^meta.extension[=].extension[+].url = "version"
 * ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
 * ^meta.extension[=].extension[+].url = "uri"
