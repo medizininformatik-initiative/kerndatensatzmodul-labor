@@ -27,3 +27,9 @@ The discriminator type 'pattern' is deprecated in R5+. For future compatibility,
 
 # Das CodeSystem gehoert der FHIR-Kernspezifikation und wird dort als draft gefuehrt.
 %Reference to draft CodeSystem http://hl7.org/fhir/spdx-license%
+
+# Extension-Referenzen bleiben unversioniert wie im ganzen KDS; die Version legt pin-canonicals bei der Publikation fest.
+%multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/extension-quantity-translation'%
+
+# Dieselbe Entscheidung; quantity-precision liegt zusaetzlich in hl7.fhir.r4.core, die Mehrdeutigkeit ist dort strukturell.
+%multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/quantity-precision'%

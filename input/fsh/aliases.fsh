@@ -46,12 +46,13 @@ Alias: $referencerange-meaning = http://terminology.hl7.org/CodeSystem/reference
 Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $ResultsLabObservationUvIps = http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips
-// Versionsbehaftet, weil beide Extensions aus hl7.fhir.uv.extensions.r4
-// stammen und dort in 5.2.0 UND transitiv in 5.3.0 vorliegen. Ohne Version
-// waehlt der Publisher 5.3.0 - also nicht die Version, die sushi-config.yaml
-// als direkte Dependency pinnt. Nur in den contains-Regeln des
-// Laboruntersuchung-Profils verwendet.
-Alias: $quantity-translation-ex = http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0
-Alias: $quantity-precision-ex = http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0
+// UNVERSIONIERT, wie jede andere Extension-Referenz hier und in allen anderen
+// KDS-Modulen. Ein Extension-Slice matcht ueber Extension.url, und das ist in
+// der Instanz eine uri ohne Version - ein |version an type.profile legt damit
+// etwas fest, was beim Matching keine Rolle spielt, bricht aber Werkzeuge, die
+// versionsbehaftete Canonicals nicht aufloesen (Simplifier-Bake, Issue beim
+// 2027.0.0-ballot.rc1). Welche Paketversion gilt, gehoert in dependencies:.
+Alias: $quantity-translation-ex = http://hl7.org/fhir/StructureDefinition/extension-quantity-translation
+Alias: $quantity-precision-ex = http://hl7.org/fhir/StructureDefinition/quantity-precision
 Alias: $standard-status-ex = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 Alias: $identifier-type = http://hl7.org/fhir/ValueSet/identifier-type
