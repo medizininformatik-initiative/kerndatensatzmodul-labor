@@ -2,9 +2,10 @@
 
 ### Übersicht
 
-[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--labor-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor) 
+Current master build:
+https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/branches/master/en/
 
-[![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/actions/workflows/main.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/actions/workflows/main.yml)
+[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--labor-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor) 
 
 Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Labor', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
 
