@@ -10,16 +10,19 @@ Ballot-Kandidat für 2027.0.0. Er enthält im Vergleich zur Vorversion 2026.0.3 
 - Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf `2027.0.0-ballot.rc3`, den Kandidaten, mit dem dieses Modul gemeinsam balloted wird. Das CapabilityStatement verweist auf dessen Observation-Suchparameter `interpretation`, den rc3 unverändert unter derselben Canonical ausliefert.
 
 #### MII_PR_Labor_Laborbefund
-- category: Die erforderlichen Codings werden als getrennte, offene Slices auf `category.coding` modelliert:
+- category: `category` selbst wird offen gesliced, mit einem verpflichtenden Slice `laborbefund` (1..1 MS). Innerhalb dieses Slices trägt `coding` zwei offene Slices:
   - `loinc-lab` (1..1 MS) mit `$loinc#26436-6`
   - `diagnostic-service-sections` (1..1 MS) mit `$v2-0074#LAB`
-  - Weitere Codings sind zulässig.
+  - Weitere Codings innerhalb des Slices und weitere `category`-Einträge daneben — etwa ein Laborbereich — sind zulässig.
+  - Das Slicing sitzt bewusst auf `category`, nicht auf `category.coding`: `category` ist 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten für jede Wiederholung. Auf `category.coding` müsste jede weitere Kategorie erneut `26436-6` und `LAB` tragen.
+  - Der Slice-Discriminator trägt ein einzelnes Coding; ein `patternCodeableConcept` mit zwei Codings ist nicht verwendbar. Die zweite Pflichtkodierung erzwingt das Slicing innerhalb des Slices.
 
 #### MII_PR_Labor_Laboruntersuchung
 - basedOn: **NEU** auf der Laboruntersuchung — Bezug zum Laborauftrag, auf dem sie basiert. `0..*`, eingeschränkt auf `Reference(ServiceRequest)` und als Must Support markiert (Issue #82). Die Kardinalität bleibt die des Basisprofils; verpflichtend ist `basedOn` nur auf dem Laborbefund, und das unverändert seit 2025.0.2.
 - code: Die Bindung wandert von `code` auf den neuen offenen Slice `code.coding[loinc]`, wird von `preferred` auf `extensible` verschärft und zeigt auf ein anderes IPS-ValueSet — `results-laboratory-pathology-observations-uv-ips` statt bisher `results-laboratory-observations-uv-ips`. `Observation.code` selbst trägt keine Bindung mehr.
 - valueCodeableConcept: Extensible-Binding an das neue ValueSet [Laborergebnis codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.html), welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices `qualitativ` und `semiquantitativ` entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.
 - interpretation: Extensible-Binding an das neue ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Lokal gebräuchliche Skalen wie `--, -, N, +, ++` bzw. `L N H` bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes `HH`, `LL` und `AA` verwendet werden.
+- category: Genauso gesliced wie beim Laborbefund — verpflichtender Slice `laboruntersuchung` (1..1 MS) mit `$loinc#26436-6` und `$observation-category#laboratory` darin. Ein Laborbereich gehört als eigener `category`-Eintrag daneben, nicht als weiteres Coding der Pflichtkategorie.
 - category: Definition präzisiert („Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe").
 - `fix:` Invariante mii-lab-2: Der Ausdruck `hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()` war nicht auswertbar wie beschrieben und lautet nun `hasMember.exists() or value.exists() or dataAbsentReason.exists()` — mindestens eines der drei Elemente muss vorhanden sein.
 

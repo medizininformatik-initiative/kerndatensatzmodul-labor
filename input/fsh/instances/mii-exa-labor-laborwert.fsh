@@ -12,9 +12,9 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
-* category.coding[observation-category] = $observation-category#laboratory "Laboratory"
-* category.coding[2] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
+* category[laboruntersuchung].coding[observation-category] = $observation-category#laboratory "Laboratory"
+// Der Laborbereich ist eine eigene Kategorie, kein weiteres Coding der Pflichtkategorie.
+* category[1].coding[0] = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte
 * code = $loinc#59826-8 "Creatinine [Moles/volume] in Blood"
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
@@ -44,8 +44,7 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
-* category.coding[observation-category] = $observation-category#laboratory "Laboratory"
+* category[laboruntersuchung].coding[observation-category] = $observation-category#laboratory "Laboratory"
 * code = $loinc#1755-8 "Albumin [Mass/time] in 24 hour Urine"
 * code.text = "Albumin (24H U) [Mass/Time]"
 * subject.reference = "Patient/111"
@@ -70,8 +69,7 @@ Usage: #example
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
-* category.coding[observation-category] = $observation-category#laboratory "Laboratory"
+* category[laboruntersuchung].coding[observation-category] = $observation-category#laboratory "Laboratory"
 * code = $loinc#5787-7 "Epithelial cells [#/area] in Urine sediment by Microscopy high power field"
 * code.text = "Urinsediment Epithelzellen Semi-quantitative Schätzung"
 * subject.reference = "Patient/111"

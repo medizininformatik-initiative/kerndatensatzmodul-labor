@@ -742,6 +742,15 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Kategorie",
         "_short": {
           "extension": [
@@ -810,16 +819,6 @@
       {
         "id": "Observation.category.coding",
         "path": "Observation.category.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 2,
         "mustSupport": true
       },
       {
@@ -840,7 +839,39 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:loinc-observation",
+        "id": "Observation.category:laboruntersuchung",
+        "path": "Observation.category",
+        "sliceName": "laboruntersuchung",
+        "short": "Laboruntersuchungs-Kategorie",
+        "definition": "Die verpflichtende Kategorie der Laboruntersuchung. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "26436-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:laboruntersuchung.coding",
+        "path": "Observation.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Observation.category:laboruntersuchung.coding:loinc-observation",
         "path": "Observation.category.coding",
         "sliceName": "loinc-observation",
         "min": 1,
@@ -852,7 +883,7 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:observation-category",
+        "id": "Observation.category:laboruntersuchung.coding:observation-category",
         "path": "Observation.category.coding",
         "sliceName": "observation-category",
         "min": 1,
@@ -1498,7 +1529,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation|5.2.0"
+              "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
             ]
           }
         ]
@@ -1539,7 +1570,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0"
+              "http://hl7.org/fhir/StructureDefinition/quantity-precision"
             ]
           }
         ],

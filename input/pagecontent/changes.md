@@ -10,16 +10,19 @@ Ballot candidate for 2027.0.0. It contains the following changes compared to the
 - The Meta module dependency is raised from 2026.0.0 to `2027.0.0-ballot.rc3`, the candidate this module is balloted alongside. The CapabilityStatement references that module's Observation `interpretation` search parameter, which rc3 still ships under the same canonical.
 
 #### MII_PR_Labor_Laborbefund
-- category: The required codings are modelled as separate, open slices on `category.coding`:
+- category: `category` itself is sliced, open, with one mandatory slice `laborbefund` (1..1 MS). Within that slice, `coding` carries two open slices:
   - `loinc-lab` (1..1 MS) with `$loinc#26436-6`
   - `diagnostic-service-sections` (1..1 MS) with `$v2-0074#LAB`
-  - Further codings are permitted.
+  - Further codings within the slice, and further `category` entries beside it — a laboratory area, for instance — are permitted.
+  - The slicing deliberately sits on `category`, not on `category.coding`: `category` is 1..*, and constraints below a repeating element apply to every repetition. On `category.coding` every further category would have to repeat `26436-6` and `LAB`.
+  - The slice discriminator carries a single coding; a `patternCodeableConcept` with two codings is not usable. The second mandatory coding is enforced by the slicing inside the slice.
 
 #### MII_PR_Labor_Laboruntersuchung
 - basedOn: **NEW** on the laboratory test — reference to the laboratory order it is based on. `0..*`, constrained to `Reference(ServiceRequest)` and flagged Must Support (issue #82). The cardinality stays that of the base profile; `basedOn` is mandatory only on the laboratory report, and has been so unchanged since 2025.0.2.
 - code: The binding moves from `code` onto the new open slice `code.coding[loinc]`, is tightened from `preferred` to `extensible`, and points at a different IPS ValueSet — `results-laboratory-pathology-observations-uv-ips` instead of `results-laboratory-observations-uv-ips`. `Observation.code` itself no longer carries a binding.
 - valueCodeableConcept: Extensible binding to the new ValueSet [Coded laboratory result](ValueSet-mii-vs-labor-laborergebnis-codiert.html), which combines the qualitative and semiquantitative result ValueSets. The slices `qualitativ` and `semiquantitativ` originally foreseen have been dropped, because the two ValueSets overlap and can therefore not be discriminated.
 - interpretation: Extensible binding to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally common scales such as `--, -, N, +, ++` or `L N H` map onto these; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
+- category: Sliced the same way as on the laboratory report — mandatory slice `laboruntersuchung` (1..1 MS) with `$loinc#26436-6` and `$observation-category#laboratory` inside it. A laboratory area belongs beside it as its own `category` entry, not as a further coding of the mandatory one.
 - category: Definition made precise ("classification of the laboratory test within the diagnostic discipline and the laboratory group").
 - `fix:` Invariant mii-lab-2: the expression `hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()` did not evaluate as described and now reads `hasMember.exists() or value.exists() or dataAbsentReason.exists()` — at least one of the three elements has to be present.
 
