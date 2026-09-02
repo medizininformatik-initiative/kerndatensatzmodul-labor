@@ -1,9 +1,24 @@
-# Changelog - MII IG Laborbefund v2027.0.0-ballot.rc1
+# Changelog - MII IG Laborbefund v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
 
 ## Changelog
+
+### Version: 2027.0.0-ballot.rc2
+
+Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc1`. Release candidates prepare the ballot; they are not the balloted version.
+
+### FHIR / Content Changes:
+
+#### General:
+
+* The package id is now `de.medizininformatikinitiative.kerndatensatz.laborbefund`, which is the id the module is distributed under. The repository previously declared `…kerndatensatz.labor`, so a consumer following the packageId stated in the guide could not resolve the package. The canonical is unaffected.
+
+#### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
+
+* category: The slice discriminator now points at `coding` instead of `$this`, and the slice no longer carries a `patternCodeableConcept` of its own. The `patternCoding` of the inner coding slices does the discriminating, where the cardinality sits as well. Previously the same statement was made in two places (reported in the downstream review of `2027.0.0-ballot.rc1`).
+* The examples state the LOINC coding with its display again. Under rc1 the outer pattern was injected into instances, so an explicit assignment produced the code twice.
 
 ### Version: 2027.0.0-ballot.rc1
 

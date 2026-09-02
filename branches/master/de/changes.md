@@ -1,9 +1,24 @@
-# Änderungen - MII IG Laborbefund v2027.0.0-ballot.rc1
+# Änderungen - MII IG Laborbefund v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungen**
 
 ## Änderungen
+
+### Version: 2027.0.0-ballot.rc2
+
+Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc1` ab. Release-Kandidaten bereiten das Ballot vor; sie sind nicht die ballotierte Version.
+
+### FHIR/Inhaltliche Änderungen:
+
+#### Generell:
+
+* Die Package-ID lautet nun `de.medizininformatikinitiative.kerndatensatz.laborbefund` — die ID, unter der das Modul ausgeliefert wird. Das Repository deklarierte zuvor `…kerndatensatz.labor`; wer der im Leitfaden genannten packageId folgte, konnte das Package nicht auflösen. Die Canonical bleibt unverändert.
+
+#### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
+
+* category: Der Slice-Discriminator zeigt jetzt auf `coding` statt auf `$this`, und der Slice trägt kein eigenes `patternCodeableConcept` mehr. Die Unterscheidung leistet das `patternCoding` der inneren Coding-Slices, wo auch die Kardinalität sitzt. Zuvor stand dieselbe Aussage an zwei Stellen (gemeldet im Downstream-Review zu `2027.0.0-ballot.rc1`).
+* Die Beispiele geben die LOINC-Kodierung wieder mit Display an. Unter rc1 wurde das äußere Pattern in Instanzen injiziert, sodass eine explizite Zuweisung den Code doppelt erzeugte.
 
 ### Version: 2027.0.0-ballot.rc1
 

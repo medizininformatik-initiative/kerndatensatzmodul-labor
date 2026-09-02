@@ -1,4 +1,4 @@
-# MII PR Labor Laborbefund - MII IG Laborbefund v2027.0.0-ballot.rc1
+# MII PR Labor Laborbefund - MII IG Laborbefund v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_PR_Labor_Laborbefund |
 
  
@@ -125,7 +125,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc1"
+        "valueString" : "2027.0.0-ballot.rc2"
       },
       {
         "url" : "uri",
@@ -264,7 +264,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Labor_Laborbefund",
   "title" : "MII PR Labor Laborbefund",
   "_title" : {
@@ -293,7 +293,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:52:09+00:00",
+  "date" : "2026-09-02T18:06:21+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -694,7 +694,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "slicing" : {
         "discriminator" : [{
           "type" : "pattern",
-          "path" : "$this"
+          "path" : "coding"
         }],
         "rules" : "open"
       },
@@ -759,12 +759,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "definition" : "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
       "min" : 1,
       "max" : "1",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "26436-6"
-        }]
-      },
       "mustSupport" : true
     },
     {

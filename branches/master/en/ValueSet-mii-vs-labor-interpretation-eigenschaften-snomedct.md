@@ -1,4 +1,4 @@
-# MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT - MII IG Laborbefund v2027.0.0-ballot.rc1
+# MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT - MII IG Laborbefund v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2026-09-02 | *Computable Name*:MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT |
 
  
@@ -44,7 +44,7 @@ Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Labo
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc1"
+        "valueString" : "2027.0.0-ballot.rc2"
       },
       {
         "url" : "uri",
@@ -171,12 +171,12 @@ Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Labo
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT",
   "title" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:52:09+00:00",
+  "date" : "2026-09-02T18:06:21+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

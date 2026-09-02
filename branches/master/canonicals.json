@@ -2,118 +2,118 @@
   "id" : "mii-cps-labor-capabilitystatement",
   "type" : "CapabilityStatement",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_CPS_Labor_CapabilityStatement"
 },
 {
   "id" : "mii-ig-labor",
   "type" : "ImplementationGuide",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_IG_Labor"
 },
 {
   "id" : "mii-pr-labor-laborbefund",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Labor_Laborbefund"
 },
 {
   "id" : "mii-ex-labor-interpretationsbeeinflussende-eigenschaft",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft"
 },
 {
   "id" : "mii-lm-labor",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_LM_Labor"
 },
 {
   "id" : "mii-pr-labor-laboruntersuchung",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Labor_Laboruntersuchung"
 },
 {
   "id" : "mii-ex-labor-quelle-klinisches-bezugsdatum",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_EX_Labor_Quelle_Klinisches_Bezugsdatum"
 },
 {
   "id" : "mii-pr-labor-laboranforderung",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_PR_Labor_Laboranforderung"
 },
 {
   "id" : "mii-vs-labor-interpretation",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Interpretation"
 },
 {
   "id" : "mii-vs-labor-laborbereich",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Laborbereich"
 },
 {
   "id" : "mii-vs-labor-laborergebnis-codiert",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Laborergebnis_Codiert"
 },
 {
   "id" : "mii-vs-labor-laborergebnis-qualitativ",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Laborergebnis_Qualitativ"
 },
 {
   "id" : "mii-vs-labor-laborergbenis-semiquantitativ",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Laborergbenis_Semiquantitativ"
 },
 {
   "id" : "mii-vs-labor-quelle-klinisches-bezugsdatum",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Quelle_Klinisches_Bezugsdatum"
 },
 {
   "id" : "mii-vs-labor-order-codes",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Order_Codes"
 },
 {
   "id" : "mii-vs-labor-identifier-type-codes",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Identifier_Type_Codes"
 },
 {
   "id" : "mii-vs-labor-interpretation-eigenschaften-snomedct",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT"
 }]

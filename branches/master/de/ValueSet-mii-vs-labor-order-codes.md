@@ -1,4 +1,4 @@
-# MII VS Labor Order Codes - MII IG Laborbefund v2027.0.0-ballot.rc1
+# MII VS Labor Order Codes - MII IG Laborbefund v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes | *Version*:2027.0.0-ballot.rc2 |
 | Active Stand: 2023-12-12 | *Maschinenlesbarer Name*:MII_VS_Labor_Order_Codes |
 
  
@@ -44,7 +44,7 @@ Kodierung der Beauftragungen von Laboruntersuchungen
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc1"
+        "valueString" : "2027.0.0-ballot.rc2"
       },
       {
         "url" : "uri",
@@ -171,7 +171,7 @@ Kodierung der Beauftragungen von Laboruntersuchungen
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_VS_Labor_Order_Codes",
   "title" : "MII VS Labor Order Codes",
   "status" : "active",

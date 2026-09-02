@@ -1,4 +1,4 @@
-# Laboratory test example, result as a ratio - MII IG Laborbefund v2027.0.0-ballot.rc1
+# Laboratory test example, result as a ratio - MII IG Laborbefund v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -18,7 +18,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **status**: Final
 
-**category**: Laboratory
+**category**: Laboratory studies (set)
 
 **code**: Albumin (24H U) [Mass/Time]
 
@@ -65,7 +65,9 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
   "category" : [{
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "26436-6"
+      "version" : "2.82",
+      "code" : "26436-6",
+      "display" : "Laboratory studies (set)"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",

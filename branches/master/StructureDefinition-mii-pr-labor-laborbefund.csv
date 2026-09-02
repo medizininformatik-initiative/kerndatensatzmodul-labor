@@ -173,17 +173,12 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Event.status","OBR-25 (not 1:1 mapping)","FiveWs.status"
 "DiagnosticReport.category","DiagnosticReport.category","","Department
 Sub-departmentServiceDiscipline","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Kategorie","Klassifikation des Befunds","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","","","","",,"example","Codes for diagnostic service sections.","http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1","","pattern:$this}
+","Kategorie","Klassifikation des Befunds","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","","","","",,"example","Codes for diagnostic service sections.","http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1","","pattern:coding}
 ","",,"open","DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR-24","FiveWs.class"
 "DiagnosticReport.category:laborbefund","DiagnosticReport.category","laborbefund","Department
 Sub-departmentServiceDiscipline","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Laborbefund-Kategorie","Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""26436-6""/>
-  </coding>
-</valueCodeableConcept>","","","",,"example","Codes for diagnostic service sections.","http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Laborbefund-Kategorie","Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","","","","",,"example","Codes for diagnostic service sections.","http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR-24","FiveWs.class"
 "DiagnosticReport.category:laborbefund.id","DiagnosticReport.category.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
