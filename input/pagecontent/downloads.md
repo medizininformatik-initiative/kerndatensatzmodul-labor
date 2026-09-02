@@ -47,6 +47,7 @@ All profile information in a single table, useful for reviewing element properti
 The technical definition of this publication, including its dependencies and publishing parameters:
 
 - [ImplementationGuide resource (JSON)](ImplementationGuide-mii-ig-labor.json)
+- [ImplementationGuide resource (rendered)](ImplementationGuide-mii-ig-labor.html) — the resolved package versions, the global profiles and the expansion parameters
 
 ### Sources
 

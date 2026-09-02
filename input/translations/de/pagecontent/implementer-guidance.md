@@ -35,6 +35,7 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 * [Terminologie](terminology.html) — LOINC-Kodierung, das MII-300-Subset, Einheiten und UCUM
 * [CapabilityStatements](capability-statements.html) — die REST-Anforderungen samt Interaktionen und Suchparametern
 * [Beispiele](examples.html) — Beispielressourcen
+* [ImplementationGuide-Ressource](ImplementationGuide-mii-ig-labor.html) — die Paketversionen, auf die dieser Leitfaden tatsächlich auflöst, die Global Profiles und die Expansions-Parameter
 
 ### Fachliche Hinweise
 
