@@ -16,6 +16,7 @@ Ballot candidate for 2027.0.0. It contains the following changes compared to the
 * All profiles, ValueSets, the CapabilityStatement and the ImplementationGuide resource carry CRMI metadata (shareable, publishable, ValueSets additionally computable), including approval and review date, effective period, version policy, package provenance and contributors. See [Metadata Overview](metadata.md).
 * Pattern and fixed-value codings use unversioned system URLs; a versioned `system` URL would not match in a pattern. The ValueSet compositions remain version-bound.
 * `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
+* The Meta module dependency is raised from 2026.0.0 to `2027.0.0-ballot.rc3`, the candidate this module is balloted alongside. The CapabilityStatement references that module's Observation `interpretation` search parameter, which rc3 still ships under the same canonical.
 
 #### MII_PR_Labor_Laborbefund
 
