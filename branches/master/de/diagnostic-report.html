@@ -181,11 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -210,7 +212,6 @@
       <li><a href="diagnostic-report.html">Laborbefund</a></li>
       <li><a href="observation.html">Laboruntersuchung</a></li>
       <li><a href="service-request.html">Laboranforderung</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
@@ -302,20 +303,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#mii-profil-laborbefund" id="markdown-toc-mii-profil-laborbefund">MII Profil Laborbefund</a>    <ul>
-      <li><a href="#metadaten" id="markdown-toc-metadaten">Metadaten</a></li>
-      <li><a href="#inhalt" id="markdown-toc-inhalt">Inhalt</a></li>
-      <li><a href="#constraintsinvarianten" id="markdown-toc-constraintsinvarianten">Constraints/Invarianten</a></li>
-      <li><a href="#restful-api" id="markdown-toc-restful-api">RESTful API</a></li>
-      <li><a href="#mappings" id="markdown-toc-mappings">Mappings</a></li>
-    </ul>
-  </li>
+  <li><a href="#metadaten" id="markdown-toc-metadaten">Metadaten</a></li>
+  <li><a href="#inhalt" id="markdown-toc-inhalt">Inhalt</a></li>
+  <li><a href="#constraintsinvarianten" id="markdown-toc-constraintsinvarianten">Constraints/Invarianten</a></li>
+  <li><a href="#restful-api" id="markdown-toc-restful-api">RESTful API</a></li>
+  <li><a href="#mappings" id="markdown-toc-mappings">Mappings</a></li>
 </ul>
 
 </div>
-<h1 id="mii-profil-laborbefund"><a href="StructureDefinition-mii-pr-labor-laborbefund.html">MII Profil Laborbefund</a></h1>
-
-<p>Der DiagnosticReportLab bildet einen Laborbefund ab.</p>
+<p>Das <a href="StructureDefinition-mii-pr-labor-laborbefund.html">MII Profil Laborbefund</a> — DiagnosticReportLab — bildet einen Laborbefund ab.</p>
 
 <h3 id="metadaten">Metadaten</h3>
 
@@ -1101,7 +1097,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Entire report as issued<br /></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 3dcded51-4f57-42ec-a9b9-d5d27e85c79d
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 318d3dfd-010a-4d70-bfb4-4ba022920736
 document.getElementById('cbmii-pr-labor-laborbefundS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laborbefundS'), 'binding', document.getElementById('cbmii-pr-labor-laborbefundS-binding').checked, document.getElementById('ppmii-pr-labor-laborbefundS'));
 document.getElementById('cbmii-pr-labor-laborbefundS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1406,7 +1402,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Schlussfolgerung</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 3dcded51-4f57-42ec-a9b9-d5d27e85c79d
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 318d3dfd-010a-4d70-bfb4-4ba022920736
 document.getElementById('cbmii-pr-labor-laborbefundD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laborbefundD'), 'binding', document.getElementById('cbmii-pr-labor-laborbefundD-binding').checked, document.getElementById('ppmii-pr-labor-laborbefundD'));
 document.getElementById('cbmii-pr-labor-laborbefundD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1717,7 +1713,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
   &lt;/<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T07:15:34+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T11:58:19+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
@@ -8782,7 +8778,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
   },
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T07:15:34+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T11:58:19+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Medizininformatik Initiative",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -17127,7 +17123,7 @@ Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

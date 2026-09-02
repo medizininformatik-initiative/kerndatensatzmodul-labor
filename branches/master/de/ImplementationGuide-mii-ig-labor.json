@@ -158,7 +158,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T07:15:34+00:00",
+  "date" : "2026-09-02T11:58:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1874,19 +1874,37 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "terminology.html"
+            "valueUrl" : "laboratory-timestamps.html"
           }],
-          "nameUrl" : "terminology.html",
-          "title" : "Terminologie",
+          "nameUrl" : "laboratory-timestamps.html",
+          "title" : "Zeitpunkte im Labor",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "laboratory-timestamps.html"
+            "valueUrl" : "interpretation.html"
           }],
-          "nameUrl" : "laboratory-timestamps.html",
-          "title" : "Zeitpunkte im Labor",
+          "nameUrl" : "interpretation.html",
+          "title" : "Interpretation",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "specimen.html"
+          }],
+          "nameUrl" : "specimen.html",
+          "title" : "Probenmaterial",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "terminology.html"
+          }],
+          "nameUrl" : "terminology.html",
+          "title" : "Terminologie",
           "generation" : "markdown"
         },
         {
@@ -1950,15 +1968,6 @@
           }],
           "nameUrl" : "service-request.html",
           "title" : "Laboranforderung",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specimen.html"
-          }],
-          "nameUrl" : "specimen.html",
-          "title" : "Probenmaterial",
           "generation" : "markdown"
         },
         {
@@ -2050,6 +2059,15 @@
         }],
         "nameUrl" : "translationinfo.html",
         "title" : "Übersetzungsinformationen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "ImplementationGuide-mii-ig-labor.html"
+        }],
+        "nameUrl" : "ImplementationGuide-mii-ig-labor.html",
+        "title" : "MII ImplementationGuide Resource",
         "generation" : "markdown"
       }]
     },

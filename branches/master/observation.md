@@ -1,29 +1,64 @@
-# [MII Laboratory Test Profile](StructureDefinition-mii-pr-labor-laboruntersuchung.html)
+The [MII Laboratory Test profile](StructureDefinition-mii-pr-labor-laboruntersuchung.html) — ObservationLab — represents the result of a single laboratory test.
 
-ObservationLab represents the result of a single laboratory test.
+### Metadata
+
+Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
+
+### Content
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboruntersuchung" %}
 
-Constraints, invariants, metadata and the base profile are displayed in the generated profile views. Required interactions and search parameters are defined by the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html).
+</br>
 
-## Key mappings and implementation notes
+### Constraints/Invariants
 
-| FHIR element | Meaning |
-|---|---|
-| `Observation.identifier` | Must identify the observation unambiguously; the source guide prefers a combination of LOINC code and report number |
-| `Observation.status` | Preliminary and final results are permitted |
-| `Observation.category` | LOINC and HL7 coding slices; additional codings are permitted. A laboratory-area ValueSet may be used locally |
-| `Observation.code` | Laboratory parameter, normally from the [IPS laboratory LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); a local code may be added |
-| `Observation.subject` | Must reference the patient |
-| `Observation.effective[x]` | Clinical reference time. Prefer dateTime; a period is permitted. It is derived from collection time, laboratory receipt time or the report's reference time, and its source is identified by the module extension |
-| `Observation.valueQuantity` | UCUM quantity; alternative unit coding is not permitted |
-| `Observation.valueCodeableConcept` | Used for semiquantitative results such as 0 to +++ |
-| `Observation.note` | Optional text |
-| `Observation.method` | Coded method where the method is not implicit in the observation code |
-| `Observation.specimen` | Optional reference to the Biobank module's specimen profile |
-| `Observation.referenceRange` | Prefer low/high SimpleQuantity; use text when a structured range is unsuitable |
-| `Observation.component` | `hasMember` is preferred in clinical chemistry; component remains allowed for alignment with genetic findings |
+Constraints and invariants are shown in the structure views on the profile page.
 
-The elements map to the corresponding laboratory-test identification, status, area/group, parameter, reference time, documentation date, result, interpretation, comment, method and reference-range elements of the logical model.
+### RESTful API
 
-[Complete Observation example](Observation-mii-exa-labor-laborwert.html)
+The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
+
+### Mappings
+
+| FHIR element | Explanation |
+|--------------|-----------|
+| Patient.id | Must Support, but optional |
+| Patient.meta | Must Support, but optional |
+| Observation.identifier | The Observation must be unambiguously identifiable; no requirements are made on the coding, preference: 'LOINC CODE_report number' |
+| Observation.status | Final and preliminary results are permitted. |
+| Observation.category | LOINC and HL7 code, further codings permitted. </br>No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. </br>For laboratory groups, reference is made to the ValueSet [Laborgruppe](https://simplifier.net/mii-basismodul-labor-2025/mii-vs-labor-laborbereich). It may be used optionally. |
+| Observation.code | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); in some cases it makes sense to record the local identifier code in addition to the LOINC (see Terminology > LOINC coding at a site). |
+| Observation.subject | A reference to the patient must always be present. |
+| Observation.effective[x] | Test time (clinical reference time) of the laboratory test. The time should be coded as dateTime, see constraint mii-lab-1. A period is possible as well. The clinical reference time of the laboratory test should be derived from the laboratory receipt time (redundant with Specimen.receivedTime), the collection time (redundant with Specimen.collection.collected[x]) or the clinical reference time of the laboratory report (DiagnosticReport.effective[x]). These values come closest to the point in time at which the measured property in the specimen (e.g. the concentration of an analyte) presumably corresponded to that property in the patient. The extension QuelleKlinischesBezugsdatum is to be used to specify whether the value is a collection time or a specimen receipt time. |
+| Observation.valueQuantity | UCUM quantity — mandatory, no deviating coding permitted. |
+| Observation.valueCodeableConcept | For coding semiquantitative results (0 to +++), see the ValueSet 'Semi_quantitative_Laborergebnisse' |
+| Observation.note | Optional text |
+| Observation.method | Coded method that was used to measure Observation.value. Only to be populated if the method is not implicitly contained in Observation.code (in the LOINC code, for instance). No coding recommendation is given, because this information is usually not available in structured form in the source systems. |
+| Observation.specimen | Optional reference; specimen information is held in the FHIR profile Specimen (Specimen Bioprobe Core) of the Biobank extension module. |
+| Observation.referenceRange | Should — where available — be coded as high, low (SimpleQuantity). Otherwise, by way of exception, via referenceRange.text. |
+| Observation.component | Observation.hasMember is to be preferred in clinical chemistry (more fitting semantics). The element is permitted for harmonisation with genetic findings. |
+
+</br>
+
+| FHIR element | Logical dataset |
+|--------------|-----------|
+| Observation.identifier | Laborbefund.Laboruntersuchung.Identifikation |
+| Observation.status | Laborbefund.Laboruntersuchung.Status |
+| Observation.category | Laborbefund.Laboruntersuchung.Bereich |
+| Observation.category | Laborbefund.Laboruntersuchung.Gruppe |
+| Observation.code | Laborbefund.Laboruntersuchung.Laborparameter |
+| Observation.effective[x] | Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt |
+| Observation.issued | Laborbefund.Laboruntersuchung.Dokumentationsdatum |
+| Observation.valueQuantity | Laborbefund.Laboruntersuchung.Messwert |
+| Observation.interpretation | Laborbefund.Laboruntersuchung.Interpretation |
+| Observation.note | Laborbefund.Laboruntersuchung.Kommentar |
+| Observation.method | Laborbefund.Laboruntersuchung.Untersuchungsmethode |
+| Observation.referenceRange | Laborbefund.Laboruntersuchung.Referenzbereich |
+
+</br>
+
+**Examples**
+
+Example (complete):
+
+[Complete example as an Observation](Observation-mii-exa-labor-laborwert.html)

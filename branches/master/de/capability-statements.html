@@ -181,11 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -210,7 +212,6 @@
       <li><a href="diagnostic-report.html">Laborbefund</a></li>
       <li><a href="observation.html">Laboruntersuchung</a></li>
       <li><a href="service-request.html">Laboranforderung</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
@@ -310,8 +311,6 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 </p>
 
-<h1 id="capabilitystatement">CapabilityStatement</h1>
-
 <p>Um eine dezentrale Datenauswertung mittels des Deutschen Forschungsdatenportals für Gesundheit der Medizininformatik-Initiative zu ermöglichen, MUSS die <a href="https://www.hl7.org/fhir/R4/http.html#capabilities">capabilities-Interaktion</a> unterstützt werden, sodass der FHIR-Server unter <code class="language-plaintext highlighter-rouge">[BASE_URL]/metadata</code> ein CapabilityStatement exponiert. Innerhalb dieses CapabilityStatement MUSS angegeben werden, welche Profile inklusive Version sowie welche Suchparameter unterstützt werden.</p>
 
 <p>Darüber hinaus MUSS in der jeweiligen CapabilityStatement-Instanz unter <a href="https://www.hl7.org/fhir/R4/capabilitystatement-definitions.html#CapabilityStatement.instantiates"><code class="language-plaintext highlighter-rouge">CapabilityStatement.instantiates</code></a> die Konformität zu dem nachfolgenden CapabilityStatement angegeben werden.</p>
@@ -321,7 +320,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li><a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">MII CapabilityStatement Labor</a></li>
 </ul>
 
-<h2 id="interaktionen-suchparameter-und-operationen">Interaktionen, Suchparameter und Operationen</h2>
+<h3 id="interaktionen-suchparameter-und-operationen">Interaktionen, Suchparameter und Operationen</h3>
 
 <p>Die normativen REST-Anforderungen werden unmittelbar aus dem <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">MII CapabilityStatement Labor</a> dargestellt. Die generierte Artefaktseite ist maßgeblich und bleibt mit der FSH-Quelle synchron; der Leitfaden gibt die Tabellen zu Interaktionen, Suchparametern und Operationen daher nicht gesondert wieder.</p>
 
@@ -352,7 +351,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

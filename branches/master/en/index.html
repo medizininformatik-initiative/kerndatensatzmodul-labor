@@ -212,8 +212,10 @@
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -238,7 +240,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -371,13 +372,67 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mii-core-data-set-module-laboratory-report" id="markdown-toc-mii-core-data-set-module-laboratory-report">MII Core Data Set Module Laboratory Report</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#imprint" id="markdown-toc-imprint">Imprint</a></li>
+  <li><a href="#contacts" id="markdown-toc-contacts">Contacts</a></li>
+  <li><a href="#authors-in-alphabetical-order" id="markdown-toc-authors-in-alphabetical-order">Authors (in alphabetical order)</a></li>
+  <li><a href="#copyright-notice-terms-of-use" id="markdown-toc-copyright-notice-terms-of-use">Copyright notice, terms of use</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+</ul>
 
-<h1 id="mii-core-data-set-module-laboratory-report">MII Core Data Set Module Laboratory Report</h1>
+</div>
+<h3 id="mii-core-data-set-module-laboratory-report">MII Core Data Set Module Laboratory Report</h3>
 
 <p>This specification describes the FHIR representation of the Medical Informatics Initiative (MII) core data set module Laboratory Report. It defines the module's use cases, FHIR profiles and terminology resources in their normative form.</p>
+
+<p>Laboratory tests play a decisive role in most medical diagnoses. Preliminary results can already be relevant in time-critical applications, such as clinical decision support warning about a low haemoglobin value. Final laboratory results are normally used in both patient care and research. The central document and subject of this module is the laboratory report produced by a medical laboratory.</p>
+
+<h4 id="target-audience">Target Audience</h4>
+
+<div class="ig-highlight ig-highlight-blue">
+  <h5>Implementers</h5>
+  <p>For data management and integration in data integration centres, software developers and system architects building FHIR-based solutions.</p>
+
+  <ul>
+    <li>→ <a href="profiles.html">Profiles</a> — the normative constraints</li>
+    <li>→ <a href="implementer-guidance.html">Guidance for Implementers</a> — conformance, artifacts, validation</li>
+    <li>→ <a href="logical-models.html">Logical Models</a> and <a href="uml-diagrams.html">UML Diagrams</a> — the conceptual view</li>
+  </ul>
+</div>
+
+<div class="ig-highlight ig-highlight-green">
+  <h5>Researchers</h5>
+  <p>For scientists working with MII data.</p>
+
+  <ul>
+    <li>→ <a href="researcher-guidance.html">Guidance for Researchers</a> — where to start</li>
+    <li>→ <a href="guidance.html">Module Description</a> — reference times, interpretations, specimens</li>
+    <li>→ <a href="examples.html">Examples</a> — what the data looks like in practice</li>
+  </ul>
+</div>
+
+<h3 id="background">Background</h3>
+
+<div style="clear: both;">
+  <img src="Modul_Laborbefund.jpg" alt="Overview of the Laboratory Report module" style="display: block; max-width: 70%; height: auto; margin: 20px 0 10px 0;" />
+  <p style="text-align: left; font-style: italic; margin-top: 0;">The Laboratory Report module in the MII core data set</p>
+</div>
+
+<h4 id="module-overview">Module Overview</h4>
+
+<p>The module covers:</p>
+
+<ul>
+  <li>the laboratory report grouping the tests of one request (<a href="StructureDefinition-mii-pr-labor-laborbefund.html">DiagnosticReport</a>)</li>
+  <li>the individual laboratory test with its result, interpretation and reference range (<a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">Observation</a>)</li>
+  <li>the laboratory order the tests were performed for (<a href="StructureDefinition-mii-pr-labor-laboranforderung.html">ServiceRequest</a>)</li>
+  <li>two extensions: the <a href="StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.html">source of the clinical reference date</a> and the <a href="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.html">interpretation-affecting property</a></li>
+</ul>
+
+<p>The specimen is not profiled here. The module reuses the Biobank module's profile; the mapping is described under <a href="specimen.html">Specimen</a>.</p>
 
 <table>
   <thead>
@@ -406,31 +461,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h2 id="imprint">Imprint</h2>
+<h3 id="imprint">Imprint</h3>
 
 <p>This guide was created within the Medical Informatics Initiative and is subject to the governance and ballot processes of the Interoperability Forum and the Technical Committees of HL7 Germany.</p>
 
-<h2 id="contacts">Contacts</h2>
-
+<h3 id="contacts">Contacts</h3>
 <ul>
   <li>Martin Federbusch, Leipzig University Hospital</li>
   <li>Danny Ammon, Jena University Hospital</li>
-  <li>Karoline Buckow, TMF – Technology, Methods, and Infrastructure for Networked Medical Research</li>
+  <li>Karoline Buckow, TMF – Technology, Methods and Infrastructure
+for Networked Medical Research</li>
 </ul>
 
-<p>Questions may be asked on <a href="https://chat.fhir.org">chat.fhir.org</a> in the <code class="language-plaintext highlighter-rouge">german/mi-initiative</code> stream. Comments and criticism are welcome as <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/issues">GitHub issues</a>.</p>
+<p>Questions on this publication may be asked at any time at <a href="https://chat.fhir.org">https://chat.fhir.org</a> in the stream 'german/mi-initiative'.</p>
 
-<h2 id="authors">Authors</h2>
+<p>Comments and criticism are received as <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/issues">GitHub issues</a>.</p>
 
-<p>Abdul Mateen, Alexander Zautke, Andreas Bietenbeck, Andreas G. Henkel, Danny Ammon, Eva-Maria Riess, Fabian Prasser, Felix Erdfelder, Gustav Vella, Heinrich Lautenbacher, Julian Saß, Kutaiba Saleh, Martin Federbusch, Matthias Löbe, Noemi Deppenwiese, Olga Davidenko, Patrick Werner, Raffael Bild, Sabine Gerber, Sylvia Thun, Thomas Ganslandt and Ulrich Sax.</p>
+<h3 id="authors-in-alphabetical-order">Authors (in alphabetical order)</h3>
 
-<h2 id="copyright-and-terms-of-use">Copyright and terms of use</h2>
+<ul>
+  <li>Abdul Mateen (HiGHmed)</li>
+  <li>Alexander Zautke (HL7 Germany)</li>
+  <li>Andreas Bietenbeck (DIFUTURE)</li>
+  <li>Andreas G. Henkel (DIFUTURE)</li>
+  <li>Danny Ammon (SMITH)</li>
+  <li>Eva-Maria Riess (HiGHmed)</li>
+  <li>Fabian Prasser (HiGHmed)</li>
+  <li>Felix Erdfelder (SMITH)</li>
+  <li>Gustav Vella (HiGHmed)</li>
+  <li>Heinrich Lautenbacher</li>
+  <li>Julian Saß (HiGHmed)</li>
+  <li>Kutaiba Saleh (SMITH)</li>
+  <li>Martin Federbusch (SMITH)</li>
+  <li>Matthias Löbe (SMITH)</li>
+  <li>Noemi Deppenwiese (MIRACUM)</li>
+  <li>Olga Davidenko (DIFUTURE)</li>
+  <li>Patrick Werner (HL7 Germany)</li>
+  <li>Raffael Bild (DIFUTURE)</li>
+  <li>Sabine Gerber (DIFUTURE)</li>
+  <li>Sylvia Thun (HL7 Germany)</li>
+  <li>Thomas Ganslandt (MIRACUM)</li>
+  <li>Ulrich Sax (HiGHmed)</li>
+</ul>
 
-<p>Copyright © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. The content of this specification is public and its reuse or republication is not restricted. The terms of the underlying FHIR specification apply. Some code systems are published and maintained by other organisations and remain subject to their respective copyright terms.</p>
+<h3 id="copyright-notice-terms-of-use">Copyright notice, terms of use</h3>
+<p>Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin</p>
 
-<h2 id="disclaimer">Disclaimer</h2>
+<p>The content of this specification is public. Claims to reuse or republication are not restricted.</p>
 
-<p>Parts of this document are based on FHIR R4, copyright HL7 International. Although this publication was prepared with great care, the authors cannot accept liability for direct or indirect damage caused by its content.</p>
+<p>On the terms of use of the underlying FHIR technology, see the FHIR base specification.</p>
+
+<p>Some of the code systems used are issued and maintained by other organisations. The copyright of the publishers listed there applies.</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+<p>The content of this document is public. Note that parts of this document are based on FHIR version R4, for which the copyright of HL7 International applies.</p>
+
+<ul>
+  <li>Although this publication was produced with the greatest care, the authors accept no liability of any kind for direct or indirect damage that might arise from the content of this specification.</li>
+</ul>
 
 
 
@@ -457,7 +545,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

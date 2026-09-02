@@ -6,8 +6,6 @@
 
 ## Terminologie
 
-## Terminologien
-
 ### LOINC Überblick
 
 [LOINC](https://www.loinc.org) (Logical Observation Identifiers Names and Codes) ist ein internationales vom Regenstrief Institute herausgegebenes System zur eindeutigen Identifizierung und Kodierung von medizinischen Beobachtungen, insbesondere von Laboruntersuchungen (siehe auch [BfArM](https://www.bfarm.de/DE/Kodiersysteme/Terminologien/LOINC-UCUM/LOINC-und-RELMA/_node.html)). Für eine Einführung zum Thema LOINC existiert ein Video in der [MII-Academy](https://www.medizininformatik-initiative.de/de/konsortien/mii-academy).

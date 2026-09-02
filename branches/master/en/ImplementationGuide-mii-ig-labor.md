@@ -1,4 +1,76 @@
-# Resource MII IG Laborbefund
+# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0
+
+* [**Table of Contents**](toc.md)
+* **MII ImplementationGuide Resource**
+
+## MII ImplementationGuide Resource
+
+This ImplementationGuide resource defines the technical details of this publication, including dependencies and publishing parameters.
+
+* [XML](../ImplementationGuide-mii-ig-labor.xml)
+* [JSON](../ImplementationGuide-mii-ig-labor.json)
+
+### Cross Version Analysis
+
+This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (de.medizininformatikinitiative.kerndatensatz.labor.r4)](../package.r4.tgz) and [R4B (de.medizininformatikinitiative.kerndatensatz.labor.r4b)](../package.r4b.tgz) are available.
+
+### IG Dependencies
+
+This IG contains the following dependencies on other IGs.
+
+
+
+
+
+
+
+> **Where the versions come from.** Every package in the table is pinned directly in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml) (`dependencies:`) — including `hl7.terminology.r4` (THO) and `hl7.fhir.uv.extensions.r4`, and those two deliberately so: the IG Publisher's [automatic-packages rule](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) consults only this guide's **own** dependency list, so without a direct pin every build would silently inject the latest THO/extensions release — a version pinned by the MII meta package alone cannot control the build (verified in the publisher source at the pinned release). A weekly check warns when these two pins drift from what the pinned meta package ships, and the exact versions a concrete build used are recorded in its `qa-versions.json` output.
+
+### Global Profiles
+
+This IG declares the following global profiles — profiles that apply to every instance of their resource type exchanged under this guide. An empty table means this module declares none.
+
+*There are no Global profiles defined*
+
+### Copyrights
+
+This publication includes IP covered under the following statements.
+
+* ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.2.0/CodeSystem-ISO3166Part1.html): [MII_CPS_Labor_CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.md), [MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md)... Show 15 more, [MII_EX_Labor_Quelle_Klinisches_Bezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md), [MII_IG_Labor](index.md), [MII_LM_Labor](StructureDefinition-mii-lm-labor.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md), [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md), [MII_VS_Labor_Laborergbenis_Semiquantitativ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md), [MII_VS_Labor_Laborergebnis_Codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.md), [MII_VS_Labor_Laborergebnis_Qualitativ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md), [MII_VS_Labor_Order_Codes](ValueSet-mii-vs-labor-order-codes.md) and [MII_VS_Labor_Quelle_Klinisches_Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md)
+
+
+* The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
+
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md), [MII_VS_Labor_Order_Codes](ValueSet-mii-vs-labor-order-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md), [MII_EX_Labor_Quelle_Klinisches_Bezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)... Show 8 more, [MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md), [MII_VS_Labor_Laborergbenis_Semiquantitativ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md), [MII_VS_Labor_Laborergebnis_Qualitativ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md), [MII_VS_Labor_Quelle_Klinisches_Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [DataAbsentReason](http://terminology.hl7.org/7.2.0/CodeSystem-data-absent-reason.html): [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)... Show 5 more, [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [diagnosticServiceSectionId](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0074.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) and [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)
+* [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/555](Encounter-555.md)
+* [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+
+
+### IG Parameter Settings and Expansion Parameters
+
+Expansion parameters are query parameters that can be passed to a `ValueSet` `$expand` operation to control how the ValueSet is expanded — that is, how the full list of codes is generated from the ValueSet definition. The [IG Parameters](https://hl7.org/fhir/tools/en/CodeSystem-ig-parameters.html) used for this IG are declared in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/blob/main/sushi-config.yaml) (`parameters:`). A module that pins its expansion parameters through a CRMI manifest additionally links the generated `Parameters` resource from here (see the commented manifest blocks in `sushi-config.yaml` and the Metadata Overview page, if the module keeps it).
 
 
 
@@ -161,7 +233,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T07:15:34+00:00",
+  "date" : "2026-09-02T11:58:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -2063,28 +2135,6 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "terminology.html"
-          }],
-          "nameUrl" : "terminology.html",
-          "title" : "Terminology",
-          "_title" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Terminologie"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          },
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "laboratory-timestamps.html"
           }],
           "nameUrl" : "laboratory-timestamps.html",
@@ -2098,6 +2148,59 @@
               {
                 "url" : "content",
                 "valueString" : "Zeitpunkte im Labor"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          },
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "interpretation.html"
+          }],
+          "nameUrl" : "interpretation.html",
+          "title" : "Interpretation",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "specimen.html"
+          }],
+          "nameUrl" : "specimen.html",
+          "title" : "Specimen",
+          "_title" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Probenmaterial"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          },
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "terminology.html"
+          }],
+          "nameUrl" : "terminology.html",
+          "title" : "Terminology",
+          "_title" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Terminologie"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -2239,28 +2342,6 @@
               {
                 "url" : "content",
                 "valueString" : "Laboranforderung"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          },
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specimen.html"
-          }],
-          "nameUrl" : "specimen.html",
-          "title" : "Specimen",
-          "_title" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Probenmaterial"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]
@@ -2473,6 +2554,15 @@
             "url" : "http://hl7.org/fhir/StructureDefinition/translation"
           }]
         },
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "ImplementationGuide-mii-ig-labor.html"
+        }],
+        "nameUrl" : "ImplementationGuide-mii-ig-labor.html",
+        "title" : "MII ImplementationGuide Resource",
         "generation" : "markdown"
       }]
     },

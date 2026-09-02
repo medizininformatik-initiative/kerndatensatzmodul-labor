@@ -212,8 +212,10 @@
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -238,7 +240,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -333,7 +334,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>Laboratory tests are central to most medical diagnoses. Preliminary results can matter for time-critical applications, while final results are normally used for patient care and research. The central document represented by this module is a medical laboratory report. Because the module is broadly applicable, the source guide does not prescribe consortium-specific scenarios.</p>
+<p>Laboratory tests are central to most medical diagnoses. Preliminary results can matter for time-critical applications, while final results are normally used for patient care and research alike. The central document this module represents is the laboratory report produced by a medical laboratory. Because the module is broadly applicable, it does not prescribe consortium-specific scenarios.</p>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p>If you are new to the MII Core Dataset, we recommend exploring the following resources:</p>
+
+<p><strong>1. Logical Models — Understanding Module Content</strong></p>
+
+<p>The <a href="logical-models.html">Logical Models</a> provide a high-level, technology-independent description of the data this module covers:</p>
+
+<ul>
+  <li><strong>Laboratory report</strong> — identification, status, clinical reference date, documentation date</li>
+  <li><strong>Specimen</strong> — identification, collection and laboratory receipt time, specimen type, body site</li>
+  <li><strong>Laboratory test</strong> — parameter, result and interpretation, reference range, method</li>
+  <li><strong>Laboratory order</strong> — identification, status, request date</li>
+</ul>
+
+<p>They let you understand the scope and structure of the available data without knowing the FHIR details.</p>
+
+<p><strong>2. UML Diagrams — Visualizing Data Relationships</strong></p>
+
+<p>The <a href="uml-diagrams.html">UML Diagrams</a> show how the elements relate to one another. They are particularly useful for:</p>
+
+<ul>
+  <li>understanding how a report, its tests and their specimens hang together</li>
+  <li>identifying the elements relevant to a research question</li>
+</ul>
+
+<p><strong>3. Examples — Seeing FHIR Data in Practice</strong></p>
+
+<p>The <a href="examples.html">Examples</a> show samples of the FHIR resources, among them a quantitative result, a result given as a range, one given as a ratio, and a test carrying no value at all. They demonstrate:</p>
+
+<ul>
+  <li>how laboratory data is represented in FHIR</li>
+  <li>what a complete report looks like</li>
+  <li>how the resources reference one another</li>
+</ul>
+
+<p><strong>4. Domain Guidance — What to Watch Out for in an Analysis</strong></p>
+
+<p>Three subjects decide whether laboratory data is read correctly:</p>
+
+<ul>
+  <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a> — laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. The page explains which one is the right basis for a chronological analysis.</li>
+  <li><a href="interpretation.html">Interpretation</a> — how a result is assessed and which codes are used for it.</li>
+  <li><a href="specimen.html">Specimen</a> — what was measured from, and where comments about the specimen are kept.</li>
+</ul>
 
 
 
@@ -360,7 +407,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

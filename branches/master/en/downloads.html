@@ -212,8 +212,10 @@
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -238,7 +240,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -329,11 +330,93 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#package-file" id="markdown-toc-package-file">Package File</a></li>
+  <li><a href="#downloadable-copy-of-the-specification" id="markdown-toc-downloadable-copy-of-the-specification">Downloadable Copy of the Specification</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#definitions-and-expansions" id="markdown-toc-definitions-and-expansions">Definitions and Expansions</a></li>
+  <li><a href="#consolidated-csv-and-excel-representations" id="markdown-toc-consolidated-csv-and-excel-representations">Consolidated CSV and Excel Representations</a></li>
+  <li><a href="#schematrons" id="markdown-toc-schematrons">Schematrons</a></li>
+  <li><a href="#implementation-guide-resource" id="markdown-toc-implementation-guide-resource">Implementation Guide Resource</a></li>
+  <li><a href="#sources" id="markdown-toc-sources">Sources</a></li>
+  <li><a href="#version-history" id="markdown-toc-version-history">Version History</a></li>
+</ul>
 
-<p>The IG Publisher provides the generated package and resource downloads through the links in the page header and artifact index. Source FSH and the editable PlantUML diagram are maintained in the <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor">GitHub repository</a>.</p>
+</div>
+<p>This page links the downloadable artifacts of this implementation guide.</p>
+
+<h3 id="package-file">Package File</h3>
+
+<p>The package contains every value set, profile and extension of this version, together with the page list and the URLs, in the NPM format most FHIR tools read. It is the first choice for generating implementation artifacts, because it carries all the rules that make a profile valid. It does not replace reading the specification. See <a href="http://hl7.org/fhir/R4/validation.html">validating profiles and resources</a> in the FHIR specification.</p>
+
+<ul>
+  <li><a href="../package.tgz">Package (compressed folder)</a></li>
+</ul>
+
+<p>This guide is bilingual, and the publisher additionally produces one package per language, each carrying the designations of that language:</p>
+
+<ul>
+  <li><a href="../de.medizininformatikinitiative.kerndatensatz.labor.en.tgz">Package, English</a></li>
+  <li><a href="../de.medizininformatikinitiative.kerndatensatz.labor.de.tgz">Package, German</a></li>
+</ul>
+
+<h3 id="downloadable-copy-of-the-specification">Downloadable Copy of the Specification</h3>
+
+<p>A copy of this guide for local hosting:</p>
+
+<ul>
+  <li><a href="../full-ig.zip">Downloadable Copy (compressed folder)</a></li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>All examples of this guide:</p>
+
+<ul>
+  <li><a href="../examples.xml.zip">XML (compressed folder)</a></li>
+  <li><a href="../examples.json.zip">JSON (compressed folder)</a></li>
+</ul>
+
+<h3 id="definitions-and-expansions">Definitions and Expansions</h3>
+
+<p>The conformance resources on their own, and the value sets with their expansions resolved:</p>
+
+<ul>
+  <li><a href="../definitions.xml.zip">Definitions, XML</a> · <a href="../definitions.json.zip">JSON</a></li>
+  <li><a href="../expansions.xml.zip">Expansions, XML</a> · <a href="../expansions.json.zip">JSON</a></li>
+</ul>
+
+<h3 id="consolidated-csv-and-excel-representations">Consolidated CSV and Excel Representations</h3>
+
+<p>All profile information in a single table, useful for reviewing element properties across profiles:</p>
+
+<ul>
+  <li><a href="../csvs.zip">CSV (compressed folder)</a></li>
+  <li><a href="../excels.zip">Excel (compressed folder)</a></li>
+</ul>
+
+<h3 id="schematrons">Schematrons</h3>
+
+<ul>
+  <li><a href="../schematrons.zip">Schematrons (compressed folder)</a></li>
+</ul>
+
+<h3 id="implementation-guide-resource">Implementation Guide Resource</h3>
+
+<p>The technical definition of this publication, including its dependencies and publishing parameters:</p>
+
+<ul>
+  <li><a href="ImplementationGuide-mii-ig-labor.json">ImplementationGuide resource (JSON)</a></li>
+</ul>
+
+<h3 id="sources">Sources</h3>
+
+<p>The FSH sources and the editable PlantUML diagram are maintained in the <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor">GitHub repository</a>.</p>
+
+<h3 id="version-history">Version History</h3>
+
+<p>For earlier versions and the change history, see <a href="version-history.html">Versioning</a>.</p>
 
 
 
@@ -360,7 +443,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -212,8 +212,10 @@
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -238,7 +240,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -333,7 +334,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>The <a href="StructureDefinition-mii-lm-labor.html">MII Laboratory logical model</a> represents the module's dataset independently of the concrete FHIR resource profiles. The approved information model for the Laboratory module is available in <a href="https://art-decor.org/art-decor/decor-datasets--mide-">ART-DECOR</a>; it is additionally represented as a FHIR logical model:</p>
+<p>The logical model gives a conceptual view of the data this module covers. It describes the elements and their meaning independently of the FHIR resource structure, so it can be read without knowing the profiles.</p>
+
+<h3 id="laboratory-module">Laboratory Module</h3>
+
+<ul>
+  <li><a href="StructureDefinition-mii-lm-labor.html">MII Laboratory logical model</a> — laboratory report, specimen, laboratory test and laboratory order, with every element and its description</li>
+</ul>
+
+<p>Its data types and cardinalities are <strong>not</strong> normative. What implementations have to satisfy is defined by the profiles; each element of the logical model maps onto an element of a concrete FHIR resource.</p>
 
 <p>Guidance on how to interpret the contents of this table can be found<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">here</a></p>
 <table class="dict" data-fhir="generated"><tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Laborbefund">  </a><span style="color: grey">0</span><b>. Laborbefund</b><a href="#Laborbefund" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Logische Repräsentation des Basismoduls Labor</p>
@@ -656,143 +665,9 @@ final korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem
 
 </table>
 
-<p>The logical model documents data elements and their meaning. Its data types and cardinalities are not normative; the FHIR profiles define the binding implementation requirements. Each logical-model element maps to an element of a concrete FHIR resource.</p>
+<hr />
 
-<h2 id="laboratory-report">Laboratory report</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Logical element</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Laboratory report identification</td>
-      <td>Identifier of the report</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Status of the report</td>
-    </tr>
-    <tr>
-      <td>Clinical reference date/time</td>
-      <td>Time at which the measured specimen property most likely represented the patient's property; normally collection time, otherwise laboratory receipt time</td>
-    </tr>
-    <tr>
-      <td>Documentation date</td>
-      <td>Time at which the report was verified and released</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="specimen">Specimen</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Logical element</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Identification</td>
-      <td>Specimen identifier</td>
-    </tr>
-    <tr>
-      <td>Collection time</td>
-      <td>Time at which the specimen was obtained</td>
-    </tr>
-    <tr>
-      <td>Laboratory receipt time</td>
-      <td>Time at which the specimen arrived at the laboratory</td>
-    </tr>
-    <tr>
-      <td>Specimen type</td>
-      <td>Type of specimen</td>
-    </tr>
-    <tr>
-      <td>Body site</td>
-      <td>Patient body site from which the specimen was obtained</td>
-    </tr>
-    <tr>
-      <td>Comment</td>
-      <td>Free-text specimen comment</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="laboratory-test">Laboratory test</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Logical element</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Identification and status</td>
-      <td>Identifier and processing status of the test</td>
-    </tr>
-    <tr>
-      <td>Area and group</td>
-      <td>Diagnostic discipline and optional local grouping</td>
-    </tr>
-    <tr>
-      <td>Laboratory parameter</td>
-      <td>Analysed or measured parameter, normally coded with LOINC</td>
-    </tr>
-    <tr>
-      <td>Clinical reference time</td>
-      <td>Time associated with the clinical meaning of the result</td>
-    </tr>
-    <tr>
-      <td>Documentation date</td>
-      <td>Time at which the result was documented</td>
-    </tr>
-    <tr>
-      <td>Result and interpretation</td>
-      <td>Measured value and its interpretation</td>
-    </tr>
-    <tr>
-      <td>Comment and method</td>
-      <td>Additional comment and the method where it is not implicit in the code</td>
-    </tr>
-    <tr>
-      <td>Reference range</td>
-      <td>Reference interval for the analysis</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="laboratory-request">Laboratory request</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Logical element</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Identification</td>
-      <td>Identifier of the request</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Status of the request</td>
-    </tr>
-    <tr>
-      <td>Request date</td>
-      <td>Date on which the laboratory request was created</td>
-    </tr>
-  </tbody>
-</table>
+<p>For the FHIR profiles implementing this model, see <a href="profiles.html">Profiles</a>; for the relationships between the elements, the <a href="uml-diagrams.html">UML diagrams</a>.</p>
 
 
 
@@ -819,7 +694,7 @@ final korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

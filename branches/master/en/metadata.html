@@ -212,8 +212,10 @@
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -238,7 +240,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -329,9 +330,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#publication-at-a-glance" id="markdown-toc-publication-at-a-glance">Publication at a Glance</a></li>
+  <li><a href="#crmi-coverage" id="markdown-toc-crmi-coverage">CRMI Coverage</a></li>
+  <li><a href="#profiles-applied" id="markdown-toc-profiles-applied">Profiles Applied</a></li>
+  <li><a href="#versioning-and-provenance" id="markdown-toc-versioning-and-provenance">Versioning and Provenance</a></li>
+  <li><a href="#manifest-and-reproducibility" id="markdown-toc-manifest-and-reproducibility">Manifest and Reproducibility</a></li>
+  <li><a href="#practical-use" id="markdown-toc-practical-use">Practical Use</a></li>
+</ul>
+
 </div>
+<p>This page documents the computable metadata this guide carries, so that its artifacts can be found, judged, validated, cited and reused — by people and by software alike.</p>
+
+<p>The model follows the <a href="https://hl7.org/fhir/uv/crmi/STU2/en/index.html">Canonical Resource Management Infrastructure</a> (CRMI), pinned here to version 2.0.0. This guide applies the parts of CRMI that are useful for publishing a versioned MII core data set module; it does not implement CRMI in full.</p>
+
+<p>What is described here is preliminary. It records the current state and will change as CRMI matures and the MII publication process settles.</p>
+
+<h3 id="publication-at-a-glance">Publication at a Glance</h3>
 
 <table>
   <thead>
@@ -363,7 +379,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Publisher</td>
-      <td>Medical Informatics Initiative</td>
+      <td>Medizininformatik Initiative</td>
     </tr>
     <tr>
       <td>Licence</td>
@@ -372,7 +388,141 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Release and approval dates remain unset until release governance supplies them.</p>
+<h3 id="crmi-coverage">CRMI Coverage</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>CRMI area</th>
+      <th>Used here</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/artifact-lifecycle.html">Artifact lifecycle</a></td>
+      <td>Shareable, publishable and computable profiles; <code class="language-plaintext highlighter-rouge">status</code>; <code class="language-plaintext highlighter-rouge">version</code>; <code class="language-plaintext highlighter-rouge">resource-approvalDate</code>; <code class="language-plaintext highlighter-rouge">resource-lastReviewDate</code>; <code class="language-plaintext highlighter-rouge">resource-effectivePeriod</code>; contributor extensions</td>
+      <td>Places each artifact in authoring, release and maintenance.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/version-manifest.html">Version manifest</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CRMIManifestParameters</code>; <code class="language-plaintext highlighter-rouge">cqf-expansionParameters</code>; <code class="language-plaintext highlighter-rouge">pin-manifest</code>; canonical version pinning</td>
+      <td>Makes terminology expansion reproducible.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/artifact-conventions.html">Artifact conventions</a></td>
+      <td><code class="language-plaintext highlighter-rouge">artifact-versionAlgorithm</code> (<code class="language-plaintext highlighter-rouge">semver</code>); <code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code> (<code class="language-plaintext highlighter-rouge">package</code>)</td>
+      <td>Declares how versions are formed and what a version change covers.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/packaging.html">Packaging</a></td>
+      <td><code class="language-plaintext highlighter-rouge">packageId</code>; package version; <code class="language-plaintext highlighter-rouge">package-source</code></td>
+      <td>Ties every artifact to the package it was released in.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/publishing.html">Publishing</a></td>
+      <td>Publishable profiles; author, editor, reviewer, endorser; <code class="language-plaintext highlighter-rouge">artifact-purpose</code>; <code class="language-plaintext highlighter-rouge">artifact-usage</code>; <code class="language-plaintext highlighter-rouge">artifact-topic</code></td>
+      <td>Adds governance and stated intent.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/distribution.html">Distribution</a></td>
+      <td>Published pages; JSON and XML; the package</td>
+      <td>Serves downstream tooling. CRMI repository operations are not implemented.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/artifact-signing.html">Signing</a></td>
+      <td>not implemented</td>
+      <td>Possible later.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Not present: a <code class="language-plaintext highlighter-rouge">CRMIManifestLibrary</code>, repository operations such as <code class="language-plaintext highlighter-rouge">$package</code>, publication through a knowledge artifact repository, syndication feeds, artifact signing.</p>
+
+<h3 id="profiles-applied">Profiles Applied</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource type</th>
+      <th>CRMI profiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ImplementationGuide</td>
+      <td>shareable · publishable · crmi-implementationguide</td>
+    </tr>
+    <tr>
+      <td>StructureDefinition</td>
+      <td>shareable · publishable</td>
+    </tr>
+    <tr>
+      <td>CapabilityStatement</td>
+      <td>shareable · publishable</td>
+    </tr>
+    <tr>
+      <td>ValueSet</td>
+      <td>shareable · publishable · computable, plus the FHIR core <code class="language-plaintext highlighter-rouge">shareablevalueset</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The knowledge capability each artifact declares follows from this: 17 artifacts are <code class="language-plaintext highlighter-rouge">shareable</code> and <code class="language-plaintext highlighter-rouge">publishable</code>, the nine value sets additionally <code class="language-plaintext highlighter-rouge">computable</code>.</p>
+
+<p>Note that declaring several profiles at once has a visible consequence in the quality report. The validator checks each profile separately, and the CRMI slices are distributed complementarily — the shareable profiles slice <code class="language-plaintext highlighter-rouge">versionAlgorithm</code> and <code class="language-plaintext highlighter-rouge">versionPolicy</code>, the publishable ones the contributor extensions. Every extension therefore matches a slice in one profile and counts as unmatched in the others. Those notes are suppressed in <code class="language-plaintext highlighter-rouge">input/ignoreWarnings.txt</code>; they do not indicate misplaced metadata.</p>
+
+<h3 id="versioning-and-provenance">Versioning and Provenance</h3>
+
+<p><code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code> is <code class="language-plaintext highlighter-rouge">package</code>: artefact versions move with the package, not independently. <code class="language-plaintext highlighter-rouge">artifact-versionAlgorithm</code> is <code class="language-plaintext highlighter-rouge">semver</code>, while the package itself carries the MII CalVer version <code class="language-plaintext highlighter-rouge">2027.0.0</code> — the algorithm describes how versions are compared, not the scheme the MII release process uses.</p>
+
+<p><code class="language-plaintext highlighter-rouge">package-source</code> records package id, version and the module base URL on every artifact, so a resource taken out of context still names where it came from. The base URL identifies no artifact of its own; the validator's note about that is suppressed with a justification.</p>
+
+<h3 id="manifest-and-reproducibility">Manifest and Reproducibility</h3>
+
+<p>Terminology versions are pinned in <code class="language-plaintext highlighter-rouge">input/resources/Parameters-expansion-manifest.json</code>, referenced three times over: by <code class="language-plaintext highlighter-rouge">cqf-expansionParameters</code> on the ImplementationGuide, and by the publisher parameters <code class="language-plaintext highlighter-rouge">path-expansion-params</code> and <code class="language-plaintext highlighter-rouge">pin-manifest</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">force-system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org|2.82</code></td>
+      <td>Forces the LOINC version even where a foreign value set names another.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td>SNOMED CT <code class="language-plaintext highlighter-rouge">900000000000207008/version/20260701</code></td>
+      <td>The version the policy of the Meta module prescribes for v2027.*</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org|2.82</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">artifact-version-policy-codes|3.0.0</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">pin-canonicals: pin-all</code> additionally fixes every canonical reference to a version. The publisher reports each of those as an informational line; they are suppressed.</p>
+
+<p>The pinned versions live in <strong>three</strong> places — the aliases in <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code>, this manifest, and the value-set aliases carrying code system versions. They cannot be merged into one: SUSHI reads the aliases, the IG Publisher reads the manifest, and neither can see the other. A version bump therefore has to touch all three by hand.</p>
+
+<p>So that drift does not go unnoticed, <code class="language-plaintext highlighter-rouge">scripts/terminology-pins.test.mjs</code> checks them against one another on every push, via <code class="language-plaintext highlighter-rouge">convention-check.yml</code>. Two kinds of agreement are covered: the literal duplication of LOINC and SNOMED between the aliases and the manifest, and the agreement of the versioned aliases with what the pinned THO and extensions packages actually ship.</p>
+
+<h3 id="practical-use">Practical Use</h3>
+
+<p>The metadata is visible in the JSON and XML of every artifact page, and in the <a href="downloads.html">package</a>. It is descriptive: it does not change what a profile requires. The manifest parameters are the exception — they shape expansion and validation, and therefore the generated output.</p>
 
 
 
@@ -399,7 +549,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

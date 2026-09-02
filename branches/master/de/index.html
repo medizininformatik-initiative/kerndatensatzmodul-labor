@@ -181,11 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -210,7 +212,6 @@
       <li><a href="diagnostic-report.html">Laborbefund</a></li>
       <li><a href="observation.html">Laboruntersuchung</a></li>
       <li><a href="service-request.html">Laboranforderung</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
@@ -342,20 +343,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#kerndatensatz-modul-laborbefund" id="markdown-toc-kerndatensatz-modul-laborbefund">Kerndatensatz-Modul Laborbefund</a></li>
+  <li><a href="#hintergrund" id="markdown-toc-hintergrund">Hintergrund</a></li>
+  <li><a href="#impressum" id="markdown-toc-impressum">Impressum</a></li>
+  <li><a href="#ansprechpartner" id="markdown-toc-ansprechpartner">Ansprechpartner</a></li>
+  <li><a href="#autoren-in-alphabetischer-reihenfolge" id="markdown-toc-autoren-in-alphabetischer-reihenfolge">Autoren (in alphabetischer Reihenfolge)</a></li>
+  <li><a href="#copyright-hinweis-nutzungshinweise" id="markdown-toc-copyright-hinweis-nutzungshinweise">Copyright-Hinweis, Nutzungshinweise</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
-<h1 id="kerndatensatz-modul-laborbefund">Kerndatensatz-Modul Laborbefund</h1>
+<h3 id="kerndatensatz-modul-laborbefund">Kerndatensatz-Modul Laborbefund</h3>
 
 <p>Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Laborbefund' der Medizininformatik-Initiative.
 Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.</p>
+
+<p>Laboruntersuchungen spielen bei den meisten medizinischen Diagnosen eine entscheidende Rolle. Vorläufige Ergebnisse können bereits in zeitkritischen Anwendungen relevant sein, etwa wenn eine klinische Entscheidungsunterstützung vor einem niedrigen Hämoglobinwert warnt. Endgültige Laborergebnisse werden sowohl in der Versorgung als auch in der Forschung genutzt. Zentrales Dokument und Gegenstand dieses Moduls ist der Befund eines medizinischen Labors.</p>
+
+<h4 id="zielgruppen">Zielgruppen</h4>
+
+<div class="ig-highlight ig-highlight-blue">
+  <h5>Implementierende</h5>
+  <p>Für Datenmanagement und Integration in Datenintegrationszentren, für Entwicklung und Architektur FHIR-basierter Lösungen.</p>
+
+  <ul>
+    <li>→ <a href="profiles.html">Profile</a> — die verbindlichen Festlegungen</li>
+    <li>→ <a href="implementer-guidance.html">Hinweise für Implementierende</a> — Konformität, Artefakte, Validierung</li>
+    <li>→ <a href="logical-models.html">Logische Modelle</a> und <a href="uml-diagrams.html">UML-Diagramme</a> — die konzeptionelle Sicht</li>
+  </ul>
+</div>
+
+<div class="ig-highlight ig-highlight-green">
+  <h5>Forschende</h5>
+  <p>Für Wissenschaftlerinnen und Wissenschaftler, die mit MII-Daten arbeiten.</p>
+
+  <ul>
+    <li>→ <a href="researcher-guidance.html">Hinweise für Forschende</a> — der Einstieg</li>
+    <li>→ <a href="guidance.html">Modulbeschreibung</a> — Bezugszeitpunkte, Interpretationen, Probenmaterial</li>
+    <li>→ <a href="examples.html">Beispiele</a> — wie die Daten in der Praxis aussehen</li>
+  </ul>
+</div>
+
+<h3 id="hintergrund">Hintergrund</h3>
+
+<div style="clear: both;">
+  <img src="Modul_Laborbefund.jpg" alt="Übersicht des Moduls Laborbefund" style="display: block; max-width: 70%; height: auto; margin: 20px 0 10px 0;" />
+  <p style="text-align: left; font-style: italic; margin-top: 0;">Das Modul Laborbefund im MII-Kerndatensatz</p>
+</div>
+
+<h4 id="modulübersicht">Modulübersicht</h4>
+
+<p>Das Modul umfasst:</p>
+
+<ul>
+  <li>den Laborbefund, der die Untersuchungen einer Anforderung zusammenfasst (<a href="StructureDefinition-mii-pr-labor-laborbefund.html">DiagnosticReport</a>)</li>
+  <li>die einzelne Laboruntersuchung mit Messwert, Interpretation und Referenzbereich (<a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">Observation</a>)</li>
+  <li>die Laboranforderung, zu der die Untersuchungen durchgeführt wurden (<a href="StructureDefinition-mii-pr-labor-laboranforderung.html">ServiceRequest</a>)</li>
+  <li>zwei Extensions: die <a href="StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.html">Quelle des klinischen Bezugsdatums</a> und die <a href="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.html">interpretationsbeeinflussende Eigenschaft</a></li>
+</ul>
+
+<p>Das Probenmaterial wird hier nicht profiliert. Das Modul nutzt das Profil des Moduls Biobank nach; die Zuordnung beschreibt die Seite <a href="specimen.html">Probenmaterial</a>.</p>
 
 <table>
   <thead>
@@ -384,10 +433,10 @@ Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profi
   </tbody>
 </table>
 
-<h2 id="impressum">Impressum</h2>
+<h3 id="impressum">Impressum</h3>
 <p>Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative erstellt worden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..</p>
 
-<h2 id="ansprechpartner">Ansprechpartner</h2>
+<h3 id="ansprechpartner">Ansprechpartner</h3>
 <ul>
   <li>Martin Federbusch, Universitätsklinikum Leipzig</li>
   <li>Danny Ammon, Universitätsklinikum Jena</li>
@@ -399,7 +448,7 @@ für die vernetzte medizinische Forschung e.V.</li>
 
 <p>Anmerkungen und Kritik werden als <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/issues">GitHub-Issues</a> entgegengenommen.</p>
 
-<h2 id="autoren-in-alphabetischer-reihenfolge">Autoren (in alphabetischer Reihenfolge)</h2>
+<h3 id="autoren-in-alphabetischer-reihenfolge">Autoren (in alphabetischer Reihenfolge)</h3>
 
 <ul>
   <li>Abdul Mateen (HiGHmed)</li>
@@ -426,7 +475,7 @@ für die vernetzte medizinische Forschung e.V.</li>
   <li>Ulrich Sax (HiGHmed)</li>
 </ul>
 
-<h2 id="copyright-hinweis-nutzungshinweise">Copyright-Hinweis, Nutzungshinweise</h2>
+<h3 id="copyright-hinweis-nutzungshinweise">Copyright-Hinweis, Nutzungshinweise</h3>
 <p>Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin</p>
 
 <p>Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.</p>
@@ -435,7 +484,7 @@ für die vernetzte medizinische Forschung e.V.</li>
 
 <p>Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher).</p>
 
-<h2 id="disclaimer">Disclaimer</h2>
+<h3 id="disclaimer">Disclaimer</h3>
 <p>Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die das Copyright von HL7 International gilt.</p>
 
 <ul>
@@ -467,7 +516,7 @@ für die vernetzte medizinische Forschung e.V.</li>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

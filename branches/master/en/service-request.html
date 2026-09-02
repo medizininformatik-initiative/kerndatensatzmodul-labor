@@ -212,8 +212,10 @@
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
-      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
       <li><a href="references.html">References</a></li>
     </ul>
@@ -238,7 +240,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -329,13 +330,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#metadata" id="markdown-toc-metadata">Metadata</a></li>
+  <li><a href="#content" id="markdown-toc-content">Content</a></li>
+  <li><a href="#constraintsinvariants" id="markdown-toc-constraintsinvariants">Constraints/Invariants</a></li>
+  <li><a href="#restful-api" id="markdown-toc-restful-api">RESTful API</a></li>
+  <li><a href="#mappings" id="markdown-toc-mappings">Mappings</a></li>
+</ul>
+
 </div>
+<p>The <a href="StructureDefinition-mii-pr-labor-laboranforderung.html">MII Laboratory Request profile</a> — ServiceRequestLab — represents the order for a laboratory test.</p>
 
-<h1 id="mii-laboratory-request-profile"><a href="StructureDefinition-mii-pr-labor-laboranforderung.html">MII Laboratory Request Profile</a></h1>
+<h3 id="metadata">Metadata</h3>
 
-<p>ServiceRequestLab represents a request for a laboratory test.</p>
+<p>Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.</p>
+
+<h3 id="content">Content</h3>
 
 <div class="structure-tabs">
   <ul class="nav nav-tabs" role="tablist">
@@ -1029,7 +1040,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Request provenance<br /></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 3dcded51-4f57-42ec-a9b9-d5d27e85c79d
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 318d3dfd-010a-4d70-bfb4-4ba022920736
 document.getElementById('cbmii-pr-labor-laboranforderungS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laboranforderungS'), 'binding', document.getElementById('cbmii-pr-labor-laboranforderungS-binding').checked, document.getElementById('ppmii-pr-labor-laboranforderungS'));
 document.getElementById('cbmii-pr-labor-laboranforderungS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1276,7 +1287,7 @@ filterDesc(document.getElementById('mii-pr-labor-laboranforderungS'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Patient or consumer-oriented instructions</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 3dcded51-4f57-42ec-a9b9-d5d27e85c79d
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br /><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a></td></tr><script type="text/javascript">  // 318d3dfd-010a-4d70-bfb4-4ba022920736
 document.getElementById('cbmii-pr-labor-laboranforderungD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-pr-labor-laboranforderungD'), 'binding', document.getElementById('cbmii-pr-labor-laboranforderungD-binding').checked, document.getElementById('ppmii-pr-labor-laboranforderungD'));
 document.getElementById('cbmii-pr-labor-laboranforderungD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1556,7 +1567,7 @@ filterDesc(document.getElementById('mii-pr-labor-laboranforderungD'), 'obligatio
   &lt;/<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T07:15:34+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-02T11:58:19+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
@@ -8091,7 +8102,7 @@ All Provenances should have some historical version of this Request as their sub
   },
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T07:15:34+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2026-09-02T11:58:19+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Medizininformatik Initiative",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -15490,56 +15501,109 @@ All Provenances should have some historical version of this Request as their sub
   </div>
 </div>
 
-<p>Constraints, invariants, metadata and the base profile are displayed in the generated profile views. Required interactions and search parameters are defined by the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">CapabilityStatement</a>.</p>
+<p>&lt;/br&gt;</p>
 
-<h2 id="key-mappings-and-implementation-notes">Key mappings and implementation notes</h2>
+<h3 id="constraintsinvariants">Constraints/Invariants</h3>
+
+<p>Constraints and invariants are shown in the structure views on the profile page.</p>
+
+<h3 id="restful-api">RESTful API</h3>
+
+<p>The mandatory interactions and search parameters are set out in the <a href="CapabilityStatement-mii-cps-labor-capabilitystatement.html">CapabilityStatement</a> among the normative artifacts.</p>
+
+<h3 id="mappings">Mappings</h3>
 
 <table>
   <thead>
     <tr>
       <th>FHIR element</th>
-      <th>Meaning</th>
+      <th>Explanation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.identifier</code></td>
-      <td>Request number, uniquely identified by system and value; links the requesting and laboratory systems</td>
+      <td>Patient.id</td>
+      <td>Must Support, but optional</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.status</code></td>
-      <td>Fixed because the profile represents final requests</td>
+      <td>Patient.meta</td>
+      <td>Must Support, but optional</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.intent</code></td>
-      <td>Fixed to represent a diagnostic request</td>
+      <td>ServiceRequest.identifier</td>
+      <td>Request number of the test requested, identified unambiguously at least by system and value. Serves to link the laboratory system and the requesting system.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.category</code></td>
-      <td>Fixed Laboratory coding slice from HL7 v2; additional codings are permitted</td>
+      <td>ServiceRequest.status</td>
+      <td>Fixed value, since only final requests are to be represented.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.code</code></td>
-      <td>Requested parameter as CodeableConcept; use text if no code is available</td>
+      <td>ServiceRequest.intent</td>
+      <td>Fixed value, a ServiceRequest always represents the request for diagnostics.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.subject</code></td>
-      <td>Must reference the patient</td>
+      <td>ServiceRequest.category</td>
+      <td>Fixed Laboratory (HL7 v2) coding slice, further codings permitted.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.authoredOn</code></td>
-      <td>Creation time or, if unavailable, receipt time of the request</td>
+      <td>ServiceRequest.code</td>
+      <td>CodeableConcept, no restrictions. If the laboratory parameters requested are not available in coded form -&gt; CodeableConcept.text</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.specimen</code></td>
-      <td>Optional specimen reference; other modules may impose additional requirements</td>
+      <td>ServiceRequest.subject</td>
+      <td>A reference to the patient must always be present</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest.authoredOn</td>
+      <td>Creation date of the request; if that is not available, the date the request was received</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest.specimen</td>
+      <td>Optional reference; future specifications of further Core Dataset modules may set out requirements in this regard.</td>
     </tr>
   </tbody>
 </table>
 
-<p>These elements map to the request identification, status, laboratory parameter, request date and specimen elements of the logical model.</p>
+<p>&lt;/br&gt;</p>
 
-<p><a href="ServiceRequest-mii-exa-labor-laboranforderung.html">Complete ServiceRequest example</a></p>
+<table>
+  <thead>
+    <tr>
+      <th>FHIR element</th>
+      <th>Logical dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ServiceRequest.identifier</td>
+      <td>Laborbefund.Laboranforderung.Identifikation</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest.status</td>
+      <td>Laborbefund.Laboranforderung.Status</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest.code</td>
+      <td>Laborbefund.Laboranforderung.Laborparameter</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest.authoredOn</td>
+      <td>Laborbefund.Laboranforderung.Anforderungsdatum</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest.specimen</td>
+      <td>Laborbefund.Laboranforderung.Probenmaterial</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>Examples</strong></p>
+
+<p>Example (complete):</p>
+
+<p><a href="ServiceRequest-mii-exa-labor-laboranforderung.html">Complete example as a ServiceRequest</a></p>
 
 
 
@@ -15566,7 +15630,7 @@ All Provenances should have some historical version of this Request as their sub
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

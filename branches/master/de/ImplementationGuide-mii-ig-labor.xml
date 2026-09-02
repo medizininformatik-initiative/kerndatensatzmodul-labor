@@ -137,7 +137,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-02T07:15:34+00:00"/>
+  <date value="2026-09-02T11:58:19+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1464,18 +1464,34 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="terminology.html"/>
-          </extension>
-          <nameUrl value="terminology.html"/>
-          <title value="Terminologie"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="laboratory-timestamps.html"/>
           </extension>
           <nameUrl value="laboratory-timestamps.html"/>
           <title value="Zeitpunkte im Labor"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="interpretation.html"/>
+          </extension>
+          <nameUrl value="interpretation.html"/>
+          <title value="Interpretation"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="specimen.html"/>
+          </extension>
+          <nameUrl value="specimen.html"/>
+          <title value="Probenmaterial"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="terminology.html"/>
+          </extension>
+          <nameUrl value="terminology.html"/>
+          <title value="Terminologie"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -1532,14 +1548,6 @@
           </extension>
           <nameUrl value="service-request.html"/>
           <title value="Laboranforderung"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specimen.html"/>
-          </extension>
-          <nameUrl value="specimen.html"/>
-          <title value="Probenmaterial"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -1621,6 +1629,14 @@
         </extension>
         <nameUrl value="translationinfo.html"/>
         <title value="Übersetzungsinformationen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ImplementationGuide-mii-ig-labor.html"/>
+        </extension>
+        <nameUrl value="ImplementationGuide-mii-ig-labor.html"/>
+        <title value="MII ImplementationGuide Resource"/>
         <generation value="markdown"/>
       </page>
     </page>

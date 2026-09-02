@@ -8,7 +8,7 @@
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
 
-## Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
+### Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
 
 Das Modul LABOR bildet Laborbefunde ab, die typischerweise in einem Zentrallabor eines Klinikums erhoben werden. Diese Befunde spielen in den meisten Use Cases der MII eine zentrale Rolle:
 

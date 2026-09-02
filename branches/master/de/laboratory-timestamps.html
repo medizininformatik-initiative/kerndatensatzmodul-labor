@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.5"}
-    h3,h4,h5,h6{--heading-prefix:"2.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.4"}
+    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -181,11 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -210,7 +212,6 @@
       <li><a href="diagnostic-report.html">Laborbefund</a></li>
       <li><a href="observation.html">Laboruntersuchung</a></li>
       <li><a href="service-request.html">Laboranforderung</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
@@ -300,18 +301,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#wichtige-zeitpunkte-im-laborbefund" id="markdown-toc-wichtige-zeitpunkte-im-laborbefund">Wichtige Zeitpunkte im Laborbefund</a></li>
+  <li><a href="#untersuchungszeitpunkt-klinischer-bezugszeitpunkt-der-laboruntersuchung-und-klinischer-bezugszeitpunkt-des-laborbefundes" id="markdown-toc-untersuchungszeitpunkt-klinischer-bezugszeitpunkt-der-laboruntersuchung-und-klinischer-bezugszeitpunkt-des-laborbefundes">Untersuchungszeitpunkt (Klinischer Bezugszeitpunkt der Laboruntersuchung) und Klinischer Bezugszeitpunkt des Laborbefundes:</a></li>
+  <li><a href="#fhir-mapping" id="markdown-toc-fhir-mapping">FHIR-Mapping</a></li>
+</ul>
+
 </div>
+<h3 id="wichtige-zeitpunkte-im-laborbefund">Wichtige Zeitpunkte im Laborbefund</h3>
 
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+<p>Im Verlauf einer Laboranalyse, von der Abnahme der Probe bis zur Übermittlung des Befundes an den Einsender, können verschiedene reelle Zeitpunkte für die Interpretation relevant werden. Viele dieser Zeitpunkte sind in medizinischen Laboren automatisiert und in hoher Qualität in entsprechenden Zeitstempeln dokumentiert, während manche Zeitstempel aufgrund von z.B. manueller Dokumentation nur ein grobes Surrogat für die reellen Zeitpunkte sein können.</p>
 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
+<h3 id="untersuchungszeitpunkt-klinischer-bezugszeitpunkt-der-laboruntersuchung-und-klinischer-bezugszeitpunkt-des-laborbefundes">Untersuchungszeitpunkt<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> (Klinischer Bezugszeitpunkt der Laboruntersuchung) und Klinischer Bezugszeitpunkt des Laborbefundes:</h3>
+<h4 id="beschreibung---klinischer-bezugszeitpunkt-der-laboruntersuchung">Beschreibung - Klinischer Bezugszeitpunkt der Laboruntersuchung:</h4>
+<p>Für jede Analyse gibt es einen Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (z.B. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. In der Regel ist dies der Zeitpunkt der Entnahme/Probengewinnung. Die Präzision soll ausreichen, um auch Minuten zu erfassen.
+Optimalerweise liegt ein gut dokumentierter Entnahmezeitpunkt vor und kann so als klinischer Bezugszeitpunkt verwendet werden. Oft liegt aber kein Entnahmezeitpunkt vor bzw. dessen Genauigkeit ist bei weitem nicht ausreichend, sodass häufig der Laboreingangszeitpunkt oder ggf. andere Zeitpunkte (z.B. geschätzter/berechneter Entnahmezeitpunkt) verwendet werden.
+Der klinische Bezugszeitpunkt wird in der klinischen Praxis am ehesten verwendet, um mehrere Analysen des gleichen Laborparameters chronologisch zu ordnen (z.B. bei Darstellung von Werteverläufen).</p>
 
-</p>
+<h4 id="beschreibung---klinischer-bezugszeitpunkt-des-laborbefundes">Beschreibung - Klinischer Bezugszeitpunkt des Laborbefundes:</h4>
+<p>In den meisten Fällen gilt:
+klinischer Bezugszeitpunkt der Untersuchung = klinischer Bezugszeitpunkt des Befundes,
+da die verwendeten Zeitpunkte (Probenentnahme/Laboreingang) oft für alle Untersuchungen eines Laborbefundes gleich sind.
+Falls verschiedene Entnahme-/Laboreingangszeitpunkte für die verschiedenen Untersuchungen eines Laborbefundes zur Verfügung stehen, können diese als klinischer Bezugszeitpunkt der Untersuchungen verwendet werden, während der klinische Bezugszeitpunkt des Befundes dann durch den z.B. frühesten dieser Zeitpunkte definiert werden kann.
+Interpretation: Dieser Zeitpunkt ist wichtig, um verschiedene Analysen im Zeitverlauf sortieren zu können. Er liegt immer vor dem Dokumentationszeitpunkt.
+Datenmodell: Der klinische Bezugszeitpunkt wird sowohl als Eigenschaft einer Einzeluntersuchung (Observation) als auch des Laborbefundes (DiagnosticReport) modelliert.
+(Dadurch entsteht in den meisten Fällen eine Redundanz dieser Information. Außerdem werden Laboreingangs- und Entnahmezeitpunkt als Eigenschaften der Probe (Specimen Bioprobe Core, Modul Biobank) modelliert, was weitere Redundanzen schafft.)</p>
 
-<p>In der <a href="guidance.html">Beschreibung des Moduls</a> wird erläutert, welche Zeitpunkte im Verlauf der Laboranforderung und -untersuchung dokumentiert werden.
-Diese werden wie folgt im FHIR-Modell abgebildet:</p>
+<h4 id="entnahmezeitpunkt">Entnahmezeitpunkt:</h4>
+<p>Beschreibung: Zeitpunkt der Probenentnahme/Probengewinnung (z.B. Blutentnahme, Abstrich, Punktion).
+Interpretation: Der dokumentierte Entnahmezeitpunkt ist häufig schlechter als Untersuchungszeitpunkt (klinischer Bezugszeitpunkt) geeignet als der Laboreingangszeitpunkt (oder vom Laboreingangszeitpunkt abgeleitete Berechnungen/Schätzungen des Entnahmezeitpunkts).
+Die Dokumentation des Entnahmezeitpunkts erfolgt nicht flächendeckend und manuell und dadurch kaum standardisierbar. Ausnahmen kommen vor z.B. bei Studiendaten oder bestimmten Fragestellungen (z.B. hormonelle Tagesprofile) sind aber auch dort nicht immer verlässlich. Systeme zur automatisierten Erfassung des Blutentnahmezeitpunkts (z.B. durch Etikettenscan am Patientenarmband oder –bett) sind bisher nicht weit verbreitet.
+Datenmodell: Im Datenmodell wird der Entnahmezeitpunkt als Eigenschaft des Probenmaterials (Specimen Bioprobe Core, Modul Biobank) modelliert und zusätzlich ggf. als Untersuchungszeitpunkt (klinischer Bezugszeitpunkt, s.o.).  Wurde das Probenmaterial über einen definierten Zeitraum gesammelt (z.B. 24h Urin), kann dieser auch als Eigenschaft des Probenmaterials hinterlegt werden. In diesem Fall stellt der Entnahmezeitpunkt einen Zeitraum dar.</p>
+
+<h4 id="laboreingangszeitpunkt">Laboreingangszeitpunkt:</h4>
+<p>Beschreibung: Zeitpunkt der Ankunft des Probenmaterials im Labor, auch Probeneingangszeitpunkt.
+Interpretation: „Datum und Uhrzeit des Eingangs des Untersuchungsmaterials“ ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt der Berichtausgabe) – für alle medizinischen Labore in Deutschland (RiLiBÄK 2019/23) und akkreditierte Labore international (DIN EN ISO 15189_2023).
+Außerdem wird der Laboreingangszeitpunkt in vielen Laboren mit bereits voretikettierten Proben automatisiert dokumentiert. Dies führt zu einer hohen Dokumentationsqualität und Verfügbarkeit, wodurch sich der Laboreingangszeitpunkt häufig besser als Untersuchungszeitpunkt (klinischer Bezugszeitpunkt) eignet als der Entnahmezeitpunkt.
+Datenmodell: Im Datenmodell wird der Laboreingangszeitpunkt als Eigenschaft des Probenmaterials (Specimen Bioprobe Core, Modul Biobank) modelliert und in vielen Fällen zusätzlich als Untersuchungszeitpunkt (klinischer Bezugszeitpunkt, s.o.).</p>
+
+<h4 id="anforderungszeitpunkt">Anforderungszeitpunkt:</h4>
+<p>Beschreibung: Zeitpunkt, zu dem eine Anforderung (auch Laboranforderung, Leistungsanforderung) für eine Laboruntersuchung versendet wurde oder – falls nicht vorhanden – Laboreingangszeitpunkt dieser Anforderung.
+Interpretation: In der Regel handelt es sich um den frühesten dokumentierten Zeitpunkt einer Laboruntersuchung, kann aber bei Nachforderungen auch nach der Blutentnahme sein (auch Tage bis Wochen).
+Je nach Art der Anforderung (z.B. elektronisch vor Ankunft der Probe oder in Papierform nahezu zeitgleich mit Laboreingang der Probe) und Dokumentation von Nachforderungszeitpunkten ist dieser Zeitpunkt nur sehr heterogenen und standortabhängig interpretierbar. Für klinische Fragestellungen ist er meist weniger relevant, kann aber z.B. für Fragestellungen der Prozessoptimierung oder Plausibilitätsüberprüfung verwendet werden.
+Datenmodell: Als Eigenschaft des Auftrags (ServiceRequest) modelliert.</p>
+
+<h4 id="auftragszeitpunkt--begriff-nicht-verwendet"><del>Auftragszeitpunkt</del> – Begriff nicht verwendet:</h4>
+<p>Der Begriff Auftragszeitpunkt wird bewusst nicht verwendet, da er zum Teil mehrdeutig verwendet wird. Zum einen kann der Zeitpunkt einer Beauftragung einer Laboruntersuchung (Anforderungszeitpunkt) gemeint sein. Zum anderen wird der Begriff „Auftrag“ z.T. synonym für einen Laborbefund verwendet und somit kann „Auftragszeitpunkt“ als „Zeitpunkt eines Laborbefundes“ und damit als verschiedene Zeitstempel (klinischer Bezugszeitpunkt oder Dokumentationszeitpunkt des Laborbefundes) fehlverstanden werden.</p>
+
+<h4 id="dokumentationszeitpunkt-der-laboruntersuchung">Dokumentationszeitpunkt der Laboruntersuchung</h4>
+<p>Beschreibung: Zeitpunkt, an dem das Ergebnis der Laboruntersuchung für das klinische Personal zur Verfügung steht bzw. einsehbar ist, typischerweise nach Verifizierung (auch „Freigabe“ oder „Validierung“) des Ergebnisses durch Laborpersonal.
+Interpretation: Die Dokumentation eines Freigabezeitpunkts oder Übermittlungszeitpunkts (oder Druckzeitpunkt bei Befundversand in Papierform) erfolgt häufig automatisiert in Laborinformationssystemen. Da dieser Zeitstempel aber nicht verpflichtend in Laborbefunden angegeben werden muss, steht er nicht immer zur Verfügung.
+Erst ab diesem Zeitpunkt sind medizinische Konsequenzen auf Basis des Laborergebnisses möglich. Je nach Dauer der Laboruntersuchung vergehen Stunden oder Tage (selten Wochen) zwischen klinischem Bezugszeitpunkt und Dokumentationszeitpunkt liegen.
+Datenmodell: Als Eigenschaft der Laboruntersuchung (Observation) modelliert.</p>
+
+<h4 id="dokumentationszeitpunkt-des-laborberichts">Dokumentationszeitpunkt des Laborberichts</h4>
+<p>Beschreibung: Zeitpunkt, an dem der Laborbefund/Laborbericht dokumentiert (verifiziert/freigegeben bzw. ausgegeben) wurde. Da ein Laborbefund häufig mehrere Analysen umfasst, sollte für diesen der älteste Zeitstempel der enthaltenen Laboruntersuchungen gewählt werden, wenn das Datum der Befundfreigabe nicht explizit zur Verfügung steht.
+Vorläufige Befunde können eigenständig mit einem entsprechenden Status abgebildet werden.
+Interpretation: Die Angabe des „Zeitpunkts der Berichtausgabe“ (RiLiBÄK 2019/23) ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt des Probeneingangs) – für alle medizinischen Labore in Deutschland (RiLiBÄK 2019/23) und akkreditierte Labore international (DIN EN ISO 15189_2023).
+Es ist damit eine höhere Verfügbarkeit zu erwarten als beim Dokumentationszeitpunkt der (Einzel-)Laboruntersuchung. Für manche Fragestellungen kann der Dokumentationszeitpunkt des Laborberichts somit als Surrogat verwendet werden, ab welchem Zeitpunkt medizinische Konsequenzen auf Basis des Laborergebnisses möglich sind. Dabei ist aber zu beachten, dass zum Teil Abweichungen von Tagen (selten Wochen) auftreten können.
+Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p>
+
+<h3 id="fhir-mapping">FHIR-Mapping</h3>
 
 <table>
   <thead>
@@ -334,11 +385,11 @@ Diese werden wie folgt im FHIR-Modell abgebildet:</p>
       <td>Specimen.receivedTime (Modul Biobank) und &lt;/br&gt;ggf. Observation.effective[x] (siehe Modulbeschreibung des Modul Laborbefund)</td>
     </tr>
     <tr>
-      <td>Untersuchungszeitpunkt<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> (Klinischer Bezugszeitpunkt der Laboruntersuchung)</td>
+      <td>Untersuchungszeitpunkt<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> (Klinischer Bezugszeitpunkt der Laboruntersuchung)</td>
       <td>Observation.effectiveDateTime</td>
     </tr>
     <tr>
-      <td>Klinische Bezugszeitpunkt des Laborberichts</td>
+      <td>Klinischer Bezugszeitpunkt des Laborberichts</td>
       <td>DiagnosticReport.effective[x]</td>
     </tr>
     <tr>
@@ -357,7 +408,7 @@ Diese werden wie folgt im FHIR-Modell abgebildet:</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1">
-      <p>In Version 1.0.6 von 2021 widersprach die Beschreibung des Begriffs „Untersuchungszeitpunkt“ teilweise sich selbst und hat somit zu Mehrdeutigkeiten geführt. (Konkret stand „Zeitpunkt des Beginns der Untersuchung/Messung“ im Widerspruch zur ebenfalls erwähnten FHIR-ITEM-Beschreibung „Zeitpunkt zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach“.) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>In Version 1.0.6 von 2021 widersprach die Beschreibung des Begriffs „Untersuchungszeitpunkt“ teilweise sich selbst und hat somit zu Mehrdeutigkeiten geführt. (Konkret stand „Zeitpunkt des Beginns der Untersuchung/Messung“ im Widerspruch zur ebenfalls erwähnten FHIR-ITEM-Beschreibung „Zeitpunkt zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach“.) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
   </ol>
 </div>
@@ -386,7 +437,7 @@ Diese werden wie folgt im FHIR-Modell abgebildet:</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

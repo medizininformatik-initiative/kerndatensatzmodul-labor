@@ -181,11 +181,13 @@
       <li><a href="guidance.html">Modulbeschreibung</a></li>
       <li><a href="researcher-guidance.html">Hinweise für Forschende</a></li>
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
-      <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
+      <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
-      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
+      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
+      <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -210,7 +212,6 @@
       <li><a href="diagnostic-report.html">Laborbefund</a></li>
       <li><a href="observation.html">Laboruntersuchung</a></li>
       <li><a href="service-request.html">Laboranforderung</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
@@ -300,15 +301,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#publikation-im-überblick" id="markdown-toc-publikation-im-überblick">Publikation im Überblick</a></li>
+  <li><a href="#crmi-abdeckung" id="markdown-toc-crmi-abdeckung">CRMI-Abdeckung</a></li>
+  <li><a href="#angewandte-profile" id="markdown-toc-angewandte-profile">Angewandte Profile</a></li>
+  <li><a href="#versionierung-und-herkunft" id="markdown-toc-versionierung-und-herkunft">Versionierung und Herkunft</a></li>
+  <li><a href="#manifest-und-reproduzierbarkeit" id="markdown-toc-manifest-und-reproduzierbarkeit">Manifest und Reproduzierbarkeit</a></li>
+  <li><a href="#praktischer-nutzen" id="markdown-toc-praktischer-nutzen">Praktischer Nutzen</a></li>
+</ul>
+
 </div>
+<p>Diese Seite dokumentiert die maschinenlesbaren Metadaten dieses Leitfadens — damit seine Artefakte auffindbar, beurteilbar, validierbar, zitierbar und nachnutzbar sind, für Menschen wie für Software.</p>
 
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+<p>Das Modell folgt der <a href="https://hl7.org/fhir/uv/crmi/STU2/en/index.html">Canonical Resource Management Infrastructure</a> (CRMI), hier auf Version 2.0.0 festgelegt. Der Leitfaden nutzt die Teile von CRMI, die für die Publikation eines versionierten MII-Kerndatensatzmoduls nützlich sind; vollständig umgesetzt ist CRMI nicht.</p>
 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
+<p>Das Beschriebene ist vorläufig. Es hält den aktuellen Stand fest und wird sich ändern, wenn CRMI reift und sich der MII-Publikationsprozess festigt.</p>
 
-</p>
+<h3 id="publikation-im-überblick">Publikation im Überblick</h3>
 
 <table>
   <thead>
@@ -319,7 +329,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   </thead>
   <tbody>
     <tr>
-      <td>Paket-ID</td>
+      <td>Package-ID</td>
       <td><code class="language-plaintext highlighter-rouge">de.medizininformatikinitiative.kerndatensatz.labor</code></td>
     </tr>
     <tr>
@@ -340,7 +350,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
     </tr>
     <tr>
       <td>Herausgeber</td>
-      <td>Medizininformatik-Initiative</td>
+      <td>Medizininformatik Initiative</td>
     </tr>
     <tr>
       <td>Lizenz</td>
@@ -349,7 +359,141 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   </tbody>
 </table>
 
-<p>Veröffentlichungs- und Freigabedatum bleiben offen, bis sie durch die Release-Governance festgelegt werden.</p>
+<h3 id="crmi-abdeckung">CRMI-Abdeckung</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>CRMI-Bereich</th>
+      <th>Hier genutzt</th>
+      <th>Zweck</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/artifact-lifecycle.html">Artefakt-Lebenszyklus</a></td>
+      <td>Shareable-, Publishable- und Computable-Profile; <code class="language-plaintext highlighter-rouge">status</code>; <code class="language-plaintext highlighter-rouge">version</code>; <code class="language-plaintext highlighter-rouge">resource-approvalDate</code>; <code class="language-plaintext highlighter-rouge">resource-lastReviewDate</code>; <code class="language-plaintext highlighter-rouge">resource-effectivePeriod</code>; Beitragende</td>
+      <td>Verortet jedes Artefakt in Erstellung, Freigabe und Pflege.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/version-manifest.html">Versions-Manifest</a></td>
+      <td><code class="language-plaintext highlighter-rouge">CRMIManifestParameters</code>; <code class="language-plaintext highlighter-rouge">cqf-expansionParameters</code>; <code class="language-plaintext highlighter-rouge">pin-manifest</code>; Canonical-Versionsfestlegung</td>
+      <td>Macht die Terminologie-Expansion reproduzierbar.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/artifact-conventions.html">Artefakt-Konventionen</a></td>
+      <td><code class="language-plaintext highlighter-rouge">artifact-versionAlgorithm</code> (<code class="language-plaintext highlighter-rouge">semver</code>); <code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code> (<code class="language-plaintext highlighter-rouge">package</code>)</td>
+      <td>Legt fest, wie Versionen gebildet werden und was ein Versionswechsel umfasst.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/packaging.html">Packaging</a></td>
+      <td><code class="language-plaintext highlighter-rouge">packageId</code>; Package-Version; <code class="language-plaintext highlighter-rouge">package-source</code></td>
+      <td>Bindet jedes Artefakt an das Package, in dem es freigegeben wurde.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/publishing.html">Publishing</a></td>
+      <td>Publishable-Profile; Autor, Editor, Reviewer, Endorser; <code class="language-plaintext highlighter-rouge">artifact-purpose</code>; <code class="language-plaintext highlighter-rouge">artifact-usage</code>; <code class="language-plaintext highlighter-rouge">artifact-topic</code></td>
+      <td>Ergänzt Governance und erklärte Absicht.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/distribution.html">Distribution</a></td>
+      <td>Publizierte Seiten; JSON und XML; das Package</td>
+      <td>Bedient nachgelagerte Werkzeuge. CRMI-Repository-Operationen sind nicht umgesetzt.</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/crmi/STU2/en/artifact-signing.html">Signing</a></td>
+      <td>nicht umgesetzt</td>
+      <td>Später denkbar.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nicht vorhanden: eine <code class="language-plaintext highlighter-rouge">CRMIManifestLibrary</code>, Repository-Operationen wie <code class="language-plaintext highlighter-rouge">$package</code>, Publikation über ein Knowledge Artifact Repository, Syndication-Feeds, Artefakt-Signaturen.</p>
+
+<h3 id="angewandte-profile">Angewandte Profile</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressourcentyp</th>
+      <th>CRMI-Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ImplementationGuide</td>
+      <td>shareable · publishable · crmi-implementationguide</td>
+    </tr>
+    <tr>
+      <td>StructureDefinition</td>
+      <td>shareable · publishable</td>
+    </tr>
+    <tr>
+      <td>CapabilityStatement</td>
+      <td>shareable · publishable</td>
+    </tr>
+    <tr>
+      <td>ValueSet</td>
+      <td>shareable · publishable · computable, dazu das FHIR-Kernprofil <code class="language-plaintext highlighter-rouge">shareablevalueset</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Daraus folgt die je Artefakt deklarierte Knowledge Capability: 17 Artefakte sind <code class="language-plaintext highlighter-rouge">shareable</code> und <code class="language-plaintext highlighter-rouge">publishable</code>, die neun ValueSets zusätzlich <code class="language-plaintext highlighter-rouge">computable</code>.</p>
+
+<p>Die Mehrfach-Profilierung hat eine sichtbare Folge im Qualitätsbericht. Der Validator prüft jedes Profil einzeln, und die CRMI-Slices sind komplementär verteilt — die Shareable-Profile slicen <code class="language-plaintext highlighter-rouge">versionAlgorithm</code> und <code class="language-plaintext highlighter-rouge">versionPolicy</code>, die Publishable-Profile die Beitragenden-Extensions. Jede Extension trifft also in einem Profil einen Slice und gilt in den anderen als unmatched. Diese Meldungen sind in <code class="language-plaintext highlighter-rouge">input/ignoreWarnings.txt</code> unterdrückt; sie bedeuten nicht, dass Metadaten am falschen Ort stehen.</p>
+
+<h3 id="versionierung-und-herkunft">Versionierung und Herkunft</h3>
+
+<p><code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code> steht auf <code class="language-plaintext highlighter-rouge">package</code>: Artefaktversionen wandern mit dem Package, nicht unabhängig davon. <code class="language-plaintext highlighter-rouge">artifact-versionAlgorithm</code> ist <code class="language-plaintext highlighter-rouge">semver</code>, während das Package selbst die MII-CalVer-Version <code class="language-plaintext highlighter-rouge">2027.0.0</code> trägt — der Algorithmus beschreibt, wie Versionen verglichen werden, nicht das Schema des MII-Release-Prozesses.</p>
+
+<p><code class="language-plaintext highlighter-rouge">package-source</code> hält an jedem Artefakt Package-ID, Version und die Modul-Basis-URL fest, sodass eine aus dem Zusammenhang gelöste Ressource ihre Herkunft weiterhin nennt. Die Basis-URL identifiziert selbst kein Artefakt; die entsprechende Validator-Meldung ist mit Begründung unterdrückt.</p>
+
+<h3 id="manifest-und-reproduzierbarkeit">Manifest und Reproduzierbarkeit</h3>
+
+<p>Die Terminologie-Versionen stehen in <code class="language-plaintext highlighter-rouge">input/resources/Parameters-expansion-manifest.json</code> und werden dreifach referenziert: über <code class="language-plaintext highlighter-rouge">cqf-expansionParameters</code> an der ImplementationGuide-Ressource sowie über die Publisher-Parameter <code class="language-plaintext highlighter-rouge">path-expansion-params</code> und <code class="language-plaintext highlighter-rouge">pin-manifest</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Wert</th>
+      <th>Wirkung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">force-system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org|2.82</code></td>
+      <td>Erzwingt die LOINC-Version auch dort, wo ein fremdes ValueSet eine andere nennt.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td>SNOMED CT <code class="language-plaintext highlighter-rouge">900000000000207008/version/20260701</code></td>
+      <td>Die von der Policy des Moduls Meta für v2027.* vorgeschriebene Version.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org|2.82</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">artifact-version-policy-codes|3.0.0</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">pin-canonicals: pin-all</code> legt zusätzlich jede Canonical-Referenz auf eine Version fest. Der Publisher meldet jede davon als Information; sie sind unterdrückt.</p>
+
+<p>Die Versionsfestlegungen liegen an <strong>drei</strong> Stellen — den Aliasen in <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code>, diesem Manifest und den ValueSet-Aliasen mit CodeSystem-Versionen. Zusammenführen lassen sie sich nicht: SUSHI liest die Aliase, der IG Publisher das Manifest, und keiner sieht den anderen. Ein Versionswechsel muss deshalb alle drei von Hand erfassen.</p>
+
+<p>Damit das Auseinanderlaufen nicht unbemerkt bleibt, prüft <code class="language-plaintext highlighter-rouge">scripts/terminology-pins.test.mjs</code> sie gegeneinander — bei jedem Push über <code class="language-plaintext highlighter-rouge">convention-check.yml</code>. Geprüft wird zweierlei: die wörtliche Dopplung von LOINC und SNOMED zwischen Aliasen und Manifest, und die Übereinstimmung der versionsbehafteten Aliase mit dem, was das gepinnte THO- bzw. Extensions-Paket tatsächlich ausliefert.</p>
+
+<h3 id="praktischer-nutzen">Praktischer Nutzen</h3>
+
+<p>Die Metadaten stehen im JSON und XML jeder Artefaktseite sowie im <a href="downloads.html">Package</a>. Sie sind beschreibend und ändern nicht, was ein Profil fordert. Ausnahme sind die Manifest-Parameter: Sie beeinflussen Expansion und Validierung und damit die erzeugte Ausgabe.</p>
 
 
 
@@ -376,7 +520,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 07:15+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:58+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
