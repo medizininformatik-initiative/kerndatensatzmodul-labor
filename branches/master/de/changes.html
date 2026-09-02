@@ -328,6 +328,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Alle Profile, ValueSets, das CapabilityStatement und die ImplementationGuide-Ressource tragen CRMI-Metadaten (Shareable, Publishable, ValueSets zusätzlich Computable) samt Freigabe- und Reviewdatum, Gültigkeitszeitraum, Versionspolicy, Package-Herkunft und Beitragenden. Siehe <a href="metadata.html">Metadatenübersicht</a>.</li>
   <li>Pattern- und Fixed-Value-Kodierungen verwenden versionslose System-URLs; eine versionsbehaftete <code class="language-plaintext highlighter-rouge">system</code>-URL würde im Pattern nicht matchen. Die ValueSet-Kompositionen bleiben versionsgebunden.</li>
+  <li>Auch Extension-Referenzen in <code class="language-plaintext highlighter-rouge">type.profile</code> tragen keine Version. Ein Extension-Slice matcht über <code class="language-plaintext highlighter-rouge">Extension.url</code>, in der Instanz eine <code class="language-plaintext highlighter-rouge">uri</code> ohne Version — eine Version dort legt also etwas fest, was beim Matching keine Rolle spielt. Welche Paketversion gilt, steht in den Dependencies; <code class="language-plaintext highlighter-rouge">pin-canonicals</code> legt die Versionen in der publizierten Ausgabe fest.</li>
   <li><code class="language-plaintext highlighter-rouge">Coding.version</code> ist auf <code class="language-plaintext highlighter-rouge">Observation.code</code>, <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> und <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code> als Must Support markiert.</li>
   <li>Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf <code class="language-plaintext highlighter-rouge">2027.0.0-ballot.rc3</code>, den Kandidaten, mit dem dieses Modul gemeinsam balloted wird. Das CapabilityStatement verweist auf dessen Observation-Suchparameter <code class="language-plaintext highlighter-rouge">interpretation</code>, den rc3 unverändert unter derselben Canonical ausliefert.</li>
 </ul>
@@ -538,7 +539,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 15:00+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 15:34+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
