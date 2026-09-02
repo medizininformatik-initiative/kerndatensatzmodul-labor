@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for MII_IG_Labor</h1>
- <p>Generated Wed Sep 02 13:34:38 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-labor">https://www.medizininformatik-initiative.de/fhir/core/modul-labor</a> (<a href="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html">history</a>))</p>
+ <p>Generated Wed Sep 02 15:19:22 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-labor">https://www.medizininformatik-initiative.de/fhir/core/modul-labor</a> (<a href="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -248,11 +248,74 @@
     </td>
   </tr>
   <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>[http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
     <td>http://127.0.0.1:8090/fhir</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
     <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>[http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>Candidate server(s) http://127.0.0.1:8090/fhir dropped for http://example.org/fhir/sid/Laborgruppe: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Candidate server(s) http://127.0.0.1:8090/fhir dropped for http://example.org/fhir/sid/Laborgruppe: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -283,11 +346,25 @@
     <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
   </tr>
   <tr>
-    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>Candidate server(s) http://127.0.0.1:8090/fhir dropped for http://example.org/fhir/sid/Laborgruppe: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:8090/fhir</td>
     <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -295,6 +372,27 @@
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
     <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>Candidate server(s) http://127.0.0.1:8090/fhir dropped for http://example.org/fhir/sid/Laborgruppe: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -810,7 +908,7 @@
   <tr>
     <td>Use primary server for urn:ietf:bcp:47</td>
     <td>http://127.0.0.1:8090/fhir</td>
-    <td>urn:uuid:faba04c3-afa1-4d4e-a824-3b39050f7283|1</td>
+    <td>urn:uuid:d20ea23c-ebb0-4307-8142-a3c0486a7f2c|1</td>
     <td>urn:ietf:bcp:47</td>
     <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
   </tr>
@@ -824,7 +922,7 @@
   <tr>
     <td>Use primary server for urn:ietf:bcp:47</td>
     <td>http://127.0.0.1:8090/fhir</td>
-    <td>urn:uuid:faba04c3-afa1-4d4e-a824-3b39050f7283|1</td>
+    <td>urn:uuid:d20ea23c-ebb0-4307-8142-a3c0486a7f2c|1</td>
     <td>urn:ietf:bcp:47</td>
     <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
   </tr>
@@ -929,7 +1027,7 @@
   <tr>
     <td>Use primary server for urn:ietf:bcp:47</td>
     <td>http://127.0.0.1:8090/fhir</td>
-    <td>urn:uuid:faba04c3-afa1-4d4e-a824-3b39050f7283|1</td>
+    <td>urn:uuid:d20ea23c-ebb0-4307-8142-a3c0486a7f2c|1</td>
     <td>urn:ietf:bcp:47</td>
     <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
   </tr>
@@ -965,7 +1063,7 @@
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:8090/fhir</td>
     <td>null</td>
-    <td>[http://terminology.hl7.org/CodeSystem/v2-0074, http://loinc.org|2.82]</td>
+    <td>[http://terminology.hl7.org/CodeSystem/v2-0074, http://loinc.org]</td>
     <td>[[http://terminology.hl7.org/CodeSystem/v2-0074]: authoritative = , candidates=http://127.0.0.1:8090/fhir, [http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir]</td>
   </tr>
   <tr>
@@ -979,8 +1077,29 @@
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:8090/fhir</td>
     <td>http://hl7.org/fhir/ValueSet/observation-category|4.0.1</td>
-    <td>[http://example.org/fhir/sid/Laborgruppe, http://terminology.hl7.org/CodeSystem/observation-category, http://loinc.org|2.82]</td>
-    <td>[[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=http://127.0.0.1:8090/fhir, [http://terminology.hl7.org/CodeSystem/observation-category]: authoritative = , candidates=http://127.0.0.1:8090/fhir, [http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir]</td>
+    <td>[http://loinc.org, http://terminology.hl7.org/CodeSystem/observation-category]</td>
+    <td>[[http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir, [http://terminology.hl7.org/CodeSystem/observation-category]: authoritative = , candidates=http://127.0.0.1:8090/fhir]</td>
+  </tr>
+  <tr>
+    <td>Candidate server(s) http://127.0.0.1:8090/fhir dropped for http://example.org/fhir/sid/Laborgruppe: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:8090/fhir</td>
+    <td>null</td>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>[http://example.org/fhir/sid/Laborgruppe]: authoritative = , candidates=</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
@@ -1009,13 +1128,6 @@
     <td>null</td>
     <td>http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701</td>
     <td>[http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://loinc.org</td>
-    <td>http://127.0.0.1:8090/fhir</td>
-    <td>http://hl7.org/fhir/ValueSet/observation-category|4.0.1</td>
-    <td>[http://terminology.hl7.org/CodeSystem/observation-category, http://loinc.org|2.82]</td>
-    <td>[[http://terminology.hl7.org/CodeSystem/observation-category]: authoritative = , candidates=http://127.0.0.1:8090/fhir, [http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir]</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
@@ -1212,13 +1324,6 @@
     <td>null</td>
     <td>http://example.org/fhir/CodeSystem/LabTests</td>
     <td>[http://example.org/fhir/CodeSystem/LabTests]: authoritative = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://loinc.org</td>
-    <td>http://127.0.0.1:8090/fhir</td>
-    <td>null</td>
-    <td>http://loinc.org</td>
-    <td>[http://loinc.org|2.82]: authoritative = , candidates=http://127.0.0.1:8090/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
@@ -1602,10 +1707,10 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=en">Error resolving system http://example.org/fhir/CodeSystem/LabTests: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=en&amp;nocache=1788355929806</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=en">Error resolving system http://example.org/fhir/CodeSystem/LabTests: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=en&amp;nocache=1788362202437</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=de">Error resolving system http://example.org/fhir/CodeSystem/LabTests: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=de&amp;nocache=1788355930456</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=de">Error resolving system http://example.org/fhir/CodeSystem/LabTests: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2FCodeSystem%2FLabTests&amp;usage=publication&amp;language=de&amp;nocache=1788362203198</span>
         </li>
       </ul>
     </td>
@@ -1613,7 +1718,14 @@
   <tr>
     <td>http://example.org/fhir/sid/Laborgruppe</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2Fsid%2FLaborgruppe&amp;usage=publication&amp;language=en">Error resolving system http://example.org/fhir/sid/Laborgruppe: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2Fsid%2FLaborgruppe&amp;usage=publication&amp;language=en&amp;nocache=1788355972661</span>
+      <ul>
+        <li>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2Fsid%2FLaborgruppe&amp;usage=publication&amp;language=en">Error resolving system http://example.org/fhir/sid/Laborgruppe: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2Fsid%2FLaborgruppe&amp;usage=publication&amp;language=en&amp;nocache=1788362198155</span>
+        </li>
+        <li>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2Fsid%2FLaborgruppe&amp;usage=publication&amp;language=de">Error resolving system http://example.org/fhir/sid/Laborgruppe: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fexample.org%2Ffhir%2Fsid%2FLaborgruppe&amp;usage=publication&amp;language=de&amp;nocache=1788362198975</span>
+        </li>
+      </ul>
     </td>
   </tr>
   <tr>
@@ -1621,10 +1733,10 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org&amp;usage=publication">Error resolving CodeSystem http://loinc.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org&amp;usage=publication&amp;nocache=1788355932186</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org&amp;usage=publication">Error resolving CodeSystem http://loinc.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org&amp;usage=publication&amp;nocache=1788362205150</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org&amp;usage=publication">Error resolving valueSet http://loinc.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org&amp;usage=publication&amp;nocache=1788355941601</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org&amp;usage=publication">Error resolving valueSet http://loinc.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org&amp;usage=publication&amp;nocache=1788362216429</span>
         </li>
       </ul>
     </td>
@@ -1634,28 +1746,28 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788355932191</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en&amp;nocache=1788362195970</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en%2C+en-US">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en%2C+en-US&amp;nocache=1788355933493</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=de">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=de&amp;nocache=1788362197235</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en&amp;nocache=1788355941925</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788362205153</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en&amp;nocache=1788355942257</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en%2C+en-US">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en%2C+en-US&amp;nocache=1788362206744</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788355961092</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=en&amp;nocache=1788362216832</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=de">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;language=de&amp;nocache=1788355988091</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving system http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788362239565</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving CodeSystem http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788356006852</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving CodeSystem http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788362288426</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving valueSet http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788356006857</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication">Error resolving valueSet http://loinc.org|2.82: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Floinc.org%7C2.82&amp;usage=publication&amp;nocache=1788362288429</span>
         </li>
       </ul>
     </td>
@@ -1663,7 +1775,7 @@
   <tr>
     <td>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl&amp;usage=publication&amp;language=en">Error resolving system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl&amp;usage=publication&amp;language=en&amp;nocache=1788355934252</span>
+      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl&amp;usage=publication&amp;language=en">Error resolving system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl&amp;usage=publication&amp;language=en&amp;nocache=1788362207625</span>
     </td>
   </tr>
   <tr>
@@ -1671,10 +1783,10 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication">Error resolving CodeSystem http://snomed.info/sct: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication&amp;nocache=1788355931847</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication">Error resolving CodeSystem http://snomed.info/sct: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication&amp;nocache=1788362204747</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication">Error resolving valueSet http://snomed.info/sct: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication&amp;nocache=1788355937143</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication">Error resolving valueSet http://snomed.info/sct: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct&amp;usage=publication&amp;nocache=1788362211090</span>
         </li>
       </ul>
     </td>
@@ -1684,25 +1796,25 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788355931853</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788362204751</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en%2C+en-US">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en%2C+en-US&amp;nocache=1788355933165</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en%2C+en-US">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en%2C+en-US&amp;nocache=1788362206355</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en&amp;nocache=1788355937481</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en&amp;nocache=1788362211489</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en&amp;nocache=1788355937812</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;language=en&amp;nocache=1788362211910</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788356001140</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving system http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788362282162</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving CodeSystem http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788356007201</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving CodeSystem http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788362288804</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving valueSet http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788356007206</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication">Error resolving valueSet http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fsnomed.info%2Fsct%7Chttp%3A%2F%2Fsnomed.info%2Fsct%2F900000000000207008%2Fversion%2F20260701&amp;usage=publication&amp;nocache=1788362288807</span>
         </li>
       </ul>
     </td>
@@ -1710,13 +1822,13 @@
   <tr>
     <td>http://terminology.hl7.org/CodeSystem/observation-category</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fobservation-category&amp;usage=publication&amp;language=en">Error resolving system http://terminology.hl7.org/CodeSystem/observation-category: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fobservation-category&amp;usage=publication&amp;language=en&amp;nocache=1788355972666</span>
+      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fobservation-category&amp;usage=publication&amp;language=en">Error resolving system http://terminology.hl7.org/CodeSystem/observation-category: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fobservation-category&amp;usage=publication&amp;language=en&amp;nocache=1788362252973</span>
     </td>
   </tr>
   <tr>
     <td>http://terminology.hl7.org/CodeSystem/v2-0074</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fv2-0074&amp;usage=publication&amp;language=en">Error resolving system http://terminology.hl7.org/CodeSystem/v2-0074: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fv2-0074&amp;usage=publication&amp;language=en&amp;nocache=1788355971857</span>
+      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fv2-0074&amp;usage=publication&amp;language=en">Error resolving system http://terminology.hl7.org/CodeSystem/v2-0074: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fv2-0074&amp;usage=publication&amp;language=en&amp;nocache=1788362252015</span>
     </td>
   </tr>
   <tr>
@@ -1724,13 +1836,13 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=en">Error resolving system http://unitsofmeasure.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=en&amp;nocache=1788355927101</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=en">Error resolving system http://unitsofmeasure.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=en&amp;nocache=1788362196840</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=de">Error resolving system http://unitsofmeasure.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=de&amp;nocache=1788355927444</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=de">Error resolving system http://unitsofmeasure.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;language=de&amp;nocache=1788362197638</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication">Error resolving system http://unitsofmeasure.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;nocache=1788355975340</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication">Error resolving system http://unitsofmeasure.org: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funitsofmeasure.org&amp;usage=publication&amp;nocache=1788362256275</span>
         </li>
       </ul>
     </td>
@@ -1740,10 +1852,10 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en">Error resolving system http://unstats.un.org/unsd/methods/m49/m49.htm: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en&amp;nocache=1788355935261</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en">Error resolving system http://unstats.un.org/unsd/methods/m49/m49.htm: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en&amp;nocache=1788362208832</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en-US">Error resolving system http://unstats.un.org/unsd/methods/m49/m49.htm: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en-US&amp;nocache=1788356013869</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en-US">Error resolving system http://unstats.un.org/unsd/methods/m49/m49.htm: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=http%3A%2F%2Funstats.un.org%2Funsd%2Fmethods%2Fm49%2Fm49.htm&amp;usage=publication&amp;language=en-US&amp;nocache=1788362294832</span>
         </li>
       </ul>
     </td>
@@ -1751,7 +1863,7 @@
   <tr>
     <td>urn:ietf:bcp:47</td>
     <td style="background-color: #ffe3e3">
-      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aietf%3Abcp%3A47&amp;usage=publication&amp;language=en">Error resolving system urn:ietf:bcp:47: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aietf%3Abcp%3A47&amp;usage=publication&amp;language=en&amp;nocache=1788355939585</span>
+      <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aietf%3Abcp%3A47&amp;usage=publication&amp;language=en">Error resolving system urn:ietf:bcp:47: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aietf%3Abcp%3A47&amp;usage=publication&amp;language=en&amp;nocache=1788362214027</span>
     </td>
   </tr>
   <tr>
@@ -1759,13 +1871,13 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication">Error resolving system urn:iso:std:iso:3166: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;nocache=1788355935252</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication">Error resolving system urn:iso:std:iso:3166: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;nocache=1788362208825</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en">Error resolving system urn:iso:std:iso:3166: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en&amp;nocache=1788355935267</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en">Error resolving system urn:iso:std:iso:3166: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en&amp;nocache=1788362208835</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en-US">Error resolving system urn:iso:std:iso:3166: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en-US&amp;nocache=1788356013873</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en-US">Error resolving system urn:iso:std:iso:3166: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication&amp;language=en-US&amp;nocache=1788362294833</span>
         </li>
       </ul>
     </td>
@@ -1775,10 +1887,10 @@
     <td style="background-color: #ffe3e3">
       <ul>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en">Error resolving system urn:iso:std:iso:3166:-2: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en&amp;nocache=1788355935273</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en">Error resolving system urn:iso:std:iso:3166:-2: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en&amp;nocache=1788362208843</span>
         </li>
         <li>
-          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en-US">Error resolving system urn:iso:std:iso:3166:-2: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en-US&amp;nocache=1788356013876</span>
+          <span title="http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en-US">Error resolving system urn:iso:std:iso:3166:-2: Refusing to fetch from non-https URL: http://127.0.0.1:8090/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166%3A-2&amp;usage=publication&amp;language=en-US&amp;nocache=1788362294835</span>
         </li>
       </ul>
     </td>
@@ -1786,7 +1898,7 @@
 </table>
 <h2>Primary Server: http://127.0.0.1:8090/fhir</h2>
 <a href="http://127.0.0.1:8090/fhir"></a>
-<p>Use Count: 192. Code Systems used: </p>
+<p>Use Count: 199. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -1806,6 +1918,12 @@
     <td>http://example.org/fhir/CodeSystem/LabTests</td>
     <td>0</td>
     <td>3</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://example.org/fhir/sid/Laborgruppe</td>
+    <td>0</td>
+    <td>5</td>
     <td></td>
   </tr>
   <tr>

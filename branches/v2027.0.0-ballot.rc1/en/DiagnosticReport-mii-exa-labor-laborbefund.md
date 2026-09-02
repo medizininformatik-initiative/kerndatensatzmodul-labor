@@ -72,9 +72,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "category" : [{
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
-      "code" : "26436-6",
-      "display" : "Laboratory studies (set)"
+      "code" : "26436-6"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",

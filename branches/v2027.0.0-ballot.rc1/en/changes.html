@@ -363,11 +363,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="mii_pr_labor_laborbefund">MII_PR_Labor_Laborbefund</h4>
 <ul>
-  <li>category: The required codings are modelled as separate, open slices on <code class="language-plaintext highlighter-rouge">category.coding</code>:
+  <li>category: <code class="language-plaintext highlighter-rouge">category</code> itself is sliced, open, with one mandatory slice <code class="language-plaintext highlighter-rouge">laborbefund</code> (1..1 MS). Within that slice, <code class="language-plaintext highlighter-rouge">coding</code> carries two open slices:
     <ul>
       <li><code class="language-plaintext highlighter-rouge">loinc-lab</code> (1..1 MS) with <code class="language-plaintext highlighter-rouge">$loinc#26436-6</code></li>
       <li><code class="language-plaintext highlighter-rouge">diagnostic-service-sections</code> (1..1 MS) with <code class="language-plaintext highlighter-rouge">$v2-0074#LAB</code></li>
-      <li>Further codings are permitted.</li>
+      <li>Further codings within the slice, and further <code class="language-plaintext highlighter-rouge">category</code> entries beside it — a laboratory area, for instance — are permitted.</li>
+      <li>The slicing deliberately sits on <code class="language-plaintext highlighter-rouge">category</code>, not on <code class="language-plaintext highlighter-rouge">category.coding</code>: <code class="language-plaintext highlighter-rouge">category</code> is 1..*, and constraints below a repeating element apply to every repetition. On <code class="language-plaintext highlighter-rouge">category.coding</code> every further category would have to repeat <code class="language-plaintext highlighter-rouge">26436-6</code> and <code class="language-plaintext highlighter-rouge">LAB</code>.</li>
+      <li>The slice discriminator carries a single coding; a <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code> with two codings is not usable. The second mandatory coding is enforced by the slicing inside the slice.</li>
     </ul>
   </li>
 </ul>
@@ -378,6 +380,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>code: The binding moves from <code class="language-plaintext highlighter-rouge">code</code> onto the new open slice <code class="language-plaintext highlighter-rouge">code.coding[loinc]</code>, is tightened from <code class="language-plaintext highlighter-rouge">preferred</code> to <code class="language-plaintext highlighter-rouge">extensible</code>, and points at a different IPS ValueSet — <code class="language-plaintext highlighter-rouge">results-laboratory-pathology-observations-uv-ips</code> instead of <code class="language-plaintext highlighter-rouge">results-laboratory-observations-uv-ips</code>. <code class="language-plaintext highlighter-rouge">Observation.code</code> itself no longer carries a binding.</li>
   <li>valueCodeableConcept: Extensible binding to the new ValueSet <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">Coded laboratory result</a>, which combines the qualitative and semiquantitative result ValueSets. The slices <code class="language-plaintext highlighter-rouge">qualitativ</code> and <code class="language-plaintext highlighter-rouge">semiquantitativ</code> originally foreseen have been dropped, because the two ValueSets overlap and can therefore not be discriminated.</li>
   <li>interpretation: Extensible binding to the new ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>, a restricted selection from HL7 v3 ObservationInterpretation (<code class="language-plaintext highlighter-rouge">L</code>, <code class="language-plaintext highlighter-rouge">LU</code>, <code class="language-plaintext highlighter-rouge">N</code>, <code class="language-plaintext highlighter-rouge">H</code>, <code class="language-plaintext highlighter-rouge">HU</code>). Locally common scales such as <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> or <code class="language-plaintext highlighter-rouge">L N H</code> map onto these; beyond the critical notification limit the abnormal codes <code class="language-plaintext highlighter-rouge">HH</code>, <code class="language-plaintext highlighter-rouge">LL</code> and <code class="language-plaintext highlighter-rouge">AA</code> may additionally be used.</li>
+  <li>category: Sliced the same way as on the laboratory report — mandatory slice <code class="language-plaintext highlighter-rouge">laboruntersuchung</code> (1..1 MS) with <code class="language-plaintext highlighter-rouge">$loinc#26436-6</code> and <code class="language-plaintext highlighter-rouge">$observation-category#laboratory</code> inside it. A laboratory area belongs beside it as its own <code class="language-plaintext highlighter-rouge">category</code> entry, not as a further coding of the mandatory one.</li>
   <li>category: Definition made precise ("classification of the laboratory test within the diagnostic discipline and the laboratory group").</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Invariant mii-lab-2: the expression <code class="language-plaintext highlighter-rouge">hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()</code> did not evaluate as described and now reads <code class="language-plaintext highlighter-rouge">hasMember.exists() or value.exists() or dataAbsentReason.exists()</code> — at least one of the three elements has to be present.</li>
 </ul>
@@ -564,7 +567,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 13:31+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 15:15+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

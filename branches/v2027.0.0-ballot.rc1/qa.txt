@@ -1,16 +1,16 @@
 MII_IG_Labor : Validation Results
 =========================================
 
-err = 37, warn = 43, info = 69
+err = 37, warn = 41, info = 71
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.3
-Generated Wed Sep 02 13:34:38 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
+Generated Wed Sep 02 15:19:22 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
  Build Errors : 0 / 4 / 0
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement : 0 / 2 / 72
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund : 0 / 0 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Encounter-555 : 0 / 0 / 1
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ImplementationGuide-mii-ig-labor : 0 / 4 / 55
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert : 0 / 4 / 5
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason : 0 / 2 / 5
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert : 0 / 3 / 6
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason : 0 / 1 / 6
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-range : 0 / 2 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio : 0 / 2 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Organization-7772 : 0 / 0 / 1
@@ -21,8 +21,8 @@ Generated Wed Sep 02 13:34:38 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum : 0 / 2 / 41
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-lm-labor : 0 / 142 / 80
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laboranforderung : 0 / 2 / 160
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laborbefund : 0 / 2 / 168
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung : 0 / 2 / 257
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laborbefund : 0 / 2 / 171
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung : 0 / 6 / 261
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ValueSet-mii-vs-labor-identifier-type-codes : 0 / 3 / 47
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ValueSet-mii-vs-labor-interpretation : 0 / 3 / 57
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct : 3 / 3 / 47
@@ -58,15 +58,15 @@ WARNING: ImplementationGuide/mii-ig-labor: ImplementationGuide.dependsOn[4]: The
 INFORMATION: Resource: The resource ImplementationGuide/mii-ig-labor could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Observation-mii-exa-labor-laborwert.json ==
 INFORMATION: Observation/mii-exa-labor-laborwert: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
-WARNING: Observation/mii-exa-labor-laborwert: Observation.category[0].coding[2].system: A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
-WARNING: Observation/mii-exa-labor-laborwert: Observation.category[0]: The provided code 'http://loinc.org|2.82#26436-6 ('Laboratory studies (set)')' was not found in the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.0.1'; The provided code 'http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte' was not found in the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.0.1'; A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
+WARNING: Observation/mii-exa-labor-laborwert: Observation.category[1].coding[0].system: A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
+INFORMATION: Observation/mii-exa-labor-laborwert: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte)
 INFORMATION: Observation/mii-exa-labor-laborwert: Observation.code.coding[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1
 WARNING: Observation/mii-exa-labor-laborwert: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#umol/L')
 WARNING: Observation/mii-exa-labor-laborwert: Observation.value.ofType(Quantity).extension[0].value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mg/dL')
 == fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason.json ==
 INFORMATION: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
-WARNING: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[0].coding[2].system: A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
-WARNING: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[0]: The provided code 'http://loinc.org|2.82#26436-6 ('Laboratory studies (set)')' was not found in the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.0.1'; The provided code 'http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte' was not found in the value set 'http://hl7.org/fhir/ValueSet/observation-category|4.0.1'; A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
+WARNING: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[1].coding[0].system: A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
+INFORMATION: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte)
 INFORMATION: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.code.coding[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1
 == fsh-generated/resources/Observation-mii-exa-labor-laborwert-range.json ==
 INFORMATION: Observation/mii-exa-labor-laborwert-range: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
@@ -108,14 +108,14 @@ INFORMATION: Resource: The resource StructureDefinition/mii-pr-labor-laboranford
 INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.extension[9].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.extension[10].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 WARNING: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.snapshot.element[92].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.snapshot.element[93].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 INFORMATION: Resource: The resource StructureDefinition/mii-pr-labor-laborbefund could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung.json ==
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///web/publishing/work/task-89/draft/output/ValueSet-results-laboratory-pathology-observations-uv-ips.html' at 'div/div/table/tr/td/a' for 'Results Laboratory/Pathology Observation - IPS' is not a widely supported protocol and should be checked
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.extension[9].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.extension[10].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 WARNING: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.snapshot.element[82].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.snapshot.element[80].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: Resource: The resource StructureDefinition/mii-pr-labor-laboruntersuchung could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-labor-identifier-type-codes.json ==
 INFORMATION: ValueSet/mii-vs-labor-identifier-type-codes: ValueSet.extension[6].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e

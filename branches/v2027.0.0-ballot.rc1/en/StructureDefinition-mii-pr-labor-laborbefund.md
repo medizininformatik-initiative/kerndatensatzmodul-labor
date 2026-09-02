@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T13:31:10+00:00",
+  "date" : "2026-09-02T15:15:11+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -611,6 +611,13 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     {
       "id" : "DiagnosticReport.category",
       "path" : "DiagnosticReport.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "short" : "Kategorie",
       "_short" : {
         "extension" : [{
@@ -665,7 +672,23 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.category.coding",
+      "id" : "DiagnosticReport.category:laborbefund",
+      "path" : "DiagnosticReport.category",
+      "sliceName" : "laborbefund",
+      "short" : "Laborbefund-Kategorie",
+      "definition" : "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig.",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "DiagnosticReport.category:laborbefund.coding",
       "path" : "DiagnosticReport.category.coding",
       "slicing" : {
         "discriminator" : [{
@@ -677,7 +700,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "min" : 2
     },
     {
-      "id" : "DiagnosticReport.category.coding:loinc-lab",
+      "id" : "DiagnosticReport.category:laborbefund.coding:loinc-lab",
       "path" : "DiagnosticReport.category.coding",
       "sliceName" : "loinc-lab",
       "min" : 1,
@@ -689,7 +712,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "mustSupport" : true
     },
     {
-      "id" : "DiagnosticReport.category.coding:diagnostic-service-sections",
+      "id" : "DiagnosticReport.category:laborbefund.coding:diagnostic-service-sections",
       "path" : "DiagnosticReport.category.coding",
       "sliceName" : "diagnostic-service-sections",
       "min" : 1,
