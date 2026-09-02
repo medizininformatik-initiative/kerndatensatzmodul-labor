@@ -1,8 +1,4 @@
-# Laboratory Module Description
-
-Laboratory tests play a decisive role in most medical diagnoses. Preliminary results can already be relevant in time-critical applications, such as clinical decision support warning about a low haemoglobin value. Final laboratory results are normally used in both patient care and research. The central document and subject of this module is the laboratory report produced by a medical laboratory.
-
-[![ART-DECOR model of the laboratory report](ART-DECOR_Laborbefund.png)](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.35&conceptEffectiveDate=2018-06-05T22%3A24%3A45&language=de-DE)
+The elements of this module and their meaning are described by the [logical model](logical-models.html); the [UML diagrams](uml-diagrams.html) show how report, tests, specimen and order relate.
 
 Laboratory reports group tests performed by a medical laboratory. They record whether a report is preliminary or final and several clinically relevant timestamps. A tabular mapping is available on [Laboratory timestamps](laboratory-timestamps.html).
 
@@ -21,10 +17,6 @@ The clinical reference time of the individual test and of the laboratory report 
 - **Report documentation time:** when the report was verified, released or issued. A preliminary report can be represented separately with the appropriate status.
 
 The ambiguous term “order time” is deliberately not used because it may mean either the request time or a timestamp associated with the report.
-
-[![ART-DECOR model of the laboratory test](ART-DECOR_Laboruntersuchung.png)](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.773&conceptEffectiveDate=2019-06-06T09%3A46%3A15&language=de-DE)
-
-[![ART-DECOR model of the laboratory request](ART-DECOR_Laboranforderung.png)](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.923&conceptEffectiveDate=2019-06-07T09%3A37%3A25&language=de-DE)
 
 ## Interpretations and comments
 
@@ -47,7 +39,5 @@ Reports in use today carry differing local codings, for example the five-level s
 Because the binding is extensible, further codes may be used in addition. The ones that matter in practice are the abnormal codes `HH` (critical high), `LL` (critical low) and `AA` (critical abnormal) — for example for results beyond the critical notification limit, the threshold at which the laboratory must phone the requester. They are not part of the module ValueSet, but they are contained in the value set that the FHIR R4 specification uses for `Observation.interpretation`.
 
 ## Specimens
-
-[![ART-DECOR model of the specimen](ART-DECOR_Probenmaterial.png)](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.799&conceptEffectiveDate=2019-06-06T10%3A06%3A13&language=de-DE)
 
 Comments about specimen quality may be represented with the Biobank module's Specimen profile. Alternatively they can remain as additional information on the affected measurement when this matches the source system's granularity.

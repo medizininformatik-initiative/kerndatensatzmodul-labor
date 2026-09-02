@@ -5,13 +5,7 @@
 
 ## Anleitung
 
-## Beschreibung Modul Labor
-
-Laboruntersuchungen spielen bei einem Großteil aller medizinischen Diagnosen eine entscheidende Rolle. Für zeitkritische Anwendungen, z.B. einer Entscheidungsunterstützung, die den Arzt bei einem niedrigen Hämoglobinwert warnt, können auch schon vorläufige Ergebnisse interessant sein. In der Regel werden aber sowohl in der Patientenversorgung als auch in der Forschung die finalen Laborergebnisse verwendet. Zentrales Dokument und Gegenstand dieses Moduls ist dabei der LABORBEFUND eines medizinischen Labors. Aufgrund des breiten Einsatzes des Moduls LABORBEFUND wird auf eine Beschreibung von einzelnen Anwendungen innerhalb der einzelnen Konsortien verzichtet.
-
-**Abbildung Modul LABORBEFUND in ART-DECOR:**
-
-![](ART-DECOR_Laborbefund.png)
+Die Elemente dieses Moduls und ihre Bedeutung beschreibt das [logische Modell](logical-models.md); die [UML-Diagramme](uml-diagrams.md) zeigen, wie Befund, Untersuchungen, Probenmaterial und Anforderung zusammenhängen.
 
 Laborbefunde sind als Dokumente zusammengefasste in einem medizinischen Labor durchgeführte Untersuchungen. Zum einzelnen Laborbefund werden jeweils verschiedene Daten erfasst, insbesondere ob es sich um einen vorläufigen oder abschließenden Befund handelt (**Status**) und verschiedene im Kontext wichtige Zeitpunkte.
 
@@ -57,14 +51,6 @@ Beschreibung: Zeitpunkt, an dem das Ergebnis der Laboruntersuchung für das klin
 
 Beschreibung: Zeitpunkt, an dem der Laborbefund/Laborbericht dokumentiert (verifiziert/freigegeben bzw. ausgegeben) wurde. Da ein Laborbefund häufig mehrere Analysen umfasst, sollte für diesen der älteste Zeitstempel der enthaltenen Laboruntersuchungen gewählt werden, wenn das Datum der Befundfreigabe nicht explizit zur Verfügung steht. Vorläufige Befunde können eigenständig mit einem entsprechenden Status abgebildet werden. Interpretation: Die Angabe des „Zeitpunkts der Berichtausgabe“ (RiLiBÄK 2019/23) ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt des Probeneingangs) – für alle medizinischen Labore in Deutschland (RiLiBÄK 2019/23) und akkreditierte Labore international (DIN EN ISO 15189_2023). Es ist damit eine höhere Verfügbarkeit zu erwarten als beim Dokumentationszeitpunkt der (Einzel-)Laboruntersuchung. Für manche Fragestellungen kann der Dokumentationszeitpunkt des Laborberichts somit als Surrogat verwendet werden, ab welchem Zeitpunkt medizinische Konsequenzen auf Basis des Laborergebnisses möglich sind. Dabei ist aber zu beachten, dass zum Teil Abweichungen von Tagen (selten Wochen) auftreten können. Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.
 
-**Abbildung der einzelnen Laboruntersuchung im Modul LABORBEFUND:**
-
-![](ART-DECOR_Laboruntersuchung.png)
-
-**Abbildung der Laboranforderung im Modul LABORBEFUND:**
-
-![](ART-DECOR_Laboranforderung.png)
-
 ## Interpretationen und Kommentare
 
 Ein wesentlicher Teil des Laborbefundes sind die ärztlichen Interpretationen und die Kommentare, mit denen das Labor dem Einsender hilft, die richtigen Schlüsse aus den Messergebnissen zu ziehen. Die eigentliche Interpretation wird in im Wesentlichen als Freitext abgespeichert. Zusätzliche strukturierte Codierungen sind möglich, allerdings steht SNOMED CT nur bei Verfügbarkeit entsprechender Lizenzen zur Verfügung.
@@ -88,10 +74,6 @@ In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die
 Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden. Praktisch relevant sind die abnormal-Codes `HH` (kritisch erhöht), `LL` (kritisch erniedrigt) und `AA` (kritisch abweichend) – etwa für Werte jenseits der Telefongrenze, also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss. Sie gehören nicht zum Modul-ValueSet, sind aber in dem ValueSet enthalten, das die FHIR-R4-Spezifikation für `Observation.interpretation` verwendet.
 
 ## Probenmaterial
-
-**Abbildung des Probenmaterials im Modul LABORBEFUND:**
-
-![](ART-DECOR_Probenmaterial.png)
 
 Häufig werden in einem Laborbefund auch Kommentare zur Probe angegeben (z.B. "Probe hämolytisch"). Zum jetzigen Zeitpunkt werden diese Informationen nicht im Modul Laborbefund erfasst, können aber im FHIR-Profil Specimen (Specimen Bioprobe Core) des Erweiterungsmoduls Biobank erfasst werden. Alternativ können Kommentare, die sich auf eine Probe beziehen, unstrukturiert als Zusatzinformation zu den entsprechenden Messwerten abgelegt werden. Dies kann auch die sinnvollere Lösung sein, wenn diese Kommentarzuordnung auch in den Primärsystemen auf Untersuchungsebene gehandhabt wird.
 

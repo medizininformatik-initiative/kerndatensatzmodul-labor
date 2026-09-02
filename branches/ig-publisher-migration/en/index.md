@@ -14,6 +14,41 @@
 
 This specification describes the FHIR representation of the Medical Informatics Initiative (MII) core data set module Laboratory Report. It defines the module's use cases, FHIR profiles and terminology resources in their normative form.
 
+Laboratory tests play a decisive role in most medical diagnoses. Preliminary results can already be relevant in time-critical applications, such as clinical decision support warning about a low haemoglobin value. Final laboratory results are normally used in both patient care and research. The central document and subject of this module is the laboratory report produced by a medical laboratory.
+
+#### Target Audience
+
+##### Implementers
+
+For data management and integration in data integration centres, software developers and system architects building FHIR-based solutions.
+
+* → [Profiles](profiles.md) — the normative constraints
+* → [Guidance for Implementers](implementer-guidance.md) — conformance, artifacts, validation
+* → [Logical Models](logical-models.md) and [UML Diagrams](uml-diagrams.md) — the conceptual view
+
+##### Researchers
+
+For scientists working with MII data.
+
+* → [Guidance for Researchers](researcher-guidance.md) — where to start
+* → [Module Description](guidance.md) — reference times, interpretations, specimens
+* → [Examples](examples.md) — what the data looks like in practice
+
+### Background
+
+The Laboratory Report module in the MII core data set
+
+#### Module Overview
+
+The module covers:
+
+* the laboratory report grouping the tests of one request ([DiagnosticReport](StructureDefinition-mii-pr-labor-laborbefund.md))
+* the individual laboratory test with its result, interpretation and reference range ([Observation](StructureDefinition-mii-pr-labor-laboruntersuchung.md))
+* the laboratory order the tests were performed for ([ServiceRequest](StructureDefinition-mii-pr-labor-laboranforderung.md))
+* two extensions: the [source of the clinical reference date](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md) and the [interpretation-affecting property](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md)
+
+The specimen is not profiled here. The module reuses the Biobank module's profile; the mapping is described under [Specimen](specimen.md).
+
 | | |
 | :--- | :--- |
 | Date | not yet published |
@@ -40,8 +75,4 @@ Abdul Mateen, Alexander Zautke, Andreas Bietenbeck, Andreas G. Henkel, Danny Amm
 ## Copyright and terms of use
 
 Copyright © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. The content of this specification is public and its reuse or republication is not restricted. The terms of the underlying FHIR specification apply. Some code systems are published and maintained by other organisations and remain subject to their respective copyright terms.
-
-## Disclaimer
-
-Parts of this document are based on FHIR R4, copyright HL7 International. Although this publication was prepared with great care, the authors cannot accept liability for direct or indirect damage caused by its content.
 

@@ -137,7 +137,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-02T07:24:40+00:00"/>
+  <date value="2026-09-02T08:07:59+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1464,6 +1464,14 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="specimen.html"/>
+          </extension>
+          <nameUrl value="specimen.html"/>
+          <title value="Specimen"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="terminology.html"/>
           </extension>
           <nameUrl value="terminology.html"/>
@@ -1532,14 +1540,6 @@
           </extension>
           <nameUrl value="service-request.html"/>
           <title value="Laboratory Request"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specimen.html"/>
-          </extension>
-          <nameUrl value="specimen.html"/>
-          <title value="Specimen"/>
           <generation value="markdown"/>
         </page>
         <page>

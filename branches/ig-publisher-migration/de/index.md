@@ -16,6 +16,41 @@
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Laborbefund' der Medizininformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.
 
+Laboruntersuchungen spielen bei den meisten medizinischen Diagnosen eine entscheidende Rolle. Vorläufige Ergebnisse können bereits in zeitkritischen Anwendungen relevant sein, etwa wenn eine klinische Entscheidungsunterstützung vor einem niedrigen Hämoglobinwert warnt. Endgültige Laborergebnisse werden sowohl in der Versorgung als auch in der Forschung genutzt. Zentrales Dokument und Gegenstand dieses Moduls ist der Befund eines medizinischen Labors.
+
+#### Zielgruppen
+
+##### Implementierende
+
+Für Datenmanagement und Integration in Datenintegrationszentren, für Entwicklung und Architektur FHIR-basierter Lösungen.
+
+* → [Profile](profiles.md) — die verbindlichen Festlegungen
+* → [Hinweise für Implementierende](implementer-guidance.md) — Konformität, Artefakte, Validierung
+* → [Logische Modelle](logical-models.md) und [UML-Diagramme](uml-diagrams.md) — die konzeptionelle Sicht
+
+##### Forschende
+
+Für Wissenschaftlerinnen und Wissenschaftler, die mit MII-Daten arbeiten.
+
+* → [Hinweise für Forschende](researcher-guidance.md) — der Einstieg
+* → [Modulbeschreibung](guidance.md) — Bezugszeitpunkte, Interpretationen, Probenmaterial
+* → [Beispiele](examples.md) — wie die Daten in der Praxis aussehen
+
+### Hintergrund
+
+Das Modul Laborbefund im MII-Kerndatensatz
+
+#### Modulübersicht
+
+Das Modul umfasst:
+
+* den Laborbefund, der die Untersuchungen einer Anforderung zusammenfasst ([DiagnosticReport](StructureDefinition-mii-pr-labor-laborbefund.md))
+* die einzelne Laboruntersuchung mit Messwert, Interpretation und Referenzbereich ([Observation](StructureDefinition-mii-pr-labor-laboruntersuchung.md))
+* die Laboranforderung, zu der die Untersuchungen durchgeführt wurden ([ServiceRequest](StructureDefinition-mii-pr-labor-laboranforderung.md))
+* zwei Extensions: die [Quelle des klinischen Bezugsdatums](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md) und die [interpretationsbeeinflussende Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md)
+
+Das Probenmaterial wird hier nicht profiliert. Das Modul nutzt das Profil des Moduls Biobank nach; die Zuordnung beschreibt die Seite [Probenmaterial](specimen.md).
+
 | | |
 | :--- | :--- |
 | Datum | noch nicht veröffentlicht |

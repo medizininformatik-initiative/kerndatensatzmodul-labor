@@ -224,7 +224,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-labor
   "title" : "MII LM Labor",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T07:24:40+00:00",
+  "date" : "2026-09-02T08:07:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

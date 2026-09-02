@@ -161,7 +161,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T07:24:40+00:00",
+  "date" : "2026-09-02T08:07:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -2063,6 +2063,28 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "specimen.html"
+          }],
+          "nameUrl" : "specimen.html",
+          "title" : "Specimen",
+          "_title" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Probenmaterial"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          },
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "terminology.html"
           }],
           "nameUrl" : "terminology.html",
@@ -2239,28 +2261,6 @@
               {
                 "url" : "content",
                 "valueString" : "Laboranforderung"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          },
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specimen.html"
-          }],
-          "nameUrl" : "specimen.html",
-          "title" : "Specimen",
-          "_title" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Probenmaterial"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]

@@ -211,6 +211,7 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
       <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
@@ -238,7 +239,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -379,6 +379,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This specification describes the FHIR representation of the Medical Informatics Initiative (MII) core data set module Laboratory Report. It defines the module's use cases, FHIR profiles and terminology resources in their normative form.</p>
 
+<p>Laboratory tests play a decisive role in most medical diagnoses. Preliminary results can already be relevant in time-critical applications, such as clinical decision support warning about a low haemoglobin value. Final laboratory results are normally used in both patient care and research. The central document and subject of this module is the laboratory report produced by a medical laboratory.</p>
+
+<h4 id="target-audience">Target Audience</h4>
+
+<div class="ig-highlight ig-highlight-blue">
+  <h5>Implementers</h5>
+  <p>For data management and integration in data integration centres, software developers and system architects building FHIR-based solutions.</p>
+
+  <ul>
+    <li>→ <a href="profiles.html">Profiles</a> — the normative constraints</li>
+    <li>→ <a href="implementer-guidance.html">Guidance for Implementers</a> — conformance, artifacts, validation</li>
+    <li>→ <a href="logical-models.html">Logical Models</a> and <a href="uml-diagrams.html">UML Diagrams</a> — the conceptual view</li>
+  </ul>
+</div>
+
+<div class="ig-highlight ig-highlight-green">
+  <h5>Researchers</h5>
+  <p>For scientists working with MII data.</p>
+
+  <ul>
+    <li>→ <a href="researcher-guidance.html">Guidance for Researchers</a> — where to start</li>
+    <li>→ <a href="guidance.html">Module Description</a> — reference times, interpretations, specimens</li>
+    <li>→ <a href="examples.html">Examples</a> — what the data looks like in practice</li>
+  </ul>
+</div>
+
+<h3 id="background">Background</h3>
+
+<div style="clear: both;">
+  <img src="Modul_Laborbefund.jpg" alt="Overview of the Laboratory Report module" style="display: block; max-width: 70%; height: auto; margin: 20px 0 10px 0;" />
+  <p style="text-align: left; font-style: italic; margin-top: 0;">The Laboratory Report module in the MII core data set</p>
+</div>
+
+<h4 id="module-overview">Module Overview</h4>
+
+<p>The module covers:</p>
+
+<ul>
+  <li>the laboratory report grouping the tests of one request (<a href="StructureDefinition-mii-pr-labor-laborbefund.html">DiagnosticReport</a>)</li>
+  <li>the individual laboratory test with its result, interpretation and reference range (<a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">Observation</a>)</li>
+  <li>the laboratory order the tests were performed for (<a href="StructureDefinition-mii-pr-labor-laboranforderung.html">ServiceRequest</a>)</li>
+  <li>two extensions: the <a href="StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.html">source of the clinical reference date</a> and the <a href="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.html">interpretation-affecting property</a></li>
+</ul>
+
+<p>The specimen is not profiled here. The module reuses the Biobank module's profile; the mapping is described under <a href="specimen.html">Specimen</a>.</p>
+
 <table>
   <thead>
     <tr>
@@ -428,10 +474,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Copyright © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin. The content of this specification is public and its reuse or republication is not restricted. The terms of the underlying FHIR specification apply. Some code systems are published and maintained by other organisations and remain subject to their respective copyright terms.</p>
 
-<h2 id="disclaimer">Disclaimer</h2>
-
-<p>Parts of this document are based on FHIR R4, copyright HL7 International. Although this publication was prepared with great care, the authors cannot accept liability for direct or indirect damage caused by its content.</p>
-
 
 
 
@@ -457,7 +499,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:24+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 08:07+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

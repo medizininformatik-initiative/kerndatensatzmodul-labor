@@ -138,7 +138,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-02T07:24:40+00:00"/>
+  <date value="2026-09-02T08:07:59+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1519,6 +1519,23 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="specimen.html"/>
+          </extension>
+          <nameUrl value="specimen.html"/>
+          <title value="Specimen">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Probenmaterial"/>
+              </extension>
+            </extension>
+          </title>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="terminology.html"/>
           </extension>
           <nameUrl value="terminology.html"/>
@@ -1656,23 +1673,6 @@
               </extension>
               <extension url="content">
                 <valueString value="Laboranforderung"/>
-              </extension>
-            </extension>
-          </title>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specimen.html"/>
-          </extension>
-          <nameUrl value="specimen.html"/>
-          <title value="Specimen">
-            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-              <extension url="lang">
-                <valueCode value="de"/>
-              </extension>
-              <extension url="content">
-                <valueString value="Probenmaterial"/>
               </extension>
             </extension>
           </title>

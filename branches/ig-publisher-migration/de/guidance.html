@@ -183,6 +183,7 @@
       <li><a href="implementer-guidance.html">Hinweise für Implementierende</a></li>
       <!-- Reiner Link-Eintrag: die Datensätze des Moduls SIND seine logischen Modelle -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
+      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
@@ -210,7 +211,6 @@
       <li><a href="diagnostic-report.html">Laborbefund</a></li>
       <li><a href="observation.html">Laboruntersuchung</a></li>
       <li><a href="service-request.html">Laboranforderung</a></li>
-      <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
@@ -302,7 +302,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#beschreibung-modul-labor" id="markdown-toc-beschreibung-modul-labor">Beschreibung Modul Labor</a></li>
   <li><a href="#wichtige-zeitpunkte-im-laborbefund" id="markdown-toc-wichtige-zeitpunkte-im-laborbefund">Wichtige Zeitpunkte im Laborbefund</a></li>
   <li><a href="#untersuchungszeitpunkt-klinischer-bezugszeitpunkt-der-laboruntersuchung-und-klinischer-bezugszeitpunkt-des-laborbefundes" id="markdown-toc-untersuchungszeitpunkt-klinischer-bezugszeitpunkt-der-laboruntersuchung-und-klinischer-bezugszeitpunkt-des-laborbefundes">Untersuchungszeitpunkt (Klinischer Bezugszeitpunkt der Laboruntersuchung) und Klinischer Bezugszeitpunkt des Laborbefundes:</a>    <ul>
       <li><a href="#beschreibung---klinischer-bezugszeitpunkt-der-laboruntersuchung" id="markdown-toc-beschreibung---klinischer-bezugszeitpunkt-der-laboruntersuchung">Beschreibung - Klinischer Bezugszeitpunkt der Laboruntersuchung:</a></li>
@@ -323,13 +322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h2 id="beschreibung-modul-labor">Beschreibung Modul Labor</h2>
-
-<p>Laboruntersuchungen spielen bei einem Großteil aller medizinischen Diagnosen eine entscheidende Rolle. Für zeitkritische Anwendungen, z.B. einer Entscheidungsunterstützung, die den Arzt bei einem niedrigen Hämoglobinwert warnt, können auch schon vorläufige Ergebnisse interessant sein. In der Regel werden aber sowohl in der Patientenversorgung als auch in der Forschung die finalen Laborergebnisse verwendet. Zentrales Dokument und Gegenstand dieses Moduls ist dabei der LABORBEFUND eines medizinischen Labors. Aufgrund des breiten Einsatzes des Moduls LABORBEFUND wird auf eine Beschreibung von einzelnen Anwendungen innerhalb der einzelnen Konsortien verzichtet.</p>
-
-<p><strong>Abbildung Modul LABORBEFUND in ART-DECOR:</strong></p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.35&amp;conceptEffectiveDate=2018-06-05T22%3A24%3A45&amp;language=de-DE"><img src="ART-DECOR_Laborbefund.png" alt="ART-DECOR-Modell Laborbefund" /></a></p>
+<p>Die Elemente dieses Moduls und ihre Bedeutung beschreibt das <a href="logical-models.html">logische Modell</a>; die <a href="uml-diagrams.html">UML-Diagramme</a> zeigen, wie Befund, Untersuchungen, Probenmaterial und Anforderung zusammenhängen.</p>
 
 <p>Laborbefunde sind als Dokumente zusammengefasste in einem medizinischen Labor durchgeführte Untersuchungen. Zum einzelnen Laborbefund werden jeweils verschiedene Daten erfasst, insbesondere ob es sich um einen vorläufigen oder abschließenden Befund handelt (<em>Status</em>) und verschiedene im Kontext wichtige Zeitpunkte.</p>
 
@@ -390,14 +383,6 @@ Interpretation: Die Angabe des „Zeitpunkts der Berichtausgabe“ (RiLiBÄK 201
 Es ist damit eine höhere Verfügbarkeit zu erwarten als beim Dokumentationszeitpunkt der (Einzel-)Laboruntersuchung. Für manche Fragestellungen kann der Dokumentationszeitpunkt des Laborberichts somit als Surrogat verwendet werden, ab welchem Zeitpunkt medizinische Konsequenzen auf Basis des Laborergebnisses möglich sind. Dabei ist aber zu beachten, dass zum Teil Abweichungen von Tagen (selten Wochen) auftreten können.
 Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p>
 
-<p><strong>Abbildung der einzelnen Laboruntersuchung im Modul LABORBEFUND:</strong></p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.773&amp;conceptEffectiveDate=2019-06-06T09%3A46%3A15&amp;language=de-DE"><img src="ART-DECOR_Laboruntersuchung.png" alt="ART-DECOR-Modell Laboruntersuchung" /></a></p>
-
-<p><strong>Abbildung der Laboranforderung im Modul LABORBEFUND:</strong></p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.923&amp;conceptEffectiveDate=2019-06-07T09%3A37%3A25&amp;language=de-DE"><img src="ART-DECOR_Laboranforderung.png" alt="ART-DECOR-Modell Laboranforderung" /></a></p>
-
 <h2 id="interpretationen-und-kommentare">Interpretationen und Kommentare</h2>
 
 <p>Ein wesentlicher Teil des Laborbefundes sind die ärztlichen Interpretationen und die Kommentare, mit denen das Labor dem Einsender hilft, die richtigen Schlüsse aus den Messergebnissen zu ziehen. Die eigentliche Interpretation wird in im Wesentlichen als Freitext abgespeichert. Zusätzliche strukturierte Codierungen sind möglich, allerdings steht SNOMED CT nur bei Verfügbarkeit entsprechender Lizenzen zur Verfügung.</p>
@@ -451,10 +436,6 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
 <h2 id="probenmaterial">Probenmaterial</h2>
 
-<p><strong>Abbildung des Probenmaterials im Modul LABORBEFUND:</strong></p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.799&amp;conceptEffectiveDate=2019-06-06T10%3A06%3A13&amp;language=de-DE"><img src="ART-DECOR_Probenmaterial.png" alt="ART-DECOR-Modell Probenmaterial" /></a></p>
-
 <p>Häufig werden in einem Laborbefund auch Kommentare zur Probe angegeben (z.B. "Probe hämolytisch"). Zum jetzigen Zeitpunkt werden diese Informationen nicht im Modul Laborbefund erfasst, können aber im FHIR-Profil Specimen (Specimen Bioprobe Core) des Erweiterungsmoduls Biobank erfasst werden. Alternativ können Kommentare, die sich auf eine Probe beziehen, unstrukturiert als Zusatzinformation zu den entsprechenden Messwerten abgelegt werden. Dies kann auch die sinnvollere Lösung sein, wenn diese Kommentarzuordnung auch in den Primärsystemen auf Untersuchungsebene gehandhabt wird.</p>
 
 <div class="footnotes" role="doc-endnotes">
@@ -489,7 +470,7 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 07:24+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 08:07+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -211,6 +211,7 @@
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: the module's datasets are its logical models -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
+      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
       <li><a href="terminology.html">Terminology</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
@@ -238,7 +239,6 @@
       <li><a href="diagnostic-report.html">Laboratory Report</a></li>
       <li><a href="observation.html">Laboratory Test</a></li>
       <li><a href="service-request.html">Laboratory Request</a></li>
-      <li><a href="specimen.html">Specimen</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -333,11 +333,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<h1 id="laboratory-module-description">Laboratory Module Description</h1>
-
-<p>Laboratory tests play a decisive role in most medical diagnoses. Preliminary results can already be relevant in time-critical applications, such as clinical decision support warning about a low haemoglobin value. Final laboratory results are normally used in both patient care and research. The central document and subject of this module is the laboratory report produced by a medical laboratory.</p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.35&amp;conceptEffectiveDate=2018-06-05T22%3A24%3A45&amp;language=de-DE"><img src="ART-DECOR_Laborbefund.png" alt="ART-DECOR model of the laboratory report" /></a></p>
+<p>The elements of this module and their meaning are described by the <a href="logical-models.html">logical model</a>; the <a href="uml-diagrams.html">UML diagrams</a> show how report, tests, specimen and order relate.</p>
 
 <p>Laboratory reports group tests performed by a medical laboratory. They record whether a report is preliminary or final and several clinically relevant timestamps. A tabular mapping is available on <a href="laboratory-timestamps.html">Laboratory timestamps</a>.</p>
 
@@ -358,10 +354,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <p>The ambiguous term “order time” is deliberately not used because it may mean either the request time or a timestamp associated with the report.</p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.773&amp;conceptEffectiveDate=2019-06-06T09%3A46%3A15&amp;language=de-DE"><img src="ART-DECOR_Laboruntersuchung.png" alt="ART-DECOR model of the laboratory test" /></a></p>
-
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.923&amp;conceptEffectiveDate=2019-06-07T09%3A37%3A25&amp;language=de-DE"><img src="ART-DECOR_Laboranforderung.png" alt="ART-DECOR model of the laboratory request" /></a></p>
 
 <h2 id="interpretations-and-comments">Interpretations and comments</h2>
 
@@ -414,8 +406,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h2 id="specimens">Specimens</h2>
 
-<p><a href="https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&amp;effectiveDate=2018-06-05T12%3A44%3A12&amp;conceptId=2.16.840.1.113883.3.1937.777.24.2.799&amp;conceptEffectiveDate=2019-06-06T10%3A06%3A13&amp;language=de-DE"><img src="ART-DECOR_Probenmaterial.png" alt="ART-DECOR model of the specimen" /></a></p>
-
 <p>Comments about specimen quality may be represented with the Biobank module's Specimen profile. Alternatively they can remain as additional information on the affected measurement when this matches the source system's granularity.</p>
 
 
@@ -443,7 +433,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 07:24+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 08:07+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
