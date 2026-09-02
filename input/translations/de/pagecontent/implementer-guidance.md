@@ -1,6 +1,6 @@
 Diese Seite fasst zusammen, was für die Implementierung des Moduls Labor in FHIR-basierten Systemen nötig ist.
 
-#### Verständnis der Anforderungen
+### Verständnis der Anforderungen
 
 **1. Logische Modelle — fachliche Anforderungen**
 
@@ -17,7 +17,7 @@ Datentypen und Kardinalitäten darin sind nicht verpflichtend; die verbindlichen
 
 Die [UML-Diagramme](uml-diagrams.html) veranschaulichen die Beziehungen zwischen den Elementen und die Verweise zwischen den Ressourcen.
 
-#### Konformität
+### Konformität
 
 Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Modul Meta gepflegt, nicht hier wiederholt:
 
@@ -27,7 +27,7 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 * [Fehlende Daten](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten)
 * [Sicherheit und Datenschutz](security-and-privacy.html) — modulspezifische Hinweise
 
-#### Technische Artefakte
+### Technische Artefakte
 
 * [Profile](profiles.html) — die vier Profile mit ihren Einschränkungen, dazu die erläuternden Seiten je Ressource
 * [Extensions](extensions.html) — Quelle des klinischen Bezugsdatums, interpretationsbeeinflussende Eigenschaft
@@ -36,11 +36,11 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 * [CapabilityStatements](capability-statements.html) — die REST-Anforderungen samt Interaktionen und Suchparametern
 * [Beispiele](examples.html) — Beispielressourcen
 
-#### Zeitpunkte
+### Zeitpunkte
 
 Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht. Zuordnung und Begründung stehen unter [Zeitpunkte im Labor](laboratory-timestamps.html). Die kodierte Bewertung eines Ergebnisses behandelt [Interpretation](interpretation.html), die Abbildung des Probenmaterials die Seite [Probenmaterial](specimen.html).
 
-#### Erste Schritte bei der Implementierung
+### Erste Schritte bei der Implementierung
 
 **Downloads**
 

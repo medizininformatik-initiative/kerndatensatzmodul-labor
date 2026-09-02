@@ -1,13 +1,13 @@
 
-## Laboratory Extensions
+### Laboratory Extensions
 
-### Overview
+#### Overview
 
 This page documents the extensions specific to the Laboratory module. They add information to FHIR resources that is relevant for the interpretation and contextualisation of laboratory reports.
 
 ---
 
-### Extension: Source of the clinical reference date
+#### Extension: Source of the clinical reference date
 
 **Description**: States the source of the clinical reference date, that is, whether it is the date of specimen collection or the date the specimen was received in the laboratory.
 
@@ -19,11 +19,11 @@ This page documents the extensions specific to the Laboratory module. They add i
 
 **Cardinality**: 0..1
 
-#### Profile
+##### Profile
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum" id="reference-date-source" %}
 
-#### ValueSet: Source of the clinical reference date
+##### ValueSet: Source of the clinical reference date
 
 [ValueSet Source of the clinical reference date](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html)
 
@@ -33,7 +33,7 @@ This page documents the extensions specific to the Laboratory module. They add i
 
 ---
 
-### Extension: Interpretation-affecting property
+#### Extension: Interpretation-affecting property
 
 **Description**: Describes interpretation-affecting properties of a laboratory test or specimen that can influence the clinical interpretation of the laboratory value (for example haemolysis, lipaemia, particular collection conditions).
 
@@ -47,11 +47,11 @@ On clinical laboratory reports this property is usually found in a free-text com
 
 **Particularity**: This extension is flagged `isModifier`. That means it modifies the meaning of `Observation.value[x]`. Receiving systems SHALL take this qualifier into account when displaying, trending or comparing results and when triggering decision support; ignoring it can lead to misinterpretation.
 
-#### Profile
+##### Profile
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft" id="interpretation-property" %}
 
-#### ValueSet: Interpretation-affecting properties
+##### ValueSet: Interpretation-affecting properties
 
 [ValueSet Interpretation-affecting properties](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.html)
 
@@ -63,9 +63,9 @@ On clinical laboratory reports this property is usually found in a free-text com
 
 ---
 
-### Usage examples
+#### Usage examples
 
-#### Example 1: Source of the clinical reference date
+##### Example 1: Source of the clinical reference date
 
 ```json
 {
@@ -102,7 +102,7 @@ On clinical laboratory reports this property is usually found in a free-text com
 }
 ```
 
-#### Example 2: Interpretation-affecting property
+##### Example 2: Interpretation-affecting property
 
 ```json
 {
@@ -138,14 +138,14 @@ On clinical laboratory reports this property is usually found in a free-text com
 
 ---
 
-### Implementation notes
+#### Implementation notes
 
-#### Source of the clinical reference date
+##### Source of the clinical reference date
 - This extension is attached to the `effectiveDateTime` element
 - It allows precise documentation of whether the date given corresponds to the time of specimen collection or to receipt in the laboratory
 - This matters particularly for placing laboratory values correctly in time within the clinical context
 
-#### Interpretation-affecting property
+##### Interpretation-affecting property
 - The extension is flagged as a **modifier extension** and MUST be observed by processing systems
 - It may be used repeatedly when several affecting factors apply
 - The ValueSet is defined as *extensible*, that is, further SNOMED CT codes may be used where needed

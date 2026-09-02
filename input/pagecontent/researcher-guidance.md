@@ -1,6 +1,6 @@
 Laboratory tests are central to most medical diagnoses. Preliminary results can matter for time-critical applications, while final results are normally used for patient care and research alike. The central document this module represents is the laboratory report produced by a medical laboratory. Because the module is broadly applicable, it does not prescribe consortium-specific scenarios.
 
-#### Getting Started
+### Getting Started
 
 If you are new to the MII Core Dataset, we recommend exploring the following resources:
 

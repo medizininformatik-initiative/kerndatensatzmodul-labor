@@ -1,10 +1,10 @@
-## Key timestamps in a laboratory report
+### Key timestamps in a laboratory report
 
 Over the course of a laboratory analysis — from drawing the specimen to transmitting the report back to the requester — several real-world points in time can become relevant for interpretation. Many of them are recorded automatically and at high quality in medical laboratories, while others are documented manually and can therefore only serve as a rough surrogate for the real point in time.
 
-## Test time[^1] (clinical reference time of the test) and clinical reference time of the report
+### Test time[^1] (clinical reference time of the test) and clinical reference time of the report
 
-### Description — clinical reference time of the test
+#### Description — clinical reference time of the test
 
 For every analysis there is a point in time at which the measured property in the specimen (for example, the concentration of an analyte) presumably corresponded to that property in the patient. As a rule this is the time of collection. The precision should be sufficient to capture minutes.
 
@@ -12,7 +12,7 @@ Ideally a well-documented collection time is available and can be used as the cl
 
 In clinical practice the clinical reference time is used above all to order several analyses of the same laboratory parameter chronologically — when displaying the course of a value over time, for instance.
 
-### Description — clinical reference time of the report
+#### Description — clinical reference time of the report
 
 In most cases the following holds:
 
@@ -26,7 +26,7 @@ Interpretation: This point in time matters for sorting analyses over time. It al
 
 Data model: The clinical reference time is modelled both as a property of the individual test (Observation) and of the laboratory report (DiagnosticReport). This introduces redundancy in most cases. In addition, laboratory receipt time and collection time are modelled as properties of the specimen (Specimen Bioprobe Core, Biobank module), which creates further redundancy.
 
-### Collection time
+#### Collection time
 
 Description: Time at which the specimen was obtained (for example, a blood draw, a swab, a puncture).
 
@@ -36,7 +36,7 @@ Collection times are not documented across the board, are recorded manually, and
 
 Data model: The collection time is modelled as a property of the specimen (Specimen Bioprobe Core, Biobank module) and, where applicable, additionally as the test time (clinical reference time, see above). If the specimen was collected over a defined interval (24-hour urine, for example), that interval can likewise be recorded as a property of the specimen. In that case the collection time represents a period.
 
-### Laboratory receipt time
+#### Laboratory receipt time
 
 Description: Time at which the specimen arrived at the laboratory; also called specimen receipt time.
 
@@ -46,7 +46,7 @@ Beyond that, the laboratory receipt time is documented automatically in many lab
 
 Data model: The laboratory receipt time is modelled as a property of the specimen (Specimen Bioprobe Core, Biobank module) and in many cases additionally as the test time (clinical reference time, see above).
 
-### Request time
+#### Request time
 
 Description: Time at which a request (laboratory request, service request) for a laboratory test was sent or — if that is not available — the time at which this request reached the laboratory.
 
@@ -56,11 +56,11 @@ Depending on the kind of request (electronic and ahead of the specimen's arrival
 
 Data model: Modelled as a property of the order (ServiceRequest).
 
-### ~~Order time~~ – term not used
+#### ~~Order time~~ – term not used
 
 The term "order time" is deliberately not used, because it is used ambiguously. On the one hand it can denote the time at which a laboratory test was ordered (the request time). On the other hand the word "order" is sometimes used synonymously for a laboratory report, so "order time" can be misread as "time of a laboratory report" and thus as any of several different timestamps (clinical reference time or documentation time of the report).
 
-### Documentation time of the test
+#### Documentation time of the test
 
 Description: Time from which the result of the laboratory test is available to, or can be seen by, clinical staff — typically after the result has been verified (also called "release" or "validation") by laboratory staff.
 
@@ -70,7 +70,7 @@ Only from this point onwards are medical decisions on the basis of the laborator
 
 Data model: Modelled as a property of the laboratory test (Observation).
 
-### Documentation time of the report
+#### Documentation time of the report
 
 Description: Time at which the laboratory report was documented, that is, verified, released or issued. Since a laboratory report frequently comprises several analyses, the oldest timestamp among the tests it contains should be chosen for it when the date of the report's release is not explicitly available.
 
@@ -82,7 +82,7 @@ Its availability is therefore expected to be higher than that of the documentati
 
 Data model: Modelled as a property of the laboratory report (DiagnosticReport).
 
-## FHIR mapping
+### FHIR mapping
 
 | Timestamp | FHIR mapping |
 |-----------|--------------|

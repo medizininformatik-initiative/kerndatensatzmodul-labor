@@ -1,5 +1,3 @@
-# ValueSets
-
 Zusätzlich zu den international verwendeten Terminologien definiert das Modul LABOR eigene ValueSets. Keines davon enthält eine Expansion — diese muss vor der Verwendung mittels eines Terminologieservers durchgeführt werden.
 
 | ValueSet | Zweck |

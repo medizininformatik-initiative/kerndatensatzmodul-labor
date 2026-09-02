@@ -1,13 +1,13 @@
 
-## Labor Extensions
+### Labor Extensions
 
-### Übersicht
+#### Übersicht
 
 Diese Seite dokumentiert die spezifischen Extensions für das Labormodul. Diese Extensions erweitern FHIR Ressourcen um zusätzliche Informationen, die für die Interpretation und Kontextualisierung von Laborbefunden relevant sind.
 
 ---
 
-### Extension: Quelle Klinisches Bezugsdatum
+#### Extension: Quelle Klinisches Bezugsdatum
 
 **Beschreibung**: Gibt die Quelle des klinischen Bezugsdatums an, z.B. ob es sich um das Datum der Probenentnahme oder das Datum des Probeneingangs im Labor handelt.
 
@@ -19,11 +19,11 @@ Diese Seite dokumentiert die spezifischen Extensions für das Labormodul. Diese 
 
 **Kardinalität**: 0..1
 
-#### Profil
+##### Profil
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum" lang="de" id="quelle-bezugsdatum" %}
 
-#### ValueSet: Quelle Klinisches Bezugsdatum
+##### ValueSet: Quelle Klinisches Bezugsdatum
 
 [ValueSet Quelle Klinisches Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.html)
 
@@ -33,7 +33,7 @@ Diese Seite dokumentiert die spezifischen Extensions für das Labormodul. Diese 
 
 ---
 
-### Extension: Interpretationsbeeinflussende Eigenschaft
+#### Extension: Interpretationsbeeinflussende Eigenschaft
 
 **Beschreibung**: Beschreibt interpretationsbeeinflussende Eigenschaften einer Laboruntersuchung oder Probe, die die klinische Interpretation des Laborwerts beeinflussen können (z.B. Hämolyse, Lipämie, besondere Abnahmebedingungen).
 
@@ -47,11 +47,11 @@ Auf klinischen Laborbefunden findet sich diese Eigenschaft meistens in einem Fre
 
 **Besonderheit**: Diese Extension ist als `isModifier` gekennzeichnet. Das bedeutet, dass sie die Bedeutung von `Observation.value[x]` modifiziert. Empfängersysteme MÜSSEN diesen Qualifizierer bei der Darstellung, Trendanalyse, dem Vergleich oder der Auslösung von Entscheidungsunterstützung berücksichtigen; ein Ignorieren kann zu Fehlinterpretationen führen.
 
-#### Profil
+##### Profil
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft" lang="de" id="interpretationseigenschaft" %}
 
-#### ValueSet: Interpretationsbeeinflussende Eigenschaften
+##### ValueSet: Interpretationsbeeinflussende Eigenschaften
 
 [ValueSet Interpretationsbeeinflussende Eigenschaften](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.html)
 
@@ -63,9 +63,9 @@ Auf klinischen Laborbefunden findet sich diese Eigenschaft meistens in einem Fre
 
 ---
 
-### Verwendungsbeispiel
+#### Verwendungsbeispiel
 
-#### Beispiel 1: Quelle Klinisches Bezugsdatum
+##### Beispiel 1: Quelle Klinisches Bezugsdatum
 
 ```json
 {
@@ -102,7 +102,7 @@ Auf klinischen Laborbefunden findet sich diese Eigenschaft meistens in einem Fre
 }
 ```
 
-#### Beispiel 2: Interpretationsbeeinflussende Eigenschaft
+##### Beispiel 2: Interpretationsbeeinflussende Eigenschaft
 
 ```json
 {
@@ -138,14 +138,14 @@ Auf klinischen Laborbefunden findet sich diese Eigenschaft meistens in einem Fre
 
 ---
 
-### Hinweise zur Implementierung
+#### Hinweise zur Implementierung
 
-#### Quelle Klinisches Bezugsdatum
+##### Quelle Klinisches Bezugsdatum
 - Diese Extension wird an das `effectiveDateTime` Element angehängt
 - Sie ermöglicht die präzise Dokumentation, ob das angegebene Datum dem Zeitpunkt der Probenentnahme oder dem Eingang im Labor entspricht
 - Dies ist besonders relevant für die korrekte zeitliche Einordnung von Laborwerten im klinischen Kontext
 
-#### Interpretationsbeeinflussende Eigenschaft
+##### Interpretationsbeeinflussende Eigenschaft
 - Die Extension ist als **Modifier Extension** gekennzeichnet und MUSS von verarbeitenden Systemen beachtet werden
 - Sie kann mehrfach verwendet werden, wenn mehrere beeinflussende Faktoren vorliegen
 - Das ValueSet ist als *extensible* definiert, d.h. weitere SNOMED CT Codes können bei Bedarf verwendet werden

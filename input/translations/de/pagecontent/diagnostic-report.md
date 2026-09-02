@@ -1,26 +1,26 @@
-# [MII Profil Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.html)
+### [MII Profil Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.html)
 
 Der DiagnosticReportLab bildet einen Laborbefund ab.
 
-### Metadaten
+#### Metadaten
 
 Status, Version, Canonical und Basisprofil werden auf der verlinkten Profilseite vom IG Publisher dargestellt.
 
-### Inhalt
+#### Inhalt
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laborbefund" lang="de" %}
 
 </br>
 
-### Constraints/Invarianten
+#### Constraints/Invarianten
 
 Constraints und Invarianten werden auf der Profilseite in den Strukturansichten dargestellt.
 
-### RESTful API
+#### RESTful API
 
 Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) aus den normativen Artefakten dargestellt.
 
-### Mappings
+#### Mappings
 
 | FHIR Element | Erklärung |
 |--------------|-----------|

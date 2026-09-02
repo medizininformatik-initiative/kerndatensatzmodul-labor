@@ -1,26 +1,26 @@
-# [MII Laboratory Report Profile](StructureDefinition-mii-pr-labor-laborbefund.html)
+### [MII Laboratory Report Profile](StructureDefinition-mii-pr-labor-laborbefund.html)
 
 DiagnosticReportLab represents a laboratory report.
 
-### Metadata
+#### Metadata
 
 Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
 
-### Content
+#### Content
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laborbefund" %}
 
 </br>
 
-### Constraints/Invariants
+#### Constraints/Invariants
 
 Constraints and invariants are shown in the structure views on the profile page.
 
-### RESTful API
+#### RESTful API
 
 The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
 
-### Mappings
+#### Mappings
 
 | FHIR element | Explanation |
 |--------------|-----------|

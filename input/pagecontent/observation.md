@@ -1,26 +1,26 @@
-# [MII Laboratory Test Profile](StructureDefinition-mii-pr-labor-laboruntersuchung.html)
+### [MII Laboratory Test Profile](StructureDefinition-mii-pr-labor-laboruntersuchung.html)
 
 ObservationLab represents the result of a single laboratory test.
 
-### Metadata
+#### Metadata
 
 Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
 
-### Content
+#### Content
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboruntersuchung" %}
 
 </br>
 
-### Constraints/Invariants
+#### Constraints/Invariants
 
 Constraints and invariants are shown in the structure views on the profile page.
 
-### RESTful API
+#### RESTful API
 
 The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
 
-### Mappings
+#### Mappings
 
 | FHIR element | Explanation |
 |--------------|-----------|

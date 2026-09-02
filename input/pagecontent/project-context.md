@@ -1,4 +1,4 @@
-## Context Within the Overall Project / Relationships to Other Modules
+### Context Within the Overall Project / Relationships to Other Modules
 
 The LABORATORY module represents laboratory reports of the kind typically produced in a hospital's central laboratory. These reports play a central role in most MII use cases:
 -	Laboratory reports from routine examinations are essential for reaching a diagnosis and for monitoring therapy in most diseases

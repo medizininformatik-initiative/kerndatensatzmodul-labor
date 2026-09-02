@@ -1,4 +1,4 @@
-## Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
+### Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
 
 Das Modul LABOR bildet Laborbefunde ab, die typischerweise in einem Zentrallabor eines Klinikums erhoben werden. Diese Befunde spielen in den meisten Use Cases der MII eine zentrale Rolle:
 -	Laborbefunde aus Routineuntersuchungen sind essentiell für Diagnosefindung und Therapieüberwachung bei den meisten Erkrankungen
