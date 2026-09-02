@@ -1,8 +1,0 @@
-# Examples
-
-- [Laboratory report](DiagnosticReport-mii-exa-labor-laborbefund.html)
-- [Laboratory request](ServiceRequest-mii-exa-labor-laboranforderung.html)
-- [Laboratory result](Observation-mii-exa-labor-laborwert.html)
-- [Result with Data Absent Reason](Observation-mii-exa-labor-laborwert-data-absent-reason.html)
-- [Result with reference range](Observation-mii-exa-labor-laborwert-range.html)
-- [Result expressed as a ratio](Observation-mii-exa-labor-laborwert-ratio.html)
