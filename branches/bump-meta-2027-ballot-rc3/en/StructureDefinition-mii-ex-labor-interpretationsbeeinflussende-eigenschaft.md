@@ -191,7 +191,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-labor-inte
   "title" : "MII EX Labor Interpretationsbeeinflussende Eigenschaft",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T12:57:03+00:00",
+  "date" : "2026-09-02T13:11:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
