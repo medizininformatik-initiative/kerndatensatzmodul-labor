@@ -1,4 +1,4 @@
-# Laboruntersuchung - MII IG Laborbefund v2027.0.0
+# Laboruntersuchung - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Profiles**](profiles.md)

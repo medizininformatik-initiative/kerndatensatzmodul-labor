@@ -1,6 +1,6 @@
-### Version: 2027.0.0
+### Version: 2027.0.0-ballot.rc1
 
-Version 2027.0.0 contains the following changes compared to the previous version 2026.0.3.
+Ballot candidate for 2027.0.0. It contains the following changes compared to the previous version 2026.0.3.
 
 ### FHIR / Content Changes:
 #### General:

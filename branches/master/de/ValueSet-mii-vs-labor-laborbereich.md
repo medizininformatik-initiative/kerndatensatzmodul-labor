@@ -1,4 +1,4 @@
-# MII VS Labor Laborbereich - MII IG Laborbefund v2027.0.0
+# MII VS Labor Laborbereich - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich | *Version*:2027.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2023-12-12 | *Maschinenlesbarer Name*:MII_VS_Labor_Laborbereich |
 
  
@@ -44,7 +44,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0"
+        "valueString" : "2027.0.0-ballot.rc1"
       },
       {
         "url" : "uri",
@@ -171,7 +171,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich",
-  "version" : "2027.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Labor_Laborbereich",
   "title" : "MII VS Labor Laborbereich",
   "status" : "active",

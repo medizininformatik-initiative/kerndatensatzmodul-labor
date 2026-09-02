@@ -1,4 +1,4 @@
-# Anleitung - MII IG Laborbefund v2027.0.0
+# Anleitung - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Anleitung**

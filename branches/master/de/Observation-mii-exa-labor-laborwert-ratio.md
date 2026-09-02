@@ -1,4 +1,4 @@
-# Laboratory test example, result as a ratio - MII IG Laborbefund v2027.0.0
+# Laboratory test example, result as a ratio - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

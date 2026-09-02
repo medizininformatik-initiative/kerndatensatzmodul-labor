@@ -1,4 +1,4 @@
-# Metadatenübersicht - MII IG Laborbefund v2027.0.0
+# Metadatenübersicht - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Versionierung**](version-history.md)
@@ -18,7 +18,7 @@ Das Beschriebene ist vorläufig. Es hält den aktuellen Stand fest und wird sich
 | :--- | :--- |
 | Package-ID | `de.medizininformatikinitiative.kerndatensatz.labor` |
 | Canonical | `https://www.medizininformatik-initiative.de/fhir/core/modul-labor` |
-| Version | `2027.0.0` |
+| Version | `2027.0.0-ballot.rc1` |
 | Status | active |
 | FHIR-Version | R4 (`4.0.1`) |
 | Herausgeber | Medizininformatik Initiative |
@@ -53,7 +53,7 @@ Die Mehrfach-Profilierung hat eine sichtbare Folge im Qualitätsbericht. Der Val
 
 ### Versionierung und Herkunft
 
-`artifact-versionPolicy` steht auf `package`: Artefaktversionen wandern mit dem Package, nicht unabhängig davon. `artifact-versionAlgorithm` ist `semver`, während das Package selbst die MII-CalVer-Version `2027.0.0` trägt — der Algorithmus beschreibt, wie Versionen verglichen werden, nicht das Schema des MII-Release-Prozesses.
+`artifact-versionPolicy` steht auf `package`: Artefaktversionen wandern mit dem Package, nicht unabhängig davon. `artifact-versionAlgorithm` ist `semver`, während das Package selbst die MII-CalVer-Version `2027.0.0-ballot.rc1` trägt — der Algorithmus beschreibt, wie Versionen verglichen werden, nicht das Schema des MII-Release-Prozesses. Das Suffix `-ballot.rc1` kennzeichnet den Ballot-Kandidaten für 2027.0.0; es sortiert nach beiden Schemata vor dem endgültigen Release.
 
 `package-source` hält an jedem Artefakt Package-ID, Version und die Modul-Basis-URL fest, sodass eine aus dem Zusammenhang gelöste Ressource ihre Herkunft weiterhin nennt. Die Basis-URL identifiziert selbst kein Artefakt; die entsprechende Validator-Meldung ist mit Begründung unterdrückt.
 

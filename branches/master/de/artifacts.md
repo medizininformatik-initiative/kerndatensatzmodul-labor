@@ -1,4 +1,4 @@
-# Artefaktübersicht - MII IG Laborbefund v2027.0.0
+# Artefaktübersicht - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Artefaktübersicht**

@@ -1,4 +1,4 @@
-# MII VS Labor Quelle klinisches Bezugsdatum - MII IG Laborbefund v2027.0.0
+# MII VS Labor Quelle klinisches Bezugsdatum - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum | *Version*:2027.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_VS_Labor_Quelle_Klinisches_Bezugsdatum |
 
  
@@ -44,7 +44,7 @@ Kodierung der Quelle des klinischen Bezugsdatums
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0"
+        "valueString" : "2027.0.0-ballot.rc1"
       },
       {
         "url" : "uri",
@@ -171,12 +171,12 @@ Kodierung der Quelle des klinischen Bezugsdatums
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum",
-  "version" : "2027.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Labor_Quelle_Klinisches_Bezugsdatum",
   "title" : "MII VS Labor Quelle klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T11:58:19+00:00",
+  "date" : "2026-09-02T12:35:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

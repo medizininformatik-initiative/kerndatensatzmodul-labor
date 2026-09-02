@@ -1,4 +1,4 @@
-# Capability Statements - MII IG Laborbefund v2027.0.0
+# Capability Statements - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Capability Statements**

@@ -45,7 +45,7 @@ The specimen is not profiled here. The module reuses the Biobank module's profil
 | Publication | |
 |---|---|
 | Date | not yet published |
-| Version | 2027.0.0 |
+| Version | 2027.0.0-ballot.rc1 |
 | Status | active |
 | Realm | DE |
 

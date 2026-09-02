@@ -1,4 +1,4 @@
-# MII VS Labor Interpretation - MII IG Laborbefund v2027.0.0
+# MII VS Labor Interpretation - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation | *Version*:2027.0.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2026-08-28 | *Computable Name*:MII_VS_Labor_Interpretation |
 
  
@@ -44,7 +44,7 @@ Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 Obs
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0"
+        "valueString" : "2027.0.0-ballot.rc1"
       },
       {
         "url" : "uri",
@@ -171,7 +171,7 @@ Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 Obs
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation",
-  "version" : "2027.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Labor_Interpretation",
   "title" : "MII VS Labor Interpretation",
   "status" : "active",

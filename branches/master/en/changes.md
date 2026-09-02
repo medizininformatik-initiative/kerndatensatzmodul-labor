@@ -1,13 +1,13 @@
-# Changelog - MII IG Laborbefund v2027.0.0
+# Changelog - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
 
 ## Changelog
 
-### Version: 2027.0.0
+### Version: 2027.0.0-ballot.rc1
 
-Version 2027.0.0 contains the following changes compared to the previous version 2026.0.3.
+Ballot candidate for 2027.0.0. It contains the following changes compared to the previous version 2026.0.3.
 
 ### FHIR / Content Changes:
 

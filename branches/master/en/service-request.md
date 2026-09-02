@@ -1,4 +1,4 @@
-# Laboratory Request - MII IG Laborbefund v2027.0.0
+# Laboratory Request - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Profiles**](profiles.md)

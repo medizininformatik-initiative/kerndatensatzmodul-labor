@@ -1,4 +1,4 @@
-# MII VS Labor Identifier Type Codes - MII IG Laborbefund v2027.0.0
+# MII VS Labor Identifier Type Codes - MII IG Laborbefund v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes | *Version*:2027.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_VS_Labor_Identifier_Type_Codes |
 
  
@@ -44,7 +44,7 @@ Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu v
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0"
+        "valueString" : "2027.0.0-ballot.rc1"
       },
       {
         "url" : "uri",
@@ -171,12 +171,12 @@ Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu v
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes",
-  "version" : "2027.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Labor_Identifier_Type_Codes",
   "title" : "MII VS Labor Identifier Type Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T11:58:19+00:00",
+  "date" : "2026-09-02T12:35:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
