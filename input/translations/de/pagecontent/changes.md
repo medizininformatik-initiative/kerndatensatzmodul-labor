@@ -34,7 +34,7 @@ Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änd
 - Die CodeSystem-Referenzen aus hl7.terminology.r4 sind versionsgebunden (v2-0074 3.0.0, v2-0203 5.0.0, v3-ObservationInterpretation 4.0.0), da das Paket in zwei Ständen hereinkommt und die Auflösung sonst mehrdeutig ist.
 
 #### Logisches Modell
-- MII_LM_Labor: `status` auf `active` gesetzt, `experimental` auf `false`.
+- MII_LM_Labor: `experimental` auf `false` gesetzt. `status` stand bereits auf `active`.
 
 ### Implementation Guide:
 - Neue Seite [Interpretation](interpretation.html): welche Codes für die Bewertung eines Ergebnisses vorgesehen sind, wie lokale Skalen darauf abbilden und wann die abnormal-Codes in Frage kommen.
