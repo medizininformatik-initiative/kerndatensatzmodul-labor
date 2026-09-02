@@ -371,6 +371,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Further codings within the slice, and further <code class="language-plaintext highlighter-rouge">category</code> entries beside it — a laboratory area, for instance — are permitted.</li>
       <li>The slicing deliberately sits on <code class="language-plaintext highlighter-rouge">category</code>, not on <code class="language-plaintext highlighter-rouge">category.coding</code>: <code class="language-plaintext highlighter-rouge">category</code> is 1..*, and constraints below a repeating element apply to every repetition. On <code class="language-plaintext highlighter-rouge">category.coding</code> every further category would have to repeat <code class="language-plaintext highlighter-rouge">26436-6</code> and <code class="language-plaintext highlighter-rouge">LAB</code>.</li>
       <li>The slice discriminator carries a single coding; a <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code> with two codings is not usable. The second mandatory coding is enforced by the slicing inside the slice.</li>
+      <li>The slice is named <code class="language-plaintext highlighter-rouge">laborbefund</code>; in 2026.0.3 it was <code class="language-plaintext highlighter-rouge">lab-category</code>. The name appears in validator messages and in profile diffs.</li>
     </ul>
   </li>
 </ul>
@@ -568,7 +569,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 15:34+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 17:45+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

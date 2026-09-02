@@ -27,6 +27,7 @@ Ballot-Kandidat für 2027.0.0. Er enthält im Vergleich zur Vorversion 2026.0.3 
 * Weitere Codings innerhalb des Slices und weitere `category`-Einträge daneben — etwa ein Laborbereich — sind zulässig.
 * Das Slicing sitzt bewusst auf `category`, nicht auf `category.coding`: `category` ist 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten für jede Wiederholung. Auf `category.coding` müsste jede weitere Kategorie erneut `26436-6` und `LAB` tragen.
 * Der Slice-Discriminator trägt ein einzelnes Coding; ein `patternCodeableConcept` mit zwei Codings ist nicht verwendbar. Die zweite Pflichtkodierung erzwingt das Slicing innerhalb des Slices.
+* Der Slice heißt `laborbefund`, in 2026.0.3 hieß er `lab-category`. Der Name taucht in Validator-Meldungen und in Profil-Diffs auf.
  
 
 #### MII_PR_Labor_Laboruntersuchung

@@ -17,6 +17,7 @@ Ballot candidate for 2027.0.0. It contains the following changes compared to the
   - Further codings within the slice, and further `category` entries beside it — a laboratory area, for instance — are permitted.
   - The slicing deliberately sits on `category`, not on `category.coding`: `category` is 1..*, and constraints below a repeating element apply to every repetition. On `category.coding` every further category would have to repeat `26436-6` and `LAB`.
   - The slice discriminator carries a single coding; a `patternCodeableConcept` with two codings is not usable. The second mandatory coding is enforced by the slicing inside the slice.
+  - The slice is named `laborbefund`; in 2026.0.3 it was `lab-category`. The name appears in validator messages and in profile diffs.
 
 #### MII_PR_Labor_Laboruntersuchung
 - basedOn: **NEW** on the laboratory test — reference to the laboratory order it is based on. `0..*`, constrained to `Reference(ServiceRequest)` and flagged Must Support (issue #82). The cardinality stays that of the base profile; `basedOn` is mandatory only on the laboratory report, and has been so unchanged since 2025.0.2.

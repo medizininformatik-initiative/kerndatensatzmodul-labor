@@ -342,6 +342,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Weitere Codings innerhalb des Slices und weitere <code class="language-plaintext highlighter-rouge">category</code>-Einträge daneben — etwa ein Laborbereich — sind zulässig.</li>
       <li>Das Slicing sitzt bewusst auf <code class="language-plaintext highlighter-rouge">category</code>, nicht auf <code class="language-plaintext highlighter-rouge">category.coding</code>: <code class="language-plaintext highlighter-rouge">category</code> ist 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten für jede Wiederholung. Auf <code class="language-plaintext highlighter-rouge">category.coding</code> müsste jede weitere Kategorie erneut <code class="language-plaintext highlighter-rouge">26436-6</code> und <code class="language-plaintext highlighter-rouge">LAB</code> tragen.</li>
       <li>Der Slice-Discriminator trägt ein einzelnes Coding; ein <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code> mit zwei Codings ist nicht verwendbar. Die zweite Pflichtkodierung erzwingt das Slicing innerhalb des Slices.</li>
+      <li>Der Slice heißt <code class="language-plaintext highlighter-rouge">laborbefund</code>, in 2026.0.3 hieß er <code class="language-plaintext highlighter-rouge">lab-category</code>. Der Name taucht in Validator-Meldungen und in Profil-Diffs auf.</li>
     </ul>
   </li>
 </ul>
@@ -539,7 +540,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 15:34+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 17:45+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
