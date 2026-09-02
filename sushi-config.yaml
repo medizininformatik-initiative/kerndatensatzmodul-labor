@@ -4,7 +4,7 @@ name: MII_IG_Labor
 title: MII IG Laborbefund
 description: "Medizininformatik Initiative - Modul Labor"
 status: active
-version: 2027.0.0-ballot.rc1
+version: 2027.0.0-ballot.rc2
 packageId: de.medizininformatikinitiative.kerndatensatz.laborbefund
 fhirVersion: 4.0.1
 applyExtensionMetadataToRoot: false
@@ -47,7 +47,7 @@ extension:
       - url: packageId
         valueId: de.medizininformatikinitiative.kerndatensatz.laborbefund
       - url: version
-        valueString: 2027.0.0-ballot.rc1
+        valueString: 2027.0.0-ballot.rc2
       - url: uri
         valueUri: https://www.medizininformatik-initiative.de/fhir/core/modul-labor
   - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod

@@ -10,23 +10,9 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2027.0.0-ballot.rc1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2027.0.0-ballot.rc2"
     ]
   },
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "26436-6",
-          "system": "http://loinc.org"
-        },
-        {
-          "code": "LAB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        }
-      ]
-    }
-  ],
   "identifier": [
     {
       "type": {
@@ -45,6 +31,22 @@
           "value": "DIZ-ID"
         }
       }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "26436-6",
+          "system": "http://loinc.org",
+          "version": "2.82",
+          "display": "Laboratory studies (set)"
+        },
+        {
+          "code": "LAB",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        }
+      ]
     }
   ],
   "code": {
