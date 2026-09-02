@@ -1,8 +1,6 @@
 Laboratory reports frequently carry comments about the specimen as well (for example, "specimen haemolytic"). At present this information is not captured in the Laboratory Report module, but it can be captured in the FHIR profile Specimen (Specimen Bioprobe Core) of the Biobank extension module. Alternatively, comments relating to a specimen can be stored unstructured, as additional information on the corresponding measured values. That can even be the more sensible solution where the primary systems likewise handle the assignment of such comments at the level of the individual test.
 
-### Specimen
-
-#### Existing profiles in the MII Core Dataset
+### Existing profiles in the MII Core Dataset
 
 **Biobank module**
 

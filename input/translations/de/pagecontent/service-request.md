@@ -1,26 +1,24 @@
-### [MII Profil Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.html)
+Das [MII Profil Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.html) — ServiceRequestLab — bildet den Auftrag für eine Laboruntersuchung ab.
 
-Der ServiceRequestLab bildet den Auftrag für eine Laboruntersuchung ab.
-
-#### Metadaten
+### Metadaten
 
 Status, Version, Canonical und Basisprofil werden auf der verlinkten Profilseite vom IG Publisher dargestellt.
 
-#### Inhalt
+### Inhalt
 
 {% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboranforderung" lang="de" %}
 
 </br>
 
-#### Constraints/Invarianten
+### Constraints/Invarianten
 
 Constraints und Invarianten werden auf der Profilseite in den Strukturansichten dargestellt.
 
-#### RESTful API
+### RESTful API
 
 Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) aus den normativen Artefakten dargestellt.
 
-#### Mappings
+### Mappings
 
 | FHIR Element | Erklärung |
 |--------------|-----------|

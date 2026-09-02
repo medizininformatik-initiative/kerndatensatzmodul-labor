@@ -1,8 +1,6 @@
-### Interpretations and comments
-
 Medical interpretations and comments are an essential part of a laboratory report. The main interpretation is usually recorded as free text; additional structured codes may be used where suitable terminology and licences are available. Comments concerning only one measurement, such as “measurement interfered with”, should be stored as a note. A coded interpretation relative to the reference interval is possible but redundant when the reference interval itself is represented explicitly.
 
-#### Which codes apply
+### Which codes apply
 
 FHIR binds `Observation.interpretation` extensibly to [Observation Interpretation Codes](http://hl7.org/fhir/ValueSet/observation-interpretation), which covers the complete HL7 v3 ObservationInterpretation code system. The module narrows that selection to the concepts meaningful in a laboratory context and binds — also extensibly — to [Interpretation](ValueSet-mii-vs-labor-interpretation.html):
 
