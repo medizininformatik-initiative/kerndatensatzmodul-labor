@@ -10,9 +10,34 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc2"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc3"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Laboratory"
+        },
+        {
+          "code": "26436-6",
+          "system": "http://loinc.org",
+          "version": "2.82",
+          "display": "Laboratory studies (set)"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "Niere/Elektrolyte",
+          "system": "http://example.org/fhir/sid/Laborgruppe"
+        }
+      ]
+    }
+  ],
   "identifier": [
     {
       "type": {
@@ -31,31 +56,6 @@
           "value": "DIZ-ID"
         }
       }
-    }
-  ],
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "26436-6",
-          "system": "http://loinc.org",
-          "version": "2.82",
-          "display": "Laboratory studies (set)"
-        },
-        {
-          "code": "laboratory",
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "display": "Laboratory"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "code": "Niere/Elektrolyte",
-          "system": "http://example.org/fhir/sid/Laborgruppe"
-        }
-      ]
     }
   ],
   "status": "final",

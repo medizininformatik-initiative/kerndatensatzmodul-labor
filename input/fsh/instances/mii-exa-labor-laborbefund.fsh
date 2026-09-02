@@ -12,8 +12,8 @@ Usage: #example
 * identifier[befund].assigner.identifier.value = "DIZ-ID"
 * basedOn.reference = "ServiceRequest/mii-exa-labor-laboranforderung"
 * status = #final
-* category[laborbefund].coding[loinc-lab] = $loinc#26436-6 "Laboratory studies (set)"
-* category[laborbefund].coding[diagnostic-service-sections] = $v2-0074#LAB
+* category[v2-lab].coding[0] = $v2-0074#LAB "Laboratory"
+* category[v2-lab].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
 * code.coding[loinc-labReport] = $loinc#11502-2 "Laboratory report"
 * subject.reference = "Patient/111"
 * effectiveDateTime = "2018-11-20T12:05:00+01:00"

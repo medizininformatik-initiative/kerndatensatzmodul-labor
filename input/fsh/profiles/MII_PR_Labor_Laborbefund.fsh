@@ -84,28 +84,18 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category ^definition, en-US, Classification of the report)
-// Das Slicing sitzt auf `category`, NICHT auf `category.coding`: `category` ist
-// 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten fuer jede
-// Wiederholung. Auf `category.coding` gesetzt wuerde jede weitere Kategorie -
-// etwa ein Laborbereich - erneut 26436-6 und LAB verlangen.
-// Der Discriminator zeigt auf `coding`, nicht auf `$this`. Damit unterscheidet
-// ihn das patternCoding der inneren Slices, und der Slice braucht KEIN eigenes
-// patternCodeableConcept - das waere eine Dopplung derselben Aussage an zwei
-// Stellen (Befund aus dem Downstream-Review zu 2027.0.0-ballot.rc1).
+// Ein Slice, ein Coding im Pattern. Das Slicing ist offen und `category` ist
+// 1..*, also bleiben weitere Kategorien - Laborbereich, Mikrobiologie - frei.
+// Zwei Slices waeren nicht disjunkt: ein CodeableConcept mit beiden Codes traefe
+// beide Patterns, der Validator meldet dann "matches more than one slice".
+// LOINC 26436-6 bleibt zulaessig, nur nicht mehr erzwungen.
 * category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "coding"
+* category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category contains laborbefund 1..1 MS
-* category[laborbefund] ^short = "Laborbefund-Kategorie"
-* category[laborbefund] ^definition = "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig."
-* category[laborbefund].coding ^slicing.discriminator.type = #pattern
-* category[laborbefund].coding ^slicing.discriminator.path = "$this"
-* category[laborbefund].coding ^slicing.rules = #open
-* category[laborbefund].coding contains
-    loinc-lab 1..1 MS and
-    diagnostic-service-sections 1..1 MS
-* category[laborbefund].coding[loinc-lab] = $loinc-no-ver#26436-6
-* category[laborbefund].coding[diagnostic-service-sections] = $v2-0074#LAB
+* category contains v2-lab 1..1 MS
+* category[v2-lab] = $v2-0074#LAB
+* category[v2-lab] ^short = "Labor-Kategorie"
+* category[v2-lab] ^definition = "Die verpflichtende Kategorie des Laborbefunds. Weitere Codings im selben Eintrag und weitere category-Eintraege sind zulaessig."
 * code MS
   * ^short = "Code"
   * ^definition = "LOINC Code zur Identifikation des Befunds als Laborbefund."
