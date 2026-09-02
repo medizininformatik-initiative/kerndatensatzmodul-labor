@@ -104,27 +104,23 @@ for (const [alias, system] of [
 
 // ── 2. Agreement with a dependency ──────────────────────────────────────────
 
-test("the versioned extension aliases match the pinned extensions package", () => {
-  const deps = parseSushiDependencies(read(SUSHI_CONFIG));
-  const pinned = deps["hl7.fhir.uv.extensions.r4"];
-  assert.ok(pinned, `${SUSHI_CONFIG} does not pin hl7.fhir.uv.extensions.r4`);
-
+// Extension references stay unversioned. An extension slice matches on
+// Extension.url — a uri without a version in the instance — so a |version on
+// type.profile fixes something that plays no part in matching, while breaking
+// tools that cannot resolve versioned canonicals: it broke the Simplifier bake
+// of 2027.0.0-ballot.rc1. Which package version applies belongs in
+// sushi-config.yaml's dependencies, and pin-canonicals fixes versions in the
+// published output. Every other KDS module references extensions unversioned.
+test("extension aliases carry no version", () => {
   const aliases = parseAliases(read(ALIASES));
-  // The aliases that deliberately carry a version because the package arrives
-  // in two states (direct pin + transitive); an unversioned reference would
-  // resolve to the wrong one.
-  const versioned = Object.entries(aliases).filter(
-    ([, url]) => url.startsWith("http://hl7.org/fhir/StructureDefinition/") && url.includes("|"),
+  const offenders = Object.entries(aliases).filter(
+    ([, url]) => url.includes("/StructureDefinition/") && url.includes("|"),
   );
-  assert.ok(versioned.length, `${ALIASES} has no versioned extension aliases to check`);
-
-  for (const [name, url] of versioned) {
-    assert.equal(
-      splitCanonical(url).version,
-      pinned,
-      `$${name} pins ${splitCanonical(url).version}, ${SUSHI_CONFIG} pins hl7.fhir.uv.extensions.r4 ${pinned}`,
-    );
-  }
+  assert.deepEqual(
+    offenders.map(([name, url]) => `$${name} = ${url}`),
+    [],
+    "extension references must stay unversioned; pin the package in sushi-config.yaml instead",
+  );
 });
 
 /**

@@ -84,14 +84,28 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category ^definition, en-US, Classification of the report)
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains
+// Das Slicing sitzt auf `category`, NICHT auf `category.coding`: `category` ist
+// 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten fuer jede
+// Wiederholung. Auf `category.coding` gesetzt wuerde jede weitere Kategorie -
+// etwa ein Laborbereich - erneut 26436-6 und LAB verlangen.
+// Der Discriminator traegt nur EIN Coding; ein patternCodeableConcept mit zwei
+// Codings ist technisch nicht verwendbar. Das genuegt zur Unterscheidung, die
+// zweite Pflichtkodierung erzwingt das Slicing innerhalb des Slices.
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains laborbefund 1..1 MS
+* category[laborbefund] ^patternCodeableConcept.coding[0] = $loinc-no-ver#26436-6
+* category[laborbefund] ^short = "Laborbefund-Kategorie"
+* category[laborbefund] ^definition = "Die verpflichtende Kategorie des Laborbefunds. Weitere Kategorien, etwa der Laborbereich, sind als zusaetzliche category-Eintraege zulaessig."
+* category[laborbefund].coding ^slicing.discriminator.type = #pattern
+* category[laborbefund].coding ^slicing.discriminator.path = "$this"
+* category[laborbefund].coding ^slicing.rules = #open
+* category[laborbefund].coding contains
     loinc-lab 1..1 MS and
     diagnostic-service-sections 1..1 MS
-* category.coding[loinc-lab] = $loinc-no-ver#26436-6
-* category.coding[diagnostic-service-sections] = $v2-0074#LAB
+* category[laborbefund].coding[loinc-lab] = $loinc-no-ver#26436-6
+* category[laborbefund].coding[diagnostic-service-sections] = $v2-0074#LAB
 * code MS
   * ^short = "Code"
   * ^definition = "LOINC Code zur Identifikation des Befunds als Laborbefund."
