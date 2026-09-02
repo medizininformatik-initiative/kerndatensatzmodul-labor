@@ -16,7 +16,7 @@ What is described here is preliminary. It records the current state and will cha
 
 | | |
 | :--- | :--- |
-| Package ID | `de.medizininformatikinitiative.kerndatensatz.labor` |
+| Package ID | `de.medizininformatikinitiative.kerndatensatz.laborbefund` |
 | Canonical | `https://www.medizininformatik-initiative.de/fhir/core/modul-labor` |
 | Version | `2027.0.0-ballot.rc1` |
 | Status | active |

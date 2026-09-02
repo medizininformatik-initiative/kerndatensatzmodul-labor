@@ -19,7 +19,7 @@ Laborbefund, der die Ergebnisse einer Laboruntersuchung enthält.
 * Examples for this Profile: [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md)
 * CapabilityStatements using this Profile: [MII CPS Labor CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.labor|current/StructureDefinition/StructureDefinition-mii-pr-labor-laborbefund.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.laborbefund|current/StructureDefinition/StructureDefinition-mii-pr-labor-laborbefund.json)
 
 ### Formale Ansichten des Profilinhalts
 
@@ -121,7 +121,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",
@@ -293,7 +293,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:45:23+00:00",
+  "date" : "2026-09-02T17:52:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

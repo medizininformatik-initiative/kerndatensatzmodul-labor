@@ -15,8 +15,8 @@ Das Package enthält alle ValueSets, Profile und Extensions dieser Version, dazu
 
 Dieser Leitfaden ist zweisprachig; der Publisher erzeugt zusätzlich je Sprache ein Package, das die Designations der jeweiligen Sprache trägt:
 
-* [Package, Deutsch](../de.medizininformatikinitiative.kerndatensatz.labor.de.tgz)
-* [Package, Englisch](../de.medizininformatikinitiative.kerndatensatz.labor.en.tgz)
+* [Package, Deutsch](../de.medizininformatikinitiative.kerndatensatz.laborbefund.de.tgz)
+* [Package, Englisch](../de.medizininformatikinitiative.kerndatensatz.laborbefund.en.tgz)
 
 ### Herunterladbare Fassung der Spezifikation
 

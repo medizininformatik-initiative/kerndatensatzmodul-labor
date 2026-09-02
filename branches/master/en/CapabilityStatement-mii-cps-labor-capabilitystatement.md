@@ -28,7 +28,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",

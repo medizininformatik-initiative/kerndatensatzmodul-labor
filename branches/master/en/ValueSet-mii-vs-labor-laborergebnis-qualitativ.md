@@ -40,7 +40,7 @@ Kodierung für qualitative Laborergebnisse
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",

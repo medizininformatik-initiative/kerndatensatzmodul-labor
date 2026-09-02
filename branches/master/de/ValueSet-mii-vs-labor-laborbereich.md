@@ -40,7 +40,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",

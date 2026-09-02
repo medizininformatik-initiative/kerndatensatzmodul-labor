@@ -15,8 +15,8 @@ The package contains every value set, profile and extension of this version, tog
 
 This guide is bilingual, and the publisher additionally produces one package per language, each carrying the designations of that language:
 
-* [Package, English](../de.medizininformatikinitiative.kerndatensatz.labor.en.tgz)
-* [Package, German](../de.medizininformatikinitiative.kerndatensatz.labor.de.tgz)
+* [Package, English](../de.medizininformatikinitiative.kerndatensatz.laborbefund.en.tgz)
+* [Package, German](../de.medizininformatikinitiative.kerndatensatz.laborbefund.de.tgz)
 
 ### Downloadable Copy of the Specification
 

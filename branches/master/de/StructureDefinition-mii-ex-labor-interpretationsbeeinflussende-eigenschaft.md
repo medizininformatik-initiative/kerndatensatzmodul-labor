@@ -21,7 +21,7 @@ Interpretationsbeeinflussenden Eigenschaft einer Laboruntersuchung oder Probe.
 
 * Use this Extension: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.labor|current/StructureDefinition/StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.laborbefund|current/StructureDefinition/StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.json)
 
 ### Formale Ansichten des Extension-Inhalts
 
@@ -80,7 +80,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-labor
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",
@@ -228,7 +228,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-labor
   "title" : "MII EX Labor Interpretationsbeeinflussende Eigenschaft",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:45:23+00:00",
+  "date" : "2026-09-02T17:52:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

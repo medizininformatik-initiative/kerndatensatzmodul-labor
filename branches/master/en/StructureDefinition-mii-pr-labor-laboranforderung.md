@@ -19,7 +19,7 @@ Order for a laboratory test
 * Examples for this Profile: [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
 * CapabilityStatements using this Profile: [MII CPS Labor CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.labor|current/StructureDefinition/StructureDefinition-mii-pr-labor-laboranforderung.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.laborbefund|current/StructureDefinition/StructureDefinition-mii-pr-labor-laboranforderung.json)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:45:23+00:00",
+  "date" : "2026-09-02T17:52:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

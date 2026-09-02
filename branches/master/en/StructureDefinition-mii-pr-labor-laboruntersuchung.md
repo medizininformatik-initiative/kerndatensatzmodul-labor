@@ -19,7 +19,7 @@ Result of a laboratory test
 * Examples for this Profile: [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)
 * CapabilityStatements using this Profile: [MII CPS Labor CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.labor|current/StructureDefinition/StructureDefinition-mii-pr-labor-laboruntersuchung.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.laborbefund|current/StructureDefinition/StructureDefinition-mii-pr-labor-laboruntersuchung.json)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:45:23+00:00",
+  "date" : "2026-09-02T17:52:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

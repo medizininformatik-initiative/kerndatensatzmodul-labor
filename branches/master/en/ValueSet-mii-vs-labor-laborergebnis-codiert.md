@@ -40,7 +40,7 @@ Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",

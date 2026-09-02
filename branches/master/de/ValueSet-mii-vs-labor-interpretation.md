@@ -40,7 +40,7 @@ Kategorische Bewertung eines Laborwertes. Eingeschränkte Auswahl aus HL7 v3 Obs
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",

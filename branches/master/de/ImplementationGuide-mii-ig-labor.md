@@ -12,7 +12,7 @@ Diese ImplementationGuide-Ressource definiert die technischen Details dieser Pub
 
 ### Versionsübergreifende Analyse
 
-This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (de.medizininformatikinitiative.kerndatensatz.labor.r4)](../package.r4.tgz) and [R4B (de.medizininformatikinitiative.kerndatensatz.labor.r4b)](../package.r4b.tgz) are available.
+This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (de.medizininformatikinitiative.kerndatensatz.laborbefund.r4)](../package.r4.tgz) and [R4B (de.medizininformatikinitiative.kerndatensatz.laborbefund.r4b)](../package.r4b.tgz) are available.
 
 ### IG-Abhängigkeiten
 
@@ -115,7 +115,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   {
     "extension" : [{
       "url" : "packageId",
-      "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+      "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
     },
     {
       "url" : "version",
@@ -233,7 +233,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:45:23+00:00",
+  "date" : "2026-09-02T17:52:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -250,7 +250,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "display" : "Germany"
     }]
   }],
-  "packageId" : "de.medizininformatikinitiative.kerndatensatz.labor",
+  "packageId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund",
   "license" : "CC-BY-4.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{

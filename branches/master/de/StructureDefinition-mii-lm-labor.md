@@ -18,7 +18,7 @@ Logische Repräsentation des Basismoduls Labor
 
 * This Logical Model is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.labor|current/StructureDefinition/StructureDefinition-mii-lm-labor.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.laborbefund|current/StructureDefinition/StructureDefinition-mii-lm-labor.json)
 
 ### Formale Ansichten des Profilinhalts
 
@@ -76,7 +76,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-labor
     "extension" : [{
       "extension" : [{
         "url" : "packageId",
-        "valueId" : "de.medizininformatikinitiative.kerndatensatz.labor"
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
       },
       {
         "url" : "version",
@@ -224,7 +224,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-labor
   "title" : "MII LM Labor",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T17:45:23+00:00",
+  "date" : "2026-09-02T17:52:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
