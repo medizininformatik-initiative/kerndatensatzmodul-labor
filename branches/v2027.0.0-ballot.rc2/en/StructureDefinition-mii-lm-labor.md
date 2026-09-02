@@ -1,0 +1,1045 @@
+# MII LM Labor - MII IG Laborbefund v2027.0.0-ballot.rc2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII LM Labor**
+
+## Logical Model: MII LM Labor 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund | *Version*:2027.0.0-ballot.rc2 |
+| Active as of 2026-09-02 | *Computable Name*:MII_LM_Labor |
+
+ 
+Logische Repräsentation des Basismoduls Labor 
+
+**Usages:**
+
+* This Logical Model is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.laborbefund|current/StructureDefinition/StructureDefinition-mii-lm-labor.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots, and their representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-mii-lm-labor.csv), [Excel](../StructureDefinition-mii-lm-labor.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-lm-labor",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc2"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+    "valueMarkdown" : "Use this logical model as the module-specific information model for the Medical Informatics Initiative core dataset. The model describes clinically or administratively relevant information in a domain-oriented form and provides a bridge between the conceptual content specification and the corresponding technical FHIR profiles. It is a pattern for describing the intended content model and is not intended to be exchanged as a concrete FHIR resource instance. Implementers should use it to understand the scope, semantics, and structure of the module before applying the related FHIR profiles and mappings."
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+    "valueDate" : "2026-08-24"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate" : "2026-08-24"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2027"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "MII_LM_Labor",
+  "title" : "MII LM Labor",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T17:58:53+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Logische Repräsentation des Basismoduls Labor",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "FHIR",
+    "name" : "Labor LogicalModel FHIR Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "Laborbefund",
+      "path" : "Laborbefund",
+      "short" : "Das Basismodul Laborbefunde enthält strukturierte Informationen zu Laboruntersuchungen als komplexe diagnostische Maßnahmen.",
+      "definition" : "Logische Repräsentation des Basismoduls Labor"
+    },
+    {
+      "id" : "Laborbefund.Identifikation",
+      "path" : "Laborbefund.Identifikation",
+      "short" : "Identifikator des Laborbefunds",
+      "definition" : "Identifikator des Laborbefunds",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.identifier"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Status",
+      "path" : "Laborbefund.Status",
+      "short" : "Status des Laborbefunds:",
+      "definition" : "vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich)\r\nfinal (Endbefund, sollte nicht mehr geändert werden.)\r\nfinal korrigiert (nachdem eine finale Version freigegeben wurde, musste trotzdem noch Änderungen vorgenommen werden.)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.status"
+      }]
+    },
+    {
+      "id" : "Laborbefund.KlinischerBezugszeitpunkt",
+      "path" : "Laborbefund.KlinischerBezugszeitpunkt",
+      "short" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+      "definition" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.effective[x]"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Dokumentationsdatum",
+      "path" : "Laborbefund.Dokumentationsdatum",
+      "short" : "Zeitpunkt, an dem der Laborbefund dokumentiert wurde.",
+      "definition" : "Zeitpunkt, an dem der Laborbefund dokumentiert wurde.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "DiagnosticReport.issued"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial",
+      "path" : "Laborbefund.Probenmaterial",
+      "short" : "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
+      "definition" : "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial.Identifikation",
+      "path" : "Laborbefund.Probenmaterial.Identifikation",
+      "short" : "ID der Probe",
+      "definition" : "ID der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.identifier"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial.EntAbnahmezeitpunkt",
+      "path" : "Laborbefund.Probenmaterial.EntAbnahmezeitpunkt",
+      "short" : "Zeitpunkt der Ent- / Abnahme der Probe",
+      "definition" : "Zeitpunkt der Ent- / Abnahme der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.collectedDateTime"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial.Laboreingangszeitpunkt",
+      "path" : "Laborbefund.Probenmaterial.Laboreingangszeitpunkt",
+      "short" : "Zeitpunkt des Eingangs der Probe im Labor",
+      "definition" : "Zeitpunkt des Eingangs der Probe im Labor",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.receivedTime"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial.Probenart",
+      "path" : "Laborbefund.Probenmaterial.Probenart",
+      "short" : "Art der Probe",
+      "definition" : "Art der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.type"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial.Koerperstelle",
+      "path" : "Laborbefund.Probenmaterial.Koerperstelle",
+      "short" : "Lokalisation der Körperstelle am Patienten, an der die Probe entnommen / abgenommen wurde",
+      "definition" : "Lokalisation der Körperstelle am Patienten, an der die Probe entnommen / abgenommen wurde",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.bodySite"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Probenmaterial.Kommentar",
+      "path" : "Laborbefund.Probenmaterial.Kommentar",
+      "short" : "freitextlicher Kommentar zur Probe",
+      "definition" : "//type text",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.note"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung",
+      "path" : "Laborbefund.Laboruntersuchung",
+      "short" : "Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborwerts, z.B. im Bereich der Hämatologie in der Gruppe des kleinen Blutbilds die Untersuchung des Hämoglobin-(Hb-)werts als Konzentration des Hämoglobins im Blut.",
+      "definition" : "Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborwerts, z.B. im Bereich der Hämatologie in der Gruppe des kleinen Blutbilds die Untersuchung des Hämoglobin-(Hb-)werts als Konzentration des Hämoglobins im Blut.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Code",
+      "path" : "Laborbefund.Laboruntersuchung.Code",
+      "short" : "Code des Laborparameters (LOINC)",
+      "definition" : "Code des Laborparameters (LOINC)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.code"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Identifikation",
+      "path" : "Laborbefund.Laboruntersuchung.Identifikation",
+      "short" : "Identifikator der Untersuchung",
+      "definition" : "Identifikator der Untersuchung",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.identifier"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Status",
+      "path" : "Laborbefund.Laboruntersuchung.Status",
+      "short" : "Status der Laboruntersuchung (durchgeführt, offen, storniert)",
+      "definition" : "Status der Laboruntersuchung (durchgeführt, offen, storniert)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.status"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Bereich",
+      "path" : "Laborbefund.Laboruntersuchung.Bereich",
+      "short" : "Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc.",
+      "definition" : "Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Bereich.KodeDesLaborbereiches",
+      "path" : "Laborbefund.Laboruntersuchung.Bereich.KodeDesLaborbereiches",
+      "short" : "Kode des Laborbereichs (LOINC)",
+      "definition" : "Kode des Laborbereichs (LOINC)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category.coding.code"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Bereich.BezeichungDesLaborbereichs",
+      "path" : "Laborbefund.Laboruntersuchung.Bereich.BezeichungDesLaborbereichs",
+      "short" : "Textuelle Beschreibung des Laborbereichs",
+      "definition" : "Textuelle Beschreibung des Laborbereichs",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category.coding.display"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Gruppe",
+      "path" : "Laborbefund.Laboruntersuchung.Gruppe",
+      "short" : "Innerhalb der Fachbereiche werden Laboruntersuchungen in Gruppen zusammengefasst, z.B. gibt es in der Hämatologie die Gruppen kleines Blutbild, Differentialblutbild, großes Blutbild, Leberwerte, Nierenwerte etc.",
+      "definition" : "Innerhalb der Fachbereiche werden Laboruntersuchungen in Gruppen zusammengefasst, z.B. gibt es in der Hämatologie die Gruppen kleines Blutbild, Differentialblutbild, großes Blutbild, Leberwerte, Nierenwerte etc.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Gruppe.KodeDerLaborgruppe",
+      "path" : "Laborbefund.Laboruntersuchung.Gruppe.KodeDerLaborgruppe",
+      "short" : "Kode der Laborgruppe",
+      "definition" : "Kode der Laborgruppe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category.coding.code"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Gruppe.BezeichnungDerLaborGruppe",
+      "path" : "Laborbefund.Laboruntersuchung.Gruppe.BezeichnungDerLaborGruppe",
+      "short" : "Textuelle Beschreibung der Laborgruppe",
+      "definition" : "Textuelle Beschreibung der Laborgruppe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.category.coding.display"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Laborparameter",
+      "path" : "Laborbefund.Laboruntersuchung.Laborparameter",
+      "short" : "in der Laboruntersuchung analysierter / gemessener Laborparameter",
+      "definition" : "in der Laboruntersuchung analysierter / gemessener Laborparameter",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.valueQuantity"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Laborparameter.Bezeichnung",
+      "path" : "Laborbefund.Laboruntersuchung.Laborparameter.Bezeichnung",
+      "short" : "Bezeichnung des Laborparameters",
+      "definition" : "Bezeichnung des Laborparameters",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.code.text"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.KlinischerBezugszeitpunkt",
+      "path" : "Laborbefund.Laboruntersuchung.KlinischerBezugszeitpunkt",
+      "short" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+      "definition" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird dieses Datum verwendet. Andernfalls wird behelfsmäßig der Probeneingang im Labor gewählt. Das \"Gültigkeitsdatum\" ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.effective[x].extension[QuelleKlinischesBezugsdatum]"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Dokumentationsdatum",
+      "path" : "Laborbefund.Laboruntersuchung.Dokumentationsdatum",
+      "short" : "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
+      "definition" : "Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.issued"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt",
+      "path" : "Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt",
+      "short" : "Zeitpunkt des Beginns der Untersuchung",
+      "definition" : "Zeitpunkt des Beginns der Untersuchung",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.effectiveDateTime"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Messwert",
+      "path" : "Laborbefund.Laboruntersuchung.Messwert",
+      "short" : "Wert der Analyse",
+      "definition" : "Wert der Analyse",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.valueQuantity"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Interpretation",
+      "path" : "Laborbefund.Laboruntersuchung.Interpretation",
+      "short" : "Interpretation des Messwerts (Kennzeichen)",
+      "definition" : "Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.interpretation"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Kommentar",
+      "path" : "Laborbefund.Laboruntersuchung.Kommentar",
+      "short" : "Kommentierung der Laboruntersuchung",
+      "definition" : "//type text",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.note"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Untersuchungsmethode",
+      "path" : "Laborbefund.Laboruntersuchung.Untersuchungsmethode",
+      "short" : "konkrete Untersuchungsmethode, wenn ein verwendeter LOINC-Code für den Laborparameter keine Methode enthält",
+      "definition" : "konkrete Untersuchungsmethode, wenn ein verwendeter LOINC-Code für den Laborparameter keine Methode enthält",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.method"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial",
+      "short" : "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
+      "definition" : "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.specimen"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial.Identifikation",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial.Identifikation",
+      "short" : "ID der Probe",
+      "definition" : "ID der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.identifier"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial.EntAbnahmezeitpunkt",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial.EntAbnahmezeitpunkt",
+      "short" : "Zeitpunkt der Ent- / Abnahme der Probe",
+      "definition" : "Zeitpunkt der Ent- / Abnahme der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.collection.collected"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial.Laboreingangszeitpunkt",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial.Laboreingangszeitpunkt",
+      "short" : "Zeitpunkt des Eingangs der Probe im Labor",
+      "definition" : "Zeitpunkt des Eingangs der Probe im Labor",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.receivedTime"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial.Probenart",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial.Probenart",
+      "short" : "Art der Probe",
+      "definition" : "Art der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.type"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial.Koerperstelle",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial.Koerperstelle",
+      "short" : "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
+      "definition" : "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.collection.bodySite"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Probenmaterial.Kommentar",
+      "path" : "Laborbefund.Laboruntersuchung.Probenmaterial.Kommentar",
+      "short" : "freitextlicher Kommentar zur Probe",
+      "definition" : "//type text",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Referenzbereich",
+      "path" : "Laborbefund.Laboruntersuchung.Referenzbereich",
+      "short" : "Referenzbereich der Analyse.",
+      "definition" : "Für einen Analyse sind mehrere Referenzbereiche möglich, ein Labor wird einem Patienten anhand von Merkmalen wie Alter und Geschlecht in der Regel aber nur einem Referenzbereich zuordnen. Dieser eine Referenzbereich sollte gespeichert werden. Referenzbereiche geben die Lage der zentralen 95% des Messwerts in einer gesunden Normalbevölkerung wieder. Referenzbereiche sind also  keine Entscheidungsgrenzen sondern können lediglich zur ersten Orientierung dienen.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.referenceRange"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Referenzbereich.Typ",
+      "path" : "Laborbefund.Laboruntersuchung.Referenzbereich.Typ",
+      "short" : "Typ des Referenzbereichs",
+      "definition" : "Typ des Referenzbereichs",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.referenceRange.type"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Referenzbereich.Obergrenze",
+      "path" : "Laborbefund.Laboruntersuchung.Referenzbereich.Obergrenze",
+      "short" : "Obergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Obergrenze)",
+      "definition" : "Obergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Obergrenze)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.referenceRange.high"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboruntersuchung.Referenzbereich.Untergrenze",
+      "path" : "Laborbefund.Laboruntersuchung.Referenzbereich.Untergrenze",
+      "short" : "Untergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Untergrenze)",
+      "definition" : "Untergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Untergrenze)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Quantity"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Observation.referenceRange.low"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung",
+      "path" : "Laborbefund.Laboranforderung",
+      "short" : "Eine Laboranforderung beschreibt die Leistungsanforderung von Laboruntersuchungen auf Basis von abzunehmenden oder abgenommenem Probenmaterial.",
+      "definition" : "Eine Laboranforderung beschreibt die Leistungsanforderung von Laboruntersuchungen auf Basis von abzunehmenden oder abgenommenem Probenmaterial.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Identifikation",
+      "path" : "Laborbefund.Laboranforderung.Identifikation",
+      "short" : "Identifikator der Laboranforderung",
+      "definition" : "Identifikator der Laboranforderung",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.identifier"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Status",
+      "path" : "Laborbefund.Laboranforderung.Status",
+      "short" : "Status der Laboranforderung",
+      "definition" : "Status der Laboranforderung",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.status"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Laborparameter",
+      "path" : "Laborbefund.Laboranforderung.Laborparameter",
+      "short" : "in der Laboruntersuchung analysierter / gemessener Laborparameter",
+      "definition" : "in der Laboruntersuchung analysierter / gemessener Laborparameter",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.code"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Laborparameter.Code",
+      "path" : "Laborbefund.Laboranforderung.Laborparameter.Code",
+      "short" : "Code des Laborparameters (LOINC)",
+      "definition" : "Code des Laborparameters (LOINC)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.code.coding.code"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Laborparameter.Bezeichnung",
+      "path" : "Laborbefund.Laboranforderung.Laborparameter.Bezeichnung",
+      "short" : "Bezeichnung des Laborparameters",
+      "definition" : "Bezeichnung des Laborparameters",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.code.text"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Anforderungsdatum",
+      "path" : "Laborbefund.Laboranforderung.Anforderungsdatum",
+      "short" : "Beschreibt das Datum, zu dem die Laboranforderung erstellt wurde.",
+      "definition" : "Beschreibt das Datum, zu dem die Laboranforderung erstellt wurde.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.authoredOn"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial",
+      "short" : "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
+      "definition" : "Probe, auf deren Basis die Laboruntersuchungen angefertigt werden",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "ServiceRequest.specimen"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial.Identifikation",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial.Identifikation",
+      "short" : "ID der Probe",
+      "definition" : "ID der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.identifier"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial.EntAbnahmezeitpunkt",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial.EntAbnahmezeitpunkt",
+      "short" : "Zeitpunkt der Ent- / Abnahme der Probe",
+      "definition" : "Zeitpunkt der Ent- / Abnahme der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.collected[x]"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial.Laboreingangszeitpunkt",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial.Laboreingangszeitpunkt",
+      "short" : "Zeitpunkt des Eingangs der Probe im Labor",
+      "definition" : "Zeitpunkt des Eingangs der Probe im Labor",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.receivedTime"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial.Probenart",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial.Probenart",
+      "short" : "Art der Probe",
+      "definition" : "Art der Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.type"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial.Koerperstelle",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial.Koerperstelle",
+      "short" : "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
+      "definition" : "Ort am Patienten, an der die Probe entnommen / abgenommen wurde",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "FHIR",
+        "map" : "Specimen.collection.bodySite"
+      }]
+    },
+    {
+      "id" : "Laborbefund.Laboranforderung.Probenmaterial.Kommentar",
+      "path" : "Laborbefund.Laboranforderung.Probenmaterial.Kommentar",
+      "short" : "freitextlicher Kommentar zur Probe",
+      "definition" : "freitextlicher Kommentar zur Probe",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}
+
+```
