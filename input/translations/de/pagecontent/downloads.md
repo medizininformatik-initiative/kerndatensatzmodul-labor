@@ -47,6 +47,7 @@ Alle Profilinformationen in einer Tabelle, hilfreich, um Elementeigenschaften pr
 Die technische Definition dieser Publikation, samt Abhängigkeiten und Publikationsparametern:
 
 - [ImplementationGuide-Ressource (JSON)](ImplementationGuide-mii-ig-labor.json)
+- [ImplementationGuide-Ressource (gerendert)](ImplementationGuide-mii-ig-labor.html) — die aufgelösten Paketversionen, die Global Profiles und die Expansions-Parameter
 
 ### Quellen
 
