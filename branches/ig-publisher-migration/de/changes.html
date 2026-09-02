@@ -344,8 +344,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="mii_pr_labor_laboruntersuchung">MII_PR_Labor_Laboruntersuchung</h4>
 <ul>
-  <li>basedOn: <strong>NEU</strong> — Bezug zum Laborauftrag, auf dem die Laboruntersuchung basiert. Eingeschränkt auf <code class="language-plaintext highlighter-rouge">Reference(ServiceRequest)</code> und als Must Support markiert (Issue #82).</li>
-  <li>code.coding: Neuer offener Slice <code class="language-plaintext highlighter-rouge">loinc</code> mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse. Zuvor war <code class="language-plaintext highlighter-rouge">code</code> selbst preferred an dieses ValueSet gebunden.</li>
+  <li>basedOn: <strong>NEU</strong> auf der Laboruntersuchung — Bezug zum Laborauftrag, auf dem sie basiert. <code class="language-plaintext highlighter-rouge">0..*</code>, eingeschränkt auf <code class="language-plaintext highlighter-rouge">Reference(ServiceRequest)</code> und als Must Support markiert (Issue #82). Die Kardinalität bleibt die des Basisprofils; verpflichtend ist <code class="language-plaintext highlighter-rouge">basedOn</code> nur auf dem Laborbefund, und das unverändert seit 2025.0.2.</li>
+  <li>code: Die Bindung wandert von <code class="language-plaintext highlighter-rouge">code</code> auf den neuen offenen Slice <code class="language-plaintext highlighter-rouge">code.coding[loinc]</code>, wird von <code class="language-plaintext highlighter-rouge">preferred</code> auf <code class="language-plaintext highlighter-rouge">extensible</code> verschärft und zeigt auf ein anderes IPS-ValueSet — <code class="language-plaintext highlighter-rouge">results-laboratory-pathology-observations-uv-ips</code> statt bisher <code class="language-plaintext highlighter-rouge">results-laboratory-observations-uv-ips</code>. <code class="language-plaintext highlighter-rouge">Observation.code</code> selbst trägt keine Bindung mehr.</li>
   <li>valueCodeableConcept: Extensible-Binding an das neue ValueSet <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">Laborergebnis codiert</a>, welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices <code class="language-plaintext highlighter-rouge">qualitativ</code> und <code class="language-plaintext highlighter-rouge">semiquantitativ</code> entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.</li>
   <li>interpretation: Extensible-Binding an das neue ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>, eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (<code class="language-plaintext highlighter-rouge">L</code>, <code class="language-plaintext highlighter-rouge">LU</code>, <code class="language-plaintext highlighter-rouge">N</code>, <code class="language-plaintext highlighter-rouge">H</code>, <code class="language-plaintext highlighter-rouge">HU</code>). Lokal gebräuchliche Skalen wie <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> bzw. <code class="language-plaintext highlighter-rouge">L N H</code> bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes <code class="language-plaintext highlighter-rouge">HH</code>, <code class="language-plaintext highlighter-rouge">LL</code> und <code class="language-plaintext highlighter-rouge">AA</code> verwendet werden.</li>
   <li>category: Definition präzisiert („Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe").</li>
@@ -369,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="logisches-modell">Logisches Modell</h4>
 <ul>
-  <li>MII_LM_Labor: <code class="language-plaintext highlighter-rouge">status</code> auf <code class="language-plaintext highlighter-rouge">active</code> gesetzt, <code class="language-plaintext highlighter-rouge">experimental</code> auf <code class="language-plaintext highlighter-rouge">false</code>.</li>
+  <li>MII_LM_Labor: <code class="language-plaintext highlighter-rouge">experimental</code> auf <code class="language-plaintext highlighter-rouge">false</code> gesetzt. <code class="language-plaintext highlighter-rouge">status</code> stand bereits auf <code class="language-plaintext highlighter-rouge">active</code>.</li>
 </ul>
 
 <h3 id="implementation-guide">Implementation Guide:</h3>
@@ -534,7 +534,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.labor#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 11:41+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 11:51+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

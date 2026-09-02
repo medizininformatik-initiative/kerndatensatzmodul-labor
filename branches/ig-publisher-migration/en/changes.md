@@ -27,8 +27,8 @@ Version 2027.0.0 contains the following changes compared to the previous version
 
 #### MII_PR_Labor_Laboruntersuchung
 
-* basedOn: **NEW** — reference to the laboratory order on which the laboratory test is based. Constrained to `Reference(ServiceRequest)` and flagged Must Support (issue #82).
-* code.coding: New open slice `loinc` with an extensible binding to the IPS ValueSet of laboratory results. Previously `code` itself was bound to that ValueSet as preferred.
+* basedOn: **NEW** on the laboratory test — reference to the laboratory order it is based on. `0..*`, constrained to `Reference(ServiceRequest)` and flagged Must Support (issue #82). The cardinality stays that of the base profile; `basedOn` is mandatory only on the laboratory report, and has been so unchanged since 2025.0.2.
+* code: The binding moves from `code` onto the new open slice `code.coding[loinc]`, is tightened from `preferred` to `extensible`, and points at a different IPS ValueSet — `results-laboratory-pathology-observations-uv-ips` instead of `results-laboratory-observations-uv-ips`. `Observation.code` itself no longer carries a binding.
 * valueCodeableConcept: Extensible binding to the new ValueSet [Coded laboratory result](ValueSet-mii-vs-labor-laborergebnis-codiert.md), which combines the qualitative and semiquantitative result ValueSets. The slices `qualitativ` and `semiquantitativ` originally foreseen have been dropped, because the two ValueSets overlap and can therefore not be discriminated.
 * interpretation: Extensible binding to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.md), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally common scales such as `--, -, N, +, ++` or `L N H` map onto these; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
 * category: Definition made precise ("classification of the laboratory test within the diagnostic discipline and the laboratory group").
@@ -49,7 +49,7 @@ Version 2027.0.0 contains the following changes compared to the previous version
 
 #### Logical Model
 
-* MII_LM_Labor: `status` set to `active`, `experimental` to `false`.
+* MII_LM_Labor: `experimental` set to `false`. `status` was already `active`.
 
 ### Implementation Guide:
 
