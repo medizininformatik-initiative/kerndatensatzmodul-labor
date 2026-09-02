@@ -15,7 +15,7 @@ Die Version 2027.0.0 enthält im Vergleich zur Vorversion 2026.0.3 folgende Änd
   - Weitere Codings sind zulässig.
 
 #### MII_PR_Labor_Laboruntersuchung
-- basedOn: **NEU** — Bezug zum Laborauftrag, auf dem die Laboruntersuchung basiert. Eingeschränkt auf `Reference(ServiceRequest)` und als Must Support markiert (Issue #82).
+- basedOn: **NEU** auf der Laboruntersuchung — Bezug zum Laborauftrag, auf dem sie basiert. `0..*`, eingeschränkt auf `Reference(ServiceRequest)` und als Must Support markiert (Issue #82). Die Kardinalität bleibt die des Basisprofils; verpflichtend ist `basedOn` nur auf dem Laborbefund, und das unverändert seit 2025.0.2.
 - code.coding: Neuer offener Slice `loinc` mit Extensible-Binding an das IPS-ValueSet der Laborergebnisse. Zuvor war `code` selbst preferred an dieses ValueSet gebunden.
 - valueCodeableConcept: Extensible-Binding an das neue ValueSet [Laborergebnis codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.html), welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices `qualitativ` und `semiquantitativ` entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.
 - interpretation: Extensible-Binding an das neue ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Lokal gebräuchliche Skalen wie `--, -, N, +, ++` bzw. `L N H` bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes `HH`, `LL` und `AA` verwendet werden.
