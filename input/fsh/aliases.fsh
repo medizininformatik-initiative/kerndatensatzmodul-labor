@@ -10,15 +10,20 @@
 // Must Support ist und die Beispiele die MS-Elemente zeigen sollen.
 //
 // Bei einem CalVer-Wechsel BEIDE Orte aktualisieren: diese Aliase und
-// input/resources/Parameters-expansion-manifest.json. Es gibt keinen CI-Check,
-// der die beiden gegeneinander prüft.
+// input/resources/Parameters-expansion-manifest.json.
 //
 // DRITTE Stelle: die $*-ver-Aliase weiter unten tragen CodeSystem-Versionen aus
 // hl7.terminology.r4. Das ist NICHT die Paketversion - THO 7.1.0 liefert
 // v2-0074 in 3.0.0, v2-0203 in 5.0.0 und v3-ObservationInterpretation in 4.0.0.
 // Wird die THO-Dependency in sushi-config.yaml gehoben, muessen diese drei
 // Aliase mitwandern, sonst zeigen die ValueSets auf CodeSystem-Staende des
-// alten Pakets. Ebenfalls ohne CI-Pruefung.
+// alten Pakets.
+//
+// scripts/terminology-pins.test.mjs prueft alle drei Stellen gegeneinander und
+// laeuft ueber convention-check.yml bei jedem Push mit: LOINC und SNOMED gegen
+// das Manifest, die $*-ver-Aliase gegen die CodeSystems, die das gepinnte
+// THO-Paket tatsaechlich ausliefert, und die Extension-Aliase gegen den
+// extensions.r4-Pin in sushi-config.yaml.
 //
 Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
 Alias: $loinc = http://loinc.org|2.82

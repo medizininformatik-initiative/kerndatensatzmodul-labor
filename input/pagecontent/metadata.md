@@ -62,7 +62,9 @@ Terminology versions are pinned in `input/resources/Parameters-expansion-manifes
 
 `pin-canonicals: pin-all` additionally fixes every canonical reference to a version. The publisher reports each of those as an informational line; they are suppressed.
 
-A caveat worth stating: the pinned versions live in three places — the aliases in `input/fsh/aliases.fsh`, this manifest, and the value-set aliases carrying code system versions. Nothing checks them against one another, so a version bump has to touch all three by hand.
+The pinned versions live in **three** places — the aliases in `input/fsh/aliases.fsh`, this manifest, and the value-set aliases carrying code system versions. They cannot be merged into one: SUSHI reads the aliases, the IG Publisher reads the manifest, and neither can see the other. A version bump therefore has to touch all three by hand.
+
+So that drift does not go unnoticed, `scripts/terminology-pins.test.mjs` checks them against one another on every push, via `convention-check.yml`. Two kinds of agreement are covered: the literal duplication of LOINC and SNOMED between the aliases and the manifest, and the agreement of the versioned aliases with what the pinned THO and extensions packages actually ship.
 
 ### Practical Use
 

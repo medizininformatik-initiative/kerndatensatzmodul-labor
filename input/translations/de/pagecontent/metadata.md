@@ -62,7 +62,9 @@ Die Terminologie-Versionen stehen in `input/resources/Parameters-expansion-manif
 
 `pin-canonicals: pin-all` legt zusätzlich jede Canonical-Referenz auf eine Version fest. Der Publisher meldet jede davon als Information; sie sind unterdrückt.
 
-Ein Vorbehalt, der hierher gehört: Die Versionsfestlegungen liegen an **drei** Stellen — den Aliasen in `input/fsh/aliases.fsh`, diesem Manifest und den ValueSet-Aliasen mit CodeSystem-Versionen. Nichts prüft sie gegeneinander; ein Versionswechsel muss alle drei von Hand erfassen.
+Die Versionsfestlegungen liegen an **drei** Stellen — den Aliasen in `input/fsh/aliases.fsh`, diesem Manifest und den ValueSet-Aliasen mit CodeSystem-Versionen. Zusammenführen lassen sie sich nicht: SUSHI liest die Aliase, der IG Publisher das Manifest, und keiner sieht den anderen. Ein Versionswechsel muss deshalb alle drei von Hand erfassen.
+
+Damit das Auseinanderlaufen nicht unbemerkt bleibt, prüft `scripts/terminology-pins.test.mjs` sie gegeneinander — bei jedem Push über `convention-check.yml`. Geprüft wird zweierlei: die wörtliche Dopplung von LOINC und SNOMED zwischen Aliasen und Manifest, und die Übereinstimmung der versionsbehafteten Aliase mit dem, was das gepinnte THO- bzw. Extensions-Paket tatsächlich ausliefert.
 
 ### Praktischer Nutzen
 
