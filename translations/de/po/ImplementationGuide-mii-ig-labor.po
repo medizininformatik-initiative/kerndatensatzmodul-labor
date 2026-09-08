@@ -61,17 +61,17 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Laboratory order example"
+msgid "Laboratory order: full blood count"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "A laboratory order, the request the reported tests were performed for."
+msgid "A laboratory order for a full blood count, the request the reported tests were performed for."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Laboratory report example"
+msgid "Laboratory report: creatinine"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
@@ -81,42 +81,42 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Laboratory test example, no result"
+msgid "Laboratory result: albumin in 24-hour urine"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
+msgid "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Laboratory test example, quantitative result"
+msgid "Laboratory result: creatinine"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation."
+msgid "A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Laboratory test example, result as a range"
+msgid "Laboratory result: creatinine without a value (Data Absent Reason)"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "A laboratory test whose result is a range rather than a single value (valueRange)."
+msgid "A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Laboratory test example, result as a ratio"
+msgid "Laboratory result: epithelial cells in urine sediment (range)"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "A laboratory test whose result is a ratio (valueRatio)."
+msgid "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange)."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name

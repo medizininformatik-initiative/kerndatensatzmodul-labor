@@ -43,6 +43,12 @@
       }
     }
   ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 15,
+    "code": "mg/(24.h)",
+    "unit": "mg/24h"
+  },
   "status": "final",
   "code": {
     "coding": [
@@ -81,19 +87,5 @@
       "reference": "Organization/7772",
       "display": "Zentrallabor des IKCL"
     }
-  ],
-  "valueRatio": {
-    "numerator": {
-      "value": 15,
-      "code": "mg",
-      "system": "http://unitsofmeasure.org",
-      "unit": "mg"
-    },
-    "denominator": {
-      "value": 24,
-      "code": "h",
-      "system": "http://unitsofmeasure.org",
-      "unit": "h"
-    }
-  }
+  ]
 }

@@ -78,19 +78,19 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Laboratory order example",
+      "source" : "Laboratory order: full blood count",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "A laboratory order, the request the reported tests were performed for.",
+      "source" : "A laboratory order for a full blood count, the request the reported tests were performed for.",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Laboratory report example",
+      "source" : "Laboratory report: creatinine",
       "target" : null
     },
     {
@@ -102,49 +102,49 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Laboratory test example, no result",
+      "source" : "Laboratory result: albumin in 24-hour urine",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.",
+      "source" : "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Laboratory test example, quantitative result",
+      "source" : "Laboratory result: creatinine",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation.",
+      "source" : "A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation.",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Laboratory test example, result as a range",
+      "source" : "Laboratory result: creatinine without a value (Data Absent Reason)",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "A laboratory test whose result is a range rather than a single value (valueRange).",
+      "source" : "A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Laboratory test example, result as a ratio",
+      "source" : "Laboratory result: epithelial cells in urine sediment (range)",
       "target" : null
     },
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "A laboratory test whose result is a ratio (valueRatio).",
+      "source" : "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).",
       "target" : null
     },
     {

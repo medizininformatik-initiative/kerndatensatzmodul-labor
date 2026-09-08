@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laborwert
 InstanceOf: MII_PR_Labor_Laboruntersuchung
-Title: "Laboratory test example, quantitative result"
-Description: "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation."
+Title: "Laboratory result: creatinine"
+Description: "A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
@@ -36,8 +36,8 @@ Usage: #example
 
 Instance: mii-exa-labor-laborwert-ratio
 InstanceOf: MII_PR_Labor_Laboruntersuchung
-Title: "Laboratory test example, result as a ratio"
-Description: "A laboratory test whose result is a ratio (valueRatio)."
+Title: "Laboratory result: albumin in 24-hour urine"
+Description: "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter."
 Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
@@ -57,13 +57,12 @@ Usage: #example
 * issued = "2018-03-11T10:28:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.display = "Zentrallabor des IKCL"
-* valueRatio.numerator = 15 'mg' "mg"
-* valueRatio.denominator = 24 'h' "h"
+* valueQuantity = 15 'mg/(24.h)' "mg/24h"
 
 Instance: mii-exa-labor-laborwert-range
 InstanceOf: MII_PR_Labor_Laboruntersuchung
-Title: "Laboratory test example, result as a range"
-Description: "A laboratory test whose result is a range rather than a single value (valueRange)."
+Title: "Laboratory result: epithelial cells in urine sediment (range)"
+Description: "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange)."
 Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"

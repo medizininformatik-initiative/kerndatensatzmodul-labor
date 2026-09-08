@@ -24,7 +24,7 @@ The [UML Diagrams](uml-diagrams.html) show how the elements relate to one anothe
 
 **3. Examples — Seeing FHIR Data in Practice**
 
-The [Examples](examples.html) show samples of the FHIR resources, among them a quantitative result, a result given as a range, one given as a ratio, and a test carrying no value at all. They demonstrate:
+The [Examples](examples.html) show samples of the FHIR resources, among them a quantitative result, an excretion rate with a composed unit, a result given as a range, and a test carrying no value at all. They demonstrate:
 
 * how laboratory data is represented in FHIR
 * what a complete report looks like

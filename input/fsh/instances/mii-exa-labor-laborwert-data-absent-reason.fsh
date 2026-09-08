@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laborwert-data-absent-reason
 InstanceOf: MII_PR_Labor_Laboruntersuchung
-Title: "Laboratory test example, no result"
-Description: "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
+Title: "Laboratory result: creatinine without a value (Data Absent Reason)"
+Description: "A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
