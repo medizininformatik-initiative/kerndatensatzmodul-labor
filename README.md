@@ -10,7 +10,7 @@ https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/branches
 
 [![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--labor-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor) 
 
-Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Labor', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
+Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Laborbefund', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
 
 ### Status:
 
