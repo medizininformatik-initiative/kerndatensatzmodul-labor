@@ -11,9 +11,7 @@ A laboratory report is always assigned to the PERSON from whom the specimen was 
 
 ### Representing Microbiology Data in the Microbiology Module
 
-Since April 2026 the first release of the core data set module Microbiology has been available, as version 2027.0.0-alpha (see the [MII website on the current release](https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-)).
-
-Some microbiological examination methods can also be represented in a FHIR-conformant way in the Laboratory Report module. It is nevertheless recommended to represent the following microbiological findings with the Microbiology module, so as to meet the specific requirements of microbiological diagnostics:
+Some microbiological examination methods can also be represented in a FHIR-conformant way in the Laboratory Report module. It is nevertheless recommended to represent the following microbiological findings with the [Microbiology module](https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-), so as to meet the specific requirements of microbiological diagnostics:
 
 - Culture (general culture, specific culture, microscopy, Barlett score, Nugent score, colony count, susceptibility / resistance testing)
 - Identification / detection of agents (general identification, specific identification, Ct value)

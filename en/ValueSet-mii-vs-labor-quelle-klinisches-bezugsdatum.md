@@ -176,7 +176,7 @@ Kodierung der Quelle des klinischen Bezugsdatums
   "title" : "MII VS Labor Quelle klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T12:43:45+00:00",
+  "date" : "2026-09-08T13:08:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -176,7 +176,7 @@ Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Labo
   "title" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T12:43:45+00:00",
+  "date" : "2026-09-08T13:08:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
