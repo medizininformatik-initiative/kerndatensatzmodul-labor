@@ -1,4 +1,4 @@
-Die Modellierung des Datensatzes zum Modul LABOR enthält Referenzen zu folgenden Projekten:
+Die Modellierung des Datensatzes zum Modul Laborbefund enthält Referenzen zu folgenden Projekten:
 
 - [International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/STU1.1/).
 
