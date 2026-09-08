@@ -91,21 +91,21 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>Laboratory order example</source>
+        <source>Laboratory order: full blood count</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>A laboratory order, the request the reported tests were performed for.</source>
+        <source>A laboratory order for a full blood count, the request the reported tests were performed for.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>Laboratory report example</source>
+        <source>Laboratory report: creatinine</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
@@ -119,56 +119,56 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>Laboratory test example, no result</source>
+        <source>Laboratory result: albumin in 24-hour urine</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.</source>
+        <source>Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>Laboratory test example, quantitative result</source>
+        <source>Laboratory result: creatinine</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation.</source>
+        <source>A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>Laboratory test example, result as a range</source>
+        <source>Laboratory result: creatinine without a value (Data Absent Reason)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>A laboratory test whose result is a range rather than a single value (valueRange).</source>
+        <source>A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>Laboratory test example, result as a ratio</source>
+        <source>Laboratory result: epithelial cells in urine sediment (range)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.description">
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>A laboratory test whose result is a ratio (valueRatio).</source>
+        <source>Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-labor" resname="ImplementationGuide.definition.resource.name">

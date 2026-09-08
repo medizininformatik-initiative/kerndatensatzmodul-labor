@@ -24,7 +24,7 @@ Die [UML-Diagramme](uml-diagrams.html) zeigen, wie die Elemente zueinander in Be
 
 **3. Beispiele — FHIR-Daten in der Praxis**
 
-Der Abschnitt [Beispiele](examples.html) zeigt FHIR-Ressourcen, darunter ein quantitatives Ergebnis, eines als Bereich, eines als Verhältnis und eine Untersuchung ganz ohne Wert. Sie veranschaulichen:
+Der Abschnitt [Beispiele](examples.html) zeigt FHIR-Ressourcen, darunter ein quantitatives Ergebnis, eine Ausscheidungsrate mit zusammengesetzter Einheit, eines als Bereich und eine Untersuchung ganz ohne Wert. Sie veranschaulichen:
 
 * wie Labordaten in FHIR dargestellt werden
 * wie ein vollständiger Befund aussieht

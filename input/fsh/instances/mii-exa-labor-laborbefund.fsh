@@ -1,6 +1,6 @@
 Instance: mii-exa-labor-laborbefund
 InstanceOf: MII_PR_Labor_Laborbefund
-Title: "Laboratory report example"
+Title: "Laboratory report: creatinine"
 Description: "A laboratory report grouping the laboratory test examples of this guide."
 Usage: #example
 * insert TestDataLabel

@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laboranforderung
 InstanceOf: MII_PR_Labor_Laboranforderung
-Title: "Laboratory order example"
-Description: "A laboratory order, the request the reported tests were performed for."
+Title: "Laboratory order: full blood count"
+Description: "A laboratory order for a full blood count, the request the reported tests were performed for."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab)
