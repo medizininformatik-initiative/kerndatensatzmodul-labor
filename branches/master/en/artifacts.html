@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - MII IG Laborbefund v2027.0.0-ballot.rc3</title>
+    <title>Artifacts Summary - MII IG Laborbefund v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Laborbefund</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -314,7 +314,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Laborbefund - Local Development build (v2027.0.0-ballot.rc3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Laborbefund - Local Development build (v2027.0.0-ballot.rc4) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -595,19 +595,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="ServiceRequest-mii-exa-labor-laboranforderung.html"
                   title="ServiceRequest/mii-exa-labor-laboranforderung">
-                  <span title="ServiceRequest/mii-exa-labor-laboranforderung">Laboratory order example
+                  <span title="ServiceRequest/mii-exa-labor-laboranforderung">Laboratory order: full blood count
 </span>
                </a>
             </td>
             <td>
-<p>A laboratory order, the request the reported tests were performed for.</p>
+<p>A laboratory order for a full blood count, the request the reported tests were performed for.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="DiagnosticReport-mii-exa-labor-laborbefund.html"
                   title="DiagnosticReport/mii-exa-labor-laborbefund">
-                  <span title="DiagnosticReport/mii-exa-labor-laborbefund">Laboratory report example
+                  <span title="DiagnosticReport/mii-exa-labor-laborbefund">Laboratory report: creatinine
 </span>
                </a>
             </td>
@@ -617,50 +617,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html"
-                  title="Observation/mii-exa-labor-laborwert-data-absent-reason">
-                  <span title="Observation/mii-exa-labor-laborwert-data-absent-reason">Laboratory test example, no result
+               <a href="Observation-mii-exa-labor-laborwert-ratio.html"
+                  title="Observation/mii-exa-labor-laborwert-ratio">
+                  <span title="Observation/mii-exa-labor-laborwert-ratio">Laboratory result: albumin in 24-hour urine
 </span>
                </a>
             </td>
             <td>
-<p>A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.</p>
+<p>Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-mii-exa-labor-laborwert.html"
                   title="Observation/mii-exa-labor-laborwert">
-                  <span title="Observation/mii-exa-labor-laborwert">Laboratory test example, quantitative result
+                  <span title="Observation/mii-exa-labor-laborwert">Laboratory result: creatinine
 </span>
                </a>
             </td>
             <td>
-<p>A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation.</p>
+<p>A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html"
+                  title="Observation/mii-exa-labor-laborwert-data-absent-reason">
+                  <span title="Observation/mii-exa-labor-laborwert-data-absent-reason">Laboratory result: creatinine without a value (Data Absent Reason)
+</span>
+               </a>
+            </td>
+            <td>
+<p>A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-mii-exa-labor-laborwert-range.html"
                   title="Observation/mii-exa-labor-laborwert-range">
-                  <span title="Observation/mii-exa-labor-laborwert-range">Laboratory test example, result as a range
+                  <span title="Observation/mii-exa-labor-laborwert-range">Laboratory result: epithelial cells in urine sediment (range)
 </span>
                </a>
             </td>
             <td>
-<p>A laboratory test whose result is a range rather than a single value (valueRange).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-mii-exa-labor-laborwert-ratio.html"
-                  title="Observation/mii-exa-labor-laborwert-ratio">
-                  <span title="Observation/mii-exa-labor-laborwert-ratio">Laboratory test example, result as a ratio
-</span>
-               </a>
-            </td>
-            <td>
-<p>A laboratory test whose result is a ratio (valueRatio).</p>
+<p>Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).</p>
 </td>
          </tr>
          <tr>
@@ -752,8 +752,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 11:22+0000">2026-09-08</span>
+          Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 8, 2026 11:59+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -1,10 +1,10 @@
-# Laboratory test example, result as a ratio - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory result: albumin in 24-hour urine - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory test example, result as a ratio**
+* **Laboratory result: albumin in 24-hour urine**
 
-## Beispiel Observation: Laboratory test example, result as a ratio
+## Beispiel Observation: Laboratory result: albumin in 24-hour urine
 
 -------
 
@@ -32,7 +32,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **performer**: [Zentrallabor des IKCL](Organization-7772.md)
 
-**value**: 15 mg (Details: UCUM codemg = 'mg')/24 h (Details: UCUM codeh = 'h')
+**value**: 15 mg/24h (Details: UCUM codemg/(24.h) = 'mg/(24.h)')
 
 
 
@@ -107,19 +107,11 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
     "reference" : "Organization/7772",
     "display" : "Zentrallabor des IKCL"
   }],
-  "valueRatio" : {
-    "numerator" : {
-      "value" : 15,
-      "unit" : "mg",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mg"
-    },
-    "denominator" : {
-      "value" : 24,
-      "unit" : "h",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "h"
-    }
+  "valueQuantity" : {
+    "value" : 15,
+    "unit" : "mg/24h",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mg/(24.h)"
   }
 }
 

@@ -1,10 +1,10 @@
-# Laboratory report example - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory report: creatinine - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Laboratory report example**
+* **Laboratory report: creatinine**
 
-## Example DiagnosticReport: Laboratory report example
+## Example DiagnosticReport: Laboratory report: creatinine
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Labor Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) version: 2027.0.0-ballot.rc3
+Profile: [MII PR Labor Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) version: 2027.0.0-ballot.rc4
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
@@ -42,7 +42,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "resourceType" : "DiagnosticReport",
   "id" : "mii-exa-labor-laborbefund",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2027.0.0-ballot.rc3"],
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|2027.0.0-ballot.rc4"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "code" : "HTEST",

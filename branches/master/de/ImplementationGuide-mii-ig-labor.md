@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot.rc3
+# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -119,7 +119,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot.rc3"
+      "valueString" : "2027.0.0-ballot.rc4"
     },
     {
       "url" : "uri",
@@ -228,12 +228,12 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_IG_Labor",
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T11:22:39+00:00",
+  "date" : "2026-09-08T11:59:47+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1598,8 +1598,8 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "reference" : {
         "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
       },
-      "name" : "Laboratory order example",
-      "description" : "A laboratory order, the request the reported tests were performed for.",
+      "name" : "Laboratory order: full blood count",
+      "description" : "A laboratory order for a full blood count, the request the reported tests were performed for.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
     },
     {
@@ -1614,7 +1614,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "reference" : {
         "reference" : "DiagnosticReport/mii-exa-labor-laborbefund"
       },
-      "name" : "Laboratory report example",
+      "name" : "Laboratory report: creatinine",
       "description" : "A laboratory report grouping the laboratory test examples of this guide.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
     },
@@ -1625,13 +1625,13 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-mii-exa-labor-laborwert-data-absent-reason.html"
+        "valueUri" : "Observation-mii-exa-labor-laborwert-ratio.html"
       }],
       "reference" : {
-        "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
+        "reference" : "Observation/mii-exa-labor-laborwert-ratio"
       },
-      "name" : "Laboratory test example, no result",
-      "description" : "A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.",
+      "name" : "Laboratory result: albumin in 24-hour urine",
+      "description" : "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1646,8 +1646,24 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "reference" : {
         "reference" : "Observation/mii-exa-labor-laborwert"
       },
-      "name" : "Laboratory test example, quantitative result",
-      "description" : "A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation.",
+      "name" : "Laboratory result: creatinine",
+      "description" : "A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation.",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-labor-laborwert-data-absent-reason.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
+      },
+      "name" : "Laboratory result: creatinine without a value (Data Absent Reason)",
+      "description" : "A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1662,24 +1678,8 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "reference" : {
         "reference" : "Observation/mii-exa-labor-laborwert-range"
       },
-      "name" : "Laboratory test example, result as a range",
-      "description" : "A laboratory test whose result is a range rather than a single value (valueRange).",
-      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-mii-exa-labor-laborwert-ratio.html"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-labor-laborwert-ratio"
-      },
-      "name" : "Laboratory test example, result as a ratio",
-      "description" : "A laboratory test whose result is a ratio (valueRatio).",
+      "name" : "Laboratory result: epithelial cells in urine sediment (range)",
+      "description" : "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {

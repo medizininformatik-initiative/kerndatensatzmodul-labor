@@ -1,4 +1,4 @@
-# Artefaktübersicht - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Artefaktübersicht - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Artefaktübersicht**
@@ -66,12 +66,12 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 
 | | |
 | :--- | :--- |
-| [ Laboratory order example  ](ServiceRequest-mii-exa-labor-laboranforderung.md) | A laboratory order, the request the reported tests were performed for. |
-| [ Laboratory report example  ](DiagnosticReport-mii-exa-labor-laborbefund.md) | A laboratory report grouping the laboratory test examples of this guide. |
-| [ Laboratory test example, no result  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) | A laboratory test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation. |
-| [ Laboratory test example, quantitative result  ](Observation-mii-exa-labor-laborwert.md) | A quantitative laboratory test: valueQuantity with a reference range and a coded interpretation. |
-| [ Laboratory test example, result as a range  ](Observation-mii-exa-labor-laborwert-range.md) | A laboratory test whose result is a range rather than a single value (valueRange). |
-| [ Laboratory test example, result as a ratio  ](Observation-mii-exa-labor-laborwert-ratio.md) | A laboratory test whose result is a ratio (valueRatio). |
+| [ Laboratory order: full blood count  ](ServiceRequest-mii-exa-labor-laboranforderung.md) | A laboratory order for a full blood count, the request the reported tests were performed for. |
+| [ Laboratory report: creatinine  ](DiagnosticReport-mii-exa-labor-laborbefund.md) | A laboratory report grouping the laboratory test examples of this guide. |
+| [ Laboratory result: albumin in 24-hour urine  ](Observation-mii-exa-labor-laborwert-ratio.md) | Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. |
+| [ Laboratory result: creatinine  ](Observation-mii-exa-labor-laborwert.md) | A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation. |
+| [ Laboratory result: creatinine without a value (Data Absent Reason)  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) | A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation. |
+| [ Laboratory result: epithelial cells in urine sediment (range)  ](Observation-mii-exa-labor-laborwert-range.md) | Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange). |
 | [ mii-exa-labor-encounter  ](Encounter-555.md) | Minimal reference encounter for the laboratory examples. |
 | [ mii-exa-labor-organization  ](Organization-7772.md) | Minimal reference organization (performing laboratory) for the laboratory examples. |
 | [ mii-exa-labor-patient  ](Patient-111.md) | Minimal reference patient for the laboratory examples. |

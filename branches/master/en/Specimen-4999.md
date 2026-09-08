@@ -1,4 +1,4 @@
-# mii-exa-labor-specimen - MII IG Laborbefund v2027.0.0-ballot.rc3
+# mii-exa-labor-specimen - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,10 +1,10 @@
-# Laboratory test example, quantitative result - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory result: creatinine - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory test example, quantitative result**
+* **Laboratory result: creatinine**
 
-## Beispiel Observation: Laboratory test example, quantitative result
+## Beispiel Observation: Laboratory result: creatinine
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0-ballot.rc3
+Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0-ballot.rc4
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
@@ -56,7 +56,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "resourceType" : "Observation",
   "id" : "mii-exa-labor-laborwert",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc3"],
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ballot.rc4"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "code" : "HTEST",
