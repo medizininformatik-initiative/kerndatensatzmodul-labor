@@ -192,7 +192,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-labor-quel
   "title" : "MII EX Labor Quelle Klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T12:19:33+00:00",
+  "date" : "2026-09-08T12:37:42+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
