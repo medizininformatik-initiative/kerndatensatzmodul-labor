@@ -6,6 +6,11 @@ Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc2`.
 #### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
 - category: One open slice on `category` carrying the mandatory HL7 coding, instead of a slice whose codings were sliced again — two slices at that level are not disjoint, since a CodeableConcept holding both codes matches both patterns. LOINC `26436-6` stays permitted as a further coding but is no longer required. Measured against the category shapes of every release since 2025.0.2, including the microbiology module's: all validate.
 
+### Implementation Guide:
+- The page *Interpretation* is now called [Interpretations and Comments](interpretation.html) and treats the subject in three parts: the coded interpretation, the comments in `Observation.note`, and the interpretation-affecting properties. New in it: how the narrow FHIR sense of "interpretation" relates to its wider use in the Rili-BÄK and ISO 15189 (both now linked), what a coded interpretation is worth for secondary use and where its data quality is limited, and the abnormal code `A`. The threshold for immediate notification is named "alarm" limit, following the wording of those guidelines.
+- The guidelines are cited uniformly across the guide as "Rili-BÄK 2023" and "ISO 15189:2024". [Laboratory Timestamps](laboratory-timestamps.html) previously cited the 2019/23 and 2023 editions.
+- [Project Context](project-context.html) no longer describes the Microbiology module as planned — it has been released since April 2026 — and now names the findings that belong there rather than in this module, together with how that module binds its examination types to LOINC.
+
 ### Version: 2027.0.0-ballot.rc2
 
 Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc1`. Release candidates prepare the ballot; they are not the balloted version.

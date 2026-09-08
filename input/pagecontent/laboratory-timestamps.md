@@ -40,7 +40,7 @@ Data model: The collection time is modelled as a property of the specimen (Speci
 
 Description: Time at which the specimen arrived at the laboratory; also called specimen receipt time.
 
-Interpretation: The "date and time of receipt of the material to be examined" is one of the two timestamps that must be stated on a laboratory report — for all medical laboratories in Germany (RiLiBÄK 2019/23, the German Medical Association's guideline on quality assurance in laboratory medicine) and for accredited laboratories internationally (DIN EN ISO 15189:2023). The other is the time the report was issued.
+Interpretation: The "date and time of receipt of the material to be examined" is one of the two timestamps that must be stated on a laboratory report — for all medical laboratories in Germany (Rili-BÄK 2023, the German Medical Association's guideline on quality assurance in laboratory medicine) and for accredited laboratories internationally (ISO 15189:2024). The other is the time the report was issued.
 
 Beyond that, the laboratory receipt time is documented automatically in many laboratories working with pre-labelled specimens. This yields high documentation quality and availability, which is why the laboratory receipt time is often better suited as the test time (clinical reference time) than the collection time.
 
@@ -76,7 +76,7 @@ Description: Time at which the laboratory report was documented, that is, verifi
 
 Preliminary reports can be represented in their own right with the corresponding status.
 
-Interpretation: Stating the "time the report was issued" (RiLiBÄK 2019/23) is one of the two timestamps that must appear on a laboratory report — for all medical laboratories in Germany (RiLiBÄK 2019/23) and accredited laboratories internationally (DIN EN ISO 15189:2023). The other is the time the specimen was received.
+Interpretation: Stating the "time the report was issued" (Rili-BÄK 2023) is one of the two timestamps that must appear on a laboratory report — for all medical laboratories in Germany (Rili-BÄK 2023) and accredited laboratories internationally (ISO 15189:2024). The other is the time the specimen was received.
 
 Its availability is therefore expected to be higher than that of the documentation time of the individual laboratory test. For some questions the documentation time of the report can thus serve as a surrogate for the point from which medical decisions on the basis of the laboratory result became possible. It should be noted, though, that deviations of days — rarely weeks — can occur.
 
