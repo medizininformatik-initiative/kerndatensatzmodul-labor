@@ -35,5 +35,5 @@ The [Examples](examples.html) show samples of the FHIR resources, among them a q
 Three subjects decide whether laboratory data is read correctly:
 
 * [Laboratory Timestamps](laboratory-timestamps.html) — laboratory data carries several timestamps that are easy to confuse: collection time, laboratory receipt time, request time, and the times at which result and report were documented. The page explains which one is the right basis for a chronological analysis.
-* [Interpretation](interpretation.html) — how a result is assessed and which codes are used for it.
+* [Interpretations and Comments](interpretation.html) — how a result is assessed and which codes are used for it.
 * [Specimen](specimen.html) — what was measured from, and where comments about the specimen are kept.

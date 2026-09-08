@@ -5,5 +5,5 @@ Laborbefunde sind als Dokumente zusammengefasste in einem medizinischen Labor du
 Diese Seite führt in das Modul ein und verweist auf die Themen, die eigene Seiten haben:
 
 * [Zeitpunkte im Labor](laboratory-timestamps.html) — der klinische Bezugszeitpunkt und die übrigen Zeitpunkte eines Befundes
-* [Interpretation](interpretation.html) — die kodierte Bewertung eines Ergebnisses und die dafür vorgesehenen Codes
+* [Interpretationen und Kommentare](interpretation.html) — die kodierte Bewertung eines Ergebnisses, Kommentare und interpretationsbeeinflussende Eigenschaften
 * [Probenmaterial](specimen.html) — wie das Probenmaterial abgebildet wird, unter Nachnutzung des Moduls Biobank
