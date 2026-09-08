@@ -1,10 +1,10 @@
-# Laboratory test example, no result - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory result: creatinine without a value (Data Absent Reason) - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory test example, no result**
+* **Laboratory result: creatinine without a value (Data Absent Reason)**
 
-## Beispiel Observation: Laboratory test example, no result
+## Beispiel Observation: Laboratory result: creatinine without a value (Data Absent Reason)
 
 -------
 

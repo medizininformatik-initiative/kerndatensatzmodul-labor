@@ -1,10 +1,10 @@
-# Laboratory test example, result as a range - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory result: epithelial cells in urine sediment (range) - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Laboratory test example, result as a range**
+* **Laboratory result: epithelial cells in urine sediment (range)**
 
-## Example Observation: Laboratory test example, result as a range
+## Example Observation: Laboratory result: epithelial cells in urine sediment (range)
 
 -------
 

@@ -1,10 +1,10 @@
-# Laboratory report example - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory report: creatinine - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory report example**
+* **Laboratory report: creatinine**
 
-## Beispiel DiagnosticReport: Laboratory report example
+## Beispiel DiagnosticReport: Laboratory report: creatinine
 
 -------
 

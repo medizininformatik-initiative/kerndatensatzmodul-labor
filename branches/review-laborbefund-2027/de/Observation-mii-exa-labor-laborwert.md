@@ -1,10 +1,10 @@
-# Laboratory test example, quantitative result - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory result: creatinine - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory test example, quantitative result**
+* **Laboratory result: creatinine**
 
-## Beispiel Observation: Laboratory test example, quantitative result
+## Beispiel Observation: Laboratory result: creatinine
 
 -------
 

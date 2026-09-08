@@ -1,10 +1,10 @@
-# Laboratory order example - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Laboratory order: full blood count - MII IG Laborbefund v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Laboratory order example**
+* **Laboratory order: full blood count**
 
-## Example ServiceRequest: Laboratory order example
+## Example ServiceRequest: Laboratory order: full blood count
 
 -------
 

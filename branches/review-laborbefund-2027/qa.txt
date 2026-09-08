@@ -1,9 +1,9 @@
 MII_IG_Labor : Validation Results
 =========================================
 
-err = 37, warn = 41, info = 71
+err = 37, warn = 40, info = 71
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Tue Sep 08 11:14:06 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
+Generated Tue Sep 08 11:38:22 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
  Build Errors : 0 / 4 / 0
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement : 0 / 2 / 72
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund : 0 / 0 / 3
@@ -12,7 +12,7 @@ Generated Tue Sep 08 11:14:06 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert : 0 / 3 / 6
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason : 0 / 1 / 6
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-range : 0 / 2 / 3
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio : 0 / 2 / 3
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio : 0 / 1 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Organization-7772 : 0 / 0 / 1
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Patient-111 : 0 / 0 / 1
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ServiceRequest-mii-exa-labor-laboranforderung : 0 / 1 / 2
@@ -76,8 +76,7 @@ WARNING: Observation/mii-exa-labor-laborwert-range: Observation.value.ofType(Ran
 == fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio.json ==
 INFORMATION: Observation/mii-exa-labor-laborwert-ratio: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
 INFORMATION: Observation/mii-exa-labor-laborwert-ratio: Observation.code.coding[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1
-WARNING: Observation/mii-exa-labor-laborwert-ratio: Observation.value.ofType(Ratio).numerator: Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mg')
-WARNING: Observation/mii-exa-labor-laborwert-ratio: Observation.value.ofType(Ratio).denominator: Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#h')
+WARNING: Observation/mii-exa-labor-laborwert-ratio: Observation.value.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mg/(24.h)')
 == fsh-generated/resources/Organization-7772.json ==
 == fsh-generated/resources/Patient-111.json ==
 == fsh-generated/resources/ServiceRequest-mii-exa-labor-laboranforderung.json ==
