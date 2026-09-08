@@ -1,4 +1,4 @@
-# Hinweise für Implementierende - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Hinweise für Implementierende - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)

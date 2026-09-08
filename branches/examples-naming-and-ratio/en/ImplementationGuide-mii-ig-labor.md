@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot.rc3
+# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -119,7 +119,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot.rc3"
+      "valueString" : "2027.0.0-ballot.rc4"
     },
     {
       "url" : "uri",
@@ -228,12 +228,12 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_IG_Labor",
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T11:41:11+00:00",
+  "date" : "2026-09-08T11:49:36+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

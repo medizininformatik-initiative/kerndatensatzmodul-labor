@@ -1,9 +1,26 @@
-# Änderungen - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Änderungen - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungen**
 
 ## Änderungen
+
+### Version: 2027.0.0-ballot.rc4
+
+Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc3` ab. Er enthält das Review des Leitfadens 2027.
+
+### FHIR/Inhaltliche Änderungen:
+
+#### Beispiele
+
+* `mii-exa-labor-laborwert-ratio` gibt sein Ergebnis als `valueQuantity` mit der zusammengesetzten UCUM-Einheit `mg/(24.h)` an statt als `valueRatio`. Ein Ratio ist über `value-quantity` nicht erreichbar — die R4-Expression lautet `(Observation.value as Quantity) | (Observation.value as SampledData)` —, während das CapabilityStatement diesen Suchparameter als SHALL fordert. Die Instanz-ID behält ihr `-ratio`, weil die URL seit rc1 publiziert ist.
+* Die Beispiele sind nach ihrem Inhalt benannt statt nach ihrem Ressourcentyp: Laborbefund und Laborergebnis **Kreatinin**, Anforderung **Großes Blutbild**, **Albumin im 24-Stunden-Urin**, **Epithelzellen im Urinsediment**.
+
+### Implementation Guide:
+
+* Die Seite **Interpretation** heißt jetzt [Interpretationen und Kommentare](interpretation.md) und behandelt das Thema in drei Teilen: die kodierte Interpretation, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Neu darin: wie sich der enge FHIR-Begriff "Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide jetzt verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist, sowie der abnormal-Code `A`. Die Schwelle zur sofortigen Benachrichtigung heißt dem Wortlaut dieser Vorgaben folgend "Alarm"-Grenze.
+* Die Vorgaben werden im gesamten Guide einheitlich als "Rili-BÄK 2023" und "ISO 15189:2024" zitiert. Die [Zeitpunkte im Labor](laboratory-timestamps.md) bezogen sich bisher auf die Ausgaben 2019/23 und 2023.
+* Der [Projektkontext](project-context.md) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist seit April 2026 released — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
 
 ### Version: 2027.0.0-ballot.rc3
 
@@ -14,12 +31,6 @@ Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc2` ab.
 #### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
 
 * category: Ein offener Slice auf `category` mit der verpflichtenden HL7-Kodierung statt eines Slices, dessen Codings erneut gesliced wurden — zwei Slices auf dieser Ebene sind nicht disjunkt, da ein CodeableConcept mit beiden Codes auf beide Patterns trifft. LOINC `26436-6` bleibt als weiteres Coding zulässig, ist aber nicht mehr verpflichtend. Gegen die category-Formen aller Releases seit 2025.0.2 und die des Moduls Mikrobiologie geprüft: alle validieren.
-
-### Implementation Guide:
-
-* Die Seite **Interpretation** heißt jetzt [Interpretationen und Kommentare](interpretation.md) und behandelt das Thema in drei Teilen: die kodierte Interpretation, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Neu darin: wie sich der enge FHIR-Begriff "Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide jetzt verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist, sowie der abnormal-Code `A`. Die Schwelle zur sofortigen Benachrichtigung heißt dem Wortlaut dieser Vorgaben folgend "Alarm"-Grenze.
-* Die Vorgaben werden im gesamten Guide einheitlich als "Rili-BÄK 2023" und "ISO 15189:2024" zitiert. Die [Zeitpunkte im Labor](laboratory-timestamps.md) bezogen sich bisher auf die Ausgaben 2019/23 und 2023.
-* Der [Projektkontext](project-context.md) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist seit April 2026 released — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
 
 ### Version: 2027.0.0-ballot.rc2
 

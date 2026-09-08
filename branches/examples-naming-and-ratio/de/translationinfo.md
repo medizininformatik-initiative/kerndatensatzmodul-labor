@@ -1,4 +1,4 @@
-# Übersetzungsinformationen - MII IG Laborbefund v2027.0.0-ballot.rc3
+# Übersetzungsinformationen - MII IG Laborbefund v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Übersetzungsinformationen**
