@@ -1,7 +1,7 @@
 
 ### Overview
 
-This page documents the extensions specific to the Laboratory module. They add information to FHIR resources that is relevant for the interpretation and contextualisation of laboratory reports.
+This page documents the extensions specific to the Laboratory Report module. They add information to FHIR resources that is relevant for the interpretation and contextualisation of laboratory reports.
 
 ---
 

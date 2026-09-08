@@ -1,6 +1,6 @@
 The logical model gives a conceptual view of the data this module covers. It describes the elements and their meaning independently of the FHIR resource structure, so it can be read without knowing the profiles.
 
-### Laboratory Module
+### Laboratory Report Module
 
 * [MII Laboratory logical model](StructureDefinition-mii-lm-labor.html) — laboratory report, specimen, laboratory test and laboratory order, with every element and its description
 

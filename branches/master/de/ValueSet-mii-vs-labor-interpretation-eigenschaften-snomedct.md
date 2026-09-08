@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT |
 
  
 Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Laboruntersuchung oder Probe. 
@@ -176,7 +176,7 @@ Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Labo
   "title" : "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T20:13:51+00:00",
+  "date" : "2026-09-08T09:14:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

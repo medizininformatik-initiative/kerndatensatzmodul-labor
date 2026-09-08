@@ -6,7 +6,7 @@
 
 ## Guidance for Implementers
 
-This page collects what is needed to implement the Laboratory module in FHIR-based systems.
+This page collects what is needed to implement the Laboratory Report module in FHIR-based systems.
 
 ### Understanding the Requirements
 

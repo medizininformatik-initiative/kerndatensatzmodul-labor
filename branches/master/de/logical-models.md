@@ -9,7 +9,7 @@
 
 Das logische Modell gibt eine konzeptionelle Sicht auf die Daten, die dieses Modul umfasst. Es beschreibt die Elemente und ihre Bedeutung unabhängig von der FHIR-Ressourcenstruktur und ist damit lesbar, ohne die Profile zu kennen.
 
-### Modul Labor
+### Modul Laborbefund
 
 * [Logisches Modell MII Labor](StructureDefinition-mii-lm-labor.md) — Laborbefund, Probenmaterial, Laboruntersuchung und Laboranforderung, mit allen Elementen und deren Beschreibung
 

@@ -6,7 +6,7 @@
 
 ## References
 
-The modelling of the dataset for the LABORATORY module contains references to the following projects:
+The modelling of the dataset for the Laboratory Report module contains references to the following projects:
 
 * [International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/STU1.1/).
 

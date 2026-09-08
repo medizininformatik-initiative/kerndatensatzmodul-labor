@@ -148,11 +148,11 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
-    "valueMarkdown" : "Use this ImplementationGuide resource as the computable definition of the MII Core Dataset Laboratory module."
+    "valueMarkdown" : "Use this ImplementationGuide resource as the computable definition of the MII Core Dataset Laboratory Report module."
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
-    "valueMarkdown" : "Provide the computable publication unit for the MII Core Dataset Laboratory module."
+    "valueMarkdown" : "Provide the computable publication unit for the MII Core Dataset Laboratory Report module."
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
@@ -233,7 +233,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T20:13:51+00:00",
+  "date" : "2026-09-08T09:14:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

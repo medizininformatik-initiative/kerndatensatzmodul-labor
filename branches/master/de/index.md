@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_IG_Labor |
+| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_IG_Labor |
 
 ### Kerndatensatz-Modul Laborbefund
 
