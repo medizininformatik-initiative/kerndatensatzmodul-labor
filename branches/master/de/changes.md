@@ -15,6 +15,12 @@ Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc2` ab.
 
 * category: Ein offener Slice auf `category` mit der verpflichtenden HL7-Kodierung statt eines Slices, dessen Codings erneut gesliced wurden — zwei Slices auf dieser Ebene sind nicht disjunkt, da ein CodeableConcept mit beiden Codes auf beide Patterns trifft. LOINC `26436-6` bleibt als weiteres Coding zulässig, ist aber nicht mehr verpflichtend. Gegen die category-Formen aller Releases seit 2025.0.2 und die des Moduls Mikrobiologie geprüft: alle validieren.
 
+### Implementation Guide:
+
+* Die Seite **Interpretation** heißt jetzt [Interpretationen und Kommentare](interpretation.md) und behandelt das Thema in drei Teilen: die kodierte Interpretation, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Neu darin: wie sich der enge FHIR-Begriff "Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide jetzt verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist, sowie der abnormal-Code `A`. Die Schwelle zur sofortigen Benachrichtigung heißt dem Wortlaut dieser Vorgaben folgend "Alarm"-Grenze.
+* Die Vorgaben werden im gesamten Guide einheitlich als "Rili-BÄK 2023" und "ISO 15189:2024" zitiert. Die [Zeitpunkte im Labor](laboratory-timestamps.md) bezogen sich bisher auf die Ausgaben 2019/23 und 2023.
+* Der [Projektkontext](project-context.md) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist seit April 2026 released — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
+
 ### Version: 2027.0.0-ballot.rc2
 
 Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc1` ab. Release-Kandidaten bereiten das Ballot vor; sie sind nicht die ballotierte Version.

@@ -45,6 +45,6 @@ Der Abschnitt [Beispiele](examples.md) zeigt FHIR-Ressourcen, darunter ein quant
 Drei Themen entscheiden darüber, ob Labordaten richtig gelesen werden:
 
 * [Zeitpunkte im Labor](laboratory-timestamps.md) — Labordaten tragen mehrere leicht zu verwechselnde Zeitpunkte: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Die Seite erklärt, welcher davon die richtige Grundlage für eine zeitliche Auswertung ist.
-* [Interpretation](interpretation.md) — wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind.
+* [Interpretationen und Kommentare](interpretation.md) — wie ein Ergebnis bewertet wird und welche Codes dafür vorgesehen sind.
 * [Probenmaterial](specimen.md) — woraus gemessen wurde und wie Kommentare zur Probe abgelegt sind.
 

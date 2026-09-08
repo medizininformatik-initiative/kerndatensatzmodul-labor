@@ -185,7 +185,7 @@
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
-      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="interpretation.html">Interpretationen und Kommentare</a></li>
       <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
@@ -301,16 +301,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#kontext-im-gesamtprojekt--bezüge-zu-anderen-modulen" id="markdown-toc-kontext-im-gesamtprojekt--bezüge-zu-anderen-modulen">Kontext im Gesamtprojekt / Bezüge zu anderen Modulen</a></li>
+  <li><a href="#abbildung-von-mikrobiologischen-daten-im-modul-mikrobiologie" id="markdown-toc-abbildung-von-mikrobiologischen-daten-im-modul-mikrobiologie">Abbildung von mikrobiologischen Daten im Modul Mikrobiologie</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <h3 id="kontext-im-gesamtprojekt--bezüge-zu-anderen-modulen">Kontext im Gesamtprojekt / Bezüge zu anderen Modulen</h3>
 
 <p>Das Modul Laborbefund bildet Laborbefunde ab, die typischerweise in einem Zentrallabor eines Klinikums erhoben werden. Diese Befunde spielen in den meisten Use Cases der MII eine zentrale Rolle:</p>
@@ -323,9 +320,24 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   </li>
 </ul>
 
-<p>Für Laborbefunde, die sich in erster Linie mit dem Nachweis infektiologischer Erreger (Mikrobiologie, Virologie) befassen, ist ein gesondertes, aber eng verwandtes Modul geplant, in dem mit SNOMED CT die einzelnen Erreger abgebildet werden können. Außerdem gibt es für Befunde aus der Pathologie ein eigenes Modul.</p>
+<p>Für Laborbefunde, die sich in erster Linie mit dem Nachweis infektiologischer Erreger (Mikrobiologie, Virologie) befassen, gibt es ein gesondertes, aber eng verwandtes Modul, in dem mit SNOMED CT die einzelnen Erreger abgebildet werden können — siehe den folgenden Abschnitt. Außerdem gibt es für Befunde aus der Pathologie ein eigenes Modul.</p>
 
 <p>Ein Laborbefund ist dabei immer der PERSON zugeordnet, von welcher die Probe entnommen wurde. Wenn diese Probe in einer Biobank für weitere Untersuchungen verwahrt wird, kann diese Probe mit den Profilen im Modul BIOBANK abgebildet werden. Die Ergebnisse aus einem Laborbefund können als einzelne Elemente in verschiedenen anderen Modulen, z.B. zur Tumordokumentation wieder eingebunden sein.</p>
+
+<h3 id="abbildung-von-mikrobiologischen-daten-im-modul-mikrobiologie">Abbildung von mikrobiologischen Daten im Modul Mikrobiologie</h3>
+
+<p>Seit April 2026 steht mit der Version 2027.0.0-alpha das erste Release des Kerndatensatzmoduls Mikrobiologie zur Verfügung (siehe <a href="https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-">MII-Website zum aktuellen Release</a>).</p>
+
+<p>Einige mikrobiologische Untersuchungsmethoden lassen sich auch FHIR-konform im Modul Laborbefund abbilden. Es wird aber empfohlen, folgende mikrobiologischen Befunde mithilfe des Moduls Mikrobiologie abzubilden, um den spezifischen Anforderungen der mikrobiologischen Diagnostik gerecht zu werden:</p>
+
+<ul>
+  <li>Kultur (Allgemeine Kultur, Spezifische Kultur, Mikroskopie, Barlett Score, Nugent Score, Keimzahl, Empfindlichkeit / Resistenztestung)</li>
+  <li>Bestimmung / Erregernachweise (Allgemeine Bestimmung, Spezifische Bestimmung, Ct-Wert)</li>
+  <li>Quantitative Tests (Antigen-Antikörper-Tests, Titer, Molekulare Pathogenlast)</li>
+  <li>Weitere Eigenschaften (Virulenz, Resistenzmechanismus, MRGN-Klasse, voraussichtliche Empfindlichkeit, Resistenzkategorie-Status, Avidität)</li>
+</ul>
+
+<p>Das Modul Mikrobiologie bindet die Untersuchungsarten an LOINC — überwiegend über ValueSets mit extensible-Bindung, bei einigen Profilen über einen fest vorgegebenen Code. Über diese Bindungen lassen sich korrespondierende Befunde identifizieren; welche Codes ein Profil erwartet, ist dort jeweils unter <code class="language-plaintext highlighter-rouge">Observation.code</code> einsehbar.</p>
 
 
 
@@ -352,7 +364,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 09:14+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 11:22+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

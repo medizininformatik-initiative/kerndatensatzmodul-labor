@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Interpretation - MII IG Laborbefund v2027.0.0-ballot.rc3</title>
+    <title>Interpretations and Comments - MII IG Laborbefund v2027.0.0-ballot.rc3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -213,7 +213,7 @@
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
-      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="interpretation.html">Interpretations and Comments</a></li>
       <li><a href="specimen.html">Specimen</a></li>
       <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
@@ -294,7 +294,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='guidance.html'><b>Guidance</b></a></li><li><b>Interpretation</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='guidance.html'><b>Guidance</b></a></li><li><b>Interpretations and Comments</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -315,7 +315,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">MII IG Laborbefund - Local Development build (v2027.0.0-ballot.rc3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Interpretation</h2>
+  <h2>Interpretations and Comments</h2>
   
 
 
@@ -330,15 +330,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#coded-interpretation-observationinterpretation" id="markdown-toc-coded-interpretation-observationinterpretation">Coded interpretation (<code class="language-plaintext highlighter-rouge">Observation.interpretation</code>)</a></li>
+  <li><a href="#comments-observationnote" id="markdown-toc-comments-observationnote">Comments (<code class="language-plaintext highlighter-rouge">Observation.note</code>)</a></li>
+  <li><a href="#interpretation-affecting-properties-such-as-haemolytic" id="markdown-toc-interpretation-affecting-properties-such-as-haemolytic">Interpretation-affecting properties (such as “haemolytic”)</a></li>
+</ul>
+
 </div>
+<p>Medical interpretations and comments are an essential part of a laboratory report: with them, the laboratory helps the requester draw the right conclusions from the measured results. The clinical interpretation itself is largely recorded as free text. Additional structured codes may be used, although SNOMED CT is only available where the corresponding licences are held.</p>
 
-<p>Medical interpretations and comments are an essential part of a laboratory report. The main interpretation is usually recorded as free text; additional structured codes may be used where suitable terminology and licences are available. Comments concerning only one measurement, such as “measurement interfered with”, should be stored as a note. A coded interpretation relative to the reference interval is possible but redundant when the reference interval itself is represented explicitly.</p>
+<h3 id="coded-interpretation-observationinterpretation">Coded interpretation (<code class="language-plaintext highlighter-rouge">Observation.interpretation</code>)</h3>
 
-<h3 id="which-codes-apply">Which codes apply</h3>
+<p>In the FHIR representation of a laboratory report, the term “interpretation” refers above all to the coded interpretation of where a measured value lies in relation to the reference range (for example “+”, “high”, “-”, “low”, “normal”, “abnormal”). This is a narrower use of the term “interpretation” than in the <a href="https://www.bundesaerztekammer.de/themen/aerzte/qualitaetssicherung/richtlinien-leitlinien-empfehlungen-stellungnahmen">Rili-BÄK 2023</a> and <a href="https://www.dinmedia.de/de/norm/din-en-iso-15189/375920985">ISO 15189:2024</a>, which refer to a clinical interpretation, for example in free-text comments.</p>
 
-<p>FHIR binds <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensibly to <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, which covers the complete HL7 v3 ObservationInterpretation code system. The module narrows that selection to the concepts meaningful in a laboratory context and binds — also extensibly — to <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
+<p>For secondary use, a coded interpretation can be an advantage, because it makes FHIR-based searching for raised or lowered laboratory results easier.</p>
+
+<p>The underlying data quality nevertheless remains limited: “normal” values in particular are not explicitly coded in the primary systems, and there are no mandatory requirements on medical laboratories to provide a coded interpretation. The statement also remains redundant, since the reference interval itself should be represented explicitly.</p>
+
+<h4 id="which-codes-apply">Which codes apply</h4>
+
+<p>FHIR binds <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensibly to <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, which covers the complete HL7 v3 ObservationInterpretation code system. The module narrows that selection to the concepts most frequent in a laboratory context and binds — also extensibly — to the ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
 
 <table>
   <thead>
@@ -346,6 +358,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <th>Code</th>
       <th>Meaning</th>
       <th>Example of a local coding</th>
+      <th>Remark</th>
     </tr>
   </thead>
   <tbody>
@@ -353,33 +366,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><code class="language-plaintext highlighter-rouge">LU</code></td>
       <td>Significantly low</td>
       <td><code class="language-plaintext highlighter-rouge">--</code></td>
+      <td> </td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">L</code></td>
       <td>Low</td>
       <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>&lt; reference range</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">N</code></td>
       <td>Normal</td>
       <td><code class="language-plaintext highlighter-rouge">N</code></td>
+      <td> </td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">H</code></td>
       <td>High</td>
       <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>&gt; reference range</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">HU</code></td>
       <td>Significantly high</td>
       <td><code class="language-plaintext highlighter-rouge">++</code></td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
 
 <p>Reports in use today carry differing local codings, for example the five-level scale <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> or the three-level <code class="language-plaintext highlighter-rouge">L N H</code>. The table shows the mapping for the five-level variant.</p>
 
-<p>Because the binding is extensible, further codes may be used in addition. The ones that matter in practice are the abnormal codes <code class="language-plaintext highlighter-rouge">HH</code> (critical high), <code class="language-plaintext highlighter-rouge">LL</code> (critical low) and <code class="language-plaintext highlighter-rouge">AA</code> (critical abnormal) — for example for results beyond the critical notification limit, the threshold at which the laboratory must phone the requester. They are not part of the module ValueSet, but they are contained in the value set that the FHIR R4 specification uses for <code class="language-plaintext highlighter-rouge">Observation.interpretation</code>.</p>
+<p>Because the binding is extensible, further codes may be used in addition. The ones that can matter in practice are the abnormal codes <code class="language-plaintext highlighter-rouge">A</code> (abnormal, for example results shown in red by the primary system), <code class="language-plaintext highlighter-rouge">HH</code> (critical high), <code class="language-plaintext highlighter-rouge">LL</code> (critical low) and <code class="language-plaintext highlighter-rouge">AA</code> (critical abnormal) — for instance for values beyond the “alarm” limits, the threshold at which the laboratory must notify the requester immediately (by telephone, for example). They are not part of the module ValueSet, but they are contained in the value set that the FHIR R4 specification uses for <code class="language-plaintext highlighter-rouge">Observation.interpretation</code>.</p>
+
+<h3 id="comments-observationnote">Comments (<code class="language-plaintext highlighter-rouge">Observation.note</code>)</h3>
+
+<p>Comments are mostly free text, or notes assembled in the primary system from text blocks: analysis-specific, specimen-specific or patient-specific remarks that serve the clinical interpretation. Under ISO 15189:2024 they are mandatory as additional information in reports where they are relevant to the clinical interpretation.</p>
+
+<p>Individual comments frequently concern not the report as a whole but only single measurements (for example “measurement interfered with”). Such comments should be stored as a note.</p>
+
+<h3 id="interpretation-affecting-properties-such-as-haemolytic">Interpretation-affecting properties (such as “haemolytic”)</h3>
+
+<p>Interpretation-affecting specimen properties (for example haemolysis, lipaemia, icterus) that are stated at the level of the individual test result can be coded with the modifier extension <a href="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.html">Interpretation-affecting property</a>.</p>
 
 
 
@@ -406,7 +434,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 09:14+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 11:22+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

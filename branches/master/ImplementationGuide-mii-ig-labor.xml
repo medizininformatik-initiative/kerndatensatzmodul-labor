@@ -138,7 +138,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-08T09:14:04+00:00"/>
+  <date value="2026-09-08T11:22:39+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1539,7 +1539,16 @@
             <valueUrl value="interpretation.html"/>
           </extension>
           <nameUrl value="interpretation.html"/>
-          <title value="Interpretation"/>
+          <title value="Interpretations and Comments">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Interpretationen und Kommentare"/>
+              </extension>
+            </extension>
+          </title>
           <generation value="markdown"/>
         </page>
         <page>

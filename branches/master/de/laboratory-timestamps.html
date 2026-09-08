@@ -185,7 +185,7 @@
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
-      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="interpretation.html">Interpretationen und Kommentare</a></li>
       <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
@@ -336,7 +336,7 @@ Datenmodell: Im Datenmodell wird der Entnahmezeitpunkt als Eigenschaft des Probe
 
 <h4 id="laboreingangszeitpunkt">Laboreingangszeitpunkt:</h4>
 <p>Beschreibung: Zeitpunkt der Ankunft des Probenmaterials im Labor, auch Probeneingangszeitpunkt.
-Interpretation: „Datum und Uhrzeit des Eingangs des Untersuchungsmaterials“ ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt der Berichtausgabe) – für alle medizinischen Labore in Deutschland (RiLiBÄK 2019/23) und akkreditierte Labore international (DIN EN ISO 15189_2023).
+Interpretation: „Datum und Uhrzeit des Eingangs des Untersuchungsmaterials“ ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt der Berichtausgabe) – für alle medizinischen Labore in Deutschland (Rili-BÄK 2023) und akkreditierte Labore international (ISO 15189:2024).
 Außerdem wird der Laboreingangszeitpunkt in vielen Laboren mit bereits voretikettierten Proben automatisiert dokumentiert. Dies führt zu einer hohen Dokumentationsqualität und Verfügbarkeit, wodurch sich der Laboreingangszeitpunkt häufig besser als Untersuchungszeitpunkt (klinischer Bezugszeitpunkt) eignet als der Entnahmezeitpunkt.
 Datenmodell: Im Datenmodell wird der Laboreingangszeitpunkt als Eigenschaft des Probenmaterials (Specimen Bioprobe Core, Modul Biobank) modelliert und in vielen Fällen zusätzlich als Untersuchungszeitpunkt (klinischer Bezugszeitpunkt, s.o.).</p>
 
@@ -358,7 +358,7 @@ Datenmodell: Als Eigenschaft der Laboruntersuchung (Observation) modelliert.</p>
 <h4 id="dokumentationszeitpunkt-des-laborberichts">Dokumentationszeitpunkt des Laborberichts</h4>
 <p>Beschreibung: Zeitpunkt, an dem der Laborbefund/Laborbericht dokumentiert (verifiziert/freigegeben bzw. ausgegeben) wurde. Da ein Laborbefund häufig mehrere Analysen umfasst, sollte für diesen der älteste Zeitstempel der enthaltenen Laboruntersuchungen gewählt werden, wenn das Datum der Befundfreigabe nicht explizit zur Verfügung steht.
 Vorläufige Befunde können eigenständig mit einem entsprechenden Status abgebildet werden.
-Interpretation: Die Angabe des „Zeitpunkts der Berichtausgabe“ (RiLiBÄK 2019/23) ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt des Probeneingangs) – für alle medizinischen Labore in Deutschland (RiLiBÄK 2019/23) und akkreditierte Labore international (DIN EN ISO 15189_2023).
+Interpretation: Die Angabe des „Zeitpunkts der Berichtausgabe“ (Rili-BÄK 2023) ist einer der zwei Zeitstempel deren Angabe auf dem Laborbefund verpflichtend ist (neben dem Zeitpunkt des Probeneingangs) – für alle medizinischen Labore in Deutschland (Rili-BÄK 2023) und akkreditierte Labore international (ISO 15189:2024).
 Es ist damit eine höhere Verfügbarkeit zu erwarten als beim Dokumentationszeitpunkt der (Einzel-)Laboruntersuchung. Für manche Fragestellungen kann der Dokumentationszeitpunkt des Laborberichts somit als Surrogat verwendet werden, ab welchem Zeitpunkt medizinische Konsequenzen auf Basis des Laborergebnisses möglich sind. Dabei ist aber zu beachten, dass zum Teil Abweichungen von Tagen (selten Wochen) auftreten können.
 Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p>
 
@@ -437,7 +437,7 @@ Datenmodell: Als Eigenschaft des Laborbefundes (DiagnosticReport) modelliert.</p
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 09:14+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 11:22+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -233,7 +233,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T09:14:04+00:00",
+  "date" : "2026-09-08T11:22:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -2160,7 +2160,20 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
             "valueUrl" : "interpretation.html"
           }],
           "nameUrl" : "interpretation.html",
-          "title" : "Interpretation",
+          "title" : "Interpretations and Comments",
+          "_title" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "de"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Interpretationen und Kommentare"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          },
           "generation" : "markdown"
         },
         {

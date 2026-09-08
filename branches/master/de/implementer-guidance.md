@@ -50,7 +50,7 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 Drei Themen sind für die Umsetzung eigens beschrieben:
 
 * [Zeitpunkte im Labor](laboratory-timestamps.md) — Labordaten tragen mehrere Zeitpunkte unterschiedlicher Bedeutung: Entnahme, Laboreingang, Anforderung sowie die Dokumentation von Ergebnis und Befund. Der klinische Bezugszeitpunkt ist derjenige, der Messungen im Zeitverlauf vergleichbar macht; Zuordnung und Begründung stehen dort.
-* [Interpretation](interpretation.md) — die kodierte Bewertung eines Ergebnisses und das dafür vorgesehene ValueSet.
+* [Interpretationen und Kommentare](interpretation.md) — die kodierte Bewertung eines Ergebnisses und das dafür vorgesehene ValueSet.
 * [Probenmaterial](specimen.md) — die Abbildung des Probenmaterials über das Modul Biobank.
 
 ### Erste Schritte bei der Implementierung

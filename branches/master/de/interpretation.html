@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Interpretation - MII IG Laborbefund v2027.0.0-ballot.rc3</title>
+    <title>Interpretationen und Kommentare - MII IG Laborbefund v2027.0.0-ballot.rc3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -185,7 +185,7 @@
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramm</a></li>
       <li><a href="laboratory-timestamps.html">Zeitpunkte im Labor</a></li>
-      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="interpretation.html">Interpretationen und Kommentare</a></li>
       <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="project-context.html">Projektkontext</a></li>
@@ -265,7 +265,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><b>Interpretation</b></li>
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><b>Interpretationen und Kommentare</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -286,7 +286,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">MII IG Laborbefund - Local Development build (v2027.0.0-ballot.rc3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Interpretation</h2>
+  <h2>Interpretationen und Kommentare</h2>
   
 
 
@@ -301,23 +301,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#kodierte-interpretation-observationinterpretation" id="markdown-toc-kodierte-interpretation-observationinterpretation">Kodierte Interpretation (<code class="language-plaintext highlighter-rouge">Observation.interpretation</code>)</a></li>
+  <li><a href="#kommentare-observationnote" id="markdown-toc-kommentare-observationnote">Kommentare (<code class="language-plaintext highlighter-rouge">Observation.note</code>)</a></li>
+  <li><a href="#interpretationsbeeinflussende-eigenschaften-wie-hämolytisch" id="markdown-toc-interpretationsbeeinflussende-eigenschaften-wie-hämolytisch">Interpretationsbeeinflussende Eigenschaften (wie "hämolytisch")</a></li>
+</ul>
+
 </div>
+<p>Ein wesentlicher Teil des Laborbefundes sind die ärztlichen Interpretationen und die Kommentare, mit denen das Labor dem Einsender hilft, die richtigen Schlüsse aus den Messergebnissen zu ziehen. Die eigentliche klinische Interpretation wird im Wesentlichen als Freitext abgespeichert. Zusätzliche strukturierte Codierungen sind möglich, allerdings steht SNOMED CT nur bei Verfügbarkeit entsprechender Lizenzen zur Verfügung.</p>
 
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+<h3 id="kodierte-interpretation-observationinterpretation">Kodierte Interpretation (<code class="language-plaintext highlighter-rouge">Observation.interpretation</code>)</h3>
 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
+<p>Der Begriff "Interpretation" bezieht sich in der FHIR-Darstellung des Laborbefunds v.a. auf die kodierte Interpretation der Lage des Messwertes in Bezug zum Referenzbereich (z.B. "+", "hoch", "-", "niedrig", "normal", "abnormal"). Dies ist eine engere Verwendung des Begriffs "Interpretation" als in der <a href="https://www.bundesaerztekammer.de/themen/aerzte/qualitaetssicherung/richtlinien-leitlinien-empfehlungen-stellungnahmen">Rili-BÄK 2023</a> sowie <a href="https://www.dinmedia.de/de/norm/din-en-iso-15189/375920985">ISO 15189:2024</a>, die sich auf eine klinische Interpretation zum Beispiel in Freitext-Kommentaren beziehen.</p>
 
-</p>
+<p>Für die Sekundärnutzung kann ein Vorteil in der kodierten Interpretation liegen, da dies die FHIR-basierte Suche von erhöhten oder erniedrigten Laborergebnissen erleichtern kann.</p>
 
-<p>Ein wesentlicher Teil des Laborbefundes sind die ärztlichen Interpretationen und die Kommentare, mit denen das Labor dem Einsender hilft, die richtigen Schlüsse aus den Messergebnissen zu ziehen. Die eigentliche Interpretation wird in im Wesentlichen als Freitext abgespeichert. Zusätzliche strukturierte Codierungen sind möglich, allerdings steht SNOMED CT nur bei Verfügbarkeit entsprechender Lizenzen zur Verfügung.</p>
+<p>Die zugrundeliegende Datenqualität bleibt aber eingeschränkt, da insbesondere "normale" Werte in den Primärsystemen nicht explizit kodiert sind und es keine verpflichtenden Anforderungen an medizinische Laboratorien für eine kodierte Interpretation gibt. Außerdem bleibt die Angabe redundant, da das Referenzintervall selbst explizit abgebildet werden sollte.</p>
 
-<p>Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern nur auf einzelne Messungen (z.B. "Messung gestört"). Diese Kommentare sollten als Notiz gespeichert werden. Eine Interpretation der Lage des Messwertes in Bezug zum Referenzintervall (z.B. "+", "hoch", "-", "niedrig") können explizit angegeben werden, sind jedoch redundant, da das Referenzintervall selbst explizit abgebildet werden sollte.</p>
+<h4 id="welche-codes-in-frage-kommen">Welche Codes in Frage kommen</h4>
 
-<h3 id="welche-codes-in-frage-kommen">Welche Codes in Frage kommen</h3>
-
-<p>FHIR bindet <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensible an <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, das den vollständigen CodeSystem HL7 v3 ObservationInterpretation umfasst. Das Modul schränkt diese Auswahl auf die im Laborkontext sinnvollen Konzepte ein und bindet – ebenfalls extensible – an das ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
+<p>FHIR bindet <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> extensible an <a href="http://hl7.org/fhir/ValueSet/observation-interpretation">Observation Interpretation Codes</a>, das den vollständigen CodeSystem HL7 v3 ObservationInterpretation umfasst. Das Modul schränkt diese Auswahl auf die im Laborkontext häufigsten Konzepte ein und bindet – ebenfalls extensible – an das ValueSet <a href="ValueSet-mii-vs-labor-interpretation.html">Interpretation</a>:</p>
 
 <table>
   <thead>
@@ -325,6 +329,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
       <th>Code</th>
       <th>Bedeutung</th>
       <th>Beispiel lokaler Kodierung</th>
+      <th>Bemerkung</th>
     </tr>
   </thead>
   <tbody>
@@ -332,33 +337,48 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
       <td><code class="language-plaintext highlighter-rouge">LU</code></td>
       <td>Deutlich erniedrigt</td>
       <td><code class="language-plaintext highlighter-rouge">--</code></td>
+      <td> </td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">L</code></td>
       <td>Erniedrigt</td>
       <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>&lt; Referenzbereich</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">N</code></td>
       <td>Normal</td>
       <td><code class="language-plaintext highlighter-rouge">N</code></td>
+      <td> </td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">H</code></td>
       <td>Erhöht</td>
       <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>&gt; Referenzbereich</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">HU</code></td>
       <td>Deutlich erhöht</td>
       <td><code class="language-plaintext highlighter-rouge">++</code></td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
 
 <p>In Befunden werden heute unterschiedliche lokale Kodierungen verwendet, etwa die fünfstufige Skala <code class="language-plaintext highlighter-rouge">--, -, N, +, ++</code> oder die dreistufige <code class="language-plaintext highlighter-rouge">L N H</code>. Die Tabelle zeigt das Mapping der fünfstufigen Variante.</p>
 
-<p>Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden. Praktisch relevant sind die abnormal-Codes <code class="language-plaintext highlighter-rouge">HH</code> (kritisch erhöht), <code class="language-plaintext highlighter-rouge">LL</code> (kritisch erniedrigt) und <code class="language-plaintext highlighter-rouge">AA</code> (kritisch abweichend) – etwa für Werte jenseits der Telefongrenze, also der Schwelle, ab der das Labor den Einsender telefonisch informieren muss. Sie gehören nicht zum Modul-ValueSet, sind aber in dem ValueSet enthalten, das die FHIR-R4-Spezifikation für <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> verwendet.</p>
+<p>Da die Bindung extensible ist, dürfen darüber hinaus weitere Codes verwendet werden. Praktisch relevant können die abnormal-Codes <code class="language-plaintext highlighter-rouge">A</code> (abnormal, z.B. Rotfärbung der Ergebnisse im Primärsystem), <code class="language-plaintext highlighter-rouge">HH</code> (kritisch erhöht), <code class="language-plaintext highlighter-rouge">LL</code> (kritisch erniedrigt) und <code class="language-plaintext highlighter-rouge">AA</code> (kritisch abweichend) sein – etwa für Werte jenseits der "Alarm"-Grenzen, also der Schwelle, ab der das Labor den Einsender sofort benachrichtigen muss (z.B. telefonisch). Sie gehören nicht zum Modul-ValueSet, sind aber in dem ValueSet enthalten, das die FHIR-R4-Spezifikation für <code class="language-plaintext highlighter-rouge">Observation.interpretation</code> verwendet.</p>
+
+<h3 id="kommentare-observationnote">Kommentare (<code class="language-plaintext highlighter-rouge">Observation.note</code>)</h3>
+
+<p>Kommentare sind zumeist als Freitext bzw. im Primärsystem mit Textbausteinen hinterlegte analysenspezifische, probenspezifische oder patientenspezifische Hinweise, die der klinischen Interpretation dienen. Sie sind nach ISO 15189:2024 als zusätzliche Angaben in Berichten verpflichtend, falls für die klinische Interpretation relevant.</p>
+
+<p>Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern nur auf einzelne Messungen (z.B. "Messung gestört"). Diese Kommentare sollten als Notiz gespeichert werden.</p>
+
+<h3 id="interpretationsbeeinflussende-eigenschaften-wie-hämolytisch">Interpretationsbeeinflussende Eigenschaften (wie "hämolytisch")</h3>
+
+<p>Interpretationsbeeinflussende Probeneigenschaften (z.B. Hämolyse, Lipämie, Ikterus), die auf Ebene des Untersuchungsergebnisses angegeben sind, können mithilfe der Modifier-Extension <a href="StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.html">Interpretationsbeeinflussende Eigenschaft</a> kodiert werden.</p>
 
 
 
@@ -385,7 +405,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 8, 2026 09:14+0000">2026-09-08</span>
+          Erstellt <span title="Tue, Sep 8, 2026 11:22+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

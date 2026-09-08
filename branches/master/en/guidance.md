@@ -12,6 +12,6 @@ Laboratory reports group tests performed by a medical laboratory. They record wh
 This page introduces the module and points at the subjects treated in detail on their own pages:
 
 * [Laboratory Timestamps](laboratory-timestamps.md) — the clinical reference time and the other times a report records
-* [Interpretation](interpretation.md) — coded assessment of a result and which codes apply
+* [Interpretations and Comments](interpretation.md) — the coded assessment of a result, comments, and interpretation-affecting properties
 * [Specimen](specimen.md) — how the specimen is represented, reusing the Biobank module
 

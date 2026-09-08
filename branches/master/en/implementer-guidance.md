@@ -50,7 +50,7 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 Three subjects are described separately for implementation:
 
 * [Laboratory Timestamps](laboratory-timestamps.md) — laboratory data carries several timestamps whose meaning differs: collection time, laboratory receipt time, request time, and the documentation times of result and report. The clinical reference time is the one that makes measurements comparable over time; the mapping and the reasoning are there.
-* [Interpretation](interpretation.md) — the coded assessment of a result and the ValueSet provided for it.
+* [Interpretations and Comments](interpretation.md) — the coded assessment of a result and the ValueSet provided for it.
 * [Specimen](specimen.md) — the representation of specimen material via the Biobank module.
 
 ### Getting Started with Implementation

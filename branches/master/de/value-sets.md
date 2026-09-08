@@ -21,5 +21,5 @@ Zusätzlich zu den international verwendeten Terminologien definiert das Modul L
 | [Quelle des klinischen Bezugsdatums](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md) | Kodierung der Quelle des klinischen Bezugsdatums. |
 | [Identifier-Typen](ValueSet-mii-vs-labor-identifier-type-codes.md) | Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu verwenden ist. |
 
-Welche Codes für `Observation.interpretation` in Frage kommen und wie sich lokale Skalen darauf abbilden, ist in der [Interpretation](interpretation.md) erläutert.
+Welche Codes für `Observation.interpretation` in Frage kommen und wie sich lokale Skalen darauf abbilden, ist unter [Interpretationen und Kommentare](interpretation.md) erläutert.
 

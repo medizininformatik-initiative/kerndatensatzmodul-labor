@@ -213,7 +213,7 @@
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>
       <li><a href="laboratory-timestamps.html">Laboratory Timestamps</a></li>
-      <li><a href="interpretation.html">Interpretation</a></li>
+      <li><a href="interpretation.html">Interpretations and Comments</a></li>
       <li><a href="specimen.html">Specimen</a></li>
       <li><a href="terminology.html">Terminology</a></li>
       <li><a href="project-context.html">Project Context</a></li>
@@ -330,10 +330,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#context-within-the-overall-project--relationships-to-other-modules" id="markdown-toc-context-within-the-overall-project--relationships-to-other-modules">Context Within the Overall Project / Relationships to Other Modules</a></li>
+  <li><a href="#representing-microbiology-data-in-the-microbiology-module" id="markdown-toc-representing-microbiology-data-in-the-microbiology-module">Representing Microbiology Data in the Microbiology Module</a></li>
+</ul>
 
+</div>
 <h3 id="context-within-the-overall-project--relationships-to-other-modules">Context Within the Overall Project / Relationships to Other Modules</h3>
 
 <p>The Laboratory Report module represents laboratory reports of the kind typically produced in a hospital's central laboratory. These reports play a central role in most MII use cases:</p>
@@ -346,9 +349,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<p>For laboratory reports concerned primarily with detecting infectious agents (microbiology, virology), a separate but closely related module is planned, in which the individual agents can be represented with SNOMED CT. There is a module of its own for pathology findings as well.</p>
+<p>For laboratory reports concerned primarily with detecting infectious agents (microbiology, virology), there is a separate but closely related module, in which the individual agents can be represented with SNOMED CT — see the section below. There is a module of its own for pathology findings as well.</p>
 
 <p>A laboratory report is always assigned to the PERSON from whom the specimen was taken. Where that specimen is kept in a biobank for further examinations, it can be represented with the profiles of the BIOBANK module. The results from a laboratory report may be included again as individual elements in various other modules, for example for tumour documentation.</p>
+
+<h3 id="representing-microbiology-data-in-the-microbiology-module">Representing Microbiology Data in the Microbiology Module</h3>
+
+<p>Since April 2026 the first release of the core data set module Microbiology has been available, as version 2027.0.0-alpha (see the <a href="https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-">MII website on the current release</a>).</p>
+
+<p>Some microbiological examination methods can also be represented in a FHIR-conformant way in the Laboratory Report module. It is nevertheless recommended to represent the following microbiological findings with the Microbiology module, so as to meet the specific requirements of microbiological diagnostics:</p>
+
+<ul>
+  <li>Culture (general culture, specific culture, microscopy, Barlett score, Nugent score, colony count, susceptibility / resistance testing)</li>
+  <li>Identification / detection of agents (general identification, specific identification, Ct value)</li>
+  <li>Quantitative tests (antigen-antibody tests, titre, molecular pathogen load)</li>
+  <li>Further properties (virulence, resistance mechanism, MRGN class, presumed susceptibility, resistance category status, avidity)</li>
+</ul>
+
+<p>The Microbiology module binds the examination types to LOINC — mostly through ValueSets with an extensible binding, and for some profiles through a fixed code. These bindings make corresponding findings identifiable; which codes a profile expects can be seen there under <code class="language-plaintext highlighter-rouge">Observation.code</code>.</p>
 
 
 
@@ -375,7 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 09:14+0000">2026-09-08</span>
+          Generated <span title="Tue, Sep 8, 2026 11:22+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
