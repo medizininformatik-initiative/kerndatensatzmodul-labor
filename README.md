@@ -5,7 +5,7 @@
 Aktueller Ballot-Kandidat: **2027.0.0-ballot.rc4**
 
 Gerenderter Leitfaden (Stand master, aus dem der Kandidat gebaut wird):
-https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/branches/master/
+https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/
 
 [![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--labor-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor) 
 
@@ -15,7 +15,7 @@ Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Labor
 
 Aktuelle stabile Version: [2026.0.3](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2026.0.3)
 
-Aktueller Ballot-Kandidat: [2027.0.0-ballot.rc4](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2027.0.0-ballot.rc4) — [gerenderter Leitfaden](https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/branches/master/), [GitHub-Release](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/releases/tag/v2027.0.0-ballot.rc4)
+Aktueller Ballot-Kandidat: [2027.0.0-ballot.rc4](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2027.0.0-ballot.rc4) — [gerenderter Leitfaden](https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/), [GitHub-Release](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/releases/tag/v2027.0.0-ballot.rc4)
 <!-- Reifegrad: -->
 
 Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann.

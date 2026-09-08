@@ -1,13 +1,28 @@
-# IG build + GitHub Pages branch preview.
+# IG build + GitHub Pages rendering (site root for master, previews per branch).
 #
-# Purpose:   On every push to a non-release branch, run SUSHI + the HL7 IG
-#            Publisher and deploy the rendered IG to the gh-pages branch under
-#            branches/<branch>/, so a reviewer sees the real result without a
-#            local build. The site ROOT and version-like paths stay reserved
-#            for the formal -go-publish output (go-publish.yml); a preview never
-#            overwrites them. A stale-preview sweeper (cleanup-gh-pages.yml)
-#            removes previews of deleted branches (keyed on the .branch-name
-#            marker each preview drops here).
+# Purpose:   On every push, run SUSHI + the HL7 IG Publisher and deploy the
+#            rendered IG to the gh-pages branch: master to the site ROOT, every
+#            other branch to branches/<branch>/, so a reviewer sees the real
+#            result without a local build. A stale-preview sweeper
+#            (cleanup-gh-pages.yml) removes previews of deleted branches (keyed
+#            on the .branch-name marker each preview drops here).
+#
+# WHY MASTER RENDERS THE ROOT: the scaffold reserves the root for go-publish.yml,
+#            which renders the publication branch there. This module has no
+#            go-publish.yml — the package is released through Simplifier — so the
+#            root served a 404 while every feature branch had a rendering, and the
+#            module URL pointed at nothing. master therefore takes the root.
+#            Nothing else of the formal publication is adopted: no
+#            package-list.json, no history.html, no version-like permanent paths.
+#            Reinstate the reservation (here, in the deploy step and in the `on:`
+#            block) if a publication workflow ever starts rendering the root.
+#
+#            The root deployment deliberately drops NO .branch-name marker:
+#            cleanup-gh-pages.yml leaves an unmarked root alone, while a marker
+#            there would label it a formal publication root, which it is not.
+#            It preserves every marker-bearing directory it finds, so branch
+#            previews that predate this change survive at the root as well —
+#            the same rule scripts/merge-publication-webroot.mjs follows.
 #
 # PROPAGATION: this workflow — unlike Release Please — is MEANT to
 #            propagate to modules created from this template. A module maintainer
@@ -78,11 +93,10 @@ name: IG build and preview
 on:
   # The scaffold excludes the publication branch here, because go-publish.yml
   # renders that branch to the gh-pages ROOT. This module has no go-publish.yml
-  # and releases the package through Simplifier, so nothing renders master —
-  # excluding it would leave the default branch with no rendering at all while
-  # every feature branch has one. master is therefore previewed like any other
-  # branch. Reinstate the exclusion (here and in the ref_name guards below) when
-  # a publication workflow starts rendering master.
+  # and releases the package through Simplifier, so master renders the root
+  # itself (see WHY MASTER RENDERS THE ROOT above). Reinstate the exclusion
+  # (here and in the ref_name guards below) when a publication workflow starts
+  # rendering the root.
   push:
     branches:
       - "**"
@@ -411,7 +425,7 @@ jobs:
         shell: bash
         run: docker rm --force preview-nginx >/dev/null 2>&1 || true
 
-      - name: Publish preview to gh-pages/branches/<branch>/
+      - name: Publish to gh-pages (root for master, branches/<branch>/ otherwise)
         if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
         shell: bash
         env:
@@ -442,15 +456,40 @@ jobs:
             git push --set-upstream origin gh-pages
             cd ..
           fi
-          # The root and version-like paths are reserved for formal -go-publish
-          # output; every CI preview lives below branches/<branch>/.
           touch gh-pages/.nojekyll
-          branch_dir="gh-pages/branches/${BRANCH}"
-          rm -rf "${branch_dir}"
-          mkdir -p "${branch_dir}"
-          cp -R "output/." "${branch_dir}/"
-          # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
-          echo "${BRANCH}" > "${branch_dir}/.branch-name"
+          if [[ "${BRANCH}" == "master" ]]; then
+            # master renders the site ROOT: the module URL has to serve the IG,
+            # and no publication workflow claims the root here. Clear it, but
+            # keep git's own directory, the Jekyll opt-out, a custom domain, the
+            # preview tree, and every marker-bearing directory — a preview that
+            # predates this change may still sit at the root, and .branch-name is
+            # the only thing that distinguishes it from stale output.
+            for entry in "gh-pages"/* "gh-pages"/.[!.]*; do
+              [[ -e "${entry}" ]] || continue
+              case "${entry#gh-pages/}" in
+                .git|.nojekyll|CNAME|branches) continue ;;
+              esac
+              # A .branch-name inside means this is a branch preview, not stale
+              # output of an earlier run. Deliberately tested per entry rather
+              # than collected with `find -printf`/`sed -z` up front: those are
+              # GNU-only, and a failure inside a process substitution does not
+              # trip `set -e` — an empty result would silently delete previews.
+              [[ -f "${entry}/.branch-name" ]] && continue
+              rm -rf -- "${entry}"
+            done
+            cp -R "output/." "gh-pages/"
+            # Deliberately NO .branch-name at the root: cleanup-gh-pages.yml
+            # leaves an unmarked root alone, whereas a marker there would label
+            # it a formal publication root, which this is not.
+            rm -rf "gh-pages/branches/master"
+          else
+            branch_dir="gh-pages/branches/${BRANCH}"
+            rm -rf "${branch_dir}"
+            mkdir -p "${branch_dir}"
+            cp -R "output/." "${branch_dir}/"
+            # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
+            echo "${BRANCH}" > "${branch_dir}/.branch-name"
+          fi
           cd gh-pages
           if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
             bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
@@ -463,18 +502,28 @@ jobs:
           git config user.email "${GIT_AUTHOR_EMAIL}"
           git add --all
           if git diff --cached --quiet; then
-            echo "No preview changes to publish for ${BRANCH}."
+            echo "No rendering changes to publish for ${BRANCH}."
             exit 0
           fi
-          git commit -m "chore: preview ${BRANCH}"
+          if [[ "${BRANCH}" == "master" ]]; then
+            git commit -m "chore: render master to the site root"
+          else
+            git commit -m "chore: preview ${BRANCH}"
+          fi
           git push origin gh-pages
 
       - name: Preview URL
         if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
         shell: bash
         run: |
-          base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}"
-          echo "Preview: ${base}/" >> "${GITHUB_STEP_SUMMARY}"
+          site="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+          if [[ "${GITHUB_REF_NAME}" == "master" ]]; then
+            base="${site}"
+            echo "Site root: ${base}/" >> "${GITHUB_STEP_SUMMARY}"
+          else
+            base="${site}/branches/${GITHUB_REF_NAME}"
+            echo "Preview: ${base}/" >> "${GITHUB_STEP_SUMMARY}"
+          fi
           if [ -s output/comparison-demo/index.html ]; then
             echo "Comparison demo: ${base}/comparison-demo/index.html" >> "${GITHUB_STEP_SUMMARY}"
           fi
