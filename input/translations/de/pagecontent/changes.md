@@ -10,7 +10,7 @@ Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc3` ab. Er enthält das R
 ### Implementation Guide:
 - Die Seite *Interpretation* heißt jetzt [Interpretationen und Kommentare](interpretation.html) und behandelt das Thema in drei Teilen: die kodierte Interpretation, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Neu darin: wie sich der enge FHIR-Begriff "Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide jetzt verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist, sowie der abnormal-Code `A`. Die Schwelle zur sofortigen Benachrichtigung heißt dem Wortlaut dieser Vorgaben folgend "Alarm"-Grenze.
 - Die Vorgaben werden im gesamten Guide einheitlich als "Rili-BÄK 2023" und "ISO 15189:2024" zitiert. Die [Zeitpunkte im Labor](laboratory-timestamps.html) bezogen sich bisher auf die Ausgaben 2019/23 und 2023.
-- Der [Projektkontext](project-context.html) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist seit April 2026 released — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
+- Der [Projektkontext](project-context.html) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist publiziert — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
 
 ### Version: 2027.0.0-ballot.rc3
 

@@ -11,9 +11,7 @@ Ein Laborbefund ist dabei immer der PERSON zugeordnet, von welcher die Probe ent
 
 ### Abbildung von mikrobiologischen Daten im Modul Mikrobiologie
 
-Seit April 2026 steht mit der Version 2027.0.0-alpha das erste Release des Kerndatensatzmoduls Mikrobiologie zur Verfügung (siehe [MII-Website zum aktuellen Release](https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-)).
-
-Einige mikrobiologische Untersuchungsmethoden lassen sich auch FHIR-konform im Modul Laborbefund abbilden. Es wird aber empfohlen, folgende mikrobiologischen Befunde mithilfe des Moduls Mikrobiologie abzubilden, um den spezifischen Anforderungen der mikrobiologischen Diagnostik gerecht zu werden:
+Einige mikrobiologische Untersuchungsmethoden lassen sich auch FHIR-konform im Modul Laborbefund abbilden. Es wird aber empfohlen, folgende mikrobiologischen Befunde mithilfe des [Moduls Mikrobiologie](https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-) abzubilden, um den spezifischen Anforderungen der mikrobiologischen Diagnostik gerecht zu werden:
 
 - Kultur (Allgemeine Kultur, Spezifische Kultur, Mikroskopie, Barlett Score, Nugent Score, Keimzahl, Empfindlichkeit / Resistenztestung)
 - Bestimmung / Erregernachweise (Allgemeine Bestimmung, Spezifische Bestimmung, Ct-Wert)
