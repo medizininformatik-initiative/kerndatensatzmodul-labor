@@ -1,1 +1,1 @@
-English is the default language of this IG. The German page set contains the migrated 2027 content. The English pages were machine translated during migration and approved at migration Gate C.
+English is the default language of this guide. The German pages are the authored version; the English pages were machine translated from them.
