@@ -9,7 +9,13 @@ packageId: de.medizininformatikinitiative.kerndatensatz.laborbefund
 fhirVersion: 4.0.1
 applyExtensionMetadataToRoot: false
 copyrightYear: 2019+
-releaseLabel: Release
+# The status label the publisher renders in the header banner of a formal
+# publication -- not a version string. `ballot` is the value for a ballot
+# candidate; the recognised set is lower case (ci-build, draft, qa-preview,
+# ballot, trial-use, release, update). Preview and CI builds override the
+# label with "Local Development build", so the value only becomes visible on
+# publication.
+releaseLabel: ballot
 license: CC-BY-4.0
 jurisdiction: urn:iso:std:iso:3166#DE "Germany"
 publisher:
