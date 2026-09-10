@@ -233,7 +233,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T13:08:25+00:00",
+  "date" : "2026-09-10T17:57:11+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -302,7 +302,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "value",
-        "valueString" : "Release"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -950,7 +950,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "value",
-        "valueString" : "Release"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

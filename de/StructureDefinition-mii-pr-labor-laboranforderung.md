@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab | *Version*:2027.0.0-ballot.rc4 |
-| Active Stand: 2026-09-08 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboranforderung |
+| Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboranforderung |
 
  
 Auftrag für eine Laboruntersuchung 
@@ -283,7 +283,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T13:08:25+00:00",
+  "date" : "2026-09-10T17:57:11+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
