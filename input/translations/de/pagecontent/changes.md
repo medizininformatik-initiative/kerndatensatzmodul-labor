@@ -1,84 +1,51 @@
-### Version: 2027.0.0-ballot.rc4
+### Version: 2027.0.0-ballot
 
-Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc3` ab. Er enthält das Review des Leitfadens 2027.
-
-### FHIR/Inhaltliche Änderungen:
-#### Beispiele
-- `mii-exa-labor-laborwert-ratio` gibt sein Ergebnis als `valueQuantity` mit der zusammengesetzten UCUM-Einheit `mg/(24.h)` an statt als `valueRatio`. Ein Ratio ist über `value-quantity` nicht erreichbar — die R4-Expression lautet `(Observation.value as Quantity) | (Observation.value as SampledData)` —, während das CapabilityStatement diesen Suchparameter als SHALL fordert. Die Instanz-ID behält ihr `-ratio`, weil die URL seit rc1 publiziert ist.
-- Die Beispiele sind nach ihrem Inhalt benannt statt nach ihrem Ressourcentyp: Laborbefund und Laborergebnis *Kreatinin*, Anforderung *Großes Blutbild*, *Albumin im 24-Stunden-Urin*, *Epithelzellen im Urinsediment*.
-
-### Implementation Guide:
-- Die Seite *Interpretation* heißt jetzt [Interpretationen und Kommentare](interpretation.html) und behandelt das Thema in drei Teilen: die kodierte Interpretation, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Neu darin: wie sich der enge FHIR-Begriff "Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide jetzt verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist, sowie der abnormal-Code `A`. Die Schwelle zur sofortigen Benachrichtigung heißt dem Wortlaut dieser Vorgaben folgend "Alarm"-Grenze.
-- Die Vorgaben werden im gesamten Guide einheitlich als "Rili-BÄK 2023" und "ISO 15189:2024" zitiert. Die [Zeitpunkte im Labor](laboratory-timestamps.html) bezogen sich bisher auf die Ausgaben 2019/23 und 2023.
-- Der [Projektkontext](project-context.html) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist publiziert — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
-
-### Version: 2027.0.0-ballot.rc3
-
-Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc2` ab.
-
-### FHIR/Inhaltliche Änderungen:
-#### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
-- category: Ein offener Slice auf `category` mit der verpflichtenden HL7-Kodierung statt eines Slices, dessen Codings erneut gesliced wurden — zwei Slices auf dieser Ebene sind nicht disjunkt, da ein CodeableConcept mit beiden Codes auf beide Patterns trifft. LOINC `26436-6` bleibt als weiteres Coding zulässig, ist aber nicht mehr verpflichtend. Gegen die category-Formen aller Releases seit 2025.0.2 und die des Moduls Mikrobiologie geprüft: alle validieren.
-
-### Version: 2027.0.0-ballot.rc2
-
-Ballot-Kandidat für 2027.0.0, löst `2027.0.0-ballot.rc1` ab. Release-Kandidaten bereiten das Ballot vor; sie sind nicht die ballotierte Version.
+Ballot-Fassung für 2027.0.0. Sie enthält die folgenden Änderungen gegenüber der Vorversion 2026.0.3.
 
 ### FHIR/Inhaltliche Änderungen:
 #### Generell:
+- Alle Profile, ValueSets, das CapabilityStatement und die ImplementationGuide-Ressource tragen CRMI-Metadaten (shareable, publishable, ValueSets zusätzlich computable), einschließlich Freigabe- und Reviewdatum, Gültigkeitszeitraum, Versionspolitik, Package-Herkunft und Beitragenden. Siehe [Metadatenübersicht](metadata.html).
 - Die Package-ID lautet nun `de.medizininformatikinitiative.kerndatensatz.laborbefund` — die ID, unter der das Modul ausgeliefert wird. Das Repository deklarierte zuvor `…kerndatensatz.labor`; wer der im Leitfaden genannten packageId folgte, konnte das Package nicht auflösen. Die Canonical bleibt unverändert.
+- Pattern- und Fixed-Value-Codings verwenden unversionierte System-URLs; eine versionierte `system`-URL würde in einem Pattern nicht treffen. Die ValueSet-Kompositionen bleiben versionsgebunden.
+- Auch Extension-Referenzen in `type.profile` tragen keine Version. Ein Extension-Slice trifft über `Extension.url`, eine `uri` ohne Version in der Instanz; eine Version dort legt also etwas fest, das beim Matching keine Rolle spielt. Welche Package-Version gilt, steht in den Dependencies; `pin-canonicals` legt die Versionen in der Publikation fest.
+- `Coding.version` ist auf `Observation.code`, `Observation.valueCodeableConcept` und `ServiceRequest.code` als Must Support gekennzeichnet.
+- Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf `2027.0.0-ballot`, die Version, neben der dieses Modul ballotiert wird. Das CapabilityStatement referenziert den Observation-Suchparameter `interpretation` jenes Moduls.
 
 #### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
-- category: Der Slice-Discriminator zeigt jetzt auf `coding` statt auf `$this`, und der Slice trägt kein eigenes `patternCodeableConcept` mehr. Die Unterscheidung leistet das `patternCoding` der inneren Coding-Slices, wo auch die Kardinalität sitzt. Zuvor stand dieselbe Aussage an zwei Stellen (gemeldet im Downstream-Review zu `2027.0.0-ballot.rc1`).
-- Die Beispiele geben die LOINC-Kodierung wieder mit Display an. Unter rc1 wurde das äußere Pattern in Instanzen injiziert, sodass eine explizite Zuweisung den Code doppelt erzeugte.
-
-### Version: 2027.0.0-ballot.rc1
-
-Ballot-Kandidat für 2027.0.0. Er enthält im Vergleich zur Vorversion 2026.0.3 folgende Änderungen.
-
-### FHIR/Inhaltliche Änderungen:
-#### Generell:
-- Alle Profile, ValueSets, das CapabilityStatement und die ImplementationGuide-Ressource tragen CRMI-Metadaten (Shareable, Publishable, ValueSets zusätzlich Computable) samt Freigabe- und Reviewdatum, Gültigkeitszeitraum, Versionspolicy, Package-Herkunft und Beitragenden. Siehe [Metadatenübersicht](metadata.html).
-- Pattern- und Fixed-Value-Kodierungen verwenden versionslose System-URLs; eine versionsbehaftete `system`-URL würde im Pattern nicht matchen. Die ValueSet-Kompositionen bleiben versionsgebunden.
-- Auch Extension-Referenzen in `type.profile` tragen keine Version. Ein Extension-Slice matcht über `Extension.url`, in der Instanz eine `uri` ohne Version — eine Version dort legt also etwas fest, was beim Matching keine Rolle spielt. Welche Paketversion gilt, steht in den Dependencies; `pin-canonicals` legt die Versionen in der publizierten Ausgabe fest.
-- `Coding.version` ist auf `Observation.code`, `Observation.valueCodeableConcept` und `ServiceRequest.code` als Must Support markiert.
-- Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf `2027.0.0-ballot.rc3`, den Kandidaten, mit dem dieses Modul gemeinsam balloted wird. Das CapabilityStatement verweist auf dessen Observation-Suchparameter `interpretation`, den rc3 unverändert unter derselben Canonical ausliefert.
-
-#### MII_PR_Labor_Laborbefund
-- category: `category` selbst wird offen gesliced, mit einem verpflichtenden Slice `laborbefund` (1..1 MS). Innerhalb dieses Slices trägt `coding` zwei offene Slices:
-  - `loinc-lab` (1..1 MS) mit `$loinc#26436-6`
-  - `diagnostic-service-sections` (1..1 MS) mit `$v2-0074#LAB`
-  - Weitere Codings innerhalb des Slices und weitere `category`-Einträge daneben — etwa ein Laborbereich — sind zulässig.
-  - Das Slicing sitzt bewusst auf `category`, nicht auf `category.coding`: `category` ist 1..*, und Constraints unterhalb eines wiederholbaren Elements gelten für jede Wiederholung. Auf `category.coding` müsste jede weitere Kategorie erneut `26436-6` und `LAB` tragen.
-  - Der Slice-Discriminator trägt ein einzelnes Coding; ein `patternCodeableConcept` mit zwei Codings ist nicht verwendbar. Die zweite Pflichtkodierung erzwingt das Slicing innerhalb des Slices.
-  - Der Slice heißt `laborbefund`, in 2026.0.3 hieß er `lab-category`. Der Name taucht in Validator-Meldungen und in Profil-Diffs auf.
+- category: `category` ist offen gesliced, mit einem verpflichtenden Slice, der die verpflichtende HL7-Kodierung trägt — `$v2-0074#LAB` im Laborbefund, `$observation-category#laboratory` in der Laboruntersuchung. LOINC `26436-6` bleibt als weiteres Coding zulässig, ist aber nicht mehr verpflichtend. Das Slicing sitzt bewusst auf `category` und nicht auf `category.coding`: `category` ist `1..*`, und Constraints unterhalb eines wiederholbaren Elements gelten für jede Wiederholung — auf `category.coding` müsste jede weitere Kategorie die Pflichtcodes wiederholen. Ein Laborbereich gehört als eigener `category`-Eintrag neben den Pflicht-Slice. Die Slice-Namen haben sich geändert — `v2-lab` und `observation-category`; in 2026.0.3 hießen sie `lab-category`. Namen erscheinen in Validator-Meldungen und in Profil-Diffs. Gegen die category-Formen aller Releases seit 2025.0.2 und die des Moduls Mikrobiologie geprüft: alle validieren.
 
 #### MII_PR_Labor_Laboruntersuchung
-- basedOn: **NEU** auf der Laboruntersuchung — Bezug zum Laborauftrag, auf dem sie basiert. `0..*`, eingeschränkt auf `Reference(ServiceRequest)` und als Must Support markiert (Issue #82). Die Kardinalität bleibt die des Basisprofils; verpflichtend ist `basedOn` nur auf dem Laborbefund, und das unverändert seit 2025.0.2.
-- code: Die Bindung wandert von `code` auf den neuen offenen Slice `code.coding[loinc]`, wird von `preferred` auf `extensible` verschärft und zeigt auf ein anderes IPS-ValueSet — `results-laboratory-pathology-observations-uv-ips` statt bisher `results-laboratory-observations-uv-ips`. `Observation.code` selbst trägt keine Bindung mehr.
-- valueCodeableConcept: Extensible-Binding an das neue ValueSet [Laborergebnis codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.html), welches die qualitativen und semiquantitativen Ergebnis-ValueSets zusammenfasst. Die zunächst vorgesehenen Slices `qualitativ` und `semiquantitativ` entfallen, da sich beide ValueSets überschneiden und daher nicht diskriminiert werden können.
-- interpretation: Extensible-Binding an das neue ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Lokal gebräuchliche Skalen wie `--, -, N, +, ++` bzw. `L N H` bilden darauf ab; jenseits der Telefongrenze können zusätzlich die abnormal-Codes `HH`, `LL` und `AA` verwendet werden.
-- category: Genauso gesliced wie beim Laborbefund — verpflichtender Slice `laboruntersuchung` (1..1 MS) mit `$loinc#26436-6` und `$observation-category#laboratory` darin. Ein Laborbereich gehört als eigener `category`-Eintrag daneben, nicht als weiteres Coding der Pflichtkategorie.
-- category: Definition präzisiert („Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe").
-- `fix:` Invariante mii-lab-2: Der Ausdruck `hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()` war nicht auswertbar wie beschrieben und lautet nun `hasMember.exists() or value.exists() or dataAbsentReason.exists()` — mindestens eines der drei Elemente muss vorhanden sein.
+- basedOn: **NEU** in der Laboruntersuchung — Referenz auf die Laboranforderung, auf der sie beruht. `0..*`, eingeschränkt auf `Reference(ServiceRequest)` und als Must Support gekennzeichnet (Issue #82). Die Kardinalität bleibt die des Basisprofils; verpflichtend ist `basedOn` nur im Laborbefund, und das unverändert seit 2025.0.2.
+- code: Die Bindung wandert von `code` auf den neuen offenen Slice `code.coding[loinc]`, wird von `preferred` auf `extensible` verschärft und zeigt auf ein anderes IPS-ValueSet — `results-laboratory-pathology-observations-uv-ips` statt `results-laboratory-observations-uv-ips`. `Observation.code` selbst trägt keine Bindung mehr.
+- valueCodeableConcept: Extensible-Bindung an das neue ValueSet [Laborergebnis codiert](ValueSet-mii-vs-labor-laborergebnis-codiert.html), das die ValueSets für qualitative und semiquantitative Ergebnisse zusammenfasst. Die ursprünglich vorgesehenen Slices `qualitativ` und `semiquantitativ` entfallen, da sich die beiden ValueSets überschneiden und daher nicht unterscheidbar sind.
+- interpretation: Extensible-Bindung an das neue ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.html), eine eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Lokal gebräuchliche Skalen wie `--, -, N, +, ++` bzw. `L N H` bilden darauf ab; jenseits der „Alarm"-Grenzen können zusätzlich die abnormal-Codes `A`, `HH`, `LL` und `AA` verwendet werden.
+- category: Definition präzisiert („Einordnung der Laboruntersuchung in die diagnostische Disziplin und die Laborgruppe").
+- `fix:` Invariante mii-lab-2: Der Ausdruck `hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()` wertete nicht wie beschrieben aus und lautet jetzt `hasMember.exists() or value.exists() or dataAbsentReason.exists()` — mindestens eines der drei Elemente muss vorhanden sein.
 
 #### MII_CPS_Labor_CapabilityStatement
-- Observation: Suchparameter `based-on` ist nun verpflichtend (SHALL); er war zuvor auskommentiert.
-- Observation: Suchparameter `interpretation` **NEU** und verpflichtend (SHALL). R4 kennt keinen solchen Suchparameter; verwiesen wird auf die Definition im Modul Meta bei identischem Code und Typ.
+- Observation: Suchparameter `based-on` ist jetzt verpflichtend (SHALL); er war auskommentiert.
+- Observation: Suchparameter `interpretation` **NEU** und verpflichtend (SHALL). R4 definiert keinen solchen Suchparameter; stattdessen wird die Definition aus dem Modul Meta referenziert, mit identischem Code und Typ.
 - ServiceRequest: Suchparameter `requester` entfernt (Issue #82).
 
 #### ValueSets
-- **NEU**: MII_VS_Labor_Interpretation — eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation für die Bewertung eines Laborergebnisses.
-- **NEU**: MII_VS_Labor_Laborergebnis_Codiert — Zusammenfassung der qualitativen und semiquantitativen Ergebnis-ValueSets.
-- MII_VS_Labor_Laborbereich: Displays auf die LOINC-Vorzugsbezeichnungen umgestellt (z.B. „Blood bank studies (set)" statt „BLOOD BANK STUDIES"). Die Konzeptliste selbst ist unverändert.
-- Die CodeSystem-Referenzen aus hl7.terminology.r4 sind versionsgebunden (v2-0074 3.0.0, v2-0203 5.0.0, v3-ObservationInterpretation 4.0.0), da das Paket in zwei Ständen hereinkommt und die Auflösung sonst mehrdeutig ist.
+- **NEU**: MII_VS_Labor_Interpretation — eingeschränkte Auswahl aus HL7 v3 ObservationInterpretation für die Bewertung eines Laborwertes.
+- **NEU**: MII_VS_Labor_Laborergebnis_Codiert — die ValueSets für qualitative und semiquantitative Ergebnisse zusammengefasst.
+- MII_VS_Labor_Laborbereich: Displays auf die LOINC-Vorzugsbezeichnungen umgestellt (z. B. „Blood bank studies (set)" statt „BLOOD BANK STUDIES"). Die Konzeptliste selbst bleibt unverändert.
+- Die CodeSystem-Referenzen aus hl7.terminology.r4 sind versionsgebunden (v2-0074 3.0.0, v2-0203 5.0.0, v3-ObservationInterpretation 4.0.0), da das Package in zwei Ständen hereinkommt und die Auflösung sonst mehrdeutig wäre.
+
+#### Beispiele
+- `mii-exa-labor-laborwert-ratio` gibt sein Ergebnis als `valueQuantity` mit der zusammengesetzten UCUM-Einheit `mg/(24.h)` an statt als `valueRatio`. Ein Ratio ist über `value-quantity` nicht erreichbar — die R4-Expression lautet `(Observation.value as Quantity) | (Observation.value as SampledData)` —, während das CapabilityStatement diesen Suchparameter als SHALL fordert. Die Instanz-ID behält ihr `-ratio`, weil die URL bereits publiziert ist.
+- Die Beispiele sind nach ihrem Inhalt benannt statt nach ihrem Ressourcentyp: Laborbefund und Laborergebnis *Kreatinin*, Anforderung *Großes Blutbild*, *Albumin im 24-Stunden-Urin*, *Epithelzellen im Urinsediment*.
 
 #### Logisches Modell
-- MII_LM_Labor: `experimental` auf `false` gesetzt. `status` stand bereits auf `active`.
+- MII_LM_Labor: `experimental` auf `false` gesetzt. `status` war bereits `active`.
 
 ### Implementation Guide:
-- Neue Seite [Interpretation](interpretation.html): welche Codes für die Bewertung eines Ergebnisses vorgesehen sind, wie lokale Skalen darauf abbilden und wann die abnormal-Codes in Frage kommen.
-- Die Modulbeschreibung ist nach Themen aufgeteilt: [Zeitpunkte im Labor](laboratory-timestamps.html), [Interpretation](interpretation.html) und [Probenmaterial](specimen.html) sind eigene Seiten.
+- Der Leitfaden wird mit dem IG Publisher statt mit Simplifier publiziert, zweisprachig (Englisch als Standardsprache, Deutsch als Übersetzung) und unter der Modul-URL gerendert.
+- Neue Seite [Interpretationen und Kommentare](interpretation.html), die das Thema in drei Teilen behandelt: die kodierte Interpretation und welche Codes in Frage kommen, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Sie erläutert, wie sich der enge FHIR-Begriff „Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist.
+- Die Modulbeschreibung ist nach Themen aufgeteilt: [Zeitpunkte im Labor](laboratory-timestamps.html), [Interpretationen und Kommentare](interpretation.html) und [Probenmaterial](specimen.html) sind eigene Seiten.
+- Die Vorgaben werden im gesamten Guide einheitlich als „Rili-BÄK 2023" und „ISO 15189:2024" zitiert.
+- Der [Projektkontext](project-context.html) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist publiziert — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
 
 ### Version: 2026.0.3
 Die Version 2026.0.3 enthält im Vergleich zur Vorversion 2026.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3) verwendet werden).
