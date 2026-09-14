@@ -1,21 +1,24 @@
-## Medizininformatik Initiative - Kerndatensatz - Modul Labor
+## Medizininformatik Initiative - Kerndatensatz - Modul Laborbefund
 
 ### Übersicht
 
-Aktuelle Ballot-Fassung: **2027.0.0-ballot**
+[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--labor-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor)
 
-Gerenderter Leitfaden (Stand master):
-https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/
-
-[![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--labor-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor) 
+[![IG Build](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/actions/workflows/ig-publisher.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/actions/workflows/ig-publisher.yml)
 
 Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Laborbefund', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
 
 ### Status:
 
-Aktuelle stabile Version: [2026.0.3](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2026.0.3)
+**Aktuelle stabile Version: 2026.0.3**
+[Leitfaden](https://simplifier.net/guide/miiigmodullaborbefund?version=2026.0.3) · [Package](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2026.0.3)
 
-Aktuelle Ballot-Fassung: [2027.0.0-ballot](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2027.0.0-ballot) — [gerenderter Leitfaden](https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/), [GitHub-Release](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/releases/tag/v2027.0.0-ballot)
+**Aktuelle Ballot-Fassung: 2027.0.0-ballot**
+[Gerenderter Leitfaden](https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/branches/release-2027.0.0-ballot/) · [Package](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2027.0.0-ballot) · [GitHub-Release](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/releases/tag/v2027.0.0-ballot) · [Änderungen](https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/branches/release-2027.0.0-ballot/de/changes.html)
+
+**Entwicklungsstand**
+[Gerenderter Leitfaden aus master](https://medizininformatik-initiative.github.io/kerndatensatzmodul-labor/) — enthält Änderungen, die noch in keiner Version publiziert sind.
+
 <!-- Reifegrad: -->
 
 Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann.
@@ -29,7 +32,7 @@ Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch div
 
 ### Kurzzusammenfassung
 
-Das Basismodul Labor umfasst die Beschreibung von Laboruntersuchungen und den resultierenden Laborbefunddaten. In diesem Modul werden primär die Bereiche klinische Chemie und hämatologische Labordaten abgebildet. Mikrobiologische Befunde haben ein eigenes Erweiterungsmodul. 
+Das Basismodul Laborbefund umfasst die Beschreibung von Laboruntersuchungen und den resultierenden Laborbefunddaten. In diesem Modul werden primär die Bereiche klinische Chemie und hämatologische Labordaten abgebildet. Mikrobiologische Befunde haben ein eigenes Erweiterungsmodul.
 
 ### Wichtige Dokumente und Links
 * [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
@@ -40,11 +43,12 @@ Das Basismodul Labor umfasst die Beschreibung von Laboruntersuchungen und den re
 
 Leitung des Moduls:
 
+* Andreas Bietenbeck
+* Danny Ammon
 * Martin Federbusch
 
 Technische Umsetzung:
 
 * Alexander Zautke (Technische Umsetzung FHIR Profile und ImplemenationGuides)
 * Julian Saß (Technische Umsetzung FHIR Profile und ImplemenationGuides)
-* Miriam Hübner (Technische Umsetzung Logical Models)
 * Patrick Werner (Technische Umsetzung FHIR Profile und ImplemenationGuides)
