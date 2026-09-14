@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="555"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Encounter 555</b></p><a name="555"> </a><a name="hc555"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-encounters</code>/555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">ActCode: IMP</a> (inpatient encounter)</p></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Encounter 555</b></p><a name="de-555"> </a><a name="de-hc555"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-encounters</code>/555</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">ActCode: IMP</a> (inpatient encounter)</p></div></div>
+  </text>
+  <identifier>
+    <system value="https://example.org/fhir/sid/test-encounters"/>
+    <value value="555"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+</Encounter>
