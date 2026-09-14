@@ -1,4 +1,4 @@
-# UML Diagram - MII IG Laborbefund v2027.0.0-ballot.rc4
+# UML Diagram - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

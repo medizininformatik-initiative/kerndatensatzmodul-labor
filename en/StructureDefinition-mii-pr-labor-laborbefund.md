@@ -1,4 +1,4 @@
-# MII PR Labor Laborbefund - MII IG Laborbefund v2027.0.0-ballot.rc4
+# MII PR Labor Laborbefund - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ballot.rc4 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-14 | *Computable Name*:MII_PR_Labor_Laborbefund |
 
  
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc4"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_Labor_Laborbefund",
   "title" : "MII PR Labor Laborbefund",
   "_title" : {
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T07:11:51+00:00",
+  "date" : "2026-09-14T07:28:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

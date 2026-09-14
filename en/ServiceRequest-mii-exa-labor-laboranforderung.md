@@ -1,4 +1,4 @@
-# Laboratory order: full blood count - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Laboratory order: full blood count - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Labor Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md) version: 2027.0.0-ballot.rc4
+Profile: [MII PR Labor Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md) version: 2027.0.0-ballot
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
@@ -41,7 +41,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "resourceType" : "ServiceRequest",
   "id" : "mii-exa-labor-laboranforderung",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2027.0.0-ballot.rc4"],
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|2027.0.0-ballot"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "code" : "HTEST",

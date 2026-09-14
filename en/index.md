@@ -1,4 +1,4 @@
-# Home - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Home - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor | *Version*:2027.0.0-ballot.rc4 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-14 | *Computable Name*:MII_IG_Labor |
 
 ### MII Core Data Set Module Laboratory Report
@@ -52,7 +52,7 @@ The specimen is not profiled here. The module reuses the Biobank module's profil
 | | |
 | :--- | :--- |
 | Date | not yet published |
-| Version | 2027.0.0-ballot.rc4 |
+| Version | 2027.0.0-ballot |
 | Status | active |
 | Realm | DE |
 

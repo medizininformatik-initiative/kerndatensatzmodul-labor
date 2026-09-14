@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ef36a2f3-b737-43a9-ba06-b09017c748fb"/>
+  <id value="103d385b-bb07-46c6-ab2e-1f8c682e0374"/>
   <meta>
-    <lastUpdated value="2026-09-14T07:11:51.158+00:00"/>
+    <lastUpdated value="2026-09-14T07:28:02.782+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -497,12 +497,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Identifier_Type_Codes"/>
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -511,13 +511,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1f69e4d-0df4-41fb-9302-48f3ebb971af"/>
-          <timestamp value="2026-09-14T07:14:14+00:00"/>
+          <identifier value="urn:uuid:fae53dda-0066-4aff-87dc-0eb0d1bd7042"/>
+          <timestamp value="2026-09-14T07:30:46+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -660,7 +660,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -1141,12 +1141,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Identifier_Type_Codes"/>
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1155,13 +1155,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1f69e4d-0df4-41fb-9302-48f3ebb971af"/>
-          <timestamp value="2026-09-14T07:14:14+00:00"/>
+          <identifier value="urn:uuid:fae53dda-0066-4aff-87dc-0eb0d1bd7042"/>
+          <timestamp value="2026-09-14T07:30:46+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -1304,7 +1304,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -1785,12 +1785,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Identifier_Type_Codes"/>
         <title value="MII VS Labor Identifier Type Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1799,13 +1799,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9bf16372-8f80-4ab6-a42c-0b1a92411c69"/>
-          <timestamp value="2026-09-14T07:14:16+00:00"/>
+          <identifier value="urn:uuid:6db6c6dd-8827-441e-a45b-dfc577f61268"/>
+          <timestamp value="2026-09-14T07:30:48+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -1935,7 +1935,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -2058,12 +2058,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT"/>
         <title value="MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2072,13 +2072,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21243125-0873-44b1-bf3f-0b22be70173c"/>
-          <timestamp value="2026-09-14T07:14:17+00:00"/>
+          <identifier value="urn:uuid:59031aa9-33e6-4a08-bf3f-82b69a645086"/>
+          <timestamp value="2026-09-14T07:30:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -2142,7 +2142,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -2265,12 +2265,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT"/>
         <title value="MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2279,13 +2279,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21243125-0873-44b1-bf3f-0b22be70173c"/>
-          <timestamp value="2026-09-14T07:14:17+00:00"/>
+          <identifier value="urn:uuid:59031aa9-33e6-4a08-bf3f-82b69a645086"/>
+          <timestamp value="2026-09-14T07:30:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -2349,7 +2349,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -2472,12 +2472,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT"/>
         <title value="MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2486,13 +2486,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db22c85d-0cc1-4f4b-8a0f-7902606fcc7b"/>
-          <timestamp value="2026-09-14T07:14:17+00:00"/>
+          <identifier value="urn:uuid:1fc90b1e-ca53-4a92-a620-96ff6a641939"/>
+          <timestamp value="2026-09-14T07:30:49+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -2552,7 +2552,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -2735,7 +2735,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Interpretation"/>
         <title value="MII VS Labor Interpretation"/>
         <status value="active"/>
@@ -2749,13 +2749,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7b35f1e-76c2-470a-b273-6a46e8a16a18"/>
-          <timestamp value="2026-09-14T07:14:13+00:00"/>
+          <identifier value="urn:uuid:fbbeaa15-2637-4d6f-8160-41965ca0dc7d"/>
+          <timestamp value="2026-09-14T07:30:44+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -2816,7 +2816,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -2999,7 +2999,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Interpretation"/>
         <title value="MII VS Labor Interpretation"/>
         <status value="active"/>
@@ -3013,13 +3013,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7b35f1e-76c2-470a-b273-6a46e8a16a18"/>
-          <timestamp value="2026-09-14T07:14:13+00:00"/>
+          <identifier value="urn:uuid:fbbeaa15-2637-4d6f-8160-41965ca0dc7d"/>
+          <timestamp value="2026-09-14T07:30:44+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -3080,7 +3080,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -3263,7 +3263,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Interpretation"/>
         <title value="MII VS Labor Interpretation"/>
         <status value="active"/>
@@ -3277,13 +3277,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a9b6f7f3-4217-44a8-9332-9efa31c647ae"/>
-          <timestamp value="2026-09-14T07:14:16+00:00"/>
+          <identifier value="urn:uuid:6432089b-57fc-475d-a740-e88fd0e33fd3"/>
+          <timestamp value="2026-09-14T07:30:48+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -3344,7 +3344,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -3821,7 +3821,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborbereich"/>
         <title value="MII VS Labor Laborbereich"/>
         <status value="active"/>
@@ -3835,13 +3835,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:09d7277a-d2ac-40d0-acf3-c4242f382d24"/>
-          <timestamp value="2026-09-14T07:14:17+00:00"/>
+          <identifier value="urn:uuid:76b34ee6-408f-4b88-a4e5-d17074eddeef"/>
+          <timestamp value="2026-09-14T07:30:49+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -3993,7 +3993,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -4470,7 +4470,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborbereich"/>
         <title value="MII VS Labor Laborbereich"/>
         <status value="active"/>
@@ -4484,13 +4484,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:09d7277a-d2ac-40d0-acf3-c4242f382d24"/>
-          <timestamp value="2026-09-14T07:14:17+00:00"/>
+          <identifier value="urn:uuid:76b34ee6-408f-4b88-a4e5-d17074eddeef"/>
+          <timestamp value="2026-09-14T07:30:49+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -4642,7 +4642,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -5119,7 +5119,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborbereich"/>
         <title value="MII VS Labor Laborbereich"/>
         <status value="active"/>
@@ -5133,13 +5133,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:790f6880-fee5-4dd1-b510-e64105bb49a7"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:c499049d-375d-4f09-96aa-0488b1e28348"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -5272,7 +5272,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -5495,7 +5495,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergbenis_Semiquantitativ"/>
         <title value="MII VS Labor Laborergbenis Semiquantitativ"/>
         <status value="active"/>
@@ -5509,13 +5509,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b9c42040-42a8-49fc-833d-366513c8f63e"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:7c6e0832-022b-41ed-87b8-90951cd1bcbd"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -5604,7 +5604,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -5827,7 +5827,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergbenis_Semiquantitativ"/>
         <title value="MII VS Labor Laborergbenis Semiquantitativ"/>
         <status value="active"/>
@@ -5841,13 +5841,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b9c42040-42a8-49fc-833d-366513c8f63e"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:7c6e0832-022b-41ed-87b8-90951cd1bcbd"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -5936,7 +5936,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -6159,7 +6159,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergbenis_Semiquantitativ"/>
         <title value="MII VS Labor Laborergbenis Semiquantitativ"/>
         <status value="active"/>
@@ -6173,13 +6173,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:99bbafce-7bcd-47f1-bf8d-a3eb34c57a70"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:d059f959-747b-4c5f-9849-09f1086d2b95"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -6259,7 +6259,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -6283,15 +6283,15 @@
                   </span>
                 </li>
                 <li>
-                  <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">valueset MII VS Labor Laborergebnis Qualitativ v2027.0.0-ballot.rc4 (ValueSet)</a>
+                  <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">valueset MII VS Labor Laborergebnis Qualitativ v2027.0.0-ballot (ValueSet)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot.rc4" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
-                  <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">valueset MII VS Labor Laborergbenis Semiquantitativ v2027.0.0-ballot.rc4 (ValueSet)</a>
+                  <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">valueset MII VS Labor Laborergbenis Semiquantitativ v2027.0.0-ballot (ValueSet)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -7139,7 +7139,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergebnis_Codiert"/>
         <title value="MII VS Labor Laborergebnis Codiert"/>
         <status value="active"/>
@@ -7153,12 +7153,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1389b0bb-e6b1-4e2b-ac3e-54d815a13560"/>
-          <timestamp value="2026-09-14T07:14:12+00:00"/>
+          <identifier value="urn:uuid:96177b35-13bb-461e-974e-65b333020242"/>
+          <timestamp value="2026-09-14T07:30:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -7178,7 +7178,7 @@
           </parameter>
           <parameter>
             <name value="used-valueset"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="used-valueset"/>
@@ -7198,7 +7198,7 @@
           </parameter>
           <parameter>
             <name value="used-valueset"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7419,7 +7419,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -7443,15 +7443,15 @@
                   </span>
                 </li>
                 <li>
-                  <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">valueset MII VS Labor Laborergebnis Qualitativ v2027.0.0-ballot.rc4 (ValueSet)</a>
+                  <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">valueset MII VS Labor Laborergebnis Qualitativ v2027.0.0-ballot (ValueSet)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot.rc4" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
-                  <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">valueset MII VS Labor Laborergbenis Semiquantitativ v2027.0.0-ballot.rc4 (ValueSet)</a>
+                  <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">valueset MII VS Labor Laborergbenis Semiquantitativ v2027.0.0-ballot (ValueSet)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -8299,7 +8299,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergebnis_Codiert"/>
         <title value="MII VS Labor Laborergebnis Codiert"/>
         <status value="active"/>
@@ -8313,12 +8313,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1389b0bb-e6b1-4e2b-ac3e-54d815a13560"/>
-          <timestamp value="2026-09-14T07:14:12+00:00"/>
+          <identifier value="urn:uuid:96177b35-13bb-461e-974e-65b333020242"/>
+          <timestamp value="2026-09-14T07:30:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -8338,7 +8338,7 @@
           </parameter>
           <parameter>
             <name value="used-valueset"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="used-valueset"/>
@@ -8358,7 +8358,7 @@
           </parameter>
           <parameter>
             <name value="used-valueset"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8579,7 +8579,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -8603,15 +8603,15 @@
                   </span>
                 </li>
                 <li>
-                  <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">valueset MII VS Labor Laborergebnis Qualitativ v2027.0.0-ballot.rc4 (ValueSet)</a>
+                  <a href="ValueSet-mii-vs-labor-laborergebnis-qualitativ.html">valueset MII VS Labor Laborergebnis Qualitativ v2027.0.0-ballot (ValueSet)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot.rc4" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
-                  <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">valueset MII VS Labor Laborergbenis Semiquantitativ v2027.0.0-ballot.rc4 (ValueSet)</a>
+                  <a href="ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.html">valueset MII VS Labor Laborergbenis Semiquantitativ v2027.0.0-ballot (ValueSet)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -9459,7 +9459,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergebnis_Codiert"/>
         <title value="MII VS Labor Laborergebnis Codiert"/>
         <status value="active"/>
@@ -9473,12 +9473,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ee70123e-9935-4f4a-a6a8-aa488b66e639"/>
-          <timestamp value="2026-09-14T07:14:16+00:00"/>
+          <identifier value="urn:uuid:0de8e7fb-64b1-47e6-bdc2-6ef09b2208ef"/>
+          <timestamp value="2026-09-14T07:30:48+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -9498,7 +9498,7 @@
           </parameter>
           <parameter>
             <name value="used-valueset"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="used-valueset"/>
@@ -9518,7 +9518,7 @@
           </parameter>
           <parameter>
             <name value="used-valueset"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9698,7 +9698,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -10401,7 +10401,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergebnis_Qualitativ"/>
         <title value="MII VS Labor Laborergebnis Qualitativ"/>
         <status value="active"/>
@@ -10415,12 +10415,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d0bc3d69-ad91-4262-b8be-faca90353f06"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:7fc48ce9-8fa4-49ad-b9d2-bf584f60fd43"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -10633,7 +10633,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -11336,7 +11336,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergebnis_Qualitativ"/>
         <title value="MII VS Labor Laborergebnis Qualitativ"/>
         <status value="active"/>
@@ -11350,12 +11350,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d0bc3d69-ad91-4262-b8be-faca90353f06"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:7fc48ce9-8fa4-49ad-b9d2-bf584f60fd43"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -11568,7 +11568,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -12271,7 +12271,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Laborergebnis_Qualitativ"/>
         <title value="MII VS Labor Laborergebnis Qualitativ"/>
         <status value="active"/>
@@ -12285,12 +12285,12 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9423682a-470c-47cd-b02f-b3575a525518"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:f52e4f44-6a7f-484e-a7a5-89b4cd79f385"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -12470,7 +12470,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -33516,7 +33516,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Order_Codes"/>
         <title value="MII VS Labor Order Codes"/>
         <status value="active"/>
@@ -33530,13 +33530,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0d9c45f9-7743-4d79-b672-b6f2fd290a30"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:9c222afe-0090-4b4d-ab7a-8e7a879cb84f"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <total value="59035"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -38599,7 +38599,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -59645,7 +59645,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Order_Codes"/>
         <title value="MII VS Labor Order Codes"/>
         <status value="active"/>
@@ -59659,13 +59659,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0d9c45f9-7743-4d79-b672-b6f2fd290a30"/>
-          <timestamp value="2026-09-14T07:14:18+00:00"/>
+          <identifier value="urn:uuid:9c222afe-0090-4b4d-ab7a-8e7a879cb84f"/>
+          <timestamp value="2026-09-14T07:30:50+00:00"/>
           <total value="59035"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -64728,7 +64728,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -85774,7 +85774,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Order_Codes"/>
         <title value="MII VS Labor Order Codes"/>
         <status value="active"/>
@@ -85788,13 +85788,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f1ce7f2c-6964-4f2e-9282-75b4c953edb5"/>
-          <timestamp value="2026-09-14T07:14:19+00:00"/>
+          <identifier value="urn:uuid:f8f02f74-856b-4ae6-a177-371f36683d1c"/>
+          <timestamp value="2026-09-14T07:30:51+00:00"/>
           <total value="59035"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -89857,7 +89857,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -89940,12 +89940,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Quelle_Klinisches_Bezugsdatum"/>
         <title value="MII VS Labor Quelle klinisches Bezugsdatum"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -89954,13 +89954,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:66909ca6-4b5e-4e76-bdb8-736f24223d7a"/>
-          <timestamp value="2026-09-14T07:14:19+00:00"/>
+          <identifier value="urn:uuid:5f335548-b1d5-4d25-b0ad-2347682cb40c"/>
+          <timestamp value="2026-09-14T07:30:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -90014,7 +90014,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -90097,12 +90097,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Quelle_Klinisches_Bezugsdatum"/>
         <title value="MII VS Labor Quelle klinisches Bezugsdatum"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -90111,13 +90111,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:66909ca6-4b5e-4e76-bdb8-736f24223d7a"/>
-          <timestamp value="2026-09-14T07:14:19+00:00"/>
+          <identifier value="urn:uuid:5f335548-b1d5-4d25-b0ad-2347682cb40c"/>
+          <timestamp value="2026-09-14T07:30:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -90171,7 +90171,7 @@
               <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
             </extension>
             <extension url="version">
-              <valueString value="2027.0.0-ballot.rc4"/>
+              <valueString value="2027.0.0-ballot"/>
             </extension>
             <extension url="uri">
               <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
@@ -90254,12 +90254,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum"/>
-        <version value="2027.0.0-ballot.rc4"/>
+        <version value="2027.0.0-ballot"/>
         <name value="MII_VS_Labor_Quelle_Klinisches_Bezugsdatum"/>
         <title value="MII VS Labor Quelle klinisches Bezugsdatum"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-14T07:11:51+00:00"/>
+        <date value="2026-09-14T07:28:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -90268,13 +90268,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c306b66-80f4-4910-b7c9-11c4a0a86dd2"/>
-          <timestamp value="2026-09-14T07:14:19+00:00"/>
+          <identifier value="urn:uuid:cfa8d128-c788-49c9-8cc0-9943481036af"/>
+          <timestamp value="2026-09-14T07:30:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
             <name value="default-valueset-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot.rc4"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ|2027.0.0-ballot"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>

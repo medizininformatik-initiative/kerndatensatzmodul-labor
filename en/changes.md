@@ -1,84 +1,35 @@
-# Changelog - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Changelog - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
 
 ## Changelog
 
-### Version: 2027.0.0-ballot.rc4
+### Version: 2027.0.0-ballot
 
-Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc3`. It carries the review of the 2027 guide.
-
-### FHIR / Content Changes:
-
-#### Examples
-
-* `mii-exa-labor-laborwert-ratio` states its result as `valueQuantity` with the composed UCUM unit `mg/(24.h)` instead of as a `valueRatio`. A ratio cannot be reached through `value-quantity` — the R4 expression is `(Observation.value as Quantity) | (Observation.value as SampledData)` — while the CapabilityStatement requires that parameter as SHALL. The instance id keeps its `-ratio` suffix, because the URL has been published since rc1.
-* The examples are named after what they contain rather than after their resource type: laboratory report and result **creatinine**, order **full blood count**, **albumin in 24-hour urine**, **epithelial cells in urine sediment**.
-
-### Implementation Guide:
-
-* The page **Interpretation** is now called [Interpretations and Comments](interpretation.md) and treats the subject in three parts: the coded interpretation, the comments in `Observation.note`, and the interpretation-affecting properties. New in it: how the narrow FHIR sense of "interpretation" relates to its wider use in the Rili-BÄK and ISO 15189 (both now linked), what a coded interpretation is worth for secondary use and where its data quality is limited, and the abnormal code `A`. The threshold for immediate notification is named "alarm" limit, following the wording of those guidelines.
-* The guidelines are cited uniformly across the guide as "Rili-BÄK 2023" and "ISO 15189:2024". [Laboratory Timestamps](laboratory-timestamps.md) previously cited the 2019/23 and 2023 editions.
-* [Project Context](project-context.md) no longer describes the Microbiology module as planned — it is published — and now names the findings that belong there rather than in this module, together with how that module binds its examination types to LOINC.
-
-### Version: 2027.0.0-ballot.rc3
-
-Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc2`.
-
-### FHIR / Content Changes:
-
-#### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
-
-* category: One open slice on `category` carrying the mandatory HL7 coding, instead of a slice whose codings were sliced again — two slices at that level are not disjoint, since a CodeableConcept holding both codes matches both patterns. LOINC `26436-6` stays permitted as a further coding but is no longer required. Measured against the category shapes of every release since 2025.0.2, including the microbiology module's: all validate.
-
-### Version: 2027.0.0-ballot.rc2
-
-Ballot candidate for 2027.0.0, superseding `2027.0.0-ballot.rc1`. Release candidates prepare the ballot; they are not the balloted version.
-
-### FHIR / Content Changes:
-
-#### General:
-
-* The package id is now `de.medizininformatikinitiative.kerndatensatz.laborbefund`, which is the id the module is distributed under. The repository previously declared `…kerndatensatz.labor`, so a consumer following the packageId stated in the guide could not resolve the package. The canonical is unaffected.
-
-#### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
-
-* category: The slice discriminator now points at `coding` instead of `$this`, and the slice no longer carries a `patternCodeableConcept` of its own. The `patternCoding` of the inner coding slices does the discriminating, where the cardinality sits as well. Previously the same statement was made in two places (reported in the downstream review of `2027.0.0-ballot.rc1`).
-* The examples state the LOINC coding with its display again. Under rc1 the outer pattern was injected into instances, so an explicit assignment produced the code twice.
-
-### Version: 2027.0.0-ballot.rc1
-
-Ballot candidate for 2027.0.0. It contains the following changes compared to the previous version 2026.0.3.
+Ballot version for 2027.0.0. It contains the following changes compared to the previous version 2026.0.3.
 
 ### FHIR / Content Changes:
 
 #### General:
 
 * All profiles, ValueSets, the CapabilityStatement and the ImplementationGuide resource carry CRMI metadata (shareable, publishable, ValueSets additionally computable), including approval and review date, effective period, version policy, package provenance and contributors. See [Metadata Overview](metadata.md).
+* The package id is now `de.medizininformatikinitiative.kerndatensatz.laborbefund`, which is the id the module is distributed under. The repository previously declared `…kerndatensatz.labor`, so a consumer following the packageId stated in the guide could not resolve the package. The canonical is unaffected.
 * Pattern and fixed-value codings use unversioned system URLs; a versioned `system` URL would not match in a pattern. The ValueSet compositions remain version-bound.
 * Extension references in `type.profile` carry no version either. An extension slice matches on `Extension.url`, a `uri` without a version in the instance, so a version there fixes something that plays no part in matching. Which package version applies is stated in the dependencies; `pin-canonicals` fixes versions in the published output.
 * `Coding.version` is flagged Must Support on `Observation.code`, `Observation.valueCodeableConcept` and `ServiceRequest.code`.
-* The Meta module dependency is raised from 2026.0.0 to `2027.0.0-ballot.rc3`, the candidate this module is balloted alongside. The CapabilityStatement references that module's Observation `interpretation` search parameter, which rc3 still ships under the same canonical.
+* The Meta module dependency is raised from 2026.0.0 to `2027.0.0-ballot`, the version this module is balloted alongside. The CapabilityStatement references that module's Observation `interpretation` search parameter.
 
-#### MII_PR_Labor_Laborbefund
+#### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
 
-* category: `category` itself is sliced, open, with one mandatory slice `laborbefund` (1..1 MS). Within that slice, `coding` carries two open slices: 
-* `loinc-lab` (1..1 MS) with `$loinc#26436-6`
-* `diagnostic-service-sections` (1..1 MS) with `$v2-0074#LAB`
-* Further codings within the slice, and further `category` entries beside it — a laboratory area, for instance — are permitted.
-* The slicing deliberately sits on `category`, not on `category.coding`: `category` is 1..*, and constraints below a repeating element apply to every repetition. On `category.coding` every further category would have to repeat `26436-6` and `LAB`.
-* The slice discriminator carries a single coding; a `patternCodeableConcept` with two codings is not usable. The second mandatory coding is enforced by the slicing inside the slice.
-* The slice is named `laborbefund`; in 2026.0.3 it was `lab-category`. The name appears in validator messages and in profile diffs.
- 
+* category: `category` is sliced, open, with one mandatory slice carrying the mandatory HL7 coding — `$v2-0074#LAB` on the laboratory report, `$observation-category#laboratory` on the laboratory test. LOINC `26436-6` stays permitted as a further coding but is no longer required. The slicing deliberately sits on `category`, not on `category.coding`: `category` is `1..*`, and constraints below a repeating element apply to every repetition, so on `category.coding` every further category would have to repeat the mandatory codes. A laboratory area belongs beside the mandatory slice as its own `category` entry. The slice names changed — `v2-lab` and `observation-category`; in 2026.0.3 they were `lab-category`. Names appear in validator messages and in profile diffs. Measured against the category shapes of every release since 2025.0.2, including the microbiology module's: all validate.
 
 #### MII_PR_Labor_Laboruntersuchung
 
 * basedOn: **NEW** on the laboratory test — reference to the laboratory order it is based on. `0..*`, constrained to `Reference(ServiceRequest)` and flagged Must Support (issue #82). The cardinality stays that of the base profile; `basedOn` is mandatory only on the laboratory report, and has been so unchanged since 2025.0.2.
 * code: The binding moves from `code` onto the new open slice `code.coding[loinc]`, is tightened from `preferred` to `extensible`, and points at a different IPS ValueSet — `results-laboratory-pathology-observations-uv-ips` instead of `results-laboratory-observations-uv-ips`. `Observation.code` itself no longer carries a binding.
 * valueCodeableConcept: Extensible binding to the new ValueSet [Coded laboratory result](ValueSet-mii-vs-labor-laborergebnis-codiert.md), which combines the qualitative and semiquantitative result ValueSets. The slices `qualitativ` and `semiquantitativ` originally foreseen have been dropped, because the two ValueSets overlap and can therefore not be discriminated.
-* interpretation: Extensible binding to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.md), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally common scales such as `--, -, N, +, ++` or `L N H` map onto these; beyond the critical notification limit the abnormal codes `HH`, `LL` and `AA` may additionally be used.
-* category: Sliced the same way as on the laboratory report — mandatory slice `laboruntersuchung` (1..1 MS) with `$loinc#26436-6` and `$observation-category#laboratory` inside it. A laboratory area belongs beside it as its own `category` entry, not as a further coding of the mandatory one.
+* interpretation: Extensible binding to the new ValueSet [Interpretation](ValueSet-mii-vs-labor-interpretation.md), a restricted selection from HL7 v3 ObservationInterpretation (`L`, `LU`, `N`, `H`, `HU`). Locally common scales such as `--, -, N, +, ++` or `L N H` map onto these; beyond the "alarm" limits the abnormal codes `A`, `HH`, `LL` and `AA` may additionally be used.
 * category: Definition made precise ("classification of the laboratory test within the diagnostic discipline and the laboratory group").
 * `fix:` Invariant mii-lab-2: the expression `hasMember.exists() xor value.exists().not() implies dataAbsentReason.exists()` did not evaluate as described and now reads `hasMember.exists() or value.exists() or dataAbsentReason.exists()` — at least one of the three elements has to be present.
 
@@ -95,14 +46,22 @@ Ballot candidate for 2027.0.0. It contains the following changes compared to the
 * MII_VS_Labor_Laborbereich: displays switched to the LOINC preferred terms (for example "Blood bank studies (set)" instead of "BLOOD BANK STUDIES"). The list of concepts itself is unchanged.
 * The CodeSystem references from hl7.terminology.r4 are version-bound (v2-0074 3.0.0, v2-0203 5.0.0, v3-ObservationInterpretation 4.0.0), because the package arrives in two states and resolution would otherwise be ambiguous.
 
+#### Examples
+
+* `mii-exa-labor-laborwert-ratio` states its result as `valueQuantity` with the composed UCUM unit `mg/(24.h)` instead of as a `valueRatio`. A ratio cannot be reached through `value-quantity` — the R4 expression is `(Observation.value as Quantity) | (Observation.value as SampledData)` — while the CapabilityStatement requires that parameter as SHALL. The instance id keeps its `-ratio` suffix, because the URL has been published before.
+* The examples are named after what they contain rather than after their resource type: laboratory report and result **creatinine**, order **full blood count**, **albumin in 24-hour urine**, **epithelial cells in urine sediment**.
+
 #### Logical Model
 
 * MII_LM_Labor: `experimental` set to `false`. `status` was already `active`.
 
 ### Implementation Guide:
 
-* New page [Interpretation](interpretation.md): which codes are provided for assessing a result, how local scales map onto them, and when the abnormal codes apply.
-* The module description is split by subject: [Laboratory Timestamps](laboratory-timestamps.md), [Interpretation](interpretation.md) and [Specimen](specimen.md) are pages of their own.
+* The guide is published with the IG Publisher instead of Simplifier, bilingual (English default, German translation) and rendered at the module URL.
+* New page [Interpretations and Comments](interpretation.md), treating the subject in three parts: the coded interpretation and which codes apply, the comments in `Observation.note`, and the interpretation-affecting properties. It sets out how the narrow FHIR sense of "interpretation" relates to its wider use in the Rili-BÄK and ISO 15189 (both linked), what a coded interpretation is worth for secondary use and where its data quality is limited.
+* The module description is split by subject: [Laboratory Timestamps](laboratory-timestamps.md), [Interpretations and Comments](interpretation.md) and [Specimen](specimen.md) are pages of their own.
+* The guidelines are cited uniformly across the guide as "Rili-BÄK 2023" and "ISO 15189:2024".
+* [Project Context](project-context.md) no longer describes the Microbiology module as planned — it is published — and now names the findings that belong there rather than in this module, together with how that module binds its examination types to LOINC.
 
 ### Version: 2026.0.3
 

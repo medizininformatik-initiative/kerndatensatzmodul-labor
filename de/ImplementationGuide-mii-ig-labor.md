@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot.rc4
+# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -119,7 +119,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot.rc4"
+      "valueString" : "2027.0.0-ballot"
     },
     {
       "url" : "uri",
@@ -228,12 +228,12 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_IG_Labor",
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T07:11:51+00:00",
+  "date" : "2026-09-14T07:28:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -263,7 +263,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     "id" : "de_medizininformatikinitiative_kerndatensatz_meta",
     "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.meta",
-    "version" : "2027.0.0-ballot.rc3"
+    "version" : "2027.0.0-ballot"
   },
   {
     "id" : "hl7_fhir_uv_crmi",

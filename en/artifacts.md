@@ -1,4 +1,4 @@
-# Artifacts Summary - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Artifacts Summary - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

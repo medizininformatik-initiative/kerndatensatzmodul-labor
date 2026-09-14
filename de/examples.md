@@ -1,4 +1,4 @@
-# Beispiele - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Beispiele - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Beispiele**

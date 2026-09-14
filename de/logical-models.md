@@ -1,4 +1,4 @@
-# Logische Modelle - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Logische Modelle - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Logische Modelle**

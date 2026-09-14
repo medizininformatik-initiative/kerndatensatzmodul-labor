@@ -1,4 +1,4 @@
-# Examples - MII IG Laborbefund v2027.0.0-ballot.rc4
+# Examples - MII IG Laborbefund v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Examples**
