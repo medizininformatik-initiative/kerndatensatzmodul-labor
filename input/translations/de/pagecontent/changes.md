@@ -3,6 +3,9 @@
 Änderungen gegenüber der Ballot-Fassung 2027.0.0-ballot. Sie setzen den Release-Bericht für 2027 um ([kerndatensatz-meta#233](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/233)).
 
 #### FHIR/Inhaltliche Änderungen:
+##### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
+- effective[x]: Neben `dateTime` ist `Period` zulässig; das Element ist nach Typ geschnitten, `effectiveDateTime` und `effectivePeriod` sind beide Must Support (Issue #140). Ein Zeitraum gibt ein Sammelintervall an, z. B. bei 24-Stunden-Sammelurin. Instanzen mit `dateTime` bleiben valide; Systeme, die die Daten verarbeiten, müssen nun auch einen Zeitraum verarbeiten können.
+
 ##### MII_PR_Labor_Laborbefund
 - **Breaking Change:** imagingStudy: ausgeschlossen (`0..0`), wie im HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). Ein Laborbefund verweist nicht auf eine ImagingStudy. Das Element war bisher nicht Must Support; Instanzen, die es befüllen, sind nicht mehr valide (Issue #141).
 
@@ -12,6 +15,9 @@
 ##### MII_CPS_Labor_CapabilityStatement
 - Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
 
+##### MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
+- Kontext um `effective` vom Typ `Period` an Observation und DiagnosticReport erweitert.
+
 ##### Beispiele
 - Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.
 - `fix:` `performer.display` in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).
@@ -20,6 +26,7 @@
 
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
+- Seite Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu `Observation.effective[x]` sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).
 
 ### Version: 2027.0.0-ballot
 
