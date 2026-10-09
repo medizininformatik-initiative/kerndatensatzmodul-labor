@@ -40,5 +40,5 @@ Individual comments frequently concern not the report as a whole but only single
 
 ### Interpretation-affecting properties (such as “haemolytic”)
 
-Interpretation-affecting specimen properties (for example haemolysis, lipaemia, icterus) that are stated at the level of the individual test result can be coded with the modifier extension [Interpretation-affecting property](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md).
+Interpretation-affecting specimen properties (for example haemolysis, lipaemia, icterus) that are stated at the level of the individual test result can be coded with the modifier extension [Interpretation-affecting property](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md). The example [potassium from a haemolysed specimen](Observation-mii-exa-labor-laborwert-haemolyse.md) shows the typical case: the value is reported, but haemolysis may make it falsely high.
 

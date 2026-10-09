@@ -1,16 +1,17 @@
 MII_IG_Labor : Validation Results
 =========================================
 
-err = 37, warn = 35, info = 76
+err = 37, warn = 35, info = 81
 $--
 Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz.laborbefund#$-- (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
  Build Errors : 0 / 4 / 0
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement : 0 / 2 / 73
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund : 0 / 0 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Encounter-555 : 0 / 0 / 1
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ImplementationGuide-mii-ig-labor : 0 / 4 / 55
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ImplementationGuide-mii-ig-labor : 0 / 4 / 56
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert : 0 / 1 / 8
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason : 0 / 1 / 6
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason : 0 / 0 / 4
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-haemolyse : 0 / 1 / 9
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-range : 0 / 0 / 6
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio : 0 / 0 / 5
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Organization-7772 : 0 / 0 / 1
@@ -67,9 +68,15 @@ INFORMATION: Observation/mii-exa-labor-laborwert: Observation.value.ofType(Quant
 INFORMATION: Observation/mii-exa-labor-laborwert: Observation.value.ofType(Quantity).extension[0].value.ofType(Quantity): Reference to experimental CodeSystem http://unitsofmeasure.org|1.0.1
 == fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason.json ==
 INFORMATION: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
-WARNING: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[1].coding[0].system: A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
-INFORMATION: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte)
 INFORMATION: Observation/mii-exa-labor-laborwert-data-absent-reason: Observation.code.coding[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1
+== fsh-generated/resources/Observation-mii-exa-labor-laborwert-haemolyse.json ==
+INFORMATION: Observation/mii-exa-labor-laborwert-haemolyse: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
+WARNING: Observation/mii-exa-labor-laborwert-haemolyse: Observation.category[1].coding[0].system: A definition for CodeSystem 'http://example.org/fhir/sid/Laborgruppe' could not be found, so the code cannot be validated
+INFORMATION: Observation/mii-exa-labor-laborwert-haemolyse: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://example.org/fhir/sid/Laborgruppe#Niere/Elektrolyte)
+INFORMATION: Observation/mii-exa-labor-laborwert-haemolyse: Observation.code.coding[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1
+INFORMATION: Observation/mii-exa-labor-laborwert-haemolyse: Observation.value.ofType(Quantity): Reference to experimental CodeSystem http://unitsofmeasure.org|1.0.1
+INFORMATION: Observation/mii-exa-labor-laborwert-haemolyse: Observation.referenceRange[0].low: Reference to experimental CodeSystem http://unitsofmeasure.org|1.0.1
+INFORMATION: Observation/mii-exa-labor-laborwert-haemolyse: Observation.referenceRange[0].high: Reference to experimental CodeSystem http://unitsofmeasure.org|1.0.1
 == fsh-generated/resources/Observation-mii-exa-labor-laborwert-range.json ==
 INFORMATION: Observation/mii-exa-labor-laborwert-range: Observation.category[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/observation-category|4.0.1
 INFORMATION: Observation/mii-exa-labor-laborwert-range: Observation.code.coding[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips|2.0.1

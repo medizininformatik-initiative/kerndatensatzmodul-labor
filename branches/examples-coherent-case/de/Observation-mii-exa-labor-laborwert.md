@@ -16,8 +16,6 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
-**MII EX Labor Interpretationsbeeinflussende Eigenschaft**: [SNOMED CT: 118128002](http://snomed.info/id/118128002) (Specimen hemolyzed) (version = http://snomed.info/sct/900000000000207008/version/20260701 )
-
 **identifier**: Observation Instance Identifier/59826-8_1234567890
 
 **basedOn**: [ServiceRequest Nierendiagnostik](ServiceRequest-mii-exa-labor-laboranforderung.md)
@@ -67,15 +65,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "display" : "test health data"
     }]
   },
-  "modifierExtension" : [{
-    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
-    "valueCoding" : {
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
-      "code" : "118128002",
-      "display" : "Specimen hemolyzed"
-    }
-  }],
   "identifier" : [{
     "type" : {
       "coding" : [{

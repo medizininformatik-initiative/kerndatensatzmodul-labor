@@ -64,18 +64,19 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [ Laboratory order: renal diagnostics  ](ServiceRequest-mii-exa-labor-laboranforderung.md) | A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine and the urine sediment. The laboratory report and the four laboratory test examples of this guide belong to it. |
-| [ Laboratory report: renal diagnostics  ](DiagnosticReport-mii-exa-labor-laborbefund.md) | The laboratory report for the renal diagnostics order. It groups the four laboratory test examples of this guide, performed on three specimens of the same patient. |
+| [ Laboratory order: renal diagnostics  ](ServiceRequest-mii-exa-labor-laboranforderung.md) | A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it. |
+| [ Laboratory report: renal diagnostics  ](DiagnosticReport-mii-exa-labor-laborbefund.md) | The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient. |
 | [ Laboratory result: albumin in 24-hour urine  ](Observation-mii-exa-labor-laborwert-ratio.md) | Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the end of the collection period. |
 | [ Laboratory result: creatinine  ](Observation-mii-exa-labor-laborwert.md) | A quantitative creatinine test: valueQuantity with a reference range and a coded interpretation. |
+| [ Laboratory result: creatinine in spot urine without a value (Data Absent Reason)  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) | Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range. |
 | [ Laboratory result: epithelial cells in urine sediment (range)  ](Observation-mii-exa-labor-laborwert-range.md) | Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange). |
-| [ Laboratory result: potassium without a value (Data Absent Reason)  ](Observation-mii-exa-labor-laborwert-data-absent-reason.md) | Potassium from the same haemolysed blood specimen as the creatinine example. Haemolysis releases potassium from the red cells, so the laboratory reports no value: dataAbsentReason states that, and the interpretation-affecting property names the haemolysis. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range. |
+| [ Laboratory result: potassium from a haemolysed specimen  ](Observation-mii-exa-labor-laborwert-haemolyse.md) | Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value. |
 | [ mii-exa-labor-encounter  ](Encounter-555.md) | Minimal reference encounter for the laboratory examples. |
 | [ mii-exa-labor-organization  ](Organization-7772.md) | Minimal reference organization (performing laboratory) for the laboratory examples. |
 | [ mii-exa-labor-patient  ](Patient-111.md) | Minimal reference patient for the laboratory examples. |
-| [ mii-exa-labor-specimen  ](Specimen-4999.md) | Venous blood specimen of the renal diagnostics order. It arrived haemolysed. |
+| [ mii-exa-labor-specimen  ](Specimen-4999.md) | Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result. |
 | [ mii-exa-labor-specimen-24h-urin  ](Specimen-4998.md) | 24-hour urine collection of the renal diagnostics order. |
-| [ mii-exa-labor-specimen-spontanurin  ](Specimen-4997.md) | Spot urine specimen of the renal diagnostics order, for the urine sediment. |
+| [ mii-exa-labor-specimen-spontanurin  ](Specimen-4997.md) | Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine. |
 
 ### Other 
 

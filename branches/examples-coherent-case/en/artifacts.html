@@ -599,7 +599,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine and the urine sediment. The laboratory report and the four laboratory test examples of this guide belong to it.</p>
+<p>A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it.</p>
 </td>
          </tr>
          <tr>
@@ -611,7 +611,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>The laboratory report for the renal diagnostics order. It groups the four laboratory test examples of this guide, performed on three specimens of the same patient.</p>
+<p>The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient.</p>
 </td>
          </tr>
          <tr>
@@ -640,6 +640,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html"
+                  title="Observation/mii-exa-labor-laborwert-data-absent-reason">
+                  <span title="Observation/mii-exa-labor-laborwert-data-absent-reason">Laboratory result: creatinine in spot urine without a value (Data Absent Reason)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-mii-exa-labor-laborwert-range.html"
                   title="Observation/mii-exa-labor-laborwert-range">
                   <span title="Observation/mii-exa-labor-laborwert-range">Laboratory result: epithelial cells in urine sediment (range)
@@ -652,14 +664,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html"
-                  title="Observation/mii-exa-labor-laborwert-data-absent-reason">
-                  <span title="Observation/mii-exa-labor-laborwert-data-absent-reason">Laboratory result: potassium without a value (Data Absent Reason)
+               <a href="Observation-mii-exa-labor-laborwert-haemolyse.html"
+                  title="Observation/mii-exa-labor-laborwert-haemolyse">
+                  <span title="Observation/mii-exa-labor-laborwert-haemolyse">Laboratory result: potassium from a haemolysed specimen
 </span>
                </a>
             </td>
             <td>
-<p>Potassium from the same haemolysed blood specimen as the creatinine example. Haemolysis releases potassium from the red cells, so the laboratory reports no value: dataAbsentReason states that, and the interpretation-affecting property names the haemolysis. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.</p>
+<p>Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value.</p>
 </td>
          </tr>
          <tr>
@@ -703,7 +715,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Venous blood specimen of the renal diagnostics order. It arrived haemolysed.</p>
+<p>Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result.</p>
 </td>
          </tr>
          <tr>
@@ -725,7 +737,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Spot urine specimen of the renal diagnostics order, for the urine sediment.</p>
+<p>Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine.</p>
 </td>
          </tr>
       </tbody>
@@ -774,7 +786,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Oct 9, 2026 10:35+0000">2026-10-09</span>
+          Generated <span title="Fri, Oct 9, 2026 10:47+0000">2026-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

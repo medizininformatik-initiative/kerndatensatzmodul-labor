@@ -158,7 +158,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:35:54+00:00",
+  "date" : "2026-10-09T10:47:56+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1516,7 +1516,7 @@
         "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
       },
       "name" : "Laboratory order: renal diagnostics",
-      "description" : "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine and the urine sediment. The laboratory report and the four laboratory test examples of this guide belong to it.",
+      "description" : "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
     },
     {
@@ -1528,7 +1528,7 @@
         "reference" : "DiagnosticReport/mii-exa-labor-laborbefund"
       },
       "name" : "Laboratory report: renal diagnostics",
-      "description" : "The laboratory report for the renal diagnostics order. It groups the four laboratory test examples of this guide, performed on three specimens of the same patient.",
+      "description" : "The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
     },
     {
@@ -1561,6 +1561,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
+      },
+      "name" : "Laboratory result: creatinine in spot urine without a value (Data Absent Reason)",
+      "description" : "Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-labor-laborwert-range"
       },
       "name" : "Laboratory result: epithelial cells in urine sediment (range)",
@@ -1573,10 +1585,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
+        "reference" : "Observation/mii-exa-labor-laborwert-haemolyse"
       },
-      "name" : "Laboratory result: potassium without a value (Data Absent Reason)",
-      "description" : "Potassium from the same haemolysed blood specimen as the creatinine example. Haemolysis releases potassium from the red cells, so the laboratory reports no value: dataAbsentReason states that, and the interpretation-affecting property names the haemolysis. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
+      "name" : "Laboratory result: potassium from a haemolysed specimen",
+      "description" : "Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1816,7 +1828,7 @@
         "reference" : "Specimen/4999"
       },
       "name" : "mii-exa-labor-specimen",
-      "description" : "Venous blood specimen of the renal diagnostics order. It arrived haemolysed.",
+      "description" : "Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result.",
       "exampleBoolean" : true
     },
     {
@@ -1840,7 +1852,7 @@
         "reference" : "Specimen/4997"
       },
       "name" : "mii-exa-labor-specimen-spontanurin",
-      "description" : "Spot urine specimen of the renal diagnostics order, for the urine sediment.",
+      "description" : "Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine.",
       "exampleBoolean" : true
     }],
     "page" : {

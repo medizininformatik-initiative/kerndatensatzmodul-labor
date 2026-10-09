@@ -12,16 +12,9 @@
   </meta>
   <language value="de"/>
   <text>
-    <status value="extensions"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-labor-laborwert-data-absent-reason</b></p><a name="de-mii-exa-labor-laborwert-data-absent-reason"> </a><a name="de-hcmii-exa-labor-laborwert-data-absent-reason"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII PR Labor Laboruntersuchung</a> version: 2027.0.0-ci</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Labor Interpretationsbeeinflussende Eigenschaft</b>: <a href="http://snomed.info/id/118128002">SNOMED CT: 118128002</a> (Specimen hemolyzed) (version = http://snomed.info/sct/900000000000207008/version/20260701 )</p><p><b>identifier</b>: Observation Instance Identifier/6298-4_1234567890</p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-labor-laboranforderung.html">ServiceRequest Nierendiagnostik</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://loinc.org 26436-6}">Laboratory</span>, <span title="Codes:{http://example.org/fhir/sid/Laborgruppe Niere/Elektrolyte}">Niere/Elektrolyte</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 6298-4}">Kalium</span></p><p><b>subject</b>: <a href="Patient-111.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>encounter</b>: <a href="Encounter-555.html">Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)</a></p><p><b>effective</b>: 2018-11-20 08:00:00+0100</p><p><b>issued</b>: 2018-11-20 14:30:00+0100</p><p><b>performer</b>: <a href="Organization-7772.html">Zentrallabor Beispielklinikum</a></p><p><b>dataAbsentReason</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason error}">Error</span></p><p><b>specimen</b>: <a href="Specimen-4999.html">Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999; type = ; receivedTime = 2018-11-20 08:40:00+0100</a></p></div>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-labor-laborwert-data-absent-reason</b></p><a name="de-mii-exa-labor-laborwert-data-absent-reason"> </a><a name="de-hcmii-exa-labor-laborwert-data-absent-reason"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII PR Labor Laboruntersuchung</a> version: 2027.0.0-ci</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/14683-7_1234567890</p><p><b>basedOn</b>: <a href="ServiceRequest-mii-exa-labor-laboranforderung.html">ServiceRequest Nierendiagnostik</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://loinc.org 26436-6}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 14683-7}">Kreatinin im Urin</span></p><p><b>subject</b>: <a href="Patient-111.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>encounter</b>: <a href="Encounter-555.html">Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)</a></p><p><b>effective</b>: 2018-11-20 08:15:00+0100</p><p><b>issued</b>: 2018-11-20 14:30:00+0100</p><p><b>performer</b>: <a href="Organization-7772.html">Zentrallabor Beispielklinikum</a></p><p><b>dataAbsentReason</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-performed}">Not Performed</span></p><p><b>note</b>: </p><blockquote><div><p>Probenmenge nach dem Urinsediment nicht ausreichend.</p>
+</div></blockquote><p><b>specimen</b>: <a href="Specimen-4997.html">Specimen: identifier = https://example.org/fhir/sid/test-specimens#4997; type = ; receivedTime = 2018-11-20 08:40:00+0100</a></p></div>
   </text>
-  <modifierExtension url="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft">
-    <valueCoding>
-      <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
-      <code value="118128002"/>
-      <display value="Specimen hemolyzed"/>
-    </valueCoding>
-  </modifierExtension>
   <identifier>
     <type>
       <coding>
@@ -30,7 +23,7 @@
       </coding>
     </type>
     <system value="https://example.org/fhir/sid/test-lab-results"/>
-    <value value="6298-4_1234567890"/>
+    <value value="14683-7_1234567890"/>
     <assigner>
       <identifier>
         <system value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"/>
@@ -55,20 +48,14 @@
       <display value="Laboratory studies (set)"/>
     </coding>
   </category>
-  <category>
-    <coding>
-      <system value="http://example.org/fhir/sid/Laborgruppe"/>
-      <code value="Niere/Elektrolyte"/>
-    </coding>
-  </category>
   <code>
     <coding>
       <system value="http://loinc.org"/>
       <version value="2.82"/>
-      <code value="6298-4"/>
-      <display value="Potassium [Moles/volume] in Blood"/>
+      <code value="14683-7"/>
+      <display value="Creatinine [Moles/volume] in Urine"/>
     </coding>
-    <text value="Kalium"/>
+    <text value="Kreatinin im Urin"/>
   </code>
   <subject>
     <reference value="Patient/111"/>
@@ -76,7 +63,7 @@
   <encounter>
     <reference value="Encounter/555"/>
   </encounter>
-  <effectiveDateTime value="2018-11-20T08:00:00+01:00">
+  <effectiveDateTime value="2018-11-20T08:15:00+01:00">
     <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum">
       <valueCoding>
         <system value="http://snomed.info/sct"/>
@@ -98,10 +85,13 @@
   <dataAbsentReason>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
-      <code value="error"/>
+      <code value="not-performed"/>
     </coding>
   </dataAbsentReason>
+  <note>
+    <text value="Probenmenge nach dem Urinsediment nicht ausreichend."/>
+  </note>
   <specimen>
-    <reference value="Specimen/4999"/>
+    <reference value="Specimen/4997"/>
   </specimen>
 </Observation>

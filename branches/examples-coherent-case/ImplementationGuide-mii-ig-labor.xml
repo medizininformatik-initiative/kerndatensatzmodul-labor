@@ -138,7 +138,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-10-09T10:35:54+00:00"/>
+  <date value="2026-10-09T10:47:56+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1139,7 +1139,7 @@
         <reference value="ServiceRequest/mii-exa-labor-laboranforderung"/>
       </reference>
       <name value="Laboratory order: renal diagnostics"/>
-      <description value="A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine and the urine sediment. The laboratory report and the four laboratory test examples of this guide belong to it."/>
+      <description value="A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"/>
     </resource>
     <resource>
@@ -1150,7 +1150,7 @@
         <reference value="DiagnosticReport/mii-exa-labor-laborbefund"/>
       </reference>
       <name value="Laboratory report: renal diagnostics"/>
-      <description value="The laboratory report for the renal diagnostics order. It groups the four laboratory test examples of this guide, performed on three specimens of the same patient."/>
+      <description value="The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"/>
     </resource>
     <resource>
@@ -1180,6 +1180,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/mii-exa-labor-laborwert-data-absent-reason"/>
+      </reference>
+      <name value="Laboratory result: creatinine in spot urine without a value (Data Absent Reason)"/>
+      <description value="Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/mii-exa-labor-laborwert-range"/>
       </reference>
       <name value="Laboratory result: epithelial cells in urine sediment (range)"/>
@@ -1191,10 +1202,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-labor-laborwert-data-absent-reason"/>
+        <reference value="Observation/mii-exa-labor-laborwert-haemolyse"/>
       </reference>
-      <name value="Laboratory result: potassium without a value (Data Absent Reason)"/>
-      <description value="Potassium from the same haemolysed blood specimen as the creatinine example. Haemolysis releases potassium from the red cells, so the laboratory reports no value: dataAbsentReason states that, and the interpretation-affecting property names the haemolysis. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."/>
+      <name value="Laboratory result: potassium from a haemolysed specimen"/>
+      <description value="Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
     </resource>
     <resource>
@@ -1414,7 +1425,7 @@
         <reference value="Specimen/4999"/>
       </reference>
       <name value="mii-exa-labor-specimen"/>
-      <description value="Venous blood specimen of the renal diagnostics order. It arrived haemolysed."/>
+      <description value="Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1436,7 +1447,7 @@
         <reference value="Specimen/4997"/>
       </reference>
       <name value="mii-exa-labor-specimen-spontanurin"/>
-      <description value="Spot urine specimen of the renal diagnostics order, for the urine sediment."/>
+      <description value="Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine."/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

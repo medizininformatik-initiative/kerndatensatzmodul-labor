@@ -32,21 +32,31 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   * **Value**: 72 µmol/l (Details: UCUM codeumol/L = 'umol/L')
   * **Reference Range**: Normal Range: 72 - 127
   * **Flags**: Final,Normal
+  * **Note**: 
   * **Relevant Time**: 2018-11-20 08:00:00+0100
-* **Code**: [Kalium](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
-  * **Value**: Error: **Error**
+* **Code**: [Kalium](Observation-mii-exa-labor-laborwert-haemolyse.md)
+  * **Value**: 6.2 mmol/l (Details: UCUM codemmol/L = 'mmol/L')
+  * **Reference Range**: Normal Range: 3.5 mmol/l (Details: UCUM codemmol/L = 'mmol/L')- 5.1 mmol/l (Details: UCUM codemmol/L = 'mmol/L')
+  * **Flags**: Final,High
+  * **Note**: > Probe hämolytisch, Kaliumwert möglicherweise falsch hoch.
+  * **Relevant Time**: 2018-11-20 08:00:00+0100
+* **Code**: [Kreatinin im Urin](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+  * **Value**: Error: **Not Performed**
   * **Reference Range**: 
   * **Flags**: Final
-  * **Relevant Time**: 2018-11-20 08:00:00+0100
+  * **Note**: > Probenmenge nach dem Urinsediment nicht ausreichend.
+  * **Relevant Time**: 2018-11-20 08:15:00+0100
 * **Code**: [Albumin (24H U) [Mass/Time]](Observation-mii-exa-labor-laborwert-ratio.md)
   * **Value**: 15 mg/24h (Details: UCUM codemg/(24.h) = 'mg/(24.h)')
   * **Reference Range**: 
   * **Flags**: Final
+  * **Note**: 
   * **Relevant Time**: 2018-11-20 08:00:00+0100
 * **Code**: [Urinsediment Epithelzellen Semi-quantitative Schätzung](Observation-mii-exa-labor-laborwert-range.md)
   * **Value**: 2-5 /HPF
   * **Reference Range**: 
   * **Flags**: Final
+  * **Note**: 
   * **Relevant Time**: 2018-11-20 08:15:00+0100
 
 
@@ -130,6 +140,9 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   }],
   "result" : [{
     "reference" : "Observation/mii-exa-labor-laborwert"
+  },
+  {
+    "reference" : "Observation/mii-exa-labor-laborwert-haemolyse"
   },
   {
     "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"

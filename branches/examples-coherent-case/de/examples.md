@@ -10,7 +10,8 @@
 * [Laborbefund: Nierendiagnostik](DiagnosticReport-mii-exa-labor-laborbefund.md)
 * [Anforderung: Nierendiagnostik](ServiceRequest-mii-exa-labor-laboranforderung.md)
 * [Laborergebnis: Kreatinin](Observation-mii-exa-labor-laborwert.md)
-* [Laborergebnis: Kalium ohne Wert (Data Absent Reason)](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [Laborergebnis: Kalium aus hämolytischer Probe](Observation-mii-exa-labor-laborwert-haemolyse.md)
+* [Laborergebnis: Kreatinin im Spontanurin ohne Wert (Data Absent Reason)](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
 * [Laborergebnis: Epithelzellen im Urinsediment (Bereich)](Observation-mii-exa-labor-laborwert-range.md)
 * [Laborergebnis: Albumin im 24-Stunden-Urin](Observation-mii-exa-labor-laborwert-ratio.md)
 
