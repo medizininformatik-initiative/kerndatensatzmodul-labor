@@ -41,6 +41,7 @@ InstanceOf: MII_PR_Labor_Laboruntersuchung
 Title: "Laboratory result: albumin in 24-hour urine"
 Description: "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter."
 Usage: #example
+* insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
@@ -69,6 +70,7 @@ InstanceOf: MII_PR_Labor_Laboruntersuchung
 Title: "Laboratory result: epithelial cells in urine sediment (range)"
 Description: "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange)."
 Usage: #example
+* insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
