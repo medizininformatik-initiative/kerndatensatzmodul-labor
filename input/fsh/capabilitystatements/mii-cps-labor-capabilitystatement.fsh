@@ -100,6 +100,12 @@ Usage: #definition
 * insert SupportSearchParam(value-concept, http://hl7.org/fhir/SearchParameter/Observation-value-concept, #token, #SHALL)
 //* insert SupportSearchParam(value-date, http://hl7.org/fhir/SearchParameter/Observation-value-date, #date, #SHALL)
 * insert SupportSearchParam(value-quantity, http://hl7.org/fhir/SearchParameter/Observation-value-quantity, #quantity, #SHALL)
+// value-quantity erfasst kein valueRatio, und R4 kennt keinen Suchparameter dafuer;
+// die MII definiert sie im Modul Meta (gepinnte Abhaengigkeit). SHOULD: ein Ratio ist
+// im Labor selten, typischerweise ein Titer.
+* insert SupportSearchParam(value-ratio, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio, #composite, #SHOULD)
+* insert SupportSearchParam(value-ratio-denominator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator, #quantity, #SHOULD)
+* insert SupportSearchParam(value-ratio-numerator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator, #quantity, #SHOULD)
 //* insert SupportSearchParam(value-string, http://hl7.org/fhir/SearchParameter/Observation-value-string, #string, #SHALL)
 
 // DiagnosticReport requirements
