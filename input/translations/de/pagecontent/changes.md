@@ -17,6 +17,9 @@
 - `fix:` `performer.display` in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).
 - `fix:` `mii-exa-labor-laborwert-data-absent-reason` trägt keine Interpretation und keinen Referenzbereich mehr; ohne Wert gibt es nichts zu interpretieren (Issue #117).
 - `fix:` Alle Laborbeispiele tragen das versionierte `meta.profile` und das Testdaten-Label; `…-ratio` und `…-range` fehlte beides (Issue #118).
+- Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier (Issue #122).
+- **NEU**: `mii-exa-labor-laborwert-haemolyse` — Kalium aus der hämolytischen Blutprobe, berichtet mit Wert, Interpretation H und interpretationsbeeinflussender Eigenschaft. Das Kreatinin-Beispiel trägt die Eigenschaft nicht mehr.
+- `mii-exa-labor-laborwert-data-absent-reason` ist Kreatinin im Spontanurin, nicht durchgeführt, weil das Urinsediment die Probe aufgebraucht hat.
 
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
