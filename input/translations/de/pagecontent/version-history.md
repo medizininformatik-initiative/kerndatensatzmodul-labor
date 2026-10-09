@@ -1,1 +1,1 @@
-Das Modul folgt der MII-Kalenderversionierung. Die hier publizierte Version ist `2027.0.0-ballot`, der Ballot-Kandidat für 2027.0.0; Einzelheiten stehen im [Änderungsprotokoll](changes.html).
+Das Modul folgt der MII-Kalenderversionierung. Dieser Build trägt `2027.0.0-ci`, den Entwicklungsstand zwischen dem Ballot-Kandidaten `2027.0.0-ballot` und dem Release 2027.0.0; Einzelheiten stehen im [Änderungsprotokoll](changes.html).
