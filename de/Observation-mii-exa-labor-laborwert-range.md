@@ -30,7 +30,7 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 **issued**: 2018-03-11 10:28:00+0100
 
-**performer**: [Zentrallabor des IKCL](Organization-7772.md)
+**performer**: [Zentrallabor Beispielklinikum](Organization-7772.md)
 
 **value**: 2-5 /HPF
 
@@ -105,7 +105,11 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
   "issued" : "2018-03-11T10:28:00+01:00",
   "performer" : [{
     "reference" : "Organization/7772",
-    "display" : "Zentrallabor des IKCL"
+    "identifier" : {
+      "system" : "https://example.org/fhir/sid/test-organizations",
+      "value" : "7772"
+    },
+    "display" : "Zentrallabor Beispielklinikum"
   }],
   "valueRange" : {
     "low" : {

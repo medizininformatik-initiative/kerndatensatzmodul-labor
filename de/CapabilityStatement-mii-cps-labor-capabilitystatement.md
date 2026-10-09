@@ -381,6 +381,15 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "performer",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-performer",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
           "valueCode" : "SHALL"
         }],
         "name" : "specimen",

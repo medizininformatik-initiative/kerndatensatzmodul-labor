@@ -5,6 +5,29 @@
 
 ## Änderungen
 
+### Version: 2027.0.0
+
+Änderungen gegenüber der Ballot-Fassung 2027.0.0-ballot. Sie setzen den Release-Bericht für 2027 um ([kerndatensatz-meta#233](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/233)).
+
+### FHIR/Inhaltliche Änderungen:
+
+#### MII_PR_Labor_Laborbefund
+
+* **Breaking Change:** imagingStudy: ausgeschlossen (`0..0`), wie im HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). Ein Laborbefund verweist nicht auf eine ImagingStudy. Das Element war bisher nicht Must Support; Instanzen, die es befüllen, sind nicht mehr valide (Issue #141).
+
+#### MII_PR_Labor_Laboruntersuchung
+
+* performer: **NEU** als Must Support, für das durchführende Labor (Organisation). Wie im Laborbefund sind auch `reference` und `identifier` Must Support. Kardinalität (`0..*`) und Zieltypen bleiben die der Basisressource (Issue #142).
+
+#### MII_CPS_Labor_CapabilityStatement
+
+* Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
+
+#### Beispiele
+
+* Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.
+* `fix:` `performer.display` in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).
+
 ### Version: 2027.0.0-ballot
 
 Ballot-Fassung für 2027.0.0. Sie enthält die folgenden Änderungen gegenüber der Vorversion 2026.0.3.

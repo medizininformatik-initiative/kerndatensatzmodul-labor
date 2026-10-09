@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-14 | *Computable Name*:MII_PR_Labor_Laboruntersuchung |
+| Active as of 2026-10-09 | *Computable Name*:MII_PR_Labor_Laboruntersuchung |
 
  
 Result of a laboratory test 
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T08:17:06+00:00",
+  "date" : "2026-10-09T09:59:07+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1222,6 +1222,71 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.performer",
+      "path" : "Observation.performer",
+      "short" : "Durchführendes Labor",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de-DE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Durchführendes Labor"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        },
+        {
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en-US"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Performing laboratory"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "definition" : "Organisation (Labor), die die Laboruntersuchung durchgeführt hat.",
+      "_definition" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de-DE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Organisation (Labor), die die Laboruntersuchung durchgeführt hat."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        },
+        {
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en-US"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Organization (laboratory) that performed the laboratory test."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.performer.reference",
+      "path" : "Observation.performer.reference",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.performer.identifier",
+      "path" : "Observation.performer.identifier",
       "mustSupport" : true
     },
     {

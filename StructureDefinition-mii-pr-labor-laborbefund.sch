@@ -17,6 +17,7 @@
       <sch:assert test="count(f:effective[x]) &gt;= 1">effective[x]: minimum cardinality of 'effective[x]' is 1</sch:assert>
       <sch:assert test="count(f:issued) &gt;= 1">issued: minimum cardinality of 'issued' is 1</sch:assert>
       <sch:assert test="count(f:result) &gt;= 1">result: minimum cardinality of 'result' is 1</sch:assert>
+      <sch:assert test="count(f:imagingStudy) &lt;= 0">imagingStudy: maximum cardinality of 'imagingStudy' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
