@@ -60,12 +60,12 @@ This publication includes IP covered under the following statements.
 
 * [DataAbsentReason](http://terminology.hl7.org/7.2.0/CodeSystem-data-absent-reason.html): [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)... Show 5 more, [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
-* [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)
 * [diagnosticServiceSectionId](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0074.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) and [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)
 * [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
 * [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/555](Encounter-555.md)
-* [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
+* [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)... Show 4 more, [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md) and [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)
 
 
 ### IG-Parametereinstellungen und Expansionsparameter
@@ -233,7 +233,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:28:47+00:00",
+  "date" : "2026-10-09T10:42:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1663,7 +1663,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
       },
       "name" : "Laboratory result: creatinine without a value (Data Absent Reason)",
-      "description" : "A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation.",
+      "description" : "A creatinine test carrying no value: dataAbsentReason states why. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {

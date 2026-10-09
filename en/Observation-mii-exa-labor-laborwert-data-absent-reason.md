@@ -36,15 +36,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **dataAbsentReason**: Unknown
 
-**interpretation**: Normal
-
-### ReferenceRanges
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Low** | **High** | **Type** |
-| * | 72 | 127 | Normal Range |
-
 
 
 ## Resource Content
@@ -138,28 +129,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
       "code" : "unknown"
     }]
-  },
-  "interpretation" : [{
-    "coding" : [{
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-      "code" : "N"
-    }]
-  }],
-  "referenceRange" : [{
-    "low" : {
-      "value" : 72
-    },
-    "high" : {
-      "value" : 127
-    },
-    "type" : {
-      "coding" : [{
-        "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-        "code" : "normal",
-        "display" : "Normal Range"
-      }]
-    }
-  }]
+  }
 }
 
 ```

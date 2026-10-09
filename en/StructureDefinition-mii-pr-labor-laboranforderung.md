@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:28:47+00:00",
+  "date" : "2026-10-09T10:42:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

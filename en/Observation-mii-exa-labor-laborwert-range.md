@@ -12,7 +12,9 @@
 
 -------
 
-Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)
+Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0-ci
+
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
 **identifier**: Observation Instance Identifier/5787-7_1234567890
 
@@ -43,7 +45,12 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
   "resourceType" : "Observation",
   "id" : "mii-exa-labor-laborwert-range",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ci"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
   },
   "identifier" : [{
     "type" : {

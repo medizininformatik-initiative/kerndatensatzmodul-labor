@@ -151,7 +151,6 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
               <li>
                 <a href="http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html">Observation Reference Range Meaning Codes</a>
 :                 <a href="Observation-mii-exa-labor-laborwert.html">Observation/mii-exa-labor-laborwert</a>
- and                 <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html">Observation/mii-exa-labor-laborwert-data-absent-reason</a>
               </li>
 
               <li>
@@ -180,16 +179,17 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
                 <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html">ActReason</a>
 :                 <a href="DiagnosticReport-mii-exa-labor-laborbefund.html">DiagnosticReport/mii-exa-labor-laborbefund</a>
 ,                 <a href="Observation-mii-exa-labor-laborwert.html">Observation/mii-exa-labor-laborwert</a>
-,                 <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html">Observation/mii-exa-labor-laborwert-data-absent-reason</a>
- and                 <a href="ServiceRequest-mii-exa-labor-laboranforderung.html">ServiceRequest/mii-exa-labor-laboranforderung</a>
+                <span onClick="document.getElementById('ips_11').innerHTML = document.getElementById('ips2_11').innerHTML" id="ips_11">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span>                </span>
+                <span style="display: none" id="ips2_11">
+, <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html">Observation/mii-exa-labor-laborwert-data-absent-reason</a>, <a href="Observation-mii-exa-labor-laborwert-range.html">Observation/mii-exa-labor-laborwert-range</a>, <a href="Observation-mii-exa-labor-laborwert-ratio.html">Observation/mii-exa-labor-laborwert-ratio</a> and <a href="ServiceRequest-mii-exa-labor-laboranforderung.html">ServiceRequest/mii-exa-labor-laboranforderung</a>                </span>
               </li>
 
               <li>
                 <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>
 :                 <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">MII_PR_Labor_Laboruntersuchung</a>
 ,                 <a href="ValueSet-mii-vs-labor-interpretation.html">MII_VS_Labor_Interpretation</a>
-,                 <a href="Observation-mii-exa-labor-laborwert.html">Observation/mii-exa-labor-laborwert</a>
- and                 <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html">Observation/mii-exa-labor-laborwert-data-absent-reason</a>
+ and                 <a href="Observation-mii-exa-labor-laborwert.html">Observation/mii-exa-labor-laborwert</a>
               </li>
 
 
@@ -298,7 +298,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
 * Observation Category Codes: MII_PR_Labor_Laboranforderung, MII_PR_Labor_Laboruntersuchung... Show 5 more, Observation/mii-exa-labor-laborwert, Observation/mii-exa-labor-laborwert-data-absent-reason, Observation/mii-exa-labor-laborwert-range, Observation/mii-exa-labor-laborwert-ratio and ServiceRequest/mii-exa-labor-laboranforderung
 
-* Observation Reference Range Meaning Codes: Observation/mii-exa-labor-laborwert and Observation/mii-exa-labor-laborwert-data-absent-reason
+* Observation Reference Range Meaning Codes: Observation/mii-exa-labor-laborwert
 
 * diagnosticServiceSectionId: DiagnosticReport/mii-exa-labor-laborbefund, MII_PR_Labor_Laborbefund and MII_VS_Labor_Laborbereich
 
@@ -306,9 +306,9 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
 * ActCode: Encounter/555
 
-* ActReason: DiagnosticReport/mii-exa-labor-laborbefund, Observation/mii-exa-labor-laborwert, Observation/mii-exa-labor-laborwert-data-absent-reason and ServiceRequest/mii-exa-labor-laboranforderung
+* ActReason: DiagnosticReport/mii-exa-labor-laborbefund, Observation/mii-exa-labor-laborwert... Show 4 more, Observation/mii-exa-labor-laborwert-data-absent-reason, Observation/mii-exa-labor-laborwert-range, Observation/mii-exa-labor-laborwert-ratio and ServiceRequest/mii-exa-labor-laboranforderung
 
-* ObservationInterpretation: MII_PR_Labor_Laboruntersuchung, MII_VS_Labor_Interpretation, Observation/mii-exa-labor-laborwert and Observation/mii-exa-labor-laborwert-data-absent-reason
+* ObservationInterpretation: MII_PR_Labor_Laboruntersuchung, MII_VS_Labor_Interpretation and Observation/mii-exa-labor-laborwert
 
 
 
@@ -710,7 +710,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Fri, Oct 9, 2026 10:28+0000">2026-10-09</span>
+          Erstellt           <span title="Fri, Oct 9, 2026 10:42+0000">2026-10-09</span>
 
                     <br/>
 
@@ -1945,7 +1945,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Fri, Oct 9, 2026 10:28+0000">2026-10-09</span>
+          Generated           <span title="Fri, Oct 9, 2026 10:42+0000">2026-10-09</span>
 
                     <br/>
 
