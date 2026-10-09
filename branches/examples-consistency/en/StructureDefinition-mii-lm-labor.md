@@ -188,7 +188,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-labor.csv)
   "title" : "MII LM Labor",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:13:18+00:00",
+  "date" : "2026-10-09T10:20:40+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
