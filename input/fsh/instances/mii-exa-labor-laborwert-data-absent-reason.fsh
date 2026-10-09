@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laborwert-data-absent-reason
 InstanceOf: MII_PR_Labor_Laboruntersuchung
 Title: "Laboratory result: creatinine without a value (Data Absent Reason)"
-Description: "A creatinine test carrying no value: dataAbsentReason states why, alongside a reference range and an interpretation."
+Description: "A creatinine test carrying no value: dataAbsentReason states why. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
@@ -27,7 +27,3 @@ Usage: #example
 * performer.identifier.value = "7772"
 * performer.display = "Zentrallabor Beispielklinikum"
 * dataAbsentReason = $data-absent-reason#unknown
-* interpretation = $v3-ObservationInterpretation#N
-* referenceRange.low.value = 72
-* referenceRange.high.value = 127
-* referenceRange.type = $referencerange-meaning#normal "Normal Range"
