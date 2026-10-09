@@ -200,7 +200,15 @@
       "type": "fhirpath"
     },
     {
+      "expression": "Observation.effective.ofType(Period)",
+      "type": "fhirpath"
+    },
+    {
       "expression": "DiagnosticReport.effective.ofType(dateTime)",
+      "type": "fhirpath"
+    },
+    {
+      "expression": "DiagnosticReport.effective.ofType(Period)",
       "type": "fhirpath"
     }
   ],
