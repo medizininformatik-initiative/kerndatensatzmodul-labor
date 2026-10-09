@@ -1,0 +1,137 @@
+# Laboratory result: epithelial cells in urine sediment (range) - MII IG Laborbefund v2027.0.0-ci
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Laboratory result: epithelial cells in urine sediment (range)**
+
+## Example Observation: Laboratory result: epithelial cells in urine sediment (range)
+
+-------
+
+**English**
+
+-------
+
+Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md) version: 2027.0.0-ci
+
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
+
+**identifier**: Observation Instance Identifier/5787-7_1234567890
+
+**status**: Final
+
+**category**: Laboratory
+
+**code**: Urinsediment Epithelzellen Semi-quantitative Schätzung
+
+**subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)](Patient-111.md)
+
+**encounter**: [Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)](Encounter-555.md)
+
+**effective**: 2018-11-20 12:05:00+0100
+
+**issued**: 2018-03-11 10:28:00+0100
+
+**performer**: [Zentrallabor Beispielklinikum](Organization-7772.md)
+
+**value**: 2-5 /HPF
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-labor-laborwert-range",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|2027.0.0-ci"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "OBI"
+      }]
+    },
+    "system" : "https://example.org/fhir/sid/test-lab-results",
+    "value" : "5787-7_1234567890",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "DIZ-ID"
+      }
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    },
+    {
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "code" : "26436-6",
+      "display" : "Laboratory studies (set)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "code" : "5787-7",
+      "display" : "Epithelial cells [#/area] in Urine sediment by Microscopy high power field"
+    }],
+    "text" : "Urinsediment Epithelzellen Semi-quantitative Schätzung"
+  },
+  "subject" : {
+    "reference" : "Patient/111"
+  },
+  "encounter" : {
+    "reference" : "Encounter/555"
+  },
+  "effectiveDateTime" : "2018-11-20T12:05:00+01:00",
+  "_effectiveDateTime" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+      "valueCoding" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code" : "399445004",
+        "display" : "Specimen collection date"
+      }
+    }]
+  },
+  "issued" : "2018-03-11T10:28:00+01:00",
+  "performer" : [{
+    "reference" : "Organization/7772",
+    "identifier" : {
+      "system" : "https://example.org/fhir/sid/test-organizations",
+      "value" : "7772"
+    },
+    "display" : "Zentrallabor Beispielklinikum"
+  }],
+  "valueRange" : {
+    "low" : {
+      "value" : 2,
+      "unit" : "/HPF",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "/[HPF]"
+    },
+    "high" : {
+      "value" : 5,
+      "unit" : "/HPF",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "/[HPF]"
+    }
+  }
+}
+
+```
