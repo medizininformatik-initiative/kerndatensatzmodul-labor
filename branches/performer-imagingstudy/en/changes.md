@@ -21,7 +21,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 
 #### MII_CPS_Labor_CapabilityStatement
 
-* Observation: search parameter `performer` **NEW** as SHOULD. A search for the performing laboratory goes through the report, where the DiagnosticReport search parameter `performer` is SHALL; on the individual laboratory test it is rarely needed.
+* Observation: search parameter `performer` **NEW**, optional (SHOULD). For searches by performing laboratory, the DiagnosticReport search parameter `performer` is mandatory (SHALL).
 
 #### Examples
 
