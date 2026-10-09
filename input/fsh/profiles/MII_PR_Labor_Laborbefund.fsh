@@ -137,26 +137,13 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
     Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. 
     Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. 
     Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.
+    Stammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum.
     """
 * insert Translation(effective[x] ^short, de-DE, Klinisches Bezugsdatum)
 * insert Translation(effective[x] ^short, en-US, Clinical reference Date)
-* insert Translation(effective[x] ^definition, de-DE, [[Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach.]])
-* insert Translation(effective[x] ^definition, en-US, [[The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient.]])
+* insert Translation(effective[x] ^definition, de-DE, [[Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach. Stammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum.]])
+* insert Translation(effective[x] ^definition, en-US, [[The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient. Where the tests come from several specimens, or a specimen was collected over an interval (for example 24-hour urine), it is a period.]])
 * effective[x] only dateTime or Period
-* effectiveDateTime MS
-  * ^short = "Klinisches Bezugsdatum"
-  * ^definition = "Klinischer Bezugszeitpunkt des Laborbefunds, in der Regel der Zeitpunkt der Probenentnahme."
-* effectivePeriod MS
-  * ^short = "Klinischer Bezugszeitraum"
-  * ^definition = "Klinischer Bezugszeitraum des Laborbefunds, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
-* insert Translation(effectiveDateTime ^short, de-DE, Klinisches Bezugsdatum)
-* insert Translation(effectiveDateTime ^short, en-US, Clinical reference date)
-* insert Translation(effectiveDateTime ^definition, de-DE, [[Klinischer Bezugszeitpunkt des Laborbefunds, in der Regel der Zeitpunkt der Probenentnahme.]])
-* insert Translation(effectiveDateTime ^definition, en-US, [[Clinical reference time of the laboratory report, usually the time of specimen collection.]])
-* insert Translation(effectivePeriod ^short, de-DE, Klinischer Bezugszeitraum)
-* insert Translation(effectivePeriod ^short, en-US, Clinical reference period)
-* insert Translation(effectivePeriod ^definition, de-DE, [[Klinischer Bezugszeitraum des Laborbefunds, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.]])
-* insert Translation(effectivePeriod ^definition, en-US, [[Clinical reference period of the laboratory report, where the specimen was collected over an interval, for example 24-hour urine.]])
 * effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * effective[x].extension[QuelleKlinischesBezugsdatum] ^short = "Quelle des klinischen Bezugsdatums"
 * effective[x].extension[QuelleKlinischesBezugsdatum] ^definition = "Datum der Probenentnahme | Datum des Eingangs der Probe im Labor"
