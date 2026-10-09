@@ -1,4 +1,4 @@
-# mii-exa-labor-organization - MII IG Laborbefund v2027.0.0-ballot
+# mii-exa-labor-organization - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

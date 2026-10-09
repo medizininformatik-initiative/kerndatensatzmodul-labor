@@ -1,4 +1,4 @@
-# Zeitpunkte im Labor - MII IG Laborbefund v2027.0.0-ballot
+# Zeitpunkte im Labor - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)

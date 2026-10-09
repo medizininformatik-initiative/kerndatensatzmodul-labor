@@ -1,4 +1,4 @@
-# MII LM Labor - MII IG Laborbefund v2027.0.0-ballot
+# MII LM Labor - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund | *Version*:2027.0.0-ci |
 | Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_LM_Labor |
 
  
@@ -80,7 +80,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-labor
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot"
+        "valueString" : "2027.0.0-ci"
       },
       {
         "url" : "uri",
@@ -219,12 +219,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-labor
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ci",
   "name" : "MII_LM_Labor",
   "title" : "MII LM Labor",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T09:59:07+00:00",
+  "date" : "2026-10-09T10:28:47+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

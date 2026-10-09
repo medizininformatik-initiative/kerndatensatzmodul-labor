@@ -1,4 +1,4 @@
-# Laboratory result: epithelial cells in urine sediment (range) - MII IG Laborbefund v2027.0.0-ballot
+# Laboratory result: epithelial cells in urine sediment (range) - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

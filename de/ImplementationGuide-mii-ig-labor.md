@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ballot
+# MII ImplementationGuide Resource - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -119,7 +119,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot"
+      "valueString" : "2027.0.0-ci"
     },
     {
       "url" : "uri",
@@ -228,12 +228,12 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ci",
   "name" : "MII_IG_Labor",
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T09:59:07+00:00",
+  "date" : "2026-10-09T10:28:47+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -302,7 +302,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "ci-build"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -950,7 +950,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "ci-build"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -2214,28 +2214,6 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
               {
                 "url" : "content",
                 "valueString" : "Terminologie"
-              }],
-              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-            }]
-          },
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "project-context.html"
-          }],
-          "nameUrl" : "project-context.html",
-          "title" : "Project Context",
-          "_title" : {
-            "extension" : [{
-              "extension" : [{
-                "url" : "lang",
-                "valueCode" : "de"
-              },
-              {
-                "url" : "content",
-                "valueString" : "Projektkontext"
               }],
               "url" : "http://hl7.org/fhir/StructureDefinition/translation"
             }]

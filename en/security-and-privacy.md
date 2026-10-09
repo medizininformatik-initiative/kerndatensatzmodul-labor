@@ -1,4 +1,4 @@
-# Security and Privacy - MII IG Laborbefund v2027.0.0-ballot
+# Security and Privacy - MII IG Laborbefund v2027.0.0-ci
 
 * [**Table of Contents**](toc.md)
 * **Security and Privacy**

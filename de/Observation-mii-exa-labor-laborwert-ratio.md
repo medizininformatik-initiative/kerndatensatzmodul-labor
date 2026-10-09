@@ -1,4 +1,4 @@
-# Laboratory result: albumin in 24-hour urine - MII IG Laborbefund v2027.0.0-ballot
+# Laboratory result: albumin in 24-hour urine - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

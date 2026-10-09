@@ -1,4 +1,4 @@
-# MII VS Labor Laborergebnis Codiert - MII IG Laborbefund v2027.0.0-ballot
+# MII VS Labor Laborergebnis Codiert - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert | *Version*:2027.0.0-ci |
 | Active Stand: 2026-08-18 | *Maschinenlesbarer Name*:MII_VS_Labor_Laborergebnis_Codiert |
 
  
@@ -44,7 +44,7 @@ Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot"
+        "valueString" : "2027.0.0-ci"
       },
       {
         "url" : "uri",
@@ -171,7 +171,7 @@ Kodierte Laborergebnisse, umfasst qualitative und semiquantitative Ergebnisse
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ci",
   "name" : "MII_VS_Labor_Laborergebnis_Codiert",
   "title" : "MII VS Labor Laborergebnis Codiert",
   "status" : "active",

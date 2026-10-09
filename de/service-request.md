@@ -1,4 +1,4 @@
-# Laboranforderung - MII IG Laborbefund v2027.0.0-ballot
+# Laboranforderung - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Profiles**](profiles.md)

@@ -1,4 +1,4 @@
-# Interpretationen und Kommentare - MII IG Laborbefund v2027.0.0-ballot
+# Interpretationen und Kommentare - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)

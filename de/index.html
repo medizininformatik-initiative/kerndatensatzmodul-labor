@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Startseite - MII IG Laborbefund v2027.0.0-ballot</title>
+    <title>Startseite - MII IG Laborbefund v2027.0.0-ci</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Laborbefund</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot - 
+            <span style="display:inline-block;">2027.0.0-ci - 
 
 
 
@@ -188,7 +188,6 @@
       <li><a href="interpretation.html">Interpretationen und Kommentare</a></li>
       <li><a href="specimen.html">Probenmaterial</a></li>
       <li><a href="terminology.html">Terminologie</a></li>
-      <li><a href="project-context.html">Projektkontext</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
   </li>
@@ -285,7 +284,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Laborbefund - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Laborbefund - Local Development build (v2027.0.0-ci) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-labor/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Startseite</h2>
   
 
@@ -300,7 +299,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Offizielle URL</i>: <span class="copy-text">https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor<button title="Klicken zum Kopieren der URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2027.0.0-ballot<button title="Klicken zum Kopieren der versionierten URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor|2027.0.0-ballot"/></span>
+      <span class="copy-text">2027.0.0-ci<button title="Klicken zum Kopieren der versionierten URL" class="btn-copy" data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor|2027.0.0-ci"/></span>
       </td>
     </tr>
 
@@ -347,6 +346,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#kerndatensatz-modul-laborbefund" id="markdown-toc-kerndatensatz-modul-laborbefund">Kerndatensatz-Modul Laborbefund</a></li>
   <li><a href="#hintergrund" id="markdown-toc-hintergrund">Hintergrund</a></li>
+  <li><a href="#kontext-im-gesamtprojekt--bezüge-zu-anderen-modulen" id="markdown-toc-kontext-im-gesamtprojekt--bezüge-zu-anderen-modulen">Kontext im Gesamtprojekt / Bezüge zu anderen Modulen</a></li>
+  <li><a href="#abbildung-von-mikrobiologischen-daten-im-modul-mikrobiologie" id="markdown-toc-abbildung-von-mikrobiologischen-daten-im-modul-mikrobiologie">Abbildung von mikrobiologischen Daten im Modul Mikrobiologie</a></li>
   <li><a href="#impressum" id="markdown-toc-impressum">Impressum</a></li>
   <li><a href="#ansprechpartner" id="markdown-toc-ansprechpartner">Ansprechpartner</a></li>
   <li><a href="#autoren-in-alphabetischer-reihenfolge" id="markdown-toc-autoren-in-alphabetischer-reihenfolge">Autoren (in alphabetischer Reihenfolge)</a></li>
@@ -420,7 +421,7 @@ Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profi
     </tr>
     <tr>
       <td>Version</td>
-      <td>2027.0.0-ballot</td>
+      <td>2027.0.0-ci</td>
     </tr>
     <tr>
       <td>Status</td>
@@ -432,6 +433,35 @@ Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profi
     </tr>
   </tbody>
 </table>
+
+<h3 id="kontext-im-gesamtprojekt--bezüge-zu-anderen-modulen">Kontext im Gesamtprojekt / Bezüge zu anderen Modulen</h3>
+
+<p>Das Modul Laborbefund bildet Laborbefunde ab, die typischerweise in einem Zentrallabor eines Klinikums erhoben werden. Diese Befunde spielen in den meisten Use Cases der MII eine zentrale Rolle:</p>
+<ul>
+  <li>
+    <p>Laborbefunde aus Routineuntersuchungen sind essentiell für Diagnosefindung und Therapieüberwachung bei den meisten Erkrankungen</p>
+  </li>
+  <li>
+    <p>Laboruntersuchungen sind ein wichtiger Bestandteil vieler klinischer Studien</p>
+  </li>
+</ul>
+
+<p>Für Laborbefunde, die sich in erster Linie mit dem Nachweis infektiologischer Erreger (Mikrobiologie, Virologie) befassen, gibt es ein gesondertes, aber eng verwandtes Modul, in dem mit SNOMED CT die einzelnen Erreger abgebildet werden können — siehe den folgenden Abschnitt. Außerdem gibt es für Befunde aus der Pathologie ein eigenes Modul.</p>
+
+<p>Ein Laborbefund ist dabei immer der PERSON zugeordnet, von welcher die Probe entnommen wurde. Wenn diese Probe in einer Biobank für weitere Untersuchungen verwahrt wird, kann diese Probe mit den Profilen im Modul BIOBANK abgebildet werden. Die Ergebnisse aus einem Laborbefund können als einzelne Elemente in verschiedenen anderen Modulen, z.B. zur Tumordokumentation wieder eingebunden sein.</p>
+
+<h3 id="abbildung-von-mikrobiologischen-daten-im-modul-mikrobiologie">Abbildung von mikrobiologischen Daten im Modul Mikrobiologie</h3>
+
+<p>Einige mikrobiologische Untersuchungsmethoden lassen sich auch FHIR-konform im Modul Laborbefund abbilden. Es wird aber empfohlen, folgende mikrobiologischen Befunde mithilfe des <a href="https://www.medizininformatik-initiative.de/de/module-des-kerndatensatzes-der-mii#modul-mikrobiologie-">Moduls Mikrobiologie</a> abzubilden, um den spezifischen Anforderungen der mikrobiologischen Diagnostik gerecht zu werden:</p>
+
+<ul>
+  <li>Kultur (Allgemeine Kultur, Spezifische Kultur, Mikroskopie, Barlett Score, Nugent Score, Keimzahl, Empfindlichkeit / Resistenztestung)</li>
+  <li>Bestimmung / Erregernachweise (Allgemeine Bestimmung, Spezifische Bestimmung, Ct-Wert)</li>
+  <li>Quantitative Tests (Antigen-Antikörper-Tests, Titer, Molekulare Pathogenlast)</li>
+  <li>Weitere Eigenschaften (Virulenz, Resistenzmechanismus, MRGN-Klasse, voraussichtliche Empfindlichkeit, Resistenzkategorie-Status, Avidität)</li>
+</ul>
+
+<p>Das Modul Mikrobiologie bindet die Untersuchungsarten an LOINC — überwiegend über ValueSets mit extensible-Bindung, bei einigen Profilen über einen fest vorgegebenen Code. Über diese Bindungen lassen sich korrespondierende Befunde identifizieren; welche Codes ein Profil erwartet, ist dort jeweils unter <code class="language-plaintext highlighter-rouge">Observation.code</code> einsehbar.</p>
 
 <h3 id="impressum">Impressum</h3>
 <p>Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative erstellt worden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..</p>
@@ -515,8 +545,8 @@ für die vernetzte medizinische Forschung e.V.</li>
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Oct 9, 2026 09:59+0000">2026-10-09</span>
+          Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Fri, Oct 9, 2026 10:28+0000">2026-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

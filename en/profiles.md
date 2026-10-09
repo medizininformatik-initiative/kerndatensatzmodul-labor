@@ -1,4 +1,4 @@
-# Profiles - MII IG Laborbefund v2027.0.0-ballot
+# Profiles - MII IG Laborbefund v2027.0.0-ci
 
 * [**Table of Contents**](toc.md)
 * **Profiles**

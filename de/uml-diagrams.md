@@ -1,4 +1,4 @@
-# UML-Diagramm - MII IG Laborbefund v2027.0.0-ballot
+# UML-Diagramm - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)
