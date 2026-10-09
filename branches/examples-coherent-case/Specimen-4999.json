@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "4999",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Specimen 4999</b></p><a name=\"4999\"> </a><a name=\"hc4999\"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-specimens</code>/4999</p><p><b>type</b>: <span title=\"Codes:\">Venöses Vollblut</span></p><p><b>subject</b>: <a href=\"Patient-111.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>receivedTime</b>: 2018-11-20 08:40:00+0100</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2018-11-20 08:00:00+0100</td></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Specimen 4999</b></p><a name=\"de-4999\"> </a><a name=\"de-hc4999\"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-specimens</code>/4999</p><p><b>type</b>: <span title=\"Codes:\">Venöses Vollblut</span></p><p><b>subject</b>: <a href=\"Patient-111.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>receivedTime</b>: 2018-11-20 08:40:00+0100</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2018-11-20 08:00:00+0100</td></tr></table></div></div>"
+  },
+  "identifier" : [{
+    "system" : "https://example.org/fhir/sid/test-specimens",
+    "value" : "4999"
+  }],
+  "type" : {
+    "text" : "Venöses Vollblut"
+  },
+  "subject" : {
+    "reference" : "Patient/111"
+  },
+  "receivedTime" : "2018-11-20T08:40:00+01:00",
+  "collection" : {
+    "collectedDateTime" : "2018-11-20T08:00:00+01:00"
+  }
+}

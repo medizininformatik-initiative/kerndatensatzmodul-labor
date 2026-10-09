@@ -1,0 +1,6 @@
+- [Laboratory report: renal diagnostics](DiagnosticReport-mii-exa-labor-laborbefund.html)
+- [Laboratory order: renal diagnostics](ServiceRequest-mii-exa-labor-laboranforderung.html)
+- [Laboratory result: creatinine](Observation-mii-exa-labor-laborwert.html)
+- [Laboratory result: potassium without a value (Data Absent Reason)](Observation-mii-exa-labor-laborwert-data-absent-reason.html)
+- [Laboratory result: epithelial cells in urine sediment (range)](Observation-mii-exa-labor-laborwert-range.html)
+- [Laboratory result: albumin in 24-hour urine](Observation-mii-exa-labor-laborwert-ratio.html)

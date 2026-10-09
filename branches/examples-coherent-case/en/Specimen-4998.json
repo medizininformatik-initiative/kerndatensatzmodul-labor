@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "4998",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Specimen 4998</b></p><a name=\"4998\"> </a><a name=\"hc4998\"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-specimens</code>/4998</p><p><b>type</b>: <span title=\"Codes:\">24-Stunden-Sammelurin</span></p><p><b>subject</b>: <a href=\"Patient-111.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>receivedTime</b>: 2018-11-20 08:40:00+0100</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2018-11-19 08:00:00+0100 --&gt; 2018-11-20 08:00:00+0100</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://example.org/fhir/sid/test-specimens",
+    "value" : "4998"
+  }],
+  "type" : {
+    "text" : "24-Stunden-Sammelurin"
+  },
+  "subject" : {
+    "reference" : "Patient/111"
+  },
+  "receivedTime" : "2018-11-20T08:40:00+01:00",
+  "collection" : {
+    "collectedPeriod" : {
+      "start" : "2018-11-19T08:00:00+01:00",
+      "end" : "2018-11-20T08:00:00+01:00"
+    }
+  }
+}
