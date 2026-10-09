@@ -15,6 +15,8 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 ##### Examples
 - The laboratory test examples carry a `performer.identifier` in addition to `performer.reference`.
 - `fix:` `performer.display` in the laboratory test examples matches the name of the referenced example organization ("Zentrallabor Beispielklinikum" instead of "Zentrallabor des IKCL").
+- `fix:` `mii-exa-labor-laborwert-data-absent-reason` no longer carries an interpretation and a reference range; without a value there is nothing to interpret (issue #117).
+- `fix:` All laboratory examples carry the versioned `meta.profile` and the test data label; `…-ratio` and `…-range` lacked both (issue #118).
 
 #### Implementation Guide:
 - The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.

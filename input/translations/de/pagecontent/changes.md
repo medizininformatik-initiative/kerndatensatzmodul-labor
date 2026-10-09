@@ -15,6 +15,8 @@
 ##### Beispiele
 - Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.
 - `fix:` `performer.display` in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).
+- `fix:` `mii-exa-labor-laborwert-data-absent-reason` trägt keine Interpretation und keinen Referenzbereich mehr; ohne Wert gibt es nichts zu interpretieren (Issue #117).
+- `fix:` Alle Laborbeispiele tragen das versionierte `meta.profile` und das Testdaten-Label; `…-ratio` und `…-range` fehlte beides (Issue #118).
 
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.

@@ -108,34 +108,5 @@
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason"
       }
     ]
-  },
-  "interpretation": [
-    {
-      "coding": [
-        {
-          "code": "N",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-        }
-      ]
-    }
-  ],
-  "referenceRange": [
-    {
-      "low": {
-        "value": 72
-      },
-      "high": {
-        "value": 127
-      },
-      "type": {
-        "coding": [
-          {
-            "code": "normal",
-            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-            "display": "Normal Range"
-          }
-        ]
-      }
-    }
-  ]
+  }
 }
