@@ -11,6 +11,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 
 ##### MII_CPS_Labor_CapabilityStatement
 - Observation: search parameter `performer` **NEW**, optional (SHOULD). For searches by performing laboratory, the DiagnosticReport search parameter `performer` is mandatory (SHALL).
+- Observation: search parameters `value-ratio` (composite), `value-ratio-numerator` and `value-ratio-denominator` **NEW**, optional (SHOULD). They are defined in the Meta module; `value-quantity` does not cover `valueRatio` (issue #123).
 
 ##### Examples
 - The laboratory test examples carry a `performer.identifier` in addition to `performer.reference`.
@@ -20,6 +21,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 
 #### Implementation Guide:
 - The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.
+- Laboratory Test page: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
 
 ### Version: 2027.0.0-ballot
 
