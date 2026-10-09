@@ -48,18 +48,25 @@
   "code": {
     "coding": [
       {
-        "code": "GroßesBlutbild",
+        "code": "Nierendiagnostik",
         "system": "http://example.org/fhir/CodeSystem/LabTests"
       }
-    ]
+    ],
+    "text": "Nierendiagnostik"
   },
   "subject": {
     "reference": "Patient/111"
   },
-  "authoredOn": "2018-11-20T10:28:00+01:00",
+  "authoredOn": "2018-11-19T07:30:00+01:00",
   "specimen": [
     {
       "reference": "Specimen/4999"
+    },
+    {
+      "reference": "Specimen/4998"
+    },
+    {
+      "reference": "Specimen/4997"
     }
   ]
 }

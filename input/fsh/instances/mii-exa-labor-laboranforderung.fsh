@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laboranforderung
 InstanceOf: MII_PR_Labor_Laboranforderung
-Title: "Laboratory order: full blood count"
-Description: "A laboratory order for a full blood count, the request the reported tests were performed for."
+Title: "Laboratory order: renal diagnostics"
+Description: "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine and the urine sediment. The laboratory report and the four laboratory test examples of this guide belong to it."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab)
@@ -13,7 +13,10 @@ Usage: #example
 * status = #completed
 * intent = #order
 * category = $observation-category#laboratory
-* code = http://example.org/fhir/CodeSystem/LabTests#GroßesBlutbild
+* code = http://example.org/fhir/CodeSystem/LabTests#Nierendiagnostik
+* code.text = "Nierendiagnostik"
 * subject.reference = "Patient/111"
-* authoredOn = "2018-11-20T10:28:00+01:00"
-* specimen.reference = "Specimen/4999"
+* authoredOn = "2018-11-19T07:30:00+01:00"
+* specimen[0].reference = "Specimen/4999"
+* specimen[1].reference = "Specimen/4998"
+* specimen[2].reference = "Specimen/4997"

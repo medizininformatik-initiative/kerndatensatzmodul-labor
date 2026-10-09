@@ -69,11 +69,41 @@
   "subject": {
     "reference": "Patient/111"
   },
-  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
-  "issued": "2018-03-11T10:28:00+01:00",
+  "effectiveDateTime": "2018-11-20T08:00:00+01:00",
+  "issued": "2018-11-20T14:30:00+01:00",
+  "performer": [
+    {
+      "reference": "Organization/7772",
+      "identifier": {
+        "system": "https://example.org/fhir/sid/test-organizations",
+        "value": "7772"
+      },
+      "display": "Zentrallabor Beispielklinikum"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/4999"
+    },
+    {
+      "reference": "Specimen/4998"
+    },
+    {
+      "reference": "Specimen/4997"
+    }
+  ],
   "result": [
     {
       "reference": "Observation/mii-exa-labor-laborwert"
+    },
+    {
+      "reference": "Observation/mii-exa-labor-laborwert-data-absent-reason"
+    },
+    {
+      "reference": "Observation/mii-exa-labor-laborwert-ratio"
+    },
+    {
+      "reference": "Observation/mii-exa-labor-laborwert-range"
     }
   ]
 }

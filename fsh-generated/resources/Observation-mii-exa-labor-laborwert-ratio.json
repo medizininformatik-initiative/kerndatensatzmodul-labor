@@ -56,6 +56,11 @@
     "code": "mg/(24.h)",
     "unit": "mg/24h"
   },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-labor-laboranforderung"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
@@ -74,7 +79,7 @@
   "encounter": {
     "reference": "Encounter/555"
   },
-  "effectiveDateTime": "2018-11-20T12:05:00+01:00",
+  "effectiveDateTime": "2018-11-20T08:00:00+01:00",
   "_effectiveDateTime": {
     "extension": [
       {
@@ -88,7 +93,7 @@
       }
     ]
   },
-  "issued": "2018-03-11T10:28:00+01:00",
+  "issued": "2018-11-20T14:30:00+01:00",
   "performer": [
     {
       "reference": "Organization/7772",
@@ -98,5 +103,8 @@
       },
       "display": "Zentrallabor Beispielklinikum"
     }
-  ]
+  ],
+  "specimen": {
+    "reference": "Specimen/4998"
+  }
 }

@@ -11,6 +11,7 @@ Usage: #example
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
+* basedOn.reference = "ServiceRequest/mii-exa-labor-laboranforderung"
 * status = #final
 * category[observation-category].coding[0] = $observation-category#laboratory "Laboratory"
 * category[observation-category].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
@@ -20,14 +21,15 @@ Usage: #example
 * code.text = "Kreatinin"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
-* effectiveDateTime = "2018-11-20T12:05:00+01:00"
+* effectiveDateTime = "2018-11-20T08:00:00+01:00"
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
-* issued = "2018-03-11T10:28:00+01:00"
+* issued = "2018-11-20T14:30:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
 * performer.identifier.value = "7772"
 * performer.display = "Zentrallabor Beispielklinikum"
+* specimen.reference = "Specimen/4999"
 * valueQuantity = 72 'umol/L' "µmol/l"
 * valueQuantity.value.extension[quantityPrecision].valueInteger = 1
 * valueQuantity.extension[pqTranslation].valueQuantity = 0.81 'mg/dL' "mg/dL"
@@ -39,7 +41,7 @@ Usage: #example
 Instance: mii-exa-labor-laborwert-ratio
 InstanceOf: MII_PR_Labor_Laboruntersuchung
 Title: "Laboratory result: albumin in 24-hour urine"
-Description: "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter."
+Description: "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the end of the collection period."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
@@ -48,6 +50,7 @@ Usage: #example
 * identifier[analyseBefundCode].value = "1755-8_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
+* basedOn.reference = "ServiceRequest/mii-exa-labor-laboranforderung"
 * status = #final
 * category[observation-category].coding[0] = $observation-category#laboratory "Laboratory"
 * category[observation-category].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
@@ -55,14 +58,15 @@ Usage: #example
 * code.text = "Albumin (24H U) [Mass/Time]"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
-* effectiveDateTime = "2018-11-20T12:05:00+01:00"
+* effectiveDateTime = "2018-11-20T08:00:00+01:00"
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
-* issued = "2018-03-11T10:28:00+01:00"
+* issued = "2018-11-20T14:30:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
 * performer.identifier.value = "7772"
 * performer.display = "Zentrallabor Beispielklinikum"
+* specimen.reference = "Specimen/4998"
 * valueQuantity = 15 'mg/(24.h)' "mg/24h"
 
 Instance: mii-exa-labor-laborwert-range
@@ -77,6 +81,7 @@ Usage: #example
 * identifier[analyseBefundCode].value = "5787-7_1234567890"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
+* basedOn.reference = "ServiceRequest/mii-exa-labor-laboranforderung"
 * status = #final
 * category[observation-category].coding[0] = $observation-category#laboratory "Laboratory"
 * category[observation-category].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
@@ -84,13 +89,14 @@ Usage: #example
 * code.text = "Urinsediment Epithelzellen Semi-quantitative Schätzung"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
-* effectiveDateTime = "2018-11-20T12:05:00+01:00"
+* effectiveDateTime = "2018-11-20T08:15:00+01:00"
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
-* issued = "2018-03-11T10:28:00+01:00"
+* issued = "2018-11-20T14:30:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
 * performer.identifier.value = "7772"
 * performer.display = "Zentrallabor Beispielklinikum"
+* specimen.reference = "Specimen/4997"
 * valueRange.low = 2 '/[HPF]' "/HPF"
 * valueRange.high = 5 '/[HPF]' "/HPF"
