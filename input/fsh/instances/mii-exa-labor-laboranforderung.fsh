@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laboranforderung
 InstanceOf: MII_PR_Labor_Laboranforderung
 Title: "Laboratory order: renal diagnostics"
-Description: "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine and the urine sediment. The laboratory report and the four laboratory test examples of this guide belong to it."
+Description: "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab)

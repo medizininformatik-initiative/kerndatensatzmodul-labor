@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-labor-laborwert-data-absent-reason",
+  "id": "mii-exa-labor-laborwert-haemolyse",
   "meta": {
     "security": [
       {
@@ -28,6 +28,14 @@
           "display": "Laboratory studies (set)"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "code": "Niere/Elektrolyte",
+          "system": "http://example.org/fhir/sid/Laborgruppe"
+        }
+      ]
     }
   ],
   "identifier": [
@@ -41,7 +49,7 @@
         ]
       },
       "system": "https://example.org/fhir/sid/test-lab-results",
-      "value": "14683-7_1234567890",
+      "value": "6298-4_1234567890",
       "assigner": {
         "identifier": {
           "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
@@ -50,6 +58,23 @@
       }
     }
   ],
+  "modifierExtension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
+      "valueCoding": {
+        "code": "118128002",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "display": "Specimen hemolyzed"
+      }
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 6.2,
+    "code": "mmol/L",
+    "unit": "mmol/l"
+  },
   "basedOn": [
     {
       "reference": "ServiceRequest/mii-exa-labor-laboranforderung"
@@ -59,13 +84,13 @@
   "code": {
     "coding": [
       {
-        "code": "14683-7",
+        "code": "6298-4",
         "system": "http://loinc.org",
         "version": "2.82",
-        "display": "Creatinine [Moles/volume] in Urine"
+        "display": "Potassium [Moles/volume] in Blood"
       }
     ],
-    "text": "Kreatinin im Urin"
+    "text": "Kalium"
   },
   "subject": {
     "reference": "Patient/111"
@@ -73,7 +98,7 @@
   "encounter": {
     "reference": "Encounter/555"
   },
-  "effectiveDateTime": "2018-11-20T08:15:00+01:00",
+  "effectiveDateTime": "2018-11-20T08:00:00+01:00",
   "_effectiveDateTime": {
     "extension": [
       {
@@ -99,19 +124,46 @@
     }
   ],
   "specimen": {
-    "reference": "Specimen/4997"
+    "reference": "Specimen/4999"
   },
-  "dataAbsentReason": {
-    "coding": [
-      {
-        "code": "not-performed",
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "H",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+        }
+      ]
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 3.5,
+        "code": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mmol/l"
+      },
+      "high": {
+        "value": 5.1,
+        "code": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mmol/l"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "normal",
+            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "display": "Normal Range"
+          }
+        ]
       }
-    ]
-  },
+    }
+  ],
   "note": [
     {
-      "text": "Probenmenge nach dem Urinsediment nicht ausreichend."
+      "text": "Probe hämolytisch, Kaliumwert möglicherweise falsch hoch."
     }
   ]
 }

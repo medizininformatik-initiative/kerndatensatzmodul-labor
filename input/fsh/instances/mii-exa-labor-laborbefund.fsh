@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laborbefund
 InstanceOf: MII_PR_Labor_Laborbefund
 Title: "Laboratory report: renal diagnostics"
-Description: "The laboratory report for the renal diagnostics order. It groups the four laboratory test examples of this guide, performed on three specimens of the same patient."
+Description: "The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab)
@@ -26,6 +26,7 @@ Usage: #example
 * specimen[1].reference = "Specimen/4998"
 * specimen[2].reference = "Specimen/4997"
 * result[0].reference = "Observation/mii-exa-labor-laborwert"
-* result[1].reference = "Observation/mii-exa-labor-laborwert-data-absent-reason"
-* result[2].reference = "Observation/mii-exa-labor-laborwert-ratio"
-* result[3].reference = "Observation/mii-exa-labor-laborwert-range"
+* result[1].reference = "Observation/mii-exa-labor-laborwert-haemolyse"
+* result[2].reference = "Observation/mii-exa-labor-laborwert-data-absent-reason"
+* result[3].reference = "Observation/mii-exa-labor-laborwert-ratio"
+* result[4].reference = "Observation/mii-exa-labor-laborwert-range"

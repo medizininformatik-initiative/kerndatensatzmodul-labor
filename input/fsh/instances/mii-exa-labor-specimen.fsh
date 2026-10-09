@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-specimen
 InstanceOf: Specimen
 Usage: #example
-Description: "Venous blood specimen of the renal diagnostics order. It arrived haemolysed."
+Description: "Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result."
 * id = "4999"
 * identifier.system = "https://example.org/fhir/sid/test-specimens"
 * identifier.value = "4999"
@@ -26,7 +26,7 @@ Description: "24-hour urine collection of the renal diagnostics order."
 Instance: mii-exa-labor-specimen-spontanurin
 InstanceOf: Specimen
 Usage: #example
-Description: "Spot urine specimen of the renal diagnostics order, for the urine sediment."
+Description: "Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine."
 * id = "4997"
 * identifier.system = "https://example.org/fhir/sid/test-specimens"
 * identifier.value = "4997"

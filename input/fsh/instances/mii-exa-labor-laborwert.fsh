@@ -5,7 +5,6 @@ Description: "A quantitative creatinine test: valueQuantity with a reference ran
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
-* modifierExtension[MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft].valueCoding = $sct#118128002 "Specimen hemolyzed"
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
