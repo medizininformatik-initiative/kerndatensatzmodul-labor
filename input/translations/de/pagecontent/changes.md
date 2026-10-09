@@ -10,7 +10,7 @@
 - performer: **NEU** als Must Support, für das durchführende Labor (Organisation). Wie im Laborbefund sind auch `reference` und `identifier` Must Support. Kardinalität (`0..*`) und Zieltypen bleiben die der Basisressource (Issue #142).
 
 #### MII_CPS_Labor_CapabilityStatement
-- Observation: Suchparameter `performer` **NEU** als SHOULD. Nach dem durchführenden Labor wird über den Befund gesucht, dort ist der DiagnosticReport-Suchparameter `performer` SHALL; auf der einzelnen Laboruntersuchung wird er selten gebraucht.
+- Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
 
 #### Beispiele
 - Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.

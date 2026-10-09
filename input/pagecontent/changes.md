@@ -10,7 +10,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 - performer: **NEW** as Must Support, for the performing laboratory (organization). As on the laboratory report, `reference` and `identifier` are Must Support as well. Cardinality (`0..*`) and target types remain those of the base resource (issue #142).
 
 #### MII_CPS_Labor_CapabilityStatement
-- Observation: search parameter `performer` **NEW** as SHOULD. A search for the performing laboratory goes through the report, where the DiagnosticReport search parameter `performer` is SHALL; on the individual laboratory test it is rarely needed.
+- Observation: search parameter `performer` **NEW**, optional (SHOULD). For searches by performing laboratory, the DiagnosticReport search parameter `performer` is mandatory (SHALL).
 
 #### Examples
 - The laboratory test examples carry a `performer.identifier` in addition to `performer.reference`.
