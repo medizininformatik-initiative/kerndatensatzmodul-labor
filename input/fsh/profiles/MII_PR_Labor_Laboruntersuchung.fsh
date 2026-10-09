@@ -167,6 +167,15 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(issued ^short, en-US, Issued)
 * insert Translation(issued ^definition, de-DE, [[Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde.]])
 * insert Translation(issued ^definition, en-US, [[The point in time when the laboratory result was documented.]])
+* performer MS
+  * ^short = "Durchführendes Labor"
+  * ^definition = "Organisation (Labor), die die Laboruntersuchung durchgeführt hat."
+  * reference MS
+  * identifier MS
+* insert Translation(performer ^short, de-DE, Durchführendes Labor)
+* insert Translation(performer ^short, en-US, Performing laboratory)
+* insert Translation(performer ^definition, de-DE, [[Organisation (Labor), die die Laboruntersuchung durchgeführt hat.]])
+* insert Translation(performer ^definition, en-US, [[Organization (laboratory) that performed the laboratory test.]])
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 * value[x] MS
   * ^short = "Messwert"

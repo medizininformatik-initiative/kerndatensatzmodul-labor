@@ -130,7 +130,11 @@
   "performer": [
     {
       "reference": "Organization/7772",
-      "display": "Zentrallabor des IKCL"
+      "identifier": {
+        "system": "https://example.org/fhir/sid/test-organizations",
+        "value": "7772"
+      },
+      "display": "Zentrallabor Beispielklinikum"
     }
   ],
   "interpretation": [

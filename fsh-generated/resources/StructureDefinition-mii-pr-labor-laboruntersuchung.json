@@ -1372,6 +1372,83 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Durchführendes Labor",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführendes Labor"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Performing laboratory"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Organisation (Labor), die die Laboruntersuchung durchgeführt hat.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Organisation (Labor), die die Laboruntersuchung durchgeführt hat."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Organization (laboratory) that performed the laboratory test."
+                }
+              ]
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer.reference",
+        "path": "Observation.performer.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer.identifier",
+        "path": "Observation.performer.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "slicing": {

@@ -183,6 +183,8 @@ Description: "Dieses Profil beschreibt einen Laborbefund in der Medizininformati
 * insert Translation(result ^short, en-US, Result)
 * insert Translation(result ^definition, de-DE, [[Laborergebnisse, die Teil dieses Laborbefunds sind.]])
 * insert Translation(result ^definition, en-US, [[Laboratory test results that are part of this diagnostic report.]])
+// Ausgeschlossen wie im HL7 Europe Laboratory Report (DiagnosticReport-eu-lab).
+* imagingStudy 0..0
 * conclusion MS
   * ^short = "Schlussfolgerung"
   * ^definition = "Klinische Schlussfolgerung/Interpretation der Testergebnisse"
