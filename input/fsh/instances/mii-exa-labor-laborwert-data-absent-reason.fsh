@@ -23,7 +23,9 @@ Usage: #example
 * effectiveDateTime.extension.valueCoding = $sct#399445004 "Specimen collection date"
 * issued = "2018-03-11T10:28:00+01:00"
 * performer.reference = "Organization/7772"
-* performer.display = "Zentrallabor des IKCL"
+* performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
+* performer.identifier.value = "7772"
+* performer.display = "Zentrallabor Beispielklinikum"
 * dataAbsentReason = $data-absent-reason#unknown
 * interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low.value = 72

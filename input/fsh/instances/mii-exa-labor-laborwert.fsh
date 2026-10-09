@@ -25,7 +25,9 @@ Usage: #example
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
 * issued = "2018-03-11T10:28:00+01:00"
 * performer.reference = "Organization/7772"
-* performer.display = "Zentrallabor des IKCL"
+* performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
+* performer.identifier.value = "7772"
+* performer.display = "Zentrallabor Beispielklinikum"
 * valueQuantity = 72 'umol/L' "µmol/l"
 * valueQuantity.value.extension[quantityPrecision].valueInteger = 1
 * valueQuantity.extension[pqTranslation].valueQuantity = 0.81 'mg/dL' "mg/dL"
@@ -56,7 +58,9 @@ Usage: #example
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
 * issued = "2018-03-11T10:28:00+01:00"
 * performer.reference = "Organization/7772"
-* performer.display = "Zentrallabor des IKCL"
+* performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
+* performer.identifier.value = "7772"
+* performer.display = "Zentrallabor Beispielklinikum"
 * valueQuantity = 15 'mg/(24.h)' "mg/24h"
 
 Instance: mii-exa-labor-laborwert-range
@@ -81,6 +85,8 @@ Usage: #example
 * effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
 * issued = "2018-03-11T10:28:00+01:00"
 * performer.reference = "Organization/7772"
-* performer.display = "Zentrallabor des IKCL"
+* performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
+* performer.identifier.value = "7772"
+* performer.display = "Zentrallabor Beispielklinikum"
 * valueRange.low = 2 '/[HPF]' "/HPF"
 * valueRange.high = 5 '/[HPF]' "/HPF"
