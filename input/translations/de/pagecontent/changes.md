@@ -16,6 +16,9 @@
 - Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.
 - `fix:` `performer.display` in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).
 
+#### Implementation Guide:
+- Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
+
 ### Version: 2027.0.0-ballot
 
 Ballot-Fassung für 2027.0.0. Sie enthält die folgenden Änderungen gegenüber der Vorversion 2026.0.3.

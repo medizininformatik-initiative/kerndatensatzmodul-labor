@@ -16,6 +16,9 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 - The laboratory test examples carry a `performer.identifier` in addition to `performer.reference`.
 - `fix:` `performer.display` in the laboratory test examples matches the name of the referenced example organization ("Zentrallabor Beispielklinikum" instead of "Zentrallabor des IKCL").
 
+#### Implementation Guide:
+- The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.
+
 ### Version: 2027.0.0-ballot
 
 Ballot version for 2027.0.0. It contains the following changes compared to the previous version 2026.0.3.
