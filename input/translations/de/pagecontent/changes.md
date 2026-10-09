@@ -63,7 +63,7 @@ Ballot-Fassung für 2027.0.0. Sie enthält die folgenden Änderungen gegenüber 
 - Neue Seite [Interpretationen und Kommentare](interpretation.html), die das Thema in drei Teilen behandelt: die kodierte Interpretation und welche Codes in Frage kommen, die Kommentare in `Observation.note` und die interpretationsbeeinflussenden Eigenschaften. Sie erläutert, wie sich der enge FHIR-Begriff „Interpretation" zur weiteren Verwendung in Rili-BÄK und ISO 15189 verhält (beide verlinkt), was die kodierte Interpretation für die Sekundärnutzung leistet und wo ihre Datenqualität begrenzt ist.
 - Die Modulbeschreibung ist nach Themen aufgeteilt: [Zeitpunkte im Labor](laboratory-timestamps.html), [Interpretationen und Kommentare](interpretation.html) und [Probenmaterial](specimen.html) sind eigene Seiten.
 - Die Vorgaben werden im gesamten Guide einheitlich als „Rili-BÄK 2023" und „ISO 15189:2024" zitiert.
-- Der [Projektkontext](project-context.html) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist publiziert — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
+- Der [Projektkontext](index.html) bezeichnet das Modul Mikrobiologie nicht mehr als geplant — es ist publiziert — und benennt jetzt die Befunde, die dorthin gehören statt in dieses Modul, samt der Art, wie jenes Modul seine Untersuchungsarten an LOINC bindet.
 
 ### Version: 2026.0.3
 Die Version 2026.0.3 enthält im Vergleich zur Vorversion 2026.0.2 folgende Änderungen (für einen vollständigen Überblick über die Änderungen kann der [Differential-View auf Github](https://github.com/medizininformatik-initiative/kerndatensatzmodul-labor/compare/2026.0.2...2026.0.3) verwendet werden).
