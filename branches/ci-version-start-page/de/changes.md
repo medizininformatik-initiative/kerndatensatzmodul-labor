@@ -21,7 +21,7 @@
 
 ##### MII_CPS_Labor_CapabilityStatement
 
-* Observation: Suchparameter `performer` **NEU** als SHOULD. Nach dem durchführenden Labor wird über den Befund gesucht, dort ist der DiagnosticReport-Suchparameter `performer` SHALL; auf der einzelnen Laboruntersuchung wird er selten gebraucht.
+* Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
 
 ##### Beispiele
 
