@@ -11,6 +11,7 @@
 
 ##### MII_CPS_Labor_CapabilityStatement
 - Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
+- Observation: Suchparameter `value-ratio` (composite), `value-ratio-numerator` und `value-ratio-denominator` **NEU**, optional (SHOULD). Sie sind im Modul Meta definiert; `value-quantity` erfasst `valueRatio` nicht (Issue #123).
 
 ##### Beispiele
 - Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.
@@ -20,6 +21,7 @@
 
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
+- Seite Laboruntersuchung: wann `valueRatio` der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als `valueQuantity` mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).
 
 ### Version: 2027.0.0-ballot
 
