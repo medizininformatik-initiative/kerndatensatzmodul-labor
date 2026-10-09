@@ -1,10 +1,10 @@
 MII_IG_Labor : Validation Results
 =========================================
 
-err = 37, warn = 39, info = 76
+err = 37, warn = 35, info = 76
 IG Publisher Version: 2.3.2 Out of date - current version is 3.0.0
-Generated Fri Oct 09 11:51:21 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
- Build Errors : 0 / 8 / 0
+Generated Fri Oct 09 12:04:30 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
+ Build Errors : 0 / 4 / 0
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement : 0 / 2 / 73
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund : 0 / 0 / 3
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/Encounter-555 : 0 / 0 / 1
@@ -21,8 +21,8 @@ Generated Fri Oct 09 11:51:21 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum : 0 / 2 / 41
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-lm-labor : 0 / 142 / 80
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laboranforderung : 0 / 2 / 160
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laborbefund : 0 / 2 / 177
- /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung : 0 / 6 / 277
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laborbefund : 0 / 2 / 162
+ /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung : 0 / 6 / 264
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ValueSet-mii-vs-labor-identifier-type-codes : 0 / 3 / 47
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ValueSet-mii-vs-labor-interpretation : 0 / 3 / 57
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct : 3 / 3 / 47
@@ -36,11 +36,7 @@ Generated Fri Oct 09 11:51:21 UTC 2026. FHIR version 4.0.1 for de.medizininforma
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be de.medizininformatikinitiative.kerndatensatz.laborbefund
-WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/de/StructureDefinition-mii-pr-labor-laborbefund-definitions.html: The html source has duplicate anchor Ids: DiagnosticReport.effective[x].extension,DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum,DiagnosticReport.effective[x].id,key_DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum
-WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/de/StructureDefinition-mii-pr-labor-laboruntersuchung-definitions.html: The html source has duplicate anchor Ids: Observation.effective[x].extension,Observation.effective[x].extension:QuelleKlinischesBezugsdatum,Observation.effective[x].id,key_Observation.effective[x].extension:QuelleKlinischesBezugsdatum
 WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/de/extensions.html: The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.url,Extension.value_x_,Extension.value_x_.code,Extension.value_x_.system,end-xhtml,s-Extension,s-Extension.extension,s-Extension.id,s-Extension.url,s-Extension.value_x_,s-Extension.value_x_.code,s-Extension.value_x_.display,s-Extension.value_x_.extension,s-Extension.value_x_.id,s-Extension.value_x_.system,s-Extension.value_x_.userSelected,s-Extension.value_x_.version
-WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/en/StructureDefinition-mii-pr-labor-laborbefund-definitions.html: The html source has duplicate anchor Ids: DiagnosticReport.effective[x].extension,DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum,DiagnosticReport.effective[x].id,key_DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum
-WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/en/StructureDefinition-mii-pr-labor-laboruntersuchung-definitions.html: The html source has duplicate anchor Ids: Observation.effective[x].extension,Observation.effective[x].extension:QuelleKlinischesBezugsdatum,Observation.effective[x].id,key_Observation.effective[x].extension:QuelleKlinischesBezugsdatum
 WARNING: /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/output/en/extensions.html: The html source has duplicate anchor Ids: Extension,Extension.extension,Extension.url,Extension.value_x_,Extension.value_x_.code,Extension.value_x_.system,end-xhtml,s-Extension,s-Extension.extension,s-Extension.id,s-Extension.url,s-Extension.value_x_,s-Extension.value_x_.code,s-Extension.value_x_.display,s-Extension.value_x_.extension,s-Extension.value_x_.id,s-Extension.value_x_.system,s-Extension.value_x_.userSelected,s-Extension.value_x_.version
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement.json ==
@@ -111,13 +107,13 @@ INFORMATION: Resource: The resource StructureDefinition/mii-pr-labor-laboranford
 INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.extension[9].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.extension[10].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 WARNING: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/mii-pr-labor-laborbefund: StructureDefinition.snapshot.element[91].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 INFORMATION: Resource: The resource StructureDefinition/mii-pr-labor-laborbefund could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung.json ==
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///web/publishing/work/task-89/draft/output/ValueSet-results-laboratory-pathology-observations-uv-ips.html' at 'div/div/table/tr/td/a' for 'Results Laboratory/Pathology Observation - IPS' is not a widely supported protocol and should be checked
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.extension[9].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.extension[10].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 WARNING: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.snapshot.element[123].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 INFORMATION: StructureDefinition/mii-pr-labor-laboruntersuchung: StructureDefinition.snapshot.element[78].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: Resource: The resource StructureDefinition/mii-pr-labor-laboruntersuchung could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-labor-identifier-type-codes.json ==

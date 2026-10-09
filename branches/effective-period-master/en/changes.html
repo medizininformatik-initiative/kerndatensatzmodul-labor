@@ -347,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="fhir--content-changes">FHIR / Content Changes:</h4>
 <h5 id="mii_pr_labor_laborbefund-and-mii_pr_labor_laboruntersuchung">MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung</h5>
 <ul>
-  <li>effective[x]: <code class="language-plaintext highlighter-rouge">Period</code> is allowed alongside <code class="language-plaintext highlighter-rouge">dateTime</code>; the element is type-sliced and both <code class="language-plaintext highlighter-rouge">effectiveDateTime</code> and <code class="language-plaintext highlighter-rouge">effectivePeriod</code> are Must Support (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a <code class="language-plaintext highlighter-rouge">dateTime</code> stay valid; systems processing the data must now be able to handle a period.</li>
+  <li>effective[x]: <code class="language-plaintext highlighter-rouge">Period</code> is allowed alongside <code class="language-plaintext highlighter-rouge">dateTime</code>; Must Support applies to both types. The element is not sliced, its element ids are unchanged (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a <code class="language-plaintext highlighter-rouge">dateTime</code> stay valid; systems processing the data must now be able to handle a period.</li>
 </ul>
 
 <h5 id="mii_pr_labor_laborbefund">MII_PR_Labor_Laborbefund</h5>
@@ -605,7 +605,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Oct 9, 2026 11:48+0000">2026-10-09</span>
+          Generated <span title="Fri, Oct 9, 2026 12:01+0000">2026-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

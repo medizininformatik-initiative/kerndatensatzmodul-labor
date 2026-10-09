@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T11:48:03+00:00",
+  "date" : "2026-10-09T12:01:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1032,14 +1032,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     {
       "id" : "Observation.effective[x]",
       "path" : "Observation.effective[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
       "short" : "Untersuchungszeitpunkt",
       "_short" : {
         "extension" : [{
@@ -1065,7 +1057,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
-      "definition" : "Klinischer Bezugszeitpunkt der Laboruntersuchung",
+      "definition" : "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.",
       "_definition" : {
         "extension" : [{
           "extension" : [{
@@ -1074,7 +1066,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           },
           {
             "url" : "content",
-            "valueString" : "Klinischer Bezugszeitpunkt der Laboruntersuchung"
+            "valueString" : "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         },
@@ -1085,7 +1077,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           },
           {
             "url" : "content",
-            "valueString" : "Clinical reference time for the laboratory test."
+            "valueString" : "Clinical reference time for the laboratory test; a period where the specimen was collected over an interval, for example 24-hour urine."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
@@ -1165,103 +1157,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.effective[x]:effectiveDateTime",
-      "path" : "Observation.effective[x]",
-      "sliceName" : "effectiveDateTime",
-      "definition" : "Klinischer Bezugszeitpunkt der Laboruntersuchung, in der Regel der Zeitpunkt der Probenentnahme.",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Klinischer Bezugszeitpunkt der Laboruntersuchung, in der Regel der Zeitpunkt der Probenentnahme."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Clinical reference time of the laboratory test, usually the time of specimen collection."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.effective[x]:effectivePeriod",
-      "path" : "Observation.effective[x]",
-      "sliceName" : "effectivePeriod",
-      "short" : "Untersuchungszeitraum",
-      "_short" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Untersuchungszeitraum"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Effective period"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "definition" : "Klinischer Bezugszeitraum der Laboruntersuchung, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Klinischer Bezugszeitraum der Laboruntersuchung, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Clinical reference period of the laboratory test, where the specimen was collected over an interval, for example 24-hour urine."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Period"
       }],
       "mustSupport" : true
     },

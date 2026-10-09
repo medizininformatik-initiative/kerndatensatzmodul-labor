@@ -13,7 +13,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 
 ##### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
 
-* effective[x]: `Period` is allowed alongside `dateTime`; the element is type-sliced and both `effectiveDateTime` and `effectivePeriod` are Must Support (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a `dateTime` stay valid; systems processing the data must now be able to handle a period.
+* effective[x]: `Period` is allowed alongside `dateTime`; Must Support applies to both types. The element is not sliced, its element ids are unchanged (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a `dateTime` stay valid; systems processing the data must now be able to handle a period.
 
 ##### MII_PR_Labor_Laborbefund
 

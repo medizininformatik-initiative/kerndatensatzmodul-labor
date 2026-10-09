@@ -13,7 +13,7 @@
 
 ##### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
 
-* effective[x]: Neben `dateTime` ist `Period` zulässig; das Element ist nach Typ geschnitten, `effectiveDateTime` und `effectivePeriod` sind beide Must Support (Issue #140). Ein Zeitraum gibt ein Sammelintervall an, z. B. bei 24-Stunden-Sammelurin. Instanzen mit `dateTime` bleiben valide; Systeme, die die Daten verarbeiten, müssen nun auch einen Zeitraum verarbeiten können.
+* effective[x]: Neben `dateTime` ist `Period` zulässig; Must Support gilt für beide Typen. Das Element ist nicht geschnitten, seine Element-IDs bleiben unverändert (Issue #140). Ein Zeitraum gibt ein Sammelintervall an, z. B. bei 24-Stunden-Sammelurin. Instanzen mit `dateTime` bleiben valide; Systeme, die die Daten verarbeiten, müssen nun auch einen Zeitraum verarbeiten können.
 
 ##### MII_PR_Labor_Laborbefund
 

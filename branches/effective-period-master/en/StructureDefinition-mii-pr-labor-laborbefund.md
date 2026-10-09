@@ -213,7 +213,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T11:48:03+00:00",
+  "date" : "2026-10-09T12:01:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -918,14 +918,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
     {
       "id" : "DiagnosticReport.effective[x]",
       "path" : "DiagnosticReport.effective[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
       "short" : "Klinisches Bezugsdatum",
       "_short" : {
         "extension" : [{
@@ -951,7 +943,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
-      "definition" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+      "definition" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.\nStammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum.",
       "_definition" : {
         "extension" : [{
           "extension" : [{
@@ -960,7 +952,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           },
           {
             "url" : "content",
-            "valueString" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach."
+            "valueString" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach. Stammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         },
@@ -971,7 +963,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
           },
           {
             "url" : "content",
-            "valueString" : "The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient."
+            "valueString" : "The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient. Where the tests come from several specimens, or a specimen was collected over an interval (for example 24-hour urine), it is a period."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
@@ -1038,127 +1030,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.effective[x]:effectiveDateTime",
-      "path" : "DiagnosticReport.effective[x]",
-      "sliceName" : "effectiveDateTime",
-      "_short" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Klinisches Bezugsdatum"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Clinical reference date"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "definition" : "Klinischer Bezugszeitpunkt des Laborbefunds, in der Regel der Zeitpunkt der Probenentnahme.",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Klinischer Bezugszeitpunkt des Laborbefunds, in der Regel der Zeitpunkt der Probenentnahme."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Clinical reference time of the laboratory report, usually the time of specimen collection."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.effective[x]:effectivePeriod",
-      "path" : "DiagnosticReport.effective[x]",
-      "sliceName" : "effectivePeriod",
-      "short" : "Klinischer Bezugszeitraum",
-      "_short" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Klinischer Bezugszeitraum"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Clinical reference period"
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "definition" : "Klinischer Bezugszeitraum des Laborbefunds, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.",
-      "_definition" : {
-        "extension" : [{
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "de-DE"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Klinischer Bezugszeitraum des Laborbefunds, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        },
-        {
-          "extension" : [{
-            "url" : "lang",
-            "valueCode" : "en-US"
-          },
-          {
-            "url" : "content",
-            "valueString" : "Clinical reference period of the laboratory report, where the specimen was collected over an interval, for example 24-hour urine."
-          }],
-          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-        }]
-      },
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Period"
       }],
       "mustSupport" : true
     },

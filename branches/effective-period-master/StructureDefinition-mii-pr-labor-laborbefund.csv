@@ -322,8 +322,8 @@ Effective TimeOccurrence","",1,1,"Y","","Y","dateTime {[]} {[]}
 Period {[]} {[]}","Klinisches Bezugsdatum","Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. 
 Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. 
 Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. 
-Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.","If the diagnostic procedure was performed on the patient, this is the time it was performed. If there are specimens, the diagnostically relevant time can be derived from the specimen collection times, but the specimen information is not always available, and the exact relationship between the specimens and the diagnostically relevant time is not always automatic.","Need to know where in the patient history to file/present this report.","","","","","","","",,,,,"","type:$this}
-","",,"closed","DiagnosticReport.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.
+Stammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum.","If the diagnostic procedure was performed on the patient, this is the time it was performed. If there are specimens, the diagnostically relevant time can be derived from the specimen collection times, but the specimen information is not always available, and the exact relationship between the specimens and the diagnostically relevant time is not always automatic.","Need to know where in the patient history to file/present this report.","","","","","","","",,,,,"",,,,"DiagnosticReport.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]","OBR-7","FiveWs.done[x]"
 "DiagnosticReport.effective[x].id","DiagnosticReport.effective[x].id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -335,44 +335,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum","DiagnosticReport.effective[x].extension","QuelleKlinischesBezugsdatum","","",0,1,"Y","","","Extension {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]} {[]}
 ","Quelle des klinischen Bezugsdatums","Datum der Probenentnahme | Datum des Eingangs der Probe im Labor","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.effective[x]:effectiveDateTime","DiagnosticReport.effective[x]","effectiveDateTime","Observation time
-Effective TimeOccurrence","",0,1,"Y","","Y","dateTime {[]} {[]}
-","","Klinischer Bezugszeitpunkt des Laborbefunds, in der Regel der Zeitpunkt der Probenentnahme.","If the diagnostic procedure was performed on the patient, this is the time it was performed. If there are specimens, the diagnostically relevant time can be derived from the specimen collection times, but the specimen information is not always available, and the exact relationship between the specimens and the diagnostically relevant time is not always automatic.","Need to know where in the patient history to file/present this report.","","","","","","","",,,,,"",,,,"DiagnosticReport.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.occurrence[x]","OBR-7","FiveWs.done[x]"
-"DiagnosticReport.effective[x]:effectiveDateTime.id","DiagnosticReport.effective[x].id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"DiagnosticReport.effective[x]:effectiveDateTime.extension","DiagnosticReport.effective[x].extension","","","",0,*,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.effective[x]:effectiveDateTime.extension:QuelleKlinischesBezugsdatum","DiagnosticReport.effective[x].extension","QuelleKlinischesBezugsdatum","","",0,1,"Y","","","Extension {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]} {[]}
-","Quelle des klinischen Bezugsdatums","Datum der Probenentnahme | Datum des Eingangs der Probe im Labor","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.effective[x]:effectiveDateTime.value","DiagnosticReport.effective[x].value","","","",0,1,"","","","dateTime {[]} {[]}
-","Primitive value for dateTime","The actual value","","","","","","","","","",,,,,"",,,,"dateTime.value",0,1,"",""
-"DiagnosticReport.effective[x]:effectivePeriod","DiagnosticReport.effective[x]","effectivePeriod","Observation time
-Effective TimeOccurrence","",0,1,"Y","","Y","Period {[]} {[]}
-","Klinischer Bezugszeitraum","Klinischer Bezugszeitraum des Laborbefunds, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.","If the diagnostic procedure was performed on the patient, this is the time it was performed. If there are specimens, the diagnostically relevant time can be derived from the specimen collection times, but the specimen information is not always available, and the exact relationship between the specimens and the diagnostically relevant time is not always automatic.","Need to know where in the patient history to file/present this report.","","","","","","","",,,,,"",,,,"DiagnosticReport.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.occurrence[x]","OBR-7","FiveWs.done[x]"
-"DiagnosticReport.effective[x]:effectivePeriod.id","DiagnosticReport.effective[x].id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"DiagnosticReport.effective[x]:effectivePeriod.extension","DiagnosticReport.effective[x].extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.effective[x]:effectivePeriod.extension:QuelleKlinischesBezugsdatum","DiagnosticReport.effective[x].extension","QuelleKlinischesBezugsdatum","","",0,1,"Y","","","Extension {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]} {[]}
-","Quelle des klinischen Bezugsdatums","Datum der Probenentnahme | Datum des Eingangs der Probe im Labor","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.effective[x]:effectivePeriod.start","DiagnosticReport.effective[x].start","","","",0,1,"","","Y","dateTime {[]} {[]}
-","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","DR.1"
-"DiagnosticReport.effective[x]:effectivePeriod.end","DiagnosticReport.effective[x].end","","","",0,1,"","","Y","dateTime {[]} {[]}
-","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","DR.2"
 "DiagnosticReport.issued","DiagnosticReport.issued","","Date published
 Date IssuedDate Verified","",1,1,"Y","","Y","instant {[]} {[]}
 ","Dokumentationsdatum","Zeitpunkt, an dem der Laborbefund dokumentiert wurde.","May be different from the update time of the resource itself, because that is the status of the record (potentially a secondary copy), not the actual release time of the report.","Clinicians need to be able to check the date that the report was released.","","","","","","","",,,,,"",,,,"DiagnosticReport.issued",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
