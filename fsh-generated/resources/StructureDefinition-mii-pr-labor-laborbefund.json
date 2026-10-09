@@ -1036,7 +1036,7 @@
             }
           ]
         },
-        "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+        "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.\nStammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum.",
         "_definition": {
           "extension": [
             {
@@ -1048,7 +1048,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach."
+                  "valueString": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach. Stammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum."
                 }
               ]
             },
@@ -1061,33 +1061,14 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient."
+                  "valueString": "The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient. Where the tests come from several specimens, or a specimen was collected over an interval (for example 24-hour urine), it is a period."
                 }
               ]
             }
           ]
         },
         "min": 1,
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.effective[x].extension",
-        "path": "DiagnosticReport.effective[x].extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum",
