@@ -366,6 +366,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">fix:</code> <code class="language-plaintext highlighter-rouge">performer.display</code> in the laboratory test examples matches the name of the referenced example organization ("Zentrallabor Beispielklinikum" instead of "Zentrallabor des IKCL").</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> <code class="language-plaintext highlighter-rouge">mii-exa-labor-laborwert-data-absent-reason</code> no longer carries an interpretation and a reference range; without a value there is nothing to interpret (issue #117).</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> All laboratory examples carry the versioned <code class="language-plaintext highlighter-rouge">meta.profile</code> and the test data label; <code class="language-plaintext highlighter-rouge">…-ratio</code> and <code class="language-plaintext highlighter-rouge">…-range</code> lacked both (issue #118).</li>
+  <li>The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Every test refers to the order and to its specimen, and every test has an identifier of its own (issue #122).</li>
+  <li><strong>NEW</strong>: <code class="language-plaintext highlighter-rouge">mii-exa-labor-laborwert-haemolyse</code> — potassium from the haemolysed blood specimen, reported with a value, interpretation H and the interpretation-affecting property. The creatinine example no longer carries the property.</li>
+  <li><code class="language-plaintext highlighter-rouge">mii-exa-labor-laborwert-data-absent-reason</code> is creatinine in spot urine, not performed because the urine sediment used up the specimen.</li>
 </ul>
 
 <h4 id="implementation-guide">Implementation Guide:</h4>
@@ -594,7 +597,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Oct 9, 2026 10:47+0000">2026-10-09</span>
+          Generated <span title="Fri, Oct 9, 2026 10:56+0000">2026-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
