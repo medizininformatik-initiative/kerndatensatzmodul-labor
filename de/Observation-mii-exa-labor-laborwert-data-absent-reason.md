@@ -20,7 +20,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **basedOn**: [ServiceRequest Nierendiagnostik](ServiceRequest-mii-exa-labor-laboranforderung.md)
 
-**status**: Final
+**status**: Cancelled
 
 **category**: Laboratory
 
@@ -82,7 +82,7 @@ Probenmenge nach dem Urinsediment nicht ausreichend.
   "basedOn" : [{
     "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
   }],
-  "status" : "final",
+  "status" : "cancelled",
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",

@@ -32,7 +32,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **specimen**: 
 
-* [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4999.md)
+* [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999; type = ; receivedTime = 2018-11-20 08:40:00+0100; condition = Hemolyzed](Specimen-4999.md)
 * [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4998; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4998.md)
 * [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4997; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4997.md)
 

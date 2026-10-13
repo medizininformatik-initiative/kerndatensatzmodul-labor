@@ -40,14 +40,14 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **interpretation**: Normal
 
-**specimen**: [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4999.md)
+**specimen**: [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999; type = ; receivedTime = 2018-11-20 08:40:00+0100; condition = Hemolyzed](Specimen-4999.md)
 
 ### ReferenceRanges
 
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Low** | **High** | **Type** |
-| * | 72 | 127 | Normal Range |
+| * | 72 µmol/l (Details: UCUM codeumol/L = 'umol/L') | 127 µmol/l (Details: UCUM codeumol/L = 'umol/L') | Normal Range |
 
 
 
@@ -172,10 +172,16 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   },
   "referenceRange" : [{
     "low" : {
-      "value" : 72
+      "value" : 72,
+      "unit" : "µmol/l",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "umol/L"
     },
     "high" : {
-      "value" : 127
+      "value" : 127,
+      "unit" : "µmol/l",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "umol/L"
     },
     "type" : {
       "coding" : [{

@@ -30,7 +30,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 * **Code**: [Kreatinin](Observation-mii-exa-labor-laborwert.md)
   * **Value**: 72 µmol/l (Details: UCUM codeumol/L = 'umol/L')
-  * **Reference Range**: Normal Range: 72 - 127
+  * **Reference Range**: Normal Range: 72 µmol/l (Details: UCUM codeumol/L = 'umol/L')- 127 µmol/l (Details: UCUM codeumol/L = 'umol/L')
   * **Flags**: Final,Normal
   * **Note**: 
   * **Relevant Time**: 2018-11-20 08:00:00+0100
@@ -43,7 +43,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 * **Code**: [Kreatinin im Urin](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
   * **Value**: Error: **Not Performed**
   * **Reference Range**: 
-  * **Flags**: Final
+  * **Flags**: Cancelled
   * **Note**: > Probenmenge nach dem Urinsediment nicht ausreichend.
   * **Relevant Time**: 2018-11-20 08:15:00+0100
 * **Code**: [Albumin (24H U) [Mass/Time]](Observation-mii-exa-labor-laborwert-ratio.md)

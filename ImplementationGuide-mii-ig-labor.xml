@@ -138,7 +138,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-10-13T12:17:17+00:00"/>
+  <date value="2026-10-13T12:41:55+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1183,7 +1183,7 @@
         <reference value="Observation/mii-exa-labor-laborwert-data-absent-reason"/>
       </reference>
       <name value="Laboratory result: creatinine in spot urine without a value (Data Absent Reason)"/>
-      <description value="Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."/>
+      <description value="Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: its status is cancelled, dataAbsentReason states that it was not performed, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
     </resource>
     <resource>
@@ -1425,7 +1425,7 @@
         <reference value="Specimen/4999"/>
       </reference>
       <name value="mii-exa-labor-specimen"/>
-      <description value="Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result."/>
+      <description value="Venous blood specimen of the renal diagnostics order. It arrived haemolysed (condition HEM), which affects the potassium result."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

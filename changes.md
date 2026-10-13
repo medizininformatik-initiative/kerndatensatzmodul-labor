@@ -20,19 +20,17 @@ Changes compared to the ballot version 2027.0.0-ballot.
 - Context extended to `effective` of type `Period` on Observation and DiagnosticReport.
 
 ##### Examples
-- The laboratory test examples carry a `performer.identifier` in addition to `performer.reference`.
-- `fix:` `performer.display` in the laboratory test examples matches the name of the referenced example organization ("Zentrallabor Beispielklinikum" instead of "Zentrallabor des IKCL").
-- `fix:` `mii-exa-labor-laborwert-data-absent-reason` no longer carries an interpretation and a reference range; without a value there is nothing to interpret (issue #117).
-- `fix:` All laboratory examples carry the versioned `meta.profile` and the test data label; `…-ratio` and `…-range` lacked both (issue #118).
-- The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Every test refers to the order and to its specimen, and every test has an identifier of its own (issue #122).
-- **NEW**: `mii-exa-labor-laborwert-haemolyse` — potassium from the haemolysed blood specimen, reported with a value, interpretation H and the interpretation-affecting property. The creatinine example no longer carries the property.
-- `mii-exa-labor-laborwert-data-absent-reason` is creatinine in spot urine, not performed because the urine sediment used up the specimen.
-- The 24-hour urine example states its collection period as `effectivePeriod`, and the report the period from the earliest to the latest collection (see issue #140).
+- The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Every test refers to the order and to its specimen and has an identifier of its own; all examples carry the versioned `meta.profile` and the test data label (issues #118, #122).
+- The blood specimen is haemolysed (`condition` `v2-0493#HEM`). **NEW**: `mii-exa-labor-laborwert-haemolyse` — potassium from that specimen, reported with a value, interpretation H and the interpretation-affecting property. The creatinine example no longer carries the property.
+- `mii-exa-labor-laborwert-data-absent-reason` is creatinine in spot urine with the status `cancelled`: the urine sediment used up the specimen. It carries neither an interpretation nor a reference range (issue #117).
+- The 24-hour urine example states its collection period as `effectivePeriod`, the report the period from the earliest to the latest collection.
+- The laboratory test examples carry `performer.identifier`; `performer.display` names the referenced example organization. The reference range of the creatinine example carries its unit.
 
 #### Implementation Guide:
 - The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.
 - Laboratory Report page: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
 - Laboratory Test page: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
+- Laboratory Test page: a test that was not performed has the status `cancelled`, with `dataAbsentReason`.
 
 ### Version: 2027.0.0-ballot
 

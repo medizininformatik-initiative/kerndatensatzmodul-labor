@@ -63,6 +63,7 @@ This publication includes IP covered under the following statements.
 * [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md)
 * [diagnosticServiceSectionId](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0074.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) and [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)
 * [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 9 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [specimenCondition](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html): [Specimen/4999](Specimen-4999.md)
 * [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/555](Encounter-555.md)
 * [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)... Show 5 more, [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
 * [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md)
@@ -233,7 +234,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T12:17:17+00:00",
+  "date" : "2026-10-13T12:41:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1663,7 +1664,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
       },
       "name" : "Laboratory result: creatinine in spot urine without a value (Data Absent Reason)",
-      "description" : "Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
+      "description" : "Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: its status is cancelled, dataAbsentReason states that it was not performed, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -2015,7 +2016,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "Specimen/4999"
       },
       "name" : "mii-exa-labor-specimen",
-      "description" : "Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result.",
+      "description" : "Venous blood specimen of the renal diagnostics order. It arrived haemolysed (condition HEM), which affects the potassium result.",
       "exampleBoolean" : true
     },
     {

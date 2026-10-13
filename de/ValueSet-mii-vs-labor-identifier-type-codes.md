@@ -176,7 +176,7 @@ Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu v
   "title" : "MII VS Labor Identifier Type Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T12:17:17+00:00",
+  "date" : "2026-10-13T12:41:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

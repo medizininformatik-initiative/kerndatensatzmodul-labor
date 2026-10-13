@@ -27,6 +27,8 @@
 | - | **Collected[x]** |
 | * | 2018-11-20 08:00:00+0100 |
 
+**condition**: Hemolyzed
+
 
 
 ## Resource Content
@@ -48,7 +50,14 @@
   "receivedTime" : "2018-11-20T08:40:00+01:00",
   "collection" : {
     "collectedDateTime" : "2018-11-20T08:00:00+01:00"
-  }
+  },
+  "condition" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0493",
+      "code" : "HEM",
+      "display" : "Hemolyzed"
+    }]
+  }]
 }
 
 ```

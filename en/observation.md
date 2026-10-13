@@ -31,7 +31,7 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | Patient.id | Must Support, but optional |
 | Patient.meta | Must Support, but optional |
 | Observation.identifier | The Observation must be unambiguously identifiable; no requirements are made on the coding, preference: 'LOINC CODE_report number' |
-| Observation.status | Final and preliminary results are permitted. |
+| Observation.status | Final and preliminary results are permitted. A test that was not performed is cancelled, with dataAbsentReason. |
 | Observation.category | LOINC and HL7 code, further codings permitted. </br>No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. </br>For laboratory groups, reference is made to the ValueSet[Laboratory area](ValueSet-mii-vs-labor-laborbereich.md). It may be used optionally. |
 | Observation.code | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); in some cases it makes sense to record the local identifier code in addition to the LOINC (see Terminology > LOINC coding at a site). |
 | Observation.subject | A reference to the patient must always be present. |
