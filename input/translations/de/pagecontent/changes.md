@@ -1,6 +1,6 @@
 ### Version: 2027.0.0
 
-Änderungen gegenüber der Ballot-Fassung 2027.0.0-ballot. Sie setzen den Release-Bericht für 2027 um ([kerndatensatz-meta#233](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/233)).
+Änderungen gegenüber der Ballot-Fassung 2027.0.0-ballot.
 
 #### FHIR/Inhaltliche Änderungen:
 ##### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
