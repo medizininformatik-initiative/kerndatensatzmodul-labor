@@ -1,11 +1,12 @@
 Instance: mii-exa-labor-specimen
 InstanceOf: Specimen
 Usage: #example
-Description: "Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result."
+Description: "Venous blood specimen of the renal diagnostics order. It arrived haemolysed (condition HEM), which affects the potassium result."
 * id = "4999"
 * identifier.system = "https://example.org/fhir/sid/test-specimens"
 * identifier.value = "4999"
 * type.text = "Venöses Vollblut"
+* condition = $v2-0493#HEM "Hemolyzed"
 * subject.reference = "Patient/111"
 * receivedTime = "2018-11-20T08:40:00+01:00"
 * collection.collectedDateTime = "2018-11-20T08:00:00+01:00"

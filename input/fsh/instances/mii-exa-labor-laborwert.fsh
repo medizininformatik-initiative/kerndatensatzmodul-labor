@@ -33,8 +33,8 @@ Usage: #example
 * valueQuantity.value.extension[quantityPrecision].valueInteger = 1
 * valueQuantity.extension[pqTranslation].valueQuantity = 0.81 'mg/dL' "mg/dL"
 * interpretation = $v3-ObservationInterpretation#N
-* referenceRange.low.value = 72
-* referenceRange.high.value = 127
+* referenceRange.low = 72 'umol/L' "µmol/l"
+* referenceRange.high = 127 'umol/L' "µmol/l"
 * referenceRange.type = $referencerange-meaning#normal "Normal Range"
 
 Instance: mii-exa-labor-laborwert-ratio
