@@ -7,7 +7,7 @@
 | ServiceRequest.identifier       |  Anforderungsnummer der gewünschten Untersuchung, min. eindeutig durch System und Value identifiziert. Dient zur Verknüfung des Labor-Systems und dem anfordernden System.|
 | ServiceRequest.status       | Fixed value, da nur finale Anforderungen abgebildet werden sollen. |
 | ServiceRequest.intent       | Fixed value, ServiceRequest repräsentiert immer die Anforderung der Diagnostik.|
-| ServiceRequest.category       | Fixed Laboratory (HL7 v2) Coding Slice, weitere Codings erlaubt.|
+| ServiceRequest.category       | Festes Coding `laboratory` (observation-category), weitere Codings erlaubt.|
 | ServiceRequest.code       | CodeableConcept, keine Einschränkungen. Falls angeforderte Laborparameter nicht kodiert vorliegen -> CodeableConcept.text |
 | ServiceRequest.subject       |  Bezug zum Patienten muss stets gegeben sein|
 | ServiceRequest.authoredOn       |  Erstelldatum der Anforderung, falls nicht vorhanden Eingangsdatum der Anforderung        |

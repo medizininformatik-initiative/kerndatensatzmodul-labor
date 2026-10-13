@@ -355,6 +355,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der <a href="index.html">Startseite</a>; die eigene Seite Projektkontext entfällt.</li>
   <li>Die Seiten Laborbefund, Laboruntersuchung und Laboranforderung entfallen; ihre Element-Erläuterungen und die Zuordnung zum logischen Modell stehen auf den Profilseiten.</li>
+  <li><code class="language-plaintext highlighter-rouge">fix:</code> Die Hinweise zu <code class="language-plaintext highlighter-rouge">category</code> entsprechen den Profilen: Bei Laborbefund und Laboruntersuchung ist nur die HL7-Kategorie verpflichtend, LOINC 26436-6 ist erlaubt; die Laboranforderung fixiert <code class="language-plaintext highlighter-rouge">observation-category</code> <code class="language-plaintext highlighter-rouge">laboratory</code>, keinen HL7-v2-Code.</li>
   <li>Hinweise zum Profil Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code> sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).</li>
   <li>Hinweise zum Profil Laboruntersuchung: wann <code class="language-plaintext highlighter-rouge">valueRatio</code> der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als <code class="language-plaintext highlighter-rouge">valueQuantity</code> mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).</li>
   <li>Hinweise zum Profil Laboruntersuchung: Eine nicht durchgeführte Untersuchung hat den Status <code class="language-plaintext highlighter-rouge">cancelled</code>, mit <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>.</li>
@@ -581,7 +582,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Oct 13, 2026 12:48+0000">2026-10-13</span>
+          Erstellt <span title="Tue, Oct 13, 2026 12:54+0000">2026-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

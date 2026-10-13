@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
 | Patient.meta | Must Support, but optional |
 | Observation.identifier | The Observation must be unambiguously identifiable; no requirements are made on the coding, preference: 'LOINC CODE_report number' |
 | Observation.status | Final and preliminary results are permitted. A test that was not performed is cancelled, with dataAbsentReason. |
-| Observation.category | LOINC and HL7 code, further codings permitted. </br>No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. </br>For laboratory groups, reference is made to the ValueSet[Laboratory area](ValueSet-mii-vs-labor-laborbereich.md). It may be used optionally. |
+| Observation.category | Mandatory category`laboratory`(observation-category); further codings and further categories permitted, for example LOINC 26436-6. </br>No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. </br>For laboratory groups, reference is made to the ValueSet[Laboratory area](ValueSet-mii-vs-labor-laborbereich.md). It may be used optionally. |
 | Observation.code | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); in some cases it makes sense to record the local identifier code in addition to the LOINC (see Terminology > LOINC coding at a site). |
 | Observation.subject | A reference to the patient must always be present. |
 | Observation.effective[x] | Test time (clinical reference time) of the laboratory test. Usually a dateTime (see constraint mii-lab-1). If the specimen was collected over an interval, for example 24-hour urine, effectivePeriod states the collection period. The clinical reference time of the laboratory test should be derived from the laboratory receipt time (redundant with Specimen.receivedTime), the collection time (redundant with Specimen.collection.collected[x]) or the clinical reference time of the laboratory report (DiagnosticReport.effective[x]). These values come closest to the point in time at which the measured property in the specimen (e.g. the concentration of an analyte) presumably corresponded to that property in the patient. The extension QuelleKlinischesBezugsdatum is to be used to specify whether the value is a collection time or a specimen receipt time. |
@@ -253,7 +253,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-labo
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T12:48:13+00:00",
+  "date" : "2026-10-13T12:54:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

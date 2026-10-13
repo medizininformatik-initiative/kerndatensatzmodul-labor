@@ -7,7 +7,7 @@
 | ServiceRequest.identifier | Request number of the test requested, identified unambiguously at least by system and value. Serves to link the laboratory system and the requesting system. |
 | ServiceRequest.status | Fixed value, since only final requests are to be represented. |
 | ServiceRequest.intent | Fixed value, a ServiceRequest always represents the request for diagnostics. |
-| ServiceRequest.category | Fixed Laboratory (HL7 v2) coding slice, further codings permitted. |
+| ServiceRequest.category | Fixed coding `laboratory` (observation-category), further codings permitted. |
 | ServiceRequest.code | CodeableConcept, no restrictions. If the laboratory parameters requested are not available in coded form -> CodeableConcept.text |
 | ServiceRequest.subject | A reference to the patient must always be present |
 | ServiceRequest.authoredOn | Creation date of the request; if that is not available, the date the request was received |

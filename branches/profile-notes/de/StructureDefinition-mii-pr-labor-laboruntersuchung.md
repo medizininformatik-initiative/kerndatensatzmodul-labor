@@ -135,7 +135,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
 | Patient.meta | Must-support, jedoch optional |
 | Observation.identifier | Observation muss eindeutig identifizierbar sein, keine Vorgaben zur Kodierung, Präferenz: 'LOINC CODE_Befundnummer' |
 | Observation.status | Finale & vorläufige Ergebnisse sind zulässig. Eine nicht durchgeführte Untersuchung hat den Status cancelled, mit dataAbsentReason. |
-| Observation.category | LOINC & HL7 Code, weitere Codings erlaubt. </br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. </br>Für Laborgruppen wird auf das ValueSet[Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)verwiesen. Dieses kann optional verwendet werden. |
+| Observation.category | Verpflichtende Kategorie`laboratory`(observation-category); weitere Codings und weitere Kategorien erlaubt, z. B. LOINC 26436-6. </br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. </br>Für Laborgruppen wird auf das ValueSet[Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)verwiesen. Dieses kann optional verwendet werden. |
 | Observation.code | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); Zum Teil kann es Sinn machen, zusätzlich zum LOINC den lokalen Bezeichner-Code zu hinterlegen (siehe Terminologien > LOINC-Kodierung am Standort). |
 | Observation.subject | Patientenbezug muss stets gegeben sein. |
 | Observation.effective[x] | Untersuchungszeitpunkt (Klinischer Bezugszeitpunkt) der Laboruntersuchung. In der Regel ein dateTime (siehe Constraint mii-lab-1). Wurde die Probe über einen Zeitraum gewonnen, z. B. 24-Stunden-Sammelurin, gibt effectivePeriod den Sammelzeitraum an. Der klinische Bezugszeitpunkt der Laboruntersuchung sollte auf Basis des Laboreingangszeitpunkts (redundant zu Specimen.receivedTime) oder Entnahmezeitpunkt (redundant zu Specimen.collection.collected[x]) oder des klinischen Bezugszeitpunkt des Laborberichts (DiagnosticReport.effective[x]) ermittelt werden. Diese Werte entsprechen am ehestem dem Zeitpunkt zudem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Per extension QuelleKlinischesBezugsdatum soll spezifiziert werden, ob es sich um einen Entnahme- oder Probeneingangszeitpunkt handelt. |
@@ -349,7 +349,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T12:48:13+00:00",
+  "date" : "2026-10-13T12:54:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

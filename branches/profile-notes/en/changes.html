@@ -385,6 +385,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the <a href="index.html">home page</a>; the separate page Project Context has been removed.</li>
   <li>The pages Laboratory Report, Laboratory Test and Laboratory Request are dropped; their element notes and the mapping to the logical model appear on the profile pages.</li>
+  <li><code class="language-plaintext highlighter-rouge">fix:</code> The notes on <code class="language-plaintext highlighter-rouge">category</code> match the profiles: on the laboratory report and the laboratory test only the HL7 category is mandatory, LOINC 26436-6 is permitted; the laboratory request fixes <code class="language-plaintext highlighter-rouge">observation-category</code> <code class="language-plaintext highlighter-rouge">laboratory</code>, not an HL7 v2 code.</li>
   <li>Notes on the laboratory report profile: the clinical reference time must be identical to <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code> only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).</li>
   <li>Notes on the laboratory test profile: when <code class="language-plaintext highlighter-rouge">valueRatio</code> is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take <code class="language-plaintext highlighter-rouge">valueQuantity</code> with a composed UCUM unit (issue #123).</li>
   <li>Notes on the laboratory test profile: a test that was not performed has the status <code class="language-plaintext highlighter-rouge">cancelled</code>, with <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>.</li>
@@ -611,7 +612,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Oct 13, 2026 12:48+0000">2026-10-13</span>
+          Generated <span title="Tue, Oct 13, 2026 12:54+0000">2026-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
