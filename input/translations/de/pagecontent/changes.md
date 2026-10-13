@@ -20,19 +20,17 @@
 - Kontext um `effective` vom Typ `Period` an Observation und DiagnosticReport erweitert.
 
 ##### Beispiele
-- Die Beispiele der Laboruntersuchung tragen zusätzlich zu `performer.reference` einen `performer.identifier`.
-- `fix:` `performer.display` in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).
-- `fix:` `mii-exa-labor-laborwert-data-absent-reason` trägt keine Interpretation und keinen Referenzbereich mehr; ohne Wert gibt es nichts zu interpretieren (Issue #117).
-- `fix:` Alle Laborbeispiele tragen das versionierte `meta.profile` und das Testdaten-Label; `…-ratio` und `…-range` fehlte beides (Issue #118).
-- Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier (Issue #122).
-- **NEU**: `mii-exa-labor-laborwert-haemolyse` — Kalium aus der hämolytischen Blutprobe, berichtet mit Wert, Interpretation H und interpretationsbeeinflussender Eigenschaft. Das Kreatinin-Beispiel trägt die Eigenschaft nicht mehr.
-- `mii-exa-labor-laborwert-data-absent-reason` ist Kreatinin im Spontanurin, nicht durchgeführt, weil das Urinsediment die Probe aufgebraucht hat.
-- Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als `effectivePeriod` an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme (siehe Issue #140).
+- Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier; alle Beispiele tragen das versionierte `meta.profile` und das Testdaten-Label (Issues #118, #122).
+- Die Blutprobe ist hämolytisch (`condition` `v2-0493#HEM`). **NEU**: `mii-exa-labor-laborwert-haemolyse` — Kalium aus dieser Probe, berichtet mit Wert, Interpretation H und interpretationsbeeinflussender Eigenschaft. Das Kreatinin-Beispiel trägt die Eigenschaft nicht mehr.
+- `mii-exa-labor-laborwert-data-absent-reason` ist Kreatinin im Spontanurin mit dem Status `cancelled`: Das Urinsediment hat die Probe aufgebraucht. Es trägt weder eine Interpretation noch einen Referenzbereich (Issue #117).
+- Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als `effectivePeriod` an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme.
+- Die Beispiele der Laboruntersuchung tragen `performer.identifier`; `performer.display` nennt die referenzierte Beispiel-Organisation. Der Referenzbereich des Kreatinin-Beispiels trägt seine Einheit.
 
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
 - Seite Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu `Observation.effective[x]` sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).
 - Seite Laboruntersuchung: wann `valueRatio` der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als `valueQuantity` mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).
+- Seite Laboruntersuchung: Eine nicht durchgeführte Untersuchung hat den Status `cancelled`, mit `dataAbsentReason`.
 
 ### Version: 2027.0.0-ballot
 

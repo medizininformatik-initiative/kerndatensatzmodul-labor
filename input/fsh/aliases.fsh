@@ -33,6 +33,7 @@ Alias: $sct-no-ver = http://snomed.info/sct
 Alias: $loinc-no-ver = http://loinc.org
 Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0493 = http://terminology.hl7.org/CodeSystem/v2-0493
 // Versionsbehaftete Varianten fuer die ValueSet-Kompositionen. hl7.terminology.r4
 // kommt in zwei Staenden herein (6.2.0 transitiv, 7.1.0 als direkter Pin), was
 // ohne Versionsangabe eine Warnung wegen mehrdeutiger Aufloesung erzeugt. Die

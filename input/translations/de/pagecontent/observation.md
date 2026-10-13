@@ -25,7 +25,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Patient.id      | Must-support, jedoch optional        |
 | Patient.meta       | Must-support, jedoch optional         |
 | Observation.identifier       | Observation muss eindeutig identifizierbar sein, keine Vorgaben zur Kodierung, Präferenz: 'LOINC CODE_Befundnummer'|
-| Observation.status       |  Finale & vorläufige Ergebnisse sind zulässig.        |
+| Observation.status       |  Finale & vorläufige Ergebnisse sind zulässig. Eine nicht durchgeführte Untersuchung hat den Status cancelled, mit dataAbsentReason. |
 | Observation.category       | LOINC & HL7 Code, weitere Codings erlaubt. </br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. </br>Für Laborgruppen wird auf das ValueSet [Laborbereich](ValueSet-mii-vs-labor-laborbereich.html) verwiesen. Dieses kann optional verwendet werden.|
 | Observation.code       | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); Zum Teil kann es Sinn machen, zusätzlich zum LOINC den lokalen Bezeichner-Code zu hinterlegen (siehe Terminologien > LOINC-Kodierung am Standort).        |
 | Observation.subject       | Patientenbezug muss stets gegeben sein. |
