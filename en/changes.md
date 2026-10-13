@@ -7,7 +7,7 @@
 
 ### Version: 2027.0.0
 
-Changes compared to the ballot version 2027.0.0-ballot. They implement the release report for 2027 ([kerndatensatz-meta#233](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/233)).
+Changes compared to the ballot version 2027.0.0-ballot.
 
 #### FHIR / Content Changes:
 
