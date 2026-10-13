@@ -1,24 +1,4 @@
-Das [MII Profil Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.html) — ObservationLab — bildet das Ergebnis einer einzelnen Laboruntersuchung ab.
-
-### Metadaten
-
-Status, Version, Canonical und Basisprofil werden auf der verlinkten Profilseite vom IG Publisher dargestellt.
-
-### Inhalt
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboruntersuchung" lang="de" %}
-
-</br>
-
-### Constraints/Invarianten
-
-Constraints und Invarianten werden auf der Profilseite in den Strukturansichten dargestellt.
-
-### RESTful API
-
-Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) aus den normativen Artefakten dargestellt.
-
-### Mappings
+### Hinweise zu den Elementen
 
 | FHIR Element | Erklärung |
 |--------------|-----------|
@@ -39,7 +19,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Observation.referenceRange      | Sollte - falls vorhanden - als high, low (SimpleQuantity) kodiert werden. Abweichend ansonsten per referenceRange.text.|
 | Observation.component | Observation.hasMember ist im Bereich der klinischen Chemie zu bevorzugen (passendere Semantik). Element ist für die Harmonisierung mit Genetischen Befunden erlaubt. |
 
-</br>
+### Zuordnung zum logischen Modell
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
@@ -49,17 +29,9 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Observation.category      | Laborbefund.Laboruntersuchung.Gruppe|
 | Observation.code      | Laborbefund.Laboruntersuchung.Laborparameter|
 | Observation.effective[x]       | Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt|
-| Observation.issued       | Laborbefund.Laboruntersuchung.Dokumentationsdatum | 
+| Observation.issued       | Laborbefund.Laboruntersuchung.Dokumentationsdatum |
 | Observation.valueQuantity       | Laborbefund.Laboruntersuchung.Messwert |
 | Observation.interpretation       | Laborbefund.Laboruntersuchung.Interpretation |
 | Observation.note       | Laborbefund.Laboruntersuchung.Kommentar |
 | Observation.method       | Laborbefund.Laboruntersuchung.Untersuchungsmethode|
 | Observation.referenceRange       | Laborbefund.Laboruntersuchung.Referenzbereich |
-
-</br>
-
-**Beispiele**
-
-Beispiel (vollständig):
-
-[Vollständiges Beispiel als Observation](Observation-mii-exa-labor-laborwert.html)

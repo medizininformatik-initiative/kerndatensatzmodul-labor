@@ -1,24 +1,4 @@
-The [MII Laboratory Test profile](StructureDefinition-mii-pr-labor-laboruntersuchung.html) — ObservationLab — represents the result of a single laboratory test.
-
-### Metadata
-
-Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
-
-### Content
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboruntersuchung" %}
-
-</br>
-
-### Constraints/Invariants
-
-Constraints and invariants are shown in the structure views on the profile page.
-
-### RESTful API
-
-The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
-
-### Mappings
+### Notes on the elements
 
 | FHIR element | Explanation |
 |--------------|-----------|
@@ -39,7 +19,7 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | Observation.referenceRange | Should — where available — be coded as high, low (SimpleQuantity). Otherwise, by way of exception, via referenceRange.text. |
 | Observation.component | Observation.hasMember is to be preferred in clinical chemistry (more fitting semantics). The element is permitted for harmonisation with genetic findings. |
 
-</br>
+### Mapping to the logical model
 
 | FHIR element | Logical dataset |
 |--------------|-----------|
@@ -55,11 +35,3 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | Observation.note | Laborbefund.Laboruntersuchung.Kommentar |
 | Observation.method | Laborbefund.Laboruntersuchung.Untersuchungsmethode |
 | Observation.referenceRange | Laborbefund.Laboruntersuchung.Referenzbereich |
-
-</br>
-
-**Examples**
-
-Example (complete):
-
-[Complete example as an Observation](Observation-mii-exa-labor-laborwert.html)

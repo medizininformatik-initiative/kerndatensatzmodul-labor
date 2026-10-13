@@ -1,24 +1,4 @@
-Das [MII Profil Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.html) — DiagnosticReportLab — bildet einen Laborbefund ab.
-
-### Metadaten
-
-Status, Version, Canonical und Basisprofil werden auf der verlinkten Profilseite vom IG Publisher dargestellt.
-
-### Inhalt
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laborbefund" lang="de" %}
-
-</br>
-
-### Constraints/Invarianten
-
-Constraints und Invarianten werden auf der Profilseite in den Strukturansichten dargestellt.
-
-### RESTful API
-
-Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) aus den normativen Artefakten dargestellt.
-
-### Mappings
+### Hinweise zu den Elementen
 
 | FHIR Element | Erklärung |
 |--------------|-----------|
@@ -35,7 +15,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | DiagnosticReport.result       | DiagnosticReport sollte min. ein Ergebnis in Form eines Laborergebnisses enthalten|
 | DiagnosticReport.conclusion       | Optional, Textuelle Beschreibung der abschließenden ärztlichen Bewertung des Befundes|
 
-</br>
+### Zuordnung zum logischen Modell
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
@@ -45,12 +25,3 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | DiagnosticReport.effective[x]       |Laborbefund.KlinischerBezugszeitpunkt |
 | DiagnosticReport.issued       |Laborbefund.Dokumentationsdatum|
 | DiagnosticReport.specimen       |Laborbefund.Probenmaterial|
-
----
-
-**Beispiele**
-
-Beispiel (vollständig):
-
-[Vollständiges Beispiel als DiagnosticReport](DiagnosticReport-mii-exa-labor-laborbefund.html)
-

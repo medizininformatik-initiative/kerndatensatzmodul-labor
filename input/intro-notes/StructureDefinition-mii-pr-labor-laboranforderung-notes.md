@@ -1,24 +1,4 @@
-The [MII Laboratory Request profile](StructureDefinition-mii-pr-labor-laboranforderung.html) — ServiceRequestLab — represents the order for a laboratory test.
-
-### Metadata
-
-Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
-
-### Content
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboranforderung" %}
-
-</br>
-
-### Constraints/Invariants
-
-Constraints and invariants are shown in the structure views on the profile page.
-
-### RESTful API
-
-The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
-
-### Mappings
+### Notes on the elements
 
 | FHIR element | Explanation |
 |--------------|-----------|
@@ -33,7 +13,7 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | ServiceRequest.authoredOn | Creation date of the request; if that is not available, the date the request was received |
 | ServiceRequest.specimen | Optional reference; future specifications of further Core Dataset modules may set out requirements in this regard. |
 
-</br>
+### Mapping to the logical model
 
 | FHIR element | Logical dataset |
 |--------------|-----------|
@@ -42,11 +22,3 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | ServiceRequest.code | Laborbefund.Laboranforderung.Laborparameter |
 | ServiceRequest.authoredOn | Laborbefund.Laboranforderung.Anforderungsdatum |
 | ServiceRequest.specimen | Laborbefund.Laboranforderung.Probenmaterial |
-
----
-
-**Examples**
-
-Example (complete):
-
-[Complete example as a ServiceRequest](ServiceRequest-mii-exa-labor-laboranforderung.html)
