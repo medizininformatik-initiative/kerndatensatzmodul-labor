@@ -7,6 +7,9 @@
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "display": "inpatient encounter"
   },
+  "subject": {
+    "reference": "Patient/111"
+  },
   "identifier": [
     {
       "system": "https://example.org/fhir/sid/test-encounters",

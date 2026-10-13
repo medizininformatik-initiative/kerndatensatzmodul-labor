@@ -16,6 +16,7 @@ Usage: #example
 * category[v2-lab].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
 * code.coding[loinc-labReport] = $loinc#11502-2 "Laboratory report"
 * subject.reference = "Patient/111"
+* encounter.reference = "Encounter/555"
 * effectivePeriod.start = "2018-11-19T08:00:00+01:00"
 * effectivePeriod.end = "2018-11-20T08:15:00+01:00"
 * issued = "2018-11-20T14:30:00+01:00"
