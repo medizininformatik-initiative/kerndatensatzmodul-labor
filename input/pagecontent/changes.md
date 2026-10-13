@@ -20,7 +20,7 @@ Changes compared to the ballot version 2027.0.0-ballot.
 - Context extended to `effective` of type `Period` on Observation and DiagnosticReport.
 
 ##### Examples
-- The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Every test refers to the order and to its specimen and has an identifier of its own; all examples carry the versioned `meta.profile` and the test data label (issues #118, #122).
+- The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Order, report and every test refer to the encounter; every test refers to the order and to its specimen and has an identifier of its own; all examples carry the versioned `meta.profile` and the test data label; the Examples page presents them grouped by order, report and specimen (issues #118, #122).
 - The blood specimen is haemolysed (`condition` `v2-0493#HEM`). **NEW**: `mii-exa-labor-laborwert-haemolyse` — potassium from that specimen, reported with a value, interpretation H and the interpretation-affecting property. The creatinine example no longer carries the property.
 - `mii-exa-labor-laborwert-data-absent-reason` is creatinine in spot urine with the status `cancelled`: the urine sediment used up the specimen. It carries neither an interpretation nor a reference range (issue #117).
 - The 24-hour urine example states its collection period as `effectivePeriod`, the report the period from the earliest to the latest collection.
