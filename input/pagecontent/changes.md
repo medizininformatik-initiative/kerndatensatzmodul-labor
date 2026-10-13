@@ -28,9 +28,10 @@ Changes compared to the ballot version 2027.0.0-ballot.
 
 #### Implementation Guide:
 - The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.
-- Laboratory Report page: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
-- Laboratory Test page: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
-- Laboratory Test page: a test that was not performed has the status `cancelled`, with `dataAbsentReason`.
+- The pages Laboratory Report, Laboratory Test and Laboratory Request are dropped; their element notes and the mapping to the logical model appear on the profile pages.
+- Notes on the laboratory report profile: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
+- Notes on the laboratory test profile: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
+- Notes on the laboratory test profile: a test that was not performed has the status `cancelled`, with `dataAbsentReason`.
 
 ### Version: 2027.0.0-ballot
 
