@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_PR_Labor_Laborbefund |
+| Active Stand: 2026-10-13 | *Maschinenlesbarer Name*:MII_PR_Labor_Laborbefund |
 
  
 Laborbefund, der die Ergebnisse einer Laboruntersuchung enthält. 
@@ -293,7 +293,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:42:14+00:00",
+  "date" : "2026-10-13T11:58:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1023,7 +1023,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
-      "definition" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.",
+      "definition" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. \nWenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet. \nAndernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt. \nDieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können.\nStammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum.",
       "_definition" : {
         "extension" : [{
           "extension" : [{
@@ -1032,7 +1032,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
           },
           {
             "url" : "content",
-            "valueString" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach."
+            "valueString" : "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach. Stammen die Untersuchungen aus mehreren Proben oder wurde eine Probe über einen Zeitraum gewonnen (z. B. 24-Stunden-Sammelurin), ist es ein Zeitraum."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         },
@@ -1043,28 +1043,13 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
           },
           {
             "url" : "content",
-            "valueString" : "The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient."
+            "valueString" : "The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient. Where the tests come from several specimens, or a specimen was collected over an interval (for example 24-hour urine), it is a period."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
       "min" : 1,
-      "type" : [{
-        "code" : "dateTime"
-      }],
       "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.effective[x].extension",
-      "path" : "DiagnosticReport.effective[x].extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
     },
     {
       "id" : "DiagnosticReport.effective[x].extension:QuelleKlinischesBezugsdatum",

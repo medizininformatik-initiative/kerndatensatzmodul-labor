@@ -316,6 +316,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Änderungen gegenüber der Ballot-Fassung 2027.0.0-ballot. Sie setzen den Release-Bericht für 2027 um (<a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/233">kerndatensatz-meta#233</a>).</p>
 
 <h4 id="fhirinhaltliche-änderungen">FHIR/Inhaltliche Änderungen:</h4>
+<h5 id="mii_pr_labor_laborbefund-und-mii_pr_labor_laboruntersuchung">MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung</h5>
+<ul>
+  <li>effective[x]: Neben <code class="language-plaintext highlighter-rouge">dateTime</code> ist <code class="language-plaintext highlighter-rouge">Period</code> zulässig; Must Support gilt für beide Typen. Das Element ist nicht geschnitten, seine Element-IDs bleiben unverändert (Issue #140). Ein Zeitraum gibt ein Sammelintervall an, z. B. bei 24-Stunden-Sammelurin. Instanzen mit <code class="language-plaintext highlighter-rouge">dateTime</code> bleiben valide; Systeme, die die Daten verarbeiten, müssen nun auch einen Zeitraum verarbeiten können.</li>
+</ul>
+
 <h5 id="mii_pr_labor_laborbefund">MII_PR_Labor_Laborbefund</h5>
 <ul>
   <li><strong>Breaking Change:</strong> imagingStudy: ausgeschlossen (<code class="language-plaintext highlighter-rouge">0..0</code>), wie im HL7 Europe Laboratory Report (<code class="language-plaintext highlighter-rouge">DiagnosticReport-eu-lab</code>). Ein Laborbefund verweist nicht auf eine ImagingStudy. Das Element war bisher nicht Must Support; Instanzen, die es befüllen, sind nicht mehr valide (Issue #141).</li>
@@ -331,6 +336,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Observation: Suchparameter <code class="language-plaintext highlighter-rouge">performer</code> <strong>NEU</strong>, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter <code class="language-plaintext highlighter-rouge">performer</code> verpflichtend (SHALL).</li>
 </ul>
 
+<h5 id="mii_ex_labor_quelle_klinisches_bezugsdatum">MII_EX_Labor_Quelle_Klinisches_Bezugsdatum</h5>
+<ul>
+  <li>Kontext um <code class="language-plaintext highlighter-rouge">effective</code> vom Typ <code class="language-plaintext highlighter-rouge">Period</code> an Observation und DiagnosticReport erweitert.</li>
+</ul>
+
 <h5 id="beispiele">Beispiele</h5>
 <ul>
   <li>Die Beispiele der Laboruntersuchung tragen zusätzlich zu <code class="language-plaintext highlighter-rouge">performer.reference</code> einen <code class="language-plaintext highlighter-rouge">performer.identifier</code>.</li>
@@ -342,6 +352,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="implementation-guide">Implementation Guide:</h4>
 <ul>
   <li>Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der <a href="index.html">Startseite</a>; die eigene Seite Projektkontext entfällt.</li>
+  <li>Seite Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code> sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).</li>
 </ul>
 
 <h3 id="version-202700-ballot">Version: 2027.0.0-ballot</h3>
@@ -359,7 +370,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code>, die Version, neben der dieses Modul ballotiert wird. Das CapabilityStatement referenziert den Observation-Suchparameter <code class="language-plaintext highlighter-rouge">interpretation</code> jenes Moduls.</li>
 </ul>
 
-<h5 id="mii_pr_labor_laborbefund-und-mii_pr_labor_laboruntersuchung">MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung</h5>
+<h5 id="mii_pr_labor_laborbefund-und-mii_pr_labor_laboruntersuchung-1">MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung</h5>
 <ul>
   <li>category: <code class="language-plaintext highlighter-rouge">category</code> ist offen gesliced, mit einem verpflichtenden Slice, der die verpflichtende HL7-Kodierung trägt — <code class="language-plaintext highlighter-rouge">$v2-0074#LAB</code> im Laborbefund, <code class="language-plaintext highlighter-rouge">$observation-category#laboratory</code> in der Laboruntersuchung. LOINC <code class="language-plaintext highlighter-rouge">26436-6</code> bleibt als weiteres Coding zulässig, ist aber nicht mehr verpflichtend. Das Slicing sitzt bewusst auf <code class="language-plaintext highlighter-rouge">category</code> und nicht auf <code class="language-plaintext highlighter-rouge">category.coding</code>: <code class="language-plaintext highlighter-rouge">category</code> ist <code class="language-plaintext highlighter-rouge">1..*</code>, und Constraints unterhalb eines wiederholbaren Elements gelten für jede Wiederholung — auf <code class="language-plaintext highlighter-rouge">category.coding</code> müsste jede weitere Kategorie die Pflichtcodes wiederholen. Ein Laborbereich gehört als eigener <code class="language-plaintext highlighter-rouge">category</code>-Eintrag neben den Pflicht-Slice. Die Slice-Namen haben sich geändert — <code class="language-plaintext highlighter-rouge">v2-lab</code> und <code class="language-plaintext highlighter-rouge">observation-category</code>; in 2026.0.3 hießen sie <code class="language-plaintext highlighter-rouge">lab-category</code>. Namen erscheinen in Validator-Meldungen und in Profil-Diffs. Gegen die category-Formen aller Releases seit 2025.0.2 und die des Moduls Mikrobiologie geprüft: alle validieren.</li>
 </ul>
@@ -565,7 +576,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Oct 9, 2026 10:42+0000">2026-10-09</span>
+          Erstellt <span title="Tue, Oct 13, 2026 11:58+0000">2026-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

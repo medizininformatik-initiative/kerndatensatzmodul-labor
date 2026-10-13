@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_VS_Labor_Quelle_Klinisches_Bezugsdatum |
+| Active Stand: 2026-10-13 | *Maschinenlesbarer Name*:MII_VS_Labor_Quelle_Klinisches_Bezugsdatum |
 
  
 Kodierung der Quelle des klinischen Bezugsdatums 
@@ -176,7 +176,7 @@ Kodierung der Quelle des klinischen Bezugsdatums
   "title" : "MII VS Labor Quelle klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:42:14+00:00",
+  "date" : "2026-10-13T11:58:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

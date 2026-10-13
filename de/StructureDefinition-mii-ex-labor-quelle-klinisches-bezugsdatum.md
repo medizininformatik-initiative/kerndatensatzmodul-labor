@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_EX_Labor_Quelle_Klinisches_Bezugsdatum |
+| Active Stand: 2026-10-13 | *Maschinenlesbarer Name*:MII_EX_Labor_Quelle_Klinisches_Bezugsdatum |
 
 Quelle des klinischen Bezugsdatums
 
@@ -229,7 +229,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-labor
   "title" : "MII EX Labor Quelle Klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:42:14+00:00",
+  "date" : "2026-10-13T11:58:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -255,7 +255,15 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-labor
   },
   {
     "type" : "fhirpath",
+    "expression" : "Observation.effective.ofType(Period)"
+  },
+  {
+    "type" : "fhirpath",
     "expression" : "DiagnosticReport.effective.ofType(dateTime)"
+  },
+  {
+    "type" : "fhirpath",
+    "expression" : "DiagnosticReport.effective.ofType(Period)"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

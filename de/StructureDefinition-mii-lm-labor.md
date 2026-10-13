@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_LM_Labor |
+| Active Stand: 2026-10-13 | *Maschinenlesbarer Name*:MII_LM_Labor |
 
  
 Logische Repräsentation des Basismoduls Labor 
@@ -224,7 +224,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-labor
   "title" : "MII LM Labor",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:42:14+00:00",
+  "date" : "2026-10-13T11:58:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

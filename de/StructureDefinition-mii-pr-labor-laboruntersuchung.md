@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboruntersuchung |
+| Active Stand: 2026-10-13 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboruntersuchung |
 
  
 Ergebnis einer Laboruntersuchung 
@@ -309,7 +309,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:42:14+00:00",
+  "date" : "2026-10-13T11:58:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1153,7 +1153,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
       },
-      "definition" : "Klinischer Bezugszeitpunkt der Laboruntersuchung",
+      "definition" : "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.",
       "_definition" : {
         "extension" : [{
           "extension" : [{
@@ -1162,7 +1162,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
           },
           {
             "url" : "content",
-            "valueString" : "Klinischer Bezugszeitpunkt der Laboruntersuchung"
+            "valueString" : "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         },
@@ -1173,7 +1173,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
           },
           {
             "url" : "content",
-            "valueString" : "Clinical reference time for the laboratory test."
+            "valueString" : "Clinical reference time for the laboratory test; a period where the specimen was collected over an interval, for example 24-hour urine."
           }],
           "url" : "http://hl7.org/fhir/StructureDefinition/translation"
         }]
@@ -1181,6 +1181,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "min" : 1,
       "type" : [{
         "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
       }],
       "constraint" : [{
         "key" : "mii-lab-1",
@@ -1190,18 +1193,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
         "source" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
       }],
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.effective[x].extension",
-      "path" : "Observation.effective[x].extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
     },
     {
       "id" : "Observation.effective[x].extension:QuelleKlinischesBezugsdatum",

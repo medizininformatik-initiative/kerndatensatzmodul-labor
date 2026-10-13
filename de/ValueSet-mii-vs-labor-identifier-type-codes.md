@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-09 | *Maschinenlesbarer Name*:MII_VS_Labor_Identifier_Type_Codes |
+| Active Stand: 2026-10-13 | *Maschinenlesbarer Name*:MII_VS_Labor_Identifier_Type_Codes |
 
  
 Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu verwenden ist. 
@@ -176,7 +176,7 @@ Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu v
   "title" : "MII VS Labor Identifier Type Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-09T10:42:14+00:00",
+  "date" : "2026-10-13T11:58:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
