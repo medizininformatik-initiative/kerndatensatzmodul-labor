@@ -145,12 +145,12 @@ Description: "Dieses Profil beschreibt eine Laborergebnis in der Medizininformat
 * insert Translation(encounter ^definition, en-US, [[Encounter during which the laboratory test was performed.]])
 * effective[x] 1.. MS
   * ^short = "Untersuchungszeitpunkt"
-  * ^definition = "Klinischer Bezugszeitpunkt der Laboruntersuchung"
+  * ^definition = "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
 * insert Translation(effective[x] ^short, de-DE, Untersuchungszeitpunkt)
 * insert Translation(effective[x] ^short, en-US, Effective time)
-* insert Translation(effective[x] ^definition, de-DE, [[Klinischer Bezugszeitpunkt der Laboruntersuchung]])
-* insert Translation(effective[x] ^definition, en-US, [[Clinical reference time for the laboratory test.]])
-* effective[x] only dateTime
+* insert Translation(effective[x] ^definition, de-DE, [[Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.]])
+* insert Translation(effective[x] ^definition, en-US, [[Clinical reference time for the laboratory test; a period where the specimen was collected over an interval, for example 24-hour urine.]])
+* effective[x] only dateTime or Period
 * effective[x] obeys mii-lab-1
 * effective[x].extension contains mii-ex-labor-quelle-klinisches-bezugsdatum named QuelleKlinischesBezugsdatum 0..1 MS
 * effective[x].extension[QuelleKlinischesBezugsdatum]

@@ -1164,7 +1164,7 @@
             }
           ]
         },
-        "definition": "Klinischer Bezugszeitpunkt der Laboruntersuchung",
+        "definition": "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin.",
         "_definition": {
           "extension": [
             {
@@ -1176,7 +1176,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Klinischer Bezugszeitpunkt der Laboruntersuchung"
+                  "valueString": "Klinischer Bezugszeitpunkt der Laboruntersuchung; ein Zeitraum, wenn die Probe über einen Zeitraum gewonnen wurde, z. B. 24-Stunden-Sammelurin."
                 }
               ]
             },
@@ -1189,7 +1189,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Clinical reference time for the laboratory test."
+                  "valueString": "Clinical reference time for the laboratory test; a period where the specimen was collected over an interval, for example 24-hour urine."
                 }
               ]
             }
@@ -1199,6 +1199,9 @@
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
         "constraint": [
@@ -1211,20 +1214,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x].extension",
-        "path": "Observation.effective[x].extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.effective[x].extension:QuelleKlinischesBezugsdatum",
