@@ -26,6 +26,7 @@
 - Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier (Issue #122).
 - **NEU**: `mii-exa-labor-laborwert-haemolyse` — Kalium aus der hämolytischen Blutprobe, berichtet mit Wert, Interpretation H und interpretationsbeeinflussender Eigenschaft. Das Kreatinin-Beispiel trägt die Eigenschaft nicht mehr.
 - `mii-exa-labor-laborwert-data-absent-reason` ist Kreatinin im Spontanurin, nicht durchgeführt, weil das Urinsediment die Probe aufgebraucht hat.
+- Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als `effectivePeriod` an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme (siehe Issue #140).
 
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.

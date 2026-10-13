@@ -26,6 +26,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 - The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Every test refers to the order and to its specimen, and every test has an identifier of its own (issue #122).
 - **NEW**: `mii-exa-labor-laborwert-haemolyse` — potassium from the haemolysed blood specimen, reported with a value, interpretation H and the interpretation-affecting property. The creatinine example no longer carries the property.
 - `mii-exa-labor-laborwert-data-absent-reason` is creatinine in spot urine, not performed because the urine sediment used up the specimen.
+- The 24-hour urine example states its collection period as `effectivePeriod`, and the report the period from the earliest to the latest collection (see issue #140).
 
 #### Implementation Guide:
 - The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.
