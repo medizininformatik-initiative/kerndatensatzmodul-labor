@@ -1,24 +1,4 @@
-Das [MII Profil Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.html) — DiagnosticReportLab — bildet einen Laborbefund ab.
-
-### Metadaten
-
-Status, Version, Canonical und Basisprofil werden auf der verlinkten Profilseite vom IG Publisher dargestellt.
-
-### Inhalt
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laborbefund" lang="de" %}
-
-</br>
-
-### Constraints/Invarianten
-
-Constraints und Invarianten werden auf der Profilseite in den Strukturansichten dargestellt.
-
-### RESTful API
-
-Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) aus den normativen Artefakten dargestellt.
-
-### Mappings
+### Hinweise zu den Elementen
 
 | FHIR Element | Erklärung |
 |--------------|-----------|
@@ -27,7 +7,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | DiagnosticReport.identifier       | Befundnummer, keine Vorgaben zur Kodierung|
 | DiagnosticReport.basedOn       | Bezug zum initialen ServiceRequest muss stets gegeben sein|
 | DiagnosticReport.status       | Keine Vorgaben, vorläufige Befunde sind erlaubt|
-| DiagnosticReport.category       | Verpflichtende LOINC & HL7 v2 Codes, weitere Codings erlaubt|
+| DiagnosticReport.category       | Verpflichtender HL7-v2-Code `LAB` (v2-0074); weitere Codings und weitere Kategorien erlaubt, z. B. LOINC 26436-6 |
 | DiagnosticReport.subject       | Bezug zum Patienten muss stets gegeben sein|
 | DiagnosticReport.effective[x]       | Klinischer Bezugszeitpunkt des Laborberichts und damit entweder </br>1.) Zeitpunkt der Probenentnahme (Zeitpunkt zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach) oderfalls nicht bzw. nicht ausreichend dokumentiert, </br>2.) Laboreingangszeitpunkt als am nächsten liegender und im Allgemeinen gut dokumentierter Zeitpunkt. Wurde die Probe über einen Zeitraum gewonnen, z. B. 24-Stunden-Sammelurin, gibt effectivePeriod den Sammelzeitraum an. Stammen alle Untersuchungen des Befunds aus einer Probe, ist er identisch zu Observation.effective[x] dieser Untersuchungen. Stammen sie aus mehreren Proben, umfasst effectivePeriod den Zeitraum von der frühesten bis zur spätesten Entnahme; bei einer über einen Zeitraum gewonnenen Probe zählen dessen Beginn und Ende. </br>Die Information wird sowohl im DiagnosticReport als auch in der Observation gespeichert um anschließend Datenauswertungen zu erleichtern. Per Extension 'ExtensionQuelleKlinischesBezugsdatum' soll spezifiziert werden, ob es sich um einen Entnahme- oder Probeneingangszeitpunkt handelt. |
 | DiagnosticReport.issued       | Dokumentationszeitpunkt des Laborbefunds, damit Zeitpunkt der Freigabe (oder Ausgabe) des Befundes|
@@ -35,7 +15,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | DiagnosticReport.result       | DiagnosticReport sollte min. ein Ergebnis in Form eines Laborergebnisses enthalten|
 | DiagnosticReport.conclusion       | Optional, Textuelle Beschreibung der abschließenden ärztlichen Bewertung des Befundes|
 
-</br>
+### Zuordnung zum logischen Modell
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
@@ -45,12 +25,3 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | DiagnosticReport.effective[x]       |Laborbefund.KlinischerBezugszeitpunkt |
 | DiagnosticReport.issued       |Laborbefund.Dokumentationsdatum|
 | DiagnosticReport.specimen       |Laborbefund.Probenmaterial|
-
----
-
-**Beispiele**
-
-Beispiel (vollständig):
-
-[Vollständiges Beispiel als DiagnosticReport](DiagnosticReport-mii-exa-labor-laborbefund.html)
-

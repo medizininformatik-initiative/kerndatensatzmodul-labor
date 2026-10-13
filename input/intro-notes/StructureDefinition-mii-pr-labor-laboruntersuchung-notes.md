@@ -1,24 +1,4 @@
-The [MII Laboratory Test profile](StructureDefinition-mii-pr-labor-laboruntersuchung.html) — ObservationLab — represents the result of a single laboratory test.
-
-### Metadata
-
-Status, version, canonical and base profile are rendered by the IG Publisher on the linked profile page.
-
-### Content
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboruntersuchung" %}
-
-</br>
-
-### Constraints/Invariants
-
-Constraints and invariants are shown in the structure views on the profile page.
-
-### RESTful API
-
-The mandatory interactions and search parameters are set out in the [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) among the normative artifacts.
-
-### Mappings
+### Notes on the elements
 
 | FHIR element | Explanation |
 |--------------|-----------|
@@ -26,7 +6,7 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | Patient.meta | Must Support, but optional |
 | Observation.identifier | The Observation must be unambiguously identifiable; no requirements are made on the coding, preference: 'LOINC CODE_report number' |
 | Observation.status | Final and preliminary results are permitted. A test that was not performed is cancelled, with dataAbsentReason. |
-| Observation.category | LOINC and HL7 code, further codings permitted. </br>No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. </br>For laboratory groups, reference is made to the ValueSet [Laboratory area](ValueSet-mii-vs-labor-laborbereich.html). It may be used optionally. |
+| Observation.category | Mandatory category `laboratory` (observation-category); further codings and further categories permitted, for example LOINC 26436-6. </br>No requirement is made for laboratory groups/areas, since no cross-site agreement exists for these. </br>For laboratory groups, reference is made to the ValueSet [Laboratory area](ValueSet-mii-vs-labor-laborbereich.html). It may be used optionally. |
 | Observation.code | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); in some cases it makes sense to record the local identifier code in addition to the LOINC (see Terminology > LOINC coding at a site). |
 | Observation.subject | A reference to the patient must always be present. |
 | Observation.effective[x] | Test time (clinical reference time) of the laboratory test. Usually a dateTime (see constraint mii-lab-1). If the specimen was collected over an interval, for example 24-hour urine, effectivePeriod states the collection period. The clinical reference time of the laboratory test should be derived from the laboratory receipt time (redundant with Specimen.receivedTime), the collection time (redundant with Specimen.collection.collected[x]) or the clinical reference time of the laboratory report (DiagnosticReport.effective[x]). These values come closest to the point in time at which the measured property in the specimen (e.g. the concentration of an analyte) presumably corresponded to that property in the patient. The extension QuelleKlinischesBezugsdatum is to be used to specify whether the value is a collection time or a specimen receipt time. |
@@ -39,7 +19,7 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | Observation.referenceRange | Should — where available — be coded as high, low (SimpleQuantity). Otherwise, by way of exception, via referenceRange.text. |
 | Observation.component | Observation.hasMember is to be preferred in clinical chemistry (more fitting semantics). The element is permitted for harmonisation with genetic findings. |
 
-</br>
+### Mapping to the logical model
 
 | FHIR element | Logical dataset |
 |--------------|-----------|
@@ -55,11 +35,3 @@ The mandatory interactions and search parameters are set out in the [CapabilityS
 | Observation.note | Laborbefund.Laboruntersuchung.Kommentar |
 | Observation.method | Laborbefund.Laboruntersuchung.Untersuchungsmethode |
 | Observation.referenceRange | Laborbefund.Laboruntersuchung.Referenzbereich |
-
-</br>
-
-**Examples**
-
-Example (complete):
-
-[Complete example as an Observation](Observation-mii-exa-labor-laborwert.html)

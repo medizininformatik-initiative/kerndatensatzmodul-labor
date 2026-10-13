@@ -2,9 +2,9 @@ Die Arbeiten der Kerndatensatzspezifikationen basieren, wo möglich, auf interna
 
 Alle Elemente des Kerndatensatzes, angepasst an die Details und Anforderungen für die Use Cases der Medizininformatik-Initiative, werden in Form von FHIR StructureDefinitions beschrieben. Die Notwendigkeit der Anpassung der FHIR-Profile wird in textueller Form unterhalb der jeweiligen Profile erläutert:
 
-- [Laborbefund (DiagnosticReport)](diagnostic-report.html)
-- [Laboruntersuchung (Observation)](observation.html)
-- [Laboranforderung (ServiceRequest)](service-request.html)
+- [Laborbefund (DiagnosticReport)](StructureDefinition-mii-pr-labor-laborbefund.html)
+- [Laboruntersuchung (Observation)](StructureDefinition-mii-pr-labor-laboruntersuchung.html)
+- [Laboranforderung (ServiceRequest)](StructureDefinition-mii-pr-labor-laboranforderung.html)
 - [Probenmaterial (Specimen)](specimen.html)
 
 Die beiden Extensions des Moduls sind gesondert unter [Extensions](extensions.html) beschrieben.

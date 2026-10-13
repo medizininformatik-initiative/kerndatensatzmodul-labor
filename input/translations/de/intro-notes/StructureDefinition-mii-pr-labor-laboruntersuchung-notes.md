@@ -1,24 +1,4 @@
-Das [MII Profil Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.html) — ObservationLab — bildet das Ergebnis einer einzelnen Laboruntersuchung ab.
-
-### Metadaten
-
-Status, Version, Canonical und Basisprofil werden auf der verlinkten Profilseite vom IG Publisher dargestellt.
-
-### Inhalt
-
-{% include structure-tabs.html artifact="StructureDefinition-mii-pr-labor-laboruntersuchung" lang="de" %}
-
-</br>
-
-### Constraints/Invarianten
-
-Constraints und Invarianten werden auf der Profilseite in den Strukturansichten dargestellt.
-
-### RESTful API
-
-Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html) aus den normativen Artefakten dargestellt.
-
-### Mappings
+### Hinweise zu den Elementen
 
 | FHIR Element | Erklärung |
 |--------------|-----------|
@@ -26,7 +6,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Patient.meta       | Must-support, jedoch optional         |
 | Observation.identifier       | Observation muss eindeutig identifizierbar sein, keine Vorgaben zur Kodierung, Präferenz: 'LOINC CODE_Befundnummer'|
 | Observation.status       |  Finale & vorläufige Ergebnisse sind zulässig. Eine nicht durchgeführte Untersuchung hat den Status cancelled, mit dataAbsentReason. |
-| Observation.category       | LOINC & HL7 Code, weitere Codings erlaubt. </br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. </br>Für Laborgruppen wird auf das ValueSet [Laborbereich](ValueSet-mii-vs-labor-laborbereich.html) verwiesen. Dieses kann optional verwendet werden.|
+| Observation.category       | Verpflichtende Kategorie `laboratory` (observation-category); weitere Codings und weitere Kategorien erlaubt, z. B. LOINC 26436-6. </br>Keine Vorgabe für Laborgruppen/-bereiche, da hier keine standortübergreifende Abstimmung erfolgt. </br>Für Laborgruppen wird auf das ValueSet [Laborbereich](ValueSet-mii-vs-labor-laborbereich.html) verwiesen. Dieses kann optional verwendet werden.|
 | Observation.code       | [IPS LOINC ValueSet](http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-pathology-observations-uv-ips); Zum Teil kann es Sinn machen, zusätzlich zum LOINC den lokalen Bezeichner-Code zu hinterlegen (siehe Terminologien > LOINC-Kodierung am Standort).        |
 | Observation.subject       | Patientenbezug muss stets gegeben sein. |
 | Observation.effective[x] | Untersuchungszeitpunkt (Klinischer Bezugszeitpunkt) der Laboruntersuchung. In der Regel ein dateTime (siehe Constraint mii-lab-1). Wurde die Probe über einen Zeitraum gewonnen, z. B. 24-Stunden-Sammelurin, gibt effectivePeriod den Sammelzeitraum an. Der klinische Bezugszeitpunkt der Laboruntersuchung sollte auf Basis des Laboreingangszeitpunkts (redundant zu Specimen.receivedTime) oder Entnahmezeitpunkt (redundant zu Specimen.collection.collected[x]) oder des klinischen Bezugszeitpunkt des Laborberichts (DiagnosticReport.effective[x]) ermittelt werden. Diese Werte entsprechen am ehestem dem Zeitpunkt zudem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Per extension QuelleKlinischesBezugsdatum soll spezifiziert werden, ob es sich um einen Entnahme- oder Probeneingangszeitpunkt handelt. |
@@ -39,7 +19,7 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Observation.referenceRange      | Sollte - falls vorhanden - als high, low (SimpleQuantity) kodiert werden. Abweichend ansonsten per referenceRange.text.|
 | Observation.component | Observation.hasMember ist im Bereich der klinischen Chemie zu bevorzugen (passendere Semantik). Element ist für die Harmonisierung mit Genetischen Befunden erlaubt. |
 
-</br>
+### Zuordnung zum logischen Modell
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
@@ -49,17 +29,9 @@ Die verpflichtenden Interaktionen und Suchparameter werden im [CapabilityStateme
 | Observation.category      | Laborbefund.Laboruntersuchung.Gruppe|
 | Observation.code      | Laborbefund.Laboruntersuchung.Laborparameter|
 | Observation.effective[x]       | Laborbefund.Laboruntersuchung.Untersuchungszeitpunkt|
-| Observation.issued       | Laborbefund.Laboruntersuchung.Dokumentationsdatum | 
+| Observation.issued       | Laborbefund.Laboruntersuchung.Dokumentationsdatum |
 | Observation.valueQuantity       | Laborbefund.Laboruntersuchung.Messwert |
 | Observation.interpretation       | Laborbefund.Laboruntersuchung.Interpretation |
 | Observation.note       | Laborbefund.Laboruntersuchung.Kommentar |
 | Observation.method       | Laborbefund.Laboruntersuchung.Untersuchungsmethode|
 | Observation.referenceRange       | Laborbefund.Laboruntersuchung.Referenzbereich |
-
-</br>
-
-**Beispiele**
-
-Beispiel (vollständig):
-
-[Vollständiges Beispiel als Observation](Observation-mii-exa-labor-laborwert.html)
