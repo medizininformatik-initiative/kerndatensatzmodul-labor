@@ -40,7 +40,7 @@ Usage: #example
 Instance: mii-exa-labor-laborwert-ratio
 InstanceOf: MII_PR_Labor_Laboruntersuchung
 Title: "Laboratory result: albumin in 24-hour urine"
-Description: "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the end of the collection period."
+Description: "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the collection period, stated as effectivePeriod."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
@@ -57,9 +57,10 @@ Usage: #example
 * code.text = "Albumin (24H U) [Mass/Time]"
 * subject.reference = "Patient/111"
 * encounter.reference = "Encounter/555"
-* effectiveDateTime = "2018-11-20T08:00:00+01:00"
-* effectiveDateTime.extension[QuelleKlinischesBezugsdatum].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
-* effectiveDateTime.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
+* effectivePeriod.start = "2018-11-19T08:00:00+01:00"
+* effectivePeriod.end = "2018-11-20T08:00:00+01:00"
+* effectivePeriod.extension[QuelleKlinischesBezugsdatum].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectivePeriod.extension[QuelleKlinischesBezugsdatum].valueCoding = $sct#399445004 "Specimen collection date"
 * issued = "2018-11-20T14:30:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.identifier.system = "https://example.org/fhir/sid/test-organizations"

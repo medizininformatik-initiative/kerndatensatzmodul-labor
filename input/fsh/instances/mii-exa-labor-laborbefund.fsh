@@ -1,7 +1,7 @@
 Instance: mii-exa-labor-laborbefund
 InstanceOf: MII_PR_Labor_Laborbefund
 Title: "Laboratory report: renal diagnostics"
-Description: "The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient."
+Description: "The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient. Its clinical reference time is the period from the earliest to the latest collection."
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab)
@@ -16,7 +16,8 @@ Usage: #example
 * category[v2-lab].coding[1] = $loinc#26436-6 "Laboratory studies (set)"
 * code.coding[loinc-labReport] = $loinc#11502-2 "Laboratory report"
 * subject.reference = "Patient/111"
-* effectiveDateTime = "2018-11-20T08:00:00+01:00"
+* effectivePeriod.start = "2018-11-19T08:00:00+01:00"
+* effectivePeriod.end = "2018-11-20T08:15:00+01:00"
 * issued = "2018-11-20T14:30:00+01:00"
 * performer.reference = "Organization/7772"
 * performer.identifier.system = "https://example.org/fhir/sid/test-organizations"
