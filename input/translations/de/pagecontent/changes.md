@@ -14,6 +14,7 @@
 
 ##### MII_CPS_Labor_CapabilityStatement
 - Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
+- Observation: Suchparameter `value-ratio` (composite), `value-ratio-numerator` und `value-ratio-denominator` **NEU**, optional (SHOULD). Sie sind im Modul Meta definiert; `value-quantity` erfasst `valueRatio` nicht (Issue #123).
 
 ##### MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
 - Kontext um `effective` vom Typ `Period` an Observation und DiagnosticReport erweitert.
@@ -27,6 +28,7 @@
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
 - Seite Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu `Observation.effective[x]` sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).
+- Seite Laboruntersuchung: wann `valueRatio` der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als `valueQuantity` mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).
 
 ### Version: 2027.0.0-ballot
 

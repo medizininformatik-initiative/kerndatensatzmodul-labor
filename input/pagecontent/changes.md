@@ -14,6 +14,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 
 ##### MII_CPS_Labor_CapabilityStatement
 - Observation: search parameter `performer` **NEW**, optional (SHOULD). For searches by performing laboratory, the DiagnosticReport search parameter `performer` is mandatory (SHALL).
+- Observation: search parameters `value-ratio` (composite), `value-ratio-numerator` and `value-ratio-denominator` **NEW**, optional (SHOULD). They are defined in the Meta module; `value-quantity` does not cover `valueRatio` (issue #123).
 
 ##### MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
 - Context extended to `effective` of type `Period` on Observation and DiagnosticReport.
@@ -27,6 +28,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 #### Implementation Guide:
 - The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.html); the separate page Project Context has been removed.
 - Laboratory Report page: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
+- Laboratory Test page: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
 
 ### Version: 2027.0.0-ballot
 

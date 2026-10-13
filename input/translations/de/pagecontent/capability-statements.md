@@ -9,4 +9,4 @@ Darüber hinaus MUSS in der jeweiligen CapabilityStatement-Instanz unter [`Capab
 
 Die normativen REST-Anforderungen werden unmittelbar aus dem [MII CapabilityStatement Labor](CapabilityStatement-mii-cps-labor-capabilitystatement.html) dargestellt. Die generierte Artefaktseite ist maßgeblich und bleibt mit der FSH-Quelle synchron; der Leitfaden gibt die Tabellen zu Interaktionen, Suchparametern und Operationen daher nicht gesondert wieder.
 
-Das aktuelle CapabilityStatement definiert Anforderungen für Observation, DiagnosticReport und ServiceRequest. Das Modul definiert keine eigenen SearchParameter-Ressourcen — der referenzierte Suchparameter für die Interpretation wird vom Modul Meta publiziert — und legt keine modulspezifischen Operationen fest.
+Das aktuelle CapabilityStatement definiert Anforderungen für Observation, DiagnosticReport und ServiceRequest. Das Modul definiert keine eigenen SearchParameter-Ressourcen — die referenzierten Suchparameter für die Interpretation und für valueRatio (value-ratio, value-ratio-numerator, value-ratio-denominator) werden vom Modul Meta publiziert — und legt keine modulspezifischen Operationen fest.
