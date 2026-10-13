@@ -18,6 +18,8 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **identifier**: Observation Instance Identifier/5787-7_1234567890
 
+**basedOn**: [ServiceRequest Nierendiagnostik](ServiceRequest-mii-exa-labor-laboranforderung.md)
+
 **status**: Final
 
 **category**: Laboratory
@@ -28,13 +30,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **encounter**: [Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)](Encounter-555.md)
 
-**effective**: 2018-11-20 12:05:00+0100
+**effective**: 2018-11-20 08:15:00+0100
 
-**issued**: 2018-03-11 10:28:00+0100
+**issued**: 2018-11-20 14:30:00+0100
 
 **performer**: [Zentrallabor Beispielklinikum](Organization-7772.md)
 
 **value**: 2-5 /HPF
+
+**specimen**: [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4997; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4997.md)
 
 
 
@@ -68,6 +72,9 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       }
     }
   }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
+  }],
   "status" : "final",
   "category" : [{
     "coding" : [{
@@ -97,7 +104,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "encounter" : {
     "reference" : "Encounter/555"
   },
-  "effectiveDateTime" : "2018-11-20T12:05:00+01:00",
+  "effectiveDateTime" : "2018-11-20T08:15:00+01:00",
   "_effectiveDateTime" : {
     "extension" : [{
       "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
@@ -109,7 +116,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       }
     }]
   },
-  "issued" : "2018-03-11T10:28:00+01:00",
+  "issued" : "2018-11-20T14:30:00+01:00",
   "performer" : [{
     "reference" : "Organization/7772",
     "identifier" : {
@@ -131,6 +138,9 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "system" : "http://unitsofmeasure.org",
       "code" : "/[HPF]"
     }
+  },
+  "specimen" : {
+    "reference" : "Specimen/4997"
   }
 }
 

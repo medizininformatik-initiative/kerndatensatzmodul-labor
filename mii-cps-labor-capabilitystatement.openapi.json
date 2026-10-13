@@ -302,6 +302,28 @@
               "type": "string"
             },
             "description": "The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+          },
+          {
+            "name": "value-ratio",
+            "in": "query",
+            "schema": {},
+            "description": "SearchParameter for Observation.valueRatio"
+          },
+          {
+            "name": "value-ratio-denominator",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "SearchParameter for Observation.valueRatio.denominator"
+          },
+          {
+            "name": "value-ratio-numerator",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "SearchParameter for Observation.valueRatio.numerator"
           }
         ]
       }

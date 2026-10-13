@@ -571,24 +571,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="ServiceRequest-mii-exa-labor-laboranforderung.html"
                   title="ServiceRequest/mii-exa-labor-laboranforderung">
-                  <span title="ServiceRequest/mii-exa-labor-laboranforderung">Laboratory order: full blood count
+                  <span title="ServiceRequest/mii-exa-labor-laboranforderung">Laboratory order: renal diagnostics
 </span>
                </a>
             </td>
             <td>
-<p>A laboratory order for a full blood count, the request the reported tests were performed for.</p>
+<p>A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="DiagnosticReport-mii-exa-labor-laborbefund.html"
                   title="DiagnosticReport/mii-exa-labor-laborbefund">
-                  <span title="DiagnosticReport/mii-exa-labor-laborbefund">Laboratory report: creatinine
+                  <span title="DiagnosticReport/mii-exa-labor-laborbefund">Laboratory report: renal diagnostics
 </span>
                </a>
             </td>
             <td>
-<p>A laboratory report grouping the laboratory test examples of this guide.</p>
+<p>The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient. Its clinical reference time is the period from the earliest to the latest collection.</p>
 </td>
          </tr>
          <tr>
@@ -600,7 +600,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.</p>
+<p>Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the collection period, stated as effectivePeriod.</p>
 </td>
          </tr>
          <tr>
@@ -619,12 +619,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Observation-mii-exa-labor-laborwert-data-absent-reason.html"
                   title="Observation/mii-exa-labor-laborwert-data-absent-reason">
-                  <span title="Observation/mii-exa-labor-laborwert-data-absent-reason">Laboratory result: creatinine without a value (Data Absent Reason)
+                  <span title="Observation/mii-exa-labor-laborwert-data-absent-reason">Laboratory result: creatinine in spot urine without a value (Data Absent Reason)
 </span>
                </a>
             </td>
             <td>
-<p>A creatinine test carrying no value: dataAbsentReason states why. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.</p>
+<p>Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.</p>
 </td>
          </tr>
          <tr>
@@ -637,6 +637,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mii-exa-labor-laborwert-haemolyse.html"
+                  title="Observation/mii-exa-labor-laborwert-haemolyse">
+                  <span title="Observation/mii-exa-labor-laborwert-haemolyse">Laboratory result: potassium from a haemolysed specimen
+</span>
+               </a>
+            </td>
+            <td>
+<p>Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value.</p>
 </td>
          </tr>
          <tr>
@@ -680,7 +692,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Minimal reference specimen for the laboratory examples.</p>
+<p>Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-4998.html" title="Specimen/4998">
+                  <span title="Specimen/4998">mii-exa-labor-specimen-24h-urin
+</span>
+               </a>
+            </td>
+            <td>
+<p>24-hour urine collection of the renal diagnostics order.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-4997.html" title="Specimen/4997">
+                  <span title="Specimen/4997">mii-exa-labor-specimen-spontanurin
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine.</p>
 </td>
          </tr>
       </tbody>
@@ -729,7 +763,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Oct 13, 2026 11:58+0000">2026-10-13</span>
+          Erstellt <span title="Tue, Oct 13, 2026 12:04+0000">2026-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

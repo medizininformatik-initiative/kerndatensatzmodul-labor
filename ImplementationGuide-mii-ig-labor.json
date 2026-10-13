@@ -158,7 +158,7 @@
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T11:58:12+00:00",
+  "date" : "2026-10-13T12:04:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1515,8 +1515,8 @@
       "reference" : {
         "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
       },
-      "name" : "Laboratory order: full blood count",
-      "description" : "A laboratory order for a full blood count, the request the reported tests were performed for.",
+      "name" : "Laboratory order: renal diagnostics",
+      "description" : "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
     },
     {
@@ -1527,8 +1527,8 @@
       "reference" : {
         "reference" : "DiagnosticReport/mii-exa-labor-laborbefund"
       },
-      "name" : "Laboratory report: creatinine",
-      "description" : "A laboratory report grouping the laboratory test examples of this guide.",
+      "name" : "Laboratory report: renal diagnostics",
+      "description" : "The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient. Its clinical reference time is the period from the earliest to the latest collection.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
     },
     {
@@ -1540,7 +1540,7 @@
         "reference" : "Observation/mii-exa-labor-laborwert-ratio"
       },
       "name" : "Laboratory result: albumin in 24-hour urine",
-      "description" : "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.",
+      "description" : "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the collection period, stated as effectivePeriod.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1563,8 +1563,8 @@
       "reference" : {
         "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
       },
-      "name" : "Laboratory result: creatinine without a value (Data Absent Reason)",
-      "description" : "A creatinine test carrying no value: dataAbsentReason states why. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
+      "name" : "Laboratory result: creatinine in spot urine without a value (Data Absent Reason)",
+      "description" : "Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1577,6 +1577,18 @@
       },
       "name" : "Laboratory result: epithelial cells in urine sediment (range)",
       "description" : "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-labor-laborwert-haemolyse"
+      },
+      "name" : "Laboratory result: potassium from a haemolysed specimen",
+      "description" : "Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1816,7 +1828,31 @@
         "reference" : "Specimen/4999"
       },
       "name" : "mii-exa-labor-specimen",
-      "description" : "Minimal reference specimen for the laboratory examples.",
+      "description" : "Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/4998"
+      },
+      "name" : "mii-exa-labor-specimen-24h-urin",
+      "description" : "24-hour urine collection of the renal diagnostics order.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/4997"
+      },
+      "name" : "mii-exa-labor-specimen-spontanurin",
+      "description" : "Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine.",
       "exampleBoolean" : true
     }],
     "page" : {

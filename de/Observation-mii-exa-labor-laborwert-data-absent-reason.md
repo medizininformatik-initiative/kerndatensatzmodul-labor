@@ -1,10 +1,10 @@
-# Laboratory result: creatinine without a value (Data Absent Reason) - MII IG Laborbefund v2027.0.0-ci
+# Laboratory result: creatinine in spot urine without a value (Data Absent Reason) - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory result: creatinine without a value (Data Absent Reason)**
+* **Laboratory result: creatinine in spot urine without a value (Data Absent Reason)**
 
-## Beispiel Observation: Laboratory result: creatinine without a value (Data Absent Reason)
+## Beispiel Observation: Laboratory result: creatinine in spot urine without a value (Data Absent Reason)
 
 -------
 
@@ -16,25 +16,36 @@ Profile: [MII PR Labor Laboruntersuchung](StructureDefinition-mii-pr-labor-labor
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html)
 
-**identifier**: Observation Instance Identifier/59826-8_1234567890
+**identifier**: Observation Instance Identifier/14683-7_1234567890
+
+**basedOn**: [ServiceRequest Nierendiagnostik](ServiceRequest-mii-exa-labor-laboranforderung.md)
 
 **status**: Final
 
-**category**: Laboratory, Niere/Elektrolyte
+**category**: Laboratory
 
-**code**: Kreatinin
+**code**: Kreatinin im Urin
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)](Patient-111.md)
 
 **encounter**: [Encounter: identifier = https://example.org/fhir/sid/test-encounters#555; status = finished; class = inpatient encounter (ActCode#IMP)](Encounter-555.md)
 
-**effective**: 2018-11-20 12:05:00+0100
+**effective**: 2018-11-20 08:15:00+0100
 
-**issued**: 2018-03-11 10:28:00+0100
+**issued**: 2018-11-20 14:30:00+0100
 
 **performer**: [Zentrallabor Beispielklinikum](Organization-7772.md)
 
-**dataAbsentReason**: Unknown
+**dataAbsentReason**: Not Performed
+
+**note**: 
+
+> 
+
+Probenmenge nach dem Urinsediment nicht ausreichend.
+
+
+**specimen**: [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4997; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4997.md)
 
 
 
@@ -60,13 +71,16 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       }]
     },
     "system" : "https://example.org/fhir/sid/test-lab-results",
-    "value" : "59826-8_1234567890",
+    "value" : "14683-7_1234567890",
     "assigner" : {
       "identifier" : {
         "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
         "value" : "DIZ-ID"
       }
     }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
   }],
   "status" : "final",
   "category" : [{
@@ -81,21 +95,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       "code" : "26436-6",
       "display" : "Laboratory studies (set)"
     }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://example.org/fhir/sid/Laborgruppe",
-      "code" : "Niere/Elektrolyte"
-    }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
       "version" : "2.82",
-      "code" : "59826-8",
-      "display" : "Creatinine [Moles/volume] in Blood"
+      "code" : "14683-7",
+      "display" : "Creatinine [Moles/volume] in Urine"
     }],
-    "text" : "Kreatinin"
+    "text" : "Kreatinin im Urin"
   },
   "subject" : {
     "reference" : "Patient/111"
@@ -103,7 +111,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "encounter" : {
     "reference" : "Encounter/555"
   },
-  "effectiveDateTime" : "2018-11-20T12:05:00+01:00",
+  "effectiveDateTime" : "2018-11-20T08:15:00+01:00",
   "_effectiveDateTime" : {
     "extension" : [{
       "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
@@ -115,7 +123,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
       }
     }]
   },
-  "issued" : "2018-03-11T10:28:00+01:00",
+  "issued" : "2018-11-20T14:30:00+01:00",
   "performer" : [{
     "reference" : "Organization/7772",
     "identifier" : {
@@ -127,8 +135,14 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "dataAbsentReason" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-      "code" : "unknown"
+      "code" : "not-performed"
     }]
+  },
+  "note" : [{
+    "text" : "Probenmenge nach dem Urinsediment nicht ausreichend."
+  }],
+  "specimen" : {
+    "reference" : "Specimen/4997"
   }
 }
 

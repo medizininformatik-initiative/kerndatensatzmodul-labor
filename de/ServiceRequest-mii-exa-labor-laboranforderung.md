@@ -1,10 +1,10 @@
-# Laboratory order: full blood count - MII IG Laborbefund v2027.0.0-ci
+# Laboratory order: renal diagnostics - MII IG Laborbefund v2027.0.0-ci
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **Laboratory order: full blood count**
+* **Laboratory order: renal diagnostics**
 
-## Beispiel ServiceRequest: Laboratory order: full blood count
+## Beispiel ServiceRequest: Laboratory order: renal diagnostics
 
 -------
 
@@ -24,13 +24,17 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **category**: Laboratory
 
-**code**: GroßesBlutbild
+**code**: Nierendiagnostik
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)](Patient-111.md)
 
-**authoredOn**: 2018-11-20 10:28:00+0100
+**authoredOn**: 2018-11-19 07:30:00+0100
 
-**specimen**: [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999](Specimen-4999.md)
+**specimen**: 
+
+* [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4999; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4999.md)
+* [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4998; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4998.md)
+* [Specimen: identifier = https://example.org/fhir/sid/test-specimens#4997; type = ; receivedTime = 2018-11-20 08:40:00+0100](Specimen-4997.md)
 
 
 
@@ -75,15 +79,22 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "code" : {
     "coding" : [{
       "system" : "http://example.org/fhir/CodeSystem/LabTests",
-      "code" : "GroßesBlutbild"
-    }]
+      "code" : "Nierendiagnostik"
+    }],
+    "text" : "Nierendiagnostik"
   },
   "subject" : {
     "reference" : "Patient/111"
   },
-  "authoredOn" : "2018-11-20T10:28:00+01:00",
+  "authoredOn" : "2018-11-19T07:30:00+01:00",
   "specimen" : [{
     "reference" : "Specimen/4999"
+  },
+  {
+    "reference" : "Specimen/4998"
+  },
+  {
+    "reference" : "Specimen/4997"
   }]
 }
 

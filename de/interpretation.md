@@ -40,5 +40,5 @@ Häufig beziehen sich einzelne Kommentare nicht auf den gesamten Befund, sondern
 
 ### Interpretationsbeeinflussende Eigenschaften (wie "hämolytisch")
 
-Interpretationsbeeinflussende Probeneigenschaften (z.B. Hämolyse, Lipämie, Ikterus), die auf Ebene des Untersuchungsergebnisses angegeben sind, können mithilfe der Modifier-Extension [Interpretationsbeeinflussende Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md) kodiert werden.
+Interpretationsbeeinflussende Probeneigenschaften (z.B. Hämolyse, Lipämie, Ikterus), die auf Ebene des Untersuchungsergebnisses angegeben sind, können mithilfe der Modifier-Extension [Interpretationsbeeinflussende Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md) kodiert werden. Das Beispiel [Kalium aus hämolytischer Probe](Observation-mii-exa-labor-laborwert-haemolyse.md) zeigt den typischen Fall: Der Wert wird berichtet, kann durch die Hämolyse aber falsch hoch sein.
 

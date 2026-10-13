@@ -43,29 +43,29 @@ This publication includes IP covered under the following statements.
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md), [MII_VS_Labor_Order_Codes](ValueSet-mii-vs-labor-order-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 9 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md), [MII_VS_Labor_Order_Codes](ValueSet-mii-vs-labor-order-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md), [MII_EX_Labor_Quelle_Klinisches_Bezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)... Show 8 more, [MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md), [MII_VS_Labor_Laborergbenis_Semiquantitativ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md), [MII_VS_Labor_Laborergebnis_Qualitativ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md), [MII_VS_Labor_Quelle_Klinisches_Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft](StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.md), [MII_EX_Labor_Quelle_Klinisches_Bezugsdatum](StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.md)... Show 9 more, [MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT](ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.md), [MII_VS_Labor_Laborergbenis_Semiquantitativ](ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.md), [MII_VS_Labor_Laborergebnis_Qualitativ](ValueSet-mii-vs-labor-laborergebnis-qualitativ.md), [MII_VS_Labor_Quelle_Klinisches_Bezugsdatum](ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md) and [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
 * [DataAbsentReason](http://terminology.hl7.org/7.2.0/CodeSystem-data-absent-reason.html): [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)... Show 5 more, [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
-* [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md)... Show 6 more, [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [Observation Reference Range Meaning Codes](http://terminology.hl7.org/7.2.0/CodeSystem-referencerange-meaning.html): [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md)
 * [diagnosticServiceSectionId](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0074.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md) and [MII_VS_Labor_Laborbereich](ValueSet-mii-vs-labor-laborbereich.md)
-* [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 8 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [MII_PR_Labor_Laboranforderung](StructureDefinition-mii-pr-labor-laboranforderung.md)... Show 9 more, [MII_PR_Labor_Laborbefund](StructureDefinition-mii-pr-labor-laborbefund.md), [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Identifier_Type_Codes](ValueSet-mii-vs-labor-identifier-type-codes.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md), [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
 * [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/555](Encounter-555.md)
-* [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)... Show 4 more, [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md) and [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)
+* [ActReason](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html): [DiagnosticReport/mii-exa-labor-laborbefund](DiagnosticReport-mii-exa-labor-laborbefund.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md)... Show 5 more, [Observation/mii-exa-labor-laborwert-data-absent-reason](Observation-mii-exa-labor-laborwert-data-absent-reason.md), [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md), [Observation/mii-exa-labor-laborwert-range](Observation-mii-exa-labor-laborwert-range.md), [Observation/mii-exa-labor-laborwert-ratio](Observation-mii-exa-labor-laborwert-ratio.md) and [ServiceRequest/mii-exa-labor-laboranforderung](ServiceRequest-mii-exa-labor-laboranforderung.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [MII_PR_Labor_Laboruntersuchung](StructureDefinition-mii-pr-labor-laboruntersuchung.md), [MII_VS_Labor_Interpretation](ValueSet-mii-vs-labor-interpretation.md), [Observation/mii-exa-labor-laborwert](Observation-mii-exa-labor-laborwert.md) and [Observation/mii-exa-labor-laborwert-haemolyse](Observation-mii-exa-labor-laborwert-haemolyse.md)
 
 
 ### IG Parameter Settings and Expansion Parameters
@@ -233,7 +233,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T11:58:12+00:00",
+  "date" : "2026-10-13T12:04:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1598,8 +1598,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "ServiceRequest/mii-exa-labor-laboranforderung"
       },
-      "name" : "Laboratory order: full blood count",
-      "description" : "A laboratory order for a full blood count, the request the reported tests were performed for.",
+      "name" : "Laboratory order: renal diagnostics",
+      "description" : "A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
     },
     {
@@ -1614,8 +1614,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "DiagnosticReport/mii-exa-labor-laborbefund"
       },
-      "name" : "Laboratory report: creatinine",
-      "description" : "A laboratory report grouping the laboratory test examples of this guide.",
+      "name" : "Laboratory report: renal diagnostics",
+      "description" : "The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient. Its clinical reference time is the period from the earliest to the latest collection.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
     },
     {
@@ -1631,7 +1631,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "Observation/mii-exa-labor-laborwert-ratio"
       },
       "name" : "Laboratory result: albumin in 24-hour urine",
-      "description" : "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter.",
+      "description" : "Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the collection period, stated as effectivePeriod.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1662,8 +1662,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "Observation/mii-exa-labor-laborwert-data-absent-reason"
       },
-      "name" : "Laboratory result: creatinine without a value (Data Absent Reason)",
-      "description" : "A creatinine test carrying no value: dataAbsentReason states why. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
+      "name" : "Laboratory result: creatinine in spot urine without a value (Data Absent Reason)",
+      "description" : "Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1680,6 +1680,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       "name" : "Laboratory result: epithelial cells in urine sediment (range)",
       "description" : "Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange).",
+      "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-mii-exa-labor-laborwert-haemolyse.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-labor-laborwert-haemolyse"
+      },
+      "name" : "Laboratory result: potassium from a haemolysed specimen",
+      "description" : "Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value.",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
     },
     {
@@ -1999,7 +2015,39 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "Specimen/4999"
       },
       "name" : "mii-exa-labor-specimen",
-      "description" : "Minimal reference specimen for the laboratory examples.",
+      "description" : "Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Specimen-4998.html"
+      }],
+      "reference" : {
+        "reference" : "Specimen/4998"
+      },
+      "name" : "mii-exa-labor-specimen-24h-urin",
+      "description" : "24-hour urine collection of the renal diagnostics order.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Specimen-4997.html"
+      }],
+      "reference" : {
+        "reference" : "Specimen/4997"
+      },
+      "name" : "mii-exa-labor-specimen-spontanurin",
+      "description" : "Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine.",
       "exampleBoolean" : true
     }],
     "page" : {

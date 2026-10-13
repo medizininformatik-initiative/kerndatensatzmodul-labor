@@ -138,7 +138,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-10-13T11:58:12+00:00"/>
+  <date value="2026-10-13T12:04:10+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1138,8 +1138,8 @@
       <reference>
         <reference value="ServiceRequest/mii-exa-labor-laboranforderung"/>
       </reference>
-      <name value="Laboratory order: full blood count"/>
-      <description value="A laboratory order for a full blood count, the request the reported tests were performed for."/>
+      <name value="Laboratory order: renal diagnostics"/>
+      <description value="A laboratory order for renal diagnostics — creatinine and potassium in blood, albumin in 24-hour urine, creatinine and the sediment in spot urine. The laboratory report and the five laboratory test examples of this guide belong to it."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"/>
     </resource>
     <resource>
@@ -1149,8 +1149,8 @@
       <reference>
         <reference value="DiagnosticReport/mii-exa-labor-laborbefund"/>
       </reference>
-      <name value="Laboratory report: creatinine"/>
-      <description value="A laboratory report grouping the laboratory test examples of this guide."/>
+      <name value="Laboratory report: renal diagnostics"/>
+      <description value="The laboratory report for the renal diagnostics order. It groups the five laboratory test examples of this guide, performed on three specimens of the same patient. Its clinical reference time is the period from the earliest to the latest collection."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"/>
     </resource>
     <resource>
@@ -1161,7 +1161,7 @@
         <reference value="Observation/mii-exa-labor-laborwert-ratio"/>
       </reference>
       <name value="Laboratory result: albumin in 24-hour urine"/>
-      <description value="Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter."/>
+      <description value="Albumin in 24-hour urine, an excretion rate stated as a valueQuantity with the composed UCUM unit mg/(24.h). A valueRatio would carry the same information, but cannot be found with the value-quantity search parameter. The clinical reference time is the collection period, stated as effectivePeriod."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
     </resource>
     <resource>
@@ -1182,8 +1182,8 @@
       <reference>
         <reference value="Observation/mii-exa-labor-laborwert-data-absent-reason"/>
       </reference>
-      <name value="Laboratory result: creatinine without a value (Data Absent Reason)"/>
-      <description value="A creatinine test carrying no value: dataAbsentReason states why. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."/>
+      <name value="Laboratory result: creatinine in spot urine without a value (Data Absent Reason)"/>
+      <description value="Creatinine in the spot urine of the renal diagnostics order. The urine sediment used up the specimen, so the test was not performed: dataAbsentReason states that, and a note gives the cause. Without a value there is nothing to interpret, so the example carries neither an interpretation nor a reference range."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
     </resource>
     <resource>
@@ -1195,6 +1195,17 @@
       </reference>
       <name value="Laboratory result: epithelial cells in urine sediment (range)"/>
       <description value="Epithelial cells in urine sediment, a test whose result is a range rather than a single value (valueRange)."/>
+      <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-labor-laborwert-haemolyse"/>
+      </reference>
+      <name value="Laboratory result: potassium from a haemolysed specimen"/>
+      <description value="Potassium from the haemolysed blood specimen of the renal diagnostics order. Haemolysis releases potassium from the red cells, so the value is reported but may be falsely high: the interpretation-affecting property names the haemolysis, and a note says what it means for this value."/>
       <exampleCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"/>
     </resource>
     <resource>
@@ -1414,7 +1425,29 @@
         <reference value="Specimen/4999"/>
       </reference>
       <name value="mii-exa-labor-specimen"/>
-      <description value="Minimal reference specimen for the laboratory examples."/>
+      <description value="Venous blood specimen of the renal diagnostics order. It arrived haemolysed, which affects the potassium result."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/4998"/>
+      </reference>
+      <name value="mii-exa-labor-specimen-24h-urin"/>
+      <description value="24-hour urine collection of the renal diagnostics order."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/4997"/>
+      </reference>
+      <name value="mii-exa-labor-specimen-spontanurin"/>
+      <description value="Spot urine specimen of the renal diagnostics order, for the urine sediment and creatinine in urine."/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

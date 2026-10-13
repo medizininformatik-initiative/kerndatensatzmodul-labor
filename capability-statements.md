@@ -9,4 +9,4 @@ The server's CapabilityStatement must declare conformance to the module requirem
 
 The normative REST requirements are rendered directly from the [MII Laboratory CapabilityStatement](CapabilityStatement-mii-cps-labor-capabilitystatement.html). That generated artifact page is authoritative and stays synchronized with the FSH source, so this guide does not restate the interaction, search-parameter and operation tables separately.
 
-The current CapabilityStatement defines requirements for Observation, DiagnosticReport and ServiceRequest. The module defines no SearchParameter resources of its own — the interpretation search parameter it references is published by the Meta module — and declares no module-specific operations.
+The current CapabilityStatement defines requirements for Observation, DiagnosticReport and ServiceRequest. The module defines no SearchParameter resources of its own — the search parameters it references for the interpretation and for valueRatio (value-ratio, value-ratio-numerator, value-ratio-denominator) are published by the Meta module — and declares no module-specific operations.

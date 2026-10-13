@@ -26,6 +26,7 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 ##### MII_CPS_Labor_CapabilityStatement
 
 * Observation: search parameter `performer` **NEW**, optional (SHOULD). For searches by performing laboratory, the DiagnosticReport search parameter `performer` is mandatory (SHALL).
+* Observation: search parameters `value-ratio` (composite), `value-ratio-numerator` and `value-ratio-denominator` **NEW**, optional (SHOULD). They are defined in the Meta module; `value-quantity` does not cover `valueRatio` (issue #123).
 
 ##### MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
 
@@ -37,11 +38,16 @@ Changes compared to the ballot version 2027.0.0-ballot. They implement the relea
 * `fix:` `performer.display` in the laboratory test examples matches the name of the referenced example organization ("Zentrallabor Beispielklinikum" instead of "Zentrallabor des IKCL").
 * `fix:` `mii-exa-labor-laborwert-data-absent-reason` no longer carries an interpretation and a reference range; without a value there is nothing to interpret (issue #117).
 * `fix:` All laboratory examples carry the versioned `meta.profile` and the test data label; `…-ratio` and `…-range` lacked both (issue #118).
+* The examples form one case: an order for renal diagnostics, one report grouping all five laboratory tests, and three specimens of the same patient (venous blood, 24-hour urine, spot urine). Every test refers to the order and to its specimen, and every test has an identifier of its own (issue #122).
+* **NEW**: `mii-exa-labor-laborwert-haemolyse` — potassium from the haemolysed blood specimen, reported with a value, interpretation H and the interpretation-affecting property. The creatinine example no longer carries the property.
+* `mii-exa-labor-laborwert-data-absent-reason` is creatinine in spot urine, not performed because the urine sediment used up the specimen.
+* The 24-hour urine example states its collection period as `effectivePeriod`, and the report the period from the earliest to the latest collection (see issue #140).
 
 #### Implementation Guide:
 
 * The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.md); the separate page Project Context has been removed.
 * Laboratory Report page: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
+* Laboratory Test page: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
 
 ### Version: 2027.0.0-ballot
 

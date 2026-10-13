@@ -334,6 +334,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h5 id="mii_cps_labor_capabilitystatement">MII_CPS_Labor_CapabilityStatement</h5>
 <ul>
   <li>Observation: Suchparameter <code class="language-plaintext highlighter-rouge">performer</code> <strong>NEU</strong>, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter <code class="language-plaintext highlighter-rouge">performer</code> verpflichtend (SHALL).</li>
+  <li>Observation: Suchparameter <code class="language-plaintext highlighter-rouge">value-ratio</code> (composite), <code class="language-plaintext highlighter-rouge">value-ratio-numerator</code> und <code class="language-plaintext highlighter-rouge">value-ratio-denominator</code> <strong>NEU</strong>, optional (SHOULD). Sie sind im Modul Meta definiert; <code class="language-plaintext highlighter-rouge">value-quantity</code> erfasst <code class="language-plaintext highlighter-rouge">valueRatio</code> nicht (Issue #123).</li>
 </ul>
 
 <h5 id="mii_ex_labor_quelle_klinisches_bezugsdatum">MII_EX_Labor_Quelle_Klinisches_Bezugsdatum</h5>
@@ -347,12 +348,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">fix:</code> <code class="language-plaintext highlighter-rouge">performer.display</code> in den Beispielen der Laboruntersuchung entspricht dem Namen der referenzierten Beispiel-Organisation („Zentrallabor Beispielklinikum“ statt „Zentrallabor des IKCL“).</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> <code class="language-plaintext highlighter-rouge">mii-exa-labor-laborwert-data-absent-reason</code> trägt keine Interpretation und keinen Referenzbereich mehr; ohne Wert gibt es nichts zu interpretieren (Issue #117).</li>
   <li><code class="language-plaintext highlighter-rouge">fix:</code> Alle Laborbeispiele tragen das versionierte <code class="language-plaintext highlighter-rouge">meta.profile</code> und das Testdaten-Label; <code class="language-plaintext highlighter-rouge">…-ratio</code> und <code class="language-plaintext highlighter-rouge">…-range</code> fehlte beides (Issue #118).</li>
+  <li>Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier (Issue #122).</li>
+  <li><strong>NEU</strong>: <code class="language-plaintext highlighter-rouge">mii-exa-labor-laborwert-haemolyse</code> — Kalium aus der hämolytischen Blutprobe, berichtet mit Wert, Interpretation H und interpretationsbeeinflussender Eigenschaft. Das Kreatinin-Beispiel trägt die Eigenschaft nicht mehr.</li>
+  <li><code class="language-plaintext highlighter-rouge">mii-exa-labor-laborwert-data-absent-reason</code> ist Kreatinin im Spontanurin, nicht durchgeführt, weil das Urinsediment die Probe aufgebraucht hat.</li>
+  <li>Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als <code class="language-plaintext highlighter-rouge">effectivePeriod</code> an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme (siehe Issue #140).</li>
 </ul>
 
 <h4 id="implementation-guide">Implementation Guide:</h4>
 <ul>
   <li>Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der <a href="index.html">Startseite</a>; die eigene Seite Projektkontext entfällt.</li>
   <li>Seite Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code> sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).</li>
+  <li>Seite Laboruntersuchung: wann <code class="language-plaintext highlighter-rouge">valueRatio</code> der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als <code class="language-plaintext highlighter-rouge">valueQuantity</code> mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).</li>
 </ul>
 
 <h3 id="version-202700-ballot">Version: 2027.0.0-ballot</h3>
@@ -576,7 +582,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Oct 13, 2026 11:58+0000">2026-10-13</span>
+          Erstellt <span title="Tue, Oct 13, 2026 12:04+0000">2026-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
