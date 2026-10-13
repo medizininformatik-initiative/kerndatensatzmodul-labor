@@ -9,9 +9,9 @@ The work on the Core Dataset specifications builds, where possible, on internati
 
 All elements of the Core Dataset, adapted to the details and requirements of the use cases of the Medical Informatics Initiative, are described in the form of FHIR StructureDefinitions. The need to constrain the FHIR profiles is explained in text beneath each profile:
 
-* [Laboratory report (DiagnosticReport)](diagnostic-report.md)
-* [Laboratory test (Observation)](observation.md)
-* [Laboratory request (ServiceRequest)](service-request.md)
+* [Laboratory report (DiagnosticReport)](StructureDefinition-mii-pr-labor-laborbefund.md)
+* [Laboratory test (Observation)](StructureDefinition-mii-pr-labor-laboruntersuchung.md)
+* [Laboratory request (ServiceRequest)](StructureDefinition-mii-pr-labor-laboranforderung.md)
 * [Specimen](specimen.md)
 
 The module's two extensions are described separately under [Extensions](extensions.md).

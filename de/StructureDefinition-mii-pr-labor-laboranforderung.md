@@ -99,6 +99,33 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor-laboranforderung.csv), [Excel](../StructureDefinition-mii-pr-labor-laboranforderung.xlsx), [Schematron](../StructureDefinition-mii-pr-labor-laboranforderung.sch) 
 
+### Notizen:
+
+### Hinweise zu den Elementen
+
+| | |
+| :--- | :--- |
+| Patient.id | Must-support, jedoch optional |
+| Patient.meta | Must-support, jedoch optional |
+| ServiceRequest.identifier | Anforderungsnummer der gewünschten Untersuchung, min. eindeutig durch System und Value identifiziert. Dient zur Verknüfung des Labor-Systems und dem anfordernden System. |
+| ServiceRequest.status | Fixed value, da nur finale Anforderungen abgebildet werden sollen. |
+| ServiceRequest.intent | Fixed value, ServiceRequest repräsentiert immer die Anforderung der Diagnostik. |
+| ServiceRequest.category | Festes Coding`laboratory`(observation-category), weitere Codings erlaubt. |
+| ServiceRequest.code | CodeableConcept, keine Einschränkungen. Falls angeforderte Laborparameter nicht kodiert vorliegen -> CodeableConcept.text |
+| ServiceRequest.subject | Bezug zum Patienten muss stets gegeben sein |
+| ServiceRequest.authoredOn | Erstelldatum der Anforderung, falls nicht vorhanden Eingangsdatum der Anforderung |
+| ServiceRequest.specimen | Optionale Referenz, zukünftige Spezifikationen weiterer Kerndatensatzmodule können diesbezüglich Vorgaben ausgestalten. |
+
+### Zuordnung zum logischen Modell
+
+| | |
+| :--- | :--- |
+| ServiceRequest.identifier | Laborbefund.Laboranforderung.Identifikation |
+| ServiceRequest.status | Laborbefund.Laboranforderung.Status |
+| ServiceRequest.code | Laborbefund.Laboranforderung.Laborparameter |
+| ServiceRequest.authoredOn | Laborbefund.Laboranforderung.Anforderungsdatum |
+| ServiceRequest.specimen | Laborbefund.Laboranforderung.Probenmaterial |
+
 
 
 ## Resource Content
@@ -283,7 +310,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T12:41:55+00:00",
+  "date" : "2026-10-13T13:04:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

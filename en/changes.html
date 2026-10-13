@@ -186,7 +186,8 @@
      additions rather than changes:
      - Guidance carries three module-own pages (Terminology, Laboratory
        Timestamps, References). The project context is part of the home page.
-     - Artifacts carries the four per-resource profile pages after Profiles.
+     - Artifacts links the three profiles directly after Profiles; their
+       element notes live in input/intro-notes, there are no separate pages.
        They are one level deep because only one sub-menu level is supported.
      - Translations is a top-level entry: this IG is bilingual, the page exists,
        and every narrative page must be reachable from a menu.
@@ -236,9 +237,9 @@
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artifacts Summary</a></li>
       <li><a href="profiles.html">Profiles</a></li>
-      <li><a href="diagnostic-report.html">Laboratory Report</a></li>
-      <li><a href="observation.html">Laboratory Test</a></li>
-      <li><a href="service-request.html">Laboratory Request</a></li>
+      <li><a href="StructureDefinition-mii-pr-labor-laborbefund.html">Laboratory Report</a></li>
+      <li><a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">Laboratory Test</a></li>
+      <li><a href="StructureDefinition-mii-pr-labor-laboranforderung.html">Laboratory Request</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
@@ -383,9 +384,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="implementation-guide">Implementation Guide:</h4>
 <ul>
   <li>The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the <a href="index.html">home page</a>; the separate page Project Context has been removed.</li>
-  <li>Laboratory Report page: the clinical reference time must be identical to <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code> only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).</li>
-  <li>Laboratory Test page: when <code class="language-plaintext highlighter-rouge">valueRatio</code> is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take <code class="language-plaintext highlighter-rouge">valueQuantity</code> with a composed UCUM unit (issue #123).</li>
-  <li>Laboratory Test page: a test that was not performed has the status <code class="language-plaintext highlighter-rouge">cancelled</code>, with <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>.</li>
+  <li>The pages Laboratory Report, Laboratory Test and Laboratory Request are dropped; their element notes and the mapping to the logical model appear on the profile pages.</li>
+  <li><code class="language-plaintext highlighter-rouge">fix:</code> The notes on <code class="language-plaintext highlighter-rouge">category</code> match the profiles: on the laboratory report and the laboratory test only the HL7 category is mandatory, LOINC 26436-6 is permitted; the laboratory request fixes <code class="language-plaintext highlighter-rouge">observation-category</code> <code class="language-plaintext highlighter-rouge">laboratory</code>, not an HL7 v2 code.</li>
+  <li>Notes on the laboratory report profile: the clinical reference time must be identical to <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code> only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).</li>
+  <li>Notes on the laboratory test profile: when <code class="language-plaintext highlighter-rouge">valueRatio</code> is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take <code class="language-plaintext highlighter-rouge">valueQuantity</code> with a composed UCUM unit (issue #123).</li>
+  <li>Notes on the laboratory test profile: a test that was not performed has the status <code class="language-plaintext highlighter-rouge">cancelled</code>, with <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>.</li>
 </ul>
 
 <h3 id="version-202700-ballot">Version: 2027.0.0-ballot</h3>
@@ -609,7 +612,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Oct 13, 2026 12:41+0000">2026-10-13</span>
+          Generated <span title="Tue, Oct 13, 2026 13:04+0000">2026-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

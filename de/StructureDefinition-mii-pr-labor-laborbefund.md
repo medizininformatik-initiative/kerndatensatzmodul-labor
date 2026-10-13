@@ -109,6 +109,36 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor-laborbefund.csv), [Excel](../StructureDefinition-mii-pr-labor-laborbefund.xlsx), [Schematron](../StructureDefinition-mii-pr-labor-laborbefund.sch) 
 
+### Notizen:
+
+### Hinweise zu den Elementen
+
+| | |
+| :--- | :--- |
+| Patient.id | Must-support, jedoch optional |
+| Patient.meta | Must-support, jedoch optional |
+| DiagnosticReport.identifier | Befundnummer, keine Vorgaben zur Kodierung |
+| DiagnosticReport.basedOn | Bezug zum initialen ServiceRequest muss stets gegeben sein |
+| DiagnosticReport.status | Keine Vorgaben, vorläufige Befunde sind erlaubt |
+| DiagnosticReport.category | Verpflichtender HL7-v2-Code`LAB`(v2-0074); weitere Codings und weitere Kategorien erlaubt, z. B. LOINC 26436-6 |
+| DiagnosticReport.subject | Bezug zum Patienten muss stets gegeben sein |
+| DiagnosticReport.effective[x] | Klinischer Bezugszeitpunkt des Laborberichts und damit entweder </br>1.) Zeitpunkt der Probenentnahme (Zeitpunkt zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach) oderfalls nicht bzw. nicht ausreichend dokumentiert, </br>2.) Laboreingangszeitpunkt als am nächsten liegender und im Allgemeinen gut dokumentierter Zeitpunkt. Wurde die Probe über einen Zeitraum gewonnen, z. B. 24-Stunden-Sammelurin, gibt effectivePeriod den Sammelzeitraum an. Stammen alle Untersuchungen des Befunds aus einer Probe, ist er identisch zu Observation.effective[x] dieser Untersuchungen. Stammen sie aus mehreren Proben, umfasst effectivePeriod den Zeitraum von der frühesten bis zur spätesten Entnahme; bei einer über einen Zeitraum gewonnenen Probe zählen dessen Beginn und Ende. </br>Die Information wird sowohl im DiagnosticReport als auch in der Observation gespeichert um anschließend Datenauswertungen zu erleichtern. Per Extension 'ExtensionQuelleKlinischesBezugsdatum' soll spezifiziert werden, ob es sich um einen Entnahme- oder Probeneingangszeitpunkt handelt. |
+| DiagnosticReport.issued | Dokumentationszeitpunkt des Laborbefunds, damit Zeitpunkt der Freigabe (oder Ausgabe) des Befundes |
+| DiagnosticReport.specimen | Optionale Referenz, Probeninformationen sind im FHIR-Profil Specimen (Specimen Bioprobe Core) des Erweiterungsmoduls Biobank hinterlegt. |
+| DiagnosticReport.result | DiagnosticReport sollte min. ein Ergebnis in Form eines Laborergebnisses enthalten |
+| DiagnosticReport.conclusion | Optional, Textuelle Beschreibung der abschließenden ärztlichen Bewertung des Befundes |
+
+### Zuordnung zum logischen Modell
+
+| | |
+| :--- | :--- |
+| DiagnosticReport.identifier | Laborbefund.Identifikation |
+| DiagnosticReport.status | Laborbefund.Status |
+| DiagnosticReport.effective[x] | Laborbefund.KlinischesBezugsdatum |
+| DiagnosticReport.effective[x] | Laborbefund.KlinischerBezugszeitpunkt |
+| DiagnosticReport.issued | Laborbefund.Dokumentationsdatum |
+| DiagnosticReport.specimen | Laborbefund.Probenmaterial |
+
 
 
 ## Resource Content
@@ -293,7 +323,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T12:41:55+00:00",
+  "date" : "2026-10-13T13:04:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
