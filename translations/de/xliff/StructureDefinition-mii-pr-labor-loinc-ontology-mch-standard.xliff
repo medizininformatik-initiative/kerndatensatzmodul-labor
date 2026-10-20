@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" original="Resource StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>MII_PR_Labor_LOINC_Ontology_Mch_Standard</source>
+        <target>MII_PR_Labor_LOINC_Ontology_Mch_Standard</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>MII PR Labor LOINC Ontology Mch Standard</source>
+        <target>MII PR Labor LOINC Ontology Mch Standard</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>Medizininformatik Initiative</source>
+        <target>Medizininformatik Initiative</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>Medizininformatik Initiative</source>
+        <target>Medizininformatik Initiative</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.copyright">
+             <notes>
+               <note id="n1">A copyright statement relating to the structure definition and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the structure definition.  The short copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in the copyrightLabel element.</note>
+             </notes>
+        <source>This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.</source>
+        <target>This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.mapping.workflow/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>Workflow Pattern</source>
+        <target>Workflow Pattern</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.mapping.sct-concept/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>SNOMED CT Concept Domain Binding</source>
+        <target>SNOMED CT Concept Domain Binding</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.mapping.v2/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>HL7 v2 Mapping</source>
+        <target>HL7 v2 Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.mapping.w5/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FiveWs Pattern Mapping</source>
+        <target>FiveWs Pattern Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.mapping.sct-attr/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>SNOMED CT Attribute Binding</source>
+        <target>SNOMED CT Attribute Binding</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.element.Observation.code/b/desc">
+             <notes>
+               <note id="n1">Describes the intended use of this particular set of codes.</note>
+             </notes>
+        <source>LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118535001 |Entitic mass (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</source>
+        <target>LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118535001 |Entitic mass (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard" resname="StructureDefinition.element.Observation.value[x]:valueQuantity/comment">
+             <notes>
+               <note id="n1">Explanatory notes and implementation guidance about the data element, including notes about how to use the data properly, exceptions to proper use, etc. (Note: The text you are reading is specified in ElementDefinition.comment).</note>
+             </notes>
+        <source>Expected UCUM unit: pg</source>
+        <target>Expected UCUM unit: pg</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

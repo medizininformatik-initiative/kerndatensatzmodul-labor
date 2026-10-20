@@ -13,3 +13,5 @@ Alongside the international terminologies it uses, the Laboratory Report module 
 | [Identifier types](ValueSet-mii-vs-labor-identifier-type-codes.html) | Type codes determining which identifier to use for a given purpose. |
 
 The codes that apply to `Observation.interpretation`, and how local scales map onto them, are explained under [Interpretations and Comments](interpretation.html).
+
+The ValueSets under [LOINC Ontology ValueSets (Proposal)](loinc-ontology-valuesets.html) are a generated proposal accompanying the ballot comments, not part of the module's normative content.
