@@ -465,6 +465,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>On a terminology server that holds the LOINC Ontology release (for example Snowstorm with the LOINC extension loaded, or the LOINC Ontology browser), all three parts expand and the expansion equals the enumeration.</li>
   <li>On a server without the LOINC Ontology, such as the HL7 server used by the IG build, the SNOMED CT includes cannot be resolved. The build's QA report shows this as a warning for every ECL include and as an error for every enumerated SNOMED CT code without a LOINC code (currently in five ValueSets: the erythrocyte and hematocrit <em>complete</em> and <em>qualitative</em> sets and the leukocyte <em>qualitative</em> set, one concept each). The LOINC enumeration still expands, and validation of an <code class="language-plaintext highlighter-rouge">Observation.code</code> carrying a LOINC code works as usual.</li>
   <li>A validator checking <code class="language-plaintext highlighter-rouge">Observation.code</code> against a derived profile only needs the LOINC enumeration.</li>
+  <li><strong>The module's own CI</strong> validates against the MII terminology server through a proxy. In the October 2026 runs that server rejected every enumerated LOINC and SNOMED CT code, on <code class="language-plaintext highlighter-rouge">master</code> as well (the laboratory-area ValueSet's 18 LOINC codes are reported as invalid there). The branch preview therefore shows one error per enumerated LOINC code of this proposal. Those counts measure the CI terminology setup, not the ValueSets; the build with the public HL7 server reports only the LOINC Ontology errors named above.</li>
 </ul>
 
 <h3 id="versions-and-regeneration">Versions and regeneration</h3>
@@ -500,7 +501,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Oct 20, 2026 02:50+0000">2026-10-20</span>
+          Generated <span title="Tue, Oct 20, 2026 04:35+0000">2026-10-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
