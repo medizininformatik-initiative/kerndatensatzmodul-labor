@@ -32,9 +32,9 @@ Dieselbe Regel, zerlegt wie in den Tabellen der folgenden Seiten:
 | Attribut | Wert | Lesart |
 |---|---|---|
 | Component | Hemoglobin | genau diese Substanz |
-| Direct site | << Blood specimen | dieses Material oder ein Subtyp |
-| Property | << Mass concentration | diese Property oder ein Subtyp |
-| Scale type | << Quantitative value | diese Skala oder ein Subtyp |
+| Direct site | `<< Blood specimen` | dieses Material oder ein Subtyp |
+| Property | `<< Mass concentration` | diese Property oder ein Subtyp |
+| Scale type | `<< Quantitative value` | diese Skala oder ein Subtyp |
 
 ### Die drei Teile jedes ValueSets
 

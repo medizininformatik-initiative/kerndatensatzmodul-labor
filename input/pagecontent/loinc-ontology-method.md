@@ -32,9 +32,9 @@ The same rule, decomposed as the tables on the following pages show it:
 | Attribute | Value | Reading |
 |---|---|---|
 | Component | Hemoglobin | exactly this substance |
-| Direct site | << Blood specimen | this specimen or any subtype |
-| Property | << Mass concentration | this property or any subtype |
-| Scale type | << Quantitative value | this scale or any subtype |
+| Direct site | `<< Blood specimen` | this specimen or any subtype |
+| Property | `<< Mass concentration` | this property or any subtype |
+| Scale type | `<< Quantitative value` | this scale or any subtype |
 
 ### The three parts of every ValueSet
 
