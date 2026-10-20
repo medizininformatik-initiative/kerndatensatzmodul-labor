@@ -5,3 +5,4 @@
 - [Laborergebnis: Kreatinin im Spontanurin ohne Wert (Data Absent Reason)](Observation-mii-exa-labor-laborwert-data-absent-reason.html)
 - [Laborergebnis: Epithelzellen im Urinsediment (Bereich)](Observation-mii-exa-labor-laborwert-range.html)
 - [Laborergebnis: Albumin im 24-Stunden-Urin](Observation-mii-exa-labor-laborwert-ratio.html)
+- [Laborergebnis: Hämoglobin (LOINC-Ontology-Profil, Vorschlag)](Observation-mii-exa-labor-loinc-ontology-hemoglobin.html)
