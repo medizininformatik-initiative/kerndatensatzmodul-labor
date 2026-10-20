@@ -1,0 +1,297 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-labor-loinc-ontology-ldh-convertible",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ci"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-ldh-convertible</b></p><a name=\"de-mii-vs-labor-loinc-ontology-ldh-convertible\"> </a><a name=\"de-hcmii-vs-labor-loinc-ontology-ldh-convertible\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.82\"> version &#x1F4CD;2.82</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/2527-0/\">2527-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2529-6/\">2529-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14803-1/\">14803-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60017-1/\">60017-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2528-8/\">2528-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60024-7/\">60024-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60023-9/\">60023-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/5921-2/\">5921-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/11053-6/\">11053-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14403-0/\">14403-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/33367-4/\">33367-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60019-7/\">60019-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60018-9/\">60018-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/81430-1/\">81430-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2531-2/\">2531-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68387-0/\">68387-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60020-5/\">60020-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2530-4/\">2530-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60022-1/\">60022-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/60021-3/\">60021-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/57664-5/\">57664-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2532-0/\">2532-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14804-9/\">14804-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14805-6/\">14805-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/32324-6/\">32324-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2533-8/\">2533-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68453-0/\">68453-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68452-2/\">68452-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2534-6/\">2534-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/47678-8/\">47678-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2537-9/\">2537-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2535-3/\">2535-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2540-3/\">2540-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2538-7/\">2538-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/19248-4/\">19248-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2543-7/\">2543-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2541-1/\">2541-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2546-0/\">2546-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2544-5/\">2544-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2549-4/\">2549-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2547-8/\">2547-8</a></td><td/></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Convertible",
+  "title" : "MII VS Labor LOINC Ontology Ldh Convertible",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-20",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte ldh (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 41 concepts (41 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "purpose" : "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.",
+  "copyright" : "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "concept" : [{
+        "code" : "2527-0"
+      },
+      {
+        "code" : "2529-6"
+      },
+      {
+        "code" : "14803-1"
+      },
+      {
+        "code" : "60017-1"
+      },
+      {
+        "code" : "2528-8"
+      },
+      {
+        "code" : "60024-7"
+      },
+      {
+        "code" : "60023-9"
+      },
+      {
+        "code" : "5921-2"
+      },
+      {
+        "code" : "11053-6"
+      },
+      {
+        "code" : "14403-0"
+      },
+      {
+        "code" : "33367-4"
+      },
+      {
+        "code" : "60019-7"
+      },
+      {
+        "code" : "60018-9"
+      },
+      {
+        "code" : "81430-1"
+      },
+      {
+        "code" : "2531-2"
+      },
+      {
+        "code" : "68387-0"
+      },
+      {
+        "code" : "60020-5"
+      },
+      {
+        "code" : "2530-4"
+      },
+      {
+        "code" : "60022-1"
+      },
+      {
+        "code" : "60021-3"
+      },
+      {
+        "code" : "57664-5"
+      },
+      {
+        "code" : "2532-0"
+      },
+      {
+        "code" : "14804-9"
+      },
+      {
+        "code" : "14805-6"
+      },
+      {
+        "code" : "32324-6"
+      },
+      {
+        "code" : "2533-8"
+      },
+      {
+        "code" : "68453-0"
+      },
+      {
+        "code" : "68452-2"
+      },
+      {
+        "code" : "2534-6"
+      },
+      {
+        "code" : "47678-8"
+      },
+      {
+        "code" : "2537-9"
+      },
+      {
+        "code" : "2535-3"
+      },
+      {
+        "code" : "2540-3"
+      },
+      {
+        "code" : "2538-7"
+      },
+      {
+        "code" : "19248-4"
+      },
+      {
+        "code" : "2543-7"
+      },
+      {
+        "code" : "2541-1"
+      },
+      {
+        "code" : "2546-0"
+      },
+      {
+        "code" : "2544-5"
+      },
+      {
+        "code" : "2549-4"
+      },
+      {
+        "code" : "2547-8"
+      }]
+    }]
+  }
+}

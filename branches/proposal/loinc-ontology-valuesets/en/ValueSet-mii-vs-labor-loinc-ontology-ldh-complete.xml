@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-labor-loinc-ontology-ldh-complete"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ci"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-ldh-complete</b></p><a name="mii-vs-labor-loinc-ontology-ldh-complete"> </a><a name="hcmii-vs-labor-loinc-ontology-ldh-complete"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.82"> version &#x1F4CD;2.82</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/17041-5/">17041-5</a></td><td style="color: #cccccc">Lactate dehydrogenase [Presence] in Urine</td></tr><tr><td><a href="https://loinc.org/53248-1/">53248-1</a></td><td style="color: #cccccc">Plasmodium sp lactate dehydrogenase [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/51510-6/">51510-6</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51509-8/">51509-8</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51508-0/">51508-0</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/2536-1/">2536-1</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/104814-9/">104814-9</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine</td></tr><tr><td><a href="https://loinc.org/13886-7/">13886-7</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51511-4/">51511-4</a></td><td style="color: #cccccc">Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51513-0/">51513-0</a></td><td style="color: #cccccc">Lactate dehydrogenase 2/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51512-2/">51512-2</a></td><td style="color: #cccccc">Lactate dehydrogenase 2/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/2539-5/">2539-5</a></td><td style="color: #cccccc">Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/13887-5/">13887-5</a></td><td style="color: #cccccc">Lactate dehydrogenase 2/Lactate dehydrogenase.total in Urine by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51516-3/">51516-3</a></td><td style="color: #cccccc">Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51515-5/">51515-5</a></td><td style="color: #cccccc">Lactate dehydrogenase 3/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51514-8/">51514-8</a></td><td style="color: #cccccc">Lactate dehydrogenase 3/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/2542-9/">2542-9</a></td><td style="color: #cccccc">Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/13888-3/">13888-3</a></td><td style="color: #cccccc">Lactate dehydrogenase 3/Lactate dehydrogenase.total in Urine by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51519-7/">51519-7</a></td><td style="color: #cccccc">Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51517-1/">51517-1</a></td><td style="color: #cccccc">Lactate dehydrogenase 4/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51518-9/">51518-9</a></td><td style="color: #cccccc">Lactate dehydrogenase 4/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/2545-2/">2545-2</a></td><td style="color: #cccccc">Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/13889-1/">13889-1</a></td><td style="color: #cccccc">Lactate dehydrogenase 4/Lactate dehydrogenase.total in Urine by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51522-1/">51522-1</a></td><td style="color: #cccccc">Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51520-5/">51520-5</a></td><td style="color: #cccccc">Lactate dehydrogenase 5/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/51521-3/">51521-3</a></td><td style="color: #cccccc">Lactate dehydrogenase 5/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/2548-6/">2548-6</a></td><td style="color: #cccccc">Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/13890-9/">13890-9</a></td><td style="color: #cccccc">Lactate dehydrogenase 5/Lactate dehydrogenase.total in Urine by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/14119-2/">14119-2</a></td><td style="color: #cccccc">Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/109410-1/">109410-1</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Body fluid</td></tr><tr><td><a href="https://loinc.org/109785-6/">109785-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/109686-6/">109686-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Pericardial fluid</td></tr><tr><td><a href="https://loinc.org/109701-3/">109701-3</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Peritoneal fluid</td></tr><tr><td><a href="https://loinc.org/109606-4/">109606-4</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Pleural fluid</td></tr><tr><td><a href="https://loinc.org/108826-9/">108826-9</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/108610-7/">108610-7</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Synovial fluid</td></tr><tr><td><a href="https://loinc.org/110369-6/">110369-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Measurement] in Urine</td></tr><tr><td><a href="https://loinc.org/53561-7/">53561-7</a></td><td style="color: #cccccc">Lactate dehydrogenase/Creatinine [Ratio] in Urine</td></tr><tr><td><a href="https://loinc.org/2527-0/">2527-0</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Amniotic fluid</td></tr><tr><td><a href="https://loinc.org/2529-6/">2529-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid</td></tr><tr><td><a href="https://loinc.org/14803-1/">14803-1</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/60017-1/">60017-1</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/2528-8/">2528-8</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/60024-7/">60024-7</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/60023-9/">60023-9</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/5921-2/">5921-2</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Dialysis fluid</td></tr><tr><td><a href="https://loinc.org/11053-6/">11053-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells</td></tr><tr><td><a href="https://loinc.org/14403-0/">14403-0</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Gastric fluid</td></tr><tr><td><a href="https://loinc.org/33367-4/">33367-4</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid</td></tr><tr><td><a href="https://loinc.org/60019-7/">60019-7</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/60018-9/">60018-9</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/81430-1/">81430-1</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal dialysis fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/2531-2/">2531-2</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal fluid</td></tr><tr><td><a href="https://loinc.org/68387-0/">68387-0</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/60020-5/">60020-5</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal fluid by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/2530-4/">2530-4</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid</td></tr><tr><td><a href="https://loinc.org/60022-1/">60022-1</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/60021-3/">60021-3</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/57664-5/">57664-5</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Semen</td></tr><tr><td><a href="https://loinc.org/2532-0/">2532-0</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/14804-9/">14804-9</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/14805-6/">14805-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/32324-6/">32324-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Specimen</td></tr><tr><td><a href="https://loinc.org/2533-8/">2533-8</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid</td></tr><tr><td><a href="https://loinc.org/68453-0/">68453-0</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Lactate to pyruvate reaction</td></tr><tr><td><a href="https://loinc.org/68452-2/">68452-2</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Pyruvate to lactate reaction</td></tr><tr><td><a href="https://loinc.org/2534-6/">2534-6</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in Urine</td></tr><tr><td><a href="https://loinc.org/47678-8/">47678-8</a></td><td style="color: #cccccc">Lactate dehydrogenase [Enzymatic activity/volume] in 24 hour Urine</td></tr><tr><td><a href="https://loinc.org/2537-9/">2537-9</a></td><td style="color: #cccccc">Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/2535-3/">2535-3</a></td><td style="color: #cccccc">Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href="https://loinc.org/2540-3/">2540-3</a></td><td style="color: #cccccc">Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/2538-7/">2538-7</a></td><td style="color: #cccccc">Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href="https://loinc.org/19248-4/">19248-4</a></td><td style="color: #cccccc">Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/2543-7/">2543-7</a></td><td style="color: #cccccc">Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/2541-1/">2541-1</a></td><td style="color: #cccccc">Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href="https://loinc.org/2546-0/">2546-0</a></td><td style="color: #cccccc">Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/2544-5/">2544-5</a></td><td style="color: #cccccc">Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr><tr><td><a href="https://loinc.org/2549-4/">2549-4</a></td><td style="color: #cccccc">Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/2547-8/">2547-8</a></td><td style="color: #cccccc">Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20260321"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20260321</span> where constraint  = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C36292"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C25294"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="pw@gefyra.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-complete"/>
+  <version value="2027.0.0-ci"/>
+  <name value="MII_VS_Labor_LOINC_Ontology_Ldh_Complete"/>
+  <title value="MII VS Labor LOINC Ontology Ldh Complete"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-20"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 79 concepts (79 with LOINC). The pool ECL is carried as an intensional include."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."/>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <concept>
+        <code value="17041-5"/>
+      </concept>
+      <concept>
+        <code value="53248-1"/>
+      </concept>
+      <concept>
+        <code value="51510-6"/>
+      </concept>
+      <concept>
+        <code value="51509-8"/>
+      </concept>
+      <concept>
+        <code value="51508-0"/>
+      </concept>
+      <concept>
+        <code value="2536-1"/>
+      </concept>
+      <concept>
+        <code value="104814-9"/>
+      </concept>
+      <concept>
+        <code value="13886-7"/>
+      </concept>
+      <concept>
+        <code value="51511-4"/>
+      </concept>
+      <concept>
+        <code value="51513-0"/>
+      </concept>
+      <concept>
+        <code value="51512-2"/>
+      </concept>
+      <concept>
+        <code value="2539-5"/>
+      </concept>
+      <concept>
+        <code value="13887-5"/>
+      </concept>
+      <concept>
+        <code value="51516-3"/>
+      </concept>
+      <concept>
+        <code value="51515-5"/>
+      </concept>
+      <concept>
+        <code value="51514-8"/>
+      </concept>
+      <concept>
+        <code value="2542-9"/>
+      </concept>
+      <concept>
+        <code value="13888-3"/>
+      </concept>
+      <concept>
+        <code value="51519-7"/>
+      </concept>
+      <concept>
+        <code value="51517-1"/>
+      </concept>
+      <concept>
+        <code value="51518-9"/>
+      </concept>
+      <concept>
+        <code value="2545-2"/>
+      </concept>
+      <concept>
+        <code value="13889-1"/>
+      </concept>
+      <concept>
+        <code value="51522-1"/>
+      </concept>
+      <concept>
+        <code value="51520-5"/>
+      </concept>
+      <concept>
+        <code value="51521-3"/>
+      </concept>
+      <concept>
+        <code value="2548-6"/>
+      </concept>
+      <concept>
+        <code value="13890-9"/>
+      </concept>
+      <concept>
+        <code value="14119-2"/>
+      </concept>
+      <concept>
+        <code value="109410-1"/>
+      </concept>
+      <concept>
+        <code value="109785-6"/>
+      </concept>
+      <concept>
+        <code value="109686-6"/>
+      </concept>
+      <concept>
+        <code value="109701-3"/>
+      </concept>
+      <concept>
+        <code value="109606-4"/>
+      </concept>
+      <concept>
+        <code value="108826-9"/>
+      </concept>
+      <concept>
+        <code value="108610-7"/>
+      </concept>
+      <concept>
+        <code value="110369-6"/>
+      </concept>
+      <concept>
+        <code value="53561-7"/>
+      </concept>
+      <concept>
+        <code value="2527-0"/>
+      </concept>
+      <concept>
+        <code value="2529-6"/>
+      </concept>
+      <concept>
+        <code value="14803-1"/>
+      </concept>
+      <concept>
+        <code value="60017-1"/>
+      </concept>
+      <concept>
+        <code value="2528-8"/>
+      </concept>
+      <concept>
+        <code value="60024-7"/>
+      </concept>
+      <concept>
+        <code value="60023-9"/>
+      </concept>
+      <concept>
+        <code value="5921-2"/>
+      </concept>
+      <concept>
+        <code value="11053-6"/>
+      </concept>
+      <concept>
+        <code value="14403-0"/>
+      </concept>
+      <concept>
+        <code value="33367-4"/>
+      </concept>
+      <concept>
+        <code value="60019-7"/>
+      </concept>
+      <concept>
+        <code value="60018-9"/>
+      </concept>
+      <concept>
+        <code value="81430-1"/>
+      </concept>
+      <concept>
+        <code value="2531-2"/>
+      </concept>
+      <concept>
+        <code value="68387-0"/>
+      </concept>
+      <concept>
+        <code value="60020-5"/>
+      </concept>
+      <concept>
+        <code value="2530-4"/>
+      </concept>
+      <concept>
+        <code value="60022-1"/>
+      </concept>
+      <concept>
+        <code value="60021-3"/>
+      </concept>
+      <concept>
+        <code value="57664-5"/>
+      </concept>
+      <concept>
+        <code value="2532-0"/>
+      </concept>
+      <concept>
+        <code value="14804-9"/>
+      </concept>
+      <concept>
+        <code value="14805-6"/>
+      </concept>
+      <concept>
+        <code value="32324-6"/>
+      </concept>
+      <concept>
+        <code value="2533-8"/>
+      </concept>
+      <concept>
+        <code value="68453-0"/>
+      </concept>
+      <concept>
+        <code value="68452-2"/>
+      </concept>
+      <concept>
+        <code value="2534-6"/>
+      </concept>
+      <concept>
+        <code value="47678-8"/>
+      </concept>
+      <concept>
+        <code value="2537-9"/>
+      </concept>
+      <concept>
+        <code value="2535-3"/>
+      </concept>
+      <concept>
+        <code value="2540-3"/>
+      </concept>
+      <concept>
+        <code value="2538-7"/>
+      </concept>
+      <concept>
+        <code value="19248-4"/>
+      </concept>
+      <concept>
+        <code value="2543-7"/>
+      </concept>
+      <concept>
+        <code value="2541-1"/>
+      </concept>
+      <concept>
+        <code value="2546-0"/>
+      </concept>
+      <concept>
+        <code value="2544-5"/>
+      </concept>
+      <concept>
+        <code value="2549-4"/>
+      </concept>
+      <concept>
+        <code value="2547-8"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11010000107/version/20260321"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

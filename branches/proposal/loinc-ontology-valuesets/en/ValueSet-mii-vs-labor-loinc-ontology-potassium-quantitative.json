@@ -1,0 +1,345 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-labor-loinc-ontology-potassium-quantitative",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ci"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-potassium-quantitative</b></p><a name=\"mii-vs-labor-loinc-ontology-potassium-quantitative\"> </a><a name=\"hcmii-vs-labor-loinc-ontology-potassium-quantitative\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.82\"> version &#x1F4CD;2.82</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/79710-0/\">79710-0</a></td><td style=\"color: #cccccc\">Potassium [Mass/mass] in Hair</td></tr><tr><td><a href=\"https://loinc.org/59733-6/\">59733-6</a></td><td style=\"color: #cccccc\">Potassium [Mass/mass] in Tissue</td></tr><tr><td><a href=\"https://loinc.org/11148-4/\">11148-4</a></td><td style=\"color: #cccccc\">Potassium/Creatinine [Mass Ratio] in Urine</td></tr><tr><td><a href=\"https://loinc.org/13798-4/\">13798-4</a></td><td style=\"color: #cccccc\">Potassium/Creatinine [Mass Ratio] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/108797-2/\">108797-2</a></td><td style=\"color: #cccccc\">Potassium [Measurement] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/111266-3/\">111266-3</a></td><td style=\"color: #cccccc\">Potassium [Measurement] in Stool</td></tr><tr><td><a href=\"https://loinc.org/111459-4/\">111459-4</a></td><td style=\"color: #cccccc\">Potassium [Measurement] in Urine</td></tr><tr><td><a href=\"https://loinc.org/43222-9/\">43222-9</a></td><td style=\"color: #cccccc\">Potassium/Creatinine [Ratio] in Urine</td></tr><tr><td><a href=\"https://loinc.org/56971-5/\">56971-5</a></td><td style=\"color: #cccccc\">Potassium/Creatinine [Ratio] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/32550-6/\">32550-6</a></td><td style=\"color: #cccccc\">Potassium [Molar amount] in Urine collected for unspecified duration</td></tr><tr><td><a href=\"https://loinc.org/50902-6/\">50902-6</a></td><td style=\"color: #cccccc\">Potassium [Moles/mass] in Hair</td></tr><tr><td><a href=\"https://loinc.org/25506-7/\">25506-7</a></td><td style=\"color: #cccccc\">Potassium [Moles/mass] in Stool</td></tr><tr><td><a href=\"https://loinc.org/27441-5/\">27441-5</a></td><td style=\"color: #cccccc\">Potassium [Moles/mass] in 24 hour Stool</td></tr><tr><td><a href=\"https://loinc.org/33949-9/\">33949-9</a></td><td style=\"color: #cccccc\">Potassium/Creatinine [Molar ratio] in Urine</td></tr><tr><td><a href=\"https://loinc.org/56143-1/\">56143-1</a></td><td style=\"color: #cccccc\">Potassium/Creatinine [Molar ratio] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/75940-7/\">75940-7</a></td><td style=\"color: #cccccc\">Potassium [Mass/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/82722-0/\">82722-0</a></td><td style=\"color: #cccccc\">Potassium [Mass/volume] in Red Blood Cells</td></tr><tr><td><a href=\"https://loinc.org/22760-3/\">22760-3</a></td><td style=\"color: #cccccc\">Potassium [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/9482-1/\">9482-1</a></td><td style=\"color: #cccccc\">Potassium [Mass/volume] in Water</td></tr><tr><td><a href=\"https://loinc.org/42569-4/\">42569-4</a></td><td style=\"color: #cccccc\">Potassium [Mass or Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/49788-3/\">49788-3</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Amniotic fluid</td></tr><tr><td><a href=\"https://loinc.org/32713-0/\">32713-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Arterial blood</td></tr><tr><td><a href=\"https://loinc.org/6298-4/\">6298-4</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/2821-7/\">2821-7</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Body fluid</td></tr><tr><td><a href=\"https://loinc.org/39790-1/\">39790-1</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Capillary blood</td></tr><tr><td><a href=\"https://loinc.org/2819-1/\">2819-1</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Cerebral spinal fluid</td></tr><tr><td><a href=\"https://loinc.org/2820-9/\">2820-9</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Dialysis fluid</td></tr><tr><td><a href=\"https://loinc.org/2824-1/\">2824-1</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Red Blood Cells</td></tr><tr><td><a href=\"https://loinc.org/2822-5/\">2822-5</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Gastric fluid</td></tr><tr><td><a href=\"https://loinc.org/17795-6/\">17795-6</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Hyperal solution</td></tr><tr><td><a href=\"https://loinc.org/41656-0/\">41656-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Mixed venous blood</td></tr><tr><td><a href=\"https://loinc.org/60218-5/\">60218-5</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Mother's milk</td></tr><tr><td><a href=\"https://loinc.org/39785-1/\">39785-1</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Peritoneal dialysis fluid</td></tr><tr><td><a href=\"https://loinc.org/49789-1/\">49789-1</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Peritoneal fluid</td></tr><tr><td><a href=\"https://loinc.org/77142-8/\">77142-8</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href=\"https://loinc.org/2825-8/\">2825-8</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Saliva (oral fluid)</td></tr><tr><td><a href=\"https://loinc.org/2823-3/\">2823-3</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href=\"https://loinc.org/93998-3/\">93998-3</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma --1 hour post dose vasopressin</td></tr><tr><td><a href=\"https://loinc.org/94007-2/\">94007-2</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma --2 hours post dose vasopressin</td></tr><tr><td><a href=\"https://loinc.org/12812-4/\">12812-4</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma --2nd specimen</td></tr><tr><td><a href=\"https://loinc.org/12813-2/\">12813-2</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma --3rd specimen</td></tr><tr><td><a href=\"https://loinc.org/29349-8/\">29349-8</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma --post dialysis</td></tr><tr><td><a href=\"https://loinc.org/51618-7/\">51618-7</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Serum or Plasma --pre dialysis</td></tr><tr><td><a href=\"https://loinc.org/32336-0/\">32336-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Specimen</td></tr><tr><td><a href=\"https://loinc.org/15202-5/\">15202-5</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Stool</td></tr><tr><td><a href=\"https://loinc.org/59162-8/\">59162-8</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in 24 hour Stool</td></tr><tr><td><a href=\"https://loinc.org/2827-4/\">2827-4</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Sweat</td></tr><tr><td><a href=\"https://loinc.org/14172-1/\">14172-1</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Synovial fluid</td></tr><tr><td><a href=\"https://loinc.org/30549-0/\">30549-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Total parental nutrition</td></tr><tr><td><a href=\"https://loinc.org/35677-4/\">35677-4</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Urine collected for unspecified duration</td></tr><tr><td><a href=\"https://loinc.org/2828-2/\">2828-2</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Urine</td></tr><tr><td><a href=\"https://loinc.org/57355-0/\">57355-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in 12 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/57379-0/\">57379-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in 2 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/21476-7/\">21476-7</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in 24 hour Urine</td></tr><tr><td><a href=\"https://loinc.org/94841-4/\">94841-4</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Urine from Fetus</td></tr><tr><td><a href=\"https://loinc.org/39789-3/\">39789-3</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Venous blood</td></tr><tr><td><a href=\"https://loinc.org/12814-0/\">12814-0</a></td><td style=\"color: #cccccc\">Potassium [Moles/volume] in Vitreous fluid</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-potassium-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Potassium_Quantitative",
+  "title" : "MII VS Labor LOINC Ontology Potassium Quantitative",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-20",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte potassium (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-03-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "purpose" : "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.",
+  "copyright" : "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "concept" : [{
+        "code" : "79710-0"
+      },
+      {
+        "code" : "59733-6"
+      },
+      {
+        "code" : "11148-4"
+      },
+      {
+        "code" : "13798-4"
+      },
+      {
+        "code" : "108797-2"
+      },
+      {
+        "code" : "111266-3"
+      },
+      {
+        "code" : "111459-4"
+      },
+      {
+        "code" : "43222-9"
+      },
+      {
+        "code" : "56971-5"
+      },
+      {
+        "code" : "32550-6"
+      },
+      {
+        "code" : "50902-6"
+      },
+      {
+        "code" : "25506-7"
+      },
+      {
+        "code" : "27441-5"
+      },
+      {
+        "code" : "33949-9"
+      },
+      {
+        "code" : "56143-1"
+      },
+      {
+        "code" : "75940-7"
+      },
+      {
+        "code" : "82722-0"
+      },
+      {
+        "code" : "22760-3"
+      },
+      {
+        "code" : "9482-1"
+      },
+      {
+        "code" : "42569-4"
+      },
+      {
+        "code" : "49788-3"
+      },
+      {
+        "code" : "32713-0"
+      },
+      {
+        "code" : "6298-4"
+      },
+      {
+        "code" : "2821-7"
+      },
+      {
+        "code" : "39790-1"
+      },
+      {
+        "code" : "2819-1"
+      },
+      {
+        "code" : "2820-9"
+      },
+      {
+        "code" : "2824-1"
+      },
+      {
+        "code" : "2822-5"
+      },
+      {
+        "code" : "17795-6"
+      },
+      {
+        "code" : "41656-0"
+      },
+      {
+        "code" : "60218-5"
+      },
+      {
+        "code" : "39785-1"
+      },
+      {
+        "code" : "49789-1"
+      },
+      {
+        "code" : "77142-8"
+      },
+      {
+        "code" : "2825-8"
+      },
+      {
+        "code" : "2823-3"
+      },
+      {
+        "code" : "93998-3"
+      },
+      {
+        "code" : "94007-2"
+      },
+      {
+        "code" : "12812-4"
+      },
+      {
+        "code" : "12813-2"
+      },
+      {
+        "code" : "29349-8"
+      },
+      {
+        "code" : "51618-7"
+      },
+      {
+        "code" : "32336-0"
+      },
+      {
+        "code" : "15202-5"
+      },
+      {
+        "code" : "59162-8"
+      },
+      {
+        "code" : "2827-4"
+      },
+      {
+        "code" : "14172-1"
+      },
+      {
+        "code" : "30549-0"
+      },
+      {
+        "code" : "35677-4"
+      },
+      {
+        "code" : "2828-2"
+      },
+      {
+        "code" : "57355-0"
+      },
+      {
+        "code" : "57379-0"
+      },
+      {
+        "code" : "21476-7"
+      },
+      {
+        "code" : "94841-4"
+      },
+      {
+        "code" : "39789-3"
+      },
+      {
+        "code" : "12814-0"
+      }]
+    }]
+  }
+}

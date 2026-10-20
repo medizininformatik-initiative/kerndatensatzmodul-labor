@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-labor-loinc-ontology-mch-complete"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ci"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-mch-complete</b></p><a name="mii-vs-labor-loinc-ontology-mch-complete"> </a><a name="hcmii-vs-labor-loinc-ontology-mch-complete"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.82"> version &#x1F4CD;2.82</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/32160-4/">32160-4</a></td><td style="color: #cccccc">Carboxyhemoglobin [Presence] in Blood by Screen method</td></tr><tr><td><a href="https://loinc.org/45208-6/">45208-6</a></td><td style="color: #cccccc">Hemoglobin A [Presence] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/28559-3/">28559-3</a></td><td style="color: #cccccc">Hemoglobin A2 [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/27345-8/">27345-8</a></td><td style="color: #cccccc">Hemoglobin A2 [Presence] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/4556-7/">4556-7</a></td><td style="color: #cccccc">Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4557-5/">4557-5</a></td><td style="color: #cccccc">Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4558-3/">4558-3</a></td><td style="color: #cccccc">Hemoglobin Barts [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4559-1/">4559-1</a></td><td style="color: #cccccc">Hemoglobin Barts [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/55783-5/">55783-5</a></td><td style="color: #cccccc">Hemoglobin Barts [Presence] in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/4560-9/">4560-9</a></td><td style="color: #cccccc">Hemoglobin Bethesda [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/40720-5/">40720-5</a></td><td style="color: #cccccc">Hemoglobin C [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/40545-6/">40545-6</a></td><td style="color: #cccccc">Hemoglobin C [Presence] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/4564-1/">4564-1</a></td><td style="color: #cccccc">Hemoglobin C - Harlem [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4565-8/">4565-8</a></td><td style="color: #cccccc">Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4566-6/">4566-6</a></td><td style="color: #cccccc">Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4567-4/">4567-4</a></td><td style="color: #cccccc">Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4568-2/">4568-2</a></td><td style="color: #cccccc">Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4572-4/">4572-4</a></td><td style="color: #cccccc">Hemoglobin Denver [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/40546-4/">40546-4</a></td><td style="color: #cccccc">Hemoglobin E [Presence] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/28067-7/">28067-7</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Amniotic fluid</td></tr><tr><td><a href="https://loinc.org/4579-9/">4579-9</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4632-6/">4632-6</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Blood by Alkali denaturation</td></tr><tr><td><a href="https://loinc.org/32140-6/">32140-6</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Blood by Kleihauer-Betke method</td></tr><tr><td><a href="https://loinc.org/18277-4/">18277-4</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Gastric fluid by Apt-Downey method</td></tr><tr><td><a href="https://loinc.org/18278-2/">18278-2</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Meconium by Apt-Downey method</td></tr><tr><td><a href="https://loinc.org/30074-9/">30074-9</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Specimen</td></tr><tr><td><a href="https://loinc.org/40721-3/">40721-3</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Specimen by Apt-Downey method</td></tr><tr><td><a href="https://loinc.org/4631-8/">4631-8</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Stool by Apt-Downey method</td></tr><tr><td><a href="https://loinc.org/28006-5/">28006-5</a></td><td style="color: #cccccc">Hemoglobin F [Presence] in Vomitus</td></tr><tr><td><a href="https://loinc.org/4577-3/">4577-3</a></td><td style="color: #cccccc">Hemoglobin F - Texas [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4581-5/">4581-5</a></td><td style="color: #cccccc">Hemoglobin G - Coushatta [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4583-1/">4583-1</a></td><td style="color: #cccccc">Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4584-9/">4584-9</a></td><td style="color: #cccccc">Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4585-6/">4585-6</a></td><td style="color: #cccccc">Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4586-4/">4586-4</a></td><td style="color: #cccccc">Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/40547-2/">40547-2</a></td><td style="color: #cccccc">Hemoglobin H [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/17871-5/">17871-5</a></td><td style="color: #cccccc">Hemoglobin H [Presence] in Blood by Heat denaturation</td></tr><tr><td><a href="https://loinc.org/4589-8/">4589-8</a></td><td style="color: #cccccc">Hemoglobin Hasharon [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4590-6/">4590-6</a></td><td style="color: #cccccc">Hemoglobin Hasharon [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4591-4/">4591-4</a></td><td style="color: #cccccc">Hemoglobin Hope [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4592-2/">4592-2</a></td><td style="color: #cccccc">Hemoglobin Hope [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4593-0/">4593-0</a></td><td style="color: #cccccc">Hemoglobin I [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4594-8/">4594-8</a></td><td style="color: #cccccc">Hemoglobin I [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4598-9/">4598-9</a></td><td style="color: #cccccc">Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4599-7/">4599-7</a></td><td style="color: #cccccc">Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/717-9/">717-9</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/33517-4/">33517-4</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Body fluid</td></tr><tr><td><a href="https://loinc.org/48035-0/">48035-0</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/2334-1/">2334-1</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Gastric fluid from gastrointestinal</td></tr><tr><td><a href="https://loinc.org/42909-2/">42909-2</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Gastric fluid from gastrointestinal --1st specimen</td></tr><tr><td><a href="https://loinc.org/42910-0/">42910-0</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Gastric fluid from gastrointestinal --2nd specimen</td></tr><tr><td><a href="https://loinc.org/42911-8/">42911-8</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Gastric fluid from gastrointestinal --3rd specimen</td></tr><tr><td><a href="https://loinc.org/34618-9/">34618-9</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Specimen</td></tr><tr><td><a href="https://loinc.org/50017-3/">50017-3</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Sputum or Gastric fluid from gastrointestinal</td></tr><tr><td><a href="https://loinc.org/2335-8/">2335-8</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal</td></tr><tr><td><a href="https://loinc.org/14563-1/">14563-1</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --1st specimen</td></tr><tr><td><a href="https://loinc.org/14564-9/">14564-9</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --2nd specimen</td></tr><tr><td><a href="https://loinc.org/14565-6/">14565-6</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --3rd specimen</td></tr><tr><td><a href="https://loinc.org/12503-9/">12503-9</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --4th specimen</td></tr><tr><td><a href="https://loinc.org/12504-7/">12504-7</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --5th specimen</td></tr><tr><td><a href="https://loinc.org/27401-9/">27401-9</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --6th specimen</td></tr><tr><td><a href="https://loinc.org/27925-7/">27925-7</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --7th specimen</td></tr><tr><td><a href="https://loinc.org/27926-5/">27926-5</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal --8th specimen</td></tr><tr><td><a href="https://loinc.org/80372-6/">80372-6</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal by Rapid immunoassay</td></tr><tr><td><a href="https://loinc.org/104738-0/">104738-0</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal lower</td></tr><tr><td><a href="https://loinc.org/29771-3/">29771-3</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay</td></tr><tr><td><a href="https://loinc.org/57905-2/">57905-2</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --1st specimen</td></tr><tr><td><a href="https://loinc.org/56490-6/">56490-6</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --2nd specimen</td></tr><tr><td><a href="https://loinc.org/56491-4/">56491-4</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --3rd specimen</td></tr><tr><td><a href="https://loinc.org/725-2/">725-2</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Urine</td></tr><tr><td><a href="https://loinc.org/57751-0/">57751-0</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Urine by Automated test strip</td></tr><tr><td><a href="https://loinc.org/5794-3/">5794-3</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Urine by Test strip</td></tr><tr><td><a href="https://loinc.org/48047-5/">48047-5</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Vomitus from gastrointestinal</td></tr><tr><td><a href="https://loinc.org/42912-6/">42912-6</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Specimen from gastrointestinal --2nd specimen</td></tr><tr><td><a href="https://loinc.org/42913-4/">42913-4</a></td><td style="color: #cccccc">Hemoglobin [Presence] in Specimen from gastrointestinal lower --1st specimen</td></tr><tr><td><a href="https://loinc.org/4595-5/">4595-5</a></td><td style="color: #cccccc">Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4596-3/">4596-3</a></td><td style="color: #cccccc">Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4597-1/">4597-1</a></td><td style="color: #cccccc">Hemoglobin J - Capetown [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4600-3/">4600-3</a></td><td style="color: #cccccc">Hemoglobin Kansas [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4601-1/">4601-1</a></td><td style="color: #cccccc">Hemoglobin Kempsey [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4602-9/">4602-9</a></td><td style="color: #cccccc">Hemoglobin Kempsey [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4603-7/">4603-7</a></td><td style="color: #cccccc">Hemoglobin Koln [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4604-5/">4604-5</a></td><td style="color: #cccccc">Hemoglobin Lepore [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4605-2/">4605-2</a></td><td style="color: #cccccc">Hemoglobin Lepore [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/53224-2/">53224-2</a></td><td style="color: #cccccc">Hemoglobin M [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4606-0/">4606-0</a></td><td style="color: #cccccc">Hemoglobin M - Boston [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4607-8/">4607-8</a></td><td style="color: #cccccc">Hemoglobin M - Hyde Park [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4608-6/">4608-6</a></td><td style="color: #cccccc">Hemoglobin M - Iwate [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4610-2/">4610-2</a></td><td style="color: #cccccc">Hemoglobin M - Saskatoon [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4611-0/">4611-0</a></td><td style="color: #cccccc">Hemoglobin Malmo [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4612-8/">4612-8</a></td><td style="color: #cccccc">Hemoglobin Malmo [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4613-6/">4613-6</a></td><td style="color: #cccccc">Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4614-4/">4614-4</a></td><td style="color: #cccccc">Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4615-1/">4615-1</a></td><td style="color: #cccccc">Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4616-9/">4616-9</a></td><td style="color: #cccccc">Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4617-7/">4617-7</a></td><td style="color: #cccccc">Hemoglobin O - Arab [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4618-5/">4618-5</a></td><td style="color: #cccccc">Hemoglobin O - Arab [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4619-3/">4619-3</a></td><td style="color: #cccccc">Hemoglobin Ranier [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/34663-5/">34663-5</a></td><td style="color: #cccccc">Hemoglobin S [Presence] in Amniotic fluid</td></tr><tr><td><a href="https://loinc.org/4621-9/">4621-9</a></td><td style="color: #cccccc">Hemoglobin S [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4622-7/">4622-7</a></td><td style="color: #cccccc">Hemoglobin S [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4623-5/">4623-5</a></td><td style="color: #cccccc">Hemoglobin S [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/6864-3/">6864-3</a></td><td style="color: #cccccc">Hemoglobin S [Presence] in Blood by Solubility test</td></tr><tr><td><a href="https://loinc.org/4626-8/">4626-8</a></td><td style="color: #cccccc">Hemoglobin Yakima [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4627-6/">4627-6</a></td><td style="color: #cccccc">Hemoglobin Yoshizuka [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4628-4/">4628-4</a></td><td style="color: #cccccc">Hemoglobin Ypsilanti [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/4629-2/">4629-2</a></td><td style="color: #cccccc">Hemoglobin Zurich [Presence] in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4630-0/">4630-0</a></td><td style="color: #cccccc">Hemoglobin Zurich [Presence] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/2613-8/">2613-8</a></td><td style="color: #cccccc">Methemoglobin [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/2619-5/">2619-5</a></td><td style="color: #cccccc">Methemoglobin [Presence] in Red Blood Cells</td></tr><tr><td><a href="https://loinc.org/4684-7/">4684-7</a></td><td style="color: #cccccc">Sulfhemoglobin [Presence] in Blood</td></tr><tr><td><a href="https://loinc.org/53117-8/">53117-8</a></td><td style="color: #cccccc">Thermolabile hemoglobin [Presence] in Red Blood Cells</td></tr><tr><td><a href="https://loinc.org/4639-1/">4639-1</a></td><td style="color: #cccccc">Unstable Hemoglobin [Presence] in Red Blood Cells</td></tr><tr><td><a href="https://loinc.org/41619-8/">41619-8</a></td><td style="color: #cccccc">Unstable Hemoglobin [Presence] in Red Blood Cells by Isopropanol stability</td></tr><tr><td><a href="https://loinc.org/59468-9/">59468-9</a></td><td style="color: #cccccc">MCH [Entitic substance]</td></tr><tr><td><a href="https://loinc.org/73895-5/">73895-5</a></td><td style="color: #cccccc">Hemoglobin [Entitic substance] in Reticulocytes by Automated count</td></tr><tr><td><a href="https://loinc.org/28539-5/">28539-5</a></td><td style="color: #cccccc">MCH [Entitic mass]</td></tr><tr><td><a href="https://loinc.org/785-6/">785-6</a></td><td style="color: #cccccc">MCH [Entitic mass] by Automated count</td></tr><tr><td><a href="https://loinc.org/47278-7/">47278-7</a></td><td style="color: #cccccc">MCH [Entitic mass] in Cord blood</td></tr><tr><td><a href="https://loinc.org/62243-1/">62243-1</a></td><td style="color: #cccccc">MCH [Entitic mass] in Fetus by Automated count</td></tr><tr><td><a href="https://loinc.org/42810-2/">42810-2</a></td><td style="color: #cccccc">Hemoglobin [Entitic mass] in Reticulocytes</td></tr><tr><td><a href="https://loinc.org/71694-4/">71694-4</a></td><td style="color: #cccccc">Hemoglobin [Entitic mass] in Reticulocytes by Automated count</td></tr><tr><td><a href="https://loinc.org/27396-1/">27396-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/mass] in Stool from gastrointestinal</td></tr><tr><td><a href="https://loinc.org/2030-5/">2030-5</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Arterial blood</td></tr><tr><td><a href="https://loinc.org/63523-5/">63523-5</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Arterial cord blood</td></tr><tr><td><a href="https://loinc.org/97551-6/">97551-6</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Central venous blood</td></tr><tr><td><a href="https://loinc.org/20563-3/">20563-3</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/2031-3/">2031-3</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Capillary blood</td></tr><tr><td><a href="https://loinc.org/41648-7/">41648-7</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/2032-1/">2032-1</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Venous blood</td></tr><tr><td><a href="https://loinc.org/63524-3/">63524-3</a></td><td style="color: #cccccc">Carboxyhemoglobin/Hemoglobin.total in Venous cord blood</td></tr><tr><td><a href="https://loinc.org/4534-4/">4534-4</a></td><td style="color: #cccccc">Cyanmethemoglobin/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/19225-2/">19225-2</a></td><td style="color: #cccccc">Deoxyhemoglobin/Hemoglobin.total in Arterial blood</td></tr><tr><td><a href="https://loinc.org/97553-2/">97553-2</a></td><td style="color: #cccccc">Deoxyhemoglobin/Hemoglobin.total in Central venous blood</td></tr><tr><td><a href="https://loinc.org/4536-9/">4536-9</a></td><td style="color: #cccccc">Deoxyhemoglobin/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/19226-0/">19226-0</a></td><td style="color: #cccccc">Deoxyhemoglobin/Hemoglobin.total in Capillary blood</td></tr><tr><td><a href="https://loinc.org/19228-6/">19228-6</a></td><td style="color: #cccccc">Deoxyhemoglobin/Hemoglobin.total in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/19227-8/">19227-8</a></td><td style="color: #cccccc">Deoxyhemoglobin/Hemoglobin.total in Venous blood</td></tr><tr><td><a href="https://loinc.org/4548-4/">4548-4</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/17855-8/">17855-8</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total in Blood by calculation</td></tr><tr><td><a href="https://loinc.org/4549-2/">4549-2</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/17856-6/">17856-6</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/62388-4/">62388-4</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total in Blood by JDS/JSCC protocol</td></tr><tr><td><a href="https://loinc.org/96595-4/">96595-4</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/4580-7/">4580-7</a></td><td style="color: #cccccc">Hemoglobin F1/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4546-8/">4546-8</a></td><td style="color: #cccccc">Hemoglobin A/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/20572-4/">20572-4</a></td><td style="color: #cccccc">Hemoglobin A/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/42244-4/">42244-4</a></td><td style="color: #cccccc">Hemoglobin A/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/54072-4/">54072-4</a></td><td style="color: #cccccc">Hemoglobin A/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/4547-6/">4547-6</a></td><td style="color: #cccccc">Hemoglobin A1/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/51196-4/">51196-4</a></td><td style="color: #cccccc">Hemoglobin A1/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/4551-8/">4551-8</a></td><td style="color: #cccccc">Hemoglobin A2/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/34660-1/">34660-1</a></td><td style="color: #cccccc">Hemoglobin A2/Hemoglobin.total in Blood by Chromatography column</td></tr><tr><td><a href="https://loinc.org/4552-6/">4552-6</a></td><td style="color: #cccccc">Hemoglobin A2/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/4553-4/">4553-4</a></td><td style="color: #cccccc">Hemoglobin A2/Hemoglobin.total in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4554-2/">4554-2</a></td><td style="color: #cccccc">Hemoglobin A2/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/42245-1/">42245-1</a></td><td style="color: #cccccc">Hemoglobin A2/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/35127-0/">35127-0</a></td><td style="color: #cccccc">Hemoglobin A2.prime/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/31156-3/">31156-3</a></td><td style="color: #cccccc">Hemoglobin Barts/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/54069-0/">54069-0</a></td><td style="color: #cccccc">Hemoglobin Barts/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/4563-3/">4563-3</a></td><td style="color: #cccccc">Hemoglobin C/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/32681-9/">32681-9</a></td><td style="color: #cccccc">Hemoglobin C/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/4561-7/">4561-7</a></td><td style="color: #cccccc">Hemoglobin C/Hemoglobin.total in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4562-5/">4562-5</a></td><td style="color: #cccccc">Hemoglobin C/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/44920-7/">44920-7</a></td><td style="color: #cccccc">Hemoglobin C/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/54073-2/">54073-2</a></td><td style="color: #cccccc">Hemoglobin C/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/54209-2/">54209-2</a></td><td style="color: #cccccc">Hemoglobin C - Harlem/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/55372-7/">55372-7</a></td><td style="color: #cccccc">Hemoglobin Constant Spring/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4569-0/">4569-0</a></td><td style="color: #cccccc">Hemoglobin D/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/44921-5/">44921-5</a></td><td style="color: #cccccc">Hemoglobin D/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/54070-8/">54070-8</a></td><td style="color: #cccccc">Hemoglobin D/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/4575-7/">4575-7</a></td><td style="color: #cccccc">Hemoglobin E/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4573-2/">4573-2</a></td><td style="color: #cccccc">Hemoglobin E/Hemoglobin.total in Blood by Electrophoresis acid (pH 6.3)</td></tr><tr><td><a href="https://loinc.org/4574-0/">4574-0</a></td><td style="color: #cccccc">Hemoglobin E/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/44922-3/">44922-3</a></td><td style="color: #cccccc">Hemoglobin E/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/54071-6/">54071-6</a></td><td style="color: #cccccc">Hemoglobin E/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/5913-9/">5913-9</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Amniotic fluid</td></tr><tr><td><a href="https://loinc.org/18291-5/">18291-5</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Blood from Newborn</td></tr><tr><td><a href="https://loinc.org/4576-5/">4576-5</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/32682-7/">32682-7</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/38524-5/">38524-5</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/42246-9/">42246-9</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/4633-4/">4633-4</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method</td></tr><tr><td><a href="https://loinc.org/54074-0/">54074-0</a></td><td style="color: #cccccc">Hemoglobin F/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/53223-4/">53223-4</a></td><td style="color: #cccccc">Hemoglobin G/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/33593-5/">33593-5</a></td><td style="color: #cccccc">Hemoglobin G - Coushatta/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/80655-4/">80655-4</a></td><td style="color: #cccccc">Hemoglobin G - Philadelphia/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4588-0/">4588-0</a></td><td style="color: #cccccc">Hemoglobin H/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4587-2/">4587-2</a></td><td style="color: #cccccc">Hemoglobin H/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/50765-7/">50765-7</a></td><td style="color: #cccccc">Hemoglobin Hasharon/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/80656-2/">80656-2</a></td><td style="color: #cccccc">Hemoglobin Hope/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/51613-8/">51613-8</a></td><td style="color: #cccccc">Hemoglobin J/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/35125-4/">35125-4</a></td><td style="color: #cccccc">Hemoglobin Lepore/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/51614-6/">51614-6</a></td><td style="color: #cccccc">Hemoglobin M/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/35126-2/">35126-2</a></td><td style="color: #cccccc">Hemoglobin O - Arab/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/54068-2/">54068-2</a></td><td style="color: #cccccc">Hemoglobin O - Arab/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/80657-0/">80657-0</a></td><td style="color: #cccccc">Hemoglobin Q/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4625-0/">4625-0</a></td><td style="color: #cccccc">Hemoglobin S/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/32683-5/">32683-5</a></td><td style="color: #cccccc">Hemoglobin S/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/44923-1/">44923-1</a></td><td style="color: #cccccc">Hemoglobin S/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/56476-5/">56476-5</a></td><td style="color: #cccccc">Hemoglobin S/Hemoglobin.total in DBS</td></tr><tr><td><a href="https://loinc.org/24469-9/">24469-9</a></td><td style="color: #cccccc">Hemoglobin XXX/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/48343-8/">48343-8</a></td><td style="color: #cccccc">Hemoglobin.other/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/32017-6/">32017-6</a></td><td style="color: #cccccc">Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/42248-5/">42248-5</a></td><td style="color: #cccccc">Hemoglobin.other/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/2615-3/">2615-3</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Arterial blood</td></tr><tr><td><a href="https://loinc.org/72361-9/">72361-9</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Arterial cord blood</td></tr><tr><td><a href="https://loinc.org/97554-0/">97554-0</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Central venous blood</td></tr><tr><td><a href="https://loinc.org/2614-6/">2614-6</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/2616-1/">2616-1</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Capillary blood</td></tr><tr><td><a href="https://loinc.org/55942-7/">55942-7</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Cord blood</td></tr><tr><td><a href="https://loinc.org/2618-7/">2618-7</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Red Blood Cells</td></tr><tr><td><a href="https://loinc.org/41607-3/">41607-3</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/2617-9/">2617-9</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Venous blood</td></tr><tr><td><a href="https://loinc.org/72360-1/">72360-1</a></td><td style="color: #cccccc">Methemoglobin/Hemoglobin.total in Venous cord blood</td></tr><tr><td><a href="https://loinc.org/2714-4/">2714-4</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Arterial blood</td></tr><tr><td><a href="https://loinc.org/30370-1/">30370-1</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Arterial cord blood</td></tr><tr><td><a href="https://loinc.org/97552-4/">97552-4</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Central venous blood</td></tr><tr><td><a href="https://loinc.org/11559-2/">11559-2</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Blood</td></tr><tr><td><a href="https://loinc.org/2715-1/">2715-1</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Capillary blood</td></tr><tr><td><a href="https://loinc.org/34969-6/">34969-6</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/2717-7/">2717-7</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Plasma</td></tr><tr><td><a href="https://loinc.org/2716-9/">2716-9</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Venous blood</td></tr><tr><td><a href="https://loinc.org/30369-3/">30369-3</a></td><td style="color: #cccccc">Fractional oxyhemoglobin in Venous cord blood</td></tr><tr><td><a href="https://loinc.org/4685-4/">4685-4</a></td><td style="color: #cccccc">Sulfhemoglobin/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/4638-3/">4638-3</a></td><td style="color: #cccccc">Thermolabile hemoglobin/Hemoglobin.total in Red Blood Cells</td></tr><tr><td><a href="https://loinc.org/110938-8/">110938-8</a></td><td style="color: #cccccc">Hemoglobin F [Measurement] in Blood</td></tr><tr><td><a href="https://loinc.org/109575-1/">109575-1</a></td><td style="color: #cccccc">Hemoglobin H [Measurement] in Blood</td></tr><tr><td><a href="https://loinc.org/109484-6/">109484-6</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/110885-1/">110885-1</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Blood</td></tr><tr><td><a href="https://loinc.org/109887-0/">109887-0</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/109886-2/">109886-2</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Venous blood</td></tr><tr><td><a href="https://loinc.org/109592-6/">109592-6</a></td><td style="color: #cccccc">Methemoglobin [Measurement] in Blood</td></tr><tr><td><a href="https://loinc.org/59261-8/">59261-8</a></td><td style="color: #cccccc">Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood</td></tr><tr><td><a href="https://loinc.org/10346-5/">10346-5</a></td><td style="color: #cccccc">Hemoglobin A [Units/volume] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/9749-3/">9749-3</a></td><td style="color: #cccccc">Hemoglobin F [Units/volume] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/4578-1/">4578-1</a></td><td style="color: #cccccc">Hemoglobin F - Texas [Units/volume] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/4582-3/">4582-3</a></td><td style="color: #cccccc">Hemoglobin G - Coushatta [Units/volume] in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href="https://loinc.org/31157-1/">31157-1</a></td><td style="color: #cccccc">Carboxyhemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/39533-5/">39533-5</a></td><td style="color: #cccccc">Deoxyhemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/41995-2/">41995-2</a></td><td style="color: #cccccc">Hemoglobin A1c [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/53857-9/">53857-9</a></td><td style="color: #cccccc">Hemoglobin F [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/40549-8/">40549-8</a></td><td style="color: #cccccc">Hemoglobin F [Mass/volume] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/40550-6/">40550-6</a></td><td style="color: #cccccc">Hemoglobin H [Mass/volume] in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/30313-1/">30313-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/14775-1/">14775-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/30354-5/">30354-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial cord blood</td></tr><tr><td><a href="https://loinc.org/33026-6/">33026-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial cord blood by calculation</td></tr><tr><td><a href="https://loinc.org/54289-4/">54289-4</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood from Blood product unit</td></tr><tr><td><a href="https://loinc.org/61180-6/">61180-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood from Fetus</td></tr><tr><td><a href="https://loinc.org/97550-8/">97550-8</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Central venous blood by calculation</td></tr><tr><td><a href="https://loinc.org/97555-7/">97555-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Central venous blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/718-7/">718-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/20509-6/">20509-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood by calculation</td></tr><tr><td><a href="https://loinc.org/55782-7/">55782-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/48725-6/">48725-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood --pre therapeutic phlebotomy</td></tr><tr><td><a href="https://loinc.org/33509-1/">33509-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Body fluid</td></tr><tr><td><a href="https://loinc.org/30352-9/">30352-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Capillary blood</td></tr><tr><td><a href="https://loinc.org/97556-5/">97556-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Capillary blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/719-5/">719-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/40719-7/">40719-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Cord blood</td></tr><tr><td><a href="https://loinc.org/30351-1/">30351-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/105040-0/">105040-0</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Mixed venous blood by calculation</td></tr><tr><td><a href="https://loinc.org/76768-1/">76768-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/69950-4/">69950-4</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Pericardial fluid</td></tr><tr><td><a href="https://loinc.org/723-7/">723-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Peritoneal fluid</td></tr><tr><td><a href="https://loinc.org/722-9/">722-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Pleural fluid</td></tr><tr><td><a href="https://loinc.org/107191-9/">107191-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal --1st specimen</td></tr><tr><td><a href="https://loinc.org/107190-1/">107190-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal --2nd specimen</td></tr><tr><td><a href="https://loinc.org/107189-3/">107189-3</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal --3rd specimen</td></tr><tr><td><a href="https://loinc.org/58453-2/">58453-2</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal lower by Immunoassay</td></tr><tr><td><a href="https://loinc.org/724-5/">724-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Synovial fluid</td></tr><tr><td><a href="https://loinc.org/726-0/">726-0</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Urine</td></tr><tr><td><a href="https://loinc.org/30350-3/">30350-3</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous blood</td></tr><tr><td><a href="https://loinc.org/105274-5/">105274-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous blood by calculation</td></tr><tr><td><a href="https://loinc.org/76769-9/">76769-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/30353-7/">30353-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous cord blood</td></tr><tr><td><a href="https://loinc.org/33025-8/">33025-8</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous cord blood by calculation</td></tr><tr><td><a href="https://loinc.org/15082-1/">15082-1</a></td><td style="color: #cccccc">Methemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/87437-0/">87437-0</a></td><td style="color: #cccccc">Oxyhemoglobin [Mass/volume] in Plasma</td></tr><tr><td><a href="https://loinc.org/4683-9/">4683-9</a></td><td style="color: #cccccc">Sulfhemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/35183-3/">35183-3</a></td><td style="color: #cccccc">Hemoglobin [Mass or Moles/volume] in Plasma</td></tr><tr><td><a href="https://loinc.org/4550-0/">4550-0</a></td><td style="color: #cccccc">Hemoglobin A2 [Moles/volume] in Blood by Chromatography column</td></tr><tr><td><a href="https://loinc.org/75928-2/">75928-2</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/59260-0/">59260-0</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/105300-8/">105300-8</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/93846-4/">93846-4</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Venous blood</td></tr><tr><td><a href="https://loinc.org/103750-6/">103750-6</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Venous cord blood</td></tr><tr><td><a href="https://loinc.org/56040-9/">56040-9</a></td><td style="color: #cccccc">Methemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/72262-9/">72262-9</a></td><td style="color: #cccccc">Methemoglobin [Moles/volume] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/72263-7/">72263-7</a></td><td style="color: #cccccc">Oxyhemoglobin [Moles/volume] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/50559-4/">50559-4</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Urine by Automated test strip</td></tr><tr><td><a href="https://loinc.org/49137-3/">49137-3</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Urine by Test strip</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20260321"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20260321</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/431314004">431314004</a></td><td>Peripheral oxygen saturation (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/408591000">408591000</a></td><td>Hemoglobin A1c target (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/446074002">446074002</a></td><td>Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity)</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20260321"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20260321</span> where constraint  = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C36292"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C25294"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="pw@gefyra.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-complete"/>
+  <version value="2027.0.0-ci"/>
+  <name value="MII_VS_Labor_LOINC_Ontology_Mch_Complete"/>
+  <title value="MII VS Labor LOINC Ontology Mch Complete"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-20"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mch (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 296 concepts (293 with LOINC). The pool ECL is carried as an intensional include."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."/>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <concept>
+        <code value="32160-4"/>
+      </concept>
+      <concept>
+        <code value="45208-6"/>
+      </concept>
+      <concept>
+        <code value="28559-3"/>
+      </concept>
+      <concept>
+        <code value="27345-8"/>
+      </concept>
+      <concept>
+        <code value="4556-7"/>
+      </concept>
+      <concept>
+        <code value="4557-5"/>
+      </concept>
+      <concept>
+        <code value="4558-3"/>
+      </concept>
+      <concept>
+        <code value="4559-1"/>
+      </concept>
+      <concept>
+        <code value="55783-5"/>
+      </concept>
+      <concept>
+        <code value="4560-9"/>
+      </concept>
+      <concept>
+        <code value="40720-5"/>
+      </concept>
+      <concept>
+        <code value="40545-6"/>
+      </concept>
+      <concept>
+        <code value="4564-1"/>
+      </concept>
+      <concept>
+        <code value="4565-8"/>
+      </concept>
+      <concept>
+        <code value="4566-6"/>
+      </concept>
+      <concept>
+        <code value="4567-4"/>
+      </concept>
+      <concept>
+        <code value="4568-2"/>
+      </concept>
+      <concept>
+        <code value="4572-4"/>
+      </concept>
+      <concept>
+        <code value="40546-4"/>
+      </concept>
+      <concept>
+        <code value="28067-7"/>
+      </concept>
+      <concept>
+        <code value="4579-9"/>
+      </concept>
+      <concept>
+        <code value="4632-6"/>
+      </concept>
+      <concept>
+        <code value="32140-6"/>
+      </concept>
+      <concept>
+        <code value="18277-4"/>
+      </concept>
+      <concept>
+        <code value="18278-2"/>
+      </concept>
+      <concept>
+        <code value="30074-9"/>
+      </concept>
+      <concept>
+        <code value="40721-3"/>
+      </concept>
+      <concept>
+        <code value="4631-8"/>
+      </concept>
+      <concept>
+        <code value="28006-5"/>
+      </concept>
+      <concept>
+        <code value="4577-3"/>
+      </concept>
+      <concept>
+        <code value="4581-5"/>
+      </concept>
+      <concept>
+        <code value="4583-1"/>
+      </concept>
+      <concept>
+        <code value="4584-9"/>
+      </concept>
+      <concept>
+        <code value="4585-6"/>
+      </concept>
+      <concept>
+        <code value="4586-4"/>
+      </concept>
+      <concept>
+        <code value="40547-2"/>
+      </concept>
+      <concept>
+        <code value="17871-5"/>
+      </concept>
+      <concept>
+        <code value="4589-8"/>
+      </concept>
+      <concept>
+        <code value="4590-6"/>
+      </concept>
+      <concept>
+        <code value="4591-4"/>
+      </concept>
+      <concept>
+        <code value="4592-2"/>
+      </concept>
+      <concept>
+        <code value="4593-0"/>
+      </concept>
+      <concept>
+        <code value="4594-8"/>
+      </concept>
+      <concept>
+        <code value="4598-9"/>
+      </concept>
+      <concept>
+        <code value="4599-7"/>
+      </concept>
+      <concept>
+        <code value="717-9"/>
+      </concept>
+      <concept>
+        <code value="33517-4"/>
+      </concept>
+      <concept>
+        <code value="48035-0"/>
+      </concept>
+      <concept>
+        <code value="2334-1"/>
+      </concept>
+      <concept>
+        <code value="42909-2"/>
+      </concept>
+      <concept>
+        <code value="42910-0"/>
+      </concept>
+      <concept>
+        <code value="42911-8"/>
+      </concept>
+      <concept>
+        <code value="34618-9"/>
+      </concept>
+      <concept>
+        <code value="50017-3"/>
+      </concept>
+      <concept>
+        <code value="2335-8"/>
+      </concept>
+      <concept>
+        <code value="14563-1"/>
+      </concept>
+      <concept>
+        <code value="14564-9"/>
+      </concept>
+      <concept>
+        <code value="14565-6"/>
+      </concept>
+      <concept>
+        <code value="12503-9"/>
+      </concept>
+      <concept>
+        <code value="12504-7"/>
+      </concept>
+      <concept>
+        <code value="27401-9"/>
+      </concept>
+      <concept>
+        <code value="27925-7"/>
+      </concept>
+      <concept>
+        <code value="27926-5"/>
+      </concept>
+      <concept>
+        <code value="80372-6"/>
+      </concept>
+      <concept>
+        <code value="104738-0"/>
+      </concept>
+      <concept>
+        <code value="29771-3"/>
+      </concept>
+      <concept>
+        <code value="57905-2"/>
+      </concept>
+      <concept>
+        <code value="56490-6"/>
+      </concept>
+      <concept>
+        <code value="56491-4"/>
+      </concept>
+      <concept>
+        <code value="725-2"/>
+      </concept>
+      <concept>
+        <code value="57751-0"/>
+      </concept>
+      <concept>
+        <code value="5794-3"/>
+      </concept>
+      <concept>
+        <code value="48047-5"/>
+      </concept>
+      <concept>
+        <code value="42912-6"/>
+      </concept>
+      <concept>
+        <code value="42913-4"/>
+      </concept>
+      <concept>
+        <code value="4595-5"/>
+      </concept>
+      <concept>
+        <code value="4596-3"/>
+      </concept>
+      <concept>
+        <code value="4597-1"/>
+      </concept>
+      <concept>
+        <code value="4600-3"/>
+      </concept>
+      <concept>
+        <code value="4601-1"/>
+      </concept>
+      <concept>
+        <code value="4602-9"/>
+      </concept>
+      <concept>
+        <code value="4603-7"/>
+      </concept>
+      <concept>
+        <code value="4604-5"/>
+      </concept>
+      <concept>
+        <code value="4605-2"/>
+      </concept>
+      <concept>
+        <code value="53224-2"/>
+      </concept>
+      <concept>
+        <code value="4606-0"/>
+      </concept>
+      <concept>
+        <code value="4607-8"/>
+      </concept>
+      <concept>
+        <code value="4608-6"/>
+      </concept>
+      <concept>
+        <code value="4610-2"/>
+      </concept>
+      <concept>
+        <code value="4611-0"/>
+      </concept>
+      <concept>
+        <code value="4612-8"/>
+      </concept>
+      <concept>
+        <code value="4613-6"/>
+      </concept>
+      <concept>
+        <code value="4614-4"/>
+      </concept>
+      <concept>
+        <code value="4615-1"/>
+      </concept>
+      <concept>
+        <code value="4616-9"/>
+      </concept>
+      <concept>
+        <code value="4617-7"/>
+      </concept>
+      <concept>
+        <code value="4618-5"/>
+      </concept>
+      <concept>
+        <code value="4619-3"/>
+      </concept>
+      <concept>
+        <code value="34663-5"/>
+      </concept>
+      <concept>
+        <code value="4621-9"/>
+      </concept>
+      <concept>
+        <code value="4622-7"/>
+      </concept>
+      <concept>
+        <code value="4623-5"/>
+      </concept>
+      <concept>
+        <code value="6864-3"/>
+      </concept>
+      <concept>
+        <code value="4626-8"/>
+      </concept>
+      <concept>
+        <code value="4627-6"/>
+      </concept>
+      <concept>
+        <code value="4628-4"/>
+      </concept>
+      <concept>
+        <code value="4629-2"/>
+      </concept>
+      <concept>
+        <code value="4630-0"/>
+      </concept>
+      <concept>
+        <code value="2613-8"/>
+      </concept>
+      <concept>
+        <code value="2619-5"/>
+      </concept>
+      <concept>
+        <code value="4684-7"/>
+      </concept>
+      <concept>
+        <code value="53117-8"/>
+      </concept>
+      <concept>
+        <code value="4639-1"/>
+      </concept>
+      <concept>
+        <code value="41619-8"/>
+      </concept>
+      <concept>
+        <code value="59468-9"/>
+      </concept>
+      <concept>
+        <code value="73895-5"/>
+      </concept>
+      <concept>
+        <code value="28539-5"/>
+      </concept>
+      <concept>
+        <code value="785-6"/>
+      </concept>
+      <concept>
+        <code value="47278-7"/>
+      </concept>
+      <concept>
+        <code value="62243-1"/>
+      </concept>
+      <concept>
+        <code value="42810-2"/>
+      </concept>
+      <concept>
+        <code value="71694-4"/>
+      </concept>
+      <concept>
+        <code value="27396-1"/>
+      </concept>
+      <concept>
+        <code value="2030-5"/>
+      </concept>
+      <concept>
+        <code value="63523-5"/>
+      </concept>
+      <concept>
+        <code value="97551-6"/>
+      </concept>
+      <concept>
+        <code value="20563-3"/>
+      </concept>
+      <concept>
+        <code value="2031-3"/>
+      </concept>
+      <concept>
+        <code value="41648-7"/>
+      </concept>
+      <concept>
+        <code value="2032-1"/>
+      </concept>
+      <concept>
+        <code value="63524-3"/>
+      </concept>
+      <concept>
+        <code value="4534-4"/>
+      </concept>
+      <concept>
+        <code value="19225-2"/>
+      </concept>
+      <concept>
+        <code value="97553-2"/>
+      </concept>
+      <concept>
+        <code value="4536-9"/>
+      </concept>
+      <concept>
+        <code value="19226-0"/>
+      </concept>
+      <concept>
+        <code value="19228-6"/>
+      </concept>
+      <concept>
+        <code value="19227-8"/>
+      </concept>
+      <concept>
+        <code value="4548-4"/>
+      </concept>
+      <concept>
+        <code value="17855-8"/>
+      </concept>
+      <concept>
+        <code value="4549-2"/>
+      </concept>
+      <concept>
+        <code value="17856-6"/>
+      </concept>
+      <concept>
+        <code value="62388-4"/>
+      </concept>
+      <concept>
+        <code value="96595-4"/>
+      </concept>
+      <concept>
+        <code value="4580-7"/>
+      </concept>
+      <concept>
+        <code value="4546-8"/>
+      </concept>
+      <concept>
+        <code value="20572-4"/>
+      </concept>
+      <concept>
+        <code value="42244-4"/>
+      </concept>
+      <concept>
+        <code value="54072-4"/>
+      </concept>
+      <concept>
+        <code value="4547-6"/>
+      </concept>
+      <concept>
+        <code value="51196-4"/>
+      </concept>
+      <concept>
+        <code value="4551-8"/>
+      </concept>
+      <concept>
+        <code value="34660-1"/>
+      </concept>
+      <concept>
+        <code value="4552-6"/>
+      </concept>
+      <concept>
+        <code value="4553-4"/>
+      </concept>
+      <concept>
+        <code value="4554-2"/>
+      </concept>
+      <concept>
+        <code value="42245-1"/>
+      </concept>
+      <concept>
+        <code value="35127-0"/>
+      </concept>
+      <concept>
+        <code value="31156-3"/>
+      </concept>
+      <concept>
+        <code value="54069-0"/>
+      </concept>
+      <concept>
+        <code value="4563-3"/>
+      </concept>
+      <concept>
+        <code value="32681-9"/>
+      </concept>
+      <concept>
+        <code value="4561-7"/>
+      </concept>
+      <concept>
+        <code value="4562-5"/>
+      </concept>
+      <concept>
+        <code value="44920-7"/>
+      </concept>
+      <concept>
+        <code value="54073-2"/>
+      </concept>
+      <concept>
+        <code value="54209-2"/>
+      </concept>
+      <concept>
+        <code value="55372-7"/>
+      </concept>
+      <concept>
+        <code value="4569-0"/>
+      </concept>
+      <concept>
+        <code value="44921-5"/>
+      </concept>
+      <concept>
+        <code value="54070-8"/>
+      </concept>
+      <concept>
+        <code value="4575-7"/>
+      </concept>
+      <concept>
+        <code value="4573-2"/>
+      </concept>
+      <concept>
+        <code value="4574-0"/>
+      </concept>
+      <concept>
+        <code value="44922-3"/>
+      </concept>
+      <concept>
+        <code value="54071-6"/>
+      </concept>
+      <concept>
+        <code value="5913-9"/>
+      </concept>
+      <concept>
+        <code value="18291-5"/>
+      </concept>
+      <concept>
+        <code value="4576-5"/>
+      </concept>
+      <concept>
+        <code value="32682-7"/>
+      </concept>
+      <concept>
+        <code value="38524-5"/>
+      </concept>
+      <concept>
+        <code value="42246-9"/>
+      </concept>
+      <concept>
+        <code value="4633-4"/>
+      </concept>
+      <concept>
+        <code value="54074-0"/>
+      </concept>
+      <concept>
+        <code value="53223-4"/>
+      </concept>
+      <concept>
+        <code value="33593-5"/>
+      </concept>
+      <concept>
+        <code value="80655-4"/>
+      </concept>
+      <concept>
+        <code value="4588-0"/>
+      </concept>
+      <concept>
+        <code value="4587-2"/>
+      </concept>
+      <concept>
+        <code value="50765-7"/>
+      </concept>
+      <concept>
+        <code value="80656-2"/>
+      </concept>
+      <concept>
+        <code value="51613-8"/>
+      </concept>
+      <concept>
+        <code value="35125-4"/>
+      </concept>
+      <concept>
+        <code value="51614-6"/>
+      </concept>
+      <concept>
+        <code value="35126-2"/>
+      </concept>
+      <concept>
+        <code value="54068-2"/>
+      </concept>
+      <concept>
+        <code value="80657-0"/>
+      </concept>
+      <concept>
+        <code value="4625-0"/>
+      </concept>
+      <concept>
+        <code value="32683-5"/>
+      </concept>
+      <concept>
+        <code value="44923-1"/>
+      </concept>
+      <concept>
+        <code value="56476-5"/>
+      </concept>
+      <concept>
+        <code value="24469-9"/>
+      </concept>
+      <concept>
+        <code value="48343-8"/>
+      </concept>
+      <concept>
+        <code value="32017-6"/>
+      </concept>
+      <concept>
+        <code value="42248-5"/>
+      </concept>
+      <concept>
+        <code value="2615-3"/>
+      </concept>
+      <concept>
+        <code value="72361-9"/>
+      </concept>
+      <concept>
+        <code value="97554-0"/>
+      </concept>
+      <concept>
+        <code value="2614-6"/>
+      </concept>
+      <concept>
+        <code value="2616-1"/>
+      </concept>
+      <concept>
+        <code value="55942-7"/>
+      </concept>
+      <concept>
+        <code value="2618-7"/>
+      </concept>
+      <concept>
+        <code value="41607-3"/>
+      </concept>
+      <concept>
+        <code value="2617-9"/>
+      </concept>
+      <concept>
+        <code value="72360-1"/>
+      </concept>
+      <concept>
+        <code value="2714-4"/>
+      </concept>
+      <concept>
+        <code value="30370-1"/>
+      </concept>
+      <concept>
+        <code value="97552-4"/>
+      </concept>
+      <concept>
+        <code value="11559-2"/>
+      </concept>
+      <concept>
+        <code value="2715-1"/>
+      </concept>
+      <concept>
+        <code value="34969-6"/>
+      </concept>
+      <concept>
+        <code value="2717-7"/>
+      </concept>
+      <concept>
+        <code value="2716-9"/>
+      </concept>
+      <concept>
+        <code value="30369-3"/>
+      </concept>
+      <concept>
+        <code value="4685-4"/>
+      </concept>
+      <concept>
+        <code value="4638-3"/>
+      </concept>
+      <concept>
+        <code value="110938-8"/>
+      </concept>
+      <concept>
+        <code value="109575-1"/>
+      </concept>
+      <concept>
+        <code value="109484-6"/>
+      </concept>
+      <concept>
+        <code value="110885-1"/>
+      </concept>
+      <concept>
+        <code value="109887-0"/>
+      </concept>
+      <concept>
+        <code value="109886-2"/>
+      </concept>
+      <concept>
+        <code value="109592-6"/>
+      </concept>
+      <concept>
+        <code value="59261-8"/>
+      </concept>
+      <concept>
+        <code value="10346-5"/>
+      </concept>
+      <concept>
+        <code value="9749-3"/>
+      </concept>
+      <concept>
+        <code value="4578-1"/>
+      </concept>
+      <concept>
+        <code value="4582-3"/>
+      </concept>
+      <concept>
+        <code value="31157-1"/>
+      </concept>
+      <concept>
+        <code value="39533-5"/>
+      </concept>
+      <concept>
+        <code value="41995-2"/>
+      </concept>
+      <concept>
+        <code value="53857-9"/>
+      </concept>
+      <concept>
+        <code value="40549-8"/>
+      </concept>
+      <concept>
+        <code value="40550-6"/>
+      </concept>
+      <concept>
+        <code value="30313-1"/>
+      </concept>
+      <concept>
+        <code value="14775-1"/>
+      </concept>
+      <concept>
+        <code value="30354-5"/>
+      </concept>
+      <concept>
+        <code value="33026-6"/>
+      </concept>
+      <concept>
+        <code value="54289-4"/>
+      </concept>
+      <concept>
+        <code value="61180-6"/>
+      </concept>
+      <concept>
+        <code value="97550-8"/>
+      </concept>
+      <concept>
+        <code value="97555-7"/>
+      </concept>
+      <concept>
+        <code value="718-7"/>
+      </concept>
+      <concept>
+        <code value="20509-6"/>
+      </concept>
+      <concept>
+        <code value="55782-7"/>
+      </concept>
+      <concept>
+        <code value="48725-6"/>
+      </concept>
+      <concept>
+        <code value="33509-1"/>
+      </concept>
+      <concept>
+        <code value="30352-9"/>
+      </concept>
+      <concept>
+        <code value="97556-5"/>
+      </concept>
+      <concept>
+        <code value="719-5"/>
+      </concept>
+      <concept>
+        <code value="40719-7"/>
+      </concept>
+      <concept>
+        <code value="30351-1"/>
+      </concept>
+      <concept>
+        <code value="105040-0"/>
+      </concept>
+      <concept>
+        <code value="76768-1"/>
+      </concept>
+      <concept>
+        <code value="69950-4"/>
+      </concept>
+      <concept>
+        <code value="723-7"/>
+      </concept>
+      <concept>
+        <code value="722-9"/>
+      </concept>
+      <concept>
+        <code value="107191-9"/>
+      </concept>
+      <concept>
+        <code value="107190-1"/>
+      </concept>
+      <concept>
+        <code value="107189-3"/>
+      </concept>
+      <concept>
+        <code value="58453-2"/>
+      </concept>
+      <concept>
+        <code value="724-5"/>
+      </concept>
+      <concept>
+        <code value="726-0"/>
+      </concept>
+      <concept>
+        <code value="30350-3"/>
+      </concept>
+      <concept>
+        <code value="105274-5"/>
+      </concept>
+      <concept>
+        <code value="76769-9"/>
+      </concept>
+      <concept>
+        <code value="30353-7"/>
+      </concept>
+      <concept>
+        <code value="33025-8"/>
+      </concept>
+      <concept>
+        <code value="15082-1"/>
+      </concept>
+      <concept>
+        <code value="87437-0"/>
+      </concept>
+      <concept>
+        <code value="4683-9"/>
+      </concept>
+      <concept>
+        <code value="35183-3"/>
+      </concept>
+      <concept>
+        <code value="4550-0"/>
+      </concept>
+      <concept>
+        <code value="75928-2"/>
+      </concept>
+      <concept>
+        <code value="59260-0"/>
+      </concept>
+      <concept>
+        <code value="105300-8"/>
+      </concept>
+      <concept>
+        <code value="93846-4"/>
+      </concept>
+      <concept>
+        <code value="103750-6"/>
+      </concept>
+      <concept>
+        <code value="56040-9"/>
+      </concept>
+      <concept>
+        <code value="72262-9"/>
+      </concept>
+      <concept>
+        <code value="72263-7"/>
+      </concept>
+      <concept>
+        <code value="50559-4"/>
+      </concept>
+      <concept>
+        <code value="49137-3"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11010000107/version/20260321"/>
+      <concept>
+        <code value="431314004"/>
+        <display value="Peripheral oxygen saturation (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="408591000"/>
+        <display value="Hemoglobin A1c target (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="446074002"/>
+        <display value="Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method (observable entity)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11010000107/version/20260321"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

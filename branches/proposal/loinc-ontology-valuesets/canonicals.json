@@ -1,0 +1,763 @@
+[{
+  "id" : "mii-cps-labor-capabilitystatement",
+  "type" : "CapabilityStatement",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/CapabilityStatement/metadata",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_CPS_Labor_CapabilityStatement"
+},
+{
+  "id" : "mii-ig-labor",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ImplementationGuide/mii-ig-labor",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_IG_Labor"
+},
+{
+  "id" : "mii-pr-labor-laborbefund",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_Laborbefund"
+},
+{
+  "id" : "mii-ex-labor-interpretationsbeeinflussende-eigenschaft",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft"
+},
+{
+  "id" : "mii-lm-labor",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/LogicalModel/Laborbefund",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_LM_Labor"
+},
+{
+  "id" : "mii-pr-labor-laboruntersuchung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_Laboruntersuchung"
+},
+{
+  "id" : "mii-ex-labor-quelle-klinisches-bezugsdatum",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_EX_Labor_Quelle_Klinisches_Bezugsdatum"
+},
+{
+  "id" : "mii-pr-labor-laboranforderung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_Laboranforderung"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-erythrocytes-count-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-erythrocytes-count-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Erythrocytes_Count_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-hba1c-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-hba1c-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Hba1c_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-hematocrit-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-hematocrit-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Hematocrit_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-hemoglobin-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-hemoglobin-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Hemoglobin_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-ldh-isoenzymes",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-ldh-isoenzymes",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Ldh_Isoenzymes"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-ldh-monitoring-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-ldh-monitoring-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Ldh_Monitoring_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-leukocytes-count-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-leukocytes-count-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Leukocytes_Count_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-leukocytes-differential-panel",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-leukocytes-differential-panel",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Leukocytes_Differential_Panel"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-mch-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-mch-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Mch_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-mchc-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-mchc-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Mchc_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-mcv-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-mcv-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Mcv_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-methemoglobin-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-methemoglobin-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Methemoglobin_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-nitrite-urine-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-nitrite-urine-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Nitrite_Urine_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-platelets-count-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-platelets-count-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Platelets_Count_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-potassium-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-potassium-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Potassium_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-psa-free-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-psa-free-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Psa_Free_Standard"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-psa-free-total-ratio",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-psa-free-total-ratio",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Psa_Free_Total_Ratio"
+},
+{
+  "id" : "mii-pr-labor-loinc-ontology-psa-total-standard",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-psa-total-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_PR_Labor_LOINC_Ontology_Psa_Total_Standard"
+},
+{
+  "id" : "mii-vs-labor-interpretation",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Interpretation",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Interpretation"
+},
+{
+  "id" : "mii-vs-labor-laborbereich",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborbereich",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Laborbereich"
+},
+{
+  "id" : "mii-vs-labor-laborergebnis-codiert",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-codiert",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Laborergebnis_Codiert"
+},
+{
+  "id" : "mii-vs-labor-laborergebnis-qualitativ",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-qualitativ",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Laborergebnis_Qualitativ"
+},
+{
+  "id" : "mii-vs-labor-laborergbenis-semiquantitativ",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Laborergbenis_Semiquantitativ"
+},
+{
+  "id" : "mii-vs-labor-quelle-klinisches-bezugsdatum",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/QuelleKlinischesBezugsdatum",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Quelle_Klinisches_Bezugsdatum"
+},
+{
+  "id" : "mii-vs-labor-order-codes",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Order_Codes"
+},
+{
+  "id" : "mii-vs-labor-identifier-type-codes",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_Identifier_Type_Codes"
+},
+{
+  "id" : "mii-vs-labor-interpretation-eigenschaften-snomedct",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-erythrocytes-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Erythrocytes_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-erythrocytes-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Erythrocytes_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-erythrocytes-count-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-count-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Erythrocytes_Count_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-erythrocytes-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Erythrocytes_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-erythrocytes-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Erythrocytes_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Erythrocytes_Semiquantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hba1c-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hba1c_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hba1c-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hba1c_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hba1c-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hba1c_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hba1c-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hba1c_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hematocrit-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hematocrit_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hematocrit-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hematocrit_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hematocrit-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hematocrit_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hematocrit-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hematocrit_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hematocrit-semiquantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-semiquantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hematocrit_Semiquantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hematocrit-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hematocrit_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hemoglobin-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hemoglobin_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hemoglobin-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hemoglobin_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hemoglobin-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hemoglobin_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hemoglobin-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hemoglobin_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hemoglobin_Semiquantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-hemoglobin-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Hemoglobin_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-ldh-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-ldh-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-ldh-isoenzymes",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-isoenzymes",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Isoenzymes"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-ldh-monitoring-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-monitoring-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Monitoring_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-ldh-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-ldh-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Ldh_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-count-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-count-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Count_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-differential-panel",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-differential-panel",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Differential_Panel"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-semiquantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-semiquantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Semiquantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mch-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mch_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mch-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mch_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mch-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mch_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mch-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mch_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mch-semiquantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-semiquantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mch_Semiquantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mch-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mch_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mchc-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mchc-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mchc_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mchc-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mchc-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mchc_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mchc-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mchc-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mchc_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mcv-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mcv-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mcv_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mcv-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mcv-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mcv_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-mcv-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mcv-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Mcv_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-methemoglobin-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Methemoglobin_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-methemoglobin-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Methemoglobin_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-methemoglobin-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Methemoglobin_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-methemoglobin-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Methemoglobin_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-methemoglobin-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Methemoglobin_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-nitrite-urine-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-nitrite-urine-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-nitrite-urine-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-nitrite-urine-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Semiquantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-nitrite-urine-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-platelets-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-platelets-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Platelets_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-platelets-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-platelets-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Platelets_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-platelets-count-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-platelets-count-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Platelets_Count_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-platelets-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-platelets-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Platelets_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-platelets-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-platelets-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Platelets_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-potassium-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-potassium-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Potassium_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-potassium-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-potassium-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Potassium_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-potassium-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-potassium-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Potassium_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-potassium-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-potassium-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Potassium_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-complete",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-complete",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Complete"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-convertible",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-convertible",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Convertible"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-free-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-free-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Free_Standard"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-free-total-ratio",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-free-total-ratio",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Free_Total_Ratio"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-qualitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-qualitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Qualitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-quantitative",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Quantitative"
+},
+{
+  "id" : "mii-vs-labor-loinc-ontology-psa-total-standard",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-total-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Psa_Total_Standard"
+}]

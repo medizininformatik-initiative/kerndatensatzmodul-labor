@@ -1,0 +1,542 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-labor-loinc-ontology-leukocytes-quantitative",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ci"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-leukocytes-quantitative</b></p><a name=\"mii-vs-labor-loinc-ontology-leukocytes-quantitative\"> </a><a name=\"hcmii-vs-labor-loinc-ontology-leukocytes-quantitative\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.82\"> version &#x1F4CD;2.82</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/110644-2/\">110644-2</a></td><td style=\"color: #cccccc\">Leukocytes [Measurement] in Stool</td></tr><tr><td><a href=\"https://loinc.org/111204-4/\">111204-4</a></td><td style=\"color: #cccccc\">Leukocytes [Measurement] in Urine sediment</td></tr><tr><td><a href=\"https://loinc.org/99929-2/\">99929-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Body fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/96712-5/\">96712-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Body fluid by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/12224-2/\">12224-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Nose by Microscopy high power field</td></tr><tr><td><a href=\"https://loinc.org/96718-2/\">96718-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Prostatic fluid by Light microscopy</td></tr><tr><td><a href=\"https://loinc.org/49224-9/\">49224-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Semen by Microscopy high power field</td></tr><tr><td><a href=\"https://loinc.org/53225-9/\">53225-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Specimen by Wet preparation</td></tr><tr><td><a href=\"https://loinc.org/12225-9/\">12225-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Sputum by Microscopy high power field</td></tr><tr><td><a href=\"https://loinc.org/51770-6/\">51770-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Stool by Microscopy high power field</td></tr><tr><td><a href=\"https://loinc.org/53226-7/\">53226-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Urethra by Wet preparation</td></tr><tr><td><a href=\"https://loinc.org/104646-5/\">104646-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Urine by Computer assisted method</td></tr><tr><td><a href=\"https://loinc.org/105104-4/\">105104-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Urine sediment</td></tr><tr><td><a href=\"https://loinc.org/46702-7/\">46702-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Urine sediment by Automated count</td></tr><tr><td><a href=\"https://loinc.org/5821-4/\">5821-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Urine sediment by Microscopy high power field</td></tr><tr><td><a href=\"https://loinc.org/45383-7/\">45383-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Urine sediment by Microscopy low power field</td></tr><tr><td><a href=\"https://loinc.org/53227-5/\">53227-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Cervix by Wet preparation</td></tr><tr><td><a href=\"https://loinc.org/44092-5/\">44092-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/area] in Vaginal fluid by Wet preparation</td></tr><tr><td><a href=\"https://loinc.org/26471-3/\">26471-3</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/40646-2/\">40646-2</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/730-2/\">730-2</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26473-9/\">26473-9</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Body fluid</td></tr><tr><td><a href=\"https://loinc.org/13524-4/\">13524-4</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Body fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/32808-8/\">32808-8</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Bronchial specimen</td></tr><tr><td><a href=\"https://loinc.org/40543-1/\">40543-1</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Bronchial specimen by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26472-1/\">26472-1</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Cerebral spinal fluid</td></tr><tr><td><a href=\"https://loinc.org/13523-6/\">13523-6</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Cerebral spinal fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30407-1/\">30407-1</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Pericardial fluid</td></tr><tr><td><a href=\"https://loinc.org/14857-7/\">14857-7</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Pericardial fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/40535-7/\">40535-7</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Peritoneal dialysis fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30409-7/\">30409-7</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Peritoneal fluid</td></tr><tr><td><a href=\"https://loinc.org/14859-3/\">14859-3</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Peritoneal fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30408-9/\">30408-9</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Pleural fluid</td></tr><tr><td><a href=\"https://loinc.org/14858-5/\">14858-5</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Pleural fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30410-5/\">30410-5</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Synovial fluid</td></tr><tr><td><a href=\"https://loinc.org/14860-1/\">14860-1</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Synovial fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/68432-4/\">68432-4</a></td><td style=\"color: #cccccc\">Leukocytes other/Leukocytes in Vitreous fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/61182-2/\">61182-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood from Fetus</td></tr><tr><td><a href=\"https://loinc.org/12227-5/\">12227-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood</td></tr><tr><td><a href=\"https://loinc.org/33256-9/\">33256-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/48052-5/\">48052-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Body fluid</td></tr><tr><td><a href=\"https://loinc.org/55784-3/\">55784-3</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Bone marrow</td></tr><tr><td><a href=\"https://loinc.org/48034-3/\">48034-3</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebral spinal fluid</td></tr><tr><td><a href=\"https://loinc.org/66768-3/\">66768-3</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood</td></tr><tr><td><a href=\"https://loinc.org/70126-8/\">70126-8</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] corrected for nucleated erythrocytes in Pleural fluid</td></tr><tr><td><a href=\"https://loinc.org/33765-9/\">33765-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood Product unit.platelet pheresis by Automated count</td></tr><tr><td><a href=\"https://loinc.org/95218-4/\">95218-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Stem cell product</td></tr><tr><td><a href=\"https://loinc.org/100849-9/\">100849-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Amniotic fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/33028-2/\">33028-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood from Blood product unit</td></tr><tr><td><a href=\"https://loinc.org/62239-9/\">62239-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood from Fetus by Automated count</td></tr><tr><td><a href=\"https://loinc.org/26464-8/\">26464-8</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/6690-2/\">6690-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/49498-9/\">49498-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"https://loinc.org/804-5/\">804-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26466-3/\">26466-3</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Body fluid</td></tr><tr><td><a href=\"https://loinc.org/57845-0/\">57845-0</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Body fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/6743-9/\">6743-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Body fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/82587-7/\">82587-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Bone marrow by Automated count</td></tr><tr><td><a href=\"https://loinc.org/99776-7/\">99776-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Bronchoalveolar lavage by Automated count</td></tr><tr><td><a href=\"https://loinc.org/99051-5/\">99051-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Bronchoalveolar lavage by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30401-4/\">30401-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Bronchial specimen</td></tr><tr><td><a href=\"https://loinc.org/14810-6/\">14810-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Bronchial specimen by Manual count</td></tr><tr><td><a href=\"https://loinc.org/92635-2/\">92635-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Buffy Coat</td></tr><tr><td><a href=\"https://loinc.org/26465-5/\">26465-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid</td></tr><tr><td><a href=\"https://loinc.org/76674-1/\">76674-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid --1st tube</td></tr><tr><td><a href=\"https://loinc.org/46088-1/\">46088-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid --2nd tube</td></tr><tr><td><a href=\"https://loinc.org/46089-9/\">46089-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid --3rd tube</td></tr><tr><td><a href=\"https://loinc.org/46090-7/\">46090-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid --4th tube</td></tr><tr><td><a href=\"https://loinc.org/805-2/\">805-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/806-0/\">806-0</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cerebral spinal fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/47281-1/\">47281-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Cord blood</td></tr><tr><td><a href=\"https://loinc.org/53518-7/\">53518-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Dialysis fluid</td></tr><tr><td><a href=\"https://loinc.org/68368-0/\">68368-0</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Dialysis fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/57847-6/\">57847-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Dialysis fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30402-2/\">30402-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Gastric fluid</td></tr><tr><td><a href=\"https://loinc.org/14373-5/\">14373-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Gastric fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/98020-1/\">98020-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Lower respiratory specimen by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30403-0/\">30403-0</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pericardial fluid</td></tr><tr><td><a href=\"https://loinc.org/57846-8/\">57846-8</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pericardial fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/14811-4/\">14811-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pericardial fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/49928-5/\">49928-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Peritoneal dialysis fluid</td></tr><tr><td><a href=\"https://loinc.org/99775-9/\">99775-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Peritoneal dialysis fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/40533-2/\">40533-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Peritoneal dialysis fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26468-9/\">26468-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Peritoneal fluid</td></tr><tr><td><a href=\"https://loinc.org/809-4/\">809-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Peritoneal fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/810-2/\">810-2</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Peritoneal fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26467-1/\">26467-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pleural fluid</td></tr><tr><td><a href=\"https://loinc.org/807-8/\">807-8</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pleural fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/808-6/\">808-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pleural fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/62251-4/\">62251-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Pleural fluid from Fetus by Automated count</td></tr><tr><td><a href=\"https://loinc.org/72348-6/\">72348-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Prostatic fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/10579-1/\">10579-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Semen</td></tr><tr><td><a href=\"https://loinc.org/811-0/\">811-0</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Semen by Automated count</td></tr><tr><td><a href=\"https://loinc.org/812-8/\">812-8</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Semen by Manual count</td></tr><tr><td><a href=\"https://loinc.org/20584-9/\">20584-9</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Specimen by Automated count</td></tr><tr><td><a href=\"https://loinc.org/30404-8/\">30404-8</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Stool</td></tr><tr><td><a href=\"https://loinc.org/13349-6/\">13349-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Stool by Manual count</td></tr><tr><td><a href=\"https://loinc.org/26469-7/\">26469-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Synovial fluid</td></tr><tr><td><a href=\"https://loinc.org/813-6/\">813-6</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Synovial fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/814-4/\">814-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Synovial fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/105921-1/\">105921-1</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Urethra by Wet preparation</td></tr><tr><td><a href=\"https://loinc.org/30405-5/\">30405-5</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Urine</td></tr><tr><td><a href=\"https://loinc.org/51487-7/\">51487-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Urine by Automated count</td></tr><tr><td><a href=\"https://loinc.org/24122-4/\">24122-4</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Urine by Manual count</td></tr><tr><td><a href=\"https://loinc.org/63555-7/\">63555-7</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] by Microscopy high power field in Urine sediment collected for unspecified duration</td></tr><tr><td><a href=\"https://loinc.org/68434-0/\">68434-0</a></td><td style=\"color: #cccccc\">Leukocytes [#/volume] in Vitreous fluid by Automated count</td></tr><tr><td><a href=\"https://loinc.org/66145-4/\">66145-4</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Blood from Fetus by Manual count</td></tr><tr><td><a href=\"https://loinc.org/30406-3/\">30406-3</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/51383-8/\">51383-8</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"https://loinc.org/729-4/\">729-4</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"https://loinc.org/35051-2/\">35051-2</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Body fluid</td></tr><tr><td><a href=\"https://loinc.org/26470-5/\">26470-5</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Cerebral spinal fluid</td></tr><tr><td><a href=\"https://loinc.org/13351-2/\">13351-2</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Cerebral spinal fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/67830-0/\">67830-0</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Pericardial fluid</td></tr><tr><td><a href=\"https://loinc.org/68428-2/\">68428-2</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Pericardial fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/35054-6/\">35054-6</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Peritoneal fluid</td></tr><tr><td><a href=\"https://loinc.org/68429-0/\">68429-0</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Peritoneal fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/35052-0/\">35052-0</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Pleural fluid</td></tr><tr><td><a href=\"https://loinc.org/68430-8/\">68430-8</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Pleural fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/67836-7/\">67836-7</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Pleural fluid from Fetus</td></tr><tr><td><a href=\"https://loinc.org/35053-8/\">35053-8</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Synovial fluid</td></tr><tr><td><a href=\"https://loinc.org/68431-6/\">68431-6</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Synovial fluid by Manual count</td></tr><tr><td><a href=\"https://loinc.org/68433-2/\">68433-2</a></td><td style=\"color: #cccccc\">Leukocytes other [#/volume] in Vitreous fluid by Manual count</td></tr></table></li></ul></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-leukocytes-quantitative</b></p><a name=\"de-mii-vs-labor-loinc-ontology-leukocytes-quantitative\"> </a><a name=\"de-hcmii-vs-labor-loinc-ontology-leukocytes-quantitative\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.82\"> version &#x1F4CD;2.82</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/110644-2/\">110644-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/111204-4/\">111204-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/99929-2/\">99929-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/96712-5/\">96712-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/12224-2/\">12224-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/96718-2/\">96718-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/49224-9/\">49224-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/53225-9/\">53225-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/12225-9/\">12225-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/51770-6/\">51770-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/53226-7/\">53226-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/104646-5/\">104646-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/105104-4/\">105104-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/46702-7/\">46702-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/5821-4/\">5821-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/45383-7/\">45383-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/53227-5/\">53227-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/44092-5/\">44092-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26471-3/\">26471-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/40646-2/\">40646-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/730-2/\">730-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26473-9/\">26473-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/13524-4/\">13524-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/32808-8/\">32808-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/40543-1/\">40543-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26472-1/\">26472-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/13523-6/\">13523-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30407-1/\">30407-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14857-7/\">14857-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/40535-7/\">40535-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30409-7/\">30409-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14859-3/\">14859-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30408-9/\">30408-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14858-5/\">14858-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30410-5/\">30410-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14860-1/\">14860-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68432-4/\">68432-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/61182-2/\">61182-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/12227-5/\">12227-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/33256-9/\">33256-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/48052-5/\">48052-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/55784-3/\">55784-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/48034-3/\">48034-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/66768-3/\">66768-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/70126-8/\">70126-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/33765-9/\">33765-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/95218-4/\">95218-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/100849-9/\">100849-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/33028-2/\">33028-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/62239-9/\">62239-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26464-8/\">26464-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/6690-2/\">6690-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/49498-9/\">49498-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/804-5/\">804-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26466-3/\">26466-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/57845-0/\">57845-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/6743-9/\">6743-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/82587-7/\">82587-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/99776-7/\">99776-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/99051-5/\">99051-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30401-4/\">30401-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14810-6/\">14810-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/92635-2/\">92635-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26465-5/\">26465-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/76674-1/\">76674-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/46088-1/\">46088-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/46089-9/\">46089-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/46090-7/\">46090-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/805-2/\">805-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/806-0/\">806-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/47281-1/\">47281-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/53518-7/\">53518-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68368-0/\">68368-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/57847-6/\">57847-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30402-2/\">30402-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14373-5/\">14373-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/98020-1/\">98020-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30403-0/\">30403-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/57846-8/\">57846-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/14811-4/\">14811-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/49928-5/\">49928-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/99775-9/\">99775-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/40533-2/\">40533-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26468-9/\">26468-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/809-4/\">809-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/810-2/\">810-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26467-1/\">26467-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/807-8/\">807-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/808-6/\">808-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/62251-4/\">62251-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/72348-6/\">72348-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/10579-1/\">10579-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/811-0/\">811-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/812-8/\">812-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/20584-9/\">20584-9</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30404-8/\">30404-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/13349-6/\">13349-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26469-7/\">26469-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/813-6/\">813-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/814-4/\">814-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/105921-1/\">105921-1</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30405-5/\">30405-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/51487-7/\">51487-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/24122-4/\">24122-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/63555-7/\">63555-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68434-0/\">68434-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/66145-4/\">66145-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/30406-3/\">30406-3</a></td><td/></tr><tr><td><a href=\"https://loinc.org/51383-8/\">51383-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/729-4/\">729-4</a></td><td/></tr><tr><td><a href=\"https://loinc.org/35051-2/\">35051-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/26470-5/\">26470-5</a></td><td/></tr><tr><td><a href=\"https://loinc.org/13351-2/\">13351-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/67830-0/\">67830-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68428-2/\">68428-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/35054-6/\">35054-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68429-0/\">68429-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/35052-0/\">35052-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68430-8/\">68430-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/67836-7/\">67836-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/35053-8/\">35053-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68431-6/\">68431-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/68433-2/\">68433-2</a></td><td/></tr></table></li></ul></div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-quantitative",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Leukocytes_Quantitative",
+  "title" : "MII VS Labor LOINC Ontology Leukocytes Quantitative",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-20",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte leukocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-03-21. 123 concepts (123 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "purpose" : "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.",
+  "copyright" : "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "concept" : [{
+        "code" : "110644-2"
+      },
+      {
+        "code" : "111204-4"
+      },
+      {
+        "code" : "99929-2"
+      },
+      {
+        "code" : "96712-5"
+      },
+      {
+        "code" : "12224-2"
+      },
+      {
+        "code" : "96718-2"
+      },
+      {
+        "code" : "49224-9"
+      },
+      {
+        "code" : "53225-9"
+      },
+      {
+        "code" : "12225-9"
+      },
+      {
+        "code" : "51770-6"
+      },
+      {
+        "code" : "53226-7"
+      },
+      {
+        "code" : "104646-5"
+      },
+      {
+        "code" : "105104-4"
+      },
+      {
+        "code" : "46702-7"
+      },
+      {
+        "code" : "5821-4"
+      },
+      {
+        "code" : "45383-7"
+      },
+      {
+        "code" : "53227-5"
+      },
+      {
+        "code" : "44092-5"
+      },
+      {
+        "code" : "26471-3"
+      },
+      {
+        "code" : "40646-2"
+      },
+      {
+        "code" : "730-2"
+      },
+      {
+        "code" : "26473-9"
+      },
+      {
+        "code" : "13524-4"
+      },
+      {
+        "code" : "32808-8"
+      },
+      {
+        "code" : "40543-1"
+      },
+      {
+        "code" : "26472-1"
+      },
+      {
+        "code" : "13523-6"
+      },
+      {
+        "code" : "30407-1"
+      },
+      {
+        "code" : "14857-7"
+      },
+      {
+        "code" : "40535-7"
+      },
+      {
+        "code" : "30409-7"
+      },
+      {
+        "code" : "14859-3"
+      },
+      {
+        "code" : "30408-9"
+      },
+      {
+        "code" : "14858-5"
+      },
+      {
+        "code" : "30410-5"
+      },
+      {
+        "code" : "14860-1"
+      },
+      {
+        "code" : "68432-4"
+      },
+      {
+        "code" : "61182-2"
+      },
+      {
+        "code" : "12227-5"
+      },
+      {
+        "code" : "33256-9"
+      },
+      {
+        "code" : "48052-5"
+      },
+      {
+        "code" : "55784-3"
+      },
+      {
+        "code" : "48034-3"
+      },
+      {
+        "code" : "66768-3"
+      },
+      {
+        "code" : "70126-8"
+      },
+      {
+        "code" : "33765-9"
+      },
+      {
+        "code" : "95218-4"
+      },
+      {
+        "code" : "100849-9"
+      },
+      {
+        "code" : "33028-2"
+      },
+      {
+        "code" : "62239-9"
+      },
+      {
+        "code" : "26464-8"
+      },
+      {
+        "code" : "6690-2"
+      },
+      {
+        "code" : "49498-9"
+      },
+      {
+        "code" : "804-5"
+      },
+      {
+        "code" : "26466-3"
+      },
+      {
+        "code" : "57845-0"
+      },
+      {
+        "code" : "6743-9"
+      },
+      {
+        "code" : "82587-7"
+      },
+      {
+        "code" : "99776-7"
+      },
+      {
+        "code" : "99051-5"
+      },
+      {
+        "code" : "30401-4"
+      },
+      {
+        "code" : "14810-6"
+      },
+      {
+        "code" : "92635-2"
+      },
+      {
+        "code" : "26465-5"
+      },
+      {
+        "code" : "76674-1"
+      },
+      {
+        "code" : "46088-1"
+      },
+      {
+        "code" : "46089-9"
+      },
+      {
+        "code" : "46090-7"
+      },
+      {
+        "code" : "805-2"
+      },
+      {
+        "code" : "806-0"
+      },
+      {
+        "code" : "47281-1"
+      },
+      {
+        "code" : "53518-7"
+      },
+      {
+        "code" : "68368-0"
+      },
+      {
+        "code" : "57847-6"
+      },
+      {
+        "code" : "30402-2"
+      },
+      {
+        "code" : "14373-5"
+      },
+      {
+        "code" : "98020-1"
+      },
+      {
+        "code" : "30403-0"
+      },
+      {
+        "code" : "57846-8"
+      },
+      {
+        "code" : "14811-4"
+      },
+      {
+        "code" : "49928-5"
+      },
+      {
+        "code" : "99775-9"
+      },
+      {
+        "code" : "40533-2"
+      },
+      {
+        "code" : "26468-9"
+      },
+      {
+        "code" : "809-4"
+      },
+      {
+        "code" : "810-2"
+      },
+      {
+        "code" : "26467-1"
+      },
+      {
+        "code" : "807-8"
+      },
+      {
+        "code" : "808-6"
+      },
+      {
+        "code" : "62251-4"
+      },
+      {
+        "code" : "72348-6"
+      },
+      {
+        "code" : "10579-1"
+      },
+      {
+        "code" : "811-0"
+      },
+      {
+        "code" : "812-8"
+      },
+      {
+        "code" : "20584-9"
+      },
+      {
+        "code" : "30404-8"
+      },
+      {
+        "code" : "13349-6"
+      },
+      {
+        "code" : "26469-7"
+      },
+      {
+        "code" : "813-6"
+      },
+      {
+        "code" : "814-4"
+      },
+      {
+        "code" : "105921-1"
+      },
+      {
+        "code" : "30405-5"
+      },
+      {
+        "code" : "51487-7"
+      },
+      {
+        "code" : "24122-4"
+      },
+      {
+        "code" : "63555-7"
+      },
+      {
+        "code" : "68434-0"
+      },
+      {
+        "code" : "66145-4"
+      },
+      {
+        "code" : "30406-3"
+      },
+      {
+        "code" : "51383-8"
+      },
+      {
+        "code" : "729-4"
+      },
+      {
+        "code" : "35051-2"
+      },
+      {
+        "code" : "26470-5"
+      },
+      {
+        "code" : "13351-2"
+      },
+      {
+        "code" : "67830-0"
+      },
+      {
+        "code" : "68428-2"
+      },
+      {
+        "code" : "35054-6"
+      },
+      {
+        "code" : "68429-0"
+      },
+      {
+        "code" : "35052-0"
+      },
+      {
+        "code" : "68430-8"
+      },
+      {
+        "code" : "67836-7"
+      },
+      {
+        "code" : "35053-8"
+      },
+      {
+        "code" : "68431-6"
+      },
+      {
+        "code" : "68433-2"
+      }]
+    }]
+  }
+}

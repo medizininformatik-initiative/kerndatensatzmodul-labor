@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-labor-loinc-ontology-hemoglobin-quantitative"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ci"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-hemoglobin-quantitative</b></p><a name="mii-vs-labor-loinc-ontology-hemoglobin-quantitative"> </a><a name="hcmii-vs-labor-loinc-ontology-hemoglobin-quantitative"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.82"> version &#x1F4CD;2.82</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/59468-9/">59468-9</a></td><td style="color: #cccccc">MCH [Entitic substance]</td></tr><tr><td><a href="https://loinc.org/73895-5/">73895-5</a></td><td style="color: #cccccc">Hemoglobin [Entitic substance] in Reticulocytes by Automated count</td></tr><tr><td><a href="https://loinc.org/28539-5/">28539-5</a></td><td style="color: #cccccc">MCH [Entitic mass]</td></tr><tr><td><a href="https://loinc.org/785-6/">785-6</a></td><td style="color: #cccccc">MCH [Entitic mass] by Automated count</td></tr><tr><td><a href="https://loinc.org/47278-7/">47278-7</a></td><td style="color: #cccccc">MCH [Entitic mass] in Cord blood</td></tr><tr><td><a href="https://loinc.org/62243-1/">62243-1</a></td><td style="color: #cccccc">MCH [Entitic mass] in Fetus by Automated count</td></tr><tr><td><a href="https://loinc.org/42810-2/">42810-2</a></td><td style="color: #cccccc">Hemoglobin [Entitic mass] in Reticulocytes</td></tr><tr><td><a href="https://loinc.org/71694-4/">71694-4</a></td><td style="color: #cccccc">Hemoglobin [Entitic mass] in Reticulocytes by Automated count</td></tr><tr><td><a href="https://loinc.org/27396-1/">27396-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/mass] in Stool from gastrointestinal</td></tr><tr><td><a href="https://loinc.org/24469-9/">24469-9</a></td><td style="color: #cccccc">Hemoglobin XXX/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/48343-8/">48343-8</a></td><td style="color: #cccccc">Hemoglobin.other/Hemoglobin.total in Blood</td></tr><tr><td><a href="https://loinc.org/32017-6/">32017-6</a></td><td style="color: #cccccc">Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href="https://loinc.org/42248-5/">42248-5</a></td><td style="color: #cccccc">Hemoglobin.other/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href="https://loinc.org/109484-6/">109484-6</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/110885-1/">110885-1</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Blood</td></tr><tr><td><a href="https://loinc.org/109887-0/">109887-0</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/109886-2/">109886-2</a></td><td style="color: #cccccc">Hemoglobin [Measurement] in Venous blood</td></tr><tr><td><a href="https://loinc.org/30313-1/">30313-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/14775-1/">14775-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/30354-5/">30354-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial cord blood</td></tr><tr><td><a href="https://loinc.org/33026-6/">33026-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Arterial cord blood by calculation</td></tr><tr><td><a href="https://loinc.org/54289-4/">54289-4</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood from Blood product unit</td></tr><tr><td><a href="https://loinc.org/61180-6/">61180-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood from Fetus</td></tr><tr><td><a href="https://loinc.org/97550-8/">97550-8</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Central venous blood by calculation</td></tr><tr><td><a href="https://loinc.org/97555-7/">97555-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Central venous blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/718-7/">718-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/20509-6/">20509-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood by calculation</td></tr><tr><td><a href="https://loinc.org/55782-7/">55782-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/48725-6/">48725-6</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Blood --pre therapeutic phlebotomy</td></tr><tr><td><a href="https://loinc.org/33509-1/">33509-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Body fluid</td></tr><tr><td><a href="https://loinc.org/30352-9/">30352-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Capillary blood</td></tr><tr><td><a href="https://loinc.org/97556-5/">97556-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Capillary blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/719-5/">719-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Cerebral spinal fluid</td></tr><tr><td><a href="https://loinc.org/40719-7/">40719-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Cord blood</td></tr><tr><td><a href="https://loinc.org/30351-1/">30351-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/105040-0/">105040-0</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Mixed venous blood by calculation</td></tr><tr><td><a href="https://loinc.org/76768-1/">76768-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/69950-4/">69950-4</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Pericardial fluid</td></tr><tr><td><a href="https://loinc.org/723-7/">723-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Peritoneal fluid</td></tr><tr><td><a href="https://loinc.org/722-9/">722-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Pleural fluid</td></tr><tr><td><a href="https://loinc.org/107191-9/">107191-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal --1st specimen</td></tr><tr><td><a href="https://loinc.org/107190-1/">107190-1</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal --2nd specimen</td></tr><tr><td><a href="https://loinc.org/107189-3/">107189-3</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal --3rd specimen</td></tr><tr><td><a href="https://loinc.org/58453-2/">58453-2</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Stool from gastrointestinal lower by Immunoassay</td></tr><tr><td><a href="https://loinc.org/724-5/">724-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Synovial fluid</td></tr><tr><td><a href="https://loinc.org/726-0/">726-0</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Urine</td></tr><tr><td><a href="https://loinc.org/30350-3/">30350-3</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous blood</td></tr><tr><td><a href="https://loinc.org/105274-5/">105274-5</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous blood by calculation</td></tr><tr><td><a href="https://loinc.org/76769-9/">76769-9</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous blood by Oximetry</td></tr><tr><td><a href="https://loinc.org/30353-7/">30353-7</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous cord blood</td></tr><tr><td><a href="https://loinc.org/33025-8/">33025-8</a></td><td style="color: #cccccc">Hemoglobin [Mass/volume] in Venous cord blood by calculation</td></tr><tr><td><a href="https://loinc.org/35183-3/">35183-3</a></td><td style="color: #cccccc">Hemoglobin [Mass or Moles/volume] in Plasma</td></tr><tr><td><a href="https://loinc.org/75928-2/">75928-2</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/59260-0/">59260-0</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/105300-8/">105300-8</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Mixed venous blood</td></tr><tr><td><a href="https://loinc.org/93846-4/">93846-4</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Venous blood</td></tr><tr><td><a href="https://loinc.org/103750-6/">103750-6</a></td><td style="color: #cccccc">Hemoglobin [Moles/volume] in Venous cord blood</td></tr></table></li></ul></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-hemoglobin-quantitative</b></p><a name="de-mii-vs-labor-loinc-ontology-hemoglobin-quantitative"> </a><a name="de-hcmii-vs-labor-loinc-ontology-hemoglobin-quantitative"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.82"> version &#x1F4CD;2.82</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/59468-9/">59468-9</a></td><td/></tr><tr><td><a href="https://loinc.org/73895-5/">73895-5</a></td><td/></tr><tr><td><a href="https://loinc.org/28539-5/">28539-5</a></td><td/></tr><tr><td><a href="https://loinc.org/785-6/">785-6</a></td><td/></tr><tr><td><a href="https://loinc.org/47278-7/">47278-7</a></td><td/></tr><tr><td><a href="https://loinc.org/62243-1/">62243-1</a></td><td/></tr><tr><td><a href="https://loinc.org/42810-2/">42810-2</a></td><td/></tr><tr><td><a href="https://loinc.org/71694-4/">71694-4</a></td><td/></tr><tr><td><a href="https://loinc.org/27396-1/">27396-1</a></td><td/></tr><tr><td><a href="https://loinc.org/24469-9/">24469-9</a></td><td/></tr><tr><td><a href="https://loinc.org/48343-8/">48343-8</a></td><td/></tr><tr><td><a href="https://loinc.org/32017-6/">32017-6</a></td><td/></tr><tr><td><a href="https://loinc.org/42248-5/">42248-5</a></td><td/></tr><tr><td><a href="https://loinc.org/109484-6/">109484-6</a></td><td/></tr><tr><td><a href="https://loinc.org/110885-1/">110885-1</a></td><td/></tr><tr><td><a href="https://loinc.org/109887-0/">109887-0</a></td><td/></tr><tr><td><a href="https://loinc.org/109886-2/">109886-2</a></td><td/></tr><tr><td><a href="https://loinc.org/30313-1/">30313-1</a></td><td/></tr><tr><td><a href="https://loinc.org/14775-1/">14775-1</a></td><td/></tr><tr><td><a href="https://loinc.org/30354-5/">30354-5</a></td><td/></tr><tr><td><a href="https://loinc.org/33026-6/">33026-6</a></td><td/></tr><tr><td><a href="https://loinc.org/54289-4/">54289-4</a></td><td/></tr><tr><td><a href="https://loinc.org/61180-6/">61180-6</a></td><td/></tr><tr><td><a href="https://loinc.org/97550-8/">97550-8</a></td><td/></tr><tr><td><a href="https://loinc.org/97555-7/">97555-7</a></td><td/></tr><tr><td><a href="https://loinc.org/718-7/">718-7</a></td><td/></tr><tr><td><a href="https://loinc.org/20509-6/">20509-6</a></td><td/></tr><tr><td><a href="https://loinc.org/55782-7/">55782-7</a></td><td/></tr><tr><td><a href="https://loinc.org/48725-6/">48725-6</a></td><td/></tr><tr><td><a href="https://loinc.org/33509-1/">33509-1</a></td><td/></tr><tr><td><a href="https://loinc.org/30352-9/">30352-9</a></td><td/></tr><tr><td><a href="https://loinc.org/97556-5/">97556-5</a></td><td/></tr><tr><td><a href="https://loinc.org/719-5/">719-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40719-7/">40719-7</a></td><td/></tr><tr><td><a href="https://loinc.org/30351-1/">30351-1</a></td><td/></tr><tr><td><a href="https://loinc.org/105040-0/">105040-0</a></td><td/></tr><tr><td><a href="https://loinc.org/76768-1/">76768-1</a></td><td/></tr><tr><td><a href="https://loinc.org/69950-4/">69950-4</a></td><td/></tr><tr><td><a href="https://loinc.org/723-7/">723-7</a></td><td/></tr><tr><td><a href="https://loinc.org/722-9/">722-9</a></td><td/></tr><tr><td><a href="https://loinc.org/107191-9/">107191-9</a></td><td/></tr><tr><td><a href="https://loinc.org/107190-1/">107190-1</a></td><td/></tr><tr><td><a href="https://loinc.org/107189-3/">107189-3</a></td><td/></tr><tr><td><a href="https://loinc.org/58453-2/">58453-2</a></td><td/></tr><tr><td><a href="https://loinc.org/724-5/">724-5</a></td><td/></tr><tr><td><a href="https://loinc.org/726-0/">726-0</a></td><td/></tr><tr><td><a href="https://loinc.org/30350-3/">30350-3</a></td><td/></tr><tr><td><a href="https://loinc.org/105274-5/">105274-5</a></td><td/></tr><tr><td><a href="https://loinc.org/76769-9/">76769-9</a></td><td/></tr><tr><td><a href="https://loinc.org/30353-7/">30353-7</a></td><td/></tr><tr><td><a href="https://loinc.org/33025-8/">33025-8</a></td><td/></tr><tr><td><a href="https://loinc.org/35183-3/">35183-3</a></td><td/></tr><tr><td><a href="https://loinc.org/75928-2/">75928-2</a></td><td/></tr><tr><td><a href="https://loinc.org/59260-0/">59260-0</a></td><td/></tr><tr><td><a href="https://loinc.org/105300-8/">105300-8</a></td><td/></tr><tr><td><a href="https://loinc.org/93846-4/">93846-4</a></td><td/></tr><tr><td><a href="https://loinc.org/103750-6/">103750-6</a></td><td/></tr></table></li></ul></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C36292"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C25294"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="pw@gefyra.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-quantitative"/>
+  <version value="2027.0.0-ci"/>
+  <name value="MII_VS_Labor_LOINC_Ontology_Hemoglobin_Quantitative"/>
+  <title value="MII VS Labor LOINC Ontology Hemoglobin Quantitative"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-20"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."/>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <concept>
+        <code value="59468-9"/>
+      </concept>
+      <concept>
+        <code value="73895-5"/>
+      </concept>
+      <concept>
+        <code value="28539-5"/>
+      </concept>
+      <concept>
+        <code value="785-6"/>
+      </concept>
+      <concept>
+        <code value="47278-7"/>
+      </concept>
+      <concept>
+        <code value="62243-1"/>
+      </concept>
+      <concept>
+        <code value="42810-2"/>
+      </concept>
+      <concept>
+        <code value="71694-4"/>
+      </concept>
+      <concept>
+        <code value="27396-1"/>
+      </concept>
+      <concept>
+        <code value="24469-9"/>
+      </concept>
+      <concept>
+        <code value="48343-8"/>
+      </concept>
+      <concept>
+        <code value="32017-6"/>
+      </concept>
+      <concept>
+        <code value="42248-5"/>
+      </concept>
+      <concept>
+        <code value="109484-6"/>
+      </concept>
+      <concept>
+        <code value="110885-1"/>
+      </concept>
+      <concept>
+        <code value="109887-0"/>
+      </concept>
+      <concept>
+        <code value="109886-2"/>
+      </concept>
+      <concept>
+        <code value="30313-1"/>
+      </concept>
+      <concept>
+        <code value="14775-1"/>
+      </concept>
+      <concept>
+        <code value="30354-5"/>
+      </concept>
+      <concept>
+        <code value="33026-6"/>
+      </concept>
+      <concept>
+        <code value="54289-4"/>
+      </concept>
+      <concept>
+        <code value="61180-6"/>
+      </concept>
+      <concept>
+        <code value="97550-8"/>
+      </concept>
+      <concept>
+        <code value="97555-7"/>
+      </concept>
+      <concept>
+        <code value="718-7"/>
+      </concept>
+      <concept>
+        <code value="20509-6"/>
+      </concept>
+      <concept>
+        <code value="55782-7"/>
+      </concept>
+      <concept>
+        <code value="48725-6"/>
+      </concept>
+      <concept>
+        <code value="33509-1"/>
+      </concept>
+      <concept>
+        <code value="30352-9"/>
+      </concept>
+      <concept>
+        <code value="97556-5"/>
+      </concept>
+      <concept>
+        <code value="719-5"/>
+      </concept>
+      <concept>
+        <code value="40719-7"/>
+      </concept>
+      <concept>
+        <code value="30351-1"/>
+      </concept>
+      <concept>
+        <code value="105040-0"/>
+      </concept>
+      <concept>
+        <code value="76768-1"/>
+      </concept>
+      <concept>
+        <code value="69950-4"/>
+      </concept>
+      <concept>
+        <code value="723-7"/>
+      </concept>
+      <concept>
+        <code value="722-9"/>
+      </concept>
+      <concept>
+        <code value="107191-9"/>
+      </concept>
+      <concept>
+        <code value="107190-1"/>
+      </concept>
+      <concept>
+        <code value="107189-3"/>
+      </concept>
+      <concept>
+        <code value="58453-2"/>
+      </concept>
+      <concept>
+        <code value="724-5"/>
+      </concept>
+      <concept>
+        <code value="726-0"/>
+      </concept>
+      <concept>
+        <code value="30350-3"/>
+      </concept>
+      <concept>
+        <code value="105274-5"/>
+      </concept>
+      <concept>
+        <code value="76769-9"/>
+      </concept>
+      <concept>
+        <code value="30353-7"/>
+      </concept>
+      <concept>
+        <code value="33025-8"/>
+      </concept>
+      <concept>
+        <code value="35183-3"/>
+      </concept>
+      <concept>
+        <code value="75928-2"/>
+      </concept>
+      <concept>
+        <code value="59260-0"/>
+      </concept>
+      <concept>
+        <code value="105300-8"/>
+      </concept>
+      <concept>
+        <code value="93846-4"/>
+      </concept>
+      <concept>
+        <code value="103750-6"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
