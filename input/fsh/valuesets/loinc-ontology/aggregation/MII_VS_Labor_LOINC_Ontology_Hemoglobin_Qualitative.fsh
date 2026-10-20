@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Hemoglobin_Qualitative
 Id: mii-vs-labor-loinc-ontology-hemoglobin-qualitative
 Title: "MII VS Labor LOINC Ontology Hemoglobin Qualitative"
-Description: "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hemoglobin (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against the LOINC Ontology 2026-03-21. 30 concepts (30 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+Description: "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hemoglobin (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 30 concepts (30 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher

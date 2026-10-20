@@ -4,7 +4,7 @@
   "name": "MII_VS_Labor_LOINC_Ontology_Hba1c_Complete",
   "id": "mii-vs-labor-loinc-ontology-hba1c-complete",
   "title": "MII VS Labor LOINC Ontology Hba1c Complete",
-  "description": "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)| against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include.",
+  "description": "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include.",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-complete",
   "meta": {
     "profile": [
