@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Erythrocytes_Quantitative
 Id: mii-vs-labor-loinc-ontology-erythrocytes-quantitative
 Title: "MII VS Labor LOINC Ontology Erythrocytes Quantitative"
-Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte erythrocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte erythrocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,7 +18,7 @@ Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the a
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-10-20"
+* ^date = "2026-11-02"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
 // Analyte erythrocytes, bucket quantitative: LOINC enumeration (88 codes) resolved from the ECL below
 * $loinc#109724-5

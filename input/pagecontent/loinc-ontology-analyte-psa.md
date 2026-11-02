@@ -1,4 +1,4 @@
-This page is the review material for the analyte **psa** of the [LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology 2026-03-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.html).
+This page is the review material for the analyte **psa** of the [LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.html).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` (37 concepts, 37 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-psa-complete.html), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-psa-quantitative.html), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-psa-convertible.html), [Qualitative](ValueSet-mii-vs-labor-loinc-ontology-psa-qualitative.html).
 
@@ -31,21 +31,21 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-total-standard](ValueSet-mii-vs-labor-
 | LOINC | Name | Direct site |
 |---|---|---|
 | 47738-0 | Prostate specific Ag [Mass/volume] in Body fluid | Body fluid specimen |
-| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 100716-0 | Prostate specific Ag [Mass/volume] in DBS | Dried blood spot specimen |
 | 59223-8 | Prostate specific Ag [Mass/volume] in Peritoneal fluid | Peritoneal fluid specimen |
 | 59221-2 | Prostate specific Ag [Mass/volume] in Pleural fluid | Pleural fluid specimen |
-| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Seminal fluid specimen |
+| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Semen sample |
 | 34611-4 | Prostate specific Ag [Mass/volume] in Urine | Urine specimen |
 
 **Excluded because Component, Direct site and Property do not match (6)**
 
 | LOINC | Name | Direct site | Property |
 |---|---|---|---|
-| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Seminal fluid specimen | Substance concentration |
-| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Seminal fluid specimen | Arbitrary concentration |
+| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Semen sample | Substance concentration |
+| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Semen sample | Arbitrary concentration |
 | 59238-6 | Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid | Body fluid specimen | Mass fraction |
-| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebral spinal fluid | Cerebrospinal fluid specimen | Mass fraction |
+| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Mass fraction |
 | 59236-0 | Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid | Peritoneal fluid specimen | Mass fraction |
 | 59237-8 | Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid | Pleural fluid specimen | Mass fraction |
 
@@ -54,10 +54,10 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-total-standard](ValueSet-mii-vs-labor-
 | LOINC | Name | Direct site |
 |---|---|---|
 | 59239-4 | Prostate Specific Ag Free [Mass/volume] in Body fluid | Body fluid specimen |
-| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 59224-6 | Prostate Specific Ag Free [Mass/volume] in Peritoneal fluid | Peritoneal fluid specimen |
 | 59232-9 | Prostate Specific Ag Free [Mass/volume] in Pleural fluid | Pleural fluid specimen |
-| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Seminal fluid specimen |
+| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Semen sample |
 
 **Excluded because Component does not match (3)**
 
@@ -79,16 +79,16 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-total-standard](ValueSet-mii-vs-labor-
 
 | LOINC | Name | Direct site | Property |
 |---|---|---|---|
-| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Seminal fluid specimen | Substance concentration |
-| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Seminal fluid specimen | Arbitrary concentration |
+| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Semen sample | Substance concentration |
+| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Semen sample | Arbitrary concentration |
 | 48167-1 | Prostate specific Ag/Creatinine [Mass Ratio] in Urine | Urine specimen | Mass ratio |
 
 **Excluded because Direct site, Property and Scale type do not match (2)**
 
 | LOINC | Name | Direct site | Property | Scale type |
 |---|---|---|---|---|
-| 109230-3 | Prostate specific Ag [Measurement] in Semen | Seminal fluid specimen | Measurement property | – |
-| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Tissue specimen | Presence | Ordinal value |
+| 109230-3 | Prostate specific Ag [Measurement] in Semen | Semen sample | Measurement property | – |
+| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Tissue specimen | Threshold | Ordinal value |
 
 1 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109230-3.
 
@@ -103,7 +103,7 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-total-standard](ValueSet-mii-vs-labor-
 
 | LOINC | Name | Direct site | Property | Scale type |
 |---|---|---|---|---|
-| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Seminal fluid specimen | Measurement property | – |
+| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Semen sample | Measurement property | – |
 
 1 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109229-5.
 
@@ -157,21 +157,21 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-standard](ValueSet-mii-vs-labor-l
 | LOINC | Name | Direct site |
 |---|---|---|
 | 47738-0 | Prostate specific Ag [Mass/volume] in Body fluid | Body fluid specimen |
-| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 100716-0 | Prostate specific Ag [Mass/volume] in DBS | Dried blood spot specimen |
 | 59223-8 | Prostate specific Ag [Mass/volume] in Peritoneal fluid | Peritoneal fluid specimen |
 | 59221-2 | Prostate specific Ag [Mass/volume] in Pleural fluid | Pleural fluid specimen |
-| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Seminal fluid specimen |
+| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Semen sample |
 | 34611-4 | Prostate specific Ag [Mass/volume] in Urine | Urine specimen |
 
 **Excluded because Direct site and Property do not match (6)**
 
 | LOINC | Name | Direct site | Property |
 |---|---|---|---|
-| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Seminal fluid specimen | Substance concentration |
-| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Seminal fluid specimen | Arbitrary concentration |
+| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Semen sample | Substance concentration |
+| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Semen sample | Arbitrary concentration |
 | 59238-6 | Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid | Body fluid specimen | Mass fraction |
-| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebral spinal fluid | Cerebrospinal fluid specimen | Mass fraction |
+| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Mass fraction |
 | 59236-0 | Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid | Peritoneal fluid specimen | Mass fraction |
 | 59237-8 | Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid | Pleural fluid specimen | Mass fraction |
 
@@ -180,10 +180,10 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-standard](ValueSet-mii-vs-labor-l
 | LOINC | Name | Direct site |
 |---|---|---|
 | 59239-4 | Prostate Specific Ag Free [Mass/volume] in Body fluid | Body fluid specimen |
-| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 59224-6 | Prostate Specific Ag Free [Mass/volume] in Peritoneal fluid | Peritoneal fluid specimen |
 | 59232-9 | Prostate Specific Ag Free [Mass/volume] in Pleural fluid | Pleural fluid specimen |
-| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Seminal fluid specimen |
+| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Semen sample |
 
 **Excluded because Component does not match (4)**
 
@@ -198,8 +198,8 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-standard](ValueSet-mii-vs-labor-l
 
 | LOINC | Name | Direct site | Property |
 |---|---|---|---|
-| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Seminal fluid specimen | Substance concentration |
-| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Seminal fluid specimen | Arbitrary concentration |
+| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Semen sample | Substance concentration |
+| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Semen sample | Arbitrary concentration |
 | 48167-1 | Prostate specific Ag/Creatinine [Mass Ratio] in Urine | Urine specimen | Mass ratio |
 
 **Excluded because Property does not match (3)**
@@ -214,8 +214,8 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-standard](ValueSet-mii-vs-labor-l
 
 | LOINC | Name | Direct site | Property | Scale type |
 |---|---|---|---|---|
-| 109230-3 | Prostate specific Ag [Measurement] in Semen | Seminal fluid specimen | Measurement property | – |
-| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Tissue specimen | Presence | Ordinal value |
+| 109230-3 | Prostate specific Ag [Measurement] in Semen | Semen sample | Measurement property | – |
+| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Tissue specimen | Threshold | Ordinal value |
 
 1 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109230-3.
 
@@ -238,7 +238,7 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-standard](ValueSet-mii-vs-labor-l
 
 | LOINC | Name | Direct site | Property | Scale type |
 |---|---|---|---|---|
-| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Seminal fluid specimen | Measurement property | – |
+| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Semen sample | Measurement property | – |
 
 1 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109229-5.
 
@@ -281,24 +281,24 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-total-ratio](ValueSet-mii-vs-labo
 | LOINC | Name | Direct site | Property |
 |---|---|---|---|
 | 59239-4 | Prostate Specific Ag Free [Mass/volume] in Body fluid | Body fluid specimen | Mass concentration |
-| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen | Mass concentration |
+| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Mass concentration |
 | 59224-6 | Prostate Specific Ag Free [Mass/volume] in Peritoneal fluid | Peritoneal fluid specimen | Mass concentration |
 | 59232-9 | Prostate Specific Ag Free [Mass/volume] in Pleural fluid | Pleural fluid specimen | Mass concentration |
-| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Seminal fluid specimen | Mass concentration |
-| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Seminal fluid specimen | Measurement property |
-| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Seminal fluid specimen | Substance concentration |
-| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Seminal fluid specimen | Arbitrary concentration |
+| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Semen sample | Mass concentration |
+| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Semen sample | Measurement property |
+| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Semen sample | Substance concentration |
+| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Semen sample | Arbitrary concentration |
 | 47738-0 | Prostate specific Ag [Mass/volume] in Body fluid | Body fluid specimen | Mass concentration |
-| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen | Mass concentration |
+| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Mass concentration |
 | 100716-0 | Prostate specific Ag [Mass/volume] in DBS | Dried blood spot specimen | Mass concentration |
 | 59223-8 | Prostate specific Ag [Mass/volume] in Peritoneal fluid | Peritoneal fluid specimen | Mass concentration |
 | 59221-2 | Prostate specific Ag [Mass/volume] in Pleural fluid | Pleural fluid specimen | Mass concentration |
-| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Seminal fluid specimen | Mass concentration |
+| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Semen sample | Mass concentration |
 | 34611-4 | Prostate specific Ag [Mass/volume] in Urine | Urine specimen | Mass concentration |
-| 109230-3 | Prostate specific Ag [Measurement] in Semen | Seminal fluid specimen | Measurement property |
-| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Seminal fluid specimen | Substance concentration |
-| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Tissue specimen | Presence |
-| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Seminal fluid specimen | Arbitrary concentration |
+| 109230-3 | Prostate specific Ag [Measurement] in Semen | Semen sample | Measurement property |
+| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Semen sample | Substance concentration |
+| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Tissue specimen | Threshold |
+| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Semen sample | Arbitrary concentration |
 
 **Excluded because Property does not match (12)**
 
@@ -322,7 +322,7 @@ ValueSet [mii-vs-labor-loinc-ontology-psa-free-total-ratio](ValueSet-mii-vs-labo
 | LOINC | Name | Direct site |
 |---|---|---|
 | 59238-6 | Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid | Body fluid specimen |
-| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 59236-0 | Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid | Peritoneal fluid specimen |
 | 59237-8 | Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid | Pleural fluid specimen |
 | 48167-1 | Prostate specific Ag/Creatinine [Mass Ratio] in Urine | Urine specimen |
@@ -339,39 +339,39 @@ One row per pool concept with the attributes the classification uses; the bucket
 | LOINC | Name | Property | Scale type | Direct site | Bucket | Reason |
 |---|---|---|---|---|---|---|
 | 59239-4 | Prostate Specific Ag Free [Mass/volume] in Body fluid | Mass concentration | Quantitative value | Body fluid specimen | Convertible | Quantitative scale + concentration property |
-| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebral spinal fluid | Mass concentration | Quantitative value | Cerebrospinal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 59231-1 | Prostate Specific Ag Free [Mass/volume] in Cerebrospinal Fluid | Mass concentration | Quantitative value | Cerebrospinal fluid specimen | Convertible | Quantitative scale + concentration property |
 | 59224-6 | Prostate Specific Ag Free [Mass/volume] in Peritoneal fluid | Mass concentration | Quantitative value | Peritoneal fluid specimen | Convertible | Quantitative scale + concentration property |
 | 59232-9 | Prostate Specific Ag Free [Mass/volume] in Pleural fluid | Mass concentration | Quantitative value | Pleural fluid specimen | Convertible | Quantitative scale + concentration property |
-| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Mass concentration | Quantitative value | Seminal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 19205-4 | Prostate Specific Ag Free [Mass/volume] in Semen | Mass concentration | Quantitative value | Semen sample | Convertible | Quantitative scale + concentration property |
 | 10886-0 | Prostate Specific Ag Free [Mass/volume] in Serum or Plasma | Mass concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
 | 83113-1 | Prostate Specific Ag Free [Mass/volume] in Serum or Plasma by Immunoassay | Mass concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
-| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Substance concentration | Quantitative value | Seminal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 19206-2 | Prostate Specific Ag Free [Moles/volume] in Semen | Substance concentration | Quantitative value | Semen sample | Convertible | Quantitative scale + concentration property |
 | 19203-9 | Prostate Specific Ag Free [Moles/volume] in Serum or Plasma | Substance concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
-| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Arbitrary concentration | Quantitative value | Seminal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 19204-7 | Prostate Specific Ag Free [Units/volume] in Semen | Arbitrary concentration | Quantitative value | Semen sample | Convertible | Quantitative scale + concentration property |
 | 19201-3 | Prostate Specific Ag Free [Units/volume] in Serum or Plasma | Arbitrary concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
 | 47738-0 | Prostate specific Ag [Mass/volume] in Body fluid | Mass concentration | Quantitative value | Body fluid specimen | Convertible | Quantitative scale + concentration property |
-| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebral spinal fluid | Mass concentration | Quantitative value | Cerebrospinal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 59230-3 | Prostate specific Ag [Mass/volume] in Cerebrospinal Fluid | Mass concentration | Quantitative value | Cerebrospinal fluid specimen | Convertible | Quantitative scale + concentration property |
 | 100716-0 | Prostate specific Ag [Mass/volume] in DBS | Mass concentration | Quantitative value | Dried blood spot specimen | Convertible | Quantitative scale + concentration property |
 | 59223-8 | Prostate specific Ag [Mass/volume] in Peritoneal fluid | Mass concentration | Quantitative value | Peritoneal fluid specimen | Convertible | Quantitative scale + concentration property |
 | 59221-2 | Prostate specific Ag [Mass/volume] in Pleural fluid | Mass concentration | Quantitative value | Pleural fluid specimen | Convertible | Quantitative scale + concentration property |
-| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Mass concentration | Quantitative value | Seminal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 19199-9 | Prostate specific Ag [Mass/volume] in Semen | Mass concentration | Quantitative value | Semen sample | Convertible | Quantitative scale + concentration property |
 | 2857-1 | Prostate specific Ag [Mass/volume] in Serum or Plasma | Mass concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
 | 35741-8 | Prostate specific Ag [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL | Mass concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
 | 83112-3 | Prostate specific Ag [Mass/volume] in Serum or Plasma by Immunoassay | Mass concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
 | 34611-4 | Prostate specific Ag [Mass/volume] in Urine | Mass concentration | Quantitative value | Urine specimen | Convertible | Quantitative scale + concentration property |
-| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Substance concentration | Quantitative value | Seminal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 19200-5 | Prostate specific Ag [Moles/volume] in Semen | Substance concentration | Quantitative value | Semen sample | Convertible | Quantitative scale + concentration property |
 | 19197-3 | Prostate specific Ag [Moles/volume] in Serum or Plasma | Substance concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
-| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Arbitrary concentration | Quantitative value | Seminal fluid specimen | Convertible | Quantitative scale + concentration property |
+| 19198-1 | Prostate specific Ag [Units/volume] in Semen | Arbitrary concentration | Quantitative value | Semen sample | Convertible | Quantitative scale + concentration property |
 | 19195-7 | Prostate specific Ag [Units/volume] in Serum or Plasma | Arbitrary concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
 | 33667-7 | Prostate specific Ag.protein bound [Mass/volume] in Serum or Plasma | Mass concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
-| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Measurement property | – | Seminal fluid specimen | Quantitative | Measurement property, no scale asserted (generic) |
+| 109229-5 | Prostate Specific Ag Free [Measurement] in Semen | Measurement property | – | Semen sample | Quantitative | Measurement property, no scale asserted (generic) |
 | 110243-3 | Prostate Specific Ag Free [Measurement] in Serum or Plasma | Measurement property | – | Acellular blood (serum or plasma) specimen | Quantitative | Measurement property, no scale asserted (generic) |
 | 59238-6 | Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid | Mass fraction | Quantitative value | Body fluid specimen | Quantitative | Quantitative scale |
-| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebral spinal fluid | Mass fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitative | Quantitative scale |
+| 59235-2 | Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid | Mass fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitative | Quantitative scale |
 | 59236-0 | Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid | Mass fraction | Quantitative value | Peritoneal fluid specimen | Quantitative | Quantitative scale |
 | 59237-8 | Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid | Mass fraction | Quantitative value | Pleural fluid specimen | Quantitative | Quantitative scale |
 | 12841-3 | Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma | Mass fraction | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitative | Quantitative scale |
-| 109230-3 | Prostate specific Ag [Measurement] in Semen | Measurement property | – | Seminal fluid specimen | Quantitative | Measurement property, no scale asserted (generic) |
+| 109230-3 | Prostate specific Ag [Measurement] in Semen | Measurement property | – | Semen sample | Quantitative | Measurement property, no scale asserted (generic) |
 | 110671-5 | Prostate specific Ag [Measurement] in Serum or Plasma | Measurement property | – | Acellular blood (serum or plasma) specimen | Quantitative | Measurement property, no scale asserted (generic) |
 | 48167-1 | Prostate specific Ag/Creatinine [Mass Ratio] in Urine | Mass ratio | Quantitative value | Urine specimen | Quantitative | Quantitative scale |
-| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Presence | Ordinal value | Tissue specimen | Qualitative | Ordinal/Nominal scale → qualitative |
+| 10508-0 | Prostate specific Ag [Presence] in Tissue by Immune stain | Threshold | Ordinal value | Tissue specimen | Qualitative | Ordinal/Nominal scale → qualitative |

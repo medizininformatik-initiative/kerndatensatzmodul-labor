@@ -42,7 +42,7 @@ Jedes ValueSet dieses Vorschlags hat dasselbe `compose`:
 
 1. **LOINC-Aufzählung.** Die LOINC-Codes aller Konzepte, die die Regel selektiert, als `include` auf `http://loinc.org` mit der LOINC-Version des Moduls. Diesen Teil kann jeder FHIR-Validator und jeder Terminologieserver heute nutzen.
 2. **Observables ohne LOINC-Code.** Die LOINC Ontology enthält auch Observables, für die noch kein LOINC-Code existiert. Sie sind als SNOMED-CT-Codes aufgeführt, damit das ValueSet vollständig ist und ein Standort sieht, wo ein LOINC-Antrag aussteht.
-3. **Die Regel.** Die ECL als intensionales `include` auf `http://snomed.info/sct` mit `filter.property = constraint`, gepinnt auf das Release `http://snomed.info/sct/11010000107/version/20260321`. Sie dokumentiert, warum die Codes aus Teil 1 enthalten sind, und sie ist der Teil, der sich neu erzeugt.
+3. **Die Regel.** Die ECL als intensionales `include` auf `http://snomed.info/sct` mit `filter.property = constraint`, gepinnt auf das Release `http://snomed.info/sct/11010000107/version/20261021`. Sie dokumentiert, warum die Codes aus Teil 1 enthalten sind, und sie ist der Teil, der sich neu erzeugt.
 
 Teil 1 und 2 sind die Aufzählung von Teil 3 zum genannten Release. Sie sind keine unabhängigen Quellen.
 
@@ -55,7 +55,7 @@ Teil 1 und 2 sind die Aufzählung von Teil 3 zum genannten Release. Sie sind kei
 
 ### Versionen und Neuerzeugung
 
-Die Artefakte sind auf **LOINC Ontology 2026-03-21** gepinnt. Die LOINC Ontology erscheint in regelmäßigen Releases; das Modul pinnt für seine eigenen ValueSets LOINC 2.82. Ein Code, den LOINC zwischen beiden Ständen eingeführt oder abgekündigt hat, ist ein Review-Punkt, kein Versagen der Methode. Für ein neues Release führt der Generator jede Regel erneut aus, listet die Konzepte, die in jedem ValueSet hinzugekommen oder weggefallen sind, und schreibt diese Seiten neu. Der Differenzbericht zwischen zwei Releases ist mit dem Generator in [loincsnomed-lab-concepts](https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts) veröffentlicht.
+Die Artefakte sind auf **LOINC Ontology 2026-10-21** gepinnt. Die LOINC Ontology erscheint in regelmäßigen Releases; das Modul pinnt für seine eigenen ValueSets LOINC 2.82. Ein Code, den LOINC zwischen beiden Ständen eingeführt oder abgekündigt hat, ist ein Review-Punkt, kein Versagen der Methode. Für ein neues Release führt der Generator jede Regel erneut aus, listet die Konzepte, die in jedem ValueSet hinzugekommen oder weggefallen sind, und schreibt diese Seiten neu. Ein Release kann auch die Attribute selbst neu modellieren: Zwischen 2026-03-21 und 2026-10-21 hat die LOINC Ontology über 10.000 Nachweis-Observables von der Property `Presence` (705057003) auf `Threshold (property)` (118589004, ein Subtyp von Measurement property) umgestellt und von „Presence of …" in „Threshold presence of …" umbenannt. Die Nitrit-Regel auf diesem Branch selektiert deshalb `<< 118589004 |Threshold (property)|` statt `<< 705057003 |Presence|`; ihre LOINC-Aufzählung hat sich nicht geändert. Die alte Regel hätte ein leeres ValueSet geliefert, genau die Art von Fehler, die eine Neuerzeugung sichtbar macht. Der Differenzbericht zwischen zwei Releases ist mit dem Generator in [loincsnomed-lab-concepts](https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts) veröffentlicht.
 
 ### Die Review-Tabellen lesen
 

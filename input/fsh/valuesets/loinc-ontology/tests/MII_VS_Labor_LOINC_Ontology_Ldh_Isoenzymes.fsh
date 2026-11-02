@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Ldh_Isoenzymes
 Id: mii-vs-labor-loinc-ontology-ldh-isoenzymes
 Title: "MII VS Labor LOINC Ontology Ldh Isoenzymes"
-Description: "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (38), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`"
+Description: "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (38), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,7 +18,7 @@ Description: "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-10-20"
+* ^date = "2026-11-02"
 * ^purpose = "Guidance for binding Observation.code of the MII laboratory test profile to a computably defined LOINC set; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
 // Clinical test 'LDH isoenzyme analysis (LDH-1..5)': LOINC enumeration (38 codes) resolved from the ECL below
 * $loinc#14119-2

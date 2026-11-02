@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Psa_Convertible
 Id: mii-vs-labor-loinc-ontology-psa-convertible
 Title: "MII VS Labor LOINC Ontology Psa Convertible"
-Description: "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte psa (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-03-21. 26 concepts (26 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+Description: "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte psa (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 26 concepts (26 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,7 +18,7 @@ Description: "Proposal: use-case ValueSet 'Quantitative & convertible' for the a
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-10-20"
+* ^date = "2026-11-02"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
 // Analyte psa, bucket quantitative_convertible: LOINC enumeration (26 codes) resolved from the ECL below
 * $loinc#19204-7

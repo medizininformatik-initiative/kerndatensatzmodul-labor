@@ -1,4 +1,4 @@
-Diese Seite ist das Review-Material für den Analyten **mch** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
+Diese Seite ist das Review-Material für den Analyten **mch** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` (296 Konzepte, 293 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-mch-complete.html), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-mch-quantitative.html), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-mch-convertible.html), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-mch-qualitative.html), [Semiquantitativ](ValueSet-mii-vs-labor-loinc-ontology-mch-semiquantitative.html).
 
@@ -150,7 +150,7 @@ ValueSet [mii-vs-labor-loinc-ontology-mch-standard](ValueSet-mii-vs-labor-loinc-
 | 97556-5 | Hemoglobin [Mass/volume] in Capillary blood by Oximetry | Mass concentration |
 | 97555-7 | Hemoglobin [Mass/volume] in Central venous blood by Oximetry | Mass concentration |
 | 97550-8 | Hemoglobin [Mass/volume] in Central venous blood by calculation | Mass concentration |
-| 719-5 | Hemoglobin [Mass/volume] in Cerebral spinal fluid | Mass concentration |
+| 719-5 | Hemoglobin [Mass/volume] in Cerebrospinal Fluid | Mass concentration |
 | 40719-7 | Hemoglobin [Mass/volume] in Cord blood | Mass concentration |
 | 30351-1 | Hemoglobin [Mass/volume] in Mixed venous blood | Mass concentration |
 | 76768-1 | Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry | Mass concentration |
@@ -180,7 +180,7 @@ ValueSet [mii-vs-labor-loinc-ontology-mch-standard](ValueSet-mii-vs-labor-loinc-
 | 59468-9 | MCH [Entitic substance] | Entitic substance amount |
 | 15082-1 | Methemoglobin [Mass/volume] in Blood | Mass concentration |
 | 56040-9 | Methemoglobin [Moles/volume] in Blood | Substance concentration |
-| 72262-9 | Methemoglobin [Moles/volume] in Cerebral spinal fluid | Substance concentration |
+| 72262-9 | Methemoglobin [Moles/volume] in Cerebrospinal Fluid | Substance concentration |
 | 2615-3 | Methemoglobin/Hemoglobin.total in Arterial blood | Mass fraction |
 | 72361-9 | Methemoglobin/Hemoglobin.total in Arterial cord blood | Mass fraction |
 | 2614-6 | Methemoglobin/Hemoglobin.total in Blood | Mass fraction |
@@ -192,7 +192,7 @@ ValueSet [mii-vs-labor-loinc-ontology-mch-standard](ValueSet-mii-vs-labor-loinc-
 | 2617-9 | Methemoglobin/Hemoglobin.total in Venous blood | Mass fraction |
 | 72360-1 | Methemoglobin/Hemoglobin.total in Venous cord blood | Mass fraction |
 | 87437-0 | Oxyhemoglobin [Mass/volume] in Plasma | Mass concentration |
-| 72263-7 | Oxyhemoglobin [Moles/volume] in Cerebral spinal fluid | Substance concentration |
+| 72263-7 | Oxyhemoglobin [Moles/volume] in Cerebrospinal Fluid | Substance concentration |
 | SCT 431314004 | Peripheral oxygen saturation | Quantity fraction |
 | 4683-9 | Sulfhemoglobin [Mass/volume] in Blood | Mass concentration |
 | 4685-4 | Sulfhemoglobin/Hemoglobin.total in Blood | Mass fraction |
@@ -202,131 +202,131 @@ ValueSet [mii-vs-labor-loinc-ontology-mch-standard](ValueSet-mii-vs-labor-loinc-
 
 | LOINC | Name | Property | Scale type |
 |---|---|---|---|
-| 32160-4 | Carboxyhemoglobin [Presence] in Blood by Screen method | Presence | Ordinal value |
+| 32160-4 | Carboxyhemoglobin [Presence] in Blood by Screen method | Threshold | Ordinal value |
 | SCT 408591000 | HBA1c target | Quantity concentration | – |
-| 45208-6 | Hemoglobin A [Presence] in Blood by Electrophoresis | Presence | Ordinal value |
+| 45208-6 | Hemoglobin A [Presence] in Blood by Electrophoresis | Threshold | Ordinal value |
 | SCT 446074002 | Hemoglobin A1c target value using International Federation of Clinical Chemistry and Laboratory Medicine standardized method | Quantity concentration | – |
-| 28559-3 | Hemoglobin A2 [Presence] in Blood | Presence | Ordinal value |
-| 27345-8 | Hemoglobin A2 [Presence] in Blood by Electrophoresis | Presence | Ordinal value |
-| 4556-7 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4557-5 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4558-3 | Hemoglobin Barts [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4559-1 | Hemoglobin Barts [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 55783-5 | Hemoglobin Barts [Presence] in Blood by HPLC | Presence | Ordinal value |
-| 4560-9 | Hemoglobin Bethesda [Presence] in Blood | Presence | Ordinal value |
-| 4564-1 | Hemoglobin C - Harlem [Presence] in Blood | Presence | Ordinal value |
-| 40720-5 | Hemoglobin C [Presence] in Blood | Presence | Ordinal value |
-| 40545-6 | Hemoglobin C [Presence] in Blood by Electrophoresis | Presence | Ordinal value |
-| 4565-8 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4566-6 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4567-4 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4568-2 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4572-4 | Hemoglobin Denver [Presence] in Blood | Presence | Ordinal value |
-| 40546-4 | Hemoglobin E [Presence] in Blood by Electrophoresis | Presence | Ordinal value |
-| 4577-3 | Hemoglobin F - Texas [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
+| 28559-3 | Hemoglobin A2 [Presence] in Blood | Threshold | Ordinal value |
+| 27345-8 | Hemoglobin A2 [Presence] in Blood by Electrophoresis | Threshold | Ordinal value |
+| 4556-7 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4557-5 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4558-3 | Hemoglobin Barts [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4559-1 | Hemoglobin Barts [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 55783-5 | Hemoglobin Barts [Presence] in Blood by HPLC | Threshold | Ordinal value |
+| 4560-9 | Hemoglobin Bethesda [Presence] in Blood | Threshold | Ordinal value |
+| 4564-1 | Hemoglobin C - Harlem [Presence] in Blood | Threshold | Ordinal value |
+| 40720-5 | Hemoglobin C [Presence] in Blood | Threshold | Ordinal value |
+| 40545-6 | Hemoglobin C [Presence] in Blood by Electrophoresis | Threshold | Ordinal value |
+| 4565-8 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4566-6 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4567-4 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4568-2 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4572-4 | Hemoglobin Denver [Presence] in Blood | Threshold | Ordinal value |
+| 40546-4 | Hemoglobin E [Presence] in Blood by Electrophoresis | Threshold | Ordinal value |
+| 4577-3 | Hemoglobin F - Texas [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
 | 110938-8 | Hemoglobin F [Measurement] in Blood | Measurement property | – |
-| 28067-7 | Hemoglobin F [Presence] in Amniotic fluid | Presence | Ordinal value |
-| 4579-9 | Hemoglobin F [Presence] in Blood | Presence | Ordinal value |
-| 4632-6 | Hemoglobin F [Presence] in Blood by Alkali denaturation | Presence | Ordinal value |
-| 32140-6 | Hemoglobin F [Presence] in Blood by Kleihauer-Betke method | Presence | Ordinal value |
-| 18277-4 | Hemoglobin F [Presence] in Gastric fluid by Apt-Downey method | Presence | Ordinal value |
-| 18278-2 | Hemoglobin F [Presence] in Meconium by Apt-Downey method | Presence | Ordinal value |
-| 30074-9 | Hemoglobin F [Presence] in Specimen | Presence | Ordinal value |
-| 40721-3 | Hemoglobin F [Presence] in Specimen by Apt-Downey method | Presence | Ordinal value |
-| 4631-8 | Hemoglobin F [Presence] in Stool by Apt-Downey method | Presence | Ordinal value |
-| 28006-5 | Hemoglobin F [Presence] in Vomitus | Presence | Ordinal value |
-| 4581-5 | Hemoglobin G - Coushatta [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4583-1 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4584-9 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4585-6 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4586-4 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
+| 28067-7 | Hemoglobin F [Presence] in Amniotic fluid | Threshold | Ordinal value |
+| 4579-9 | Hemoglobin F [Presence] in Blood | Threshold | Ordinal value |
+| 4632-6 | Hemoglobin F [Presence] in Blood by Alkali denaturation | Threshold | Ordinal value |
+| 32140-6 | Hemoglobin F [Presence] in Blood by Kleihauer-Betke method | Threshold | Ordinal value |
+| 18277-4 | Hemoglobin F [Presence] in Gastric fluid by Apt-Downey method | Threshold | Ordinal value |
+| 18278-2 | Hemoglobin F [Presence] in Meconium by Apt-Downey method | Threshold | Ordinal value |
+| 30074-9 | Hemoglobin F [Presence] in Specimen | Threshold | Ordinal value |
+| 40721-3 | Hemoglobin F [Presence] in Specimen by Apt-Downey method | Threshold | Ordinal value |
+| 4631-8 | Hemoglobin F [Presence] in Stool by Apt-Downey method | Threshold | Ordinal value |
+| 28006-5 | Hemoglobin F [Presence] in Vomitus | Threshold | Ordinal value |
+| 4581-5 | Hemoglobin G - Coushatta [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4583-1 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4584-9 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4585-6 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4586-4 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
 | 109575-1 | Hemoglobin H [Measurement] in Blood | Measurement property | – |
-| 40547-2 | Hemoglobin H [Presence] in Blood | Presence | Ordinal value |
-| 17871-5 | Hemoglobin H [Presence] in Blood by Heat denaturation | Presence | Ordinal value |
-| 4589-8 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4590-6 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4591-4 | Hemoglobin Hope [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4592-2 | Hemoglobin Hope [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4593-0 | Hemoglobin I [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4594-8 | Hemoglobin I [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4595-5 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4596-3 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4597-1 | Hemoglobin J - Capetown [Presence] in Blood | Presence | Ordinal value |
-| 4598-9 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4599-7 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4600-3 | Hemoglobin Kansas [Presence] in Blood | Presence | Ordinal value |
-| 4601-1 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4602-9 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4603-7 | Hemoglobin Koln [Presence] in Blood | Presence | Ordinal value |
-| 4604-5 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4605-2 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4606-0 | Hemoglobin M - Boston [Presence] in Blood | Presence | Ordinal value |
-| 4607-8 | Hemoglobin M - Hyde Park [Presence] in Blood | Presence | Ordinal value |
-| 4608-6 | Hemoglobin M - Iwate [Presence] in Blood | Presence | Ordinal value |
-| 4610-2 | Hemoglobin M - Saskatoon [Presence] in Blood | Presence | Ordinal value |
-| 53224-2 | Hemoglobin M [Presence] in Blood | Presence | Ordinal value |
-| 4611-0 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4612-8 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4613-6 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4614-4 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4615-1 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4616-9 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4617-7 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4618-5 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 4619-3 | Hemoglobin Ranier [Presence] in Blood | Presence | Ordinal value |
-| 34663-5 | Hemoglobin S [Presence] in Amniotic fluid | Presence | Ordinal value |
-| 4621-9 | Hemoglobin S [Presence] in Blood | Presence | Ordinal value |
-| 4622-7 | Hemoglobin S [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4623-5 | Hemoglobin S [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
-| 6864-3 | Hemoglobin S [Presence] in Blood by Solubility test | Presence | Ordinal value |
-| 4626-8 | Hemoglobin Yakima [Presence] in Blood | Presence | Ordinal value |
-| 4627-6 | Hemoglobin Yoshizuka [Presence] in Blood | Presence | Ordinal value |
-| 4628-4 | Hemoglobin Ypsilanti [Presence] in Blood | Presence | Ordinal value |
-| 4629-2 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value |
-| 4630-0 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value |
+| 40547-2 | Hemoglobin H [Presence] in Blood | Threshold | Ordinal value |
+| 17871-5 | Hemoglobin H [Presence] in Blood by Heat denaturation | Threshold | Ordinal value |
+| 4589-8 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4590-6 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4591-4 | Hemoglobin Hope [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4592-2 | Hemoglobin Hope [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4593-0 | Hemoglobin I [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4594-8 | Hemoglobin I [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4595-5 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4596-3 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4597-1 | Hemoglobin J - Capetown [Presence] in Blood | Threshold | Ordinal value |
+| 4598-9 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4599-7 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4600-3 | Hemoglobin Kansas [Presence] in Blood | Threshold | Ordinal value |
+| 4601-1 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4602-9 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4603-7 | Hemoglobin Koln [Presence] in Blood | Threshold | Ordinal value |
+| 4604-5 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4605-2 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4606-0 | Hemoglobin M - Boston [Presence] in Blood | Threshold | Ordinal value |
+| 4607-8 | Hemoglobin M - Hyde Park [Presence] in Blood | Threshold | Ordinal value |
+| 4608-6 | Hemoglobin M - Iwate [Presence] in Blood | Threshold | Ordinal value |
+| 4610-2 | Hemoglobin M - Saskatoon [Presence] in Blood | Threshold | Ordinal value |
+| 53224-2 | Hemoglobin M [Presence] in Blood | Threshold | Ordinal value |
+| 4611-0 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4612-8 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4613-6 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4614-4 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4615-1 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4616-9 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4617-7 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4618-5 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 4619-3 | Hemoglobin Ranier [Presence] in Blood | Threshold | Ordinal value |
+| 34663-5 | Hemoglobin S [Presence] in Amniotic fluid | Threshold | Ordinal value |
+| 4621-9 | Hemoglobin S [Presence] in Blood | Threshold | Ordinal value |
+| 4622-7 | Hemoglobin S [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4623-5 | Hemoglobin S [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
+| 6864-3 | Hemoglobin S [Presence] in Blood by Solubility test | Threshold | Ordinal value |
+| 4626-8 | Hemoglobin Yakima [Presence] in Blood | Threshold | Ordinal value |
+| 4627-6 | Hemoglobin Yoshizuka [Presence] in Blood | Threshold | Ordinal value |
+| 4628-4 | Hemoglobin Ypsilanti [Presence] in Blood | Threshold | Ordinal value |
+| 4629-2 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value |
+| 4630-0 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value |
 | 50559-4 | Hemoglobin [Mass/volume] in Urine by Automated test strip | Mass concentration | Semi-quantitative value |
 | 49137-3 | Hemoglobin [Mass/volume] in Urine by Test strip | Mass concentration | Semi-quantitative value |
 | 109484-6 | Hemoglobin [Measurement] in Arterial blood | Measurement property | – |
 | 110885-1 | Hemoglobin [Measurement] in Blood | Measurement property | – |
 | 109887-0 | Hemoglobin [Measurement] in Mixed venous blood | Measurement property | – |
 | 109886-2 | Hemoglobin [Measurement] in Venous blood | Measurement property | – |
-| 717-9 | Hemoglobin [Presence] in Blood | Presence | Ordinal value |
-| 33517-4 | Hemoglobin [Presence] in Body fluid | Presence | Ordinal value |
-| 48035-0 | Hemoglobin [Presence] in Cerebral spinal fluid | Presence | Ordinal value |
-| 2334-1 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal | Presence | Ordinal value |
-| 42909-2 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --1st specimen | Presence | Ordinal value |
-| 42910-0 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --2nd specimen | Presence | Ordinal value |
-| 42911-8 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --3rd specimen | Presence | Ordinal value |
-| 34618-9 | Hemoglobin [Presence] in Specimen | Presence | Ordinal value |
-| 42912-6 | Hemoglobin [Presence] in Specimen from gastrointestinal --2nd specimen | Presence | Ordinal value |
-| 42913-4 | Hemoglobin [Presence] in Specimen from gastrointestinal lower --1st specimen | Presence | Ordinal value |
-| 50017-3 | Hemoglobin [Presence] in Sputum or Gastric fluid from gastrointestinal | Presence | Ordinal value |
-| 2335-8 | Hemoglobin [Presence] in Stool from gastrointestinal | Presence | Ordinal value |
-| 14563-1 | Hemoglobin [Presence] in Stool from gastrointestinal --1st specimen | Presence | Ordinal value |
-| 14564-9 | Hemoglobin [Presence] in Stool from gastrointestinal --2nd specimen | Presence | Ordinal value |
-| 14565-6 | Hemoglobin [Presence] in Stool from gastrointestinal --3rd specimen | Presence | Ordinal value |
-| 12503-9 | Hemoglobin [Presence] in Stool from gastrointestinal --4th specimen | Presence | Ordinal value |
-| 12504-7 | Hemoglobin [Presence] in Stool from gastrointestinal --5th specimen | Presence | Ordinal value |
-| 27401-9 | Hemoglobin [Presence] in Stool from gastrointestinal --6th specimen | Presence | Ordinal value |
-| 27925-7 | Hemoglobin [Presence] in Stool from gastrointestinal --7th specimen | Presence | Ordinal value |
-| 27926-5 | Hemoglobin [Presence] in Stool from gastrointestinal --8th specimen | Presence | Ordinal value |
-| 80372-6 | Hemoglobin [Presence] in Stool from gastrointestinal by Rapid immunoassay | Presence | Ordinal value |
-| 104738-0 | Hemoglobin [Presence] in Stool from gastrointestinal lower | Presence | Ordinal value |
-| 29771-3 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay | Presence | Ordinal value |
-| 57905-2 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --1st specimen | Presence | Ordinal value |
-| 56490-6 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --2nd specimen | Presence | Ordinal value |
-| 56491-4 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --3rd specimen | Presence | Ordinal value |
-| 725-2 | Hemoglobin [Presence] in Urine | Presence | Ordinal value |
-| 57751-0 | Hemoglobin [Presence] in Urine by Automated test strip | Presence | Ordinal value |
-| 5794-3 | Hemoglobin [Presence] in Urine by Test strip | Presence | Ordinal value |
-| 48047-5 | Hemoglobin [Presence] in Vomitus from gastrointestinal | Presence | Ordinal value |
+| 717-9 | Hemoglobin [Presence] in Blood | Threshold | Ordinal value |
+| 33517-4 | Hemoglobin [Presence] in Body fluid | Threshold | Ordinal value |
+| 48035-0 | Hemoglobin [Presence] in Cerebrospinal Fluid | Threshold | Ordinal value |
+| 2334-1 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal | Threshold | Ordinal value |
+| 42909-2 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --1st specimen | Threshold | Ordinal value |
+| 42910-0 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --2nd specimen | Threshold | Ordinal value |
+| 42911-8 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --3rd specimen | Threshold | Ordinal value |
+| 34618-9 | Hemoglobin [Presence] in Specimen | Threshold | Ordinal value |
+| 42912-6 | Hemoglobin [Presence] in Specimen from gastrointestinal --2nd specimen | Threshold | Ordinal value |
+| 42913-4 | Hemoglobin [Presence] in Specimen from gastrointestinal lower --1st specimen | Threshold | Ordinal value |
+| 50017-3 | Hemoglobin [Presence] in Sputum or Gastric fluid from gastrointestinal | Threshold | Ordinal value |
+| 2335-8 | Hemoglobin [Presence] in Stool from gastrointestinal | Threshold | Ordinal value |
+| 14563-1 | Hemoglobin [Presence] in Stool from gastrointestinal --1st specimen | Threshold | Ordinal value |
+| 14564-9 | Hemoglobin [Presence] in Stool from gastrointestinal --2nd specimen | Threshold | Ordinal value |
+| 14565-6 | Hemoglobin [Presence] in Stool from gastrointestinal --3rd specimen | Threshold | Ordinal value |
+| 12503-9 | Hemoglobin [Presence] in Stool from gastrointestinal --4th specimen | Threshold | Ordinal value |
+| 12504-7 | Hemoglobin [Presence] in Stool from gastrointestinal --5th specimen | Threshold | Ordinal value |
+| 27401-9 | Hemoglobin [Presence] in Stool from gastrointestinal --6th specimen | Threshold | Ordinal value |
+| 27925-7 | Hemoglobin [Presence] in Stool from gastrointestinal --7th specimen | Threshold | Ordinal value |
+| 27926-5 | Hemoglobin [Presence] in Stool from gastrointestinal --8th specimen | Threshold | Ordinal value |
+| 80372-6 | Hemoglobin [Presence] in Stool from gastrointestinal by Rapid immunoassay | Threshold | Ordinal value |
+| 104738-0 | Hemoglobin [Presence] in Stool from gastrointestinal lower | Threshold | Ordinal value |
+| 29771-3 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay | Threshold | Ordinal value |
+| 57905-2 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --1st specimen | Threshold | Ordinal value |
+| 56490-6 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --2nd specimen | Threshold | Ordinal value |
+| 56491-4 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --3rd specimen | Threshold | Ordinal value |
+| 725-2 | Hemoglobin [Presence] in Urine | Threshold | Ordinal value |
+| 57751-0 | Hemoglobin [Presence] in Urine by Automated test strip | Threshold | Ordinal value |
+| 5794-3 | Hemoglobin [Presence] in Urine by Test strip | Threshold | Ordinal value |
+| 48047-5 | Hemoglobin [Presence] in Vomitus from gastrointestinal | Threshold | Ordinal value |
 | 109592-6 | Methemoglobin [Measurement] in Blood | Measurement property | – |
-| 2613-8 | Methemoglobin [Presence] in Blood | Presence | Ordinal value |
-| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value |
-| 4684-7 | Sulfhemoglobin [Presence] in Blood | Presence | Ordinal value |
-| 53117-8 | Thermolabile hemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value |
-| 4639-1 | Unstable Hemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value |
-| 41619-8 | Unstable Hemoglobin [Presence] in Red Blood Cells by Isopropanol stability | Presence | Ordinal value |
+| 2613-8 | Methemoglobin [Presence] in Blood | Threshold | Ordinal value |
+| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value |
+| 4684-7 | Sulfhemoglobin [Presence] in Blood | Threshold | Ordinal value |
+| 53117-8 | Thermolabile hemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value |
+| 4639-1 | Unstable Hemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value |
+| 41619-8 | Unstable Hemoglobin [Presence] in Red Blood Cells by Isopropanol stability | Threshold | Ordinal value |
 
 9 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: SCT 408591000, SCT 446074002, 110938-8, 109575-1, 109484-6, 110885-1, 109887-0, 109886-2, 109592-6.
 
@@ -370,7 +370,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 97556-5 | Hemoglobin [Mass/volume] in Capillary blood by Oximetry | Mass concentration | Quantitative value | Capillary blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 97555-7 | Hemoglobin [Mass/volume] in Central venous blood by Oximetry | Mass concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 97550-8 | Hemoglobin [Mass/volume] in Central venous blood by calculation | Mass concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 719-5 | Hemoglobin [Mass/volume] in Cerebral spinal fluid | Mass concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 719-5 | Hemoglobin [Mass/volume] in Cerebrospinal Fluid | Mass concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 40719-7 | Hemoglobin [Mass/volume] in Cord blood | Mass concentration | Quantitative value | Cord blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 30351-1 | Hemoglobin [Mass/volume] in Mixed venous blood | Mass concentration | Quantitative value | Mixed venous blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 76768-1 | Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry | Mass concentration | Quantitative value | Mixed venous blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -396,9 +396,9 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 103750-6 | Hemoglobin [Moles/volume] in Venous cord blood | Substance concentration | Quantitative value | Venous cord blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 15082-1 | Methemoglobin [Mass/volume] in Blood | Mass concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 56040-9 | Methemoglobin [Moles/volume] in Blood | Substance concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 72262-9 | Methemoglobin [Moles/volume] in Cerebral spinal fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 72262-9 | Methemoglobin [Moles/volume] in Cerebrospinal Fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 87437-0 | Oxyhemoglobin [Mass/volume] in Plasma | Mass concentration | Quantitative value | Plasma specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 72263-7 | Oxyhemoglobin [Moles/volume] in Cerebral spinal fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 72263-7 | Oxyhemoglobin [Moles/volume] in Cerebrospinal Fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 4683-9 | Sulfhemoglobin [Mass/volume] in Blood | Mass concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 2030-5 | Carboxyhemoglobin/Hemoglobin.total in Arterial blood | Mass fraction | Quantitative value | Arterial blood specimen | Quantitativ | Quantitative Skala |
 | 63523-5 | Carboxyhemoglobin/Hemoglobin.total in Arterial cord blood | Mass fraction | Quantitative value | Arterial cord blood specimen | Quantitativ | Quantitative Skala |
@@ -521,119 +521,119 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | SCT 431314004 | Peripheral oxygen saturation | Quantity fraction | Quantitative value | – | Quantitativ | Quantitative Skala |
 | 4685-4 | Sulfhemoglobin/Hemoglobin.total in Blood | Mass fraction | Quantitative value | Blood specimen | Quantitativ | Quantitative Skala |
 | 4638-3 | Thermolabile hemoglobin/Hemoglobin.total in Red Blood Cells | Mass fraction | Quantitative value | Erythrocyte specimen | Quantitativ | Quantitative Skala |
-| 32160-4 | Carboxyhemoglobin [Presence] in Blood by Screen method | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 45208-6 | Hemoglobin A [Presence] in Blood by Electrophoresis | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 28559-3 | Hemoglobin A2 [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 27345-8 | Hemoglobin A2 [Presence] in Blood by Electrophoresis | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4556-7 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4557-5 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4558-3 | Hemoglobin Barts [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4559-1 | Hemoglobin Barts [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 55783-5 | Hemoglobin Barts [Presence] in Blood by HPLC | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4560-9 | Hemoglobin Bethesda [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4564-1 | Hemoglobin C - Harlem [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 40720-5 | Hemoglobin C [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 40545-6 | Hemoglobin C [Presence] in Blood by Electrophoresis | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4565-8 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4566-6 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4567-4 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4568-2 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4572-4 | Hemoglobin Denver [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 40546-4 | Hemoglobin E [Presence] in Blood by Electrophoresis | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4577-3 | Hemoglobin F - Texas [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 28067-7 | Hemoglobin F [Presence] in Amniotic fluid | Presence | Ordinal value | Amniotic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4579-9 | Hemoglobin F [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4632-6 | Hemoglobin F [Presence] in Blood by Alkali denaturation | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 32140-6 | Hemoglobin F [Presence] in Blood by Kleihauer-Betke method | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 18277-4 | Hemoglobin F [Presence] in Gastric fluid by Apt-Downey method | Presence | Ordinal value | Gastric fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 18278-2 | Hemoglobin F [Presence] in Meconium by Apt-Downey method | Presence | Ordinal value | Meconium specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 30074-9 | Hemoglobin F [Presence] in Specimen | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 40721-3 | Hemoglobin F [Presence] in Specimen by Apt-Downey method | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4631-8 | Hemoglobin F [Presence] in Stool by Apt-Downey method | Presence | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 28006-5 | Hemoglobin F [Presence] in Vomitus | Presence | Ordinal value | Vomitus specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4581-5 | Hemoglobin G - Coushatta [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4583-1 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4584-9 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4585-6 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4586-4 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 40547-2 | Hemoglobin H [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 17871-5 | Hemoglobin H [Presence] in Blood by Heat denaturation | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4589-8 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4590-6 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4591-4 | Hemoglobin Hope [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4592-2 | Hemoglobin Hope [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4593-0 | Hemoglobin I [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4594-8 | Hemoglobin I [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4595-5 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4596-3 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4597-1 | Hemoglobin J - Capetown [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4598-9 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4599-7 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4600-3 | Hemoglobin Kansas [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4601-1 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4602-9 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4603-7 | Hemoglobin Koln [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4604-5 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4605-2 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4606-0 | Hemoglobin M - Boston [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4607-8 | Hemoglobin M - Hyde Park [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4608-6 | Hemoglobin M - Iwate [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4610-2 | Hemoglobin M - Saskatoon [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 53224-2 | Hemoglobin M [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4611-0 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4612-8 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4613-6 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4614-4 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4615-1 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4616-9 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4617-7 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4618-5 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4619-3 | Hemoglobin Ranier [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 34663-5 | Hemoglobin S [Presence] in Amniotic fluid | Presence | Ordinal value | Amniotic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4621-9 | Hemoglobin S [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4622-7 | Hemoglobin S [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4623-5 | Hemoglobin S [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 6864-3 | Hemoglobin S [Presence] in Blood by Solubility test | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4626-8 | Hemoglobin Yakima [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4627-6 | Hemoglobin Yoshizuka [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4628-4 | Hemoglobin Ypsilanti [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4629-2 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis acid (pH 6.3) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4630-0 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 717-9 | Hemoglobin [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 33517-4 | Hemoglobin [Presence] in Body fluid | Presence | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 48035-0 | Hemoglobin [Presence] in Cerebral spinal fluid | Presence | Ordinal value | Cerebrospinal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 2334-1 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 42909-2 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --1st specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 42910-0 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --2nd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 42911-8 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --3rd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 34618-9 | Hemoglobin [Presence] in Specimen | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 42912-6 | Hemoglobin [Presence] in Specimen from gastrointestinal --2nd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 42913-4 | Hemoglobin [Presence] in Specimen from gastrointestinal lower --1st specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 50017-3 | Hemoglobin [Presence] in Sputum or Gastric fluid from gastrointestinal | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 2335-8 | Hemoglobin [Presence] in Stool from gastrointestinal | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 14563-1 | Hemoglobin [Presence] in Stool from gastrointestinal --1st specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 14564-9 | Hemoglobin [Presence] in Stool from gastrointestinal --2nd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 14565-6 | Hemoglobin [Presence] in Stool from gastrointestinal --3rd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 12503-9 | Hemoglobin [Presence] in Stool from gastrointestinal --4th specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 12504-7 | Hemoglobin [Presence] in Stool from gastrointestinal --5th specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 27401-9 | Hemoglobin [Presence] in Stool from gastrointestinal --6th specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 27925-7 | Hemoglobin [Presence] in Stool from gastrointestinal --7th specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 27926-5 | Hemoglobin [Presence] in Stool from gastrointestinal --8th specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 80372-6 | Hemoglobin [Presence] in Stool from gastrointestinal by Rapid immunoassay | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 104738-0 | Hemoglobin [Presence] in Stool from gastrointestinal lower | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 29771-3 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 57905-2 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --1st specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 56490-6 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --2nd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 56491-4 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --3rd specimen | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 725-2 | Hemoglobin [Presence] in Urine | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 57751-0 | Hemoglobin [Presence] in Urine by Automated test strip | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 5794-3 | Hemoglobin [Presence] in Urine by Test strip | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 48047-5 | Hemoglobin [Presence] in Vomitus from gastrointestinal | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 2613-8 | Methemoglobin [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4684-7 | Sulfhemoglobin [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 53117-8 | Thermolabile hemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 4639-1 | Unstable Hemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 41619-8 | Unstable Hemoglobin [Presence] in Red Blood Cells by Isopropanol stability | Presence | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 32160-4 | Carboxyhemoglobin [Presence] in Blood by Screen method | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 45208-6 | Hemoglobin A [Presence] in Blood by Electrophoresis | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 28559-3 | Hemoglobin A2 [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 27345-8 | Hemoglobin A2 [Presence] in Blood by Electrophoresis | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4556-7 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4557-5 | Hemoglobin Abruzzo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4558-3 | Hemoglobin Barts [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4559-1 | Hemoglobin Barts [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 55783-5 | Hemoglobin Barts [Presence] in Blood by HPLC | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4560-9 | Hemoglobin Bethesda [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4564-1 | Hemoglobin C - Harlem [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 40720-5 | Hemoglobin C [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 40545-6 | Hemoglobin C [Presence] in Blood by Electrophoresis | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4565-8 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4566-6 | Hemoglobin Chesapeake [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4567-4 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4568-2 | Hemoglobin Constant Spring [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4572-4 | Hemoglobin Denver [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 40546-4 | Hemoglobin E [Presence] in Blood by Electrophoresis | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4577-3 | Hemoglobin F - Texas [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 28067-7 | Hemoglobin F [Presence] in Amniotic fluid | Threshold | Ordinal value | Amniotic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4579-9 | Hemoglobin F [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4632-6 | Hemoglobin F [Presence] in Blood by Alkali denaturation | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 32140-6 | Hemoglobin F [Presence] in Blood by Kleihauer-Betke method | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 18277-4 | Hemoglobin F [Presence] in Gastric fluid by Apt-Downey method | Threshold | Ordinal value | Gastric fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 18278-2 | Hemoglobin F [Presence] in Meconium by Apt-Downey method | Threshold | Ordinal value | Meconium specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 30074-9 | Hemoglobin F [Presence] in Specimen | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 40721-3 | Hemoglobin F [Presence] in Specimen by Apt-Downey method | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4631-8 | Hemoglobin F [Presence] in Stool by Apt-Downey method | Threshold | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 28006-5 | Hemoglobin F [Presence] in Vomitus | Threshold | Ordinal value | Vomitus specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4581-5 | Hemoglobin G - Coushatta [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4583-1 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4584-9 | Hemoglobin G - Georgia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4585-6 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4586-4 | Hemoglobin G - Philadelphia [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 40547-2 | Hemoglobin H [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 17871-5 | Hemoglobin H [Presence] in Blood by Heat denaturation | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4589-8 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4590-6 | Hemoglobin Hasharon [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4591-4 | Hemoglobin Hope [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4592-2 | Hemoglobin Hope [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4593-0 | Hemoglobin I [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4594-8 | Hemoglobin I [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4595-5 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4596-3 | Hemoglobin J - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4597-1 | Hemoglobin J - Capetown [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4598-9 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4599-7 | Hemoglobin J - Oxford [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4600-3 | Hemoglobin Kansas [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4601-1 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4602-9 | Hemoglobin Kempsey [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4603-7 | Hemoglobin Koln [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4604-5 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4605-2 | Hemoglobin Lepore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4606-0 | Hemoglobin M - Boston [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4607-8 | Hemoglobin M - Hyde Park [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4608-6 | Hemoglobin M - Iwate [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4610-2 | Hemoglobin M - Saskatoon [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 53224-2 | Hemoglobin M [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4611-0 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4612-8 | Hemoglobin Malmo [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4613-6 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4614-4 | Hemoglobin N - Baltimore [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4615-1 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4616-9 | Hemoglobin N - Seattle [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4617-7 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4618-5 | Hemoglobin O - Arab [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4619-3 | Hemoglobin Ranier [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 34663-5 | Hemoglobin S [Presence] in Amniotic fluid | Threshold | Ordinal value | Amniotic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4621-9 | Hemoglobin S [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4622-7 | Hemoglobin S [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4623-5 | Hemoglobin S [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 6864-3 | Hemoglobin S [Presence] in Blood by Solubility test | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4626-8 | Hemoglobin Yakima [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4627-6 | Hemoglobin Yoshizuka [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4628-4 | Hemoglobin Ypsilanti [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4629-2 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis acid (pH 6.3) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4630-0 | Hemoglobin Zurich [Presence] in Blood by Electrophoresis alkaline (pH 8.9) | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 717-9 | Hemoglobin [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 33517-4 | Hemoglobin [Presence] in Body fluid | Threshold | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 48035-0 | Hemoglobin [Presence] in Cerebrospinal Fluid | Threshold | Ordinal value | Cerebrospinal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 2334-1 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 42909-2 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --1st specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 42910-0 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --2nd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 42911-8 | Hemoglobin [Presence] in Gastric fluid from gastrointestinal --3rd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 34618-9 | Hemoglobin [Presence] in Specimen | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 42912-6 | Hemoglobin [Presence] in Specimen from gastrointestinal --2nd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 42913-4 | Hemoglobin [Presence] in Specimen from gastrointestinal lower --1st specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 50017-3 | Hemoglobin [Presence] in Sputum or Gastric fluid from gastrointestinal | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 2335-8 | Hemoglobin [Presence] in Stool from gastrointestinal | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 14563-1 | Hemoglobin [Presence] in Stool from gastrointestinal --1st specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 14564-9 | Hemoglobin [Presence] in Stool from gastrointestinal --2nd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 14565-6 | Hemoglobin [Presence] in Stool from gastrointestinal --3rd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 12503-9 | Hemoglobin [Presence] in Stool from gastrointestinal --4th specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 12504-7 | Hemoglobin [Presence] in Stool from gastrointestinal --5th specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 27401-9 | Hemoglobin [Presence] in Stool from gastrointestinal --6th specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 27925-7 | Hemoglobin [Presence] in Stool from gastrointestinal --7th specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 27926-5 | Hemoglobin [Presence] in Stool from gastrointestinal --8th specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 80372-6 | Hemoglobin [Presence] in Stool from gastrointestinal by Rapid immunoassay | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 104738-0 | Hemoglobin [Presence] in Stool from gastrointestinal lower | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 29771-3 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 57905-2 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --1st specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 56490-6 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --2nd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 56491-4 | Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay --3rd specimen | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 725-2 | Hemoglobin [Presence] in Urine | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 57751-0 | Hemoglobin [Presence] in Urine by Automated test strip | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 5794-3 | Hemoglobin [Presence] in Urine by Test strip | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 48047-5 | Hemoglobin [Presence] in Vomitus from gastrointestinal | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 2613-8 | Methemoglobin [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4684-7 | Sulfhemoglobin [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 53117-8 | Thermolabile hemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 4639-1 | Unstable Hemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 41619-8 | Unstable Hemoglobin [Presence] in Red Blood Cells by Isopropanol stability | Threshold | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | 50559-4 | Hemoglobin [Mass/volume] in Urine by Automated test strip | Mass concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |
 | 49137-3 | Hemoglobin [Mass/volume] in Urine by Test strip | Mass concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |

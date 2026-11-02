@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Ldh_Complete
 Id: mii-vs-labor-loinc-ontology-ldh-complete
 Title: "MII VS Labor LOINC Ontology Ldh Complete"
-Description: "Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 79 concepts (79 with LOINC). The pool ECL is carried as an intensional include."
+Description: "Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 79 concepts (79 with LOINC). The pool ECL is carried as an intensional include."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,7 +18,7 @@ Description: "Proposal: use-case ValueSet 'Complete aggregation' for the analyte
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-10-20"
+* ^date = "2026-11-02"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
 // Analyte ldh, bucket complete: LOINC enumeration (79 codes) resolved from the ECL below
 * $loinc#17041-5

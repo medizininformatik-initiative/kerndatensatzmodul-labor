@@ -1,4 +1,4 @@
-Diese Seite ist das Review-Material für den Analyten **potassium** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
+Diese Seite ist das Review-Material für den Analyten **potassium** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` (57 Konzepte, 57 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-potassium-complete.html), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-potassium-quantitative.html), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-potassium-convertible.html).
 
@@ -43,7 +43,7 @@ ValueSet [mii-vs-labor-loinc-ontology-potassium-standard](ValueSet-mii-vs-labor-
 | 6298-4 | Potassium [Moles/volume] in Blood | Blood specimen |
 | 2821-7 | Potassium [Moles/volume] in Body fluid | Body fluid specimen |
 | 39790-1 | Potassium [Moles/volume] in Capillary blood | Capillary blood specimen |
-| 2819-1 | Potassium [Moles/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 2819-1 | Potassium [Moles/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 2820-9 | Potassium [Moles/volume] in Dialysis fluid | Dialysate specimen |
 | 2822-5 | Potassium [Moles/volume] in Gastric fluid | Gastric fluid specimen |
 | 17795-6 | Potassium [Moles/volume] in Hyperal solution | – |
@@ -137,7 +137,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 6298-4 | Potassium [Moles/volume] in Blood | Substance concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 2821-7 | Potassium [Moles/volume] in Body fluid | Substance concentration | Quantitative value | Body fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 39790-1 | Potassium [Moles/volume] in Capillary blood | Substance concentration | Quantitative value | Capillary blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 2819-1 | Potassium [Moles/volume] in Cerebral spinal fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 2819-1 | Potassium [Moles/volume] in Cerebrospinal Fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 2820-9 | Potassium [Moles/volume] in Dialysis fluid | Substance concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 2822-5 | Potassium [Moles/volume] in Gastric fluid | Substance concentration | Quantitative value | Gastric fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 17795-6 | Potassium [Moles/volume] in Hyperal solution | Substance concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |

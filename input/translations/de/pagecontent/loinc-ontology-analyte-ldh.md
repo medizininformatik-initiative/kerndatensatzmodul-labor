@@ -1,4 +1,4 @@
-Diese Seite ist das Review-Material für den Analyten **ldh** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
+Diese Seite ist das Review-Material für den Analyten **ldh** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` (79 Konzepte, 79 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-ldh-complete.html), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-ldh-quantitative.html), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-ldh-convertible.html), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-ldh-qualitative.html).
 
@@ -36,9 +36,9 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-monitoring-standard](ValueSet-mii-vs-l
 | 2529-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid | Body fluid specimen |
 | 14803-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction | Body fluid specimen |
 | 60017-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Pyruvate to lactate reaction | Body fluid specimen |
-| 2528-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
-| 60024-7 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Lactate to pyruvate reaction | Cerebrospinal fluid specimen |
-| 60023-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Pyruvate to lactate reaction | Cerebrospinal fluid specimen |
+| 2528-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
+| 60024-7 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Lactate to pyruvate reaction | Cerebrospinal fluid specimen |
+| 60023-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Pyruvate to lactate reaction | Cerebrospinal fluid specimen |
 | 5921-2 | Lactate dehydrogenase [Enzymatic activity/volume] in Dialysis fluid | Dialysate specimen |
 | 14403-0 | Lactate dehydrogenase [Enzymatic activity/volume] in Gastric fluid | Gastric fluid specimen |
 | 33367-4 | Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid | Pericardial fluid specimen |
@@ -52,7 +52,7 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-monitoring-standard](ValueSet-mii-vs-l
 | 60022-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Lactate to pyruvate reaction | Pleural fluid specimen |
 | 60021-3 | Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Pyruvate to lactate reaction | Pleural fluid specimen |
 | 11053-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells | Erythrocyte specimen |
-| 57664-5 | Lactate dehydrogenase [Enzymatic activity/volume] in Semen | Seminal fluid specimen |
+| 57664-5 | Lactate dehydrogenase [Enzymatic activity/volume] in Semen | Semen sample |
 | 32324-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Specimen | Specimen |
 | 2533-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid | Synovial fluid specimen |
 | 68453-0 | Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Lactate to pyruvate reaction | Synovial fluid specimen |
@@ -63,24 +63,24 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-monitoring-standard](ValueSet-mii-vs-l
 
 | LOINC | Name | Direct site |
 |---|---|---|
-| 51510-6 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen |
+| 51510-6 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen |
 | 51509-8 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen |
 | 51508-0 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen |
 | 104814-9 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine | Urine specimen |
 | 13886-7 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen |
-| 51511-4 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen |
+| 51511-4 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen |
 | 51513-0 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen |
 | 51512-2 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen |
 | 13887-5 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen |
-| 51516-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen |
+| 51516-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen |
 | 51515-5 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen |
 | 51514-8 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen |
 | 13888-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen |
-| 51519-7 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen |
+| 51519-7 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen |
 | 51517-1 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen |
 | 51518-9 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen |
 | 13889-1 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen |
-| 51522-1 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen |
+| 51522-1 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen |
 | 51520-5 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen |
 | 51521-3 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen |
 | 13890-9 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen |
@@ -106,25 +106,26 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-monitoring-standard](ValueSet-mii-vs-l
 | 2547-8 | Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value |
 | 2548-6 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic fraction | Quantitative value |
 
-**Ausgeschlossen, weil Direct site und Scale type nicht passen (7)**
+**Ausgeschlossen, weil Direct site und Scale type nicht passen (8)**
 
 | LOINC | Name | Direct site | Scale type |
 |---|---|---|---|
 | 109410-1 | Lactate dehydrogenase [Measurement] in Body fluid | Body fluid specimen | – |
-| 109785-6 | Lactate dehydrogenase [Measurement] in Cerebral spinal fluid | Cerebrospinal fluid specimen | – |
+| 109785-6 | Lactate dehydrogenase [Measurement] in Cerebrospinal Fluid | Cerebrospinal fluid specimen | – |
 | 109686-6 | Lactate dehydrogenase [Measurement] in Pericardial fluid | Pericardial fluid specimen | – |
 | 109701-3 | Lactate dehydrogenase [Measurement] in Peritoneal fluid | Peritoneal fluid specimen | – |
 | 109606-4 | Lactate dehydrogenase [Measurement] in Pleural fluid | Pleural fluid specimen | – |
 | 108610-7 | Lactate dehydrogenase [Measurement] in Synovial fluid | Synovial fluid specimen | – |
 | 110369-6 | Lactate dehydrogenase [Measurement] in Urine | Urine specimen | – |
+| 17041-5 | Lactate dehydrogenase [Presence] in Urine | Urine specimen | Ordinal value |
 
 7 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109410-1, 109785-6, 109686-6, 109701-3, 109606-4, 108610-7, 110369-6.
 
-**Ausgeschlossen, weil Component, Direct site, Property und Scale type nicht passen (1)**
+**Ausgeschlossen, weil Component, Direct site und Scale type nicht passen (1)**
 
-| LOINC | Name | Direct site | Property | Scale type |
-|---|---|---|---|---|
-| 53248-1 | Plasmodium sp lactate dehydrogenase [Presence] in Blood | Blood specimen | Presence | Ordinal value |
+| LOINC | Name | Direct site | Scale type |
+|---|---|---|---|
+| 53248-1 | Plasmodium sp lactate dehydrogenase [Presence] in Blood | Blood specimen | Ordinal value |
 
 **Ausgeschlossen, weil Component und Property nicht passen (1)**
 
@@ -137,12 +138,6 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-monitoring-standard](ValueSet-mii-vs-l
 | LOINC | Name | Direct site | Property |
 |---|---|---|---|
 | 53561-7 | Lactate dehydrogenase/Creatinine [Ratio] in Urine | Urine specimen | Ratio |
-
-**Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (1)**
-
-| LOINC | Name | Direct site | Property | Scale type |
-|---|---|---|---|---|
-| 17041-5 | Lactate dehydrogenase [Presence] in Urine | Urine specimen | Presence | Ordinal value |
 
 **Ausgeschlossen, weil Scale type nicht passt (1)**
 
@@ -174,7 +169,7 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-isoenzymes](ValueSet-mii-vs-labor-loin
 | 2537-9 | Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 2535-3 | Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 14119-2 | Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic ratio | Quantitative value | – |
-| 51510-6 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
+| 51510-6 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51509-8 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51508-0 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2536-1 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
@@ -183,28 +178,28 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-isoenzymes](ValueSet-mii-vs-labor-loin
 | 2540-3 | Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 2538-7 | Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 19248-4 | Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | Electrophoresis technique |
-| 51511-4 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
+| 51511-4 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51513-0 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51512-2 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2539-5 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 13887-5 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2543-7 | Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 2541-1 | Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
-| 51516-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
+| 51516-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51515-5 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51514-8 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2542-9 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 13888-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2546-0 | Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 2544-5 | Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
-| 51519-7 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
+| 51519-7 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51517-1 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51518-9 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2545-2 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 13889-1 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Urine by Electrophoresis | Urine specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2549-4 | Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
 | 2547-8 | Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value | – |
-| 51522-1 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
+| 51522-1 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Cerebrospinal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51520-5 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Peritoneal fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 51521-3 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Pleural fluid specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
 | 2548-6 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Acellular blood (serum or plasma) specimen | Catalytic fraction | Quantitative value | Electrophoresis technique |
@@ -224,9 +219,9 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-isoenzymes](ValueSet-mii-vs-labor-loin
 | 2529-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid | Body fluid specimen | Catalytic concentration | Quantitative value |
 | 14803-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction | Body fluid specimen | Catalytic concentration | Quantitative value |
 | 60017-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Pyruvate to lactate reaction | Body fluid specimen | Catalytic concentration | Quantitative value |
-| 2528-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen | Catalytic concentration | Quantitative value |
-| 60024-7 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Lactate to pyruvate reaction | Cerebrospinal fluid specimen | Catalytic concentration | Quantitative value |
-| 60023-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Pyruvate to lactate reaction | Cerebrospinal fluid specimen | Catalytic concentration | Quantitative value |
+| 2528-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Catalytic concentration | Quantitative value |
+| 60024-7 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Lactate to pyruvate reaction | Cerebrospinal fluid specimen | Catalytic concentration | Quantitative value |
+| 60023-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Pyruvate to lactate reaction | Cerebrospinal fluid specimen | Catalytic concentration | Quantitative value |
 | 5921-2 | Lactate dehydrogenase [Enzymatic activity/volume] in Dialysis fluid | Dialysate specimen | Catalytic concentration | Quantitative value |
 | 14403-0 | Lactate dehydrogenase [Enzymatic activity/volume] in Gastric fluid | Gastric fluid specimen | Catalytic concentration | Quantitative value |
 | 33367-4 | Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid | Pericardial fluid specimen | Catalytic concentration | Quantitative value |
@@ -240,7 +235,7 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-isoenzymes](ValueSet-mii-vs-labor-loin
 | 60022-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Lactate to pyruvate reaction | Pleural fluid specimen | Catalytic concentration | Quantitative value |
 | 60021-3 | Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Pyruvate to lactate reaction | Pleural fluid specimen | Catalytic concentration | Quantitative value |
 | 11053-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells | Erythrocyte specimen | Catalytic concentration | Quantitative value |
-| 57664-5 | Lactate dehydrogenase [Enzymatic activity/volume] in Semen | Seminal fluid specimen | Catalytic concentration | Quantitative value |
+| 57664-5 | Lactate dehydrogenase [Enzymatic activity/volume] in Semen | Semen sample | Catalytic concentration | Quantitative value |
 | 2532-0 | Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value |
 | 14804-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value |
 | 14805-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction | Acellular blood (serum or plasma) specimen | Catalytic concentration | Quantitative value |
@@ -256,7 +251,7 @@ ValueSet [mii-vs-labor-loinc-ontology-ldh-isoenzymes](ValueSet-mii-vs-labor-loin
 | LOINC | Name | Scale type |
 |---|---|---|
 | 109410-1 | Lactate dehydrogenase [Measurement] in Body fluid | – |
-| 109785-6 | Lactate dehydrogenase [Measurement] in Cerebral spinal fluid | – |
+| 109785-6 | Lactate dehydrogenase [Measurement] in Cerebrospinal Fluid | – |
 | 109686-6 | Lactate dehydrogenase [Measurement] in Pericardial fluid | – |
 | 109701-3 | Lactate dehydrogenase [Measurement] in Peritoneal fluid | – |
 | 109606-4 | Lactate dehydrogenase [Measurement] in Pleural fluid | – |
@@ -300,9 +295,9 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 2529-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid | Catalytic concentration | Quantitative value | Body fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 14803-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction | Catalytic concentration | Quantitative value | Body fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 60017-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Pyruvate to lactate reaction | Catalytic concentration | Quantitative value | Body fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 2528-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid | Catalytic concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 60024-7 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Lactate to pyruvate reaction | Catalytic concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 60023-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebral spinal fluid by Pyruvate to lactate reaction | Catalytic concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 2528-8 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid | Catalytic concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 60024-7 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Lactate to pyruvate reaction | Catalytic concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 60023-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Pyruvate to lactate reaction | Catalytic concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 5921-2 | Lactate dehydrogenase [Enzymatic activity/volume] in Dialysis fluid | Catalytic concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 14403-0 | Lactate dehydrogenase [Enzymatic activity/volume] in Gastric fluid | Catalytic concentration | Quantitative value | Gastric fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 33367-4 | Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid | Catalytic concentration | Quantitative value | Pericardial fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -316,7 +311,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 60022-1 | Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Lactate to pyruvate reaction | Catalytic concentration | Quantitative value | Pleural fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 60021-3 | Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Pyruvate to lactate reaction | Catalytic concentration | Quantitative value | Pleural fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 11053-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells | Catalytic concentration | Quantitative value | Erythrocyte specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 57664-5 | Lactate dehydrogenase [Enzymatic activity/volume] in Semen | Catalytic concentration | Quantitative value | Seminal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 57664-5 | Lactate dehydrogenase [Enzymatic activity/volume] in Semen | Catalytic concentration | Quantitative value | Semen sample | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 2532-0 | Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma | Catalytic concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 14804-9 | Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction | Catalytic concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 14805-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction | Catalytic concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -326,34 +321,34 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 68452-2 | Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Pyruvate to lactate reaction | Catalytic concentration | Quantitative value | Synovial fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 2534-6 | Lactate dehydrogenase [Enzymatic activity/volume] in Urine | Catalytic concentration | Quantitative value | Urine specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 14119-2 | Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma | Catalytic ratio | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitativ | Quantitative Skala |
-| 51510-6 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 51510-6 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 51509-8 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Peritoneal fluid specimen | Quantitativ | Quantitative Skala |
 | 51508-0 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Catalytic fraction | Quantitative value | Pleural fluid specimen | Quantitativ | Quantitative Skala |
 | 2536-1 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Catalytic fraction | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitativ | Quantitative Skala |
 | 104814-9 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine | Catalytic fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
 | 13886-7 | Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine by Electrophoresis | Catalytic fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
-| 51511-4 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 51511-4 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 51513-0 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Peritoneal fluid specimen | Quantitativ | Quantitative Skala |
 | 51512-2 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Catalytic fraction | Quantitative value | Pleural fluid specimen | Quantitativ | Quantitative Skala |
 | 2539-5 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Catalytic fraction | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitativ | Quantitative Skala |
 | 13887-5 | Lactate dehydrogenase 2/Lactate dehydrogenase.total in Urine by Electrophoresis | Catalytic fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
-| 51516-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 51516-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 51515-5 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Peritoneal fluid specimen | Quantitativ | Quantitative Skala |
 | 51514-8 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Catalytic fraction | Quantitative value | Pleural fluid specimen | Quantitativ | Quantitative Skala |
 | 2542-9 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Catalytic fraction | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitativ | Quantitative Skala |
 | 13888-3 | Lactate dehydrogenase 3/Lactate dehydrogenase.total in Urine by Electrophoresis | Catalytic fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
-| 51519-7 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 51519-7 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 51517-1 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Peritoneal fluid specimen | Quantitativ | Quantitative Skala |
 | 51518-9 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Catalytic fraction | Quantitative value | Pleural fluid specimen | Quantitativ | Quantitative Skala |
 | 2545-2 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Catalytic fraction | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitativ | Quantitative Skala |
 | 13889-1 | Lactate dehydrogenase 4/Lactate dehydrogenase.total in Urine by Electrophoresis | Catalytic fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
-| 51522-1 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebral spinal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 51522-1 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis | Catalytic fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 51520-5 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis | Catalytic fraction | Quantitative value | Peritoneal fluid specimen | Quantitativ | Quantitative Skala |
 | 51521-3 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis | Catalytic fraction | Quantitative value | Pleural fluid specimen | Quantitativ | Quantitative Skala |
 | 2548-6 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis | Catalytic fraction | Quantitative value | Acellular blood (serum or plasma) specimen | Quantitativ | Quantitative Skala |
 | 13890-9 | Lactate dehydrogenase 5/Lactate dehydrogenase.total in Urine by Electrophoresis | Catalytic fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
 | 109410-1 | Lactate dehydrogenase [Measurement] in Body fluid | Measurement property | – | Body fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
-| 109785-6 | Lactate dehydrogenase [Measurement] in Cerebral spinal fluid | Measurement property | – | Cerebrospinal fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
+| 109785-6 | Lactate dehydrogenase [Measurement] in Cerebrospinal Fluid | Measurement property | – | Cerebrospinal fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 109686-6 | Lactate dehydrogenase [Measurement] in Pericardial fluid | Measurement property | – | Pericardial fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 109701-3 | Lactate dehydrogenase [Measurement] in Peritoneal fluid | Measurement property | – | Peritoneal fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 109606-4 | Lactate dehydrogenase [Measurement] in Pleural fluid | Measurement property | – | Pleural fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
@@ -361,5 +356,5 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 108610-7 | Lactate dehydrogenase [Measurement] in Synovial fluid | Measurement property | – | Synovial fluid specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 110369-6 | Lactate dehydrogenase [Measurement] in Urine | Measurement property | – | Urine specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 53561-7 | Lactate dehydrogenase/Creatinine [Ratio] in Urine | Ratio | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
-| 17041-5 | Lactate dehydrogenase [Presence] in Urine | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 53248-1 | Plasmodium sp lactate dehydrogenase [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 17041-5 | Lactate dehydrogenase [Presence] in Urine | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 53248-1 | Plasmodium sp lactate dehydrogenase [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
