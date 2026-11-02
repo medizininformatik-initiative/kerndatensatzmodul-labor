@@ -13,3 +13,5 @@ Zusätzlich zu den international verwendeten Terminologien definiert das Modul L
 | [Identifier-Typen](ValueSet-mii-vs-labor-identifier-type-codes.html) | Type-Codes, um zu bestimmen, welcher Identifier für einen bestimmten Zweck zu verwenden ist. |
 
 Welche Codes für `Observation.interpretation` in Frage kommen und wie sich lokale Skalen darauf abbilden, ist unter [Interpretationen und Kommentare](interpretation.html) erläutert.
+
+Die ValueSets unter [LOINC-Ontology-ValueSets (Vorschlag)](loinc-ontology-valuesets.html) sind ein generierter Vorschlag zu den Ballot-Kommentaren und kein normativer Inhalt des Moduls.

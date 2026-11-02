@@ -1,0 +1,61 @@
+
+# A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: StructureDefinition.name
+msgid "MII_PR_Labor_LOINC_Ontology_Hba1c_Standard"
+msgstr "MII_PR_Labor_LOINC_Ontology_Hba1c_Standard"
+
+# A short, descriptive, user-friendly title for the structure definition.
+#: StructureDefinition.title
+msgid "MII PR Labor LOINC Ontology Hba1c Standard"
+msgstr "MII PR Labor LOINC Ontology Hba1c Standard"
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.
+#: StructureDefinition.publisher
+msgid "Medizininformatik Initiative"
+msgstr "Medizininformatik Initiative"
+
+# The name of an individual to contact.
+#: StructureDefinition.contact.name
+msgid "Medizininformatik Initiative"
+msgstr "Medizininformatik Initiative"
+
+# A copyright statement relating to the structure definition and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the structure definition.  The short copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in the copyrightLabel element.
+#: StructureDefinition.copyright
+msgid "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."
+msgstr "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.workflow/name
+msgid "Workflow Pattern"
+msgstr "Workflow Pattern"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.sct-concept/name
+msgid "SNOMED CT Concept Domain Binding"
+msgstr "SNOMED CT Concept Domain Binding"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.v2/name
+msgid "HL7 v2 Mapping"
+msgstr "HL7 v2 Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.w5/name
+msgid "FiveWs Pattern Mapping"
+msgstr "FiveWs Pattern Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.sct-attr/name
+msgid "SNOMED CT Attribute Binding"
+msgstr "SNOMED CT Attribute Binding"
+
+# Describes the intended use of this particular set of codes.
+#: StructureDefinition.element.Observation.code/b/desc
+msgid "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: << 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+msgstr "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: << 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+
+# Explanatory notes and implementation guidance about the data element, including notes about how to use the data properly, exceptions to proper use, etc. (Note: The text you are reading is specified in ElementDefinition.comment).
+#: StructureDefinition.element.Observation.value[x]:valueQuantity/comment
+msgid "Expected UCUM unit: % or mmol/mol"
+msgstr "Expected UCUM unit: % or mmol/mol"
+

@@ -222,13 +222,25 @@ jobs:
           SU_TERMSERV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
           SU_TERMSERV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
           SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+          # Repository variable IG_PUBLISHER_TX = "tx.fhir.org" forces the public
+          # HL7 server even though the certificate is present. Reason: Ontoserver
+          # (any version up to 6.28.2) rejects the validator's $batch-validate-code
+          # items ("Type-level request to $validate-code must specify either
+          # valueSet or url parameter"), so every enumerated ValueSet code after
+          # the first is reported as invalid on the SU-TermServ path. Unset or
+          # any other value keeps the SU-TermServ preference.
+          IG_PUBLISHER_TX: ${{ vars.IG_PUBLISHER_TX }}
         run: |
           set -euo pipefail
           # Prefer SU-TermServ through the client-certificate nginx proxy;
           # otherwise fall back to the public HL7 server. Same idiom as the
           # preview / go-publish workflows; the build must not hard-fail without
           # the certificate.
-          if [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]] && [[ -n "${SU_TERMSERV_CLIENT_KEY}" ]] && [[ -n "${SU_TERMSERV_CLIENT_PASSWORD}" ]]; then
+          if [[ "${IG_PUBLISHER_TX:-}" == "tx.fhir.org" ]]; then
+            echo "tx_url=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
+            echo "::notice::IG_PUBLISHER_TX=tx.fhir.org — using the public HL7 terminology server although the SU-TermServ certificate is configured (Ontoserver rejects the validator's \$batch-validate-code items; QA would otherwise list every enumerated ValueSet code as invalid)."
+            echo "Terminology: public HL7 server https://tx.fhir.org (forced by IG_PUBLISHER_TX)" >> "${GITHUB_STEP_SUMMARY}"
+          elif [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]] && [[ -n "${SU_TERMSERV_CLIENT_KEY}" ]] && [[ -n "${SU_TERMSERV_CLIENT_PASSWORD}" ]]; then
             nginx_dir="${RUNNER_TEMP}/nginx"
             mkdir -p "${nginx_dir}/certs"
             cp kerndatensatz-meta/.github/workflows/nginx.conf "${nginx_dir}/nginx.conf"
