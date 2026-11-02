@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-differential-panel | *Version*:2027.0.0-ci |
-| Draft as of 2026-10-20 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Leukocytes_Differential_Panel |
+| Draft as of 2026-11-02 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Leukocytes_Differential_Panel |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)` 
+Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)` 
 
  **References** 
 
@@ -179,7 +179,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor LOINC Ontology Leukocytes Differential Panel",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-20",
+  "date" : "2026-11-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -188,7 +188,7 @@ No Expansion for this valueset (Unsupported Code System Version)
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)`",
+  "description" : "Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -201,7 +201,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11010000107/version/20260321",
+      "version" : "http://snomed.info/sct/11010000107/version/20261021",
       "concept" : [{
         "code" : "376201000119106",
         "display" : "Differential count of white blood cells by manual method (observable entity)"
@@ -213,7 +213,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11010000107/version/20260321",
+      "version" : "http://snomed.info/sct/11010000107/version/20261021",
       "filter" : [{
         "property" : "constraint",
         "op" : "=",

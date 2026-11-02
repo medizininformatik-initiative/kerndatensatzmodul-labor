@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-mcv-standard | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-10-20 | *Maschinenlesbarer Name*:MII_PR_Labor_LOINC_Ontology_Mcv_Standard |
+| Draft Stand: 2026-11-02 | *Maschinenlesbarer Name*:MII_PR_Labor_LOINC_Ontology_Mcv_Standard |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: Observation profile for the clinical test 'Mean cell volume (MCV)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mcv_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood. 
+Proposal: Observation profile for the clinical test 'Mean cell volume (MCV)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mcv_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood. 
 
 **Usages:**
 
@@ -214,7 +214,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   "title" : "MII PR Labor LOINC Ontology Mcv Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-20",
+  "date" : "2026-11-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -223,7 +223,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: Observation profile for the clinical test 'Mean cell volume (MCV)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mcv_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood.",
+  "description" : "Proposal: Observation profile for the clinical test 'Mean cell volume (MCV)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mcv_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -273,7 +273,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "path" : "Observation.code",
       "binding" : {
         "strength" : "required",
-        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: `<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mcv-standard"
       }
     },

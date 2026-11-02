@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-complete | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-10-20 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Hba1c_Complete |
+| Draft Stand: 2026-11-02 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Hba1c_Complete |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include. 
+Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include. 
 
  **References** 
 
@@ -179,7 +179,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor LOINC Ontology Hba1c Complete",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-20",
+  "date" : "2026-11-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -188,7 +188,7 @@ No Expansion for this valueset (Unsupported Code System Version)
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include.",
+  "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -229,7 +229,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11010000107/version/20260321",
+      "version" : "http://snomed.info/sct/11010000107/version/20261021",
       "concept" : [{
         "code" : "408591000",
         "display" : "Hemoglobin A1c target (observable entity)"
@@ -241,7 +241,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11010000107/version/20260321",
+      "version" : "http://snomed.info/sct/11010000107/version/20261021",
       "filter" : [{
         "property" : "constraint",
         "op" : "=",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft | *Version*:2027.0.0-ci |
-| Active as of 2026-10-20 | *Computable Name*:MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft |
+| Active as of 2026-11-02 | *Computable Name*:MII_EX_Labor_Interpretationsbeeinflussende_Eigenschaft |
 
 Interpretationsbeeinflussenden Eigenschaft einer Laboruntersuchung oder Probe.
 
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-labor-inte
   "title" : "MII EX Labor Interpretationsbeeinflussende Eigenschaft",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-20T04:35:35+00:00",
+  "date" : "2026-11-02T16:00:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyt Thrombozyten
 
-Diese Seite ist das Review-Material für den Analyten **platelets** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **platelets** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` (19 Konzepte, 19 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-platelets-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-platelets-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-platelets-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-platelets-qualitative.md).
 
@@ -49,9 +49,9 @@ ValueSet [mii-vs-labor-loinc-ontology-platelets-count-standard](ValueSet-mii-vs-
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| 9317-9 | Platelet adequacy [Presence] in Blood by Light microscopy | Presence | Ordinal value |
+| 9317-9 | Platelet adequacy [Presence] in Blood by Light microscopy | Threshold | Ordinal value |
 | 111353-9 | Platelets [Measurement] in Blood | Measurement property | – |
-| 104705-9 | Platelets [Presence] in Blood | Presence | Ordinal value |
+| 104705-9 | Platelets [Presence] in Blood | Threshold | Ordinal value |
 
 1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 111353-9.
 
@@ -106,6 +106,6 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 13057-5 | Platelets [Units/volume] in Dialysis fluid | Arbitrary concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 79427-1 | Platelets [#/area] in Blood by Microscopy high power field | Number areic | Quantitative value | Blood specimen | Quantitativ | Quantitative Skala |
 | 111353-9 | Platelets [Measurement] in Blood | Measurement property | – | Blood specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
-| 9317-9 | Platelet adequacy [Presence] in Blood by Light microscopy | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 104705-9 | Platelets [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 9317-9 | Platelet adequacy [Presence] in Blood by Light microscopy | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 104705-9 | Platelets [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 

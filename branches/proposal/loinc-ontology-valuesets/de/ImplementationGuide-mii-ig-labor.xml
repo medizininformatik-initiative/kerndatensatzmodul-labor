@@ -137,7 +137,7 @@
   <title value="MII IG Laborbefund"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-10-20T04:35:35+00:00"/>
+  <date value="2026-11-02T16:00:59+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1303,7 +1303,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-erythrocytes-count-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Erythrocytes Count Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Erythrocyte count in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Erythrocytes_Count_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Erythrocyte count in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Erythrocytes_Count_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1314,7 +1314,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-hba1c-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Hba1c Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'HbA1c in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Hba1c_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'HbA1c in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Hba1c_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1325,7 +1325,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-hematocrit-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Hematocrit Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Hematocrit (volume fraction) in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Hematocrit_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Hematocrit (volume fraction) in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Hematocrit_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1336,7 +1336,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-hemoglobin-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Hemoglobin Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Hemoglobin concentration in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Hemoglobin_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Hemoglobin concentration in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Hemoglobin_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1347,7 +1347,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-ldh-isoenzymes"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Ldh Isoenzymes"/>
-      <description value="Proposal: Observation profile for the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Ldh_Isoenzymes, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Serum/Plasma."/>
+      <description value="Proposal: Observation profile for the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Ldh_Isoenzymes, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Serum/Plasma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1358,7 +1358,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-ldh-monitoring-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Ldh Monitoring Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'LDH (total) monitoring in serum/plasma' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Ldh_Monitoring_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Serum/Plasma."/>
+      <description value="Proposal: Observation profile for the clinical test 'LDH (total) monitoring in serum/plasma' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Ldh_Monitoring_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Serum/Plasma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1369,7 +1369,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-leukocytes-count-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Leukocytes Count Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Leukocyte count in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Leukocytes_Count_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Leukocyte count in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Leukocytes_Count_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1380,7 +1380,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-leukocytes-differential-panel"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Leukocytes Differential Panel"/>
-      <description value="Proposal: Observation profile for the clinical test 'WBC differential (panel)' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Leukocytes_Differential_Panel, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'WBC differential (panel)' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Leukocytes_Differential_Panel, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1391,7 +1391,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-mch-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Mch Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Mean cell hemoglobin (MCH)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mch_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Erythrocyte."/>
+      <description value="Proposal: Observation profile for the clinical test 'Mean cell hemoglobin (MCH)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mch_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Erythrocyte."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1402,7 +1402,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-mchc-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Mchc Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mchc_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mchc_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1413,7 +1413,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-mcv-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Mcv Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Mean cell volume (MCV)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mcv_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Mean cell volume (MCV)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Mcv_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1424,7 +1424,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-methemoglobin-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Methemoglobin Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Methemoglobin in blood (quantitative)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Methemoglobin_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Methemoglobin in blood (quantitative)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Methemoglobin_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1435,7 +1435,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-nitrite-urine-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Nitrite Urine Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Nitrite in urine (qualitative)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Urine."/>
+      <description value="Proposal: Observation profile for the clinical test 'Nitrite in urine (qualitative)' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Nitrite_Urine_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Urine."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1446,7 +1446,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-platelets-count-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Platelets Count Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Platelet count in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Platelets_Count_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Blood."/>
+      <description value="Proposal: Observation profile for the clinical test 'Platelet count in blood' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Platelets_Count_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Blood."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1457,7 +1457,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-potassium-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Potassium Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Potassium in serum/plasma' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Potassium_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Serum/Plasma."/>
+      <description value="Proposal: Observation profile for the clinical test 'Potassium in serum/plasma' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Potassium_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Serum/Plasma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1468,7 +1468,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-psa-free-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Psa Free Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Free PSA in serum/plasma' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Psa_Free_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Serum/Plasma."/>
+      <description value="Proposal: Observation profile for the clinical test 'Free PSA in serum/plasma' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Psa_Free_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Serum/Plasma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1479,7 +1479,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-psa-free-total-ratio"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Psa Free Total Ratio"/>
-      <description value="Proposal: Observation profile for the clinical test '%Free PSA (free/total ratio)' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Psa_Free_Total_Ratio, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Serum/Plasma."/>
+      <description value="Proposal: Observation profile for the clinical test '%Free PSA (free/total ratio)' (specialized tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Psa_Free_Total_Ratio, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Serum/Plasma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1490,7 +1490,7 @@
         <reference value="StructureDefinition/mii-pr-labor-loinc-ontology-psa-total-standard"/>
       </reference>
       <name value="MII PR Labor LOINC Ontology Psa Total Standard"/>
-      <description value="Proposal: Observation profile for the clinical test 'Total PSA in serum/plasma' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Psa_Total_Standard, which is defined by ECL over the LOINC Ontology 2026-03-21. Specimen: Serum/Plasma."/>
+      <description value="Proposal: Observation profile for the clinical test 'Total PSA in serum/plasma' (standard tier), derived from MII_PR_Labor_Laboruntersuchung. Observation.code is bound (required) to the ValueSet MII_VS_Labor_LOINC_Ontology_Psa_Total_Standard, which is defined by ECL over the LOINC Ontology 2026-10-21. Specimen: Serum/Plasma."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1578,7 +1578,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Erythrocytes Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte erythrocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte erythrocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1589,7 +1589,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Erythrocytes Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte erythrocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 52 concepts (52 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte erythrocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 52 concepts (52 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1600,7 +1600,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-count-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Erythrocytes Count Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Erythrocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (4), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118550005 |Number concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Erythrocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (4), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118550005 |Number concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1611,7 +1611,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Erythrocytes Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte erythrocytes (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 17 concepts (16 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte erythrocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (16 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1622,7 +1622,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Erythrocytes Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte erythrocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte erythrocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1633,7 +1633,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Erythrocytes Semiquantitative"/>
-      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte erythrocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte erythrocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1644,7 +1644,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hba1c-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hba1c Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1655,7 +1655,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hba1c-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hba1c Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-03-21. 3 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1666,7 +1666,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hba1c-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hba1c Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hba1c (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hba1c (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1677,7 +1677,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hba1c-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hba1c Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'HbA1c in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (8), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 685451010000100 |Measurement property (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'HbA1c in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (8), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 685451010000100 |Measurement property (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1688,7 +1688,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hematocrit-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hematocrit Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte hematocrit (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte hematocrit (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1699,7 +1699,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hematocrit-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hematocrit Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte hematocrit (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 52 concepts (52 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte hematocrit (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 52 concepts (52 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1710,7 +1710,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hematocrit-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hematocrit Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hematocrit (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 17 concepts (16 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hematocrit (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (16 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1721,7 +1721,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hematocrit-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hematocrit Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1732,7 +1732,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hematocrit-semiquantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hematocrit Semiquantitative"/>
-      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hematocrit (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hematocrit (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1743,7 +1743,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hematocrit-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hematocrit Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Hematocrit (volume fraction) in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (12), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118567003 |Volume fraction (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Hematocrit (volume fraction) in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118567003 |Volume fraction (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1754,7 +1754,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hemoglobin Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte hemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 89 concepts (89 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte hemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 89 concepts (89 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1765,7 +1765,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hemoglobin Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte hemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 40 concepts (40 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte hemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 40 concepts (40 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1776,7 +1776,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hemoglobin Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hemoglobin (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 30 concepts (30 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hemoglobin (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 30 concepts (30 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1787,7 +1787,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hemoglobin Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1798,7 +1798,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hemoglobin Semiquantitative"/>
-      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hemoglobin (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hemoglobin (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1809,7 +1809,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Hemoglobin Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Hemoglobin concentration in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (19), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118539007 |Mass concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Hemoglobin concentration in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (19), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118539007 |Mass concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1820,7 +1820,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-ldh-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Ldh Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 79 concepts (79 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 79 concepts (79 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1831,7 +1831,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-ldh-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Ldh Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte ldh (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 41 concepts (41 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte ldh (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 41 concepts (41 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1842,7 +1842,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-ldh-isoenzymes"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Ldh Isoenzymes"/>
-      <description value="Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (38), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt; 259319003 |Lactate dehydrogenase (substance)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (38), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt; 259319003 |Lactate dehydrogenase (substance)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1853,7 +1853,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-ldh-monitoring-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Ldh Monitoring Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'LDH (total) monitoring in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 685451010000100 |Measurement property (qualifier value)|, &lt;&lt; 370130000 |Property (attribute)| != &lt;&lt; 118586006 |Ratio (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'LDH (total) monitoring in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 685451010000100 |Measurement property (qualifier value)|, &lt;&lt; 370130000 |Property (attribute)| != &lt;&lt; 118586006 |Ratio (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1864,7 +1864,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-ldh-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Ldh Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte ldh (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte ldh (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1875,7 +1875,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-ldh-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Ldh Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte ldh (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-03-21. 77 concepts (77 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte ldh (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 77 concepts (77 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1886,7 +1886,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte leukocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-03-21. 156 concepts (153 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte leukocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 161 concepts (158 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1897,7 +1897,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte leukocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-03-21. 86 concepts (86 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte leukocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 86 concepts (86 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1908,7 +1908,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-count-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Count Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Leukocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (11), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118550005 |Number concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Leukocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (11), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118550005 |Number concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1919,7 +1919,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-differential-panel"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Differential Panel"/>
-      <description value="Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = *)`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = *)`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1930,7 +1930,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte leukocytes (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-03-21. 29 concepts (28 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte leukocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 34 concepts (33 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1941,7 +1941,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte leukocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-03-21. 123 concepts (123 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte leukocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 123 concepts (123 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1952,7 +1952,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-leukocytes-semiquantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Leukocytes Semiquantitative"/>
-      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte leukocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte leukocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1963,7 +1963,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mch-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mch Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mch (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 296 concepts (293 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mch (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 296 concepts (293 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1974,7 +1974,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mch-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mch Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte mch (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 59 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte mch (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 59 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1985,7 +1985,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mch-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mch Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte mch (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 114 concepts (114 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte mch (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 114 concepts (114 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1996,7 +1996,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mch-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mch Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mch (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 180 concepts (177 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mch (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 180 concepts (177 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2007,7 +2007,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mch-semiquantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mch Semiquantitative"/>
-      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte mch (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte mch (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2018,7 +2018,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mch-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mch Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118535001 |Entitic mass (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 38082009 |Hemoglobin (substance)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118535001 |Entitic mass (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2029,7 +2029,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mchc-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mchc Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mchc (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mchc (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2040,7 +2040,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mchc-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mchc Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mchc (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mchc (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2051,7 +2051,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mchc-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mchc Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2062,7 +2062,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mcv-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mcv Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mcv (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte mcv (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2073,7 +2073,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mcv-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mcv Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mcv (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mcv (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2084,7 +2084,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-mcv-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Mcv Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 525321010000100 |Mean cell volume (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 525321010000100 |Mean cell volume (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2095,7 +2095,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Methemoglobin Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte methemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 17 concepts (17 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte methemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 17 concepts (17 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2106,7 +2106,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Methemoglobin Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte methemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte methemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2117,7 +2117,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Methemoglobin Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte methemoglobin (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte methemoglobin (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2128,7 +2128,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Methemoglobin Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte methemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-03-21. 15 concepts (15 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte methemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 15 concepts (15 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2139,7 +2139,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Methemoglobin Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Methemoglobin in blood (quantitative)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (11), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 685451010000100 |Measurement property (qualifier value)|, &lt;&lt; 370130000 |Property (attribute)| != &lt;&lt; 118586006 |Ratio (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Methemoglobin in blood (quantitative)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (11), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 685451010000100 |Measurement property (qualifier value)|, &lt;&lt; 370130000 |Property (attribute)| != &lt;&lt; 118586006 |Ratio (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2150,7 +2150,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Nitrite Urine Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte nitrite urine (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-03-21. 9 concepts (9 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte nitrite urine (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 9 concepts (9 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2161,7 +2161,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Nitrite Urine Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte nitrite urine (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-03-21. 5 concepts (5 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte nitrite urine (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 5 concepts (5 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2172,7 +2172,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Nitrite Urine Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte nitrite urine (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-03-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte nitrite urine (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2183,7 +2183,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Nitrite Urine Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte nitrite urine (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-03-21. 5 concepts (5 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte nitrite urine (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 5 concepts (5 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2194,7 +2194,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Nitrite Urine Semiquantitative"/>
-      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte nitrite urine (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-03-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte nitrite urine (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2205,7 +2205,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Nitrite Urine Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Nitrite in urine (qualitative)' (standard tier, specimen Urine), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122575003 |Urine specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 705057003 |Presence (property) (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Nitrite in urine (qualitative)' (standard tier, specimen Urine), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122575003 |Urine specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118589004 |Threshold (property) (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2216,7 +2216,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-platelets-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Platelets Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte platelets (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-03-21. 19 concepts (19 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte platelets (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 19 concepts (19 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2227,7 +2227,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-platelets-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Platelets Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte platelets (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-03-21. 15 concepts (15 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte platelets (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 15 concepts (15 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2238,7 +2238,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-platelets-count-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Platelets Count Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (12), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118550005 |Number concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 119297000 |Blood specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118550005 |Number concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2249,7 +2249,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-platelets-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Platelets Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte platelets (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte platelets (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2260,7 +2260,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-platelets-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Platelets Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte platelets (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-03-21. 17 concepts (17 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte platelets (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (17 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2271,7 +2271,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-potassium-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Potassium Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte potassium (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-03-21. 57 concepts (57 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte potassium (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2282,7 +2282,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-potassium-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Potassium Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte potassium (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-03-21. 42 concepts (42 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte potassium (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 42 concepts (42 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2293,7 +2293,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-potassium-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Potassium Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte potassium (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-03-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte potassium (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2304,7 +2304,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-potassium-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Potassium Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (7), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118556004 |Substance concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118556004 |Substance concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2315,7 +2315,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-complete"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Complete"/>
-      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte psa (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-03-21. 37 concepts (37 with LOINC). The pool ECL is carried as an intensional include."/>
+      <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte psa (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 37 concepts (37 with LOINC). The pool ECL is carried as an intensional include."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2326,7 +2326,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-convertible"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Convertible"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte psa (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-03-21. 26 concepts (26 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative &amp; convertible' for the analyte psa (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 26 concepts (26 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2337,7 +2337,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-free-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Free Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Free PSA in serum/plasma' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 706958000 |Free prostate specific antigen (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118539007 |Mass concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Free PSA in serum/plasma' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 706958000 |Free prostate specific antigen (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118539007 |Mass concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2348,7 +2348,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-free-total-ratio"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Free Total Ratio"/>
-      <description value="Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (1), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = (&lt;&lt; 118586006 |Ratio (property) (qualifier value)| OR &lt;&lt; 118542001 |Mass fraction (property) (qualifier value)|)`"/>
+      <description value="Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (1), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = (&lt;&lt; 118586006 |Ratio (property) (qualifier value)| OR &lt;&lt; 118542001 |Mass fraction (property) (qualifier value)|)`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2359,7 +2359,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-qualitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Qualitative"/>
-      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte psa (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-03-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte psa (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2370,7 +2370,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-quantitative"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Quantitative"/>
-      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte psa (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-03-21. 36 concepts (36 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
+      <description value="Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte psa (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 36 concepts (36 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2381,7 +2381,7 @@
         <reference value="ValueSet/mii-vs-labor-loinc-ontology-psa-total-standard"/>
       </reference>
       <name value="MII VS Labor LOINC Ontology Psa Total Standard"/>
-      <description value="Proposal: LOINC codes of the clinical test 'Total PSA in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118539007 |Mass concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+      <description value="Proposal: LOINC codes of the clinical test 'Total PSA in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122592007 |Serum or plasma specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118539007 |Mass concentration (property) (qualifier value)|, &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

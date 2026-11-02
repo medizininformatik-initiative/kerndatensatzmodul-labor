@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyte HbA1c
 
-This page is the review material for the analyte **hba1c** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-03-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
+This page is the review material for the analyte **hba1c** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` (10 concepts, 8 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-hba1c-complete.md), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-hba1c-quantitative.md), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-hba1c-convertible.md).
 

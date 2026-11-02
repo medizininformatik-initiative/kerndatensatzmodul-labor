@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyt MCV
 
-Diese Seite ist das Review-Material für den Analyten **mcv** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **mcv** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 525321010000100 |Mean cell volume (observable entity)|` (2 Konzepte, 2 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-mcv-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-mcv-quantitative.md).
 

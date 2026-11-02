@@ -146,7 +146,7 @@
   "title" : "MII VS Labor LOINC Ontology Psa Qualitative",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-20",
+  "date" : "2026-11-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -155,7 +155,7 @@
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte psa (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-03-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte psa (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

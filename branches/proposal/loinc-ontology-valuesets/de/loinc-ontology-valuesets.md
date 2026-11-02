@@ -26,7 +26,7 @@ Eine ausgearbeitete Beispielinstanz, [Laborergebnis: Hämoglobin (LOINC-Ontology
 
 ### Auf einen Blick
 
-* Verwendetes Release: **LOINC Ontology 2026-03-21** (`http://snomed.info/sct/11010000107/version/20260321`); der LOINC-Pin des Moduls ist 2.82.
+* Verwendetes Release: **LOINC Ontology 2026-10-21** (`http://snomed.info/sct/11010000107/version/20261021`); der LOINC-Pin des Moduls ist 2.82.
 * Jedes ValueSet trägt die LOINC-Aufzählung, die Observables der LOINC Ontology ohne LOINC-Code und die Regel selbst als intensionales SNOMED-CT-Include.
 * Alle Artefakte sind `draft` und `experimental`. Ihre kanonischen URLs folgen dem Modulmuster und wären stabil, falls das Modul sie übernimmt.
 * Generator, Regelwerk und Review-Tabellen je Konzept: [loincsnomed-lab-concepts](https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts).

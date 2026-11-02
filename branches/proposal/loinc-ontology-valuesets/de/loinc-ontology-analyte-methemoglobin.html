@@ -311,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Diese Seite ist das Review-Material für den Analyten <strong>methemoglobin</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
+<p>Diese Seite ist das Review-Material für den Analyten <strong>methemoglobin</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
 
 <p>Kandidatenpool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|</code> (17 Konzepte, 17 mit LOINC-Code). Use-Case-ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-complete.html">Vollständig</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-quantitative.html">Quantitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-convertible.html">Konvertierbar</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-qualitative.html">Qualitativ</a>.</p>
 
@@ -475,7 +475,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>72262-9</td>
-      <td>Methemoglobin [Moles/volume] in Cerebral spinal fluid</td>
+      <td>Methemoglobin [Moles/volume] in Cerebrospinal Fluid</td>
       <td>Cerebrospinal fluid specimen</td>
     </tr>
     <tr>
@@ -493,51 +493,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 97554-0.</p>
 
-<p><strong>Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (1)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Direct site</th>
-      <th>Property</th>
-      <th>Scale type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2619-5</td>
-      <td>Methemoglobin [Presence] in Red Blood Cells</td>
-      <td>Erythrocyte specimen</td>
-      <td>Presence</td>
-      <td>Ordinal value</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ausgeschlossen, weil Property und Scale type nicht passen (1)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Property</th>
-      <th>Scale type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2613-8</td>
-      <td>Methemoglobin [Presence] in Blood</td>
-      <td>Presence</td>
-      <td>Ordinal value</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ausgeschlossen, weil Scale type nicht passt (1)</strong></p>
+<p><strong>Ausgeschlossen, weil Scale type nicht passt (2)</strong></p>
 
 <table>
   <thead>
@@ -553,10 +509,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Methemoglobin [Measurement] in Blood</td>
       <td>–</td>
     </tr>
+    <tr>
+      <td>2613-8</td>
+      <td>Methemoglobin [Presence] in Blood</td>
+      <td>Ordinal value</td>
+    </tr>
   </tbody>
 </table>
 
 <p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109592-6.</p>
+
+<p><strong>Ausgeschlossen, weil Direct site und Scale type nicht passen (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>Name</th>
+      <th>Direct site</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2619-5</td>
+      <td>Methemoglobin [Presence] in Red Blood Cells</td>
+      <td>Erythrocyte specimen</td>
+      <td>Ordinal value</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="diskussion">Diskussion</h4>
 
@@ -603,7 +585,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>72262-9</td>
-      <td>Methemoglobin [Moles/volume] in Cerebral spinal fluid</td>
+      <td>Methemoglobin [Moles/volume] in Cerebrospinal Fluid</td>
       <td>Substance concentration</td>
       <td>Quantitative value</td>
       <td>Cerebrospinal fluid specimen</td>
@@ -721,7 +703,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>2613-8</td>
       <td>Methemoglobin [Presence] in Blood</td>
-      <td>Presence</td>
+      <td>Threshold</td>
       <td>Ordinal value</td>
       <td>Blood specimen</td>
       <td>Qualitativ</td>
@@ -730,7 +712,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>2619-5</td>
       <td>Methemoglobin [Presence] in Red Blood Cells</td>
-      <td>Presence</td>
+      <td>Threshold</td>
       <td>Ordinal value</td>
       <td>Erythrocyte specimen</td>
       <td>Qualitativ</td>
@@ -764,7 +746,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Oct 20, 2026 04:35+0000">2026-10-20</span>
+          Erstellt <span title="Mon, Nov 2, 2026 16:00+0000">2026-11-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyte Nitrite in urine
 
-This page is the review material for the analyte **nitrite urine** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-03-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
+This page is the review material for the analyte **nitrite urine** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` (9 concepts, 9 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-complete.md), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-quantitative.md), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-convertible.md), [Qualitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-qualitative.md), [Semi-quantitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative.md).
 
@@ -20,15 +20,15 @@ ValueSet [mii-vs-labor-loinc-ontology-nitrite-urine-standard](ValueSet-mii-vs-la
 | :--- | :--- |
 | Component | Nitrite salt |
 | Direct site | `<< Urine specimen` |
-| Property | `<< Presence` |
+| Property | `<< Threshold` |
 
 #### Included (3)
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 32710-6 | Nitrite [Presence] in Urine | Urine specimen | Presence | Ordinal value | – |
-| 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Urine specimen | Presence | Ordinal value | Automated test strip technique |
-| 5802-4 | Nitrite [Presence] in Urine by Test strip | Urine specimen | Presence | Ordinal value | Test strip technique |
+| 32710-6 | Nitrite [Presence] in Urine | Urine specimen | Threshold | Ordinal value | – |
+| 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Urine specimen | Threshold | Ordinal value | Automated test strip technique |
+| 5802-4 | Nitrite [Presence] in Urine by Test strip | Urine specimen | Threshold | Ordinal value | Test strip technique |
 
 * **Specimens among the included codes**: Urine specimen (3)
 * **Techniques among the included codes**: Automated test strip technique (1), Test strip technique (1)
@@ -67,8 +67,8 @@ One row per pool concept with the attributes the classification uses; the bucket
 | 2657-5 | Nitrite [Mass/volume] in Urine | Mass concentration | Quantitative value | Urine specimen | Convertible | Quantitative scale + concentration property |
 | 13616-8 | Nitrite [Mass/volume] in Water | Mass concentration | Quantitative value | Water specimen | Convertible | Quantitative scale + concentration property |
 | 55948-4 | Nitrite [Moles/volume] in Serum or Plasma | Substance concentration | Quantitative value | Acellular blood (serum or plasma) specimen | Convertible | Quantitative scale + concentration property |
-| 32710-6 | Nitrite [Presence] in Urine | Presence | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
-| 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Presence | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
-| 5802-4 | Nitrite [Presence] in Urine by Test strip | Presence | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
+| 32710-6 | Nitrite [Presence] in Urine | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
+| 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
+| 5802-4 | Nitrite [Presence] in Urine by Test strip | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
 | 20407-3 | Nitrite [Mass/volume] in Urine by Test strip | Mass concentration | Semi-quantitative value | Urine specimen | Semi-quantitative | Semi-quantitative scale (test strip) |
 

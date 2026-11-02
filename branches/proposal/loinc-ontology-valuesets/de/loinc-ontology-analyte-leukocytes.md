@@ -8,13 +8,13 @@
 
 ## LOINC Ontology - Analyt Leukozyten
 
-Diese Seite ist das Review-Material für den Analyten **leukocytes** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **leukocytes** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
-Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` (156 Konzepte, 153 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-qualitative.md), [Semiquantitativ](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-semiquantitative.md).
+Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` (161 Konzepte, 158 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-qualitative.md), [Semiquantitativ](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-semiquantitative.md).
 
 ### Leukocyte count in blood
 
-ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.md), Profil [mii-pr-labor-loinc-ontology-leukocytes-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.md). Die Regel wählt 11 der 156 Poolkonzepte aus.
+ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.md), Profil [mii-pr-labor-loinc-ontology-leukocytes-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.md). Die Regel wählt 11 der 161 Poolkonzepte aus.
 
 | | |
 | :--- | :--- |
@@ -42,7 +42,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 * **Materialien unter den enthaltenen Codes**: Blood specimen (9), Cord blood specimen (2)
 * **Techniken unter den enthaltenen Codes**: Automated count technique (3), Manual count technique (2)
 
-#### Aus dem Pool ausgeschlossen (145)
+#### Aus dem Pool ausgeschlossen (150)
 
 **Ausgeschlossen, weil Direct site nicht passt (75)**
 
@@ -52,7 +52,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 61182-2 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood from Fetus | – |
 | 48052-5 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Body fluid | Body fluid specimen |
 | 55784-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Bone marrow | Bone marrow specimen |
-| 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 70126-8 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Pleural fluid | Pleural fluid specimen |
 | 100849-9 | Leukocytes [#/volume] in Amniotic fluid by Manual count | Amniotic fluid specimen |
 | 33765-9 | Leukocytes [#/volume] in Blood Product unit.platelet pheresis by Automated count | – |
@@ -67,13 +67,13 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 99776-7 | Leukocytes [#/volume] in Bronchoalveolar lavage by Automated count | Bronchoalveolar lavage fluid specimen |
 | 99051-5 | Leukocytes [#/volume] in Bronchoalveolar lavage by Manual count | Bronchoalveolar lavage fluid specimen |
 | 92635-2 | Leukocytes [#/volume] in Buffy Coat | Buffy coat |
-| 26465-5 | Leukocytes [#/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
-| 76674-1 | Leukocytes [#/volume] in Cerebral spinal fluid –1st tube | Cerebrospinal fluid specimen |
-| 46088-1 | Leukocytes [#/volume] in Cerebral spinal fluid –2nd tube | Cerebrospinal fluid specimen |
-| 46089-9 | Leukocytes [#/volume] in Cerebral spinal fluid –3rd tube | Cerebrospinal fluid specimen |
-| 46090-7 | Leukocytes [#/volume] in Cerebral spinal fluid –4th tube | Cerebrospinal fluid specimen |
-| 805-2 | Leukocytes [#/volume] in Cerebral spinal fluid by Automated count | Cerebrospinal fluid specimen |
-| 806-0 | Leukocytes [#/volume] in Cerebral spinal fluid by Manual count | Cerebrospinal fluid specimen |
+| 26465-5 | Leukocytes [#/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
+| 76674-1 | Leukocytes [#/volume] in Cerebrospinal Fluid –1st tube | Cerebrospinal fluid specimen |
+| 46088-1 | Leukocytes [#/volume] in Cerebrospinal Fluid –2nd tube | Cerebrospinal fluid specimen |
+| 46089-9 | Leukocytes [#/volume] in Cerebrospinal Fluid –3rd tube | Cerebrospinal fluid specimen |
+| 46090-7 | Leukocytes [#/volume] in Cerebrospinal Fluid –4th tube | Cerebrospinal fluid specimen |
+| 805-2 | Leukocytes [#/volume] in Cerebrospinal Fluid by Automated count | Cerebrospinal fluid specimen |
+| 806-0 | Leukocytes [#/volume] in Cerebrospinal Fluid by Manual count | Cerebrospinal fluid specimen |
 | 53518-7 | Leukocytes [#/volume] in Dialysis fluid | Dialysate specimen |
 | 68368-0 | Leukocytes [#/volume] in Dialysis fluid by Automated count | Dialysate specimen |
 | 57847-6 | Leukocytes [#/volume] in Dialysis fluid by Manual count | Dialysate specimen |
@@ -94,9 +94,9 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 808-6 | Leukocytes [#/volume] in Pleural fluid by Manual count | Pleural fluid specimen |
 | 62251-4 | Leukocytes [#/volume] in Pleural fluid from Fetus by Automated count | – |
 | 72348-6 | Leukocytes [#/volume] in Prostatic fluid by Manual count | Prostatic fluid specimen |
-| 10579-1 | Leukocytes [#/volume] in Semen | Seminal fluid specimen |
-| 811-0 | Leukocytes [#/volume] in Semen by Automated count | Seminal fluid specimen |
-| 812-8 | Leukocytes [#/volume] in Semen by Manual count | Seminal fluid specimen |
+| 10579-1 | Leukocytes [#/volume] in Semen | Semen sample |
+| 811-0 | Leukocytes [#/volume] in Semen by Automated count | Semen sample |
+| 812-8 | Leukocytes [#/volume] in Semen by Manual count | Semen sample |
 | 20584-9 | Leukocytes [#/volume] in Specimen by Automated count | Specimen |
 | 95218-4 | Leukocytes [#/volume] in Stem cell product | – |
 | 30404-8 | Leukocytes [#/volume] in Stool | Stool specimen |
@@ -111,8 +111,8 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 68434-0 | Leukocytes [#/volume] in Vitreous fluid by Automated count | Vitreous humor specimen |
 | 66145-4 | Leukocytes other [#/volume] in Blood from Fetus by Manual count | – |
 | 35051-2 | Leukocytes other [#/volume] in Body fluid | Body fluid specimen |
-| 26470-5 | Leukocytes other [#/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
-| 13351-2 | Leukocytes other [#/volume] in Cerebral spinal fluid by Manual count | Cerebrospinal fluid specimen |
+| 26470-5 | Leukocytes other [#/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
+| 13351-2 | Leukocytes other [#/volume] in Cerebrospinal Fluid by Manual count | Cerebrospinal fluid specimen |
 | 67830-0 | Leukocytes other [#/volume] in Pericardial fluid | Pericardial fluid specimen |
 | 68428-2 | Leukocytes other [#/volume] in Pericardial fluid by Manual count | Pericardial fluid specimen |
 | 35054-6 | Leukocytes other [#/volume] in Peritoneal fluid | Peritoneal fluid specimen |
@@ -126,7 +126,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 
 8 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 61182-2, 33765-9, 33028-2, 62239-9, 62251-4, 95218-4, 66145-4, 67836-7.
 
-**Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (33)**
+**Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (38)**
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
@@ -134,34 +134,39 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | SCT 376201000119106 | Differential count of white blood cells by manual method | – | – | – |
 | 110644-2 | Leukocytes [Measurement] in Stool | Stool specimen | Measurement property | – |
 | 111204-4 | Leukocytes [Measurement] in Urine sediment | Urine sediment specimen | Measurement property | – |
-| 107469-9 | Leukocytes [Presence] in Aspirate by Light microscopy | Specimen obtained by aspiration | Presence | Ordinal value |
-| 34469-7 | Leukocytes [Presence] in Bile fluid by Light microscopy | Bile specimen | Presence | Ordinal value |
-| 34445-7 | Leukocytes [Presence] in Body fluid | Body fluid specimen | Presence | Ordinal value |
-| 99928-4 | Leukocytes [Presence] in Body fluid by Automated | Body fluid specimen | Presence | Ordinal value |
-| 107497-0 | Leukocytes [Presence] in Bronchial specimen by Light microscopy | Specimen from bronchus | Presence | Ordinal value |
-| 88114-4 | Leukocytes [Presence] in Cerebral spinal fluid by Gram stain | Cerebrospinal fluid specimen | Presence | Ordinal value |
-| 88343-9 | Leukocytes [Presence] in Ear by Light microscopy | – | Presence | Ordinal value |
-| 14105-1 | Leukocytes [Presence] in Nose by Light microscopy | Specimen from nose | Presence | Ordinal value |
-| 107483-0 | Leukocytes [Presence] in Pericardial fluid by Light microscopy | Pericardial fluid specimen | Presence | Ordinal value |
-| 107465-7 | Leukocytes [Presence] in Pus by Light microscopy | Pus specimen | Presence | Ordinal value |
-| 32825-2 | Leukocytes [Presence] in Semen | Seminal fluid specimen | Presence | Ordinal value |
-| 72163-9 | Leukocytes [Presence] in Specimen by Gram stain | Specimen | Presence | Ordinal value |
-| 32761-9 | Leukocytes [Presence] in Specimen by Wet preparation | Specimen | Presence | Ordinal value |
-| 14328-9 | Leukocytes [Presence] in Sputum by Light microscopy | Sputum specimen | Presence | Ordinal value |
-| 13655-6 | Leukocytes [Presence] in Stool by Light microscopy | Stool specimen | Presence | Ordinal value |
-| 42327-7 | Leukocytes [Presence] in Stool by Methylene blue stain | Stool specimen | Presence | Ordinal value |
-| 48973-2 | Leukocytes [Presence] in Stool by Methylene blue stain –2nd specimen | Stool specimen | Presence | Ordinal value |
-| 32142-2 | Leukocytes [Presence] in Synovial fluid by Light microscopy | Synovial fluid specimen | Presence | Ordinal value |
-| 107472-3 | Leukocytes [Presence] in Tissue by Light microscopy | Tissue specimen | Presence | Ordinal value |
-| 107011-9 | Leukocytes [Presence] in Urethra by Wet preparation | Specimen from urethra | Presence | Ordinal value |
-| 33052-2 | Leukocytes [Presence] in Urine | Urine specimen | Presence | Ordinal value |
-| 53316-6 | Leukocytes [Presence] in Urine by Automated | Urine specimen | Presence | Ordinal value |
-| 53964-3 | Leukocytes [Presence] in Urine by Visual | Urine specimen | Presence | Ordinal value |
-| 105105-1 | Leukocytes [Presence] in Urine sediment | Urine sediment specimen | Presence | Ordinal value |
-| 20455-2 | Leukocytes [Presence] in Urine sediment by Light microscopy | Urine sediment specimen | Presence | Ordinal value |
-| 12226-7 | Leukocytes [Presence] in Vaginal fluid by Wet preparation | Specimen from vagina | Presence | Ordinal value |
-| 107475-6 | Leukocytes [Presence] in Wound deep by Light microscopy | Specimen from deep wound | Presence | Ordinal value |
-| 107476-4 | Leukocytes [Presence] in Wound shallow by Light microscopy | Specimen from superficial wound | Presence | Ordinal value |
+| 107469-9 | Leukocytes [Presence] in Aspirate by Light microscopy | Specimen obtained by aspiration | Threshold | Ordinal value |
+| 34469-7 | Leukocytes [Presence] in Bile fluid by Light microscopy | Bile specimen | Threshold | Ordinal value |
+| 34445-7 | Leukocytes [Presence] in Body fluid | Body fluid specimen | Threshold | Ordinal value |
+| 99928-4 | Leukocytes [Presence] in Body fluid by Automated | Body fluid specimen | Threshold | Ordinal value |
+| 107497-0 | Leukocytes [Presence] in Bronchial specimen by Light microscopy | Specimen from bronchus | Threshold | Ordinal value |
+| 113033-5 | Leukocytes [Presence] in Bronchoalveolar lavage | Bronchoalveolar lavage fluid specimen | Threshold | Ordinal value |
+| 88114-4 | Leukocytes [Presence] in Cerebrospinal Fluid by Gram stain | Cerebrospinal fluid specimen | Threshold | Ordinal value |
+| 88343-9 | Leukocytes [Presence] in Ear by Light microscopy | – | Threshold | Ordinal value |
+| 14105-1 | Leukocytes [Presence] in Nose by Light microscopy | Specimen from nose | Threshold | Ordinal value |
+| 107483-0 | Leukocytes [Presence] in Pericardial fluid by Light microscopy | Pericardial fluid specimen | Threshold | Ordinal value |
+| 113058-2 | Leukocytes [Presence] in Peritoneal fluid by Gram stain | Peritoneal fluid specimen | Threshold | Ordinal value |
+| 113052-5 | Leukocytes [Presence] in Pleural fluid | Pleural fluid specimen | Threshold | Ordinal value |
+| 107465-7 | Leukocytes [Presence] in Pus by Light microscopy | Pus specimen | Threshold | Ordinal value |
+| 32825-2 | Leukocytes [Presence] in Semen | Semen sample | Threshold | Ordinal value |
+| 72163-9 | Leukocytes [Presence] in Specimen by Gram stain | Specimen | Threshold | Ordinal value |
+| 32761-9 | Leukocytes [Presence] in Specimen by Wet preparation | Specimen | Threshold | Ordinal value |
+| 14328-9 | Leukocytes [Presence] in Sputum by Light microscopy | Sputum specimen | Threshold | Ordinal value |
+| 13655-6 | Leukocytes [Presence] in Stool by Light microscopy | Stool specimen | Threshold | Ordinal value |
+| 42327-7 | Leukocytes [Presence] in Stool by Methylene blue stain | Stool specimen | Threshold | Ordinal value |
+| 48973-2 | Leukocytes [Presence] in Stool by Methylene blue stain –2nd specimen | Stool specimen | Threshold | Ordinal value |
+| 32142-2 | Leukocytes [Presence] in Synovial fluid by Light microscopy | Synovial fluid specimen | Threshold | Ordinal value |
+| 113077-2 | Leukocytes [Presence] in Tissue | Tissue specimen | Threshold | Ordinal value |
+| 107472-3 | Leukocytes [Presence] in Tissue by Light microscopy | Tissue specimen | Threshold | Ordinal value |
+| 107011-9 | Leukocytes [Presence] in Urethra by Wet preparation | Specimen from urethra | Threshold | Ordinal value |
+| 33052-2 | Leukocytes [Presence] in Urine | Urine specimen | Threshold | Ordinal value |
+| 53316-6 | Leukocytes [Presence] in Urine by Automated | Urine specimen | Threshold | Ordinal value |
+| 53964-3 | Leukocytes [Presence] in Urine by Visual | Urine specimen | Threshold | Ordinal value |
+| 105105-1 | Leukocytes [Presence] in Urine sediment | Urine sediment specimen | Threshold | Ordinal value |
+| 20455-2 | Leukocytes [Presence] in Urine sediment by Light microscopy | Urine sediment specimen | Threshold | Ordinal value |
+| 113044-2 | Leukocytes [Presence] in Vaginal fluid | Specimen from vagina | Threshold | Ordinal value |
+| 12226-7 | Leukocytes [Presence] in Vaginal fluid by Wet preparation | Specimen from vagina | Threshold | Ordinal value |
+| 107475-6 | Leukocytes [Presence] in Wound deep by Light microscopy | Specimen from deep wound | Threshold | Ordinal value |
+| 107476-4 | Leukocytes [Presence] in Wound shallow by Light microscopy | Specimen from superficial wound | Threshold | Ordinal value |
 | SCT 375701000119105 | Presence of white blood cells in stool | Stool specimen | Presence | – |
 
 3 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: SCT 375911000119106, SCT 376201000119106, 88343-9.
@@ -179,7 +184,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 53227-5 | Leukocytes [#/area] in Cervix by Wet preparation | Specimen from uterine cervix | Number areic |
 | 12224-2 | Leukocytes [#/area] in Nose by Microscopy high power field | Specimen from nose | Number areic |
 | 96718-2 | Leukocytes [#/area] in Prostatic fluid by Light microscopy | Prostatic fluid specimen | Number areic |
-| 49224-9 | Leukocytes [#/area] in Semen by Microscopy high power field | Seminal fluid specimen | Number areic |
+| 49224-9 | Leukocytes [#/area] in Semen by Microscopy high power field | Semen sample | Number areic |
 | 53225-9 | Leukocytes [#/area] in Specimen by Wet preparation | Specimen | Number areic |
 | 12225-9 | Leukocytes [#/area] in Sputum by Microscopy high power field | Sputum specimen | Number areic |
 | 51770-6 | Leukocytes [#/area] in Stool by Microscopy high power field | Stool specimen | Number areic |
@@ -194,8 +199,8 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 13524-4 | Leukocytes other/Leukocytes in Body fluid by Manual count | Body fluid specimen | Number fraction |
 | 32808-8 | Leukocytes other/Leukocytes in Bronchial specimen | Specimen from bronchus | Number fraction |
 | 40543-1 | Leukocytes other/Leukocytes in Bronchial specimen by Manual count | Specimen from bronchus | Number fraction |
-| 26472-1 | Leukocytes other/Leukocytes in Cerebral spinal fluid | Cerebrospinal fluid specimen | Number fraction |
-| 13523-6 | Leukocytes other/Leukocytes in Cerebral spinal fluid by Manual count | Cerebrospinal fluid specimen | Number fraction |
+| 26472-1 | Leukocytes other/Leukocytes in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Number fraction |
+| 13523-6 | Leukocytes other/Leukocytes in Cerebrospinal Fluid by Manual count | Cerebrospinal fluid specimen | Number fraction |
 | 30407-1 | Leukocytes other/Leukocytes in Pericardial fluid | Pericardial fluid specimen | Number fraction |
 | 14857-7 | Leukocytes other/Leukocytes in Pericardial fluid by Manual count | Pericardial fluid specimen | Number fraction |
 | 40535-7 | Leukocytes other/Leukocytes in Peritoneal dialysis fluid by Manual count | Peritoneal dialysate specimen | Number fraction |
@@ -231,7 +236,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 
 ### WBC differential (panel)
 
-ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-differential-panel.md), Profil [mii-pr-labor-loinc-ontology-leukocytes-differential-panel](StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-differential-panel.md). Die Regel wählt 2 der 156 Poolkonzepte aus.
+ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-differential-panel.md), Profil [mii-pr-labor-loinc-ontology-leukocytes-differential-panel](StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-differential-panel.md). Die Regel wählt 2 der 161 Poolkonzepte aus.
 
 | | |
 | :--- | :--- |
@@ -248,9 +253,9 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 * **Materialien unter den enthaltenen Codes**: (keine)
 * **Techniken unter den enthaltenen Codes**: Automated count technique (1), Manual count technique (1)
 
-#### Aus dem Pool ausgeschlossen (154)
+#### Aus dem Pool ausgeschlossen (159)
 
-**Ausgeschlossen, weil das Konzept eine Property hat (154)**
+**Ausgeschlossen, weil das Konzept eine Property hat (159)**
 
 | | | |
 | :--- | :--- | :--- |
@@ -276,7 +281,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 | 61182-2 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood from Fetus | Number concentration |
 | 48052-5 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Body fluid | Number concentration |
 | 55784-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Bone marrow | Number concentration |
-| 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebral spinal fluid | Number concentration |
+| 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebrospinal Fluid | Number concentration |
 | 66768-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood | Number concentration |
 | 70126-8 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Pleural fluid | Number concentration |
 | 100849-9 | Leukocytes [#/volume] in Amniotic fluid by Manual count | Number concentration |
@@ -296,13 +301,13 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 | 99776-7 | Leukocytes [#/volume] in Bronchoalveolar lavage by Automated count | Number concentration |
 | 99051-5 | Leukocytes [#/volume] in Bronchoalveolar lavage by Manual count | Number concentration |
 | 92635-2 | Leukocytes [#/volume] in Buffy Coat | Number concentration |
-| 26465-5 | Leukocytes [#/volume] in Cerebral spinal fluid | Number concentration |
-| 76674-1 | Leukocytes [#/volume] in Cerebral spinal fluid –1st tube | Number concentration |
-| 46088-1 | Leukocytes [#/volume] in Cerebral spinal fluid –2nd tube | Number concentration |
-| 46089-9 | Leukocytes [#/volume] in Cerebral spinal fluid –3rd tube | Number concentration |
-| 46090-7 | Leukocytes [#/volume] in Cerebral spinal fluid –4th tube | Number concentration |
-| 805-2 | Leukocytes [#/volume] in Cerebral spinal fluid by Automated count | Number concentration |
-| 806-0 | Leukocytes [#/volume] in Cerebral spinal fluid by Manual count | Number concentration |
+| 26465-5 | Leukocytes [#/volume] in Cerebrospinal Fluid | Number concentration |
+| 76674-1 | Leukocytes [#/volume] in Cerebrospinal Fluid –1st tube | Number concentration |
+| 46088-1 | Leukocytes [#/volume] in Cerebrospinal Fluid –2nd tube | Number concentration |
+| 46089-9 | Leukocytes [#/volume] in Cerebrospinal Fluid –3rd tube | Number concentration |
+| 46090-7 | Leukocytes [#/volume] in Cerebrospinal Fluid –4th tube | Number concentration |
+| 805-2 | Leukocytes [#/volume] in Cerebrospinal Fluid by Automated count | Number concentration |
+| 806-0 | Leukocytes [#/volume] in Cerebrospinal Fluid by Manual count | Number concentration |
 | 47281-1 | Leukocytes [#/volume] in Cord blood | Number concentration |
 | 53518-7 | Leukocytes [#/volume] in Dialysis fluid | Number concentration |
 | 68368-0 | Leukocytes [#/volume] in Dialysis fluid by Automated count | Number concentration |
@@ -343,41 +348,46 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 | 68434-0 | Leukocytes [#/volume] in Vitreous fluid by Automated count | Number concentration |
 | 110644-2 | Leukocytes [Measurement] in Stool | Measurement property |
 | 111204-4 | Leukocytes [Measurement] in Urine sediment | Measurement property |
-| 107469-9 | Leukocytes [Presence] in Aspirate by Light microscopy | Presence |
-| 34469-7 | Leukocytes [Presence] in Bile fluid by Light microscopy | Presence |
-| 34445-7 | Leukocytes [Presence] in Body fluid | Presence |
-| 99928-4 | Leukocytes [Presence] in Body fluid by Automated | Presence |
-| 107497-0 | Leukocytes [Presence] in Bronchial specimen by Light microscopy | Presence |
-| 88114-4 | Leukocytes [Presence] in Cerebral spinal fluid by Gram stain | Presence |
-| 88343-9 | Leukocytes [Presence] in Ear by Light microscopy | Presence |
-| 14105-1 | Leukocytes [Presence] in Nose by Light microscopy | Presence |
-| 107483-0 | Leukocytes [Presence] in Pericardial fluid by Light microscopy | Presence |
-| 107465-7 | Leukocytes [Presence] in Pus by Light microscopy | Presence |
-| 32825-2 | Leukocytes [Presence] in Semen | Presence |
-| 72163-9 | Leukocytes [Presence] in Specimen by Gram stain | Presence |
-| 32761-9 | Leukocytes [Presence] in Specimen by Wet preparation | Presence |
-| 14328-9 | Leukocytes [Presence] in Sputum by Light microscopy | Presence |
-| 13655-6 | Leukocytes [Presence] in Stool by Light microscopy | Presence |
-| 42327-7 | Leukocytes [Presence] in Stool by Methylene blue stain | Presence |
-| 48973-2 | Leukocytes [Presence] in Stool by Methylene blue stain –2nd specimen | Presence |
-| 32142-2 | Leukocytes [Presence] in Synovial fluid by Light microscopy | Presence |
-| 107472-3 | Leukocytes [Presence] in Tissue by Light microscopy | Presence |
-| 107011-9 | Leukocytes [Presence] in Urethra by Wet preparation | Presence |
-| 33052-2 | Leukocytes [Presence] in Urine | Presence |
-| 53316-6 | Leukocytes [Presence] in Urine by Automated | Presence |
-| 53964-3 | Leukocytes [Presence] in Urine by Visual | Presence |
-| 105105-1 | Leukocytes [Presence] in Urine sediment | Presence |
-| 20455-2 | Leukocytes [Presence] in Urine sediment by Light microscopy | Presence |
-| 12226-7 | Leukocytes [Presence] in Vaginal fluid by Wet preparation | Presence |
-| 107475-6 | Leukocytes [Presence] in Wound deep by Light microscopy | Presence |
-| 107476-4 | Leukocytes [Presence] in Wound shallow by Light microscopy | Presence |
+| 107469-9 | Leukocytes [Presence] in Aspirate by Light microscopy | Threshold |
+| 34469-7 | Leukocytes [Presence] in Bile fluid by Light microscopy | Threshold |
+| 34445-7 | Leukocytes [Presence] in Body fluid | Threshold |
+| 99928-4 | Leukocytes [Presence] in Body fluid by Automated | Threshold |
+| 107497-0 | Leukocytes [Presence] in Bronchial specimen by Light microscopy | Threshold |
+| 113033-5 | Leukocytes [Presence] in Bronchoalveolar lavage | Threshold |
+| 88114-4 | Leukocytes [Presence] in Cerebrospinal Fluid by Gram stain | Threshold |
+| 88343-9 | Leukocytes [Presence] in Ear by Light microscopy | Threshold |
+| 14105-1 | Leukocytes [Presence] in Nose by Light microscopy | Threshold |
+| 107483-0 | Leukocytes [Presence] in Pericardial fluid by Light microscopy | Threshold |
+| 113058-2 | Leukocytes [Presence] in Peritoneal fluid by Gram stain | Threshold |
+| 113052-5 | Leukocytes [Presence] in Pleural fluid | Threshold |
+| 107465-7 | Leukocytes [Presence] in Pus by Light microscopy | Threshold |
+| 32825-2 | Leukocytes [Presence] in Semen | Threshold |
+| 72163-9 | Leukocytes [Presence] in Specimen by Gram stain | Threshold |
+| 32761-9 | Leukocytes [Presence] in Specimen by Wet preparation | Threshold |
+| 14328-9 | Leukocytes [Presence] in Sputum by Light microscopy | Threshold |
+| 13655-6 | Leukocytes [Presence] in Stool by Light microscopy | Threshold |
+| 42327-7 | Leukocytes [Presence] in Stool by Methylene blue stain | Threshold |
+| 48973-2 | Leukocytes [Presence] in Stool by Methylene blue stain –2nd specimen | Threshold |
+| 32142-2 | Leukocytes [Presence] in Synovial fluid by Light microscopy | Threshold |
+| 113077-2 | Leukocytes [Presence] in Tissue | Threshold |
+| 107472-3 | Leukocytes [Presence] in Tissue by Light microscopy | Threshold |
+| 107011-9 | Leukocytes [Presence] in Urethra by Wet preparation | Threshold |
+| 33052-2 | Leukocytes [Presence] in Urine | Threshold |
+| 53316-6 | Leukocytes [Presence] in Urine by Automated | Threshold |
+| 53964-3 | Leukocytes [Presence] in Urine by Visual | Threshold |
+| 105105-1 | Leukocytes [Presence] in Urine sediment | Threshold |
+| 20455-2 | Leukocytes [Presence] in Urine sediment by Light microscopy | Threshold |
+| 113044-2 | Leukocytes [Presence] in Vaginal fluid | Threshold |
+| 12226-7 | Leukocytes [Presence] in Vaginal fluid by Wet preparation | Threshold |
+| 107475-6 | Leukocytes [Presence] in Wound deep by Light microscopy | Threshold |
+| 107476-4 | Leukocytes [Presence] in Wound shallow by Light microscopy | Threshold |
 | 30406-3 | Leukocytes other [#/volume] in Blood | Number concentration |
 | 51383-8 | Leukocytes other [#/volume] in Blood by Automated count | Number concentration |
 | 729-4 | Leukocytes other [#/volume] in Blood by Manual count | Number concentration |
 | 66145-4 | Leukocytes other [#/volume] in Blood from Fetus by Manual count | Number concentration |
 | 35051-2 | Leukocytes other [#/volume] in Body fluid | Number concentration |
-| 26470-5 | Leukocytes other [#/volume] in Cerebral spinal fluid | Number concentration |
-| 13351-2 | Leukocytes other [#/volume] in Cerebral spinal fluid by Manual count | Number concentration |
+| 26470-5 | Leukocytes other [#/volume] in Cerebrospinal Fluid | Number concentration |
+| 13351-2 | Leukocytes other [#/volume] in Cerebrospinal Fluid by Manual count | Number concentration |
 | 67830-0 | Leukocytes other [#/volume] in Pericardial fluid | Number concentration |
 | 68428-2 | Leukocytes other [#/volume] in Pericardial fluid by Manual count | Number concentration |
 | 35054-6 | Leukocytes other [#/volume] in Peritoneal fluid | Number concentration |
@@ -395,8 +405,8 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 | 13524-4 | Leukocytes other/Leukocytes in Body fluid by Manual count | Number fraction |
 | 32808-8 | Leukocytes other/Leukocytes in Bronchial specimen | Number fraction |
 | 40543-1 | Leukocytes other/Leukocytes in Bronchial specimen by Manual count | Number fraction |
-| 26472-1 | Leukocytes other/Leukocytes in Cerebral spinal fluid | Number fraction |
-| 13523-6 | Leukocytes other/Leukocytes in Cerebral spinal fluid by Manual count | Number fraction |
+| 26472-1 | Leukocytes other/Leukocytes in Cerebrospinal Fluid | Number fraction |
+| 13523-6 | Leukocytes other/Leukocytes in Cerebrospinal Fluid by Manual count | Number fraction |
 | 30407-1 | Leukocytes other/Leukocytes in Pericardial fluid | Number fraction |
 | 14857-7 | Leukocytes other/Leukocytes in Pericardial fluid by Manual count | Number fraction |
 | 40535-7 | Leukocytes other/Leukocytes in Peritoneal dialysis fluid by Manual count | Number fraction |
@@ -426,7 +436,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 61182-2 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood from Fetus | Number concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 48052-5 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Body fluid | Number concentration | Quantitative value | Body fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 55784-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Bone marrow | Number concentration | Quantitative value | Bone marrow specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebral spinal fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebrospinal Fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 66768-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood | Number concentration | Quantitative value | Cord blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 70126-8 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Pleural fluid | Number concentration | Quantitative value | Pleural fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 100849-9 | Leukocytes [#/volume] in Amniotic fluid by Manual count | Number concentration | Quantitative value | Amniotic fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -446,13 +456,13 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 99776-7 | Leukocytes [#/volume] in Bronchoalveolar lavage by Automated count | Number concentration | Quantitative value | Bronchoalveolar lavage fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 99051-5 | Leukocytes [#/volume] in Bronchoalveolar lavage by Manual count | Number concentration | Quantitative value | Bronchoalveolar lavage fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 92635-2 | Leukocytes [#/volume] in Buffy Coat | Number concentration | Quantitative value | Buffy coat | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 26465-5 | Leukocytes [#/volume] in Cerebral spinal fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 76674-1 | Leukocytes [#/volume] in Cerebral spinal fluid –1st tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 46088-1 | Leukocytes [#/volume] in Cerebral spinal fluid –2nd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 46089-9 | Leukocytes [#/volume] in Cerebral spinal fluid –3rd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 46090-7 | Leukocytes [#/volume] in Cerebral spinal fluid –4th tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 805-2 | Leukocytes [#/volume] in Cerebral spinal fluid by Automated count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 806-0 | Leukocytes [#/volume] in Cerebral spinal fluid by Manual count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 26465-5 | Leukocytes [#/volume] in Cerebrospinal Fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 76674-1 | Leukocytes [#/volume] in Cerebrospinal Fluid –1st tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 46088-1 | Leukocytes [#/volume] in Cerebrospinal Fluid –2nd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 46089-9 | Leukocytes [#/volume] in Cerebrospinal Fluid –3rd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 46090-7 | Leukocytes [#/volume] in Cerebrospinal Fluid –4th tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 805-2 | Leukocytes [#/volume] in Cerebrospinal Fluid by Automated count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 806-0 | Leukocytes [#/volume] in Cerebrospinal Fluid by Manual count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 47281-1 | Leukocytes [#/volume] in Cord blood | Number concentration | Quantitative value | Cord blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 53518-7 | Leukocytes [#/volume] in Dialysis fluid | Number concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 68368-0 | Leukocytes [#/volume] in Dialysis fluid by Automated count | Number concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -474,9 +484,9 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 808-6 | Leukocytes [#/volume] in Pleural fluid by Manual count | Number concentration | Quantitative value | Pleural fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 62251-4 | Leukocytes [#/volume] in Pleural fluid from Fetus by Automated count | Number concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 72348-6 | Leukocytes [#/volume] in Prostatic fluid by Manual count | Number concentration | Quantitative value | Prostatic fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 10579-1 | Leukocytes [#/volume] in Semen | Number concentration | Quantitative value | Seminal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 811-0 | Leukocytes [#/volume] in Semen by Automated count | Number concentration | Quantitative value | Seminal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 812-8 | Leukocytes [#/volume] in Semen by Manual count | Number concentration | Quantitative value | Seminal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 10579-1 | Leukocytes [#/volume] in Semen | Number concentration | Quantitative value | Semen sample | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 811-0 | Leukocytes [#/volume] in Semen by Automated count | Number concentration | Quantitative value | Semen sample | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 812-8 | Leukocytes [#/volume] in Semen by Manual count | Number concentration | Quantitative value | Semen sample | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 20584-9 | Leukocytes [#/volume] in Specimen by Automated count | Number concentration | Quantitative value | Specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 95218-4 | Leukocytes [#/volume] in Stem cell product | Number concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 30404-8 | Leukocytes [#/volume] in Stool | Number concentration | Quantitative value | Stool specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -494,8 +504,8 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 729-4 | Leukocytes other [#/volume] in Blood by Manual count | Number concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 66145-4 | Leukocytes other [#/volume] in Blood from Fetus by Manual count | Number concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 35051-2 | Leukocytes other [#/volume] in Body fluid | Number concentration | Quantitative value | Body fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 26470-5 | Leukocytes other [#/volume] in Cerebral spinal fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 13351-2 | Leukocytes other [#/volume] in Cerebral spinal fluid by Manual count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 26470-5 | Leukocytes other [#/volume] in Cerebrospinal Fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 13351-2 | Leukocytes other [#/volume] in Cerebrospinal Fluid by Manual count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 67830-0 | Leukocytes other [#/volume] in Pericardial fluid | Number concentration | Quantitative value | Pericardial fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 68428-2 | Leukocytes other [#/volume] in Pericardial fluid by Manual count | Number concentration | Quantitative value | Pericardial fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 35054-6 | Leukocytes other [#/volume] in Peritoneal fluid | Number concentration | Quantitative value | Peritoneal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -511,7 +521,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 53227-5 | Leukocytes [#/area] in Cervix by Wet preparation | Number areic | Quantitative value | Specimen from uterine cervix | Quantitativ | Quantitative Skala |
 | 12224-2 | Leukocytes [#/area] in Nose by Microscopy high power field | Number areic | Quantitative value | Specimen from nose | Quantitativ | Quantitative Skala |
 | 96718-2 | Leukocytes [#/area] in Prostatic fluid by Light microscopy | Number areic | Quantitative value | Prostatic fluid specimen | Quantitativ | Quantitative Skala |
-| 49224-9 | Leukocytes [#/area] in Semen by Microscopy high power field | Number areic | Quantitative value | Seminal fluid specimen | Quantitativ | Quantitative Skala |
+| 49224-9 | Leukocytes [#/area] in Semen by Microscopy high power field | Number areic | Quantitative value | Semen sample | Quantitativ | Quantitative Skala |
 | 53225-9 | Leukocytes [#/area] in Specimen by Wet preparation | Number areic | Quantitative value | Specimen | Quantitativ | Quantitative Skala |
 | 12225-9 | Leukocytes [#/area] in Sputum by Microscopy high power field | Number areic | Quantitative value | Sputum specimen | Quantitativ | Quantitative Skala |
 | 51770-6 | Leukocytes [#/area] in Stool by Microscopy high power field | Number areic | Quantitative value | Stool specimen | Quantitativ | Quantitative Skala |
@@ -531,8 +541,8 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 13524-4 | Leukocytes other/Leukocytes in Body fluid by Manual count | Number fraction | Quantitative value | Body fluid specimen | Quantitativ | Quantitative Skala |
 | 32808-8 | Leukocytes other/Leukocytes in Bronchial specimen | Number fraction | Quantitative value | Specimen from bronchus | Quantitativ | Quantitative Skala |
 | 40543-1 | Leukocytes other/Leukocytes in Bronchial specimen by Manual count | Number fraction | Quantitative value | Specimen from bronchus | Quantitativ | Quantitative Skala |
-| 26472-1 | Leukocytes other/Leukocytes in Cerebral spinal fluid | Number fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
-| 13523-6 | Leukocytes other/Leukocytes in Cerebral spinal fluid by Manual count | Number fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 26472-1 | Leukocytes other/Leukocytes in Cerebrospinal Fluid | Number fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 13523-6 | Leukocytes other/Leukocytes in Cerebrospinal Fluid by Manual count | Number fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 30407-1 | Leukocytes other/Leukocytes in Pericardial fluid | Number fraction | Quantitative value | Pericardial fluid specimen | Quantitativ | Quantitative Skala |
 | 14857-7 | Leukocytes other/Leukocytes in Pericardial fluid by Manual count | Number fraction | Quantitative value | Pericardial fluid specimen | Quantitativ | Quantitative Skala |
 | 40535-7 | Leukocytes other/Leukocytes in Peritoneal dialysis fluid by Manual count | Number fraction | Quantitative value | Peritoneal dialysate specimen | Quantitativ | Quantitative Skala |
@@ -543,34 +553,39 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 30410-5 | Leukocytes other/Leukocytes in Synovial fluid | Number fraction | Quantitative value | Synovial fluid specimen | Quantitativ | Quantitative Skala |
 | 14860-1 | Leukocytes other/Leukocytes in Synovial fluid by Manual count | Number fraction | Quantitative value | Synovial fluid specimen | Quantitativ | Quantitative Skala |
 | 68432-4 | Leukocytes other/Leukocytes in Vitreous fluid by Manual count | Number fraction | Quantitative value | Vitreous humor specimen | Quantitativ | Quantitative Skala |
-| 107469-9 | Leukocytes [Presence] in Aspirate by Light microscopy | Presence | Ordinal value | Specimen obtained by aspiration | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 34469-7 | Leukocytes [Presence] in Bile fluid by Light microscopy | Presence | Ordinal value | Bile specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 34445-7 | Leukocytes [Presence] in Body fluid | Presence | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 99928-4 | Leukocytes [Presence] in Body fluid by Automated | Presence | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107497-0 | Leukocytes [Presence] in Bronchial specimen by Light microscopy | Presence | Ordinal value | Specimen from bronchus | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 88114-4 | Leukocytes [Presence] in Cerebral spinal fluid by Gram stain | Presence | Ordinal value | Cerebrospinal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 88343-9 | Leukocytes [Presence] in Ear by Light microscopy | Presence | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 14105-1 | Leukocytes [Presence] in Nose by Light microscopy | Presence | Ordinal value | Specimen from nose | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107483-0 | Leukocytes [Presence] in Pericardial fluid by Light microscopy | Presence | Ordinal value | Pericardial fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107465-7 | Leukocytes [Presence] in Pus by Light microscopy | Presence | Ordinal value | Pus specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 32825-2 | Leukocytes [Presence] in Semen | Presence | Ordinal value | Seminal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 72163-9 | Leukocytes [Presence] in Specimen by Gram stain | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 32761-9 | Leukocytes [Presence] in Specimen by Wet preparation | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 14328-9 | Leukocytes [Presence] in Sputum by Light microscopy | Presence | Ordinal value | Sputum specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 13655-6 | Leukocytes [Presence] in Stool by Light microscopy | Presence | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 42327-7 | Leukocytes [Presence] in Stool by Methylene blue stain | Presence | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 48973-2 | Leukocytes [Presence] in Stool by Methylene blue stain –2nd specimen | Presence | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 32142-2 | Leukocytes [Presence] in Synovial fluid by Light microscopy | Presence | Ordinal value | Synovial fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107472-3 | Leukocytes [Presence] in Tissue by Light microscopy | Presence | Ordinal value | Tissue specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107011-9 | Leukocytes [Presence] in Urethra by Wet preparation | Presence | Ordinal value | Specimen from urethra | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 33052-2 | Leukocytes [Presence] in Urine | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 53316-6 | Leukocytes [Presence] in Urine by Automated | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 53964-3 | Leukocytes [Presence] in Urine by Visual | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 105105-1 | Leukocytes [Presence] in Urine sediment | Presence | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 20455-2 | Leukocytes [Presence] in Urine sediment by Light microscopy | Presence | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 12226-7 | Leukocytes [Presence] in Vaginal fluid by Wet preparation | Presence | Ordinal value | Specimen from vagina | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107475-6 | Leukocytes [Presence] in Wound deep by Light microscopy | Presence | Ordinal value | Specimen from deep wound | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 107476-4 | Leukocytes [Presence] in Wound shallow by Light microscopy | Presence | Ordinal value | Specimen from superficial wound | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107469-9 | Leukocytes [Presence] in Aspirate by Light microscopy | Threshold | Ordinal value | Specimen obtained by aspiration | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 34469-7 | Leukocytes [Presence] in Bile fluid by Light microscopy | Threshold | Ordinal value | Bile specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 34445-7 | Leukocytes [Presence] in Body fluid | Threshold | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 99928-4 | Leukocytes [Presence] in Body fluid by Automated | Threshold | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107497-0 | Leukocytes [Presence] in Bronchial specimen by Light microscopy | Threshold | Ordinal value | Specimen from bronchus | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 113033-5 | Leukocytes [Presence] in Bronchoalveolar lavage | Threshold | Ordinal value | Bronchoalveolar lavage fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 88114-4 | Leukocytes [Presence] in Cerebrospinal Fluid by Gram stain | Threshold | Ordinal value | Cerebrospinal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 88343-9 | Leukocytes [Presence] in Ear by Light microscopy | Threshold | Ordinal value | – | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 14105-1 | Leukocytes [Presence] in Nose by Light microscopy | Threshold | Ordinal value | Specimen from nose | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107483-0 | Leukocytes [Presence] in Pericardial fluid by Light microscopy | Threshold | Ordinal value | Pericardial fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 113058-2 | Leukocytes [Presence] in Peritoneal fluid by Gram stain | Threshold | Ordinal value | Peritoneal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 113052-5 | Leukocytes [Presence] in Pleural fluid | Threshold | Ordinal value | Pleural fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107465-7 | Leukocytes [Presence] in Pus by Light microscopy | Threshold | Ordinal value | Pus specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 32825-2 | Leukocytes [Presence] in Semen | Threshold | Ordinal value | Semen sample | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 72163-9 | Leukocytes [Presence] in Specimen by Gram stain | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 32761-9 | Leukocytes [Presence] in Specimen by Wet preparation | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 14328-9 | Leukocytes [Presence] in Sputum by Light microscopy | Threshold | Ordinal value | Sputum specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 13655-6 | Leukocytes [Presence] in Stool by Light microscopy | Threshold | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 42327-7 | Leukocytes [Presence] in Stool by Methylene blue stain | Threshold | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 48973-2 | Leukocytes [Presence] in Stool by Methylene blue stain –2nd specimen | Threshold | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 32142-2 | Leukocytes [Presence] in Synovial fluid by Light microscopy | Threshold | Ordinal value | Synovial fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 113077-2 | Leukocytes [Presence] in Tissue | Threshold | Ordinal value | Tissue specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107472-3 | Leukocytes [Presence] in Tissue by Light microscopy | Threshold | Ordinal value | Tissue specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107011-9 | Leukocytes [Presence] in Urethra by Wet preparation | Threshold | Ordinal value | Specimen from urethra | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 33052-2 | Leukocytes [Presence] in Urine | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 53316-6 | Leukocytes [Presence] in Urine by Automated | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 53964-3 | Leukocytes [Presence] in Urine by Visual | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 105105-1 | Leukocytes [Presence] in Urine sediment | Threshold | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 20455-2 | Leukocytes [Presence] in Urine sediment by Light microscopy | Threshold | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 113044-2 | Leukocytes [Presence] in Vaginal fluid | Threshold | Ordinal value | Specimen from vagina | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 12226-7 | Leukocytes [Presence] in Vaginal fluid by Wet preparation | Threshold | Ordinal value | Specimen from vagina | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107475-6 | Leukocytes [Presence] in Wound deep by Light microscopy | Threshold | Ordinal value | Specimen from deep wound | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 107476-4 | Leukocytes [Presence] in Wound shallow by Light microscopy | Threshold | Ordinal value | Specimen from superficial wound | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | SCT 375701000119105 | Presence of white blood cells in stool | Presence | – | Stool specimen | Qualitativ | Nachweis-Property → qualitativ |
 | 58805-3 | Leukocytes [#/volume] in Urine by Automated test strip | Number concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |
 | 20408-1 | Leukocytes [#/volume] in Urine by Test strip | Number concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |

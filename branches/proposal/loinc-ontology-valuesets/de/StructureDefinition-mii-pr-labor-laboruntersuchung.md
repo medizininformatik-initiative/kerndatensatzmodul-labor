@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab | *Version*:2027.0.0-ci |
-| Active Stand: 2026-10-20 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboruntersuchung |
+| Active Stand: 2026-11-02 | *Maschinenlesbarer Name*:MII_PR_Labor_Laboruntersuchung |
 
  
 Ergebnis einer Laboruntersuchung 
@@ -350,7 +350,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-20T04:35:35+00:00",
+  "date" : "2026-11-02T16:00:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-standard | *Version*:2027.0.0-ci |
-| Draft as of 2026-10-20 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Mch_Standard |
+| Draft as of 2026-11-02 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Mch_Standard |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
+Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
 
  **References** 
 
@@ -179,7 +179,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor LOINC Ontology Mch Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-20",
+  "date" : "2026-11-02",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -188,7 +188,7 @@ No Expansion for this valueset (Unsupported Code System Version)
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -223,7 +223,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11010000107/version/20260321",
+      "version" : "http://snomed.info/sct/11010000107/version/20261021",
       "filter" : [{
         "property" : "constraint",
         "op" : "=",

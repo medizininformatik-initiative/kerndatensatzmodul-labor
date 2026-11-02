@@ -38,7 +38,7 @@ Attribute columns show the rule; `<<` marks "this concept and its subtypes", a b
 | [Mean cell volume (MCV)](loinc-ontology-analyte-mcv.html) | standard | `<< Mean cell volume [observable]` |  |  | `<< Quantitative value` | 2 | 0 | [ValueSet](ValueSet-mii-vs-labor-loinc-ontology-mcv-standard.html) | [Profile](StructureDefinition-mii-pr-labor-loinc-ontology-mcv-standard.html) |
 | [HbA1c in blood](loinc-ontology-analyte-hba1c.html) | standard | Glycated hemoglobin-A1c | `<< Blood specimen` | `<< Measurement property` | `<< Quantitative value` | 8 | 0 | [ValueSet](ValueSet-mii-vs-labor-loinc-ontology-hba1c-standard.html) | [Profile](StructureDefinition-mii-pr-labor-loinc-ontology-hba1c-standard.html) |
 | [Methemoglobin in blood (quantitative)](loinc-ontology-analyte-methemoglobin.html) | standard | `<< Methemoglobin` | `<< Blood specimen` | `<< Measurement property; not << Ratio` | `<< Quantitative value` | 11 | 0 | [ValueSet](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-standard.html) | [Profile](StructureDefinition-mii-pr-labor-loinc-ontology-methemoglobin-standard.html) |
-| [Nitrite in urine (qualitative)](loinc-ontology-analyte-nitrite-urine.html) | standard | Nitrite salt | `<< Urine specimen` | `<< Presence` |  | 3 | 0 | [ValueSet](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-standard.html) | [Profile](StructureDefinition-mii-pr-labor-loinc-ontology-nitrite-urine-standard.html) |
+| [Nitrite in urine (qualitative)](loinc-ontology-analyte-nitrite-urine.html) | standard | Nitrite salt | `<< Urine specimen` | `<< Threshold` |  | 3 | 0 | [ValueSet](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-standard.html) | [Profile](StructureDefinition-mii-pr-labor-loinc-ontology-nitrite-urine-standard.html) |
 
 ### Review notes
 

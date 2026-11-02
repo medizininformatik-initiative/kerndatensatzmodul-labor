@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyt Methämoglobin
 
-Diese Seite ist das Review-Material für den Analyten **methemoglobin** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **methemoglobin** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` (17 Konzepte, 17 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-qualitative.md).
 
@@ -49,31 +49,26 @@ ValueSet [mii-vs-labor-loinc-ontology-methemoglobin-standard](ValueSet-mii-vs-la
 
 | | | |
 | :--- | :--- | :--- |
-| 72262-9 | Methemoglobin [Moles/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen |
+| 72262-9 | Methemoglobin [Moles/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
 | 97554-0 | Methemoglobin/Hemoglobin.total in Central venous blood | – |
 | 2618-7 | Methemoglobin/Hemoglobin.total in Red Blood Cells | Erythrocyte specimen |
 
 1 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 97554-0.
 
-**Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (1)**
-
-| | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Erythrocyte specimen | Presence | Ordinal value |
-
-**Ausgeschlossen, weil Property und Scale type nicht passen (1)**
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| 2613-8 | Methemoglobin [Presence] in Blood | Presence | Ordinal value |
-
-**Ausgeschlossen, weil Scale type nicht passt (1)**
+**Ausgeschlossen, weil Scale type nicht passt (2)**
 
 | | | |
 | :--- | :--- | :--- |
 | 109592-6 | Methemoglobin [Measurement] in Blood | – |
+| 2613-8 | Methemoglobin [Presence] in Blood | Ordinal value |
 
 1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109592-6.
+
+**Ausgeschlossen, weil Direct site und Scale type nicht passen (1)**
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Erythrocyte specimen | Ordinal value |
 
 #### Diskussion
 
@@ -89,7 +84,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 15082-1 | Methemoglobin [Mass/volume] in Blood | Mass concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 56040-9 | Methemoglobin [Moles/volume] in Blood | Substance concentration | Quantitative value | Blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 72262-9 | Methemoglobin [Moles/volume] in Cerebral spinal fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 72262-9 | Methemoglobin [Moles/volume] in Cerebrospinal Fluid | Substance concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 4534-4 | Cyanmethemoglobin/Hemoglobin.total in Blood | Mass fraction | Quantitative value | Blood specimen | Quantitativ | Quantitative Skala |
 | 109592-6 | Methemoglobin [Measurement] in Blood | Measurement property | – | Blood specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 2615-3 | Methemoglobin/Hemoglobin.total in Arterial blood | Mass fraction | Quantitative value | Arterial blood specimen | Quantitativ | Quantitative Skala |
@@ -102,6 +97,6 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 2618-7 | Methemoglobin/Hemoglobin.total in Red Blood Cells | Mass fraction | Quantitative value | Erythrocyte specimen | Quantitativ | Quantitative Skala |
 | 2617-9 | Methemoglobin/Hemoglobin.total in Venous blood | Mass fraction | Quantitative value | Venous blood specimen | Quantitativ | Quantitative Skala |
 | 72360-1 | Methemoglobin/Hemoglobin.total in Venous cord blood | Mass fraction | Quantitative value | Venous cord blood specimen | Quantitativ | Quantitative Skala |
-| 2613-8 | Methemoglobin [Presence] in Blood | Presence | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Presence | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 2613-8 | Methemoglobin [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 

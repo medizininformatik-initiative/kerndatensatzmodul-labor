@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyt Hämatokrit
 
-Diese Seite ist das Review-Material für den Analyten **hematocrit** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-03-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **hematocrit** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` (107 Konzepte, 106 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-qualitative.md), [Semiquantitativ](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-semiquantitative.md).
 
@@ -54,7 +54,7 @@ ValueSet [mii-vs-labor-loinc-ontology-hematocrit-standard](ValueSet-mii-vs-labor
 | 96711-7 | Erythrocytes [#/area] in Body fluid by Light microscopy | Body fluid specimen | Number areic |
 | 51910-8 | Erythrocytes [#/area] in Bronchoalveolar lavage by Microscopy high power field | Bronchoalveolar lavage fluid specimen | Number areic |
 | 96719-0 | Erythrocytes [#/area] in Prostatic fluid by Light microscopy | Prostatic fluid specimen | Number areic |
-| 58767-5 | Erythrocytes [#/area] in Semen by Microscopy high power field | Seminal fluid specimen | Number areic |
+| 58767-5 | Erythrocytes [#/area] in Semen by Microscopy high power field | Semen sample | Number areic |
 | 51382-0 | Erythrocytes [#/area] in Synovial fluid by Light microscopy | Synovial fluid specimen | Number areic |
 | 75237-8 | Erythrocytes [#/area] in Synovial fluid by Microscopy high power field | Synovial fluid specimen | Number areic |
 | 105107-7 | Erythrocytes [#/area] in Urine sediment | Urine sediment specimen | Number areic |
@@ -70,13 +70,13 @@ ValueSet [mii-vs-labor-loinc-ontology-hematocrit-standard](ValueSet-mii-vs-labor
 | 82588-5 | Erythrocytes [#/volume] in Bone marrow by Automated count | Bone marrow specimen | Number concentration |
 | 99777-5 | Erythrocytes [#/volume] in Bronchoalveolar lavage by Automated count | Bronchoalveolar lavage fluid specimen | Number concentration |
 | 99050-7 | Erythrocytes [#/volume] in Bronchoalveolar lavage by Manual count | Bronchoalveolar lavage fluid specimen | Number concentration |
-| 26454-9 | Erythrocytes [#/volume] in Cerebral spinal fluid | Cerebrospinal fluid specimen | Number concentration |
-| 791-4 | Erythrocytes [#/volume] in Cerebral spinal fluid by Automated count | Cerebrospinal fluid specimen | Number concentration |
-| 792-2 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count | Cerebrospinal fluid specimen | Number concentration |
-| 76673-3 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –1st tube | Cerebrospinal fluid specimen | Number concentration |
-| 46087-3 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –2nd tube | Cerebrospinal fluid specimen | Number concentration |
-| 46091-5 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –3rd tube | Cerebrospinal fluid specimen | Number concentration |
-| 46092-3 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –4th tube | Cerebrospinal fluid specimen | Number concentration |
+| 26454-9 | Erythrocytes [#/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen | Number concentration |
+| 791-4 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Automated count | Cerebrospinal fluid specimen | Number concentration |
+| 792-2 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count | Cerebrospinal fluid specimen | Number concentration |
+| 76673-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –1st tube | Cerebrospinal fluid specimen | Number concentration |
+| 46087-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –2nd tube | Cerebrospinal fluid specimen | Number concentration |
+| 46091-5 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –3rd tube | Cerebrospinal fluid specimen | Number concentration |
+| 46092-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –4th tube | Cerebrospinal fluid specimen | Number concentration |
 | 57841-9 | Erythrocytes [#/volume] in Dialysis fluid by Automated count | Dialysate specimen | Number concentration |
 | 53517-9 | Erythrocytes [#/volume] in Dialysis fluid by Manual count | Dialysate specimen | Number concentration |
 | 30387-5 | Erythrocytes [#/volume] in Gastric fluid | Gastric fluid specimen | Number concentration |
@@ -94,7 +94,7 @@ ValueSet [mii-vs-labor-loinc-ontology-hematocrit-standard](ValueSet-mii-vs-labor
 | 794-8 | Erythrocytes [#/volume] in Pleural fluid by Automated count | Pleural fluid specimen | Number concentration |
 | 793-0 | Erythrocytes [#/volume] in Pleural fluid by Manual count | Pleural fluid specimen | Number concentration |
 | 67831-8 | Erythrocytes [#/volume] in Pleural fluid from Fetus | – | Number concentration |
-| 43245-0 | Erythrocytes [#/volume] in Semen by Light microscopy | Seminal fluid specimen | Number concentration |
+| 43245-0 | Erythrocytes [#/volume] in Semen by Light microscopy | Semen sample | Number concentration |
 | 30389-1 | Erythrocytes [#/volume] in Seminal plasma | Seminal plasma specimen | Number concentration |
 | 16828-6 | Erythrocytes [#/volume] in Seminal plasma by Manual count | Seminal plasma specimen | Number concentration |
 | 23859-2 | Erythrocytes [#/volume] in Specimen by Light microscopy | Specimen | Number concentration |
@@ -119,22 +119,22 @@ ValueSet [mii-vs-labor-loinc-ontology-hematocrit-standard](ValueSet-mii-vs-labor
 | 57747-8 | Erythrocytes [#/volume] in Urine by Automated test strip | Urine specimen | Number concentration | Semi-quantitative value |
 | 20409-9 | Erythrocytes [#/volume] in Urine by Test strip | Urine specimen | Number concentration | Semi-quantitative value |
 | 109724-5 | Erythrocytes [Measurement] in Dialysis fluid | Dialysate specimen | Measurement property | – |
-| 19098-3 | Erythrocytes [Presence] in Amniotic fluid | Amniotic fluid specimen | Presence | Ordinal value |
-| 34446-5 | Erythrocytes [Presence] in Body fluid | Body fluid specimen | Presence | Ordinal value |
-| 99926-8 | Erythrocytes [Presence] in Body fluid by Automated | Body fluid specimen | Presence | Ordinal value |
-| 88113-6 | Erythrocytes [Presence] in Cerebral spinal fluid by Gram stain | Cerebrospinal fluid specimen | Presence | Ordinal value |
-| 68901-8 | Erythrocytes [Presence] in Dialysis fluid | Dialysate specimen | Presence | Ordinal value |
-| 38285-3 | Erythrocytes [Presence] in Duodenal fluid | Duodenal fluid specimen | Presence | Ordinal value |
-| 72338-7 | Erythrocytes [Presence] in Prostatic fluid by Light microscopy | Prostatic fluid specimen | Presence | Ordinal value |
-| 13627-5 | Erythrocytes [Presence] in Semen by Light microscopy | Seminal fluid specimen | Presence | Ordinal value |
-| 72162-1 | Erythrocytes [Presence] in Specimen by Gram stain | Specimen | Presence | Ordinal value |
-| 70124-3 | Erythrocytes [Presence] in Specimen by Wet preparation | Specimen | Presence | Ordinal value |
-| 33668-5 | Erythrocytes [Presence] in Stool | Stool specimen | Presence | Ordinal value |
-| 33051-4 | Erythrocytes [Presence] in Urine | Urine specimen | Presence | Ordinal value |
-| 53292-9 | Erythrocytes [Presence] in Urine by Automated | Urine specimen | Presence | Ordinal value |
-| 105090-5 | Erythrocytes [Presence] in Urine sediment | Urine sediment specimen | Presence | Ordinal value |
-| 32776-7 | Erythrocytes [Presence] in Urine sediment by Light microscopy | Urine sediment specimen | Presence | Ordinal value |
-| 48051-7 | Erythrocytes [Presence] in Vaginal fluid | Specimen from vagina | Presence | Ordinal value |
+| 19098-3 | Erythrocytes [Presence] in Amniotic fluid | Amniotic fluid specimen | Threshold | Ordinal value |
+| 34446-5 | Erythrocytes [Presence] in Body fluid | Body fluid specimen | Threshold | Ordinal value |
+| 99926-8 | Erythrocytes [Presence] in Body fluid by Automated | Body fluid specimen | Threshold | Ordinal value |
+| 88113-6 | Erythrocytes [Presence] in Cerebrospinal Fluid by Gram stain | Cerebrospinal fluid specimen | Threshold | Ordinal value |
+| 68901-8 | Erythrocytes [Presence] in Dialysis fluid | Dialysate specimen | Threshold | Ordinal value |
+| 38285-3 | Erythrocytes [Presence] in Duodenal fluid | Duodenal fluid specimen | Threshold | Ordinal value |
+| 72338-7 | Erythrocytes [Presence] in Prostatic fluid by Light microscopy | Prostatic fluid specimen | Threshold | Ordinal value |
+| 13627-5 | Erythrocytes [Presence] in Semen by Light microscopy | Semen sample | Threshold | Ordinal value |
+| 72162-1 | Erythrocytes [Presence] in Specimen by Gram stain | Specimen | Threshold | Ordinal value |
+| 70124-3 | Erythrocytes [Presence] in Specimen by Wet preparation | Specimen | Threshold | Ordinal value |
+| 33668-5 | Erythrocytes [Presence] in Stool | Stool specimen | Threshold | Ordinal value |
+| 33051-4 | Erythrocytes [Presence] in Urine | Urine specimen | Threshold | Ordinal value |
+| 53292-9 | Erythrocytes [Presence] in Urine by Automated | Urine specimen | Threshold | Ordinal value |
+| 105090-5 | Erythrocytes [Presence] in Urine sediment | Urine sediment specimen | Threshold | Ordinal value |
+| 32776-7 | Erythrocytes [Presence] in Urine sediment by Light microscopy | Urine sediment specimen | Threshold | Ordinal value |
+| 48051-7 | Erythrocytes [Presence] in Vaginal fluid | Specimen from vagina | Threshold | Ordinal value |
 | SCT 648131000005102 | Presence of erythrocytes in urine | Urine specimen | Presence | – |
 
 2 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109724-5, SCT 648131000005102.
@@ -146,8 +146,8 @@ ValueSet [mii-vs-labor-loinc-ontology-hematocrit-standard](ValueSet-mii-vs-labor
 | 62241-5 | Hematocrit [Volume Fraction] of Blood from Fetus by Automated count | – |
 | 11153-4 | Hematocrit [Volume Fraction] of Body fluid by calculation | Body fluid specimen |
 | 55781-9 | Hematocrit [Volume Fraction] of Bone marrow by calculation | Bone marrow specimen |
-| 13508-7 | Hematocrit [Volume Fraction] of Cerebral spinal fluid by Centrifugation | Cerebrospinal fluid specimen |
-| 30398-2 | Hematocrit [Volume Fraction] of Cerebral spinal fluid by calculation | Cerebrospinal fluid specimen |
+| 13508-7 | Hematocrit [Volume Fraction] of Cerebrospinal Fluid by Centrifugation | Cerebrospinal fluid specimen |
+| 30398-2 | Hematocrit [Volume Fraction] of Cerebrospinal Fluid by calculation | Cerebrospinal fluid specimen |
 | 47640-8 | Hematocrit [Volume Fraction] of Dialysis fluid by calculation | Dialysate specimen |
 | 107175-2 | Hematocrit [Volume Fraction] of Peritoneal fluid | Peritoneal fluid specimen |
 | 70169-8 | Hematocrit [Volume Fraction] of Pleural fluid by calculation | Pleural fluid specimen |
@@ -191,13 +191,13 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 82588-5 | Erythrocytes [#/volume] in Bone marrow by Automated count | Number concentration | Quantitative value | Bone marrow specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 99777-5 | Erythrocytes [#/volume] in Bronchoalveolar lavage by Automated count | Number concentration | Quantitative value | Bronchoalveolar lavage fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 99050-7 | Erythrocytes [#/volume] in Bronchoalveolar lavage by Manual count | Number concentration | Quantitative value | Bronchoalveolar lavage fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 26454-9 | Erythrocytes [#/volume] in Cerebral spinal fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 791-4 | Erythrocytes [#/volume] in Cerebral spinal fluid by Automated count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 792-2 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 76673-3 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –1st tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 46087-3 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –2nd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 46091-5 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –3rd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 46092-3 | Erythrocytes [#/volume] in Cerebral spinal fluid by Manual count –4th tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 26454-9 | Erythrocytes [#/volume] in Cerebrospinal Fluid | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 791-4 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Automated count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 792-2 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 76673-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –1st tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 46087-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –2nd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 46091-5 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –3rd tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 46092-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –4th tube | Number concentration | Quantitative value | Cerebrospinal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 47280-3 | Erythrocytes [#/volume] in Cord blood | Number concentration | Quantitative value | Cord blood specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 57841-9 | Erythrocytes [#/volume] in Dialysis fluid by Automated count | Number concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 53517-9 | Erythrocytes [#/volume] in Dialysis fluid by Manual count | Number concentration | Quantitative value | Dialysate specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -216,7 +216,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 794-8 | Erythrocytes [#/volume] in Pleural fluid by Automated count | Number concentration | Quantitative value | Pleural fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 793-0 | Erythrocytes [#/volume] in Pleural fluid by Manual count | Number concentration | Quantitative value | Pleural fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 67831-8 | Erythrocytes [#/volume] in Pleural fluid from Fetus | Number concentration | Quantitative value | – | Konvertierbar | Quantitative Skala + Konzentrations-Property |
-| 43245-0 | Erythrocytes [#/volume] in Semen by Light microscopy | Number concentration | Quantitative value | Seminal fluid specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
+| 43245-0 | Erythrocytes [#/volume] in Semen by Light microscopy | Number concentration | Quantitative value | Semen sample | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 30389-1 | Erythrocytes [#/volume] in Seminal plasma | Number concentration | Quantitative value | Seminal plasma specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 16828-6 | Erythrocytes [#/volume] in Seminal plasma by Manual count | Number concentration | Quantitative value | Seminal plasma specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
 | 23859-2 | Erythrocytes [#/volume] in Specimen by Light microscopy | Number concentration | Quantitative value | Specimen | Konvertierbar | Quantitative Skala + Konzentrations-Property |
@@ -236,7 +236,7 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 96711-7 | Erythrocytes [#/area] in Body fluid by Light microscopy | Number areic | Quantitative value | Body fluid specimen | Quantitativ | Quantitative Skala |
 | 51910-8 | Erythrocytes [#/area] in Bronchoalveolar lavage by Microscopy high power field | Number areic | Quantitative value | Bronchoalveolar lavage fluid specimen | Quantitativ | Quantitative Skala |
 | 96719-0 | Erythrocytes [#/area] in Prostatic fluid by Light microscopy | Number areic | Quantitative value | Prostatic fluid specimen | Quantitativ | Quantitative Skala |
-| 58767-5 | Erythrocytes [#/area] in Semen by Microscopy high power field | Number areic | Quantitative value | Seminal fluid specimen | Quantitativ | Quantitative Skala |
+| 58767-5 | Erythrocytes [#/area] in Semen by Microscopy high power field | Number areic | Quantitative value | Semen sample | Quantitativ | Quantitative Skala |
 | 51382-0 | Erythrocytes [#/area] in Synovial fluid by Light microscopy | Number areic | Quantitative value | Synovial fluid specimen | Quantitativ | Quantitative Skala |
 | 75237-8 | Erythrocytes [#/area] in Synovial fluid by Microscopy high power field | Number areic | Quantitative value | Synovial fluid specimen | Quantitativ | Quantitative Skala |
 | 105107-7 | Erythrocytes [#/area] in Urine sediment | Number areic | Quantitative value | Urine sediment specimen | Quantitativ | Quantitative Skala |
@@ -255,8 +255,8 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 11153-4 | Hematocrit [Volume Fraction] of Body fluid by calculation | Volume fraction | Quantitative value | Body fluid specimen | Quantitativ | Quantitative Skala |
 | 55781-9 | Hematocrit [Volume Fraction] of Bone marrow by calculation | Volume fraction | Quantitative value | Bone marrow specimen | Quantitativ | Quantitative Skala |
 | 42908-4 | Hematocrit [Volume Fraction] of Capillary blood by calculation | Volume fraction | Quantitative value | Capillary blood specimen | Quantitativ | Quantitative Skala |
-| 13508-7 | Hematocrit [Volume Fraction] of Cerebral spinal fluid by Centrifugation | Volume fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
-| 30398-2 | Hematocrit [Volume Fraction] of Cerebral spinal fluid by calculation | Volume fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 13508-7 | Hematocrit [Volume Fraction] of Cerebrospinal Fluid by Centrifugation | Volume fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
+| 30398-2 | Hematocrit [Volume Fraction] of Cerebrospinal Fluid by calculation | Volume fraction | Quantitative value | Cerebrospinal fluid specimen | Quantitativ | Quantitative Skala |
 | 11271-4 | Hematocrit [Volume Fraction] of Cord blood by Automated count | Volume fraction | Quantitative value | Cord blood specimen | Quantitativ | Quantitative Skala |
 | 11151-8 | Hematocrit [Volume Fraction] of Cord blood by calculation | Volume fraction | Quantitative value | Cord blood specimen | Quantitativ | Quantitative Skala |
 | 47640-8 | Hematocrit [Volume Fraction] of Dialysis fluid by calculation | Volume fraction | Quantitative value | Dialysate specimen | Quantitativ | Quantitative Skala |
@@ -267,22 +267,22 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 70168-0 | Hematocrit [Volume Fraction] of Synovial fluid by calculation | Volume fraction | Quantitative value | Synovial fluid specimen | Quantitativ | Quantitative Skala |
 | 17809-5 | Hematocrit [Volume Fraction] of Urine by calculation | Volume fraction | Quantitative value | Urine specimen | Quantitativ | Quantitative Skala |
 | 41654-5 | Hematocrit [Volume Fraction] of Venous blood by calculation | Volume fraction | Quantitative value | Venous blood specimen | Quantitativ | Quantitative Skala |
-| 19098-3 | Erythrocytes [Presence] in Amniotic fluid | Presence | Ordinal value | Amniotic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 34446-5 | Erythrocytes [Presence] in Body fluid | Presence | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 99926-8 | Erythrocytes [Presence] in Body fluid by Automated | Presence | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 88113-6 | Erythrocytes [Presence] in Cerebral spinal fluid by Gram stain | Presence | Ordinal value | Cerebrospinal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 68901-8 | Erythrocytes [Presence] in Dialysis fluid | Presence | Ordinal value | Dialysate specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 38285-3 | Erythrocytes [Presence] in Duodenal fluid | Presence | Ordinal value | Duodenal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 72338-7 | Erythrocytes [Presence] in Prostatic fluid by Light microscopy | Presence | Ordinal value | Prostatic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 13627-5 | Erythrocytes [Presence] in Semen by Light microscopy | Presence | Ordinal value | Seminal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 72162-1 | Erythrocytes [Presence] in Specimen by Gram stain | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 70124-3 | Erythrocytes [Presence] in Specimen by Wet preparation | Presence | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 33668-5 | Erythrocytes [Presence] in Stool | Presence | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 33051-4 | Erythrocytes [Presence] in Urine | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 53292-9 | Erythrocytes [Presence] in Urine by Automated | Presence | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 105090-5 | Erythrocytes [Presence] in Urine sediment | Presence | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 32776-7 | Erythrocytes [Presence] in Urine sediment by Light microscopy | Presence | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
-| 48051-7 | Erythrocytes [Presence] in Vaginal fluid | Presence | Ordinal value | Specimen from vagina | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 19098-3 | Erythrocytes [Presence] in Amniotic fluid | Threshold | Ordinal value | Amniotic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 34446-5 | Erythrocytes [Presence] in Body fluid | Threshold | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 99926-8 | Erythrocytes [Presence] in Body fluid by Automated | Threshold | Ordinal value | Body fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 88113-6 | Erythrocytes [Presence] in Cerebrospinal Fluid by Gram stain | Threshold | Ordinal value | Cerebrospinal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 68901-8 | Erythrocytes [Presence] in Dialysis fluid | Threshold | Ordinal value | Dialysate specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 38285-3 | Erythrocytes [Presence] in Duodenal fluid | Threshold | Ordinal value | Duodenal fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 72338-7 | Erythrocytes [Presence] in Prostatic fluid by Light microscopy | Threshold | Ordinal value | Prostatic fluid specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 13627-5 | Erythrocytes [Presence] in Semen by Light microscopy | Threshold | Ordinal value | Semen sample | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 72162-1 | Erythrocytes [Presence] in Specimen by Gram stain | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 70124-3 | Erythrocytes [Presence] in Specimen by Wet preparation | Threshold | Ordinal value | Specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 33668-5 | Erythrocytes [Presence] in Stool | Threshold | Ordinal value | Stool specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 33051-4 | Erythrocytes [Presence] in Urine | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 53292-9 | Erythrocytes [Presence] in Urine by Automated | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 105090-5 | Erythrocytes [Presence] in Urine sediment | Threshold | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 32776-7 | Erythrocytes [Presence] in Urine sediment by Light microscopy | Threshold | Ordinal value | Urine sediment specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+| 48051-7 | Erythrocytes [Presence] in Vaginal fluid | Threshold | Ordinal value | Specimen from vagina | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | SCT 648131000005102 | Presence of erythrocytes in urine | Presence | – | Urine specimen | Qualitativ | Nachweis-Property → qualitativ |
 | 57747-8 | Erythrocytes [#/volume] in Urine by Automated test strip | Number concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |
 | 20409-9 | Erythrocytes [#/volume] in Urine by Test strip | Number concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |

@@ -454,7 +454,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ol>
   <li><strong>LOINC enumeration.</strong> The LOINC codes of all concepts the rule selects, as <code class="language-plaintext highlighter-rouge">include</code> on <code class="language-plaintext highlighter-rouge">http://loinc.org</code> with the module's LOINC version. This is the part any FHIR validator and any terminology server can use today.</li>
   <li><strong>Observables without a LOINC code.</strong> The LOINC Ontology also contains observables for which no LOINC code exists yet. They are listed as SNOMED CT codes, so that the ValueSet is complete and a site can see where a LOINC request is pending.</li>
-  <li><strong>The rule.</strong> The ECL as an intensional <code class="language-plaintext highlighter-rouge">include</code> on <code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code> with <code class="language-plaintext highlighter-rouge">filter.property = constraint</code>, pinned to the release <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/11010000107/version/20260321</code>. It documents why the codes in part 1 are there, and it is the part that regenerates.</li>
+  <li><strong>The rule.</strong> The ECL as an intensional <code class="language-plaintext highlighter-rouge">include</code> on <code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code> with <code class="language-plaintext highlighter-rouge">filter.property = constraint</code>, pinned to the release <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/11010000107/version/20261021</code>. It documents why the codes in part 1 are there, and it is the part that regenerates.</li>
 </ol>
 
 <p>Parts 1 and 2 are the enumeration of part 3 at the stated release. They are not independent sources.</p>
@@ -470,7 +470,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="versions-and-regeneration">Versions and regeneration</h3>
 
-<p>The artifacts are pinned to <strong>LOINC Ontology 2026-03-21</strong>. The LOINC Ontology is released periodically; the module pins LOINC 2.82 for its own ValueSets. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. The release-to-release difference report is published with the generator in <a href="https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts">loincsnomed-lab-concepts</a>.</p>
+<p>The artifacts are pinned to <strong>LOINC Ontology 2026-10-21</strong>. The LOINC Ontology is released periodically; the module pins LOINC 2.82 for its own ValueSets. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. A release can also remodel the attributes themselves: between 2026-03-21 and 2026-10-21 the LOINC Ontology moved more than 10,000 presence observables from Property <code class="language-plaintext highlighter-rouge">Presence</code> (705057003) to <code class="language-plaintext highlighter-rouge">Threshold (property)</code> (118589004, a subtype of Measurement property) and renamed them from "Presence of …" to "Threshold presence of …". The nitrite rule on this branch therefore selects <code class="language-plaintext highlighter-rouge">&lt;&lt; 118589004 |Threshold (property)|</code> instead of <code class="language-plaintext highlighter-rouge">&lt;&lt; 705057003 |Presence|</code>; its LOINC enumeration did not change. The old rule would have returned an empty ValueSet, which is the kind of failure a regeneration makes visible. The release-to-release difference report is published with the generator in <a href="https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts">loincsnomed-lab-concepts</a>.</p>
 
 <h3 id="reading-the-review-tables">Reading the review tables</h3>
 
@@ -501,7 +501,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Oct 20, 2026 04:35+0000">2026-10-20</span>
+          Generated <span title="Mon, Nov 2, 2026 16:00+0000">2026-11-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
