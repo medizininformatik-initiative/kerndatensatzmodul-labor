@@ -63,9 +63,9 @@ Terminology versions are pinned in `input/resources/Parameters-expansion-manifes
 
 | | | |
 | :--- | :--- | :--- |
-| `force-system-version` | `http://loinc.org|2.82` | Forces the LOINC version even where a foreign value set names another. |
+| `force-system-version` | `http://loinc.org|2.83` | Forces the LOINC version even where a foreign value set names another. |
 | `system-version` | SNOMED CT`900000000000207008/version/20260701` | The version the policy of the Meta module prescribes for v2027.* |
-| `system-version` | `http://loinc.org|2.82` |   |
+| `system-version` | `http://loinc.org|2.83` |   |
 | `system-version` | `artifact-version-policy-codes|3.0.0` |   |
 
 `pin-canonicals: pin-all` additionally fixes every canonical reference to a version. The publisher reports each of those as an informational line; they are suppressed.

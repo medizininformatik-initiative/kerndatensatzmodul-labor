@@ -63,9 +63,9 @@ Die Terminologie-Versionen stehen in `input/resources/Parameters-expansion-manif
 
 | | | |
 | :--- | :--- | :--- |
-| `force-system-version` | `http://loinc.org|2.82` | Erzwingt die LOINC-Version auch dort, wo ein fremdes ValueSet eine andere nennt. |
+| `force-system-version` | `http://loinc.org|2.83` | Erzwingt die LOINC-Version auch dort, wo ein fremdes ValueSet eine andere nennt. |
 | `system-version` | SNOMED CT`900000000000207008/version/20260701` | Die von der Policy des Moduls Meta für v2027.* vorgeschriebene Version. |
-| `system-version` | `http://loinc.org|2.82` |   |
+| `system-version` | `http://loinc.org|2.83` |   |
 | `system-version` | `artifact-version-policy-codes|3.0.0` |   |
 
 `pin-canonicals: pin-all` legt zusätzlich jede Canonical-Referenz auf eine Version fest. Der Publisher meldet jede davon als Information; sie sind unterdrückt.

@@ -19,7 +19,7 @@
   },
   "parameter" : [{
     "name" : "force-system-version",
-    "valueCanonical" : "http://loinc.org|2.82"
+    "valueCanonical" : "http://loinc.org|2.83"
   },
   {
     "name" : "system-version",
@@ -27,7 +27,7 @@
   },
   {
     "name" : "system-version",
-    "valueCanonical" : "http://loinc.org|2.82"
+    "valueCanonical" : "http://loinc.org|2.83"
   },
   {
     "name" : "system-version",

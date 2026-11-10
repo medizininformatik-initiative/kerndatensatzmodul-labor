@@ -234,7 +234,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "title" : "MII IG Laborbefund",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-02T18:59:16+00:00",
+  "date" : "2026-11-10T07:21:28+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -2240,7 +2240,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Erythrocytes Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte erythrocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte erythrocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 107 concepts (106 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2256,7 +2256,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Erythrocytes Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte erythrocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 52 concepts (52 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte erythrocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 52 concepts (52 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2272,7 +2272,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-count-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Erythrocytes Count Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Erythrocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (4), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Erythrocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (4, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2288,7 +2288,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Erythrocytes Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte erythrocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (16 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte erythrocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (16 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2304,7 +2304,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Erythrocytes Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte erythrocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte erythrocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2320,7 +2320,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Erythrocytes Semiquantitative",
-      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte erythrocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte erythrocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2336,7 +2336,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hba1c-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Hba1c Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hba1c (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2352,7 +2352,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hba1c-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Hba1c Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2368,7 +2368,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hba1c-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hba1c Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hba1c (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hba1c (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2384,7 +2384,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hba1c-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Hba1c Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'HbA1c in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (8), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'HbA1c in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (8, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2400,7 +2400,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hematocrit-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Hematocrit Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hematocrit (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hematocrit (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 107 concepts (106 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2416,7 +2416,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hematocrit-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Hematocrit Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hematocrit (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 52 concepts (52 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hematocrit (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 52 concepts (52 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2432,7 +2432,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hematocrit-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hematocrit Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hematocrit (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (16 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hematocrit (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (16 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2448,7 +2448,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hematocrit-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hematocrit Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2464,7 +2464,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hematocrit-semiquantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hematocrit Semiquantitative",
-      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hematocrit (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hematocrit (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2480,7 +2480,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hematocrit-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Hematocrit Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Hematocrit (volume fraction) in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Hematocrit (volume fraction) in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2496,7 +2496,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Hemoglobin Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 89 concepts (89 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 89 concepts (89 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2512,7 +2512,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Hemoglobin Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 40 concepts (40 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 40 concepts (40 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2528,7 +2528,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hemoglobin Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hemoglobin (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 30 concepts (30 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte hemoglobin (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 30 concepts (30 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2544,7 +2544,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hemoglobin Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2560,7 +2560,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Hemoglobin Semiquantitative",
-      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hemoglobin (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hemoglobin (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2576,7 +2576,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-hemoglobin-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Hemoglobin Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Hemoglobin concentration in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (19), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Hemoglobin concentration in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (19, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2592,7 +2592,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-ldh-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Ldh Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 79 concepts (79 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte ldh (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 79 concepts (79 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2608,7 +2608,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-ldh-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Ldh Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte ldh (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 41 concepts (41 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte ldh (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 41 concepts (41 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2624,7 +2624,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-ldh-isoenzymes"
       },
       "name" : "MII VS Labor LOINC Ontology Ldh Isoenzymes",
-      "description" : "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (38), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (38, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2640,7 +2640,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-ldh-monitoring-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Ldh Monitoring Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'LDH (total) monitoring in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'LDH (total) monitoring in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2656,7 +2656,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-ldh-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Ldh Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte ldh (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte ldh (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2672,7 +2672,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-ldh-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Ldh Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte ldh (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 77 concepts (77 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte ldh (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 77 concepts (77 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2688,7 +2688,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte leukocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 161 concepts (158 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte leukocytes (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 161 concepts (158 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2704,7 +2704,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte leukocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 86 concepts (86 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte leukocytes (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 86 concepts (86 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2720,7 +2720,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-count-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Count Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Leukocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (11), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Leukocyte count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (11, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2736,7 +2736,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-differential-panel"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Differential Panel",
-      "description" : "Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)`",
+      "description" : "Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (0, LOINC 2.83), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)`",
       "exampleBoolean" : false
     },
     {
@@ -2752,7 +2752,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte leukocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 34 concepts (33 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte leukocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 34 concepts (33 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2768,7 +2768,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte leukocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 123 concepts (123 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte leukocytes (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 123 concepts (123 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2784,7 +2784,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-leukocytes-semiquantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Leukocytes Semiquantitative",
-      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte leukocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte leukocytes (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2800,7 +2800,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mch-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Mch Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte mch (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 296 concepts (293 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte mch (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 296 concepts (293 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2816,7 +2816,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mch-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Mch Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte mch (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 59 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte mch (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 59 concepts (57 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2832,7 +2832,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mch-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Mch Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte mch (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 114 concepts (114 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte mch (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 114 concepts (114 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2848,7 +2848,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mch-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Mch Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mch (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 180 concepts (177 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mch (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 180 concepts (177 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2864,7 +2864,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mch-semiquantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Mch Semiquantitative",
-      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte mch (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte mch (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2880,7 +2880,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mch-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Mch Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (6), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin (MCH)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (6, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2896,7 +2896,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mchc-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Mchc Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte mchc (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte mchc (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2912,7 +2912,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mchc-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Mchc Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mchc (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mchc (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2928,7 +2928,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mchc-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Mchc Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2944,7 +2944,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mcv-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Mcv Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte mcv (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte mcv (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -2960,7 +2960,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mcv-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Mcv Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mcv (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mcv (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -2976,7 +2976,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-mcv-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Mcv Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -2992,7 +2992,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Methemoglobin Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte methemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 17 concepts (17 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte methemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 17 concepts (17 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -3008,7 +3008,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Methemoglobin Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte methemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte methemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3024,7 +3024,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Methemoglobin Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte methemoglobin (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte methemoglobin (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3040,7 +3040,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Methemoglobin Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte methemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 15 concepts (15 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte methemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 15 concepts (15 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3056,7 +3056,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-methemoglobin-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Methemoglobin Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Methemoglobin in blood (quantitative)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (11), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Methemoglobin in blood (quantitative)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (11, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 685451010000100 |Measurement property (qualifier value)|, << 370130000 |Property (attribute)| != << 118586006 |Ratio (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -3072,7 +3072,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Nitrite Urine Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte nitrite urine (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 9 concepts (9 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte nitrite urine (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 9 concepts (9 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -3088,7 +3088,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Nitrite Urine Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte nitrite urine (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 5 concepts (5 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte nitrite urine (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 5 concepts (5 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3104,7 +3104,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Nitrite Urine Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte nitrite urine (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte nitrite urine (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3120,7 +3120,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Nitrite Urine Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte nitrite urine (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 5 concepts (5 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte nitrite urine (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 5 concepts (5 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3136,7 +3136,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Nitrite Urine Semiquantitative",
-      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte nitrite urine (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte nitrite urine (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3152,7 +3152,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-nitrite-urine-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Nitrite Urine Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Nitrite in urine (qualitative)' (standard tier, specimen Urine), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118589004 |Threshold (property) (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Nitrite in urine (qualitative)' (standard tier, specimen Urine), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, << 704327008 |Direct site (attribute)| = << 122575003 |Urine specimen (specimen)|, << 370130000 |Property (attribute)| = << 118589004 |Threshold (property) (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -3168,7 +3168,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-platelets-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Platelets Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte platelets (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 19 concepts (19 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte platelets (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 19 concepts (19 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -3184,7 +3184,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-platelets-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Platelets Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte platelets (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 15 concepts (15 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte platelets (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 15 concepts (15 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3200,7 +3200,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-platelets-count-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Platelets Count Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -3216,7 +3216,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-platelets-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Platelets Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte platelets (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte platelets (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3232,7 +3232,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-platelets-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Platelets Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte platelets (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (17 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte platelets (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 17 concepts (17 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3248,7 +3248,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-potassium-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Potassium Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte potassium (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte potassium (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -3264,7 +3264,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-potassium-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Potassium Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte potassium (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 42 concepts (42 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte potassium (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 42 concepts (42 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3280,7 +3280,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-potassium-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Potassium Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte potassium (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte potassium (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3296,7 +3296,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-potassium-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Potassium Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -3312,7 +3312,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-complete"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Complete",
-      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte psa (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 37 concepts (37 with LOINC). The pool ECL is carried as an intensional include.",
+      "description" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte psa (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 37 concepts (37 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "exampleBoolean" : false
     },
     {
@@ -3328,7 +3328,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-convertible"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Convertible",
-      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte psa (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 26 concepts (26 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte psa (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 26 concepts (26 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3344,7 +3344,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-free-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Free Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Free PSA in serum/plasma' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 706958000 |Free prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Free PSA in serum/plasma' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 706958000 |Free prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {
@@ -3360,7 +3360,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-free-total-ratio"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Free Total Ratio",
-      "description" : "Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (1), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)`",
+      "description" : "Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (1, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)`",
       "exampleBoolean" : false
     },
     {
@@ -3376,7 +3376,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-qualitative"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Qualitative",
-      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte psa (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte psa (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 1 concepts (1 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3392,7 +3392,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-quantitative"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Quantitative",
-      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte psa (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 36 concepts (36 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte psa (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 36 concepts (36 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "exampleBoolean" : false
     },
     {
@@ -3408,7 +3408,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-labor-loinc-ontology-psa-total-standard"
       },
       "name" : "MII VS Labor LOINC Ontology Psa Total Standard",
-      "description" : "Proposal: LOINC codes of the clinical test 'Total PSA in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+      "description" : "Proposal: LOINC codes of the clinical test 'Total PSA in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118539007 |Mass concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
       "exampleBoolean" : false
     },
     {

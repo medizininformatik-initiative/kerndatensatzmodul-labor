@@ -196,7 +196,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "concept" : [{
         "code" : "18717-9",
         "display" : "Blood bank studies (set)"

@@ -91,7 +91,7 @@ Probenmenge nach dem Urinsediment nicht ausreichend.
     },
     {
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "code" : "26436-6",
       "display" : "Laboratory studies (set)"
     }]
@@ -99,7 +99,7 @@ Probenmenge nach dem Urinsediment nicht ausreichend.
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "code" : "14683-7",
       "display" : "Creatinine [Moles/volume] in Urine"
     }],

@@ -26,7 +26,7 @@ A worked example instance, [Laboratory result: hemoglobin (LOINC Ontology profil
 
 ### At a glance
 
-* Release used: **LOINC Ontology 2026-10-21** (`http://snomed.info/sct/11010000107/version/20261021`); the module's LOINC pin is 2.82.
+* Release used: **LOINC Ontology 2026-10-21** (`http://snomed.info/sct/11010000107/version/20261021`); LOINC enumerations pinned to **LOINC 2.83**, the LOINC release the LOINC Ontology is built on. The module's own LOINC pin is 2.83.
 * Every ValueSet carries the LOINC enumeration, the LOINC Ontology observables that have no LOINC code yet, and the rule itself as an intensional SNOMED CT include.
 * All artifacts are `draft` and `experimental`. Their canonical URLs follow the module pattern and would be stable if the module adopted them.
 * Generator, rule set and per-concept review tables: [loincsnomed-lab-concepts](https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts).

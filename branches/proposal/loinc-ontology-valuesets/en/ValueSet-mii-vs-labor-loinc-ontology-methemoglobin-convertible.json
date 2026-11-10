@@ -25,7 +25,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-methemoglobin-convertible</b></p><a name=\"mii-vs-labor-loinc-ontology-methemoglobin-convertible\"> </a><a name=\"hcmii-vs-labor-loinc-ontology-methemoglobin-convertible\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.82\"> version &#x1F4CD;2.82</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/15082-1/\">15082-1</a></td><td style=\"color: #cccccc\">Methemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/56040-9/\">56040-9</a></td><td style=\"color: #cccccc\">Methemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/72262-9/\">72262-9</a></td><td style=\"color: #cccccc\">Methemoglobin [Moles/volume] in Cerebral spinal fluid</td></tr></table></li></ul></div>"
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-methemoglobin-convertible</b></p><a name=\"mii-vs-labor-loinc-ontology-methemoglobin-convertible\"> </a><a name=\"hcmii-vs-labor-loinc-ontology-methemoglobin-convertible\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.83\"> version &#x1F4CD;2.83</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/15082-1/\">15082-1</a></td><td style=\"color: #cccccc\">Methemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/56040-9/\">56040-9</a></td><td style=\"color: #cccccc\">Methemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href=\"https://loinc.org/72262-9/\">72262-9</a></td><td style=\"color: #cccccc\">Methemoglobin [Moles/volume] in Cerebrospinal Fluid</td></tr></table></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
@@ -146,7 +146,7 @@
   "title" : "MII VS Labor LOINC Ontology Methemoglobin Convertible",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-02",
+  "date" : "2026-11-10",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -155,7 +155,7 @@
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte methemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte methemoglobin (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (3 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -168,7 +168,7 @@
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "concept" : [{
         "code" : "15082-1"
       },

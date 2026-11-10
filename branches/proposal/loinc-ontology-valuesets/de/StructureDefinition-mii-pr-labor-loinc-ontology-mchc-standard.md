@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-mchc-standard | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-02 | *Maschinenlesbarer Name*:MII_PR_Labor_LOINC_Ontology_Mchc_Standard |
+| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_Labor_LOINC_Ontology_Mchc_Standard |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
@@ -214,7 +214,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   "title" : "MII PR Labor LOINC Ontology Mchc Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-02",
+  "date" : "2026-11-10",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

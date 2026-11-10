@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-ldh-monitoring-standard | *Version*:2027.0.0-ci |
-| Draft as of 2026-11-02 | *Computable Name*:MII_PR_Labor_LOINC_Ontology_Ldh_Monitoring_Standard |
+| Draft as of 2026-11-10 | *Computable Name*:MII_PR_Labor_LOINC_Ontology_Ldh_Monitoring_Standard |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-loin
   "title" : "MII PR Labor LOINC Ontology Ldh Monitoring Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-02",
+  "date" : "2026-11-10",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

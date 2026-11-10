@@ -93,7 +93,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     },
     {
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "code" : "26436-6",
       "display" : "Laboratory studies (set)"
     }]
@@ -101,7 +101,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "code" : "718-7",
       "display" : "Hemoglobin [Mass/volume] in Blood"
     }],

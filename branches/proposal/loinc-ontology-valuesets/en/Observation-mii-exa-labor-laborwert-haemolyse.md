@@ -111,7 +111,7 @@ Probe hämolytisch, Kaliumwert möglicherweise falsch hoch.
     },
     {
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "code" : "26436-6",
       "display" : "Laboratory studies (set)"
     }]
@@ -125,7 +125,7 @@ Probe hämolytisch, Kaliumwert möglicherweise falsch hoch.
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "code" : "6298-4",
       "display" : "Potassium [Moles/volume] in Blood"
     }],

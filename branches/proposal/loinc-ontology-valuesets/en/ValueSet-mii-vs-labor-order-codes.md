@@ -196,7 +196,7 @@ Kodierung der Beauftragungen von Laboruntersuchungen
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "filter" : [{
         "property" : "ORDER_OBS",
         "op" : "regex",

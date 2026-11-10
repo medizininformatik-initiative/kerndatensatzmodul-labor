@@ -224,7 +224,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2019+ Medizininformatik Initiative.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on FHIR 4.0.1.
-          Generated 2026-11-02
+          Generated 2026-11-10
           
           
             
@@ -250,7 +250,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2019+ Medizininformatik Initiative.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf FHIR 4.0.1.
-          Erstellt 2026-11-02
+          Erstellt 2026-11-10
           
           
             
@@ -808,7 +808,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Mon, Nov 2, 2026 18:59+0000">2026-11-02</span>
+          Erstellt           <span title="Tue, Nov 10, 2026 07:21+0000">2026-11-10</span>
 
                     <br/>
 
@@ -1837,7 +1837,16 @@ Der Begriff "Interpretation" bezieht sich in der FHIR-Darstellung des Laborbefun
         </td>
         <td>
 Die Artefakte sind auf           <strong>LOINC Ontology 2026-10-21</strong>
- gepinnt. Die LOINC Ontology erscheint in regelmäßigen Releases; das Modul pinnt für seine eigenen ValueSets LOINC 2.82. Ein Code, den LOINC zwischen beiden Ständen eingeführt oder abgekündigt hat, ist ein Review-Punkt, kein Versagen der Methode. Für ein neues Release führt der Generator jede Regel erneut aus, listet die Konzepte, die in jedem ValueSet hinzugekommen oder weggefallen sind, und schreibt diese Seiten neu. Ein Release kann auch die Attribute selbst neu modellieren: Zwischen 2026-03-21 und 2026-10-21 hat die LOINC Ontology über 10.000 Nachweis-Observables von der Property           <code class="language-plaintext highlighter-rouge">Presence</code>
+ gepinnt, ihre LOINC-Aufzählungen auf           <strong>LOINC 2.83</strong>
+, das LOINC-Release, auf dem dieses Ontology-Release aufbaut. Dieser LOINC-Alias liegt neben den ValueSets (          <code class="language-plaintext highlighter-rouge">aliases-loinc-ontology.fsh</code>
+), nicht in der           <code class="language-plaintext highlighter-rouge">aliases.fsh</code>
+ des Moduls: Das Modul pinnt für seine eigenen ValueSets LOINC 2.83 und erzwingt diese Version im Expansion-Manifest (          <code class="language-plaintext highlighter-rouge">force-system-version</code>
+); ein IG-Build validiert also jeden LOINC-Code gegen den Pin des Moduls, unabhängig davon, was ein ValueSet deklariert. Die beiden Pins bleiben getrennt, damit ein neues LOINC-Ontology-Release regeneriert werden kann, ohne das Modul anzufassen. Ein Code, den LOINC zwischen beiden Ständen eingeführt oder abgekündigt hat, ist ein Review-Punkt, kein Versagen der Methode. 5 der aufgezählten Codes wurden mit LOINC 2.83 eingeführt und sind unter jedem älteren LOINC-Pin unbekannte Codes:           <code class="language-plaintext highlighter-rouge">113033-5</code>
+ Leukocytes [Presence] in Bronchoalveolar lavage,           <code class="language-plaintext highlighter-rouge">113044-2</code>
+ Leukocytes [Presence] in Vaginal fluid,           <code class="language-plaintext highlighter-rouge">113052-5</code>
+ Leukocytes [Presence] in Pleural fluid,           <code class="language-plaintext highlighter-rouge">113058-2</code>
+ Leukocytes [Presence] in Peritoneal fluid by Gram stain,           <code class="language-plaintext highlighter-rouge">113077-2</code>
+ Leukocytes [Presence] in Tissue. Für ein neues Release führt der Generator jede Regel erneut aus, listet die Konzepte, die in jedem ValueSet hinzugekommen oder weggefallen sind, und schreibt diese Seiten neu. Ein Release kann auch die Attribute selbst neu modellieren: Zwischen 2026-03-21 und 2026-10-21 hat die LOINC Ontology über 10.000 Nachweis-Observables von der Property           <code class="language-plaintext highlighter-rouge">Presence</code>
  (705057003) auf           <code class="language-plaintext highlighter-rouge">Threshold (property)</code>
  (118589004, ein Subtyp von Measurement property) umgestellt und von „Presence of …" in „Threshold presence of …" umbenannt. Die Nitrit-Regel auf diesem Branch selektiert deshalb           <code class="language-plaintext highlighter-rouge">&lt;&lt; 118589004 |Threshold (property)|</code>
  statt           <code class="language-plaintext highlighter-rouge">&lt;&lt; 705057003 |Presence|</code>
@@ -2062,7 +2071,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Mon, Nov 2, 2026 18:59+0000">2026-11-02</span>
+          Generated           <span title="Tue, Nov 10, 2026 07:21+0000">2026-11-10</span>
 
                     <br/>
 
@@ -2473,7 +2482,16 @@ In the FHIR representation of a laboratory report, the term “interpretation”
         </td>
         <td>
 The artifacts are pinned to           <strong>LOINC Ontology 2026-10-21</strong>
-. The LOINC Ontology is released periodically; the module pins LOINC 2.82 for its own ValueSets. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. A release can also remodel the attributes themselves: between 2026-03-21 and 2026-10-21 the LOINC Ontology moved more than 10,000 presence observables from Property           <code class="language-plaintext highlighter-rouge">Presence</code>
+, and their LOINC enumerations to           <strong>LOINC 2.83</strong>
+, the LOINC release that LOINC Ontology release is built on. That LOINC alias lives next to the ValueSets (          <code class="language-plaintext highlighter-rouge">aliases-loinc-ontology.fsh</code>
+), not in the module's           <code class="language-plaintext highlighter-rouge">aliases.fsh</code>
+: the module pins LOINC 2.83 for its own ValueSets and forces that version in its expansion manifest (          <code class="language-plaintext highlighter-rouge">force-system-version</code>
+), so an IG build validates every LOINC code against the module's pin, whatever a ValueSet declares. The two pins are kept separate so that a new LOINC Ontology release can be regenerated without touching the module. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. 5 of the enumerated codes were introduced in LOINC 2.83 and are unknown codes under any older LOINC pin:           <code class="language-plaintext highlighter-rouge">113033-5</code>
+ Leukocytes [Presence] in Bronchoalveolar lavage,           <code class="language-plaintext highlighter-rouge">113044-2</code>
+ Leukocytes [Presence] in Vaginal fluid,           <code class="language-plaintext highlighter-rouge">113052-5</code>
+ Leukocytes [Presence] in Pleural fluid,           <code class="language-plaintext highlighter-rouge">113058-2</code>
+ Leukocytes [Presence] in Peritoneal fluid by Gram stain,           <code class="language-plaintext highlighter-rouge">113077-2</code>
+ Leukocytes [Presence] in Tissue. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. A release can also remodel the attributes themselves: between 2026-03-21 and 2026-10-21 the LOINC Ontology moved more than 10,000 presence observables from Property           <code class="language-plaintext highlighter-rouge">Presence</code>
  (705057003) to           <code class="language-plaintext highlighter-rouge">Threshold (property)</code>
  (118589004, a subtype of Measurement property) and renamed them from "Presence of …" to "Threshold presence of …". The nitrite rule on this branch therefore selects           <code class="language-plaintext highlighter-rouge">&lt;&lt; 118589004 |Threshold (property)|</code>
  instead of           <code class="language-plaintext highlighter-rouge">&lt;&lt; 705057003 |Presence|</code>

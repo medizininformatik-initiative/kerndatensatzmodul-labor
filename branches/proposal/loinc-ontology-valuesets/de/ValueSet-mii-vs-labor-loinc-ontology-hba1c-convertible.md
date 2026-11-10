@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-convertible | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-02 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Hba1c_Convertible |
+| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Hba1c_Convertible |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above. 
+Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above. 
 
  **References** 
 
@@ -179,7 +179,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "MII VS Labor LOINC Ontology Hba1c Convertible",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-02",
+  "date" : "2026-11-10",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -188,7 +188,7 @@ No Expansion for this valueset (Unsupported Code System Version)
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "description" : "Proposal: use-case ValueSet 'Quantitative & convertible' for the analyte hba1c (Quantitative with a concentration property (mass/substance/arbitrary/number/quantity), excluding ratios and fractions. The set whose values can actually be pooled / unit-converted.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 3 concepts (1 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -201,7 +201,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",
-      "version" : "2.82",
+      "version" : "2.83",
       "concept" : [{
         "code" : "41995-2"
       }]
