@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Mcv_Quantitative
 Id: mii-vs-labor-loinc-ontology-mcv-quantitative
 Title: "MII VS Labor LOINC Ontology Mcv Quantitative"
-Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mcv (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte mcv (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 525321010000100 |Mean cell volume (observable entity)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,8 +18,8 @@ Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the a
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-02"
+* ^date = "2026-11-10"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
-// Analyte mcv, bucket quantitative: LOINC enumeration (2 codes) resolved from the ECL below
-* $loinc#30428-7
-* $loinc#787-2
+// Analyte mcv, bucket quantitative: LOINC enumeration (2 codes, LOINC 2.83) resolved from the ECL below
+* $loinc-ontology-loinc#30428-7
+* $loinc-ontology-loinc#787-2

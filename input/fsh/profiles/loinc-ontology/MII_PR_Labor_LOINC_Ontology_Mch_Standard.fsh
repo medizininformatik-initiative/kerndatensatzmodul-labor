@@ -10,7 +10,7 @@ Description: "Proposal: Observation profile for the clinical test 'Mean cell hem
 * insert SnomedLicense
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-02"
+* ^date = "2026-11-10"
 * code from MII_VS_Labor_LOINC_Ontology_Mch_Standard (required)
 * code ^binding.description = "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`"
 * value[x] only Quantity

@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Psa_Quantitative
 Id: mii-vs-labor-loinc-ontology-psa-quantitative
 Title: "MII VS Labor LOINC Ontology Psa Quantitative"
-Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte psa (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 36 concepts (36 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte psa (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|` against the LOINC Ontology 2026-10-21. 36 concepts (36 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,42 +18,42 @@ Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the a
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-02"
+* ^date = "2026-11-10"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
-// Analyte psa, bucket quantitative: LOINC enumeration (36 codes) resolved from the ECL below
-* $loinc#59238-6
-* $loinc#59235-2
-* $loinc#59236-0
-* $loinc#59237-8
-* $loinc#12841-3
-* $loinc#48167-1
-* $loinc#109229-5
-* $loinc#110243-3
-* $loinc#109230-3
-* $loinc#110671-5
-* $loinc#19204-7
-* $loinc#19201-3
-* $loinc#19198-1
-* $loinc#19195-7
-* $loinc#59239-4
-* $loinc#59231-1
-* $loinc#59224-6
-* $loinc#59232-9
-* $loinc#19205-4
-* $loinc#10886-0
-* $loinc#83113-1
-* $loinc#47738-0
-* $loinc#59230-3
-* $loinc#100716-0
-* $loinc#59223-8
-* $loinc#59221-2
-* $loinc#19199-9
-* $loinc#2857-1
-* $loinc#35741-8
-* $loinc#83112-3
-* $loinc#34611-4
-* $loinc#33667-7
-* $loinc#19206-2
-* $loinc#19203-9
-* $loinc#19200-5
-* $loinc#19197-3
+// Analyte psa, bucket quantitative: LOINC enumeration (36 codes, LOINC 2.83) resolved from the ECL below
+* $loinc-ontology-loinc#59238-6
+* $loinc-ontology-loinc#59235-2
+* $loinc-ontology-loinc#59236-0
+* $loinc-ontology-loinc#59237-8
+* $loinc-ontology-loinc#12841-3
+* $loinc-ontology-loinc#48167-1
+* $loinc-ontology-loinc#109229-5
+* $loinc-ontology-loinc#110243-3
+* $loinc-ontology-loinc#109230-3
+* $loinc-ontology-loinc#110671-5
+* $loinc-ontology-loinc#19204-7
+* $loinc-ontology-loinc#19201-3
+* $loinc-ontology-loinc#19198-1
+* $loinc-ontology-loinc#19195-7
+* $loinc-ontology-loinc#59239-4
+* $loinc-ontology-loinc#59231-1
+* $loinc-ontology-loinc#59224-6
+* $loinc-ontology-loinc#59232-9
+* $loinc-ontology-loinc#19205-4
+* $loinc-ontology-loinc#10886-0
+* $loinc-ontology-loinc#83113-1
+* $loinc-ontology-loinc#47738-0
+* $loinc-ontology-loinc#59230-3
+* $loinc-ontology-loinc#100716-0
+* $loinc-ontology-loinc#59223-8
+* $loinc-ontology-loinc#59221-2
+* $loinc-ontology-loinc#19199-9
+* $loinc-ontology-loinc#2857-1
+* $loinc-ontology-loinc#35741-8
+* $loinc-ontology-loinc#83112-3
+* $loinc-ontology-loinc#34611-4
+* $loinc-ontology-loinc#33667-7
+* $loinc-ontology-loinc#19206-2
+* $loinc-ontology-loinc#19203-9
+* $loinc-ontology-loinc#19200-5
+* $loinc-ontology-loinc#19197-3

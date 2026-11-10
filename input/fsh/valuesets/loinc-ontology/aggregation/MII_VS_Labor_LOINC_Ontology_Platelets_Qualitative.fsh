@@ -1,7 +1,7 @@
 ValueSet: MII_VS_Labor_LOINC_Ontology_Platelets_Qualitative
 Id: mii-vs-labor-loinc-ontology-platelets-qualitative
 Title: "MII VS Labor LOINC Ontology Platelets Qualitative"
-Description: "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte platelets (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+Description: "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte platelets (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -18,8 +18,8 @@ Description: "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / pres
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-02"
+* ^date = "2026-11-10"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
-// Analyte platelets, bucket qualitative: LOINC enumeration (2 codes) resolved from the ECL below
-* $loinc#104705-9
-* $loinc#9317-9
+// Analyte platelets, bucket qualitative: LOINC enumeration (2 codes, LOINC 2.83) resolved from the ECL below
+* $loinc-ontology-loinc#104705-9
+* $loinc-ontology-loinc#9317-9
