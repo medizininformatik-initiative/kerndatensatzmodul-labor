@@ -25,8 +25,6 @@ Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (speci
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 

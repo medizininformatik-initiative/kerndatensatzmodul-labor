@@ -25,8 +25,6 @@ Proposal: LOINC codes of the clinical test 'Total PSA in serum/plasma' (standard
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
-
 -------
 
  [Beschreibung der obigen Tabelle(n)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
