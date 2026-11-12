@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14.90"}
-    h3,h4,h5,h6{--heading-prefix:"14.90"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.98"}
+    h3,h4,h5,h6{--heading-prefix:"14.98"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -347,7 +347,7 @@
           
 
             Stand: 
-2026-11-10
+2026-11-12
 
           
         
@@ -370,7 +370,7 @@
   </table>
 
 <p>
-<p>Proposal: LOINC codes of the clinical test 'Nitrite in urine (qualitative)' (standard tier, specimen Urine), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122575003 |Urine specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118589004 |Threshold (property) (qualifier value)|</code></p>
+<p>Proposal: LOINC codes of the clinical test 'Nitrite in urine (qualitative)' (standard tier, specimen Urine), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (3, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122575003 |Urine specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118589004 |Threshold (property) (qualifier value)|</code></p>
 
 </p>
 
@@ -401,7 +401,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="mii-vs-labor-loinc-ontology-nitrite-urine-standard"> </a><a name="hcmii-vs-labor-loinc-ontology-nitrite-urine-standard"> </a>
 <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p>
 <ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.83"> version &#x1F4CD;2.83</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/5802-4/">5802-4</a></td><td></td></tr><tr><td><a href="https://loinc.org/50558-6/">50558-6</a></td><td></td></tr><tr><td><a href="https://loinc.org/32710-6/">32710-6</a></td><td></td></tr></table></li>
-<li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20261021"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20261021</span> where constraint  = &lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122575003 |Urine specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118589004 |Threshold (property) (qualifier value)|</li></ul></div>
+<li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20261021"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20261021</span> where constraint  = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = &lt;&lt; 122575003 |Urine specimen (specimen)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118589004 |Threshold (property) (qualifier value)|</li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
@@ -445,7 +445,7 @@
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-psa-free-total-ratio | *Version*:2027.0.0-ci |
-| Draft as of 2026-11-10 | *Computable Name*:MII_PR_Labor_LOINC_Ontology_Psa_Free_Total_Ratio |
+| Draft as of 2026-11-12 | *Computable Name*:MII_PR_Labor_LOINC_Ontology_Psa_Free_Total_Ratio |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-loin
   "title" : "MII PR Labor LOINC Ontology Psa Free Total Ratio",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -229,7 +229,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-loin
       "path" : "Observation.code",
       "binding" : {
         "strength" : "required",
-        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)`",
+        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)`",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-psa-free-total-ratio"
       }
     },

@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.10"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.12"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -338,16 +338,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#methemoglobin-in-blood-quantitative" id="markdown-toc-methemoglobin-in-blood-quantitative">Methemoglobin in blood (quantitative)</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>methemoglobin</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>methemoglobin</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 27840003 |Methemoglobin (substance)|</code> (17 concepts, 17 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-convertible.html">Convertible</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-qualitative.html">Qualitative</a>.</p>
 
 <h3 id="methemoglobin-in-blood-quantitative">Methemoglobin in blood (quantitative)</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-standard.html">mii-vs-labor-loinc-ontology-methemoglobin-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-methemoglobin-standard.html">mii-pr-labor-loinc-ontology-methemoglobin-standard</a>. The rule selects 11 of the 17 pool concepts.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-standard.html">mii-vs-labor-loinc-ontology-methemoglobin-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-methemoglobin-standard.html">mii-pr-labor-loinc-ontology-methemoglobin-standard</a>. The rule selects 7 of the 17 pool concepts.</p>
 
 <table>
   <thead>
@@ -359,11 +360,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>Component</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Methemoglobin</code></td>
+      <td>Methemoglobin</td>
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -380,13 +381,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="included-11">Included (11)</h4>
+<h4 id="included-7">Included (7)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -394,14 +395,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>4534-4</td>
-      <td>Cyanmethemoglobin/Hemoglobin.total in Blood</td>
-      <td>Blood specimen</td>
-      <td>Mass fraction</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
     <tr>
       <td>15082-1</td>
       <td>Methemoglobin [Mass/volume] in Blood</td>
@@ -427,14 +420,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>–</td>
     </tr>
     <tr>
-      <td>72361-9</td>
-      <td>Methemoglobin/Hemoglobin.total in Arterial cord blood</td>
-      <td>Arterial cord blood specimen</td>
-      <td>Mass fraction</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
       <td>2614-6</td>
       <td>Methemoglobin/Hemoglobin.total in Blood</td>
       <td>Blood specimen</td>
@@ -446,14 +431,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>2616-1</td>
       <td>Methemoglobin/Hemoglobin.total in Capillary blood</td>
       <td>Capillary blood specimen</td>
-      <td>Mass fraction</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>55942-7</td>
-      <td>Methemoglobin/Hemoglobin.total in Cord blood</td>
-      <td>Cord blood specimen</td>
       <td>Mass fraction</td>
       <td>Quantitative value</td>
       <td>–</td>
@@ -474,31 +451,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
       <td>–</td>
     </tr>
-    <tr>
-      <td>72360-1</td>
-      <td>Methemoglobin/Hemoglobin.total in Venous cord blood</td>
-      <td>Venous cord blood specimen</td>
-      <td>Mass fraction</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
   </tbody>
 </table>
 
 <ul>
-  <li><strong>Specimens among the included codes</strong>: Blood specimen (4), Arterial blood specimen (1), Arterial cord blood specimen (1), Capillary blood specimen (1), Cord blood specimen (1), Mixed venous blood specimen (1), Venous blood specimen (1), Venous cord blood specimen (1)</li>
+  <li><strong>Specimens among the included codes</strong>: Blood specimen (3), Arterial blood specimen (1), Capillary blood specimen (1), Mixed venous blood specimen (1), Venous blood specimen (1)</li>
   <li><strong>Techniques among the included codes</strong>: (none)</li>
 </ul>
 
-<h4 id="excluded-from-the-pool-6">Excluded from the pool (6)</h4>
+<h4 id="excluded-from-the-pool-10">Excluded from the pool (10)</h4>
 
-<p><strong>Excluded because Direct site does not match (3)</strong></p>
+<p><strong>Excluded because Direct site does not match (6)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -509,14 +478,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Cerebrospinal fluid specimen</td>
     </tr>
     <tr>
+      <td>72361-9</td>
+      <td>Methemoglobin/Hemoglobin.total in Arterial cord blood</td>
+      <td>Arterial cord blood specimen</td>
+    </tr>
+    <tr>
       <td>97554-0</td>
       <td>Methemoglobin/Hemoglobin.total in Central venous blood</td>
       <td>–</td>
     </tr>
     <tr>
+      <td>55942-7</td>
+      <td>Methemoglobin/Hemoglobin.total in Cord blood</td>
+      <td>Cord blood specimen</td>
+    </tr>
+    <tr>
       <td>2618-7</td>
       <td>Methemoglobin/Hemoglobin.total in Red Blood Cells</td>
       <td>Erythrocyte specimen</td>
+    </tr>
+    <tr>
+      <td>72360-1</td>
+      <td>Methemoglobin/Hemoglobin.total in Venous cord blood</td>
+      <td>Venous cord blood specimen</td>
     </tr>
   </tbody>
 </table>
@@ -529,7 +513,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Scale type</th>
     </tr>
   </thead>
@@ -549,13 +533,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109592-6.</p>
 
+<p><strong>Excluded because Component does not match (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Direct site</th>
+      <th>Property</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4534-4</td>
+      <td>Cyanmethemoglobin/Hemoglobin.total in Blood</td>
+      <td>Blood specimen</td>
+      <td>Mass fraction</td>
+      <td>Quantitative value</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Excluded because Direct site and Scale type do not match (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -574,7 +581,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><strong>Fraction and concentration are both in.</strong> The rule admits every measurement property except ratio, so Methemoglobin/Hemoglobin.total (%) and the mass or substance concentrations are in one set. Blood gas analysers report the fraction; the profile names two expected units accordingly.</li>
-  <li><strong>Cord blood and all blood subtypes</strong> are in, as with hemoglobin.</li>
+  <li><strong>Exact Component.</strong> The previous rule used <code class="language-plaintext highlighter-rouge">&lt;&lt; Methemoglobin</code> and thereby included cyanmethemoglobin (4534-4), a subtype substance; the exact match leaves it out.</li>
+  <li><strong>Cord blood</strong> (55942-7, 72360-1, 72361-9) is out via the blood block.</li>
   <li><strong>Red blood cell specimen</strong> codes (2618-7, 2619-5) and central venous blood (97554-0, no Direct site in this release) are out.</li>
 </ul>
 
@@ -586,7 +594,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -751,6 +759,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<p>Recall check against LOINC 2.83 itself: 21 laboratory terms match the analyte's LOINC pattern (Component ~ ^Methemoglobin(/Hemoglobin.total)?$); 16 of them are in the pool, 5 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>71882-5</td>
+      <td>Methemoglobin/Hemoglobin.total [Pure mass fraction] in Arterial blood</td>
+      <td>MFr.DF</td>
+      <td>BldA</td>
+    </tr>
+    <tr>
+      <td>71883-3</td>
+      <td>Methemoglobin/Hemoglobin.total [Pure mass fraction] in Blood</td>
+      <td>MFr.DF</td>
+      <td>Bld</td>
+    </tr>
+    <tr>
+      <td>71881-7</td>
+      <td>Methemoglobin/Hemoglobin.total [Pure mass fraction] in Capillary blood</td>
+      <td>MFr.DF</td>
+      <td>BldC</td>
+    </tr>
+    <tr>
+      <td>71880-9</td>
+      <td>Methemoglobin/Hemoglobin.total [Pure mass fraction] in Mixed venous blood</td>
+      <td>MFr.DF</td>
+      <td>BldMV</td>
+    </tr>
+    <tr>
+      <td>71879-1</td>
+      <td>Methemoglobin/Hemoglobin.total [Pure mass fraction] in Venous blood</td>
+      <td>MFr.DF</td>
+      <td>BldV</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -776,7 +831,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

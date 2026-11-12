@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-labor-loinc-ontology-creatinine-standard"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ci"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-creatinine-standard</b></p><a name="mii-vs-labor-loinc-ontology-creatinine-standard"> </a><a name="hcmii-vs-labor-loinc-ontology-creatinine-standard"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.83"> version &#x1F4CD;2.83</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/103616-9/">103616-9</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma by LC/MS/MS</td></tr><tr><td><a href="https://loinc.org/39966-7/">39966-7</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --5.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/2160-0/">2160-0</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/14682-9/">14682-9</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/21232-4/">21232-4</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Arterial blood</td></tr><tr><td><a href="https://loinc.org/72271-0/">72271-0</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --pre contrast</td></tr><tr><td><a href="https://loinc.org/39969-1/">39969-1</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --9 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39972-5/">39972-5</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --16 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40124-0/">40124-0</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --16 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39962-6/">39962-6</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --3.75 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/62425-4/">62425-4</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40272-7/">40272-7</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --6 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39957-6/">39957-6</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --1 hour pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/40121-6/">40121-6</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --9 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/94008-0/">94008-0</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --2 hours post dose vasopressin</td></tr><tr><td><a href="https://loinc.org/39956-8/">39956-8</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --1.5 hours pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/93999-1/">93999-1</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --1 hour post dose vasopressin</td></tr><tr><td><a href="https://loinc.org/40250-3/">40250-3</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --1 hour post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40266-9/">40266-9</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --1 hour post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39959-2/">39959-2</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --30 minutes pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/40112-5/">40112-5</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/40128-1/">40128-1</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --7 days post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39965-9/">39965-9</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --5.25 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39975-8/">39975-8</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --4 days post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40113-3/">40113-3</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --1.5 hours pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/40123-2/">40123-2</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --12 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39968-3/">39968-3</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --8 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40116-6/">40116-6</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --30 minutes pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/16188-5/">16188-5</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --2 hour specimen</td></tr><tr><td><a href="https://loinc.org/39955-0/">39955-0</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/39973-3/">39973-3</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --18 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40268-5/">40268-5</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --2 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40253-7/">40253-7</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --2.25 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40115-8/">40115-8</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --45 minutes pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/40114-1/">40114-1</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --1 hour pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/40251-1/">40251-1</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --1.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/11042-9/">11042-9</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --pre dialysis</td></tr><tr><td><a href="https://loinc.org/40265-1/">40265-1</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --30 minutes post XXX challenge</td></tr><tr><td><a href="https://loinc.org/11041-1/">11041-1</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --post dialysis</td></tr><tr><td><a href="https://loinc.org/40273-5/">40273-5</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --1 day post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40126-5/">40126-5</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --2 days post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39976-6/">39976-6</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --7 days post XXX challenge</td></tr><tr><td><a href="https://loinc.org/59826-8/">59826-8</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/39958-4/">39958-4</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --45 minutes pre XXX challenge</td></tr><tr><td><a href="https://loinc.org/77140-2/">77140-2</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum, Plasma or Blood</td></tr><tr><td><a href="https://loinc.org/51619-5/">51619-5</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --pre dialysis</td></tr><tr><td><a href="https://loinc.org/40264-4/">40264-4</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --baseline</td></tr><tr><td><a href="https://loinc.org/39970-9/">39970-9</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --10 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40119-0/">40119-0</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --4 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40248-7/">40248-7</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --baseline</td></tr><tr><td><a href="https://loinc.org/40249-5/">40249-5</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --30 minutes post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39967-5/">39967-5</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --6.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40120-8/">40120-8</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --8 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40271-9/">40271-9</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/16189-3/">16189-3</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --4 hour specimen</td></tr><tr><td><a href="https://loinc.org/40255-2/">40255-2</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --3 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40122-4/">40122-4</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --10 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40127-3/">40127-3</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --4 days post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40125-7/">40125-7</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --18 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39974-1/">39974-1</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --2 days post XXX challenge</td></tr><tr><td><a href="https://loinc.org/44784-7/">44784-7</a></td><td style="color: #cccccc">Creatinine [Mass/volume] (Maximum value during study) in Serum or Plasma</td></tr><tr><td><a href="https://loinc.org/38483-4/">38483-4</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Blood</td></tr><tr><td><a href="https://loinc.org/40252-9/">40252-9</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --2 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/51620-3/">51620-3</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --post dialysis</td></tr><tr><td><a href="https://loinc.org/40117-4/">40117-4</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --45 minutes post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40270-1/">40270-1</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --3 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40269-3/">40269-3</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --2.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39963-4/">39963-4</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --4 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39971-7/">39971-7</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --12 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40254-5/">40254-5</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --2.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/101475-2/">101475-2</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Venous blood</td></tr><tr><td><a href="https://loinc.org/40258-6/">40258-6</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --1 day post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40267-7/">40267-7</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --1.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39960-0/">39960-0</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --45 minutes post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40257-8/">40257-8</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --6 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40256-0/">40256-0</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/40118-2/">40118-2</a></td><td style="color: #cccccc">Creatinine [Moles/volume] in Serum or Plasma --3.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39964-2/">39964-2</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --4.5 hours post XXX challenge</td></tr><tr><td><a href="https://loinc.org/39961-8/">39961-8</a></td><td style="color: #cccccc">Creatinine [Mass/volume] in Serum or Plasma --3.5 hours post XXX challenge</td></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20261021"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20261021</span> where constraint  = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = (&lt;&lt; 119297000 |Blood specimen (specimen)| MINUS (&lt;&lt; 122556008 |Cord blood specimen (specimen)| OR &lt;&lt; 737357006 |Fetal blood specimen (specimen)| OR &lt;&lt; 440500007 |Dried blood spot specimen (specimen)|)), &lt;&lt; 370130000 |Property (attribute)| = (&lt;&lt; 118539007 |Mass concentration (property) (qualifier value)| OR &lt;&lt; 118556004 |Substance concentration (property) (qualifier value)| OR &lt;&lt; 118569000 |Arbitrary concentration (property) (qualifier value)|), &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C36292"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C25294"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="pw@gefyra.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-creatinine-standard"/>
+  <version value="2027.0.0-ci"/>
+  <name value="MII_VS_Labor_LOINC_Ontology_Creatinine_Standard"/>
+  <title value="MII VS Labor LOINC Ontology Creatinine Standard"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-12"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Proposal: LOINC codes of the clinical test 'Creatinine in serum, plasma or blood' (standard tier, specimen Serum/Plasma/Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (79, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = (&lt;&lt; 119297000 |Blood specimen (specimen)| MINUS (&lt;&lt; 122556008 |Cord blood specimen (specimen)| OR &lt;&lt; 737357006 |Fetal blood specimen (specimen)| OR &lt;&lt; 440500007 |Dried blood spot specimen (specimen)|)), &lt;&lt; 370130000 |Property (attribute)| = (&lt;&lt; 118539007 |Mass concentration (property) (qualifier value)| OR &lt;&lt; 118556004 |Substance concentration (property) (qualifier value)| OR &lt;&lt; 118569000 |Arbitrary concentration (property) (qualifier value)|), &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Guidance for binding Observation.code of the MII laboratory test profile to a computably defined LOINC set; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."/>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.83"/>
+      <concept>
+        <code value="103616-9"/>
+      </concept>
+      <concept>
+        <code value="39966-7"/>
+      </concept>
+      <concept>
+        <code value="2160-0"/>
+      </concept>
+      <concept>
+        <code value="14682-9"/>
+      </concept>
+      <concept>
+        <code value="21232-4"/>
+      </concept>
+      <concept>
+        <code value="72271-0"/>
+      </concept>
+      <concept>
+        <code value="39969-1"/>
+      </concept>
+      <concept>
+        <code value="39972-5"/>
+      </concept>
+      <concept>
+        <code value="40124-0"/>
+      </concept>
+      <concept>
+        <code value="39962-6"/>
+      </concept>
+      <concept>
+        <code value="62425-4"/>
+      </concept>
+      <concept>
+        <code value="40272-7"/>
+      </concept>
+      <concept>
+        <code value="39957-6"/>
+      </concept>
+      <concept>
+        <code value="40121-6"/>
+      </concept>
+      <concept>
+        <code value="94008-0"/>
+      </concept>
+      <concept>
+        <code value="39956-8"/>
+      </concept>
+      <concept>
+        <code value="93999-1"/>
+      </concept>
+      <concept>
+        <code value="40250-3"/>
+      </concept>
+      <concept>
+        <code value="40266-9"/>
+      </concept>
+      <concept>
+        <code value="39959-2"/>
+      </concept>
+      <concept>
+        <code value="40112-5"/>
+      </concept>
+      <concept>
+        <code value="40128-1"/>
+      </concept>
+      <concept>
+        <code value="39965-9"/>
+      </concept>
+      <concept>
+        <code value="39975-8"/>
+      </concept>
+      <concept>
+        <code value="40113-3"/>
+      </concept>
+      <concept>
+        <code value="40123-2"/>
+      </concept>
+      <concept>
+        <code value="39968-3"/>
+      </concept>
+      <concept>
+        <code value="40116-6"/>
+      </concept>
+      <concept>
+        <code value="16188-5"/>
+      </concept>
+      <concept>
+        <code value="39955-0"/>
+      </concept>
+      <concept>
+        <code value="39973-3"/>
+      </concept>
+      <concept>
+        <code value="40268-5"/>
+      </concept>
+      <concept>
+        <code value="40253-7"/>
+      </concept>
+      <concept>
+        <code value="40115-8"/>
+      </concept>
+      <concept>
+        <code value="40114-1"/>
+      </concept>
+      <concept>
+        <code value="40251-1"/>
+      </concept>
+      <concept>
+        <code value="11042-9"/>
+      </concept>
+      <concept>
+        <code value="40265-1"/>
+      </concept>
+      <concept>
+        <code value="11041-1"/>
+      </concept>
+      <concept>
+        <code value="40273-5"/>
+      </concept>
+      <concept>
+        <code value="40126-5"/>
+      </concept>
+      <concept>
+        <code value="39976-6"/>
+      </concept>
+      <concept>
+        <code value="59826-8"/>
+      </concept>
+      <concept>
+        <code value="39958-4"/>
+      </concept>
+      <concept>
+        <code value="77140-2"/>
+      </concept>
+      <concept>
+        <code value="51619-5"/>
+      </concept>
+      <concept>
+        <code value="40264-4"/>
+      </concept>
+      <concept>
+        <code value="39970-9"/>
+      </concept>
+      <concept>
+        <code value="40119-0"/>
+      </concept>
+      <concept>
+        <code value="40248-7"/>
+      </concept>
+      <concept>
+        <code value="40249-5"/>
+      </concept>
+      <concept>
+        <code value="39967-5"/>
+      </concept>
+      <concept>
+        <code value="40120-8"/>
+      </concept>
+      <concept>
+        <code value="40271-9"/>
+      </concept>
+      <concept>
+        <code value="16189-3"/>
+      </concept>
+      <concept>
+        <code value="40255-2"/>
+      </concept>
+      <concept>
+        <code value="40122-4"/>
+      </concept>
+      <concept>
+        <code value="40127-3"/>
+      </concept>
+      <concept>
+        <code value="40125-7"/>
+      </concept>
+      <concept>
+        <code value="39974-1"/>
+      </concept>
+      <concept>
+        <code value="44784-7"/>
+      </concept>
+      <concept>
+        <code value="38483-4"/>
+      </concept>
+      <concept>
+        <code value="40252-9"/>
+      </concept>
+      <concept>
+        <code value="51620-3"/>
+      </concept>
+      <concept>
+        <code value="40117-4"/>
+      </concept>
+      <concept>
+        <code value="40270-1"/>
+      </concept>
+      <concept>
+        <code value="40269-3"/>
+      </concept>
+      <concept>
+        <code value="39963-4"/>
+      </concept>
+      <concept>
+        <code value="39971-7"/>
+      </concept>
+      <concept>
+        <code value="40254-5"/>
+      </concept>
+      <concept>
+        <code value="101475-2"/>
+      </concept>
+      <concept>
+        <code value="40258-6"/>
+      </concept>
+      <concept>
+        <code value="40267-7"/>
+      </concept>
+      <concept>
+        <code value="39960-0"/>
+      </concept>
+      <concept>
+        <code value="40257-8"/>
+      </concept>
+      <concept>
+        <code value="40256-0"/>
+      </concept>
+      <concept>
+        <code value="40118-2"/>
+      </concept>
+      <concept>
+        <code value="39964-2"/>
+      </concept>
+      <concept>
+        <code value="39961-8"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11010000107/version/20261021"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|, &lt;&lt; 704327008 |Direct site (attribute)| = (&lt;&lt; 119297000 |Blood specimen (specimen)| MINUS (&lt;&lt; 122556008 |Cord blood specimen (specimen)| OR &lt;&lt; 737357006 |Fetal blood specimen (specimen)| OR &lt;&lt; 440500007 |Dried blood spot specimen (specimen)|)), &lt;&lt; 370130000 |Property (attribute)| = (&lt;&lt; 118539007 |Mass concentration (property) (qualifier value)| OR &lt;&lt; 118556004 |Substance concentration (property) (qualifier value)| OR &lt;&lt; 118569000 |Arbitrary concentration (property) (qualifier value)|), &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

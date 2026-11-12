@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-potassium-standard | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Potassium_Standard |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Potassium_Standard |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
+Proposal: LOINC codes of the clinical test 'Potassium in serum, plasma or blood' (standard tier, specimen Serum/Plasma/Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (15, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
 
  **References** 
 
@@ -177,7 +177,7 @@ Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard
   "title" : "MII VS Labor LOINC Ontology Potassium Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -186,7 +186,7 @@ Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "description" : "Proposal: LOINC codes of the clinical test 'Potassium in serum, plasma or blood' (standard tier, specimen Serum/Plasma/Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (15, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -201,10 +201,16 @@ Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard
       "system" : "http://loinc.org",
       "version" : "2.83",
       "concept" : [{
+        "code" : "22760-3"
+      },
+      {
         "code" : "2823-3"
       },
       {
         "code" : "29349-8"
+      },
+      {
+        "code" : "41656-0"
       },
       {
         "code" : "12812-4"
@@ -213,13 +219,31 @@ Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard
         "code" : "12813-2"
       },
       {
+        "code" : "75940-7"
+      },
+      {
+        "code" : "39789-3"
+      },
+      {
+        "code" : "6298-4"
+      },
+      {
         "code" : "93998-3"
       },
       {
         "code" : "51618-7"
       },
       {
+        "code" : "32713-0"
+      },
+      {
         "code" : "94007-2"
+      },
+      {
+        "code" : "39790-1"
+      },
+      {
+        "code" : "77142-8"
       }]
     },
     {
@@ -228,7 +252,7 @@ Proposal: LOINC codes of the clinical test 'Potassium in serum/plasma' (standard
       "filter" : [{
         "property" : "constraint",
         "op" : "=",
-        "value" : "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = << 118556004 |Substance concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+        "value" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
       }]
     }]
   }

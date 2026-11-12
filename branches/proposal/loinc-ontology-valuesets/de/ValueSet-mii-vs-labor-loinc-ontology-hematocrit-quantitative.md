@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hematocrit-quantitative | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Hematocrit_Quantitative |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Hematocrit_Quantitative |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above. 
+Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|` against the LOINC Ontology 2026-10-21. 23 concepts (23 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above. 
 
  **References** 
 
@@ -177,7 +177,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS Labor LOINC Ontology Hematocrit Quantitative",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -186,7 +186,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` against the LOINC Ontology 2026-10-21. 88 concepts (88 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
+  "description" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|` against the LOINC Ontology 2026-10-21. 23 concepts (23 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -201,45 +201,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       "system" : "http://loinc.org",
       "version" : "2.83",
       "concept" : [{
-        "code" : "109724-5"
-      },
-      {
-        "code" : "99927-6"
-      },
-      {
-        "code" : "96711-7"
-      },
-      {
-        "code" : "51910-8"
-      },
-      {
-        "code" : "96719-0"
-      },
-      {
-        "code" : "58767-5"
-      },
-      {
-        "code" : "75237-8"
-      },
-      {
-        "code" : "51382-0"
-      },
-      {
-        "code" : "104647-3"
-      },
-      {
-        "code" : "105107-7"
-      },
-      {
-        "code" : "46419-8"
-      },
-      {
-        "code" : "13945-1"
-      },
-      {
-        "code" : "44242-6"
-      },
-      {
         "code" : "43416-7"
       },
       {
@@ -307,162 +268,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "code" : "41654-5"
-      },
-      {
-        "code" : "30390-9"
-      },
-      {
-        "code" : "14331-3"
-      },
-      {
-        "code" : "55779-3"
-      },
-      {
-        "code" : "62240-7"
-      },
-      {
-        "code" : "26453-1"
-      },
-      {
-        "code" : "789-8"
-      },
-      {
-        "code" : "790-6"
-      },
-      {
-        "code" : "26455-6"
-      },
-      {
-        "code" : "23860-0"
-      },
-      {
-        "code" : "6741-3"
-      },
-      {
-        "code" : "82588-5"
-      },
-      {
-        "code" : "99777-5"
-      },
-      {
-        "code" : "99050-7"
-      },
-      {
-        "code" : "26454-9"
-      },
-      {
-        "code" : "791-4"
-      },
-      {
-        "code" : "792-2"
-      },
-      {
-        "code" : "76673-3"
-      },
-      {
-        "code" : "46087-3"
-      },
-      {
-        "code" : "46091-5"
-      },
-      {
-        "code" : "46092-3"
-      },
-      {
-        "code" : "47280-3"
-      },
-      {
-        "code" : "57841-9"
-      },
-      {
-        "code" : "53517-9"
-      },
-      {
-        "code" : "30387-5"
-      },
-      {
-        "code" : "14372-7"
-      },
-      {
-        "code" : "96727-3"
-      },
-      {
-        "code" : "30388-3"
-      },
-      {
-        "code" : "57842-7"
-      },
-      {
-        "code" : "14713-2"
-      },
-      {
-        "code" : "81640-5"
-      },
-      {
-        "code" : "40534-0"
-      },
-      {
-        "code" : "26457-2"
-      },
-      {
-        "code" : "57843-5"
-      },
-      {
-        "code" : "795-5"
-      },
-      {
-        "code" : "26456-4"
-      },
-      {
-        "code" : "794-8"
-      },
-      {
-        "code" : "793-0"
-      },
-      {
-        "code" : "67831-8"
-      },
-      {
-        "code" : "43245-0"
-      },
-      {
-        "code" : "30389-1"
-      },
-      {
-        "code" : "16828-6"
-      },
-      {
-        "code" : "23859-2"
-      },
-      {
-        "code" : "26458-0"
-      },
-      {
-        "code" : "796-3"
-      },
-      {
-        "code" : "797-1"
-      },
-      {
-        "code" : "30391-7"
-      },
-      {
-        "code" : "798-9"
-      },
-      {
-        "code" : "799-7"
-      },
-      {
-        "code" : "105108-5"
-      },
-      {
-        "code" : "5808-1"
-      },
-      {
-        "code" : "68902-6"
-      },
-      {
-        "code" : "68435-7"
       }]
     }]
   }

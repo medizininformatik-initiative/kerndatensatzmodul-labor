@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.6"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.8"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -268,7 +268,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je klinischem Test</b></a></li><li><b>LOINC Ontology - Analyt Leukozyten</b></li>
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je Laborparameter</b></a></li><li><b>LOINC Ontology - Analyt Leukozyten</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -309,16 +309,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#leukocyte-count-in-blood" id="markdown-toc-leukocyte-count-in-blood">Leukocyte count in blood</a></li>
   <li><a href="#wbc-differential-panel" id="markdown-toc-wbc-differential-panel">WBC differential (panel)</a></li>
   <li><a href="#der-pool-und-seine-use-case-gruppen" id="markdown-toc-der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</a></li>
+  <li><a href="#loinc-terme-des-analyten-außerhalb-des-pools" id="markdown-toc-loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</a></li>
 </ul>
 
 </div>
-<p>Diese Seite ist das Review-Material für den Analyten <strong>leukocytes</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
+<p>Diese Seite ist das Review-Material für den Analyten <strong>leukocytes</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
 
 <p>Kandidatenpool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|</code> (161 Konzepte, 158 mit LOINC-Code). Use-Case-ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-complete.html">Vollständig</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-quantitative.html">Quantitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-convertible.html">Konvertierbar</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-qualitative.html">Qualitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-semiquantitative.html">Semiquantitativ</a>.</p>
 
 <h3 id="leukocyte-count-in-blood">Leukocyte count in blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html">mii-vs-labor-loinc-ontology-leukocytes-count-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html">mii-pr-labor-loinc-ontology-leukocytes-count-standard</a>. Die Regel wählt 11 der 161 Poolkonzepte aus.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html">mii-vs-labor-loinc-ontology-leukocytes-count-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html">mii-pr-labor-loinc-ontology-leukocytes-count-standard</a>. Die Regel wählt 9 der 161 Poolkonzepte aus.</p>
 
 <table>
   <thead>
@@ -334,7 +335,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -347,13 +348,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="enthalten-11">Enthalten (11)</h4>
+<h4 id="enthalten-9">Enthalten (9)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -376,14 +377,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Number concentration</td>
       <td>Quantitative value</td>
       <td>Automated count technique</td>
-    </tr>
-    <tr>
-      <td>66768-3</td>
-      <td>Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood</td>
-      <td>Cord blood specimen</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
     </tr>
     <tr>
       <td>26464-8</td>
@@ -418,14 +411,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Manual count technique</td>
     </tr>
     <tr>
-      <td>47281-1</td>
-      <td>Leukocytes [#/volume] in Cord blood</td>
-      <td>Cord blood specimen</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
       <td>30406-3</td>
       <td>Leukocytes other [#/volume] in Blood</td>
       <td>Blood specimen</td>
@@ -453,19 +438,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><strong>Materialien unter den enthaltenen Codes</strong>: Blood specimen (9), Cord blood specimen (2)</li>
+  <li><strong>Materialien unter den enthaltenen Codes</strong>: Blood specimen (9)</li>
   <li><strong>Techniken unter den enthaltenen Codes</strong>: Automated count technique (3), Manual count technique (2)</li>
 </ul>
 
-<h4 id="aus-dem-pool-ausgeschlossen-150">Aus dem Pool ausgeschlossen (150)</h4>
+<h4 id="aus-dem-pool-ausgeschlossen-152">Aus dem Pool ausgeschlossen (152)</h4>
 
-<p><strong>Ausgeschlossen, weil Direct site nicht passt (75)</strong></p>
+<p><strong>Ausgeschlossen, weil Direct site nicht passt (77)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -494,6 +479,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>48034-3</td>
       <td>Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebrospinal Fluid</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>66768-3</td>
+      <td>Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>70126-8</td>
@@ -599,6 +589,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>806-0</td>
       <td>Leukocytes [#/volume] in Cerebrospinal Fluid by Manual count</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>47281-1</td>
+      <td>Leukocytes [#/volume] in Cord blood</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>53518-7</td>
@@ -856,7 +851,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1144,7 +1139,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -1351,7 +1346,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -1380,7 +1375,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -1404,9 +1399,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion">Diskussion</h4>
 
 <ul>
-  <li><strong>„Leukocytes other" ist drin und sollte es nicht sein.</strong> 30406-3, 51383-8 und 729-4 zählen die <em>übrigen</em> Zellen eines Differentialblutbilds, nicht die Gesamtleukozytenzahl, doch die LOINC Ontology modelliert ihre Component als Leukocyte. Sie brauchen einen expliziten Ausschluss oder einen Change Request für eine spezifischere Component.</li>
-  <li><strong>Korrigierte Zählungen sind drin.</strong> 12227-5, 33256-9 und 66768-3 (korrigiert um kernhaltige Erythrozyten) sind dieselbe Messung nach Korrektur; sie im Routinetest zu belassen ist vertretbar, das Zusammenfassen mit unkorrigierten Werten eine Entscheidung des Datennutzers.</li>
-  <li><strong>Nabelschnurblut</strong> (47281-1, 66768-3) ist drin.</li>
+  <li><strong>„Leukocytes other" ist drin und sollte es nicht sein.</strong> 30406-3, 51383-8 und 729-4 zählen die <em>übrigen</em> Zellen eines Differentialblutbilds, nicht die Gesamtleukozyten, doch die LOINC Ontology modelliert ihre Component als Leukocyte. Kein Attribut trennt sie; sie brauchen eine explizite Ausschlussliste oder einen Change Request für eine spezifischere Component.</li>
+  <li><strong>Korrigierte Zählungen sind drin.</strong> 12227-5 und 33256-9 (korrigiert um kernhaltige Erythrozyten) sind dieselbe Messung nach Korrektur; sie im Routinetest zu behalten ist vertretbar, sie mit unkorrigierten Werten zusammenzufassen eine Entscheidung des Datennutzers.</li>
+  <li><strong>Nabelschnurblut</strong> (47281-1, 66768-3) ist über den Blut-Block draußen.</li>
   <li><strong>Fetales Blut</strong> (61182-2) hat in diesem Release kein Direct site.</li>
 </ul>
 
@@ -1439,7 +1434,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1479,7 +1474,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -2285,8 +2280,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion-1">Diskussion</h4>
 
 <ul>
-  <li><strong>Zwei SNOMED-CT-Konzepte, kein LOINC-Code.</strong> Die LOINC Ontology führt das manuelle und das automatisierte Differentialblutbild als Konzepte auf Auftragsebene (Component Leukocyte, keine Property). LOINCs eigene Panelcodes für das Differentialblutbild sind nicht Teil dieses Pools.</li>
-  <li><strong>Kein Ergebnis-ValueSet.</strong> Das dafür abgeleitete Profil legt keinen Wertetyp fest. Im Modul ist ein Differentialblutbild eine Menge einzelner Observations (Neutrophile, Lymphozyten, …), jede ein eigener klinischer Test; das Panelkonzept gehört auf den Auftrag oder in eine gruppierende Observation.</li>
+  <li><strong>Zwei SNOMED-CT-Konzepte, kein LOINC-Code.</strong> Die LOINC Ontology hält das manuelle und das automatisierte Differentialblutbild als Konzepte auf Auftragsebene (Component Leukocyte, keine Property). LOINCs eigene Panelcodes für das Differentialblutbild gehören nicht zu diesem Pool.</li>
+  <li><strong>Kein Ergebnis-ValueSet.</strong> Das daraus abgeleitete Profil legt keinen Wertetyp fest. Im Modul ist ein Differentialblutbild eine Menge einzelner Observations (Neutrophile, Lymphozyten, …), jede ein eigener Laborparameter; das Panelkonzept gehört auf den Auftrag oder in eine gruppierende Observation.</li>
 </ul>
 
 <h3 id="der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</h3>
@@ -2297,7 +2292,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -3758,6 +3753,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</h3>
+
+<p>Recall-Prüfung gegen LOINC 2.83 selbst: 115 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Leukocytes$); 109 davon liegen im Pool, 6 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11156-7</td>
+      <td>Leukocytes [Morphology] in Blood</td>
+      <td>Morph</td>
+      <td>Bld</td>
+    </tr>
+    <tr>
+      <td>11157-5</td>
+      <td>Leukocytes [Morphology] in Bone marrow</td>
+      <td>Morph</td>
+      <td>Bone mar</td>
+    </tr>
+    <tr>
+      <td>60433-0</td>
+      <td>Leukocytes by Light microscopy in Urine sediment collected for unspecified duration</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>18407-7</td>
+      <td>Leukocytes in 12 hour Urine sediment by Light microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>63554-0</td>
+      <td>Leukocytes in 24 hour Urine sediment by Microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>59829-2</td>
+      <td>Leukocytes in 3 hour Urine sediment by Light microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -3783,7 +3831,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

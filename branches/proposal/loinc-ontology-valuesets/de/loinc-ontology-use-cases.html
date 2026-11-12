@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -309,11 +309,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#der-use-case-definiert-die-aggregation" id="markdown-toc-der-use-case-definiert-die-aggregation">Der Use Case definiert die Aggregation</a></li>
   <li><a href="#die-gruppen" id="markdown-toc-die-gruppen">Die Gruppen</a></li>
   <li><a href="#die-analyte" id="markdown-toc-die-analyte">Die Analyte</a></li>
+  <li><a href="#recall-gegen-loinc-selbst" id="markdown-toc-recall-gegen-loinc-selbst">Recall gegen LOINC selbst</a></li>
   <li><a href="#review-hinweise" id="markdown-toc-review-hinweise">Review-Hinweise</a></li>
 </ul>
 
 </div>
-<p>Diese Seite listet die 56 ValueSets des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>, die <strong>Datennutzern</strong> dienen: für jeden von 14 Analyten abgestufte Mengen all dessen, was die LOINC Ontology auf diesen Analyten abbildet. Die Konstruktion ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt; die engen Mengen je Test stehen unter <a href="loinc-ontology-clinical-tests.html">ValueSets je klinischem Test</a>.</p>
+<p>Diese Seite listet die 61 ValueSets des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>, die <strong>Datennutzern</strong> dienen: für jeden von 17 Analyten abgestufte Mengen all dessen, was die LOINC Ontology auf diesen Analyten abbildet. Die Konstruktion ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt; die engen Mengen je Laborparameter stehen unter <a href="loinc-ontology-clinical-tests.html">ValueSets je Laborparameter</a>.</p>
 
 <h3 id="der-use-case-definiert-die-aggregation">Der Use Case definiert die Aggregation</h3>
 
@@ -382,6 +383,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
+      <td><a href="loinc-ontology-analyte-creatinine.html">creatinine</a></td>
+      <td>Creatinine</td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-creatinine-complete.html">210</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-creatinine-quantitative.html">207</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-creatinine-convertible.html">198</a></td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-creatinine-semiquantitative.html">3</a></td>
+    </tr>
+    <tr>
       <td><a href="loinc-ontology-analyte-erythrocytes.html">erythrocytes</a></td>
       <td>Erythrocyte</td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-complete.html">107</a></td>
@@ -389,6 +399,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-convertible.html">52</a></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-qualitative.html">17</a></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative.html">2</a></td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-gfr.html">gfr</a></td>
+      <td>Process output Glomerular filtration rate</td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-gfr-complete.html">20</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-gfr-quantitative.html">20</a></td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
     </tr>
     <tr>
       <td><a href="loinc-ontology-analyte-hba1c.html">hba1c</a></td>
@@ -401,12 +420,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><a href="loinc-ontology-analyte-hematocrit.html">hematocrit</a></td>
-      <td>Erythrocyte</td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.html">107</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.html">88</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-convertible.html">52</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-qualitative.html">17</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-semiquantitative.html">2</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Erythrocyte; Property &lt;&lt; Volume fraction</code></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.html">23</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.html">23</a></td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
     </tr>
     <tr>
       <td><a href="loinc-ontology-analyte-hemoglobin.html">hemoglobin</a></td>
@@ -437,16 +456,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><a href="loinc-ontology-analyte-mch.html">mch</a></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Hemoglobin</code></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-complete.html">296</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-quantitative.html">180</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-convertible.html">59</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-qualitative.html">114</a></td>
-      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-semiquantitative.html">2</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Hemoglobin; Property &lt;&lt; Entitic mass or &lt;&lt; Entitic substance amount</code></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-complete.html">8</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-quantitative.html">8</a></td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
     </tr>
     <tr>
       <td><a href="loinc-ontology-analyte-mchc.html">mchc</a></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell hemoglobin concentration [observable]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell hemoglobin concentration</code></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mchc-complete.html">2</a></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mchc-quantitative.html">2</a></td>
       <td style="text-align: right">–</td>
@@ -455,7 +474,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><a href="loinc-ontology-analyte-mcv.html">mcv</a></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell volume [observable]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell volume</code></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mcv-complete.html">2</a></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-mcv-quantitative.html">2</a></td>
       <td style="text-align: right">–</td>
@@ -499,6 +518,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: right">–</td>
     </tr>
     <tr>
+      <td><a href="loinc-ontology-analyte-protein-urine.html">protein urine</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Protein; Direct site &lt;&lt; Urine specimen</code></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-urine-complete.html">21</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-urine-quantitative.html">13</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-urine-convertible.html">5</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-urine-qualitative.html">6</a></td>
+      <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-urine-semiquantitative.html">2</a></td>
+    </tr>
+    <tr>
       <td><a href="loinc-ontology-analyte-psa.html">psa</a></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Prostate specific antigen</code></td>
       <td style="text-align: right"><a href="ValueSet-mii-vs-labor-loinc-ontology-psa-complete.html">37</a></td>
@@ -510,13 +538,169 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="recall-gegen-loinc-selbst">Recall gegen LOINC selbst</h3>
+
+<p>Eine Regel kann nur selektieren, was die LOINC Ontology modelliert, deshalb werden die Pools auch in der Gegenrichtung geprüft: Für jeden Analyten wird die LOINC-Tabelle des Release 2.83 nach den Labortermen durchsucht, die eine Laborärztin zu diesem Analyten zählen würde (über Component, wo nötig Property und System), und die Tabelle sagt, wie viele davon der Pool erreicht. Ein Term außerhalb des Pools ist mit einer anderen Component modelliert oder gar nicht; die Analyt-Seiten listen sie einzeln. Die letzte Spalte zählt, wie viele der LOINC-Terme die ValueSets je Laborparameter aufzählen; der Abstand zum Pool ist die Menge der Codes, die eine Klinikerin nicht den Routinewert nennen würde.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Analyt</th>
+      <th>LOINC-Muster</th>
+      <th style="text-align: right">LOINC-Terme</th>
+      <th style="text-align: right">im Pool</th>
+      <th style="text-align: right">nicht im Pool</th>
+      <th style="text-align: right">in ValueSets je Laborparameter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="loinc-ontology-analyte-creatinine.html">creatinine</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Creatinine$</code></td>
+      <td style="text-align: right">82</td>
+      <td style="text-align: right">58</td>
+      <td style="text-align: right">24</td>
+      <td style="text-align: right">9</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-erythrocytes.html">erythrocytes</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Erythrocytes$</code></td>
+      <td style="text-align: right">88</td>
+      <td style="text-align: right">78</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-gfr.html">gfr</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Glomerular filtration rate</code></td>
+      <td style="text-align: right">20</td>
+      <td style="text-align: right">20</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">17</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-hba1c.html">hba1c</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Hemoglobin A1c(/Hemoglobin\.total)?$</code></td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">6</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-hematocrit.html">hematocrit</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Erythrocyte/(Blood|Specimen Volume)$; Property ~ ^VFr</code></td>
+      <td style="text-align: right">27</td>
+      <td style="text-align: right">19</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">7</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-hemoglobin.html">hemoglobin</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Hemoglobin$</code></td>
+      <td style="text-align: right">71</td>
+      <td style="text-align: right">65</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">23</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-ldh.html">ldh</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Lactate dehydrogenase( \d(/Lactate dehydrogenase\.total)?)?$</code></td>
+      <td style="text-align: right">77</td>
+      <td style="text-align: right">76</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">19</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-leukocytes.html">leukocytes</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Leukocytes$</code></td>
+      <td style="text-align: right">115</td>
+      <td style="text-align: right">109</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-mch.html">mch</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Hemoglobin$; Property ~ ^(EntMass|EntSub); System ~ ^RBC$</code></td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-mchc.html">mchc</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Hemoglobin$; Property ~ ^(EntMCnc|EntSCnc); System ~ ^RBC$</code></td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-mcv.html">mcv</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Property ~ ^EntMeanVol$; System ~ ^RBC$</code></td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-methemoglobin.html">methemoglobin</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Methemoglobin(/Hemoglobin\.total)?$</code></td>
+      <td style="text-align: right">21</td>
+      <td style="text-align: right">16</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">7</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-nitrite-urine.html">nitrite urine</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Nitrite$; System ~ Urine</code></td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-platelets.html">platelets</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Platelets$</code></td>
+      <td style="text-align: right">20</td>
+      <td style="text-align: right">18</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">6</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-potassium.html">potassium</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Potassium$</code></td>
+      <td style="text-align: right">56</td>
+      <td style="text-align: right">45</td>
+      <td style="text-align: right">11</td>
+      <td style="text-align: right">9</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-protein-urine.html">protein urine</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Protein$; System ~ Urine</code></td>
+      <td style="text-align: right">21</td>
+      <td style="text-align: right">14</td>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-psa.html">psa</a></td>
+      <td><code class="language-plaintext highlighter-rouge">Component ~ ^Prostate specific Ag</code></td>
+      <td style="text-align: right">38</td>
+      <td style="text-align: right">36</td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">10</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="review-hinweise">Review-Hinweise</h3>
 
 <ul>
-  <li><strong>Hämatokrit und Erythrozytenzahl</strong> teilen die Component <em>Erythrocyte</em>; ihre Pools und damit ihre Use-Case-ValueSets sind identisch. Nur die ValueSets je Test unterscheiden sie. Will das Modul getrennte Pools, braucht Hämatokrit eine eigene Component oder eine zusätzliche Property-Einschränkung.</li>
-  <li><strong>MCH</strong> wird auf <em>Hemoglobin und Subtypen</em> gepoolt, was auch HbA1c und die Hämoglobin-Varianten einbezieht, während der Hämoglobin-Pool die exakte Component nutzt. Eines von beiden sollte angeglichen werden; beides sind Entscheidungen zur Pool-Definition, keine Eigenschaften der LOINC Ontology.</li>
+  <li><strong>Hämatokrit</strong> hat jetzt einen eigenen Pool: Erythrocyte mit der Property Volume fraction. Der Erythrozyten-Pool enthält die Hämatokrit-Konzepte weiterhin, und das ist korrekt, ein Hämatokrit ist ein Erythrozyten-Observable; nur sind die Hämatokrit-Use-Case-ValueSets keine Kopie der Erythrozyten-Mengen mehr.</li>
+  <li><strong>MCH</strong> wird auf der exakten Component Hemoglobin mit den beiden entitischen Properties (Masse und Stoffmenge je Zelle) gepoolt, nicht mehr auf <code class="language-plaintext highlighter-rouge">&lt;&lt; Hemoglobin</code>, was HbA1c und die Hämoglobin-Varianten hereingebracht hatte. Der Hämoglobin-Pool nutzt die exakte Component und enthält deshalb auch die MCH-Konzepte.</li>
+  <li><strong>GFR</strong> hat in der LOINC Ontology keine Component; ihr Pool ist jedes Observable, dessen <em>Process output</em> die GFR-Berechnung ist. <strong>Protein im Urin</strong> wird mit dem Material in der Pool-Definition gepoolt, weil Gesamtprotein im Serum ein anderer klinischer Parameter ist.</li>
   <li><strong>Leukozyten</strong> hat zwei Konzepte auf Auftragsebene (das Differentialblutbild), die in den Review-Tabellen stehen und aus jeder Gruppe ausgeschlossen sind.</li>
-  <li><strong>Material ist auf dieser Ebene kein Kriterium</strong>: Hämoglobin im Urin und im Blut liegen in derselben quantitativen Gruppe. Wer ein Material braucht, engt über das ValueSet je Test oder über <code class="language-plaintext highlighter-rouge">Observation.specimen</code> ein.</li>
+  <li><strong>Material ist auf dieser Ebene kein Kriterium</strong>: Hämoglobin im Urin und im Blut liegen in derselben quantitativen Gruppe. Wer ein Material braucht, engt über das ValueSet je Laborparameter oder über <code class="language-plaintext highlighter-rouge">Observation.specimen</code> ein.</li>
 </ul>
 
 
@@ -544,7 +728,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

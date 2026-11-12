@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.4"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.6"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -268,7 +268,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je klinischem Test</b></a></li><li><b>LOINC Ontology - Analyt Hämoglobin</b></li>
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je Laborparameter</b></a></li><li><b>LOINC Ontology - Analyt Hämoglobin</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -307,17 +307,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#hemoglobin-concentration-in-blood" id="markdown-toc-hemoglobin-concentration-in-blood">Hemoglobin concentration in blood</a></li>
+  <li><a href="#hemoglobin-concentration-in-cord-blood" id="markdown-toc-hemoglobin-concentration-in-cord-blood">Hemoglobin concentration in cord blood</a></li>
   <li><a href="#der-pool-und-seine-use-case-gruppen" id="markdown-toc-der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</a></li>
+  <li><a href="#loinc-terme-des-analyten-außerhalb-des-pools" id="markdown-toc-loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</a></li>
 </ul>
 
 </div>
-<p>Diese Seite ist das Review-Material für den Analyten <strong>hemoglobin</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
+<p>Diese Seite ist das Review-Material für den Analyten <strong>hemoglobin</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
 
 <p>Kandidatenpool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|</code> (89 Konzepte, 89 mit LOINC-Code). Use-Case-ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-complete.html">Vollständig</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-quantitative.html">Quantitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-convertible.html">Konvertierbar</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-qualitative.html">Qualitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative.html">Semiquantitativ</a>.</p>
 
 <h3 id="hemoglobin-concentration-in-blood">Hemoglobin concentration in blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-standard.html">mii-vs-labor-loinc-ontology-hemoglobin-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hemoglobin-standard.html">mii-pr-labor-loinc-ontology-hemoglobin-standard</a>. Die Regel wählt 19 der 89 Poolkonzepte aus.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-standard.html">mii-vs-labor-loinc-ontology-hemoglobin-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hemoglobin-standard.html">mii-pr-labor-loinc-ontology-hemoglobin-standard</a>. Die Regel wählt 18 der 89 Poolkonzepte aus.</p>
 
 <table>
   <thead>
@@ -333,11 +335,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
     </tr>
     <tr>
       <td>Scale type</td>
@@ -346,13 +348,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="enthalten-19">Enthalten (19)</h4>
+<h4 id="enthalten-18">Enthalten (18)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -375,22 +377,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Mass concentration</td>
       <td>Quantitative value</td>
       <td>Oximetry technique</td>
-    </tr>
-    <tr>
-      <td>30354-5</td>
-      <td>Hemoglobin [Mass/volume] in Arterial cord blood</td>
-      <td>Arterial cord blood specimen</td>
-      <td>Mass concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>33026-6</td>
-      <td>Hemoglobin [Mass/volume] in Arterial cord blood by calculation</td>
-      <td>Arterial cord blood specimen</td>
-      <td>Mass concentration</td>
-      <td>Quantitative value</td>
-      <td>Calculation technique</td>
     </tr>
     <tr>
       <td>718-7</td>
@@ -441,14 +427,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Oximetry technique</td>
     </tr>
     <tr>
-      <td>40719-7</td>
-      <td>Hemoglobin [Mass/volume] in Cord blood</td>
-      <td>Cord blood specimen</td>
-      <td>Mass concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
       <td>30351-1</td>
       <td>Hemoglobin [Mass/volume] in Mixed venous blood</td>
       <td>Mixed venous blood specimen</td>
@@ -497,30 +475,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Calculation technique</td>
     </tr>
     <tr>
-      <td>30353-7</td>
-      <td>Hemoglobin [Mass/volume] in Venous cord blood</td>
-      <td>Venous cord blood specimen</td>
-      <td>Mass concentration</td>
+      <td>75928-2</td>
+      <td>Hemoglobin [Moles/volume] in Arterial blood</td>
+      <td>Arterial blood specimen</td>
+      <td>Substance concentration</td>
       <td>Quantitative value</td>
       <td>–</td>
     </tr>
     <tr>
-      <td>33025-8</td>
-      <td>Hemoglobin [Mass/volume] in Venous cord blood by calculation</td>
-      <td>Venous cord blood specimen</td>
-      <td>Mass concentration</td>
+      <td>59260-0</td>
+      <td>Hemoglobin [Moles/volume] in Blood</td>
+      <td>Blood specimen</td>
+      <td>Substance concentration</td>
       <td>Quantitative value</td>
-      <td>Calculation technique</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>105300-8</td>
+      <td>Hemoglobin [Moles/volume] in Mixed venous blood</td>
+      <td>Mixed venous blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>93846-4</td>
+      <td>Hemoglobin [Moles/volume] in Venous blood</td>
+      <td>Venous blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
     </tr>
   </tbody>
 </table>
 
 <ul>
-  <li><strong>Materialien unter den enthaltenen Codes</strong>: Blood specimen (4), Mixed venous blood specimen (3), Venous blood specimen (3), Arterial blood specimen (2), Arterial cord blood specimen (2), Capillary blood specimen (2), Venous cord blood specimen (2), Cord blood specimen (1)</li>
-  <li><strong>Techniken unter den enthaltenen Codes</strong>: Oximetry technique (5), Calculation technique (5)</li>
+  <li><strong>Materialien unter den enthaltenen Codes</strong>: Blood specimen (5), Mixed venous blood specimen (4), Venous blood specimen (4), Arterial blood specimen (3), Capillary blood specimen (2)</li>
+  <li><strong>Techniken unter den enthaltenen Codes</strong>: Oximetry technique (5), Calculation technique (3)</li>
 </ul>
 
-<h4 id="aus-dem-pool-ausgeschlossen-70">Aus dem Pool ausgeschlossen (70)</h4>
+<h4 id="aus-dem-pool-ausgeschlossen-71">Aus dem Pool ausgeschlossen (71)</h4>
 
 <p><strong>Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (29)</strong></p>
 
@@ -528,7 +522,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -743,17 +737,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>23 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 2334-1, 42909-2, 42910-0, 42911-8, 42912-6, 42913-4, 50017-3, 2335-8, 14563-1, 14564-9, 14565-6, 12503-9, 12504-7, 27401-9, 27925-7, 27926-5, 80372-6, 104738-0, 29771-3, 57905-2, 56490-6, 56491-4, 48047-5.</p>
 
-<p><strong>Ausgeschlossen, weil Direct site nicht passt (15)</strong></p>
+<p><strong>Ausgeschlossen, weil Direct site nicht passt (21)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>30354-5</td>
+      <td>Hemoglobin [Mass/volume] in Arterial cord blood</td>
+      <td>Arterial cord blood specimen</td>
+    </tr>
+    <tr>
+      <td>33026-6</td>
+      <td>Hemoglobin [Mass/volume] in Arterial cord blood by calculation</td>
+      <td>Arterial cord blood specimen</td>
+    </tr>
     <tr>
       <td>54289-4</td>
       <td>Hemoglobin [Mass/volume] in Blood from Blood product unit</td>
@@ -783,6 +787,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>719-5</td>
       <td>Hemoglobin [Mass/volume] in Cerebrospinal Fluid</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>40719-7</td>
+      <td>Hemoglobin [Mass/volume] in Cord blood</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>69950-4</td>
@@ -829,74 +838,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Hemoglobin [Mass/volume] in Urine</td>
       <td>Urine specimen</td>
     </tr>
-  </tbody>
-</table>
-
-<p>8 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 54289-4, 61180-6, 97555-7, 97550-8, 107191-9, 107190-1, 107189-3, 58453-2.</p>
-
-<p><strong>Ausgeschlossen, weil Property nicht passt (10)</strong></p>
-
-<table>
-  <thead>
     <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>24469-9</td>
-      <td>Hemoglobin XXX/Hemoglobin.total in Blood by Electrophoresis</td>
-      <td>Mass fraction</td>
+      <td>30353-7</td>
+      <td>Hemoglobin [Mass/volume] in Venous cord blood</td>
+      <td>Venous cord blood specimen</td>
     </tr>
     <tr>
-      <td>35183-3</td>
-      <td>Hemoglobin [Mass or Moles/volume] in Plasma</td>
-      <td>Mass concentration or substance concentration</td>
-    </tr>
-    <tr>
-      <td>75928-2</td>
-      <td>Hemoglobin [Moles/volume] in Arterial blood</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>59260-0</td>
-      <td>Hemoglobin [Moles/volume] in Blood</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>105300-8</td>
-      <td>Hemoglobin [Moles/volume] in Mixed venous blood</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>93846-4</td>
-      <td>Hemoglobin [Moles/volume] in Venous blood</td>
-      <td>Substance concentration</td>
+      <td>33025-8</td>
+      <td>Hemoglobin [Mass/volume] in Venous cord blood by calculation</td>
+      <td>Venous cord blood specimen</td>
     </tr>
     <tr>
       <td>103750-6</td>
       <td>Hemoglobin [Moles/volume] in Venous cord blood</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>48343-8</td>
-      <td>Hemoglobin.other/Hemoglobin.total in Blood</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>32017-6</td>
-      <td>Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>42248-5</td>
-      <td>Hemoglobin.other/Hemoglobin.total in Blood by HPLC</td>
-      <td>Mass fraction</td>
+      <td>Venous cord blood specimen</td>
     </tr>
   </tbody>
 </table>
+
+<p>8 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 54289-4, 61180-6, 97555-7, 97550-8, 107191-9, 107190-1, 107189-3, 58453-2.</p>
 
 <p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (9)</strong></p>
 
@@ -904,7 +864,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -969,13 +929,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>6 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 42810-2, 71694-4, 73895-5, 27396-1, 47278-7, 62243-1.</p>
 
+<p><strong>Ausgeschlossen, weil Property nicht passt (5)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>24469-9</td>
+      <td>Hemoglobin XXX/Hemoglobin.total in Blood by Electrophoresis</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>35183-3</td>
+      <td>Hemoglobin [Mass or Moles/volume] in Plasma</td>
+      <td>Mass concentration or substance concentration</td>
+    </tr>
+    <tr>
+      <td>48343-8</td>
+      <td>Hemoglobin.other/Hemoglobin.total in Blood</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>32017-6</td>
+      <td>Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>42248-5</td>
+      <td>Hemoglobin.other/Hemoglobin.total in Blood by HPLC</td>
+      <td>Mass fraction</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Ausgeschlossen, weil Property und Scale type nicht passen (5)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
     </tr>
@@ -1022,7 +1021,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -1046,11 +1045,690 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion">Diskussion</h4>
 
 <ul>
-  <li><strong>Nabelschnurblut ist drin.</strong> <code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code> schließt die fünf Nabelschnurblut-Codes ein (30353-7, 30354-5, 40719-7, 33025-8, 33026-6). Nabelschnurblut-Hämoglobin ist ein neonataler Wert mit eigenem Referenzbereich. Zu entscheiden ist, ob der Routinetest ihn ausschließen soll (<code class="language-plaintext highlighter-rouge">Direct site != &lt;&lt; Cord blood specimen</code> ergänzen) oder ob die Materialunterscheidung beim Datennutzer liegt.</li>
-  <li><strong>mmol/L ist draußen.</strong> Die Regel verlangt Massenkonzentration (g/dL, g/L). Labore, die Hämoglobin in mmol/L berichten, nutzen 59260-0 (Blut) oder 75928-2 (arterielles Blut), beide als Stoffmengenkonzentration ausgeschlossen. Deutsche Standorte berichten durchaus in mmol/L; der Vorschlag ist, die Property auf <code class="language-plaintext highlighter-rouge">(&lt;&lt; Mass concentration OR &lt;&lt; Substance concentration)</code> zu erweitern und die Einheit der UCUM-Umrechnung zu überlassen.</li>
-  <li><strong>Blutgasanalysatoren sind drin.</strong> Die fünf Oxymetrie-Codes (14775-1, 55782-7, 76768-1, 76769-9, 97556-5) und die berechneten Werte sind enthalten, weil die Regel die Methode nirgends einschränkt. Will das Modul nur den Wert des Hämatologie-Analysators, muss Technique explizit eingeschränkt werden.</li>
+  <li><strong>mmol/L ist drin.</strong> Der Property-Block lässt Massen-, Stoffmengen- und arbiträre Konzentration gleichermaßen zu, deshalb kommen 59260-0 (Blut), 75928-2 (arteriell), 93846-4 (venös) und 105300-8 (gemischtvenös) zu den g/dL-Codes hinzu. Deutsche Standorte berichten Hämoglobin durchaus in mmol/L; die Einheit bleibt der UCUM-Umrechnung überlassen.</li>
+  <li><strong>Nabelschnurblut ist draußen.</strong> Der Blut-Block schließt Nabelschnurblut, fetales Blut und Trockenblut aus. Die fünf Nabelschnurblut-Codes bilden einen eigenen Test, <a href="#hemoglobin-concentration-in-cord-blood">Hämoglobinkonzentration im Nabelschnurblut</a>, weil Nabelschnurblut-Hämoglobin ein neonataler Wert mit eigenem Referenzbereich ist.</li>
+  <li><strong>Blutgasanalysatoren sind drin.</strong> Die Oxymetrie-Codes (14775-1, 55782-7, 76768-1, 76769-9, 97556-5) und die berechneten Werte sind enthalten, weil die Regel die Methode nirgends einschränkt. Will das Modul nur den Wert des Hämatologie-Analysators, muss Technique explizit eingeschränkt werden.</li>
   <li><strong>Codes, die die Regel nicht sehen kann.</strong> 54289-4 (Blutkonserve), 61180-6 (fetales Blut) und 97555-7 (zentralvenöses Blut) tragen in diesem Release der LOINC Ontology kein Direct site. Sie sind durch das Fehlen eines Attributs ausgeschlossen, nicht durch eine Entscheidung; die Abhilfe ist ein Change Request an die LOINC Ontology.</li>
-  <li><strong>Plasma-Hämoglobin</strong> (35183-3, freies Hämoglobin als Hämolysemarker) ist klinisch ein anderer Analyt und bleibt über die Materialeinschränkung draußen; das ist beabsichtigt.</li>
+  <li><strong>Plasma-Hämoglobin</strong> (35183-3, freies Hämoglobin als Hämolysemarker) ist klinisch ein anderer Analyt. Es bleibt draußen, aber über seine generische Property („mass or moles per volume", keine der drei Konzentrations-Properties), nicht über das Material: Plasma gehört zum Blut-Block. Gäbe LOINC ihm je eine konkrete Property, ließe die Regel es zu, und der Materialblock bräuchte <code class="language-plaintext highlighter-rouge">MINUS &lt;&lt; Plasma specimen</code>, wie ihn die Thrombozytenregel hat.</li>
+</ul>
+
+<h3 id="hemoglobin-concentration-in-cord-blood">Hemoglobin concentration in cord blood</h3>
+
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-cord-blood.html">mii-vs-labor-loinc-ontology-hemoglobin-cord-blood</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hemoglobin-cord-blood.html">mii-pr-labor-loinc-ontology-hemoglobin-cord-blood</a>. Die Regel wählt 6 der 89 Poolkonzepte aus.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribut</th>
+      <th>Wert</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Component</td>
+      <td>Hemoglobin</td>
+    </tr>
+    <tr>
+      <td>Direct site</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Cord blood specimen</code></td>
+    </tr>
+    <tr>
+      <td>Property</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
+    </tr>
+    <tr>
+      <td>Scale type</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="enthalten-6">Enthalten (6)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Property</th>
+      <th>Scale type</th>
+      <th>Technique</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30354-5</td>
+      <td>Hemoglobin [Mass/volume] in Arterial cord blood</td>
+      <td>Arterial cord blood specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>33026-6</td>
+      <td>Hemoglobin [Mass/volume] in Arterial cord blood by calculation</td>
+      <td>Arterial cord blood specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>Calculation technique</td>
+    </tr>
+    <tr>
+      <td>40719-7</td>
+      <td>Hemoglobin [Mass/volume] in Cord blood</td>
+      <td>Cord blood specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>30353-7</td>
+      <td>Hemoglobin [Mass/volume] in Venous cord blood</td>
+      <td>Venous cord blood specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>33025-8</td>
+      <td>Hemoglobin [Mass/volume] in Venous cord blood by calculation</td>
+      <td>Venous cord blood specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>Calculation technique</td>
+    </tr>
+    <tr>
+      <td>103750-6</td>
+      <td>Hemoglobin [Moles/volume] in Venous cord blood</td>
+      <td>Venous cord blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Materialien unter den enthaltenen Codes</strong>: Venous cord blood specimen (3), Arterial cord blood specimen (2), Cord blood specimen (1)</li>
+  <li><strong>Techniken unter den enthaltenen Codes</strong>: Calculation technique (2)</li>
+</ul>
+
+<h4 id="aus-dem-pool-ausgeschlossen-83">Aus dem Pool ausgeschlossen (83)</h4>
+
+<p><strong>Ausgeschlossen, weil Direct site, Property und Scale type nicht passen (34)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Property</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>109484-6</td>
+      <td>Hemoglobin [Measurement] in Arterial blood</td>
+      <td>Arterial blood specimen</td>
+      <td>Measurement property</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>110885-1</td>
+      <td>Hemoglobin [Measurement] in Blood</td>
+      <td>Blood specimen</td>
+      <td>Measurement property</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>109887-0</td>
+      <td>Hemoglobin [Measurement] in Mixed venous blood</td>
+      <td>Mixed venous blood specimen</td>
+      <td>Measurement property</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>109886-2</td>
+      <td>Hemoglobin [Measurement] in Venous blood</td>
+      <td>Venous blood specimen</td>
+      <td>Measurement property</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>717-9</td>
+      <td>Hemoglobin [Presence] in Blood</td>
+      <td>Blood specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>33517-4</td>
+      <td>Hemoglobin [Presence] in Body fluid</td>
+      <td>Body fluid specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>48035-0</td>
+      <td>Hemoglobin [Presence] in Cerebrospinal Fluid</td>
+      <td>Cerebrospinal fluid specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>2334-1</td>
+      <td>Hemoglobin [Presence] in Gastric fluid from gastrointestinal</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>42909-2</td>
+      <td>Hemoglobin [Presence] in Gastric fluid from gastrointestinal –1st specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>42910-0</td>
+      <td>Hemoglobin [Presence] in Gastric fluid from gastrointestinal –2nd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>42911-8</td>
+      <td>Hemoglobin [Presence] in Gastric fluid from gastrointestinal –3rd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>34618-9</td>
+      <td>Hemoglobin [Presence] in Specimen</td>
+      <td>Specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>42912-6</td>
+      <td>Hemoglobin [Presence] in Specimen from gastrointestinal –2nd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>42913-4</td>
+      <td>Hemoglobin [Presence] in Specimen from gastrointestinal lower –1st specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>50017-3</td>
+      <td>Hemoglobin [Presence] in Sputum or Gastric fluid from gastrointestinal</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>2335-8</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>14563-1</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –1st specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>14564-9</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –2nd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>14565-6</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –3rd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>12503-9</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –4th specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>12504-7</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –5th specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>27401-9</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –6th specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>27925-7</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –7th specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>27926-5</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal –8th specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>80372-6</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal by Rapid immunoassay</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>104738-0</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal lower</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>29771-3</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>57905-2</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay –1st specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>56490-6</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay –2nd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>56491-4</td>
+      <td>Hemoglobin [Presence] in Stool from gastrointestinal lower by Immunoassay –3rd specimen</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>725-2</td>
+      <td>Hemoglobin [Presence] in Urine</td>
+      <td>Urine specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>57751-0</td>
+      <td>Hemoglobin [Presence] in Urine by Automated test strip</td>
+      <td>Urine specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>5794-3</td>
+      <td>Hemoglobin [Presence] in Urine by Test strip</td>
+      <td>Urine specimen</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+    <tr>
+      <td>48047-5</td>
+      <td>Hemoglobin [Presence] in Vomitus from gastrointestinal</td>
+      <td>–</td>
+      <td>Threshold</td>
+      <td>Ordinal value</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>23 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 2334-1, 42909-2, 42910-0, 42911-8, 42912-6, 42913-4, 50017-3, 2335-8, 14563-1, 14564-9, 14565-6, 12503-9, 12504-7, 27401-9, 27925-7, 27926-5, 80372-6, 104738-0, 29771-3, 57905-2, 56490-6, 56491-4, 48047-5.</p>
+
+<p>4 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109484-6, 110885-1, 109887-0, 109886-2.</p>
+
+<p><strong>Ausgeschlossen, weil Direct site nicht passt (33)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30313-1</td>
+      <td>Hemoglobin [Mass/volume] in Arterial blood</td>
+      <td>Arterial blood specimen</td>
+    </tr>
+    <tr>
+      <td>14775-1</td>
+      <td>Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td>
+      <td>Arterial blood specimen</td>
+    </tr>
+    <tr>
+      <td>718-7</td>
+      <td>Hemoglobin [Mass/volume] in Blood</td>
+      <td>Blood specimen</td>
+    </tr>
+    <tr>
+      <td>48725-6</td>
+      <td>Hemoglobin [Mass/volume] in Blood –pre therapeutic phlebotomy</td>
+      <td>Blood specimen</td>
+    </tr>
+    <tr>
+      <td>55782-7</td>
+      <td>Hemoglobin [Mass/volume] in Blood by Oximetry</td>
+      <td>Blood specimen</td>
+    </tr>
+    <tr>
+      <td>20509-6</td>
+      <td>Hemoglobin [Mass/volume] in Blood by calculation</td>
+      <td>Blood specimen</td>
+    </tr>
+    <tr>
+      <td>54289-4</td>
+      <td>Hemoglobin [Mass/volume] in Blood from Blood product unit</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>61180-6</td>
+      <td>Hemoglobin [Mass/volume] in Blood from Fetus</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>33509-1</td>
+      <td>Hemoglobin [Mass/volume] in Body fluid</td>
+      <td>Body fluid specimen</td>
+    </tr>
+    <tr>
+      <td>30352-9</td>
+      <td>Hemoglobin [Mass/volume] in Capillary blood</td>
+      <td>Capillary blood specimen</td>
+    </tr>
+    <tr>
+      <td>97556-5</td>
+      <td>Hemoglobin [Mass/volume] in Capillary blood by Oximetry</td>
+      <td>Capillary blood specimen</td>
+    </tr>
+    <tr>
+      <td>97555-7</td>
+      <td>Hemoglobin [Mass/volume] in Central venous blood by Oximetry</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>97550-8</td>
+      <td>Hemoglobin [Mass/volume] in Central venous blood by calculation</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>719-5</td>
+      <td>Hemoglobin [Mass/volume] in Cerebrospinal Fluid</td>
+      <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>30351-1</td>
+      <td>Hemoglobin [Mass/volume] in Mixed venous blood</td>
+      <td>Mixed venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>76768-1</td>
+      <td>Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td>
+      <td>Mixed venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>105040-0</td>
+      <td>Hemoglobin [Mass/volume] in Mixed venous blood by calculation</td>
+      <td>Mixed venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>69950-4</td>
+      <td>Hemoglobin [Mass/volume] in Pericardial fluid</td>
+      <td>Pericardial fluid specimen</td>
+    </tr>
+    <tr>
+      <td>723-7</td>
+      <td>Hemoglobin [Mass/volume] in Peritoneal fluid</td>
+      <td>Peritoneal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>722-9</td>
+      <td>Hemoglobin [Mass/volume] in Pleural fluid</td>
+      <td>Pleural fluid specimen</td>
+    </tr>
+    <tr>
+      <td>107191-9</td>
+      <td>Hemoglobin [Mass/volume] in Stool from gastrointestinal –1st specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>107190-1</td>
+      <td>Hemoglobin [Mass/volume] in Stool from gastrointestinal –2nd specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>107189-3</td>
+      <td>Hemoglobin [Mass/volume] in Stool from gastrointestinal –3rd specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>58453-2</td>
+      <td>Hemoglobin [Mass/volume] in Stool from gastrointestinal lower by Immunoassay</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>724-5</td>
+      <td>Hemoglobin [Mass/volume] in Synovial fluid</td>
+      <td>Synovial fluid specimen</td>
+    </tr>
+    <tr>
+      <td>726-0</td>
+      <td>Hemoglobin [Mass/volume] in Urine</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>30350-3</td>
+      <td>Hemoglobin [Mass/volume] in Venous blood</td>
+      <td>Venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>76769-9</td>
+      <td>Hemoglobin [Mass/volume] in Venous blood by Oximetry</td>
+      <td>Venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>105274-5</td>
+      <td>Hemoglobin [Mass/volume] in Venous blood by calculation</td>
+      <td>Venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>75928-2</td>
+      <td>Hemoglobin [Moles/volume] in Arterial blood</td>
+      <td>Arterial blood specimen</td>
+    </tr>
+    <tr>
+      <td>59260-0</td>
+      <td>Hemoglobin [Moles/volume] in Blood</td>
+      <td>Blood specimen</td>
+    </tr>
+    <tr>
+      <td>105300-8</td>
+      <td>Hemoglobin [Moles/volume] in Mixed venous blood</td>
+      <td>Mixed venous blood specimen</td>
+    </tr>
+    <tr>
+      <td>93846-4</td>
+      <td>Hemoglobin [Moles/volume] in Venous blood</td>
+      <td>Venous blood specimen</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>8 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 54289-4, 61180-6, 97555-7, 97550-8, 107191-9, 107190-1, 107189-3, 58453-2.</p>
+
+<p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (14)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>24469-9</td>
+      <td>Hemoglobin XXX/Hemoglobin.total in Blood by Electrophoresis</td>
+      <td>Blood specimen</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>42810-2</td>
+      <td>Hemoglobin [Entitic mass] in Reticulocytes</td>
+      <td>–</td>
+      <td>Entitic mass</td>
+    </tr>
+    <tr>
+      <td>71694-4</td>
+      <td>Hemoglobin [Entitic mass] in Reticulocytes by Automated count</td>
+      <td>–</td>
+      <td>Entitic mass</td>
+    </tr>
+    <tr>
+      <td>73895-5</td>
+      <td>Hemoglobin [Entitic substance] in Reticulocytes by Automated count</td>
+      <td>–</td>
+      <td>Entitic substance amount</td>
+    </tr>
+    <tr>
+      <td>35183-3</td>
+      <td>Hemoglobin [Mass or Moles/volume] in Plasma</td>
+      <td>Plasma specimen</td>
+      <td>Mass concentration or substance concentration</td>
+    </tr>
+    <tr>
+      <td>27396-1</td>
+      <td>Hemoglobin [Mass/mass] in Stool from gastrointestinal</td>
+      <td>–</td>
+      <td>Mass content</td>
+    </tr>
+    <tr>
+      <td>48343-8</td>
+      <td>Hemoglobin.other/Hemoglobin.total in Blood</td>
+      <td>Blood specimen</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>32017-6</td>
+      <td>Hemoglobin.other/Hemoglobin.total in Blood by Electrophoresis</td>
+      <td>Blood specimen</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>42248-5</td>
+      <td>Hemoglobin.other/Hemoglobin.total in Blood by HPLC</td>
+      <td>Blood specimen</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>28539-5</td>
+      <td>MCH [Entitic mass]</td>
+      <td>Erythrocyte specimen</td>
+      <td>Entitic mass</td>
+    </tr>
+    <tr>
+      <td>785-6</td>
+      <td>MCH [Entitic mass] by Automated count</td>
+      <td>Erythrocyte specimen</td>
+      <td>Entitic mass</td>
+    </tr>
+    <tr>
+      <td>47278-7</td>
+      <td>MCH [Entitic mass] in Cord blood</td>
+      <td>–</td>
+      <td>Entitic mass</td>
+    </tr>
+    <tr>
+      <td>62243-1</td>
+      <td>MCH [Entitic mass] in Fetus by Automated count</td>
+      <td>–</td>
+      <td>Entitic mass</td>
+    </tr>
+    <tr>
+      <td>59468-9</td>
+      <td>MCH [Entitic substance]</td>
+      <td>Erythrocyte specimen</td>
+      <td>Entitic substance amount</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>6 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 42810-2, 71694-4, 73895-5, 27396-1, 47278-7, 62243-1.</p>
+
+<p><strong>Ausgeschlossen, weil Direct site und Scale type nicht passen (2)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>50559-4</td>
+      <td>Hemoglobin [Mass/volume] in Urine by Automated test strip</td>
+      <td>Urine specimen</td>
+      <td>Semi-quantitative value</td>
+    </tr>
+    <tr>
+      <td>49137-3</td>
+      <td>Hemoglobin [Mass/volume] in Urine by Test strip</td>
+      <td>Urine specimen</td>
+      <td>Semi-quantitative value</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="diskussion-1">Diskussion</h4>
+
+<ul>
+  <li><strong>Sechs Codes</strong>: venös (30353-7), arteriell (30354-5) und unspezifiziertes Nabelschnurblut (40719-7), die beiden berechneten Werte (33025-8, 33026-6) und der molare venöse Code (103750-6). Die Regel ist die Routineregel mit Material Nabelschnurblut; der Property-Block ist derselbe.</li>
+  <li><strong>Warum ein eigener Test.</strong> Nabelschnurblut-Hämoglobin ist ein neonataler Wert mit eigenem Referenzbereich und wird nie mit dem Wert der Mutter oder einem späteren Wert des Kindes zusammengefasst. Der gemeinsame Blut-Block schließt Nabelschnurblut deshalb überall aus, und dieser Test gibt den Codes ein Zuhause.</li>
+  <li><strong>Fetales Blut</strong> (61180-6, „in Fetus") trägt in diesem Release kein Direct site und ist für keine Materialregel selektierbar.</li>
+  <li><strong>Andere Analyte.</strong> Hämatokrit (2 Codes), Erythrozyten (1), Leukozyten (2), Thrombozyten (2), MCH (1) und Methämoglobin (3) verlieren ihre Nabelschnurblut-Codes an denselben Block. Ob jeder davon einen Nabelschnurblut-Test braucht oder ein einzelnes „Nabelschnurblut-Panel" das bessere Artefakt ist, ist offen; das Regelmuster ist dasselbe.</li>
 </ul>
 
 <h3 id="der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</h3>
@@ -1061,7 +1739,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -1874,6 +2552,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</h3>
+
+<p>Recall-Prüfung gegen LOINC 2.83 selbst: 71 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Hemoglobin$); 65 davon liegen im Pool, 6 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>108632-1</td>
+      <td>Hemoglobin [Measurement] in Stool from gastrointestinal</td>
+      <td>{Measurement}</td>
+      <td>Stool^Patient.gastrointestinal</td>
+    </tr>
+    <tr>
+      <td>28540-3</td>
+      <td>MCHC [Entitic Mass/volume] in Red Blood Cells</td>
+      <td>EntMCnc</td>
+      <td>RBC</td>
+    </tr>
+    <tr>
+      <td>786-4</td>
+      <td>MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count</td>
+      <td>EntMCnc</td>
+      <td>RBC</td>
+    </tr>
+    <tr>
+      <td>47279-5</td>
+      <td>MCHC [Entitic Mass/volume] in Red Blood Cells from Cord blood</td>
+      <td>EntMCnc</td>
+      <td>RBC^BldCo</td>
+    </tr>
+    <tr>
+      <td>62246-4</td>
+      <td>MCHC [Entitic Mass/volume] in Red Blood Cells from Fetus by Automated count</td>
+      <td>EntMCnc</td>
+      <td>RBC^Fetus</td>
+    </tr>
+    <tr>
+      <td>59467-1</td>
+      <td>MCHC [Entitic Moles/volume] in Red Blood Cells</td>
+      <td>EntSCnc</td>
+      <td>RBC</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -1899,7 +2630,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

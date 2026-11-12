@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-leukocytes-differential-panel | *Version*:2027.0.0-ci |
-| Draft as of 2026-11-10 | *Computable Name*:MII_PR_Labor_LOINC_Ontology_Leukocytes_Differential_Panel |
+| Draft as of 2026-11-12 | *Computable Name*:MII_PR_Labor_LOINC_Ontology_Leukocytes_Differential_Panel |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-loin
   "title" : "MII PR Labor LOINC Ontology Leukocytes Differential Panel",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -229,7 +229,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-labor-loin
       "path" : "Observation.code",
       "binding" : {
         "strength" : "required",
-        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `(<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)`",
+        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `(<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, << 370130000 |Property (attribute)| = *)`",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-leukocytes-differential-panel"
       }
     }]

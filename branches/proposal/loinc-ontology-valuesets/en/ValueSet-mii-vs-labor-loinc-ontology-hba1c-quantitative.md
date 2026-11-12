@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-hba1c-quantitative | *Version*:2027.0.0-ci |
-| Draft as of 2026-11-10 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Hba1c_Quantitative |
+| Draft as of 2026-11-12 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Hba1c_Quantitative |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
@@ -177,7 +177,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS Labor LOINC Ontology Hba1c Quantitative",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

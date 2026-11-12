@@ -25,7 +25,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-mchc-standard</b></p><a name=\"mii-vs-labor-loinc-ontology-mchc-standard\"> </a><a name=\"hcmii-vs-labor-loinc-ontology-mchc-standard\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.83\"> version &#x1F4CD;2.83</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/786-4/\">786-4</a></td><td style=\"color: #cccccc\">MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count</td></tr><tr><td><a href=\"https://loinc.org/28540-3/\">28540-3</a></td><td style=\"color: #cccccc\">MCHC [Entitic Mass/volume] in Red Blood Cells</td></tr></table></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20261021\"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20261021</span> where constraint  = &lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</li></ul></div>"
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-mchc-standard</b></p><a name=\"mii-vs-labor-loinc-ontology-mchc-standard\"> </a><a name=\"hcmii-vs-labor-loinc-ontology-mchc-standard\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.83\"> version &#x1F4CD;2.83</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/786-4/\">786-4</a></td><td style=\"color: #cccccc\">MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count</td></tr><tr><td><a href=\"https://loinc.org/28540-3/\">28540-3</a></td><td style=\"color: #cccccc\">MCHC [Entitic Mass/volume] in Red Blood Cells</td></tr><tr><td><a href=\"https://loinc.org/59467-1/\">59467-1</a></td><td style=\"color: #cccccc\">MCHC [Entitic Moles/volume] in Red Blood Cells</td></tr></table></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20261021\"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20261021</span> where constraint  = &lt;&lt; 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
@@ -146,7 +146,7 @@
   "title" : "MII VS Labor LOINC Ontology Mchc Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -155,7 +155,7 @@
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "description" : "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. Plus 1 hand-added LOINC code(s) the LOINC Ontology release does not model (ontology gap, see the analyte review page): 59467-1. ECL: `<< 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -174,6 +174,9 @@
       },
       {
         "code" : "28540-3"
+      },
+      {
+        "code" : "59467-1"
       }]
     },
     {
@@ -182,7 +185,7 @@
       "filter" : [{
         "property" : "constraint",
         "op" : "=",
-        "value" : "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+        "value" : "<< 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
       }]
     }]
   }

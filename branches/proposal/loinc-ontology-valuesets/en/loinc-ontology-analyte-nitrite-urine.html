@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.11"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.13"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -338,10 +338,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#nitrite-in-urine-qualitative" id="markdown-toc-nitrite-in-urine-qualitative">Nitrite in urine (qualitative)</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>nitrite urine</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>nitrite urine</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|</code> (9 concepts, 9 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-convertible.html">Convertible</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-qualitative.html">Qualitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative.html">Semi-quantitative</a>.</p>
 
@@ -378,7 +379,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -426,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -465,7 +466,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -486,7 +487,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="discussion">Discussion</h4>
 
 <ul>
-  <li><strong>Three presence codes</strong> (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results.</li>
+  <li><strong>Three presence codes</strong> (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results. Since LOINC Ontology 2026-10-21 these observables carry the property <em>Threshold</em> instead of <em>Presence</em>; the rule follows the release.</li>
   <li><strong>The quantitative strip codes are out.</strong> 2657-5 and 20407-3 (Nitrite [Mass/volume] in Urine, the latter by test strip) are excluded by Property. Some analysers export the dipstick nitrite as a concentration; a site doing so would fall outside this ValueSet and should map to the presence code instead.</li>
 </ul>
 
@@ -498,7 +499,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -591,6 +592,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<p>Recall check against LOINC 2.83 itself: all 5 laboratory terms that match the analyte's LOINC pattern (Component ~ ^Nitrite$; System ~ Urine) are in the pool.</p>
+
 
 
 
@@ -616,7 +621,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

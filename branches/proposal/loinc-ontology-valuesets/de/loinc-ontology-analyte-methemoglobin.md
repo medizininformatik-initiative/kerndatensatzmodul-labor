@@ -3,55 +3,54 @@
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)
 * [**LOINC-Ontology-ValueSets (Vorschlag)**](loinc-ontology-valuesets.md)
-* [**LOINC Ontology - ValueSets je klinischem Test**](loinc-ontology-clinical-tests.md)
+* [**LOINC Ontology - ValueSets je Laborparameter**](loinc-ontology-clinical-tests.md)
 * **LOINC Ontology - Analyt Methämoglobin**
 
 ## LOINC Ontology - Analyt Methämoglobin
 
-Diese Seite ist das Review-Material für den Analyten **methemoglobin** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **methemoglobin** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 27840003 |Methemoglobin (substance)|` (17 Konzepte, 17 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-qualitative.md).
 
 ### Methemoglobin in blood (quantitative)
 
-ValueSet [mii-vs-labor-loinc-ontology-methemoglobin-standard](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-standard.md), Profil [mii-pr-labor-loinc-ontology-methemoglobin-standard](StructureDefinition-mii-pr-labor-loinc-ontology-methemoglobin-standard.md). Die Regel wählt 11 der 17 Poolkonzepte aus.
+ValueSet [mii-vs-labor-loinc-ontology-methemoglobin-standard](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-standard.md), Profil [mii-pr-labor-loinc-ontology-methemoglobin-standard](StructureDefinition-mii-pr-labor-loinc-ontology-methemoglobin-standard.md). Die Regel wählt 7 der 17 Poolkonzepte aus.
 
 | | |
 | :--- | :--- |
-| Component | `<< Methemoglobin` |
-| Direct site | `<< Blood specimen` |
+| Component | Methemoglobin |
+| Direct site | `<< Blood specimen minus (<< Cord blood specimen or << Fetal blood specimen or << Dried blood spot specimen)` |
 | Property | `<< Measurement property` |
 | Property | `not << Ratio` |
 | Scale type | `<< Quantitative value` |
 
-#### Enthalten (11)
+#### Enthalten (7)
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 4534-4 | Cyanmethemoglobin/Hemoglobin.total in Blood | Blood specimen | Mass fraction | Quantitative value | – |
 | 15082-1 | Methemoglobin [Mass/volume] in Blood | Blood specimen | Mass concentration | Quantitative value | – |
 | 56040-9 | Methemoglobin [Moles/volume] in Blood | Blood specimen | Substance concentration | Quantitative value | – |
 | 2615-3 | Methemoglobin/Hemoglobin.total in Arterial blood | Arterial blood specimen | Mass fraction | Quantitative value | – |
-| 72361-9 | Methemoglobin/Hemoglobin.total in Arterial cord blood | Arterial cord blood specimen | Mass fraction | Quantitative value | – |
 | 2614-6 | Methemoglobin/Hemoglobin.total in Blood | Blood specimen | Mass fraction | Quantitative value | – |
 | 2616-1 | Methemoglobin/Hemoglobin.total in Capillary blood | Capillary blood specimen | Mass fraction | Quantitative value | – |
-| 55942-7 | Methemoglobin/Hemoglobin.total in Cord blood | Cord blood specimen | Mass fraction | Quantitative value | – |
 | 41607-3 | Methemoglobin/Hemoglobin.total in Mixed venous blood | Mixed venous blood specimen | Mass fraction | Quantitative value | – |
 | 2617-9 | Methemoglobin/Hemoglobin.total in Venous blood | Venous blood specimen | Mass fraction | Quantitative value | – |
-| 72360-1 | Methemoglobin/Hemoglobin.total in Venous cord blood | Venous cord blood specimen | Mass fraction | Quantitative value | – |
 
-* **Materialien unter den enthaltenen Codes**: Blood specimen (4), Arterial blood specimen (1), Arterial cord blood specimen (1), Capillary blood specimen (1), Cord blood specimen (1), Mixed venous blood specimen (1), Venous blood specimen (1), Venous cord blood specimen (1)
+* **Materialien unter den enthaltenen Codes**: Blood specimen (3), Arterial blood specimen (1), Capillary blood specimen (1), Mixed venous blood specimen (1), Venous blood specimen (1)
 * **Techniken unter den enthaltenen Codes**: (keine)
 
-#### Aus dem Pool ausgeschlossen (6)
+#### Aus dem Pool ausgeschlossen (10)
 
-**Ausgeschlossen, weil Direct site nicht passt (3)**
+**Ausgeschlossen, weil Direct site nicht passt (6)**
 
 | | | |
 | :--- | :--- | :--- |
 | 72262-9 | Methemoglobin [Moles/volume] in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
+| 72361-9 | Methemoglobin/Hemoglobin.total in Arterial cord blood | Arterial cord blood specimen |
 | 97554-0 | Methemoglobin/Hemoglobin.total in Central venous blood | – |
+| 55942-7 | Methemoglobin/Hemoglobin.total in Cord blood | Cord blood specimen |
 | 2618-7 | Methemoglobin/Hemoglobin.total in Red Blood Cells | Erythrocyte specimen |
+| 72360-1 | Methemoglobin/Hemoglobin.total in Venous cord blood | Venous cord blood specimen |
 
 1 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 97554-0.
 
@@ -64,6 +63,12 @@ ValueSet [mii-vs-labor-loinc-ontology-methemoglobin-standard](ValueSet-mii-vs-la
 
 1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109592-6.
 
+**Ausgeschlossen, weil Component nicht passt (1)**
+
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| 4534-4 | Cyanmethemoglobin/Hemoglobin.total in Blood | Blood specimen | Mass fraction | Quantitative value |
+
 **Ausgeschlossen, weil Direct site und Scale type nicht passen (1)**
 
 | | | | |
@@ -72,9 +77,10 @@ ValueSet [mii-vs-labor-loinc-ontology-methemoglobin-standard](ValueSet-mii-vs-la
 
 #### Diskussion
 
-* **Anteil und Konzentration sind beide drin.** Die Regel lässt jede Mess-Property außer Verhältnis zu, also stehen Methämoglobin/Gesamthämoglobin (%) und die Massen- bzw. Stoffmengenkonzentrationen in einer Menge. Blutgasanalysatoren berichten den Anteil; das Profil nennt entsprechend zwei erwartete Einheiten.
-* **Nabelschnurblut und alle Blut-Subtypen** sind drin, wie beim Hämoglobin.
-* **Erythrozytenkonzentrat-Codes** (2618-7, 2619-5) und zentralvenöses Blut (97554-0, in diesem Release ohne Direct site) sind draußen.
+* **Anteil und Konzentration sind beide drin.** Die Regel lässt jede Mess-Property außer Ratio zu, deshalb liegen Methemoglobin/Hemoglobin.total (%) und die Massen- oder Stoffmengenkonzentrationen in einer Menge. Blutgasanalysatoren berichten den Anteil; das Profil nennt entsprechend zwei erwartete Einheiten.
+* **Exakte Component.** Die vorige Regel nutzte `<< Methemoglobin` und schloss damit Cyanmethämoglobin (4534-4) ein, eine Subtyp-Substanz; die exakte Übereinstimmung lässt es draußen.
+* **Nabelschnurblut** (55942-7, 72360-1, 72361-9) ist über den Blut-Block draußen.
+* **Erythrozyten-Specimen**-Codes (2618-7, 2619-5) und zentralvenöses Blut (97554-0, kein Direct site in diesem Release) sind draußen.
 
 ### Der Pool und seine Use-Case-Gruppen
 
@@ -99,4 +105,16 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 72360-1 | Methemoglobin/Hemoglobin.total in Venous cord blood | Mass fraction | Quantitative value | Venous cord blood specimen | Quantitativ | Quantitative Skala |
 | 2613-8 | Methemoglobin [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | 2619-5 | Methemoglobin [Presence] in Red Blood Cells | Threshold | Ordinal value | Erythrocyte specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+
+### LOINC-Terme des Analyten außerhalb des Pools
+
+Recall-Prüfung gegen LOINC 2.83 selbst: 21 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Methemoglobin(/Hemoglobin.total)?$); 16 davon liegen im Pool, 5 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 71882-5 | Methemoglobin/Hemoglobin.total [Pure mass fraction] in Arterial blood | MFr.DF | BldA |
+| 71883-3 | Methemoglobin/Hemoglobin.total [Pure mass fraction] in Blood | MFr.DF | Bld |
+| 71881-7 | Methemoglobin/Hemoglobin.total [Pure mass fraction] in Capillary blood | MFr.DF | BldC |
+| 71880-9 | Methemoglobin/Hemoglobin.total [Pure mass fraction] in Mixed venous blood | MFr.DF | BldMV |
+| 71879-1 | Methemoglobin/Hemoglobin.total [Pure mass fraction] in Venous blood | MFr.DF | BldV |
 

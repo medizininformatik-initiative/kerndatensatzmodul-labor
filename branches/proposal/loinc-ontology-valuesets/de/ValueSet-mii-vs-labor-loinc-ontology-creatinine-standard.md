@@ -1,0 +1,453 @@
+# MII VS Labor LOINC Ontology Creatinine Standard - MII IG Laborbefund v2027.0.0-ci
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII VS Labor LOINC Ontology Creatinine Standard**
+
+## ValueSet: MII VS Labor LOINC Ontology Creatinine Standard (Experimentell) 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-creatinine-standard | *Version*:2027.0.0-ci |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Creatinine_Standard |
+| **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
+
+ 
+Proposal: LOINC codes of the clinical test 'Creatinine in serum, plasma or blood' (standard tier, specimen Serum/Plasma/Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (79, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
+
+ **References** 
+
+* [MII PR Labor LOINC Ontology Creatinine Standard](StructureDefinition-mii-pr-labor-loinc-ontology-creatinine-standard.md)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Beschreibung der obigen Tabelle(n)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-labor-loinc-ontology-creatinine-standard",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.laborbefund"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ci"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C36292"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C25294"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "pw@gefyra.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-creatinine-standard",
+  "version" : "2027.0.0-ci",
+  "name" : "MII_VS_Labor_LOINC_Ontology_Creatinine_Standard",
+  "title" : "MII VS Labor LOINC Ontology Creatinine Standard",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-12",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de"
+    }]
+  }],
+  "description" : "Proposal: LOINC codes of the clinical test 'Creatinine in serum, plasma or blood' (standard tier, specimen Serum/Plasma/Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (79, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "purpose" : "Guidance for binding Observation.code of the MII laboratory test profile to a computably defined LOINC set; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.",
+  "copyright" : "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.83",
+      "concept" : [{
+        "code" : "103616-9"
+      },
+      {
+        "code" : "39966-7"
+      },
+      {
+        "code" : "2160-0"
+      },
+      {
+        "code" : "14682-9"
+      },
+      {
+        "code" : "21232-4"
+      },
+      {
+        "code" : "72271-0"
+      },
+      {
+        "code" : "39969-1"
+      },
+      {
+        "code" : "39972-5"
+      },
+      {
+        "code" : "40124-0"
+      },
+      {
+        "code" : "39962-6"
+      },
+      {
+        "code" : "62425-4"
+      },
+      {
+        "code" : "40272-7"
+      },
+      {
+        "code" : "39957-6"
+      },
+      {
+        "code" : "40121-6"
+      },
+      {
+        "code" : "94008-0"
+      },
+      {
+        "code" : "39956-8"
+      },
+      {
+        "code" : "93999-1"
+      },
+      {
+        "code" : "40250-3"
+      },
+      {
+        "code" : "40266-9"
+      },
+      {
+        "code" : "39959-2"
+      },
+      {
+        "code" : "40112-5"
+      },
+      {
+        "code" : "40128-1"
+      },
+      {
+        "code" : "39965-9"
+      },
+      {
+        "code" : "39975-8"
+      },
+      {
+        "code" : "40113-3"
+      },
+      {
+        "code" : "40123-2"
+      },
+      {
+        "code" : "39968-3"
+      },
+      {
+        "code" : "40116-6"
+      },
+      {
+        "code" : "16188-5"
+      },
+      {
+        "code" : "39955-0"
+      },
+      {
+        "code" : "39973-3"
+      },
+      {
+        "code" : "40268-5"
+      },
+      {
+        "code" : "40253-7"
+      },
+      {
+        "code" : "40115-8"
+      },
+      {
+        "code" : "40114-1"
+      },
+      {
+        "code" : "40251-1"
+      },
+      {
+        "code" : "11042-9"
+      },
+      {
+        "code" : "40265-1"
+      },
+      {
+        "code" : "11041-1"
+      },
+      {
+        "code" : "40273-5"
+      },
+      {
+        "code" : "40126-5"
+      },
+      {
+        "code" : "39976-6"
+      },
+      {
+        "code" : "59826-8"
+      },
+      {
+        "code" : "39958-4"
+      },
+      {
+        "code" : "77140-2"
+      },
+      {
+        "code" : "51619-5"
+      },
+      {
+        "code" : "40264-4"
+      },
+      {
+        "code" : "39970-9"
+      },
+      {
+        "code" : "40119-0"
+      },
+      {
+        "code" : "40248-7"
+      },
+      {
+        "code" : "40249-5"
+      },
+      {
+        "code" : "39967-5"
+      },
+      {
+        "code" : "40120-8"
+      },
+      {
+        "code" : "40271-9"
+      },
+      {
+        "code" : "16189-3"
+      },
+      {
+        "code" : "40255-2"
+      },
+      {
+        "code" : "40122-4"
+      },
+      {
+        "code" : "40127-3"
+      },
+      {
+        "code" : "40125-7"
+      },
+      {
+        "code" : "39974-1"
+      },
+      {
+        "code" : "44784-7"
+      },
+      {
+        "code" : "38483-4"
+      },
+      {
+        "code" : "40252-9"
+      },
+      {
+        "code" : "51620-3"
+      },
+      {
+        "code" : "40117-4"
+      },
+      {
+        "code" : "40270-1"
+      },
+      {
+        "code" : "40269-3"
+      },
+      {
+        "code" : "39963-4"
+      },
+      {
+        "code" : "39971-7"
+      },
+      {
+        "code" : "40254-5"
+      },
+      {
+        "code" : "101475-2"
+      },
+      {
+        "code" : "40258-6"
+      },
+      {
+        "code" : "40267-7"
+      },
+      {
+        "code" : "39960-0"
+      },
+      {
+        "code" : "40257-8"
+      },
+      {
+        "code" : "40256-0"
+      },
+      {
+        "code" : "40118-2"
+      },
+      {
+        "code" : "39964-2"
+      },
+      {
+        "code" : "39961-8"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11010000107/version/20261021",
+      "filter" : [{
+        "property" : "constraint",
+        "op" : "=",
+        "value" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|, << 704327008 |Direct site (attribute)| = (<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)), << 370130000 |Property (attribute)| = (<< 118539007 |Mass concentration (property) (qualifier value)| OR << 118556004 |Substance concentration (property) (qualifier value)| OR << 118569000 |Arbitrary concentration (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+      }]
+    }]
+  }
+}
+
+```

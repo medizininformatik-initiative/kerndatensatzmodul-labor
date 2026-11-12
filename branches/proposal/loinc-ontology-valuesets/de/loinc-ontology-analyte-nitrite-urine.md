@@ -3,12 +3,12 @@
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)
 * [**LOINC-Ontology-ValueSets (Vorschlag)**](loinc-ontology-valuesets.md)
-* [**LOINC Ontology - ValueSets je klinischem Test**](loinc-ontology-clinical-tests.md)
+* [**LOINC Ontology - ValueSets je Laborparameter**](loinc-ontology-clinical-tests.md)
 * **LOINC Ontology - Analyt Nitrit im Urin**
 
 ## LOINC Ontology - Analyt Nitrit im Urin
 
-Diese Seite ist das Review-Material für den Analyten **nitrite urine** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **nitrite urine** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` (9 Konzepte, 9 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-qualitative.md), [Semiquantitativ](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative.md).
 
@@ -53,8 +53,8 @@ ValueSet [mii-vs-labor-loinc-ontology-nitrite-urine-standard](ValueSet-mii-vs-la
 
 #### Diskussion
 
-* **Drei Nachweis-Codes** (5802-4, 32710-6 Teststreifen, 50558-6 automatisierter Teststreifen). Das Profil legt CodeableConcept fest; Ergebnisse werden mit den kodierten Laborergebnissen des Moduls kodiert.
-* **Die quantitativen Streifen-Codes sind draußen.** 2657-5 und 20407-3 (Nitrit [Masse/Volumen] im Urin, letzteres per Teststreifen) sind über die Property ausgeschlossen. Manche Analysatoren exportieren das Streifen-Nitrit als Konzentration; ein Standort, der das tut, fiele aus diesem ValueSet heraus und sollte stattdessen auf den Nachweis-Code mappen.
+* **Drei Nachweis-Codes** (5802-4, 32710-6 Teststreifen, 50558-6 automatisierter Teststreifen). Das Profil legt CodeableConcept fest; Ergebnisse werden mit den kodierten Laborergebnissen des Moduls kodiert. Seit LOINC Ontology 2026-10-21 tragen diese Observables die Property **Threshold** statt **Presence**; die Regel folgt dem Release.
+* **Die quantitativen Streifencodes sind draußen.** 2657-5 und 20407-3 (Nitrite [Mass/volume] in Urine, letzteres per Teststreifen) sind über die Property ausgeschlossen. Manche Analysatoren exportieren das Teststreifen-Nitrit als Konzentration; ein solcher Standort fiele aus diesem ValueSet heraus und sollte stattdessen auf den Nachweis-Code mappen.
 
 ### Der Pool und seine Use-Case-Gruppen
 
@@ -71,4 +71,8 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | 5802-4 | Nitrite [Presence] in Urine by Test strip | Threshold | Ordinal value | Urine specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | 20407-3 | Nitrite [Mass/volume] in Urine by Test strip | Mass concentration | Semi-quantitative value | Urine specimen | Semiquantitativ | Semiquantitative Skala (Teststreifen) |
+
+### LOINC-Terme des Analyten außerhalb des Pools
+
+Recall-Prüfung gegen LOINC 2.83 selbst: alle 5 Laborterme, die auf das LOINC-Muster des Analyten passen (Component ~ ^Nitrite$; System ~ Urine), liegen im Pool.
 

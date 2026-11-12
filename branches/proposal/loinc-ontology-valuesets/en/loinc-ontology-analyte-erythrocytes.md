@@ -8,36 +8,35 @@
 
 ## LOINC Ontology - Analyte Erythrocytes
 
-This page is the review material for the analyte **erythrocytes** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
+This page is the review material for the analyte **erythrocytes** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|` (107 concepts, 106 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-complete.md), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-quantitative.md), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-convertible.md), [Qualitative](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-qualitative.md), [Semi-quantitative](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative.md).
 
 ### Erythrocyte count in blood
 
-ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-count-standard.md), profile [mii-pr-labor-loinc-ontology-erythrocytes-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-erythrocytes-count-standard.md). The rule selects 4 of the 107 pool concepts.
+ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-count-standard.md), profile [mii-pr-labor-loinc-ontology-erythrocytes-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-erythrocytes-count-standard.md). The rule selects 3 of the 107 pool concepts.
 
 | | |
 | :--- | :--- |
 | Component | Erythrocyte |
-| Direct site | `<< Blood specimen` |
+| Direct site | `<< Blood specimen minus (<< Cord blood specimen or << Fetal blood specimen or << Dried blood spot specimen)` |
 | Property | `<< Number concentration` |
 | Scale type | `<< Quantitative value` |
 
-#### Included (4)
+#### Included (3)
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 26453-1 | Erythrocytes [#/volume] in Blood | Blood specimen | Number concentration | Quantitative value | – |
 | 789-8 | Erythrocytes [#/volume] in Blood by Automated count | Blood specimen | Number concentration | Quantitative value | Automated count technique |
 | 790-6 | Erythrocytes [#/volume] in Blood by Manual count | Blood specimen | Number concentration | Quantitative value | Manual count technique |
-| 47280-3 | Erythrocytes [#/volume] in Cord blood | Cord blood specimen | Number concentration | Quantitative value | – |
 
-* **Specimens among the included codes**: Blood specimen (3), Cord blood specimen (1)
+* **Specimens among the included codes**: Blood specimen (3)
 * **Techniques among the included codes**: Automated count technique (1), Manual count technique (1)
 
-#### Excluded from the pool (103)
+#### Excluded from the pool (104)
 
-**Excluded because Direct site does not match (46)**
+**Excluded because Direct site does not match (47)**
 
 | | | |
 | :--- | :--- | :--- |
@@ -57,6 +56,7 @@ ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-
 | 46087-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –2nd tube | Cerebrospinal fluid specimen |
 | 46091-5 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –3rd tube | Cerebrospinal fluid specimen |
 | 46092-3 | Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –4th tube | Cerebrospinal fluid specimen |
+| 47280-3 | Erythrocytes [#/volume] in Cord blood | Cord blood specimen |
 | 57841-9 | Erythrocytes [#/volume] in Dialysis fluid by Automated count | Dialysate specimen |
 | 53517-9 | Erythrocytes [#/volume] in Dialysis fluid by Manual count | Dialysate specimen |
 | 30387-5 | Erythrocytes [#/volume] in Gastric fluid | Gastric fluid specimen |
@@ -90,7 +90,7 @@ ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-
 
 2 of these have no Direct site attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 62240-7, 67831-8.
 
-**Excluded because Direct site and Property do not match (25)**
+**Excluded because Direct site and Property do not match (27)**
 
 | | | | |
 | :--- | :--- | :--- | :--- |
@@ -113,6 +113,8 @@ ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-
 | 55781-9 | Hematocrit [Volume Fraction] of Bone marrow by calculation | Bone marrow specimen | Volume fraction |
 | 13508-7 | Hematocrit [Volume Fraction] of Cerebrospinal Fluid by Centrifugation | Cerebrospinal fluid specimen | Volume fraction |
 | 30398-2 | Hematocrit [Volume Fraction] of Cerebrospinal Fluid by calculation | Cerebrospinal fluid specimen | Volume fraction |
+| 11271-4 | Hematocrit [Volume Fraction] of Cord blood by Automated count | Cord blood specimen | Volume fraction |
+| 11151-8 | Hematocrit [Volume Fraction] of Cord blood by calculation | Cord blood specimen | Volume fraction |
 | 47640-8 | Hematocrit [Volume Fraction] of Dialysis fluid by calculation | Dialysate specimen | Volume fraction |
 | 107175-2 | Hematocrit [Volume Fraction] of Peritoneal fluid | Peritoneal fluid specimen | Volume fraction |
 | 70169-8 | Hematocrit [Volume Fraction] of Pleural fluid by calculation | Pleural fluid specimen | Volume fraction |
@@ -147,7 +149,7 @@ ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-
 
 2 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109724-5, SCT 648131000005102.
 
-**Excluded because Property does not match (12)**
+**Excluded because Property does not match (10)**
 
 | | | |
 | :--- | :--- | :--- |
@@ -159,8 +161,6 @@ ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-
 | 20570-8 | Hematocrit [Volume Fraction] of Blood by calculation | Volume fraction |
 | 104874-3 | Hematocrit [Volume Fraction] of Blood by calculation –baseline | Volume fraction |
 | 42908-4 | Hematocrit [Volume Fraction] of Capillary blood by calculation | Volume fraction |
-| 11271-4 | Hematocrit [Volume Fraction] of Cord blood by Automated count | Volume fraction |
-| 11151-8 | Hematocrit [Volume Fraction] of Cord blood by calculation | Volume fraction |
 | 41655-2 | Hematocrit [Volume Fraction] of Mixed venous blood by calculation | Volume fraction |
 | 41654-5 | Hematocrit [Volume Fraction] of Venous blood by calculation | Volume fraction |
 
@@ -173,7 +173,7 @@ ValueSet [mii-vs-labor-loinc-ontology-erythrocytes-count-standard](ValueSet-mii-
 
 #### Discussion
 
-* **Four codes, one of them cord blood** (47280-3). The routine count is 789-8 (automated), 790-6 (manual) and the method-less 26453-1.
+* **Three codes**: 789-8 (automated), 790-6 (manual) and the method-less 26453-1. The cord blood count (47280-3) is out via the blood block.
 * **Fetal blood** (62240-7) has no Direct site in this release and is invisible to the rule.
 * **The hematocrit codes** are excluded by Property (volume fraction), as intended; urine and body-fluid erythrocytes by specimen.
 
@@ -290,4 +290,21 @@ One row per pool concept with the attributes the classification uses; the bucket
 | SCT 648131000005102 | Presence of erythrocytes in urine | Presence | – | Urine specimen | Qualitative | Presence property → qualitative |
 | 57747-8 | Erythrocytes [#/volume] in Urine by Automated test strip | Number concentration | Semi-quantitative value | Urine specimen | Semi-quantitative | Semi-quantitative scale (test strip) |
 | 20409-9 | Erythrocytes [#/volume] in Urine by Test strip | Number concentration | Semi-quantitative value | Urine specimen | Semi-quantitative | Semi-quantitative scale (test strip) |
+
+### LOINC terms of the analyte outside the pool
+
+Recall check against LOINC 2.83 itself: 88 laboratory terms match the analyte's LOINC pattern (Component ~ ^Erythrocytes$); 78 of them are in the pool, 10 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 115741-1 | Erythrocytes [DistWidth] in Red Blood Cells by Coefficient of variation | DistWidth | RBC |
+| 115742-9 | Erythrocytes [DistWidth] in Red Blood Cells by Standard deviation | DistWidth | RBC |
+| 11273-0 | Erythrocytes [Morphology] in Blood by Automated count | Morph | Bld |
+| 57960-7 | Erythrocytes [Morphology] in Body fluid by Light microscopy | Morph | Body fld |
+| 11127-8 | Erythrocytes [Morphology] in Bone marrow | Morph | Bone mar |
+| 18289-9 | Erythrocytes [Morphology] in Cerebrospinal Fluid by Light microscopy | Morph | CSF |
+| 18290-7 | Erythrocytes [Morphology] in Synovial fluid by Light microscopy | Morph | Synv fld |
+| 68903-4 | Erythrocytes by Light microscopy in Urine sediment collected for unspecified duration | NRat | Urine sed |
+| 68912-5 | Erythrocytes in 24 hour Urine sediment by Light microscopy | NRat | Urine sed |
+| 59830-0 | Erythrocytes in 3 hour Urine sediment by Light microscopy | NRat | Urine sed |
 

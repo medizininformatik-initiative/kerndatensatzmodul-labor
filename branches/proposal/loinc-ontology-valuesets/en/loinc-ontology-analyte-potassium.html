@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.13"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.15"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -336,18 +336,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#potassium-in-serumplasma" id="markdown-toc-potassium-in-serumplasma">Potassium in serum/plasma</a></li>
+  <li><a href="#potassium-in-serum-plasma-or-blood" id="markdown-toc-potassium-in-serum-plasma-or-blood">Potassium in serum, plasma or blood</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>potassium</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>potassium</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 304048005 |Potassium electrolyte (substance)|</code> (57 concepts, 57 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-potassium-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-potassium-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-potassium-convertible.html">Convertible</a>.</p>
 
-<h3 id="potassium-in-serumplasma">Potassium in serum/plasma</h3>
+<h3 id="potassium-in-serum-plasma-or-blood">Potassium in serum, plasma or blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-potassium-standard.html">mii-vs-labor-loinc-ontology-potassium-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-potassium-standard.html">mii-pr-labor-loinc-ontology-potassium-standard</a>. The rule selects 7 of the 57 pool concepts.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-potassium-standard.html">mii-vs-labor-loinc-ontology-potassium-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-potassium-standard.html">mii-pr-labor-loinc-ontology-potassium-standard</a>. The rule selects 15 of the 57 pool concepts.</p>
 
 <table>
   <thead>
@@ -363,11 +364,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Substance concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
     </tr>
     <tr>
       <td>Scale type</td>
@@ -376,13 +377,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="included-7">Included (7)</h4>
+<h4 id="included-15">Included (15)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -390,6 +391,54 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>75940-7</td>
+      <td>Potassium [Mass/volume] in Blood</td>
+      <td>Blood specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>22760-3</td>
+      <td>Potassium [Mass/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Mass concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>32713-0</td>
+      <td>Potassium [Moles/volume] in Arterial blood</td>
+      <td>Arterial blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>6298-4</td>
+      <td>Potassium [Moles/volume] in Blood</td>
+      <td>Blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>39790-1</td>
+      <td>Potassium [Moles/volume] in Capillary blood</td>
+      <td>Capillary blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>41656-0</td>
+      <td>Potassium [Moles/volume] in Mixed venous blood</td>
+      <td>Mixed venous blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
     <tr>
       <td>2823-3</td>
       <td>Potassium [Moles/volume] in Serum or Plasma</td>
@@ -446,27 +495,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
       <td>–</td>
     </tr>
+    <tr>
+      <td>77142-8</td>
+      <td>Potassium [Moles/volume] in Serum, Plasma or Blood</td>
+      <td>Plasma specimen or serum specimen or whole blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>39789-3</td>
+      <td>Potassium [Moles/volume] in Venous blood</td>
+      <td>Venous blood specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
   </tbody>
 </table>
 
 <ul>
-  <li><strong>Specimens among the included codes</strong>: Acellular blood (serum or plasma) specimen (7)</li>
+  <li><strong>Specimens among the included codes</strong>: Acellular blood (serum or plasma) specimen (8), Blood specimen (2), Arterial blood specimen (1), Capillary blood specimen (1), Mixed venous blood specimen (1), Plasma specimen or serum specimen or whole blood specimen (1), Venous blood specimen (1)</li>
   <li><strong>Techniques among the included codes</strong>: (none)</li>
 </ul>
 
-<h4 id="excluded-from-the-pool-50">Excluded from the pool (50)</h4>
+<h4 id="excluded-from-the-pool-42">Excluded from the pool (42)</h4>
 
-<p><strong>Excluded because Direct site does not match (30)</strong></p>
+<p><strong>Excluded because Direct site does not match (26)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>82722-0</td>
+      <td>Potassium [Mass/volume] in Red Blood Cells</td>
+      <td>Erythrocyte specimen</td>
+    </tr>
+    <tr>
+      <td>9482-1</td>
+      <td>Potassium [Mass/volume] in Water</td>
+      <td>Water specimen</td>
+    </tr>
     <tr>
       <td>57355-0</td>
       <td>Potassium [Moles/volume] in 12 hour Urine</td>
@@ -493,24 +568,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Amniotic fluid specimen</td>
     </tr>
     <tr>
-      <td>32713-0</td>
-      <td>Potassium [Moles/volume] in Arterial blood</td>
-      <td>Arterial blood specimen</td>
-    </tr>
-    <tr>
-      <td>6298-4</td>
-      <td>Potassium [Moles/volume] in Blood</td>
-      <td>Blood specimen</td>
-    </tr>
-    <tr>
       <td>2821-7</td>
       <td>Potassium [Moles/volume] in Body fluid</td>
       <td>Body fluid specimen</td>
-    </tr>
-    <tr>
-      <td>39790-1</td>
-      <td>Potassium [Moles/volume] in Capillary blood</td>
-      <td>Capillary blood specimen</td>
     </tr>
     <tr>
       <td>2819-1</td>
@@ -531,11 +591,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>17795-6</td>
       <td>Potassium [Moles/volume] in Hyperal solution</td>
       <td>–</td>
-    </tr>
-    <tr>
-      <td>41656-0</td>
-      <td>Potassium [Moles/volume] in Mixed venous blood</td>
-      <td>Mixed venous blood specimen</td>
     </tr>
     <tr>
       <td>60218-5</td>
@@ -561,11 +616,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>2825-8</td>
       <td>Potassium [Moles/volume] in Saliva (oral fluid)</td>
       <td>Saliva specimen</td>
-    </tr>
-    <tr>
-      <td>77142-8</td>
-      <td>Potassium [Moles/volume] in Serum, Plasma or Blood</td>
-      <td>Plasma specimen or serum specimen or whole blood specimen</td>
     </tr>
     <tr>
       <td>32336-0</td>
@@ -608,11 +658,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>–</td>
     </tr>
     <tr>
-      <td>39789-3</td>
-      <td>Potassium [Moles/volume] in Venous blood</td>
-      <td>Venous blood specimen</td>
-    </tr>
-    <tr>
       <td>12814-0</td>
       <td>Potassium [Moles/volume] in Vitreous fluid</td>
       <td>Vitreous humor specimen</td>
@@ -622,13 +667,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>3 of these have no Direct site attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 17795-6, 30549-0, 94841-4.</p>
 
-<p><strong>Excluded because Direct site and Property do not match (15)</strong></p>
+<p><strong>Excluded because Direct site and Property do not match (12)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -645,24 +690,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Potassium [Mass/mass] in Tissue</td>
       <td>Tissue specimen</td>
       <td>Mass content</td>
-    </tr>
-    <tr>
-      <td>75940-7</td>
-      <td>Potassium [Mass/volume] in Blood</td>
-      <td>Blood specimen</td>
-      <td>Mass concentration</td>
-    </tr>
-    <tr>
-      <td>82722-0</td>
-      <td>Potassium [Mass/volume] in Red Blood Cells</td>
-      <td>Erythrocyte specimen</td>
-      <td>Mass concentration</td>
-    </tr>
-    <tr>
-      <td>9482-1</td>
-      <td>Potassium [Mass/volume] in Water</td>
-      <td>Water specimen</td>
-      <td>Mass concentration</td>
     </tr>
     <tr>
       <td>32550-6</td>
@@ -733,7 +760,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -759,13 +786,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>2 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 111266-3, 111459-4.</p>
 
-<p><strong>Excluded because Property does not match (2)</strong></p>
+<p><strong>Excluded because Property does not match (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -774,11 +801,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>42569-4</td>
       <td>Potassium [Mass or Moles/volume] in Serum or Plasma</td>
       <td>Mass concentration or substance concentration</td>
-    </tr>
-    <tr>
-      <td>22760-3</td>
-      <td>Potassium [Mass/volume] in Serum or Plasma</td>
-      <td>Mass concentration</td>
     </tr>
   </tbody>
 </table>
@@ -789,7 +811,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
     </tr>
@@ -809,9 +831,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="discussion">Discussion</h4>
 
 <ul>
-  <li><strong>Whole blood potassium is out.</strong> 6298-4 (blood), 32713-0 (arterial) and 39789-3 (venous), the blood gas analyser values, fail the serum/plasma constraint. Clinically they are used interchangeably with the serum value in acute care; the proposal is to decide this explicitly, either widening Direct site to <code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code> or keeping a separate blood gas test.</li>
-  <li><strong>22760-3 and 42569-4 are out by Property.</strong> Mass concentration (mg/dL) is rare in Germany; 42569-4 ("Mass or Moles") was used by some systems as a catch-all and should be retired rather than included.</li>
-  <li><strong>The included set is 2823-3 plus timed and dialysis variants</strong> (pre/post dialysis, numbered specimens). Those are the same measurement in a context; pooling them is the data user's call.</li>
+  <li><strong>Whole blood is in.</strong> 6298-4 (blood), 32713-0 (arterial), 39789-3 (venous), 39790-1 (capillary), 41656-0 (mixed venous) and 77142-8 (serum, plasma or blood) are the blood gas analyser values; in acute care they are used interchangeably with the serum value, so the shared blood block admits them. A site that wants to keep blood gas potassium apart does so by <code class="language-plaintext highlighter-rouge">Observation.specimen</code>, not by the code.</li>
+  <li><strong>Mass concentration is in.</strong> 22760-3 (serum or plasma, mg/dL) and 75940-7 (blood) are the same measurement in another unit; UCUM conversion to mmol/L needs the molar mass, which is defined for potassium. LOINC marks 22760-3 as <em>discouraged</em>; the LOINC status is not an attribute of the LOINC Ontology, so a rule cannot see it. Whether the generator should filter on LOINC status is an open decision that concerns several tests (see also eGFR).</li>
+  <li><strong>42569-4 ("Mass or Moles") stays out</strong>: its property is the generic quantity concentration, which the block does not list; it was a catch-all code and should be retired rather than included.</li>
+  <li><strong>Timed and dialysis variants are in</strong> (pre/post dialysis, numbered specimens, post vasopressin). They are the same measurement in a context; pooling them is the data user's call.</li>
 </ul>
 
 <h3 id="the-pool-and-its-use-case-buckets">The pool and its use-case buckets</h3>
@@ -822,7 +845,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -1347,6 +1370,89 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<p>Recall check against LOINC 2.83 itself: 56 laboratory terms match the analyte's LOINC pattern (Component ~ ^Potassium$); 45 of them are in the pool, 11 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>87455-2</td>
+      <td>Potassium [Mass/mass] in Specimen</td>
+      <td>MCnt</td>
+      <td>XXX</td>
+    </tr>
+    <tr>
+      <td>51720-1</td>
+      <td>Potassium [Mass/time] in 24 hour Urine</td>
+      <td>MRat</td>
+      <td>Urine</td>
+    </tr>
+    <tr>
+      <td>87454-5</td>
+      <td>Potassium [Mass/volume] in Specimen</td>
+      <td>MCnc</td>
+      <td>XXX</td>
+    </tr>
+    <tr>
+      <td>53123-6</td>
+      <td>Potassium [Moles/time] in 1 hour Urine</td>
+      <td>SRat</td>
+      <td>Urine</td>
+    </tr>
+    <tr>
+      <td>57380-8</td>
+      <td>Potassium [Moles/time] in 12 hour Urine</td>
+      <td>SRat</td>
+      <td>Urine</td>
+    </tr>
+    <tr>
+      <td>58996-0</td>
+      <td>Potassium [Moles/time] in 18 hour Urine</td>
+      <td>SRat</td>
+      <td>Urine</td>
+    </tr>
+    <tr>
+      <td>6792-6</td>
+      <td>Potassium [Moles/time] in 24 hour Stool</td>
+      <td>SRat</td>
+      <td>Stool</td>
+    </tr>
+    <tr>
+      <td>2829-0</td>
+      <td>Potassium [Moles/time] in 24 hour Urine</td>
+      <td>SRat</td>
+      <td>Urine</td>
+    </tr>
+    <tr>
+      <td>18372-3</td>
+      <td>Potassium [Moles/time] in 6 hour Urine</td>
+      <td>SRat</td>
+      <td>Urine</td>
+    </tr>
+    <tr>
+      <td>2826-6</td>
+      <td>Potassium [Moles/time] in 72 hour Stool</td>
+      <td>SRat</td>
+      <td>Stool</td>
+    </tr>
+    <tr>
+      <td>6940-1</td>
+      <td>Potassium [Moles/time] in unspecified time Stool</td>
+      <td>SRat</td>
+      <td>Stool</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -1372,7 +1478,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -338,6 +338,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#the-loinc-ontology-in-one-paragraph" id="markdown-toc-the-loinc-ontology-in-one-paragraph">The LOINC Ontology in one paragraph</a></li>
   <li><a href="#anatomy-of-a-rule" id="markdown-toc-anatomy-of-a-rule">Anatomy of a rule</a></li>
+  <li><a href="#the-shared-building-blocks" id="markdown-toc-the-shared-building-blocks">The shared building blocks</a></li>
   <li><a href="#the-three-parts-of-every-valueset" id="markdown-toc-the-three-parts-of-every-valueset">The three parts of every ValueSet</a></li>
   <li><a href="#expanding-and-validating" id="markdown-toc-expanding-and-validating">Expanding and validating</a></li>
   <li><a href="#versions-and-regeneration" id="markdown-toc-versions-and-regeneration">Versions and regeneration</a></li>
@@ -406,12 +407,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;&lt; 363787002 |Observable entity| :
     246093002 |Component|   = 38082009 |Hemoglobin (substance)|,
- &lt;&lt; 704327008 |Direct site| = &lt;&lt; 119297000 |Blood specimen|,
- &lt;&lt; 370130000 |Property|    = &lt;&lt; 118539007 |Mass concentration|,
+ &lt;&lt; 704327008 |Direct site| = (&lt;&lt; 119297000 |Blood specimen|
+                               MINUS (&lt;&lt; 122556008 |Cord blood specimen|
+                                      OR &lt;&lt; 737357006 |Fetal blood specimen|
+                                      OR &lt;&lt; 440500007 |Dried blood spot specimen|)),
+ &lt;&lt; 370130000 |Property|    = (&lt;&lt; 118539007 |Mass concentration|
+                               OR &lt;&lt; 118556004 |Substance concentration|
+                               OR &lt;&lt; 118569000 |Arbitrary concentration|),
  &lt;&lt; 370132008 |Scale type|  = &lt;&lt; 30766002 |Quantitative value|
 </code></pre></div></div>
 
-<p>Read it as: any observable entity whose Component is exactly Hemoglobin, whose specimen is Blood or a subtype of Blood (venous, arterial, capillary), whose Property is Mass concentration or a subtype, and whose Scale is Quantitative. <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> means "this concept and all its descendants", <code class="language-plaintext highlighter-rouge">&lt;</code> "the descendants only"; without either the value must match exactly. The choice between the two is a clinical decision made visible: <code class="language-plaintext highlighter-rouge">&lt;&lt; 38082009</code> would additionally pull in HbA1c and the hemoglobin variants, which is wanted for a hemoglobin <em>pool</em> but not for the routine hemoglobin test.</p>
+<p>Read it as: any observable entity whose Component is exactly Hemoglobin, whose specimen is Blood or a subtype of Blood (venous, arterial, capillary, serum, plasma) but not cord blood, fetal blood or a dried blood spot, whose Property is one of the three concentration properties or a subtype, and whose Scale is Quantitative. <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> means "this concept and all its descendants", <code class="language-plaintext highlighter-rouge">&lt;</code> "the descendants only"; without either the value must match exactly. The choice between the two is a clinical decision made visible: <code class="language-plaintext highlighter-rouge">&lt;&lt; 38082009</code> would additionally pull in HbA1c and the hemoglobin variants, which is wanted for a hemoglobin <em>pool</em> but not for the routine hemoglobin test.</p>
 
 <p>The same rule, decomposed as the tables on the following pages show it:</p>
 
@@ -431,12 +437,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td>this specimen or any subtype</td>
     </tr>
     <tr>
       <td>Property</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
       <td>this property or any subtype</td>
     </tr>
     <tr>
@@ -446,6 +452,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
+
+<h3 id="the-shared-building-blocks">The shared building blocks</h3>
+
+<p>The clinical review of the first version led to two building blocks that every routine blood test now shares, so that a decision is made once and applied everywhere:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Block</th>
+      <th>ECL</th>
+      <th>Decision it encodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Blood</strong> (specimen)</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen MINUS (&lt;&lt; Cord blood specimen OR &lt;&lt; Fetal blood specimen OR &lt;&lt; Dried blood spot specimen)</code></td>
+      <td>Venous, arterial, capillary and mixed venous blood, serum and plasma are the same routine specimen for a clinical test; the differences are left to <code class="language-plaintext highlighter-rouge">Observation.specimen</code>. Cord blood is a neonatal value with its own reference range and gets its own test. Fetal blood and dried blood spots belong to prenatal and screening programmes, not to routine care.</td>
+    </tr>
+    <tr>
+      <td><strong>Concentration</strong> (property)</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration OR &lt;&lt; Substance concentration OR &lt;&lt; Arbitrary concentration</code></td>
+      <td>g/dL, mmol/L and U/mL codes of the same measurement are one clinical test; the unit is a UCUM conversion, not a code boundary. Ratios, fractions and rates are not concentrations and stay out.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Two limits of the ontology show up in these blocks. Observables "in Fetus" carry no Direct site in the LOINC Ontology, so no specimen rule can select or exclude them; they are simply invisible. And SNOMED CT models plasma as an <em>acellular blood specimen</em> under Blood specimen, which is right for chemistry but admits the plasma platelet counts of transfusion medicine; the platelet rule therefore subtracts <code class="language-plaintext highlighter-rouge">&lt;&lt; Plasma specimen</code> from the block, a point marked for clinical review.</p>
 
 <h3 id="the-three-parts-of-every-valueset">The three parts of every ValueSet</h3>
 
@@ -463,14 +497,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>On a terminology server that holds the LOINC Ontology release (for example Snowstorm with the LOINC extension loaded, or the LOINC Ontology browser), all three parts expand and the expansion equals the enumeration.</li>
-  <li>On a server without the LOINC Ontology, such as the HL7 server used by the IG build, the SNOMED CT includes cannot be resolved. The build's QA report shows this as a warning for every ECL include and as an error for every enumerated SNOMED CT code without a LOINC code (currently in five ValueSets: the erythrocyte and hematocrit <em>complete</em> and <em>qualitative</em> sets and the leukocyte <em>qualitative</em> set, one concept each). The LOINC enumeration still expands, and validation of an <code class="language-plaintext highlighter-rouge">Observation.code</code> carrying a LOINC code works as usual.</li>
+  <li>On a server without the LOINC Ontology, such as the public HL7 server, the SNOMED CT includes cannot be resolved. The build's QA report shows this as a warning for every ECL include and as an error for every enumerated SNOMED CT code without a LOINC code. The LOINC enumeration still expands, and validation of an <code class="language-plaintext highlighter-rouge">Observation.code</code> carrying a LOINC code works as usual.</li>
   <li>A validator checking <code class="language-plaintext highlighter-rouge">Observation.code</code> against a derived profile only needs the LOINC enumeration.</li>
-  <li><strong>The module's own CI</strong> validates against the MII terminology server through a proxy. In the October 2026 runs that server rejected every enumerated LOINC and SNOMED CT code, on <code class="language-plaintext highlighter-rouge">master</code> as well (the laboratory-area ValueSet's 18 LOINC codes are reported as invalid there). The branch preview therefore shows one error per enumerated LOINC code of this proposal. Those counts measure the CI terminology setup, not the ValueSets; the build with the public HL7 server reports only the LOINC Ontology errors named above.</li>
+  <li><strong>The module's own CI</strong> validates against the MII terminology server (Ontoserver) through a proxy. Since November 2026 that server holds the LOINC Ontology 2026-10-21, and the ECL includes of this proposal expand there. Three classes of QA errors remain, none of them a content error: (1) the server rejects the publisher's batch validation request, so every enumerated LOINC and SNOMED CT code is reported once, on <code class="language-plaintext highlighter-rouge">master</code> as well; (2) the LOINC Ontology observables without a LOINC code are reported against the international edition; (3) the publisher checks each ECL include by asking the server to <em>validate</em> a one-rule ValueSet, and the server evaluates that ECL in its default edition instead of the edition the include names, so every rule that uses a concept of the LOINC Ontology module itself (<em>Measurement property</em>, the MCHC and MCV focus concepts) is reported as "unknown concept", although the same ValueSet <em>expands</em> correctly. The third class is reproducible on the vendor's public server and has been reported. The counts in the QA report therefore measure the terminology setup; the build with the public HL7 server reports only the first two classes.</li>
 </ul>
 
 <h3 id="versions-and-regeneration">Versions and regeneration</h3>
 
-<p>The artifacts are pinned to <strong>LOINC Ontology 2026-10-21</strong>, and their LOINC enumerations to <strong>LOINC 2.83</strong>, the LOINC release that LOINC Ontology release is built on. That LOINC alias lives next to the ValueSets (<code class="language-plaintext highlighter-rouge">aliases-loinc-ontology.fsh</code>), not in the module's <code class="language-plaintext highlighter-rouge">aliases.fsh</code>: the module pins LOINC 2.83 for its own ValueSets and forces that version in its expansion manifest (<code class="language-plaintext highlighter-rouge">force-system-version</code>), so an IG build validates every LOINC code against the module's pin, whatever a ValueSet declares. The two pins are kept separate so that a new LOINC Ontology release can be regenerated without touching the module. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. 5 of the enumerated codes were introduced in LOINC 2.83 and are unknown codes under any older LOINC pin: <code class="language-plaintext highlighter-rouge">113033-5</code> Leukocytes [Presence] in Bronchoalveolar lavage, <code class="language-plaintext highlighter-rouge">113044-2</code> Leukocytes [Presence] in Vaginal fluid, <code class="language-plaintext highlighter-rouge">113052-5</code> Leukocytes [Presence] in Pleural fluid, <code class="language-plaintext highlighter-rouge">113058-2</code> Leukocytes [Presence] in Peritoneal fluid by Gram stain, <code class="language-plaintext highlighter-rouge">113077-2</code> Leukocytes [Presence] in Tissue. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. A release can also remodel the attributes themselves: between 2026-03-21 and 2026-10-21 the LOINC Ontology moved more than 10,000 presence observables from Property <code class="language-plaintext highlighter-rouge">Presence</code> (705057003) to <code class="language-plaintext highlighter-rouge">Threshold (property)</code> (118589004, a subtype of Measurement property) and renamed them from "Presence of …" to "Threshold presence of …". The nitrite rule on this branch therefore selects <code class="language-plaintext highlighter-rouge">&lt;&lt; 118589004 |Threshold (property)|</code> instead of <code class="language-plaintext highlighter-rouge">&lt;&lt; 705057003 |Presence|</code>; its LOINC enumeration did not change. The old rule would have returned an empty ValueSet, which is the kind of failure a regeneration makes visible. The release-to-release difference report is published with the generator in <a href="https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts">loincsnomed-lab-concepts</a>.</p>
+<p>The artifacts are pinned to <strong>LOINC Ontology 2026-10-21</strong>, and their LOINC enumerations to <strong>LOINC 2.83</strong>, the LOINC release that LOINC Ontology release is built on. That LOINC alias lives next to the ValueSets (<code class="language-plaintext highlighter-rouge">aliases-loinc-ontology.fsh</code>), not in the module's <code class="language-plaintext highlighter-rouge">aliases.fsh</code>: the module pins LOINC 2.83 for its own ValueSets and forces that version in its expansion manifest (<code class="language-plaintext highlighter-rouge">force-system-version</code>), so an IG build validates every LOINC code against the module's pin, whatever a ValueSet declares. The two pins are kept separate so that a new LOINC Ontology release can be regenerated without touching the module. A code that LOINC introduced or deprecated between the two is a review item, not a failure of the method. 7 of the enumerated codes were introduced in LOINC 2.83 and are unknown codes under any older LOINC pin: <code class="language-plaintext highlighter-rouge">112592-1</code> Creatinine [Moles/volume] in Urine by Automated test strip, <code class="language-plaintext highlighter-rouge">112593-9</code> Creatinine [Mass/volume] in Urine by Automated test strip, <code class="language-plaintext highlighter-rouge">113033-5</code> Leukocytes [Presence] in Bronchoalveolar lavage, <code class="language-plaintext highlighter-rouge">113044-2</code> Leukocytes [Presence] in Vaginal fluid, <code class="language-plaintext highlighter-rouge">113052-5</code> Leukocytes [Presence] in Pleural fluid, <code class="language-plaintext highlighter-rouge">113058-2</code> Leukocytes [Presence] in Peritoneal fluid by Gram stain, <code class="language-plaintext highlighter-rouge">113077-2</code> Leukocytes [Presence] in Tissue. For a new release the generator re-runs every rule, lists the concepts that entered or left each ValueSet, and rewrites these pages. A release can also remodel the attributes themselves: between 2026-03-21 and 2026-10-21 the LOINC Ontology moved more than 10,000 presence observables from Property <code class="language-plaintext highlighter-rouge">Presence</code> (705057003) to <code class="language-plaintext highlighter-rouge">Threshold (property)</code> (118589004, a subtype of Measurement property) and renamed them from "Presence of …" to "Threshold presence of …". The nitrite rule on this branch therefore selects <code class="language-plaintext highlighter-rouge">&lt;&lt; 118589004 |Threshold (property)|</code> instead of <code class="language-plaintext highlighter-rouge">&lt;&lt; 705057003 |Presence|</code>; its LOINC enumeration did not change. The old rule would have returned an empty ValueSet, which is the kind of failure a regeneration makes visible. The release-to-release difference report is published with the generator in <a href="https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts">loincsnomed-lab-concepts</a>.</p>
 
 <h3 id="reading-the-review-tables">Reading the review tables</h3>
 
@@ -501,7 +535,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

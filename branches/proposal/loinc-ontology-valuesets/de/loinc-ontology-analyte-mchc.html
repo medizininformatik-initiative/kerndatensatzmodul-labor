@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.8"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.8"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.10"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -268,7 +268,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je klinischem Test</b></a></li><li><b>LOINC Ontology - Analyt MCHC</b></li>
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je Laborparameter</b></a></li><li><b>LOINC Ontology - Analyt MCHC</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -308,10 +308,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#mean-cell-hemoglobin-concentration-mchc" id="markdown-toc-mean-cell-hemoglobin-concentration-mchc">Mean cell hemoglobin concentration (MCHC)</a></li>
   <li><a href="#der-pool-und-seine-use-case-gruppen" id="markdown-toc-der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</a></li>
+  <li><a href="#loinc-terme-des-analyten-außerhalb-des-pools" id="markdown-toc-loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</a></li>
 </ul>
 
 </div>
-<p>Diese Seite ist das Review-Material für den Analyten <strong>mchc</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
+<p>Diese Seite ist das Review-Material für den Analyten <strong>mchc</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
 
 <p>Kandidatenpool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)|</code> (2 Konzepte, 2 mit LOINC-Code). Use-Case-ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-mchc-complete.html">Vollständig</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-mchc-quantitative.html">Quantitativ</a>.</p>
 
@@ -329,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>Component</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell hemoglobin concentration [observable]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Entitic mass concentration of hemoglobin in erythrocyte at point in time [observable]</code></td>
     </tr>
     <tr>
       <td>Scale type</td>
@@ -344,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -376,12 +377,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Techniken unter den enthaltenen Codes</strong>: Automated count technique (1)</li>
 </ul>
 
+<h4 id="ontologie-lücke-von-hand-ergänzt-1">Ontologie-Lücke: von Hand ergänzt (1)</h4>
+
+<p>Codes, die die Regel nicht erreichen kann, weil die LOINC Ontology 2026-10-21 sie nicht modelliert. Sie gehören zur LOINC-Aufzählung des ValueSets und stehen hier, nicht in den Pool-Tabellen.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Begründung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>59467-1</td>
+      <td>MCHC [Entitic Moles/volume] in Red Blood Cells</td>
+      <td>LOINC 59467-1 (MCHC als Entitic substance concentration, mmol/L; aktiv seit LOINC 2.32) hat in der LOINC Ontology 2026-10-21 kein Observable, obwohl jeder andere aktive MCH/MCHC/MCV-Term eines hat. Er ist von Hand ergänzt, damit die Berichterstattung in SI-Einheiten abgedeckt ist; ein Change Request an die LOINC-Ontology-Pflege ist gestellt.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h4 id="aus-dem-pool-ausgeschlossen-0">Aus dem Pool ausgeschlossen (0)</h4>
 
 <h4 id="diskussion">Diskussion</h4>
 
 <ul>
-  <li><strong>Eigenes Observable-Konzept.</strong> MCHC hat in der LOINC Ontology keine Zerlegung in Component; die Regel wählt das Konzept und seine Subtypen. Zwei Codes, nichts ausgeschlossen. Eine Technique-Einschränkung wäre die einzige mögliche Verfeinerung.</li>
+  <li><strong>Eigenes Observable-Konzept.</strong> MCHC ist mit <em>Inheres in</em> = Hemoglobin statt mit einer Component modelliert, deshalb selektiert die Regel das Konzept und seine quantitativen Subtypen: 786-4 (automatisiert) und 28540-3. Die Nabelschnurblut- und fetalen MCHC-Codes (47279-5, 62246-4) sind keine Subtypen davon und tragen kein Direct site.</li>
+  <li><strong>Die molare MCHC ist eine Ontologie-Lücke.</strong> LOINC 59467-1 (MCHC in mmol/L, aktiv seit LOINC 2.32) hat in der LOINC Ontology 2026-10-21 kein Observable, obwohl das molare MCH (59468-9) eines hat. Keine Regel erreicht einen Code, der nicht modelliert ist; er ist als dokumentierte Ausnahme von Hand ergänzt (siehe <em>Ontologie-Lücke</em> oben), und ein Change Request an die LOINC-Ontology-Pflege ist gestellt. Sobald das Release ihn modelliert, selektiert ihn die Regel und die Ausnahme entfällt.</li>
 </ul>
 
 <h3 id="der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</h3>
@@ -392,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -422,6 +445,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Recall-Prüfung gegen LOINC 2.83 selbst: 3 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Hemoglobin$; Property ~ ^(EntMCnc</td>
+      <td>EntSCnc); System ~ ^RBC$); 2 davon liegen im Pool, 1 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>59467-1</td>
+      <td>MCHC [Entitic Moles/volume] in Red Blood Cells</td>
+      <td>EntSCnc</td>
+      <td>RBC</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -447,7 +500,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

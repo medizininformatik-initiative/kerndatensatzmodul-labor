@@ -343,15 +343,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>This page lists the 18 ValueSets of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a> that each describe <strong>one clinical test</strong>, and the Observation profile derived for each of them. The rule behind every ValueSet is shown decomposed into its attributes; the construction is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page lists the 23 ValueSets of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a> that each describe <strong>one clinical test</strong> (German: <em>Laborparameter</em>), and the Observation profile derived for each of them. The rule behind every ValueSet is shown decomposed into its attributes; the construction and the shared building blocks are explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <h3 id="what-counts-as-one-clinical-test">What counts as one clinical test</h3>
 
-<p>A clinical test here is what a clinician means when ordering or reading a value: <em>the</em> hemoglobin, <em>the</em> potassium, <em>the</em> total PSA. It is defined by the Component plus a <strong>tier</strong>:</p>
+<p>A clinical test here is what a clinician means when ordering or reading a value: <em>the</em> hemoglobin, <em>the</em> potassium, <em>the</em> total PSA. One test is one line in a laboratory report, and its codes are the ones whose values can be read as the same quantity. It is defined by the Component plus a <strong>tier</strong>:</p>
 
 <ul>
-  <li><strong>standard</strong>: the routine value. One ValueSet per analyte, narrowed to the usual specimen, property and scale (for example hemoglobin as mass concentration in blood, quantitative).</li>
-  <li><strong>specialized</strong>: a clinically distinct variant that must not be pooled with the standard value and therefore gets its own ValueSet: free PSA, the free/total PSA ratio, the LDH isoenzymes, the white cell differential.</li>
+  <li><strong>standard</strong>: the routine value. One ValueSet per analyte, narrowed to the usual specimen, property and scale. Since the clinical review the standard tests share two building blocks: the specimen is <em>blood and its subtypes, serum and plasma included, cord blood, fetal blood and dried blood spot excluded</em>, and the property is <em>any concentration</em> (mass, substance or arbitrary), so that g/dL and mmol/L codes of the same measurement sit in one set and the unit is left to UCUM conversion.</li>
+  <li><strong>specialized</strong>: a clinically distinct variant that must not be pooled with the standard value and therefore gets its own ValueSet: free PSA, the free/total PSA ratio, the LDH isoenzymes, the white cell differential, the protein/creatinine ratio, hemoglobin in cord blood.</li>
 </ul>
 
 <p>Each test is one ValueSet and one Observation profile derived from <a href="StructureDefinition-mii-pr-labor-laboruntersuchung.html">Laboratory Test</a>. The profile binds <code class="language-plaintext highlighter-rouge">Observation.code</code> to the ValueSet with strength <em>required</em>, restricts <code class="language-plaintext highlighter-rouge">value[x]</code> to the data type the test produces, and names the expected UCUM unit in a comment. Everything else is inherited from the module's profile; the derived profiles add no new elements.</p>
@@ -359,14 +359,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="how-to-use-them">How to use them</h3>
 
 <ul>
-  <li><strong>Implementers mapping a local catalogue</strong> pick the ValueSet of the test and choose, within it, the LOINC code whose specimen, property and method match the local procedure. The attribute columns below say what every code in the set has in common; the remaining differences (venous versus arterial blood, calculation versus measurement) are the ones to decide locally.</li>
+  <li><strong>Implementers mapping a local catalogue</strong> pick the ValueSet of the test and choose, within it, the LOINC code whose specimen, property and method match the local procedure. The attribute columns below say what every code in the set has in common; the remaining differences (venous versus arterial blood, calculation versus measurement, g/dL versus mmol/L) are the ones to decide locally.</li>
   <li><strong>Validation</strong>: an Observation that claims a derived profile in <code class="language-plaintext highlighter-rouge">meta.profile</code> is checked against the LOINC enumeration of the ValueSet. The example <a href="Observation-mii-exa-labor-loinc-ontology-hemoglobin.html">Laboratory result: hemoglobin</a> conforms to the hemoglobin profile.</li>
   <li><strong>Data users</strong> wanting the routine value of an analyte take the <em>standard</em> ValueSet; for broader pooling see the <a href="loinc-ontology-use-cases.html">use-case ValueSets</a>.</li>
 </ul>
 
 <h3 id="the-tests">The tests</h3>
 
-<p>Attribute columns show the rule; <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> marks "this concept and its subtypes", a bare name means an exact match. <em>LOINC</em> is the number of LOINC codes in the ValueSet; <em>SNOMED only</em> the number of LOINC Ontology observables without a LOINC code.</p>
+<p>Attribute columns show the rule; <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> marks "this concept and its subtypes", a bare name means an exact match, <code class="language-plaintext highlighter-rouge">minus</code> an exclusion inside the value. <em>LOINC</em> is the number of LOINC codes in the ValueSet (hand-added ontology-gap codes included); <em>SNOMED only</em> the number of LOINC Ontology observables without a LOINC code. The test name links to the analyte's review page with every included and excluded code and the reason.</p>
 
 <table>
   <thead>
@@ -374,6 +374,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <th>Test</th>
       <th>Tier</th>
       <th>Component</th>
+      <th>Process output</th>
+      <th>Relative to</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -385,25 +387,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="loinc-ontology-analyte-psa.html">Total PSA in serum/plasma</a></td>
+      <td><a href="loinc-ontology-analyte-psa.html">Total PSA in serum, plasma or blood</a></td>
       <td>standard</td>
       <td>Prostate specific antigen</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">3</td>
+      <td style="text-align: right">5</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-psa-total-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-total-standard.html">Profile</a></td>
     </tr>
     <tr>
-      <td><a href="loinc-ontology-analyte-psa.html">Free PSA in serum/plasma</a></td>
+      <td><a href="loinc-ontology-analyte-psa.html">Free PSA in serum, plasma or blood</a></td>
       <td>specialized</td>
       <td>Free prostate specific antigen</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">2</td>
+      <td style="text-align: right">4</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-psa-free-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-free-standard.html">Profile</a></td>
@@ -412,7 +418,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-psa.html">%Free PSA (free/total ratio)</a></td>
       <td>specialized</td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Prostate specific antigen</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Acellular blood (serum or plasma) specimen</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Ratio or &lt;&lt; Mass fraction</code></td>
       <td> </td>
       <td style="text-align: right">1</td>
@@ -421,10 +429,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-free-total-ratio.html">Profile</a></td>
     </tr>
     <tr>
-      <td><a href="loinc-ontology-analyte-ldh.html">LDH (total) monitoring in serum/plasma</a></td>
+      <td><a href="loinc-ontology-analyte-ldh.html">LDH (total) monitoring in serum, plasma or blood</a></td>
       <td>standard</td>
       <td>Lactate dehydrogenase</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Measurement property; not &lt;&lt; Ratio</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
       <td style="text-align: right">3</td>
@@ -433,25 +443,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-ldh-monitoring-standard.html">Profile</a></td>
     </tr>
     <tr>
-      <td><a href="loinc-ontology-analyte-ldh.html">LDH isoenzyme analysis (LDH-1..5)</a></td>
+      <td><a href="loinc-ontology-analyte-ldh.html">LDH isoenzyme analysis (LDH-1..5) in serum/plasma</a></td>
       <td>specialized</td>
       <td><code class="language-plaintext highlighter-rouge">&lt; Lactate dehydrogenase</code></td>
       <td> </td>
       <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Acellular blood (serum or plasma) specimen</code></td>
+      <td> </td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">38</td>
+      <td style="text-align: right">17</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-isoenzymes.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-ldh-isoenzymes.html">Profile</a></td>
     </tr>
     <tr>
-      <td><a href="loinc-ontology-analyte-potassium.html">Potassium in serum/plasma</a></td>
+      <td><a href="loinc-ontology-analyte-potassium.html">Potassium in serum, plasma or blood</a></td>
       <td>standard</td>
       <td>Potassium electrolyte</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Substance concentration</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">7</td>
+      <td style="text-align: right">15</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-potassium-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-potassium-standard.html">Profile</a></td>
@@ -460,22 +474,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-hemoglobin.html">Hemoglobin concentration in blood</a></td>
       <td>standard</td>
       <td>Hemoglobin</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">19</td>
+      <td style="text-align: right">18</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-hemoglobin-standard.html">Profile</a></td>
     </tr>
     <tr>
+      <td><a href="loinc-ontology-analyte-hemoglobin.html">Hemoglobin concentration in cord blood</a></td>
+      <td>specialized</td>
+      <td>Hemoglobin</td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Cord blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">0</td>
+      <td><a href="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-cord-blood.html">ValueSet</a></td>
+      <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-hemoglobin-cord-blood.html">Profile</a></td>
+    </tr>
+    <tr>
       <td><a href="loinc-ontology-analyte-hematocrit.html">Hematocrit (volume fraction) in blood</a></td>
       <td>standard</td>
       <td>Erythrocyte</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Volume fraction</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">12</td>
+      <td style="text-align: right">10</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-hematocrit-standard.html">Profile</a></td>
@@ -484,10 +516,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-erythrocytes.html">Erythrocyte count in blood</a></td>
       <td>standard</td>
       <td>Erythrocyte</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Number concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">4</td>
+      <td style="text-align: right">3</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-count-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-erythrocytes-count-standard.html">Profile</a></td>
@@ -496,10 +530,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-leukocytes.html">Leukocyte count in blood</a></td>
       <td>standard</td>
       <td>Leukocyte</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Number concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">11</td>
+      <td style="text-align: right">9</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html">Profile</a></td>
@@ -508,6 +544,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-leukocytes.html">WBC differential (panel)</a></td>
       <td>specialized</td>
       <td>Leukocyte</td>
+      <td> </td>
+      <td> </td>
       <td> </td>
       <td>(none)</td>
       <td> </td>
@@ -520,10 +558,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-platelets.html">Platelet count in blood</a></td>
       <td>standard</td>
       <td>Platelet</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen) minus (&lt;&lt; Plasma specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Number concentration</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">12</td>
+      <td style="text-align: right">7</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-platelets-count-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-platelets-count-standard.html">Profile</a></td>
@@ -531,11 +571,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="loinc-ontology-analyte-mch.html">Mean cell hemoglobin (MCH)</a></td>
       <td>standard</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Hemoglobin</code></td>
+      <td>Hemoglobin</td>
       <td> </td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Entitic mass</code></td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Erythrocyte specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Entitic mass or &lt;&lt; Entitic substance amount</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">6</td>
+      <td style="text-align: right">3</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-mch-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-mch-standard.html">Profile</a></td>
@@ -543,11 +585,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="loinc-ontology-analyte-mchc.html">Mean cell hemoglobin concentration (MCHC)</a></td>
       <td>standard</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell hemoglobin concentration [observable]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Entitic mass concentration of hemoglobin in erythrocyte at point in time [observable]</code></td>
+      <td> </td>
+      <td> </td>
       <td> </td>
       <td> </td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">2</td>
+      <td style="text-align: right">3</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-mchc-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-mchc-standard.html">Profile</a></td>
@@ -555,7 +599,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="loinc-ontology-analyte-mcv.html">Mean cell volume (MCV)</a></td>
       <td>standard</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mean cell volume [observable]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Entitic mean volume of erythrocyte specimen at point in time [observable]</code></td>
+      <td> </td>
+      <td> </td>
       <td> </td>
       <td> </td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
@@ -568,10 +614,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-hba1c.html">HbA1c in blood</a></td>
       <td>standard</td>
       <td>Glycated hemoglobin-A1c</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Measurement property</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">8</td>
+      <td style="text-align: right">7</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-hba1c-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-hba1c-standard.html">Profile</a></td>
@@ -579,11 +627,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="loinc-ontology-analyte-methemoglobin.html">Methemoglobin in blood (quantitative)</a></td>
       <td>standard</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Methemoglobin</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td>Methemoglobin</td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Measurement property; not &lt;&lt; Ratio</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
-      <td style="text-align: right">11</td>
+      <td style="text-align: right">7</td>
       <td style="text-align: right">0</td>
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-methemoglobin-standard.html">Profile</a></td>
@@ -592,6 +642,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="loinc-ontology-analyte-nitrite-urine.html">Nitrite in urine (qualitative)</a></td>
       <td>standard</td>
       <td>Nitrite salt</td>
+      <td> </td>
+      <td> </td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Urine specimen</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Threshold</code></td>
       <td> </td>
@@ -600,6 +652,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-standard.html">ValueSet</a></td>
       <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-nitrite-urine-standard.html">Profile</a></td>
     </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-creatinine.html">Creatinine in serum, plasma or blood</a></td>
+      <td>standard</td>
+      <td>Creatinine</td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
+      <td style="text-align: right">79</td>
+      <td style="text-align: right">0</td>
+      <td><a href="ValueSet-mii-vs-labor-loinc-ontology-creatinine-standard.html">ValueSet</a></td>
+      <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-creatinine-standard.html">Profile</a></td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-gfr.html">Estimated glomerular filtration rate (eGFR)</a></td>
+      <td>standard</td>
+      <td> </td>
+      <td>Glomerular filtration rate</td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Volume rate per area</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
+      <td style="text-align: right">17</td>
+      <td style="text-align: right">0</td>
+      <td><a href="ValueSet-mii-vs-labor-loinc-ontology-egfr-standard.html">ValueSet</a></td>
+      <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-egfr-standard.html">Profile</a></td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-protein-urine.html">Protein in urine (mass concentration)</a></td>
+      <td>standard</td>
+      <td>Protein</td>
+      <td> </td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Urine specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">0</td>
+      <td><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-urine-standard.html">ValueSet</a></td>
+      <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-protein-urine-standard.html">Profile</a></td>
+    </tr>
+    <tr>
+      <td><a href="loinc-ontology-analyte-protein-urine.html">Protein/creatinine ratio in urine</a></td>
+      <td>specialized</td>
+      <td>Protein</td>
+      <td> </td>
+      <td>Creatinine</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Urine specimen</code></td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">0</td>
+      <td><a href="ValueSet-mii-vs-labor-loinc-ontology-protein-creatinine-ratio-urine.html">ValueSet</a></td>
+      <td><a href="StructureDefinition-mii-pr-labor-loinc-ontology-protein-creatinine-ratio-urine.html">Profile</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -607,7 +715,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><strong>Tier and specimen choices</strong> are clinical decisions. They are visible in the rule and changed by editing it; the table is regenerated.</li>
-  <li><strong>MCH, MCHC and MCV</strong> have no specimen in their rule: the first is Hemoglobin with the property <em>entitic mass</em> (mass per cell), the other two are their own observable concepts in the LOINC Ontology and are selected as focus concepts rather than by Component.</li>
+  <li><strong>Open for clinical review</strong>: whether the platelet count should exclude plasma and platelet-rich plasma (three transfusion-medicine codes), and whether the LDH isoenzymes should be restricted to serum and plasma (21 codes in urine, CSF and effusions dropped). Both are stated as rules and discussed on the analyte pages.</li>
+  <li><strong>What the ontology cannot express.</strong> The LOINC <em>challenge</em> and <em>timing</em> part is not an attribute of the LOINC Ontology: the creatinine test therefore contains 71 time-point and challenge codes next to the eight routine codes. LOINC's <em>status</em> (active, discouraged) is not an attribute either: a discouraged potassium code and two discouraged GFR codes pass their rules. Both would be handled by a filter on the LOINC table in the generator, which is a decision for the module, not for a rule.</li>
+  <li><strong>Ontology gaps.</strong> A LOINC code the release does not model cannot be reached by any rule. The molar MCHC (59467-1) is such a code; it is added to its ValueSet by hand, marked as an ontology gap on the ValueSet and on the analyte page, and reported to the LOINC Ontology maintainers.</li>
+  <li><strong>MCHC and MCV</strong> have no Component in their rule: both are their own observable concepts in the LOINC Ontology (MCHC through <em>Inheres in</em> = Hemoglobin) and are selected as focus concepts. <strong>MCH</strong> is Hemoglobin with the entitic properties on the erythrocyte specimen. <strong>The eGFR</strong> has no Component at all; it is selected through <em>Process output</em> = Glomerular filtration rate (calculation).</li>
   <li><strong>The white cell differential</strong> is an order-level concept in the LOINC Ontology (a Component without a Property) and currently has no LOINC code there; its ValueSet holds two SNOMED CT codes. The single differential results (neutrophils, lymphocytes and so on) are separate observables and would each be their own clinical test.</li>
   <li><strong>Nitrite in urine</strong> is the one qualitative test in the set; its profile restricts the value to <code class="language-plaintext highlighter-rouge">CodeableConcept</code>, to be coded with the module's <a href="ValueSet-mii-vs-labor-laborergebnis-codiert.html">coded laboratory results</a>.</li>
 </ul>
@@ -637,7 +748,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mcv-standard | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Mcv_Standard |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Mcv_Standard |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
+Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 525321010000100 |Entitic mean volume of erythrocyte specimen at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
 
  **References** 
 
@@ -177,7 +177,7 @@ Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard ti
   "title" : "MII VS Labor LOINC Ontology Mcv Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -186,7 +186,7 @@ Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard ti
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "description" : "Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 525321010000100 |Entitic mean volume of erythrocyte specimen at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -213,7 +213,7 @@ Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard ti
       "filter" : [{
         "property" : "constraint",
         "op" : "=",
-        "value" : "<< 525321010000100 |Mean cell volume (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+        "value" : "<< 525321010000100 |Entitic mean volume of erythrocyte specimen at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
       }]
     }]
   }

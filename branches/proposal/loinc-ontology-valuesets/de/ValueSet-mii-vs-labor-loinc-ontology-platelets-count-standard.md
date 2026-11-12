@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-platelets-count-standard | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Platelets_Count_Standard |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_VS_Labor_LOINC_Ontology_Platelets_Count_Standard |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
+Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell structure)|, << 704327008 |Direct site (attribute)| = ((<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)) MINUS << 119361006 |Plasma specimen (specimen)|), << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
 
  **References** 
 
@@ -177,7 +177,7 @@ Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard t
   "title" : "MII VS Labor LOINC Ontology Platelets Count Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -186,7 +186,7 @@ Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard t
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (12, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "description" : "Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (7, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell structure)|, << 704327008 |Direct site (attribute)| = ((<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)) MINUS << 119361006 |Plasma specimen (specimen)|), << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -207,19 +207,7 @@ Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard t
         "code" : "778-1"
       },
       {
-        "code" : "55802-3"
-      },
-      {
         "code" : "777-3"
-      },
-      {
-        "code" : "47284-5"
-      },
-      {
-        "code" : "74775-8"
-      },
-      {
-        "code" : "26516-5"
       },
       {
         "code" : "74464-9"
@@ -231,9 +219,6 @@ Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard t
         "code" : "49497-1"
       },
       {
-        "code" : "13056-7"
-      },
-      {
         "code" : "97995-5"
       }]
     },
@@ -243,7 +228,7 @@ Proposal: LOINC codes of the clinical test 'Platelet count in blood' (standard t
       "filter" : [{
         "property" : "constraint",
         "op" : "=",
-        "value" : "<< 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|, << 704327008 |Direct site (attribute)| = << 119297000 |Blood specimen (specimen)|, << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+        "value" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell structure)|, << 704327008 |Direct site (attribute)| = ((<< 119297000 |Blood specimen (specimen)| MINUS (<< 122556008 |Cord blood specimen (specimen)| OR << 737357006 |Fetal blood specimen (specimen)| OR << 440500007 |Dried blood spot specimen (specimen)|)) MINUS << 119361006 |Plasma specimen (specimen)|), << 370130000 |Property (attribute)| = << 118550005 |Number concentration (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
       }]
     }]
   }

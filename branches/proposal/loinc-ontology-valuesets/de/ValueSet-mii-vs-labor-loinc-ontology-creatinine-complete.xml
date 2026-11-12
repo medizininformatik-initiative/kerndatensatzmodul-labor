@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-labor-loinc-ontology-creatinine-complete"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ci"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-labor-loinc-ontology-creatinine-complete</b></p><a name="de-mii-vs-labor-loinc-ontology-creatinine-complete"> </a><a name="de-hcmii-vs-labor-loinc-ontology-creatinine-complete"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablevalueset.html">CRMI Shareable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablevalueset.html">CRMI Publishable ValueSet</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-computablevalueset.html">CRMI Computable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.83"> version &#x1F4CD;2.83</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/44716-9/">44716-9</a></td><td/></tr><tr><td><a href="https://loinc.org/16285-9/">16285-9</a></td><td/></tr><tr><td><a href="https://loinc.org/31045-8/">31045-8</a></td><td/></tr><tr><td><a href="https://loinc.org/109874-8/">109874-8</a></td><td/></tr><tr><td><a href="https://loinc.org/110903-2/">110903-2</a></td><td/></tr><tr><td><a href="https://loinc.org/110902-4/">110902-4</a></td><td/></tr><tr><td><a href="https://loinc.org/110658-2/">110658-2</a></td><td/></tr><tr><td><a href="https://loinc.org/108024-1/">108024-1</a></td><td/></tr><tr><td><a href="https://loinc.org/32543-1/">32543-1</a></td><td/></tr><tr><td><a href="https://loinc.org/2159-2/">2159-2</a></td><td/></tr><tr><td><a href="https://loinc.org/21232-4/">21232-4</a></td><td/></tr><tr><td><a href="https://loinc.org/38483-4/">38483-4</a></td><td/></tr><tr><td><a href="https://loinc.org/12190-5/">12190-5</a></td><td/></tr><tr><td><a href="https://loinc.org/14398-2/">14398-2</a></td><td/></tr><tr><td><a href="https://loinc.org/5919-6/">5919-6</a></td><td/></tr><tr><td><a href="https://loinc.org/96590-5/">96590-5</a></td><td/></tr><tr><td><a href="https://loinc.org/14402-2/">14402-2</a></td><td/></tr><tr><td><a href="https://loinc.org/49004-5/">49004-5</a></td><td/></tr><tr><td><a href="https://loinc.org/12576-5/">12576-5</a></td><td/></tr><tr><td><a href="https://loinc.org/12574-0/">12574-0</a></td><td/></tr><tr><td><a href="https://loinc.org/12572-4/">12572-4</a></td><td/></tr><tr><td><a href="https://loinc.org/12577-3/">12577-3</a></td><td/></tr><tr><td><a href="https://loinc.org/12578-1/">12578-1</a></td><td/></tr><tr><td><a href="https://loinc.org/12573-2/">12573-2</a></td><td/></tr><tr><td><a href="https://loinc.org/12579-9/">12579-9</a></td><td/></tr><tr><td><a href="https://loinc.org/12580-7/">12580-7</a></td><td/></tr><tr><td><a href="https://loinc.org/12581-5/">12581-5</a></td><td/></tr><tr><td><a href="https://loinc.org/12582-3/">12582-3</a></td><td/></tr><tr><td><a href="https://loinc.org/12583-1/">12583-1</a></td><td/></tr><tr><td><a href="https://loinc.org/12575-7/">12575-7</a></td><td/></tr><tr><td><a href="https://loinc.org/57345-1/">57345-1</a></td><td/></tr><tr><td><a href="https://loinc.org/57726-2/">57726-2</a></td><td/></tr><tr><td><a href="https://loinc.org/12191-3/">12191-3</a></td><td/></tr><tr><td><a href="https://loinc.org/12193-9/">12193-9</a></td><td/></tr><tr><td><a href="https://loinc.org/48626-6/">48626-6</a></td><td/></tr><tr><td><a href="https://loinc.org/48630-8/">48630-8</a></td><td/></tr><tr><td><a href="https://loinc.org/12194-7/">12194-7</a></td><td/></tr><tr><td><a href="https://loinc.org/12192-1/">12192-1</a></td><td/></tr><tr><td><a href="https://loinc.org/14399-0/">14399-0</a></td><td/></tr><tr><td><a href="https://loinc.org/2160-0/">2160-0</a></td><td/></tr><tr><td><a href="https://loinc.org/40251-1/">40251-1</a></td><td/></tr><tr><td><a href="https://loinc.org/39956-8/">39956-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39970-9/">39970-9</a></td><td/></tr><tr><td><a href="https://loinc.org/39971-7/">39971-7</a></td><td/></tr><tr><td><a href="https://loinc.org/39972-5/">39972-5</a></td><td/></tr><tr><td><a href="https://loinc.org/39973-3/">39973-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40258-6/">40258-6</a></td><td/></tr><tr><td><a href="https://loinc.org/93999-1/">93999-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40250-3/">40250-3</a></td><td/></tr><tr><td><a href="https://loinc.org/39957-6/">39957-6</a></td><td/></tr><tr><td><a href="https://loinc.org/40253-7/">40253-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40254-5/">40254-5</a></td><td/></tr><tr><td><a href="https://loinc.org/39974-1/">39974-1</a></td><td/></tr><tr><td><a href="https://loinc.org/94008-0/">94008-0</a></td><td/></tr><tr><td><a href="https://loinc.org/40252-9/">40252-9</a></td><td/></tr><tr><td><a href="https://loinc.org/16188-5/">16188-5</a></td><td/></tr><tr><td><a href="https://loinc.org/39961-8/">39961-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39962-6/">39962-6</a></td><td/></tr><tr><td><a href="https://loinc.org/40249-5/">40249-5</a></td><td/></tr><tr><td><a href="https://loinc.org/39959-2/">39959-2</a></td><td/></tr><tr><td><a href="https://loinc.org/40255-2/">40255-2</a></td><td/></tr><tr><td><a href="https://loinc.org/39964-2/">39964-2</a></td><td/></tr><tr><td><a href="https://loinc.org/39960-0/">39960-0</a></td><td/></tr><tr><td><a href="https://loinc.org/39958-4/">39958-4</a></td><td/></tr><tr><td><a href="https://loinc.org/39975-8/">39975-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39963-4/">39963-4</a></td><td/></tr><tr><td><a href="https://loinc.org/39965-9/">39965-9</a></td><td/></tr><tr><td><a href="https://loinc.org/39966-7/">39966-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40256-0/">40256-0</a></td><td/></tr><tr><td><a href="https://loinc.org/39967-5/">39967-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40257-8/">40257-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39976-6/">39976-6</a></td><td/></tr><tr><td><a href="https://loinc.org/39968-3/">39968-3</a></td><td/></tr><tr><td><a href="https://loinc.org/39969-1/">39969-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40248-7/">40248-7</a></td><td/></tr><tr><td><a href="https://loinc.org/72271-0/">72271-0</a></td><td/></tr><tr><td><a href="https://loinc.org/16189-3/">16189-3</a></td><td/></tr><tr><td><a href="https://loinc.org/11041-1/">11041-1</a></td><td/></tr><tr><td><a href="https://loinc.org/39955-0/">39955-0</a></td><td/></tr><tr><td><a href="https://loinc.org/11042-9/">11042-9</a></td><td/></tr><tr><td><a href="https://loinc.org/44784-7/">44784-7</a></td><td/></tr><tr><td><a href="https://loinc.org/14401-4/">14401-4</a></td><td/></tr><tr><td><a href="https://loinc.org/35674-1/">35674-1</a></td><td/></tr><tr><td><a href="https://loinc.org/2161-8/">2161-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39985-7/">39985-7</a></td><td/></tr><tr><td><a href="https://loinc.org/39979-0/">39979-0</a></td><td/></tr><tr><td><a href="https://loinc.org/39996-4/">39996-4</a></td><td/></tr><tr><td><a href="https://loinc.org/39984-0/">39984-0</a></td><td/></tr><tr><td><a href="https://loinc.org/39980-8/">39980-8</a></td><td/></tr><tr><td><a href="https://loinc.org/47257-1/">47257-1</a></td><td/></tr><tr><td><a href="https://loinc.org/39978-2/">39978-2</a></td><td/></tr><tr><td><a href="https://loinc.org/39987-3/">39987-3</a></td><td/></tr><tr><td><a href="https://loinc.org/39986-5/">39986-5</a></td><td/></tr><tr><td><a href="https://loinc.org/58951-5/">58951-5</a></td><td/></tr><tr><td><a href="https://loinc.org/47256-3/">47256-3</a></td><td/></tr><tr><td><a href="https://loinc.org/39989-9/">39989-9</a></td><td/></tr><tr><td><a href="https://loinc.org/39983-2/">39983-2</a></td><td/></tr><tr><td><a href="https://loinc.org/39981-6/">39981-6</a></td><td/></tr><tr><td><a href="https://loinc.org/39988-1/">39988-1</a></td><td/></tr><tr><td><a href="https://loinc.org/47258-9/">47258-9</a></td><td/></tr><tr><td><a href="https://loinc.org/39991-5/">39991-5</a></td><td/></tr><tr><td><a href="https://loinc.org/39990-7/">39990-7</a></td><td/></tr><tr><td><a href="https://loinc.org/47259-7/">47259-7</a></td><td/></tr><tr><td><a href="https://loinc.org/39993-1/">39993-1</a></td><td/></tr><tr><td><a href="https://loinc.org/39992-3/">39992-3</a></td><td/></tr><tr><td><a href="https://loinc.org/47273-8/">47273-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39994-9/">39994-9</a></td><td/></tr><tr><td><a href="https://loinc.org/47261-3/">47261-3</a></td><td/></tr><tr><td><a href="https://loinc.org/39995-6/">39995-6</a></td><td/></tr><tr><td><a href="https://loinc.org/39982-4/">39982-4</a></td><td/></tr><tr><td><a href="https://loinc.org/39977-4/">39977-4</a></td><td/></tr><tr><td><a href="https://loinc.org/57346-9/">57346-9</a></td><td/></tr><tr><td><a href="https://loinc.org/57344-4/">57344-4</a></td><td/></tr><tr><td><a href="https://loinc.org/20624-3/">20624-3</a></td><td/></tr><tr><td><a href="https://loinc.org/1452-2/">1452-2</a></td><td/></tr><tr><td><a href="https://loinc.org/1455-5/">1455-5</a></td><td/></tr><tr><td><a href="https://loinc.org/1453-0/">1453-0</a></td><td/></tr><tr><td><a href="https://loinc.org/1454-8/">1454-8</a></td><td/></tr><tr><td><a href="https://loinc.org/1456-3/">1456-3</a></td><td/></tr><tr><td><a href="https://loinc.org/1459-7/">1459-7</a></td><td/></tr><tr><td><a href="https://loinc.org/1457-1/">1457-1</a></td><td/></tr><tr><td><a href="https://loinc.org/1458-9/">1458-9</a></td><td/></tr><tr><td><a href="https://loinc.org/94844-8/">94844-8</a></td><td/></tr><tr><td><a href="https://loinc.org/12584-9/">12584-9</a></td><td/></tr><tr><td><a href="https://loinc.org/35242-7/">35242-7</a></td><td/></tr><tr><td><a href="https://loinc.org/35203-9/">35203-9</a></td><td/></tr><tr><td><a href="https://loinc.org/35204-7/">35204-7</a></td><td/></tr><tr><td><a href="https://loinc.org/35251-8/">35251-8</a></td><td/></tr><tr><td><a href="https://loinc.org/15050-8/">15050-8</a></td><td/></tr><tr><td><a href="https://loinc.org/59826-8/">59826-8</a></td><td/></tr><tr><td><a href="https://loinc.org/25386-4/">25386-4</a></td><td/></tr><tr><td><a href="https://loinc.org/15051-6/">15051-6</a></td><td/></tr><tr><td><a href="https://loinc.org/97777-7/">97777-7</a></td><td/></tr><tr><td><a href="https://loinc.org/46086-5/">46086-5</a></td><td/></tr><tr><td><a href="https://loinc.org/46219-2/">46219-2</a></td><td/></tr><tr><td><a href="https://loinc.org/46220-0/">46220-0</a></td><td/></tr><tr><td><a href="https://loinc.org/39472-6/">39472-6</a></td><td/></tr><tr><td><a href="https://loinc.org/14681-1/">14681-1</a></td><td/></tr><tr><td><a href="https://loinc.org/78532-9/">78532-9</a></td><td/></tr><tr><td><a href="https://loinc.org/78533-7/">78533-7</a></td><td/></tr><tr><td><a href="https://loinc.org/79263-0/">79263-0</a></td><td/></tr><tr><td><a href="https://loinc.org/39471-8/">39471-8</a></td><td/></tr><tr><td><a href="https://loinc.org/39474-2/">39474-2</a></td><td/></tr><tr><td><a href="https://loinc.org/77140-2/">77140-2</a></td><td/></tr><tr><td><a href="https://loinc.org/54375-1/">54375-1</a></td><td/></tr><tr><td><a href="https://loinc.org/14682-9/">14682-9</a></td><td/></tr><tr><td><a href="https://loinc.org/40267-7/">40267-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40113-3/">40113-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40122-4/">40122-4</a></td><td/></tr><tr><td><a href="https://loinc.org/40123-2/">40123-2</a></td><td/></tr><tr><td><a href="https://loinc.org/40124-0/">40124-0</a></td><td/></tr><tr><td><a href="https://loinc.org/40125-7/">40125-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40273-5/">40273-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40266-9/">40266-9</a></td><td/></tr><tr><td><a href="https://loinc.org/40114-1/">40114-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40269-3/">40269-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40126-5/">40126-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40268-5/">40268-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40118-2/">40118-2</a></td><td/></tr><tr><td><a href="https://loinc.org/40265-1/">40265-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40116-6/">40116-6</a></td><td/></tr><tr><td><a href="https://loinc.org/40270-1/">40270-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40117-4/">40117-4</a></td><td/></tr><tr><td><a href="https://loinc.org/40115-8/">40115-8</a></td><td/></tr><tr><td><a href="https://loinc.org/40127-3/">40127-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40119-0/">40119-0</a></td><td/></tr><tr><td><a href="https://loinc.org/40271-9/">40271-9</a></td><td/></tr><tr><td><a href="https://loinc.org/40272-7/">40272-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40128-1/">40128-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40120-8/">40120-8</a></td><td/></tr><tr><td><a href="https://loinc.org/40121-6/">40121-6</a></td><td/></tr><tr><td><a href="https://loinc.org/40264-4/">40264-4</a></td><td/></tr><tr><td><a href="https://loinc.org/103616-9/">103616-9</a></td><td/></tr><tr><td><a href="https://loinc.org/62425-4/">62425-4</a></td><td/></tr><tr><td><a href="https://loinc.org/51620-3/">51620-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40112-5/">40112-5</a></td><td/></tr><tr><td><a href="https://loinc.org/51619-5/">51619-5</a></td><td/></tr><tr><td><a href="https://loinc.org/22726-4/">22726-4</a></td><td/></tr><tr><td><a href="https://loinc.org/47610-1/">47610-1</a></td><td/></tr><tr><td><a href="https://loinc.org/55593-8/">55593-8</a></td><td/></tr><tr><td><a href="https://loinc.org/14683-7/">14683-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40136-4/">40136-4</a></td><td/></tr><tr><td><a href="https://loinc.org/40130-7/">40130-7</a></td><td/></tr><tr><td><a href="https://loinc.org/40147-1/">40147-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40135-6/">40135-6</a></td><td/></tr><tr><td><a href="https://loinc.org/40131-5/">40131-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40138-0/">40138-0</a></td><td/></tr><tr><td><a href="https://loinc.org/40137-2/">40137-2</a></td><td/></tr><tr><td><a href="https://loinc.org/40140-6/">40140-6</a></td><td/></tr><tr><td><a href="https://loinc.org/40134-9/">40134-9</a></td><td/></tr><tr><td><a href="https://loinc.org/40132-3/">40132-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40139-8/">40139-8</a></td><td/></tr><tr><td><a href="https://loinc.org/40142-2/">40142-2</a></td><td/></tr><tr><td><a href="https://loinc.org/40141-4/">40141-4</a></td><td/></tr><tr><td><a href="https://loinc.org/40144-8/">40144-8</a></td><td/></tr><tr><td><a href="https://loinc.org/40143-0/">40143-0</a></td><td/></tr><tr><td><a href="https://loinc.org/40145-5/">40145-5</a></td><td/></tr><tr><td><a href="https://loinc.org/40146-3/">40146-3</a></td><td/></tr><tr><td><a href="https://loinc.org/40133-1/">40133-1</a></td><td/></tr><tr><td><a href="https://loinc.org/112592-1/">112592-1</a></td><td/></tr><tr><td><a href="https://loinc.org/40129-9/">40129-9</a></td><td/></tr><tr><td><a href="https://loinc.org/53499-0/">53499-0</a></td><td/></tr><tr><td><a href="https://loinc.org/25886-3/">25886-3</a></td><td/></tr><tr><td><a href="https://loinc.org/93735-9/">93735-9</a></td><td/></tr><tr><td><a href="https://loinc.org/39473-4/">39473-4</a></td><td/></tr><tr><td><a href="https://loinc.org/101475-2/">101475-2</a></td><td/></tr><tr><td><a href="https://loinc.org/75363-2/">75363-2</a></td><td/></tr><tr><td><a href="https://loinc.org/112593-9/">112593-9</a></td><td/></tr><tr><td><a href="https://loinc.org/30004-6/">30004-6</a></td><td/></tr><tr><td><a href="https://loinc.org/30002-0/">30002-0</a></td><td/></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11010000107/version/20261021"> version &#x1F4CD;http://snomed.info/sct/11010000107/version/20261021</span> where constraint  = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C36292"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C25294"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="pw@gefyra.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-creatinine-complete"/>
+  <version value="2027.0.0-ci"/>
+  <name value="MII_VS_Labor_LOINC_Ontology_Creatinine_Complete"/>
+  <title value="MII VS Labor LOINC Ontology Creatinine Complete"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-12"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de"/>
+    </telecom>
+  </contact>
+  <description value="Proposal: use-case ValueSet 'Complete aggregation' for the analyte creatinine (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|` against the LOINC Ontology 2026-10-21. 210 concepts (210 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."/>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <version value="2.83"/>
+      <concept>
+        <code value="44716-9"/>
+      </concept>
+      <concept>
+        <code value="16285-9"/>
+      </concept>
+      <concept>
+        <code value="31045-8"/>
+      </concept>
+      <concept>
+        <code value="109874-8"/>
+      </concept>
+      <concept>
+        <code value="110903-2"/>
+      </concept>
+      <concept>
+        <code value="110902-4"/>
+      </concept>
+      <concept>
+        <code value="110658-2"/>
+      </concept>
+      <concept>
+        <code value="108024-1"/>
+      </concept>
+      <concept>
+        <code value="32543-1"/>
+      </concept>
+      <concept>
+        <code value="2159-2"/>
+      </concept>
+      <concept>
+        <code value="21232-4"/>
+      </concept>
+      <concept>
+        <code value="38483-4"/>
+      </concept>
+      <concept>
+        <code value="12190-5"/>
+      </concept>
+      <concept>
+        <code value="14398-2"/>
+      </concept>
+      <concept>
+        <code value="5919-6"/>
+      </concept>
+      <concept>
+        <code value="96590-5"/>
+      </concept>
+      <concept>
+        <code value="14402-2"/>
+      </concept>
+      <concept>
+        <code value="49004-5"/>
+      </concept>
+      <concept>
+        <code value="12576-5"/>
+      </concept>
+      <concept>
+        <code value="12574-0"/>
+      </concept>
+      <concept>
+        <code value="12572-4"/>
+      </concept>
+      <concept>
+        <code value="12577-3"/>
+      </concept>
+      <concept>
+        <code value="12578-1"/>
+      </concept>
+      <concept>
+        <code value="12573-2"/>
+      </concept>
+      <concept>
+        <code value="12579-9"/>
+      </concept>
+      <concept>
+        <code value="12580-7"/>
+      </concept>
+      <concept>
+        <code value="12581-5"/>
+      </concept>
+      <concept>
+        <code value="12582-3"/>
+      </concept>
+      <concept>
+        <code value="12583-1"/>
+      </concept>
+      <concept>
+        <code value="12575-7"/>
+      </concept>
+      <concept>
+        <code value="57345-1"/>
+      </concept>
+      <concept>
+        <code value="57726-2"/>
+      </concept>
+      <concept>
+        <code value="12191-3"/>
+      </concept>
+      <concept>
+        <code value="12193-9"/>
+      </concept>
+      <concept>
+        <code value="48626-6"/>
+      </concept>
+      <concept>
+        <code value="48630-8"/>
+      </concept>
+      <concept>
+        <code value="12194-7"/>
+      </concept>
+      <concept>
+        <code value="12192-1"/>
+      </concept>
+      <concept>
+        <code value="14399-0"/>
+      </concept>
+      <concept>
+        <code value="2160-0"/>
+      </concept>
+      <concept>
+        <code value="40251-1"/>
+      </concept>
+      <concept>
+        <code value="39956-8"/>
+      </concept>
+      <concept>
+        <code value="39970-9"/>
+      </concept>
+      <concept>
+        <code value="39971-7"/>
+      </concept>
+      <concept>
+        <code value="39972-5"/>
+      </concept>
+      <concept>
+        <code value="39973-3"/>
+      </concept>
+      <concept>
+        <code value="40258-6"/>
+      </concept>
+      <concept>
+        <code value="93999-1"/>
+      </concept>
+      <concept>
+        <code value="40250-3"/>
+      </concept>
+      <concept>
+        <code value="39957-6"/>
+      </concept>
+      <concept>
+        <code value="40253-7"/>
+      </concept>
+      <concept>
+        <code value="40254-5"/>
+      </concept>
+      <concept>
+        <code value="39974-1"/>
+      </concept>
+      <concept>
+        <code value="94008-0"/>
+      </concept>
+      <concept>
+        <code value="40252-9"/>
+      </concept>
+      <concept>
+        <code value="16188-5"/>
+      </concept>
+      <concept>
+        <code value="39961-8"/>
+      </concept>
+      <concept>
+        <code value="39962-6"/>
+      </concept>
+      <concept>
+        <code value="40249-5"/>
+      </concept>
+      <concept>
+        <code value="39959-2"/>
+      </concept>
+      <concept>
+        <code value="40255-2"/>
+      </concept>
+      <concept>
+        <code value="39964-2"/>
+      </concept>
+      <concept>
+        <code value="39960-0"/>
+      </concept>
+      <concept>
+        <code value="39958-4"/>
+      </concept>
+      <concept>
+        <code value="39975-8"/>
+      </concept>
+      <concept>
+        <code value="39963-4"/>
+      </concept>
+      <concept>
+        <code value="39965-9"/>
+      </concept>
+      <concept>
+        <code value="39966-7"/>
+      </concept>
+      <concept>
+        <code value="40256-0"/>
+      </concept>
+      <concept>
+        <code value="39967-5"/>
+      </concept>
+      <concept>
+        <code value="40257-8"/>
+      </concept>
+      <concept>
+        <code value="39976-6"/>
+      </concept>
+      <concept>
+        <code value="39968-3"/>
+      </concept>
+      <concept>
+        <code value="39969-1"/>
+      </concept>
+      <concept>
+        <code value="40248-7"/>
+      </concept>
+      <concept>
+        <code value="72271-0"/>
+      </concept>
+      <concept>
+        <code value="16189-3"/>
+      </concept>
+      <concept>
+        <code value="11041-1"/>
+      </concept>
+      <concept>
+        <code value="39955-0"/>
+      </concept>
+      <concept>
+        <code value="11042-9"/>
+      </concept>
+      <concept>
+        <code value="44784-7"/>
+      </concept>
+      <concept>
+        <code value="14401-4"/>
+      </concept>
+      <concept>
+        <code value="35674-1"/>
+      </concept>
+      <concept>
+        <code value="2161-8"/>
+      </concept>
+      <concept>
+        <code value="39985-7"/>
+      </concept>
+      <concept>
+        <code value="39979-0"/>
+      </concept>
+      <concept>
+        <code value="39996-4"/>
+      </concept>
+      <concept>
+        <code value="39984-0"/>
+      </concept>
+      <concept>
+        <code value="39980-8"/>
+      </concept>
+      <concept>
+        <code value="47257-1"/>
+      </concept>
+      <concept>
+        <code value="39978-2"/>
+      </concept>
+      <concept>
+        <code value="39987-3"/>
+      </concept>
+      <concept>
+        <code value="39986-5"/>
+      </concept>
+      <concept>
+        <code value="58951-5"/>
+      </concept>
+      <concept>
+        <code value="47256-3"/>
+      </concept>
+      <concept>
+        <code value="39989-9"/>
+      </concept>
+      <concept>
+        <code value="39983-2"/>
+      </concept>
+      <concept>
+        <code value="39981-6"/>
+      </concept>
+      <concept>
+        <code value="39988-1"/>
+      </concept>
+      <concept>
+        <code value="47258-9"/>
+      </concept>
+      <concept>
+        <code value="39991-5"/>
+      </concept>
+      <concept>
+        <code value="39990-7"/>
+      </concept>
+      <concept>
+        <code value="47259-7"/>
+      </concept>
+      <concept>
+        <code value="39993-1"/>
+      </concept>
+      <concept>
+        <code value="39992-3"/>
+      </concept>
+      <concept>
+        <code value="47273-8"/>
+      </concept>
+      <concept>
+        <code value="39994-9"/>
+      </concept>
+      <concept>
+        <code value="47261-3"/>
+      </concept>
+      <concept>
+        <code value="39995-6"/>
+      </concept>
+      <concept>
+        <code value="39982-4"/>
+      </concept>
+      <concept>
+        <code value="39977-4"/>
+      </concept>
+      <concept>
+        <code value="57346-9"/>
+      </concept>
+      <concept>
+        <code value="57344-4"/>
+      </concept>
+      <concept>
+        <code value="20624-3"/>
+      </concept>
+      <concept>
+        <code value="1452-2"/>
+      </concept>
+      <concept>
+        <code value="1455-5"/>
+      </concept>
+      <concept>
+        <code value="1453-0"/>
+      </concept>
+      <concept>
+        <code value="1454-8"/>
+      </concept>
+      <concept>
+        <code value="1456-3"/>
+      </concept>
+      <concept>
+        <code value="1459-7"/>
+      </concept>
+      <concept>
+        <code value="1457-1"/>
+      </concept>
+      <concept>
+        <code value="1458-9"/>
+      </concept>
+      <concept>
+        <code value="94844-8"/>
+      </concept>
+      <concept>
+        <code value="12584-9"/>
+      </concept>
+      <concept>
+        <code value="35242-7"/>
+      </concept>
+      <concept>
+        <code value="35203-9"/>
+      </concept>
+      <concept>
+        <code value="35204-7"/>
+      </concept>
+      <concept>
+        <code value="35251-8"/>
+      </concept>
+      <concept>
+        <code value="15050-8"/>
+      </concept>
+      <concept>
+        <code value="59826-8"/>
+      </concept>
+      <concept>
+        <code value="25386-4"/>
+      </concept>
+      <concept>
+        <code value="15051-6"/>
+      </concept>
+      <concept>
+        <code value="97777-7"/>
+      </concept>
+      <concept>
+        <code value="46086-5"/>
+      </concept>
+      <concept>
+        <code value="46219-2"/>
+      </concept>
+      <concept>
+        <code value="46220-0"/>
+      </concept>
+      <concept>
+        <code value="39472-6"/>
+      </concept>
+      <concept>
+        <code value="14681-1"/>
+      </concept>
+      <concept>
+        <code value="78532-9"/>
+      </concept>
+      <concept>
+        <code value="78533-7"/>
+      </concept>
+      <concept>
+        <code value="79263-0"/>
+      </concept>
+      <concept>
+        <code value="39471-8"/>
+      </concept>
+      <concept>
+        <code value="39474-2"/>
+      </concept>
+      <concept>
+        <code value="77140-2"/>
+      </concept>
+      <concept>
+        <code value="54375-1"/>
+      </concept>
+      <concept>
+        <code value="14682-9"/>
+      </concept>
+      <concept>
+        <code value="40267-7"/>
+      </concept>
+      <concept>
+        <code value="40113-3"/>
+      </concept>
+      <concept>
+        <code value="40122-4"/>
+      </concept>
+      <concept>
+        <code value="40123-2"/>
+      </concept>
+      <concept>
+        <code value="40124-0"/>
+      </concept>
+      <concept>
+        <code value="40125-7"/>
+      </concept>
+      <concept>
+        <code value="40273-5"/>
+      </concept>
+      <concept>
+        <code value="40266-9"/>
+      </concept>
+      <concept>
+        <code value="40114-1"/>
+      </concept>
+      <concept>
+        <code value="40269-3"/>
+      </concept>
+      <concept>
+        <code value="40126-5"/>
+      </concept>
+      <concept>
+        <code value="40268-5"/>
+      </concept>
+      <concept>
+        <code value="40118-2"/>
+      </concept>
+      <concept>
+        <code value="40265-1"/>
+      </concept>
+      <concept>
+        <code value="40116-6"/>
+      </concept>
+      <concept>
+        <code value="40270-1"/>
+      </concept>
+      <concept>
+        <code value="40117-4"/>
+      </concept>
+      <concept>
+        <code value="40115-8"/>
+      </concept>
+      <concept>
+        <code value="40127-3"/>
+      </concept>
+      <concept>
+        <code value="40119-0"/>
+      </concept>
+      <concept>
+        <code value="40271-9"/>
+      </concept>
+      <concept>
+        <code value="40272-7"/>
+      </concept>
+      <concept>
+        <code value="40128-1"/>
+      </concept>
+      <concept>
+        <code value="40120-8"/>
+      </concept>
+      <concept>
+        <code value="40121-6"/>
+      </concept>
+      <concept>
+        <code value="40264-4"/>
+      </concept>
+      <concept>
+        <code value="103616-9"/>
+      </concept>
+      <concept>
+        <code value="62425-4"/>
+      </concept>
+      <concept>
+        <code value="51620-3"/>
+      </concept>
+      <concept>
+        <code value="40112-5"/>
+      </concept>
+      <concept>
+        <code value="51619-5"/>
+      </concept>
+      <concept>
+        <code value="22726-4"/>
+      </concept>
+      <concept>
+        <code value="47610-1"/>
+      </concept>
+      <concept>
+        <code value="55593-8"/>
+      </concept>
+      <concept>
+        <code value="14683-7"/>
+      </concept>
+      <concept>
+        <code value="40136-4"/>
+      </concept>
+      <concept>
+        <code value="40130-7"/>
+      </concept>
+      <concept>
+        <code value="40147-1"/>
+      </concept>
+      <concept>
+        <code value="40135-6"/>
+      </concept>
+      <concept>
+        <code value="40131-5"/>
+      </concept>
+      <concept>
+        <code value="40138-0"/>
+      </concept>
+      <concept>
+        <code value="40137-2"/>
+      </concept>
+      <concept>
+        <code value="40140-6"/>
+      </concept>
+      <concept>
+        <code value="40134-9"/>
+      </concept>
+      <concept>
+        <code value="40132-3"/>
+      </concept>
+      <concept>
+        <code value="40139-8"/>
+      </concept>
+      <concept>
+        <code value="40142-2"/>
+      </concept>
+      <concept>
+        <code value="40141-4"/>
+      </concept>
+      <concept>
+        <code value="40144-8"/>
+      </concept>
+      <concept>
+        <code value="40143-0"/>
+      </concept>
+      <concept>
+        <code value="40145-5"/>
+      </concept>
+      <concept>
+        <code value="40146-3"/>
+      </concept>
+      <concept>
+        <code value="40133-1"/>
+      </concept>
+      <concept>
+        <code value="112592-1"/>
+      </concept>
+      <concept>
+        <code value="40129-9"/>
+      </concept>
+      <concept>
+        <code value="53499-0"/>
+      </concept>
+      <concept>
+        <code value="25886-3"/>
+      </concept>
+      <concept>
+        <code value="93735-9"/>
+      </concept>
+      <concept>
+        <code value="39473-4"/>
+      </concept>
+      <concept>
+        <code value="101475-2"/>
+      </concept>
+      <concept>
+        <code value="75363-2"/>
+      </concept>
+      <concept>
+        <code value="112593-9"/>
+      </concept>
+      <concept>
+        <code value="30004-6"/>
+      </concept>
+      <concept>
+        <code value="30002-0"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11010000107/version/20261021"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

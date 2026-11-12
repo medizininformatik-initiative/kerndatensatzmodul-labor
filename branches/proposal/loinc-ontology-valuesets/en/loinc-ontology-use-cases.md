@@ -7,7 +7,7 @@
 
 ## LOINC Ontology - Use-case ValueSets per analyte
 
-This page lists the 56 ValueSets of the [LOINC Ontology proposal](loinc-ontology-valuesets.md) that serve **data users**: for each of 14 analytes, graded sets of everything the LOINC Ontology maps to that analyte. The construction is explained under [How the ValueSets are built](loinc-ontology-method.md); the narrow per-test sets are on [ValueSets per clinical test](loinc-ontology-clinical-tests.md).
+This page lists the 61 ValueSets of the [LOINC Ontology proposal](loinc-ontology-valuesets.md) that serve **data users**: for each of 17 analytes, graded sets of everything the LOINC Ontology maps to that analyte. The construction is explained under [How the ValueSets are built](loinc-ontology-method.md); the narrow per-test sets are on [ValueSets per clinical test (Laborparameter)](loinc-ontology-clinical-tests.md).
 
 ### The use case defines the aggregation
 
@@ -35,25 +35,53 @@ The pool column shows the Component; `<<` marks "this concept and its subtypes".
 
 | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [creatinine](loinc-ontology-analyte-creatinine.md) | Creatinine | [210](ValueSet-mii-vs-labor-loinc-ontology-creatinine-complete.md) | [207](ValueSet-mii-vs-labor-loinc-ontology-creatinine-quantitative.md) | [198](ValueSet-mii-vs-labor-loinc-ontology-creatinine-convertible.md) | – | [3](ValueSet-mii-vs-labor-loinc-ontology-creatinine-semiquantitative.md) |
 | [erythrocytes](loinc-ontology-analyte-erythrocytes.md) | Erythrocyte | [107](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-complete.md) | [88](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-quantitative.md) | [52](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-convertible.md) | [17](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-qualitative.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative.md) |
+| [gfr](loinc-ontology-analyte-gfr.md) | Process output Glomerular filtration rate | [20](ValueSet-mii-vs-labor-loinc-ontology-gfr-complete.md) | [20](ValueSet-mii-vs-labor-loinc-ontology-gfr-quantitative.md) | – | – | – |
 | [hba1c](loinc-ontology-analyte-hba1c.md) | Glycated hemoglobin-A1c | [10](ValueSet-mii-vs-labor-loinc-ontology-hba1c-complete.md) | [10](ValueSet-mii-vs-labor-loinc-ontology-hba1c-quantitative.md) | [3](ValueSet-mii-vs-labor-loinc-ontology-hba1c-convertible.md) | – | – |
-| [hematocrit](loinc-ontology-analyte-hematocrit.md) | Erythrocyte | [107](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.md) | [88](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.md) | [52](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-convertible.md) | [17](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-qualitative.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-semiquantitative.md) |
+| [hematocrit](loinc-ontology-analyte-hematocrit.md) | `Erythrocyte; Property << Volume fraction` | [23](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.md) | [23](ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.md) | – | – | – |
 | [hemoglobin](loinc-ontology-analyte-hemoglobin.md) | Hemoglobin | [89](ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-complete.md) | [57](ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-quantitative.md) | [40](ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-convertible.md) | [30](ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-qualitative.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative.md) |
 | [ldh](loinc-ontology-analyte-ldh.md) | `<< Lactate dehydrogenase` | [79](ValueSet-mii-vs-labor-loinc-ontology-ldh-complete.md) | [77](ValueSet-mii-vs-labor-loinc-ontology-ldh-quantitative.md) | [41](ValueSet-mii-vs-labor-loinc-ontology-ldh-convertible.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-ldh-qualitative.md) | – |
 | [leukocytes](loinc-ontology-analyte-leukocytes.md) | Leukocyte | [161](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-complete.md) | [123](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-quantitative.md) | [86](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-convertible.md) | [34](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-qualitative.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-semiquantitative.md) |
-| [mch](loinc-ontology-analyte-mch.md) | `<< Hemoglobin` | [296](ValueSet-mii-vs-labor-loinc-ontology-mch-complete.md) | [180](ValueSet-mii-vs-labor-loinc-ontology-mch-quantitative.md) | [59](ValueSet-mii-vs-labor-loinc-ontology-mch-convertible.md) | [114](ValueSet-mii-vs-labor-loinc-ontology-mch-qualitative.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-mch-semiquantitative.md) |
-| [mchc](loinc-ontology-analyte-mchc.md) | `<< Mean cell hemoglobin concentration [observable]` | [2](ValueSet-mii-vs-labor-loinc-ontology-mchc-complete.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-mchc-quantitative.md) | – | – | – |
-| [mcv](loinc-ontology-analyte-mcv.md) | `<< Mean cell volume [observable]` | [2](ValueSet-mii-vs-labor-loinc-ontology-mcv-complete.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-mcv-quantitative.md) | – | – | – |
+| [mch](loinc-ontology-analyte-mch.md) | `Hemoglobin; Property << Entitic mass or << Entitic substance amount` | [8](ValueSet-mii-vs-labor-loinc-ontology-mch-complete.md) | [8](ValueSet-mii-vs-labor-loinc-ontology-mch-quantitative.md) | – | – | – |
+| [mchc](loinc-ontology-analyte-mchc.md) | `<< Mean cell hemoglobin concentration` | [2](ValueSet-mii-vs-labor-loinc-ontology-mchc-complete.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-mchc-quantitative.md) | – | – | – |
+| [mcv](loinc-ontology-analyte-mcv.md) | `<< Mean cell volume` | [2](ValueSet-mii-vs-labor-loinc-ontology-mcv-complete.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-mcv-quantitative.md) | – | – | – |
 | [methemoglobin](loinc-ontology-analyte-methemoglobin.md) | `<< Methemoglobin` | [17](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-complete.md) | [15](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-quantitative.md) | [3](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-convertible.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-methemoglobin-qualitative.md) | – |
 | [nitrite urine](loinc-ontology-analyte-nitrite-urine.md) | Nitrite salt | [9](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-complete.md) | [5](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-quantitative.md) | [5](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-convertible.md) | [3](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-qualitative.md) | [1](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative.md) |
 | [platelets](loinc-ontology-analyte-platelets.md) | Platelet | [19](ValueSet-mii-vs-labor-loinc-ontology-platelets-complete.md) | [17](ValueSet-mii-vs-labor-loinc-ontology-platelets-quantitative.md) | [15](ValueSet-mii-vs-labor-loinc-ontology-platelets-convertible.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-platelets-qualitative.md) | – |
 | [potassium](loinc-ontology-analyte-potassium.md) | Potassium electrolyte | [57](ValueSet-mii-vs-labor-loinc-ontology-potassium-complete.md) | [57](ValueSet-mii-vs-labor-loinc-ontology-potassium-quantitative.md) | [42](ValueSet-mii-vs-labor-loinc-ontology-potassium-convertible.md) | – | – |
+| [protein urine](loinc-ontology-analyte-protein-urine.md) | `Protein; Direct site << Urine specimen` | [21](ValueSet-mii-vs-labor-loinc-ontology-protein-urine-complete.md) | [13](ValueSet-mii-vs-labor-loinc-ontology-protein-urine-quantitative.md) | [5](ValueSet-mii-vs-labor-loinc-ontology-protein-urine-convertible.md) | [6](ValueSet-mii-vs-labor-loinc-ontology-protein-urine-qualitative.md) | [2](ValueSet-mii-vs-labor-loinc-ontology-protein-urine-semiquantitative.md) |
 | [psa](loinc-ontology-analyte-psa.md) | `<< Prostate specific antigen` | [37](ValueSet-mii-vs-labor-loinc-ontology-psa-complete.md) | [36](ValueSet-mii-vs-labor-loinc-ontology-psa-quantitative.md) | [26](ValueSet-mii-vs-labor-loinc-ontology-psa-convertible.md) | [1](ValueSet-mii-vs-labor-loinc-ontology-psa-qualitative.md) | – |
+
+### Recall against LOINC itself
+
+A rule can only select what the LOINC Ontology models, so the pools are checked the other way round as well: for every analyte, the LOINC table of release 2.83 is searched for the laboratory terms a laboratory physician would count as that analyte (by Component, where needed Property and System), and the table says how many of them the pool reaches. A term outside the pool is modelled with another Component, or not modelled at all; the analyte pages list them one by one. The last column counts how many of the LOINC terms the per-test ValueSets enumerate; the gap to the pool is the set of codes a clinician would not call the routine value.
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [creatinine](loinc-ontology-analyte-creatinine.md) | `Component ~ ^Creatinine$` | 82 | 58 | 24 | 9 |
+| [erythrocytes](loinc-ontology-analyte-erythrocytes.md) | `Component ~ ^Erythrocytes$` | 88 | 78 | 10 | 3 |
+| [gfr](loinc-ontology-analyte-gfr.md) | `Component ~ ^Glomerular filtration rate` | 20 | 20 | 0 | 17 |
+| [hba1c](loinc-ontology-analyte-hba1c.md) | `Component ~ ^Hemoglobin A1c(/Hemoglobin\.total)?$` | 8 | 7 | 1 | 6 |
+| [hematocrit](loinc-ontology-analyte-hematocrit.md) | `Component ~ ^Erythrocyte/(Blood|Specimen Volume)$; Property ~ ^VFr` | 27 | 19 | 8 | 7 |
+| [hemoglobin](loinc-ontology-analyte-hemoglobin.md) | `Component ~ ^Hemoglobin$` | 71 | 65 | 6 | 23 |
+| [ldh](loinc-ontology-analyte-ldh.md) | `Component ~ ^Lactate dehydrogenase( \d(/Lactate dehydrogenase\.total)?)?$` | 77 | 76 | 1 | 19 |
+| [leukocytes](loinc-ontology-analyte-leukocytes.md) | `Component ~ ^Leukocytes$` | 115 | 109 | 6 | 4 |
+| [mch](loinc-ontology-analyte-mch.md) | `Component ~ ^Hemoglobin$; Property ~ ^(EntMass|EntSub); System ~ ^RBC$` | 3 | 3 | 0 | 3 |
+| [mchc](loinc-ontology-analyte-mchc.md) | `Component ~ ^Hemoglobin$; Property ~ ^(EntMCnc|EntSCnc); System ~ ^RBC$` | 3 | 2 | 1 | 2 |
+| [mcv](loinc-ontology-analyte-mcv.md) | `Property ~ ^EntMeanVol$; System ~ ^RBC$` | 2 | 2 | 0 | 2 |
+| [methemoglobin](loinc-ontology-analyte-methemoglobin.md) | `Component ~ ^Methemoglobin(/Hemoglobin\.total)?$` | 21 | 16 | 5 | 7 |
+| [nitrite urine](loinc-ontology-analyte-nitrite-urine.md) | `Component ~ ^Nitrite$; System ~ Urine` | 5 | 5 | 0 | 3 |
+| [platelets](loinc-ontology-analyte-platelets.md) | `Component ~ ^Platelets$` | 20 | 18 | 2 | 6 |
+| [potassium](loinc-ontology-analyte-potassium.md) | `Component ~ ^Potassium$` | 56 | 45 | 11 | 9 |
+| [protein urine](loinc-ontology-analyte-protein-urine.md) | `Component ~ ^Protein$; System ~ Urine` | 21 | 14 | 7 | 4 |
+| [psa](loinc-ontology-analyte-psa.md) | `Component ~ ^Prostate specific Ag` | 38 | 36 | 2 | 10 |
 
 ### Review notes
 
-* **Hematocrit and erythrocyte count** share the Component **Erythrocyte**, so their pools, and therefore their use-case ValueSets, are identical. Only the per-test ValueSets tell them apart. If the module wants separate pools, hematocrit needs its own Component or an added Property constraint.
-* **MCH** is pooled on **Hemoglobin and subtypes**, which also brings in HbA1c and the hemoglobin variants, while the hemoglobin pool uses the exact Component. One of the two should be aligned; both are pool-definition choices, not properties of the LOINC Ontology.
+* **Hematocrit** has its own pool now: Erythrocyte with the property volume fraction. The erythrocyte pool still contains the hematocrit concepts, which is correct, a hematocrit is an erythrocyte observable; only the hematocrit use-case ValueSets are no longer a copy of the erythrocyte ones.
+* **MCH** is pooled on the exact Component Hemoglobin with the two entitic properties (mass and substance amount per cell), no longer on `<< Hemoglobin`, which had brought HbA1c and the hemoglobin variants in. The hemoglobin pool uses the exact Component and therefore also contains the MCH concepts.
+* **GFR** has no Component in the LOINC Ontology; its pool is every observable whose **Process output** is the GFR calculation. **Protein in urine** is pooled with the specimen in the pool definition, because total protein in serum is a different clinical parameter.
 * **Leukocytes** has two order-level concepts (the differential) that are listed in the review tables and excluded from every bucket.
 * **Specimen is not a criterion** in this layer: urine hemoglobin and blood hemoglobin are in the same quantitative bucket. A data user who needs one specimen narrows by the per-test ValueSet or by `Observation.specimen`.
 

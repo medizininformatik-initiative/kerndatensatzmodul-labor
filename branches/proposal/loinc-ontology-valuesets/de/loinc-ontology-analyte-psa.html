@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.14"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.17"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -268,7 +268,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je klinischem Test</b></a></li><li><b>LOINC Ontology - Analyt PSA</b></li>
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je Laborparameter</b></a></li><li><b>LOINC Ontology - Analyt PSA</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -306,20 +306,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#total-psa-in-serumplasma" id="markdown-toc-total-psa-in-serumplasma">Total PSA in serum/plasma</a></li>
-  <li><a href="#free-psa-in-serumplasma" id="markdown-toc-free-psa-in-serumplasma">Free PSA in serum/plasma</a></li>
+  <li><a href="#total-psa-in-serum-plasma-or-blood" id="markdown-toc-total-psa-in-serum-plasma-or-blood">Total PSA in serum, plasma or blood</a></li>
+  <li><a href="#free-psa-in-serum-plasma-or-blood" id="markdown-toc-free-psa-in-serum-plasma-or-blood">Free PSA in serum, plasma or blood</a></li>
   <li><a href="#free-psa-freetotal-ratio" id="markdown-toc-free-psa-freetotal-ratio">%Free PSA (free/total ratio)</a></li>
   <li><a href="#der-pool-und-seine-use-case-gruppen" id="markdown-toc-der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</a></li>
+  <li><a href="#loinc-terme-des-analyten-außerhalb-des-pools" id="markdown-toc-loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</a></li>
 </ul>
 
 </div>
-<p>Diese Seite ist das Review-Material für den Analyten <strong>psa</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
+<p>Diese Seite ist das Review-Material für den Analyten <strong>psa</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
 
 <p>Kandidatenpool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 102687007 |Prostate specific antigen (substance)|</code> (37 Konzepte, 37 mit LOINC-Code). Use-Case-ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-complete.html">Vollständig</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-quantitative.html">Quantitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-convertible.html">Konvertierbar</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-qualitative.html">Qualitativ</a>.</p>
 
-<h3 id="total-psa-in-serumplasma">Total PSA in serum/plasma</h3>
+<h3 id="total-psa-in-serum-plasma-or-blood">Total PSA in serum, plasma or blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-total-standard.html">mii-vs-labor-loinc-ontology-psa-total-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-total-standard.html">mii-pr-labor-loinc-ontology-psa-total-standard</a>. Die Regel wählt 3 der 37 Poolkonzepte aus.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-total-standard.html">mii-vs-labor-loinc-ontology-psa-total-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-total-standard.html">mii-pr-labor-loinc-ontology-psa-total-standard</a>. Die Regel wählt 5 der 37 Poolkonzepte aus.</p>
 
 <table>
   <thead>
@@ -335,11 +336,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
     </tr>
     <tr>
       <td>Scale type</td>
@@ -348,13 +349,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="enthalten-3">Enthalten (3)</h4>
+<h4 id="enthalten-5">Enthalten (5)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -386,23 +387,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
       <td>Immunoassay technique</td>
     </tr>
+    <tr>
+      <td>19197-3</td>
+      <td>Prostate specific Ag [Moles/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>19195-7</td>
+      <td>Prostate specific Ag [Units/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Arbitrary concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
   </tbody>
 </table>
 
 <ul>
-  <li><strong>Materialien unter den enthaltenen Codes</strong>: Acellular blood (serum or plasma) specimen (3)</li>
+  <li><strong>Materialien unter den enthaltenen Codes</strong>: Acellular blood (serum or plasma) specimen (5)</li>
   <li><strong>Techniken unter den enthaltenen Codes</strong>: Immunoassay technique (1)</li>
 </ul>
 
-<h4 id="aus-dem-pool-ausgeschlossen-34">Aus dem Pool ausgeschlossen (34)</h4>
+<h4 id="aus-dem-pool-ausgeschlossen-32">Aus dem Pool ausgeschlossen (32)</h4>
 
-<p><strong>Ausgeschlossen, weil Direct site nicht passt (7)</strong></p>
+<p><strong>Ausgeschlossen, weil Direct site nicht passt (9)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -442,67 +459,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Prostate specific Ag [Mass/volume] in Urine</td>
       <td>Urine specimen</td>
     </tr>
+    <tr>
+      <td>19200-5</td>
+      <td>Prostate specific Ag [Moles/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
+    <tr>
+      <td>19198-1</td>
+      <td>Prostate specific Ag [Units/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Component, Direct site und Property nicht passen (6)</strong></p>
+<p><strong>Ausgeschlossen, weil Component und Direct site nicht passen (7)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
-      <th>Direct site</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>19206-2</td>
-      <td>Prostate Specific Ag Free [Moles/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>19204-7</td>
-      <td>Prostate Specific Ag Free [Units/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-    <tr>
-      <td>59238-6</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid</td>
-      <td>Body fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>59235-2</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>59236-0</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>59237-8</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid</td>
-      <td>Pleural fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ausgeschlossen, weil Component und Direct site nicht passen (5)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -532,16 +508,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Prostate Specific Ag Free [Mass/volume] in Semen</td>
       <td>Semen sample</td>
     </tr>
+    <tr>
+      <td>19206-2</td>
+      <td>Prostate Specific Ag Free [Moles/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
+    <tr>
+      <td>19204-7</td>
+      <td>Prostate Specific Ag Free [Units/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Component nicht passt (3)</strong></p>
+<p><strong>Ausgeschlossen, weil Component nicht passt (5)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -563,6 +549,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
     </tr>
     <tr>
+      <td>19203-9</td>
+      <td>Prostate Specific Ag Free [Moles/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+    </tr>
+    <tr>
+      <td>19201-3</td>
+      <td>Prostate Specific Ag Free [Units/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Arbitrary concentration</td>
+      <td>Quantitative value</td>
+    </tr>
+    <tr>
       <td>33667-7</td>
       <td>Prostate specific Ag.protein bound [Mass/volume] in Serum or Plasma</td>
       <td>Acellular blood (serum or plasma) specimen</td>
@@ -572,64 +572,41 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Component und Property nicht passen (3)</strong></p>
+<p><strong>Ausgeschlossen, weil Component, Direct site und Property nicht passen (4)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>19203-9</td>
-      <td>Prostate Specific Ag Free [Moles/volume] in Serum or Plasma</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>19201-3</td>
-      <td>Prostate Specific Ag Free [Units/volume] in Serum or Plasma</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-    <tr>
-      <td>12841-3</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma</td>
-      <td>Mass fraction</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (3)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>19200-5</td>
-      <td>Prostate specific Ag [Moles/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Substance concentration</td>
+      <td>59238-6</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid</td>
+      <td>Body fluid specimen</td>
+      <td>Mass fraction</td>
     </tr>
     <tr>
-      <td>19198-1</td>
-      <td>Prostate specific Ag [Units/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Arbitrary concentration</td>
+      <td>59235-2</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid</td>
+      <td>Cerebrospinal fluid specimen</td>
+      <td>Mass fraction</td>
     </tr>
     <tr>
-      <td>48167-1</td>
-      <td>Prostate specific Ag/Creatinine [Mass Ratio] in Urine</td>
-      <td>Urine specimen</td>
-      <td>Mass ratio</td>
+      <td>59236-0</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid</td>
+      <td>Peritoneal fluid specimen</td>
+      <td>Mass fraction</td>
+    </tr>
+    <tr>
+      <td>59237-8</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid</td>
+      <td>Pleural fluid specimen</td>
+      <td>Mass fraction</td>
     </tr>
   </tbody>
 </table>
@@ -640,7 +617,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -666,37 +643,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109230-3.</p>
 
-<p><strong>Ausgeschlossen, weil Property nicht passt (2)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>19197-3</td>
-      <td>Prostate specific Ag [Moles/volume] in Serum or Plasma</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>19195-7</td>
-      <td>Prostate specific Ag [Units/volume] in Serum or Plasma</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-  </tbody>
-</table>
-
 <p><strong>Ausgeschlossen, weil Component, Direct site, Property und Scale type nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -715,13 +668,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109229-5.</p>
 
+<p><strong>Ausgeschlossen, weil Component und Property nicht passen (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12841-3</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma</td>
+      <td>Mass fraction</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Ausgeschlossen, weil Component, Property und Scale type nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
     </tr>
@@ -738,13 +710,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 110243-3.</p>
 
+<p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>48167-1</td>
+      <td>Prostate specific Ag/Creatinine [Mass Ratio] in Urine</td>
+      <td>Urine specimen</td>
+      <td>Mass ratio</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Ausgeschlossen, weil Property und Scale type nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
     </tr>
@@ -764,14 +757,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion">Diskussion</h4>
 
 <ul>
-  <li><strong>Drei Codes</strong>: 2857-1, das immunoassay-spezifische 83112-3 und das ultrasensitive 35741-8. Letzteres ist eine Methode mit anderer Nachweisgrenze; in der Nachsorge nach Prostatektomie ist das relevant, und ein Standort, der so berichtet, sollte darauf mappen.</li>
-  <li><strong>µg/L und ng/mL sind dieselbe Massenkonzentration</strong>; UCUM regelt das. Die Codes für Stoffmengenkonzentration (19197-3) und arbiträre Einheiten (19195-7) sind draußen und selten in Gebrauch.</li>
-  <li><strong>Proteingebundenes PSA</strong> (33667-7) und <strong>freies PSA</strong> sind andere Components und bleiben draußen; siehe die zwei spezialisierten Tests.</li>
+  <li><strong>Fünf Codes.</strong> 2857-1, das immunoassay-spezifische 83112-3 und das ultrasensitive 35741-8 (eine Methode mit niedrigerer Nachweisgrenze, die im Monitoring nach Prostatektomie zählt), dazu die molare Variante 19197-3 und die Variante in arbiträren Einheiten 19195-7, die der erweiterte Property-Block zulässt. Die beiden letzten sind selten, aber dieselbe Messung in anderer Einheit und UCUM-konvertierbar.</li>
+  <li><strong>Der Materialblock ist der gemeinsame Blut-Block.</strong> Er lässt Serum, Plasma und Vollblut zu; ein Vollblut-PSA-Code ist heute nicht modelliert, die Menge ändert sich dadurch nicht. Trockenblut-PSA (100716-0, ein Einsende-Screening-Kit) schließt der Block aus.</li>
+  <li><strong>Proteingebundenes PSA</strong> (33667-7), <strong>freies PSA</strong> und der <strong>Quotient</strong> sind andere Components oder Properties und bleiben draußen; siehe die beiden spezialisierten Tests.</li>
 </ul>
 
-<h3 id="free-psa-in-serumplasma">Free PSA in serum/plasma</h3>
+<h3 id="free-psa-in-serum-plasma-or-blood">Free PSA in serum, plasma or blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-free-standard.html">mii-vs-labor-loinc-ontology-psa-free-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-free-standard.html">mii-pr-labor-loinc-ontology-psa-free-standard</a>. Die Regel wählt 2 der 37 Poolkonzepte aus.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-psa-free-standard.html">mii-vs-labor-loinc-ontology-psa-free-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-psa-free-standard.html">mii-pr-labor-loinc-ontology-psa-free-standard</a>. Die Regel wählt 4 der 37 Poolkonzepte aus.</p>
 
 <table>
   <thead>
@@ -787,11 +780,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Mass concentration or &lt;&lt; Substance concentration or &lt;&lt; Arbitrary concentration</code></td>
     </tr>
     <tr>
       <td>Scale type</td>
@@ -800,13 +793,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="enthalten-2">Enthalten (2)</h4>
+<h4 id="enthalten-4">Enthalten (4)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -830,23 +823,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
       <td>Immunoassay technique</td>
     </tr>
+    <tr>
+      <td>19203-9</td>
+      <td>Prostate Specific Ag Free [Moles/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>19201-3</td>
+      <td>Prostate Specific Ag Free [Units/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Arbitrary concentration</td>
+      <td>Quantitative value</td>
+      <td>–</td>
+    </tr>
   </tbody>
 </table>
 
 <ul>
-  <li><strong>Materialien unter den enthaltenen Codes</strong>: Acellular blood (serum or plasma) specimen (2)</li>
+  <li><strong>Materialien unter den enthaltenen Codes</strong>: Acellular blood (serum or plasma) specimen (4)</li>
   <li><strong>Techniken unter den enthaltenen Codes</strong>: Immunoassay technique (1)</li>
 </ul>
 
-<h4 id="aus-dem-pool-ausgeschlossen-35">Aus dem Pool ausgeschlossen (35)</h4>
+<h4 id="aus-dem-pool-ausgeschlossen-33">Aus dem Pool ausgeschlossen (33)</h4>
 
-<p><strong>Ausgeschlossen, weil Component und Direct site nicht passen (7)</strong></p>
+<p><strong>Ausgeschlossen, weil Component und Direct site nicht passen (9)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -886,67 +895,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Prostate specific Ag [Mass/volume] in Urine</td>
       <td>Urine specimen</td>
     </tr>
+    <tr>
+      <td>19200-5</td>
+      <td>Prostate specific Ag [Moles/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
+    <tr>
+      <td>19198-1</td>
+      <td>Prostate specific Ag [Units/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (6)</strong></p>
+<p><strong>Ausgeschlossen, weil Direct site nicht passt (7)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
-      <th>Direct site</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>19206-2</td>
-      <td>Prostate Specific Ag Free [Moles/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>19204-7</td>
-      <td>Prostate Specific Ag Free [Units/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-    <tr>
-      <td>59238-6</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid</td>
-      <td>Body fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>59235-2</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>59236-0</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-    <tr>
-      <td>59237-8</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid</td>
-      <td>Pleural fluid specimen</td>
-      <td>Mass fraction</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ausgeschlossen, weil Direct site nicht passt (5)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -976,16 +944,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Prostate Specific Ag Free [Mass/volume] in Semen</td>
       <td>Semen sample</td>
     </tr>
+    <tr>
+      <td>19206-2</td>
+      <td>Prostate Specific Ag Free [Moles/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
+    <tr>
+      <td>19204-7</td>
+      <td>Prostate Specific Ag Free [Units/volume] in Semen</td>
+      <td>Semen sample</td>
+    </tr>
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Component nicht passt (4)</strong></p>
+<p><strong>Ausgeschlossen, weil Component nicht passt (6)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1014,6 +992,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
     </tr>
     <tr>
+      <td>19197-3</td>
+      <td>Prostate specific Ag [Moles/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Substance concentration</td>
+      <td>Quantitative value</td>
+    </tr>
+    <tr>
+      <td>19195-7</td>
+      <td>Prostate specific Ag [Units/volume] in Serum or Plasma</td>
+      <td>Acellular blood (serum or plasma) specimen</td>
+      <td>Arbitrary concentration</td>
+      <td>Quantitative value</td>
+    </tr>
+    <tr>
       <td>33667-7</td>
       <td>Prostate specific Ag.protein bound [Mass/volume] in Serum or Plasma</td>
       <td>Acellular blood (serum or plasma) specimen</td>
@@ -1023,63 +1015,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Component, Direct site und Property nicht passen (3)</strong></p>
+<p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (4)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>19200-5</td>
-      <td>Prostate specific Ag [Moles/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Substance concentration</td>
+      <td>59238-6</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Body fluid</td>
+      <td>Body fluid specimen</td>
+      <td>Mass fraction</td>
     </tr>
     <tr>
-      <td>19198-1</td>
-      <td>Prostate specific Ag [Units/volume] in Semen</td>
-      <td>Semen sample</td>
-      <td>Arbitrary concentration</td>
+      <td>59235-2</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Cerebrospinal Fluid</td>
+      <td>Cerebrospinal fluid specimen</td>
+      <td>Mass fraction</td>
     </tr>
     <tr>
-      <td>48167-1</td>
-      <td>Prostate specific Ag/Creatinine [Mass Ratio] in Urine</td>
-      <td>Urine specimen</td>
-      <td>Mass ratio</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ausgeschlossen, weil Property nicht passt (3)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>19203-9</td>
-      <td>Prostate Specific Ag Free [Moles/volume] in Serum or Plasma</td>
-      <td>Substance concentration</td>
+      <td>59236-0</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Peritoneal fluid</td>
+      <td>Peritoneal fluid specimen</td>
+      <td>Mass fraction</td>
     </tr>
     <tr>
-      <td>19201-3</td>
-      <td>Prostate Specific Ag Free [Units/volume] in Serum or Plasma</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-    <tr>
-      <td>12841-3</td>
-      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma</td>
+      <td>59237-8</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Pleural fluid</td>
+      <td>Pleural fluid specimen</td>
       <td>Mass fraction</td>
     </tr>
   </tbody>
@@ -1091,7 +1060,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1117,26 +1086,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109230-3.</p>
 
-<p><strong>Ausgeschlossen, weil Component und Property nicht passen (2)</strong></p>
+<p><strong>Ausgeschlossen, weil Component, Direct site und Property nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
       <th>Property</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>19197-3</td>
-      <td>Prostate specific Ag [Moles/volume] in Serum or Plasma</td>
-      <td>Substance concentration</td>
-    </tr>
-    <tr>
-      <td>19195-7</td>
-      <td>Prostate specific Ag [Units/volume] in Serum or Plasma</td>
-      <td>Arbitrary concentration</td>
+      <td>48167-1</td>
+      <td>Prostate specific Ag/Creatinine [Mass Ratio] in Urine</td>
+      <td>Urine specimen</td>
+      <td>Mass ratio</td>
     </tr>
   </tbody>
 </table>
@@ -1147,7 +1113,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
     </tr>
@@ -1170,7 +1136,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1189,13 +1155,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109229-5.</p>
 
+<p><strong>Ausgeschlossen, weil Property nicht passt (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12841-3</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total in Serum or Plasma</td>
+      <td>Mass fraction</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Ausgeschlossen, weil Property und Scale type nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
     </tr>
@@ -1215,7 +1200,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion-1">Diskussion</h4>
 
 <ul>
-  <li><strong>Zwei Codes</strong> (10886-0, 83113-1). Freies PSA ist in SNOMED CT eine eigene Substanz, die Trennung vom Gesamt-PSA ist daher sauber.</li>
+  <li><strong>Vier Codes</strong> (10886-0, 83113-1, das molare 19203-9 und 19201-3 in arbiträren Einheiten). Freies PSA ist in SNOMED CT eine eigene Substanz, die Trennung vom Gesamt-PSA ist sauber.</li>
   <li><strong>Der Quotient</strong> (12841-3) ist über die Property ausgeschlossen und hat einen eigenen Test.</li>
 </ul>
 
@@ -1237,7 +1222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Acellular blood (serum or plasma) specimen</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -1252,7 +1237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1284,7 +1269,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -1413,7 +1398,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -1487,7 +1472,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -1523,8 +1508,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion-2">Diskussion</h4>
 
 <ul>
-  <li><strong>Ein Code</strong> (12841-3). Die Regel lässt Verhältnis oder Massenanteil zu, damit eine LOINC-Änderung des Property-Typs die Menge nicht stillschweigend leert.</li>
-  <li><strong>Wertetyp.</strong> Der Quotient wird als Prozent berichtet; das Profil legt Quantity fest, mit <code class="language-plaintext highlighter-rouge">%</code> als erwarteter Einheit.</li>
+  <li><strong>Ein Code</strong> (12841-3). Die Regel lässt Ratio oder Mass fraction zu, damit eine LOINC-Änderung des Property-Typs die Menge nicht stillschweigend leert.</li>
+  <li><strong>Wertetyp.</strong> Der Quotient wird als Prozentwert berichtet; das Profil legt Quantity fest, mit <code class="language-plaintext highlighter-rouge">%</code> als erwarteter Einheit.</li>
 </ul>
 
 <h3 id="der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</h3>
@@ -1535,7 +1520,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -1880,6 +1865,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</h3>
+
+<p>Recall-Prüfung gegen LOINC 2.83 selbst: 38 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Prostate specific Ag); 36 davon liegen im Pool, 2 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>72576-2</td>
+      <td>Prostate Specific Ag Free/Prostate specific Ag.total [Pure mass fraction] in Serum or Plasma</td>
+      <td>MFr.DF</td>
+      <td>Ser/Plas</td>
+    </tr>
+    <tr>
+      <td>53764-7</td>
+      <td>Prostate specific Ag panel - Serum or Plasma</td>
+      <td>-</td>
+      <td>Ser/Plas</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -1905,7 +1919,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

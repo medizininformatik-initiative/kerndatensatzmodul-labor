@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.5"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.7"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -268,7 +268,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je klinischem Test</b></a></li><li><b>LOINC Ontology - Analyt LDH</b></li>
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><a href='guidance.html'><b>Anleitung</b></a></li><li><a href='loinc-ontology-valuesets.html'><b>LOINC-Ontology-ValueSets (Vorschlag)</b></a></li><li><a href='loinc-ontology-clinical-tests.html'><b>LOINC Ontology - ValueSets je Laborparameter</b></a></li><li><b>LOINC Ontology - Analyt LDH</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -306,17 +306,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#ldh-total-monitoring-in-serumplasma" id="markdown-toc-ldh-total-monitoring-in-serumplasma">LDH (total) monitoring in serum/plasma</a></li>
-  <li><a href="#ldh-isoenzyme-analysis-ldh-15" id="markdown-toc-ldh-isoenzyme-analysis-ldh-15">LDH isoenzyme analysis (LDH-1..5)</a></li>
+  <li><a href="#ldh-total-monitoring-in-serum-plasma-or-blood" id="markdown-toc-ldh-total-monitoring-in-serum-plasma-or-blood">LDH (total) monitoring in serum, plasma or blood</a></li>
+  <li><a href="#ldh-isoenzyme-analysis-ldh-15-in-serumplasma" id="markdown-toc-ldh-isoenzyme-analysis-ldh-15-in-serumplasma">LDH isoenzyme analysis (LDH-1..5) in serum/plasma</a></li>
   <li><a href="#der-pool-und-seine-use-case-gruppen" id="markdown-toc-der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</a></li>
+  <li><a href="#loinc-terme-des-analyten-außerhalb-des-pools" id="markdown-toc-loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</a></li>
 </ul>
 
 </div>
-<p>Diese Seite ist das Review-Material für den Analyten <strong>ldh</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
+<p>Diese Seite ist das Review-Material für den Analyten <strong>ldh</strong> des <a href="loinc-ontology-valuesets.html">LOINC-Ontology-Vorschlags</a>: der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter <a href="loinc-ontology-method.html">Wie die ValueSets gebaut werden</a> erklärt.</p>
 
 <p>Kandidatenpool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = &lt;&lt; 259319003 |Lactate dehydrogenase (substance)|</code> (79 Konzepte, 79 mit LOINC-Code). Use-Case-ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-complete.html">Vollständig</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-quantitative.html">Quantitativ</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-convertible.html">Konvertierbar</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-qualitative.html">Qualitativ</a>.</p>
 
-<h3 id="ldh-total-monitoring-in-serumplasma">LDH (total) monitoring in serum/plasma</h3>
+<h3 id="ldh-total-monitoring-in-serum-plasma-or-blood">LDH (total) monitoring in serum, plasma or blood</h3>
 
 <p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-monitoring-standard.html">mii-vs-labor-loinc-ontology-ldh-monitoring-standard</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-ldh-monitoring-standard.html">mii-pr-labor-loinc-ontology-ldh-monitoring-standard</a>. Die Regel wählt 3 der 79 Poolkonzepte aus.</p>
 
@@ -334,7 +335,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Serum or plasma specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -357,7 +358,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -405,7 +406,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -554,7 +555,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -673,7 +674,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -801,7 +802,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -860,34 +861,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>7 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109410-1, 109785-6, 109686-6, 109701-3, 109606-4, 108610-7, 110369-6.</p>
 
-<p><strong>Ausgeschlossen, weil Component, Direct site und Scale type nicht passen (1)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Direct site</th>
-      <th>Scale type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>53248-1</td>
-      <td>Plasmodium sp lactate dehydrogenase [Presence] in Blood</td>
-      <td>Blood specimen</td>
-      <td>Ordinal value</td>
-    </tr>
-  </tbody>
-</table>
-
 <p><strong>Ausgeschlossen, weil Component und Property nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -900,13 +880,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<p><strong>Ausgeschlossen, weil Component und Scale type nicht passen (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>53248-1</td>
+      <td>Plasmodium sp lactate dehydrogenase [Presence] in Blood</td>
+      <td>Ordinal value</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Ausgeschlossen, weil Direct site und Property nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -927,7 +926,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Scale type</th>
     </tr>
   </thead>
@@ -945,14 +944,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion">Diskussion</h4>
 
 <ul>
-  <li><strong>Drei Codes</strong>: 2532-0 und die beiden Varianten nach Reaktionsrichtung (14804-9, 14805-6). Die IFCC-Methode ist Laktat zu Pyruvat; Standorte, die noch die Rückreaktion berichten, haben systematisch andere Werte, weshalb die Methodencodes existieren und das Zusammenfassen Sorgfalt braucht.</li>
+  <li><strong>Drei Codes</strong>: 2532-0 und die beiden Varianten nach Reaktionsrichtung (14804-9, 14805-6). Die IFCC-Methode ist Laktat zu Pyruvat; Standorte, die noch die Rückreaktion berichten, haben systematisch andere Werte, deshalb gibt es die Methodencodes und deshalb braucht das Zusammenfassen Sorgfalt.</li>
+  <li><strong>Der Blut-Block lässt Vollblut zu</strong>, aber ein Vollblut-LDH-Observable mit Mess-Property ist nicht modelliert; die Menge ändert sich durch die Erweiterung nicht.</li>
   <li><strong>Isoenzyme und Quotienten sind draußen</strong> über Component und Property; siehe den Isoenzym-Test.</li>
-  <li><strong>Körperflüssigkeiten</strong> (Pleura, Peritoneum, Liquor) sind über das Material ausgeschlossen. LDH in Ergüssen ist ein häufiger, klinisch eigenständiger Test und verdient womöglich einen eigenen klinischen Test statt in „Monitoring" aufzugehen.</li>
+  <li><strong>Körperflüssigkeiten</strong> (Pleura, Aszites, Liquor) schließt das Material aus. LDH in Ergüssen ist ein häufiger, klinisch eigenständiger Test und verdient eher einen eigenen Laborparameter, als unter „Monitoring" zu fallen.</li>
 </ul>
 
-<h3 id="ldh-isoenzyme-analysis-ldh-15">LDH isoenzyme analysis (LDH-1..5)</h3>
+<h3 id="ldh-isoenzyme-analysis-ldh-15-in-serumplasma">LDH isoenzyme analysis (LDH-1..5) in serum/plasma</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-isoenzymes.html">mii-vs-labor-loinc-ontology-ldh-isoenzymes</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-ldh-isoenzymes.html">mii-pr-labor-loinc-ontology-ldh-isoenzymes</a>. Die Regel wählt 38 der 79 Poolkonzepte aus.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-ldh-isoenzymes.html">mii-vs-labor-loinc-ontology-ldh-isoenzymes</a>, Profil <a href="StructureDefinition-mii-pr-labor-loinc-ontology-ldh-isoenzymes.html">mii-pr-labor-loinc-ontology-ldh-isoenzymes</a>. Die Regel wählt 17 der 79 Poolkonzepte aus.</p>
 
 <table>
   <thead>
@@ -967,19 +967,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><code class="language-plaintext highlighter-rouge">&lt; Lactate dehydrogenase</code></td>
     </tr>
     <tr>
+      <td>Direct site</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Acellular blood (serum or plasma) specimen</code></td>
+    </tr>
+    <tr>
       <td>Scale type</td>
       <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Quantitative value</code></td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="enthalten-38">Enthalten (38)</h4>
+<h4 id="enthalten-17">Enthalten (17)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1012,49 +1016,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>–</td>
     </tr>
     <tr>
-      <td>51510-6</td>
-      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51509-8</td>
-      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51508-0</td>
-      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
-      <td>Pleural fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
       <td>2536-1</td>
       <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td>
       <td>Acellular blood (serum or plasma) specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>104814-9</td>
-      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine</td>
-      <td>Urine specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>13886-7</td>
-      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
-      <td>Urine specimen</td>
       <td>Catalytic fraction</td>
       <td>Quantitative value</td>
       <td>Electrophoresis technique</td>
@@ -1084,41 +1048,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Electrophoresis technique</td>
     </tr>
     <tr>
-      <td>51511-4</td>
-      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51513-0</td>
-      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51512-2</td>
-      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
-      <td>Pleural fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
       <td>2539-5</td>
       <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td>
       <td>Acellular blood (serum or plasma) specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>13887-5</td>
-      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
-      <td>Urine specimen</td>
       <td>Catalytic fraction</td>
       <td>Quantitative value</td>
       <td>Electrophoresis technique</td>
@@ -1140,41 +1072,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>–</td>
     </tr>
     <tr>
-      <td>51516-3</td>
-      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51515-5</td>
-      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51514-8</td>
-      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
-      <td>Pleural fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
       <td>2542-9</td>
       <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td>
       <td>Acellular blood (serum or plasma) specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>13888-3</td>
-      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
-      <td>Urine specimen</td>
       <td>Catalytic fraction</td>
       <td>Quantitative value</td>
       <td>Electrophoresis technique</td>
@@ -1196,41 +1096,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>–</td>
     </tr>
     <tr>
-      <td>51519-7</td>
-      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51517-1</td>
-      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51518-9</td>
-      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
-      <td>Pleural fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
       <td>2545-2</td>
       <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td>
       <td>Acellular blood (serum or plasma) specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>13889-1</td>
-      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
-      <td>Urine specimen</td>
       <td>Catalytic fraction</td>
       <td>Quantitative value</td>
       <td>Electrophoresis technique</td>
@@ -1252,41 +1120,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>–</td>
     </tr>
     <tr>
-      <td>51522-1</td>
-      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51520-5</td>
-      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>51521-3</td>
-      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
-      <td>Pleural fluid specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
       <td>2548-6</td>
       <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis</td>
       <td>Acellular blood (serum or plasma) specimen</td>
-      <td>Catalytic fraction</td>
-      <td>Quantitative value</td>
-      <td>Electrophoresis technique</td>
-    </tr>
-    <tr>
-      <td>13890-9</td>
-      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
-      <td>Urine specimen</td>
       <td>Catalytic fraction</td>
       <td>Quantitative value</td>
       <td>Electrophoresis technique</td>
@@ -1295,22 +1131,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><strong>Materialien unter den enthaltenen Codes</strong>: Acellular blood (serum or plasma) specimen (17), Urine specimen (6), Cerebrospinal fluid specimen (5), Peritoneal fluid specimen (5), Pleural fluid specimen (5)</li>
-  <li><strong>Techniken unter den enthaltenen Codes</strong>: Electrophoresis technique (26)</li>
+  <li><strong>Materialien unter den enthaltenen Codes</strong>: Acellular blood (serum or plasma) specimen (17)</li>
+  <li><strong>Techniken unter den enthaltenen Codes</strong>: Electrophoresis technique (6)</li>
 </ul>
 
-<h4 id="aus-dem-pool-ausgeschlossen-41">Aus dem Pool ausgeschlossen (41)</h4>
+<h4 id="aus-dem-pool-ausgeschlossen-62">Aus dem Pool ausgeschlossen (62)</h4>
 
-<p><strong>Ausgeschlossen, weil Component nicht passt (31)</strong></p>
+<p><strong>Ausgeschlossen, weil Component und Direct site nicht passen (28)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Direct site</th>
-      <th>Property</th>
-      <th>Scale type</th>
     </tr>
   </thead>
   <tbody>
@@ -1318,156 +1152,342 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>47678-8</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in 24 hour Urine</td>
       <td>Urine specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>2527-0</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Amniotic fluid</td>
       <td>Amniotic fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>2529-6</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid</td>
       <td>Body fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>14803-1</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction</td>
       <td>Body fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60017-1</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Pyruvate to lactate reaction</td>
       <td>Body fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>2528-8</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid</td>
       <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60024-7</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Lactate to pyruvate reaction</td>
       <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60023-9</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Cerebrospinal Fluid by Pyruvate to lactate reaction</td>
       <td>Cerebrospinal fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>5921-2</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Dialysis fluid</td>
       <td>Dialysate specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>14403-0</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Gastric fluid</td>
       <td>Gastric fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>33367-4</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid</td>
       <td>Pericardial fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60019-7</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid by Lactate to pyruvate reaction</td>
       <td>Pericardial fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60018-9</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Pericardial fluid by Pyruvate to lactate reaction</td>
       <td>Pericardial fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>81430-1</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal dialysis fluid by Lactate to pyruvate reaction</td>
       <td>Peritoneal dialysate specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>2531-2</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal fluid</td>
       <td>Peritoneal fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>68387-0</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal fluid by Lactate to pyruvate reaction</td>
       <td>Peritoneal fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60020-5</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Peritoneal fluid by Pyruvate to lactate reaction</td>
       <td>Peritoneal fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>2530-4</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid</td>
       <td>Pleural fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60022-1</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Lactate to pyruvate reaction</td>
       <td>Pleural fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>60021-3</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Pleural fluid by Pyruvate to lactate reaction</td>
       <td>Pleural fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>11053-6</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Red Blood Cells</td>
       <td>Erythrocyte specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
     <tr>
       <td>57664-5</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Semen</td>
       <td>Semen sample</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
     </tr>
+    <tr>
+      <td>32324-6</td>
+      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Specimen</td>
+      <td>Specimen</td>
+    </tr>
+    <tr>
+      <td>2533-8</td>
+      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid</td>
+      <td>Synovial fluid specimen</td>
+    </tr>
+    <tr>
+      <td>68453-0</td>
+      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Lactate to pyruvate reaction</td>
+      <td>Synovial fluid specimen</td>
+    </tr>
+    <tr>
+      <td>68452-2</td>
+      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Pyruvate to lactate reaction</td>
+      <td>Synovial fluid specimen</td>
+    </tr>
+    <tr>
+      <td>2534-6</td>
+      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Urine</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>53561-7</td>
+      <td>Lactate dehydrogenase/Creatinine [Ratio] in Urine</td>
+      <td>Urine specimen</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ausgeschlossen, weil Direct site nicht passt (21)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>51510-6</td>
+      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
+      <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51509-8</td>
+      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
+      <td>Peritoneal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51508-0</td>
+      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
+      <td>Pleural fluid specimen</td>
+    </tr>
+    <tr>
+      <td>104814-9</td>
+      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>13886-7</td>
+      <td>Lactate dehydrogenase 1/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>51511-4</td>
+      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
+      <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51513-0</td>
+      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
+      <td>Peritoneal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51512-2</td>
+      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
+      <td>Pleural fluid specimen</td>
+    </tr>
+    <tr>
+      <td>13887-5</td>
+      <td>Lactate dehydrogenase 2/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>51516-3</td>
+      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
+      <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51515-5</td>
+      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
+      <td>Peritoneal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51514-8</td>
+      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
+      <td>Pleural fluid specimen</td>
+    </tr>
+    <tr>
+      <td>13888-3</td>
+      <td>Lactate dehydrogenase 3/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>51519-7</td>
+      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
+      <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51517-1</td>
+      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
+      <td>Peritoneal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51518-9</td>
+      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
+      <td>Pleural fluid specimen</td>
+    </tr>
+    <tr>
+      <td>13889-1</td>
+      <td>Lactate dehydrogenase 4/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
+      <td>Urine specimen</td>
+    </tr>
+    <tr>
+      <td>51522-1</td>
+      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Cerebrospinal Fluid by Electrophoresis</td>
+      <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51520-5</td>
+      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Peritoneal fluid by Electrophoresis</td>
+      <td>Peritoneal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>51521-3</td>
+      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Pleural fluid by Electrophoresis</td>
+      <td>Pleural fluid specimen</td>
+    </tr>
+    <tr>
+      <td>13890-9</td>
+      <td>Lactate dehydrogenase 5/Lactate dehydrogenase.total in Urine by Electrophoresis</td>
+      <td>Urine specimen</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ausgeschlossen, weil Component, Direct site und Scale type nicht passen (8)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>109410-1</td>
+      <td>Lactate dehydrogenase [Measurement] in Body fluid</td>
+      <td>Body fluid specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>109785-6</td>
+      <td>Lactate dehydrogenase [Measurement] in Cerebrospinal Fluid</td>
+      <td>Cerebrospinal fluid specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>109686-6</td>
+      <td>Lactate dehydrogenase [Measurement] in Pericardial fluid</td>
+      <td>Pericardial fluid specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>109701-3</td>
+      <td>Lactate dehydrogenase [Measurement] in Peritoneal fluid</td>
+      <td>Peritoneal fluid specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>109606-4</td>
+      <td>Lactate dehydrogenase [Measurement] in Pleural fluid</td>
+      <td>Pleural fluid specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>108610-7</td>
+      <td>Lactate dehydrogenase [Measurement] in Synovial fluid</td>
+      <td>Synovial fluid specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>110369-6</td>
+      <td>Lactate dehydrogenase [Measurement] in Urine</td>
+      <td>Urine specimen</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>17041-5</td>
+      <td>Lactate dehydrogenase [Presence] in Urine</td>
+      <td>Urine specimen</td>
+      <td>Ordinal value</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>7 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109410-1, 109785-6, 109686-6, 109701-3, 109606-4, 108610-7, 110369-6.</p>
+
+<p><strong>Ausgeschlossen, weil Component nicht passt (3)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
+      <th>Property</th>
+      <th>Scale type</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>2532-0</td>
       <td>Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma</td>
@@ -1489,119 +1509,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Catalytic concentration</td>
       <td>Quantitative value</td>
     </tr>
-    <tr>
-      <td>32324-6</td>
-      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Specimen</td>
-      <td>Specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
-    </tr>
-    <tr>
-      <td>2533-8</td>
-      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid</td>
-      <td>Synovial fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
-    </tr>
-    <tr>
-      <td>68453-0</td>
-      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Lactate to pyruvate reaction</td>
-      <td>Synovial fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
-    </tr>
-    <tr>
-      <td>68452-2</td>
-      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Synovial fluid by Pyruvate to lactate reaction</td>
-      <td>Synovial fluid specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
-    </tr>
-    <tr>
-      <td>2534-6</td>
-      <td>Lactate dehydrogenase [Enzymatic activity/volume] in Urine</td>
-      <td>Urine specimen</td>
-      <td>Catalytic concentration</td>
-      <td>Quantitative value</td>
-    </tr>
-    <tr>
-      <td>53561-7</td>
-      <td>Lactate dehydrogenase/Creatinine [Ratio] in Urine</td>
-      <td>Urine specimen</td>
-      <td>Ratio</td>
-      <td>Quantitative value</td>
-    </tr>
   </tbody>
 </table>
 
-<p><strong>Ausgeschlossen, weil Component und Scale type nicht passen (9)</strong></p>
+<p><strong>Ausgeschlossen, weil Component und Scale type nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Scale type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>109410-1</td>
-      <td>Lactate dehydrogenase [Measurement] in Body fluid</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>109785-6</td>
-      <td>Lactate dehydrogenase [Measurement] in Cerebrospinal Fluid</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>109686-6</td>
-      <td>Lactate dehydrogenase [Measurement] in Pericardial fluid</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>109701-3</td>
-      <td>Lactate dehydrogenase [Measurement] in Peritoneal fluid</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>109606-4</td>
-      <td>Lactate dehydrogenase [Measurement] in Pleural fluid</td>
-      <td>–</td>
-    </tr>
-    <tr>
       <td>108826-9</td>
       <td>Lactate dehydrogenase [Measurement] in Serum or Plasma</td>
       <td>–</td>
     </tr>
-    <tr>
-      <td>108610-7</td>
-      <td>Lactate dehydrogenase [Measurement] in Synovial fluid</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>110369-6</td>
-      <td>Lactate dehydrogenase [Measurement] in Urine</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>17041-5</td>
-      <td>Lactate dehydrogenase [Presence] in Urine</td>
-      <td>Ordinal value</td>
-    </tr>
   </tbody>
 </table>
 
-<p>8 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 109410-1, 109785-6, 109686-6, 109701-3, 109606-4, 108826-9, 108610-7, 110369-6.</p>
+<p>1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 108826-9.</p>
 
-<p><strong>Ausgeschlossen, weil Scale type nicht passt (1)</strong></p>
+<p><strong>Ausgeschlossen, weil Direct site und Scale type nicht passen (1)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
+      <th>Direct site</th>
       <th>Scale type</th>
     </tr>
   </thead>
@@ -1609,6 +1548,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>53248-1</td>
       <td>Plasmodium sp lactate dehydrogenase [Presence] in Blood</td>
+      <td>Blood specimen</td>
       <td>Ordinal value</td>
     </tr>
   </tbody>
@@ -1617,8 +1557,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="diskussion-1">Diskussion</h4>
 
 <ul>
-  <li><strong>Jedes Material ist drin.</strong> Die Regel schränkt nur Component (<code class="language-plaintext highlighter-rouge">&lt; Lactate dehydrogenase</code>, die fünf Isoenzyme) und Skala ein, also sind Serum, Urin, Liquor und die Ergüsse alle enthalten: 38 Codes. Für ein Serum-Isoenzymprofil die Materialeinschränkung ergänzen; die Tabelle zeigt, was das entfernen würde.</li>
-  <li><strong>Anteile und Aktivitäten sind gemischt.</strong> Isoenzym-Ergebnisse kommen als Aktivität (U/L) und als Anteil am Gesamt-LDH (%); die Use-Case-Ebene trennt sie, die Menge je Test nicht.</li>
+  <li><strong>Nur Serum oder Plasma, 17 Codes.</strong> Die Regel engt das Material jetzt auf Serum oder Plasma ein. Das entfernt 21 Codes in Urin, Liquor, Pleura- und Aszitespunktat, die die vorige Regel (nur Component und Skala) enthalten hatte. Zu entscheiden: Der Test heißt „LDH-Isoenzyme", nicht „LDH-Isoenzyme im Serum"; werden an den Standorten Isoenzymprofile aus Ergüssen oder Liquor berichtet, brauchen sie einen eigenen Test.</li>
+  <li><strong>Aktivitäten, Anteile und ein Quotient sind gemischt.</strong> Isoenzymergebnisse kommen als Aktivität (U/L), als Anteil an der Gesamt-LDH (%) und für LDH-1/LDH-2 als Quotient (14119-2); die Use-Case-Ebene trennt sie, die Menge je Test nicht.</li>
 </ul>
 
 <h3 id="der-pool-und-seine-use-case-gruppen">Der Pool und seine Use-Case-Gruppen</h3>
@@ -1629,7 +1569,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC-Name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -2352,6 +2292,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terme-des-analyten-außerhalb-des-pools">LOINC-Terme des Analyten außerhalb des Pools</h3>
+
+<p>Recall-Prüfung gegen LOINC 2.83 selbst: 77 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Lactate dehydrogenase( \d(/Lactate dehydrogenase.total)?)?$); 76 davon liegen im Pool, 1 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC-Name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>47863-6</td>
+      <td>Lactate dehydrogenase [Enzymatic activity/time] in 24 hour Urine</td>
+      <td>CRat</td>
+      <td>Urine</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -2377,7 +2340,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

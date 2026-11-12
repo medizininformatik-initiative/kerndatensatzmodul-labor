@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-ldh-isoenzymes | *Version*:2027.0.0-ci |
-| Draft as of 2026-11-10 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Ldh_Isoenzymes |
+| Draft as of 2026-11-12 | *Computable Name*:MII_VS_Labor_LOINC_Ontology_Ldh_Isoenzymes |
 | **Copyright/Legal**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
-Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (38, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
+Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5) in serum/plasma' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (17, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|` 
 
  **References** 
 
@@ -177,7 +177,7 @@ Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (
   "title" : "MII VS Labor LOINC Ontology Ldh Isoenzymes",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -186,7 +186,7 @@ Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (
       "value" : "https://www.medizininformatik-initiative.de"
     }]
   }],
-  "description" : "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (38, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+  "description" : "Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5) in serum/plasma' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (17, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -204,51 +204,6 @@ Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (
         "code" : "14119-2"
       },
       {
-        "code" : "51522-1"
-      },
-      {
-        "code" : "51521-3"
-      },
-      {
-        "code" : "51520-5"
-      },
-      {
-        "code" : "51519-7"
-      },
-      {
-        "code" : "51518-9"
-      },
-      {
-        "code" : "51517-1"
-      },
-      {
-        "code" : "51516-3"
-      },
-      {
-        "code" : "51515-5"
-      },
-      {
-        "code" : "51514-8"
-      },
-      {
-        "code" : "51513-0"
-      },
-      {
-        "code" : "51512-2"
-      },
-      {
-        "code" : "51511-4"
-      },
-      {
-        "code" : "51510-6"
-      },
-      {
-        "code" : "51509-8"
-      },
-      {
-        "code" : "51508-0"
-      },
-      {
         "code" : "2548-6"
       },
       {
@@ -262,24 +217,6 @@ Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (
       },
       {
         "code" : "2536-1"
-      },
-      {
-        "code" : "13890-9"
-      },
-      {
-        "code" : "13889-1"
-      },
-      {
-        "code" : "13888-3"
-      },
-      {
-        "code" : "13887-5"
-      },
-      {
-        "code" : "13886-7"
-      },
-      {
-        "code" : "104814-9"
       },
       {
         "code" : "2535-3"
@@ -321,7 +258,7 @@ Proposal: LOINC codes of the clinical test 'LDH isoenzyme analysis (LDH-1..5)' (
       "filter" : [{
         "property" : "constraint",
         "op" : "=",
-        "value" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+        "value" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = < 259319003 |Lactate dehydrogenase (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
       }]
     }]
   }

@@ -190,7 +190,7 @@
       <li><a href="terminology.html">Terminologie</a></li>
       <li><a href="loinc-ontology-valuesets.html">LOINC-Ontology-ValueSets (Vorschlag)</a></li>
       <li><a href="loinc-ontology-method.html">LOINC Ontology - Wie die ValueSets gebaut werden</a></li>
-      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je klinischem Test</a></li>
+      <li><a href="loinc-ontology-clinical-tests.html">LOINC Ontology - ValueSets je Laborparameter</a></li>
       <li><a href="loinc-ontology-use-cases.html">LOINC Ontology - Use-Case-ValueSets je Analyt</a></li>
       <li><a href="references.html">Referenzen</a></li>
     </ul>
@@ -338,13 +338,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Implementierende, Terminologen</td>
     </tr>
     <tr>
-      <td><a href="loinc-ontology-clinical-tests.html">ValueSets je klinischem Test</a></td>
-      <td>18 ValueSets, eines je klinisch unterscheidbarem Test, jedes mit abgeleitetem Observation-Profil und der Regel in Attributspalten zerlegt</td>
+      <td><a href="loinc-ontology-clinical-tests.html">ValueSets je Laborparameter</a></td>
+      <td>23 ValueSets, eines je klinisch unterscheidbarem Laborparameter, jedes mit abgeleitetem Observation-Profil und der Regel in Attributspalten zerlegt</td>
       <td>Implementierende, die einen lokalen Katalog mappen; Validierung</td>
     </tr>
     <tr>
       <td><a href="loinc-ontology-use-cases.html">Use-Case-ValueSets je Analyt</a></td>
-      <td>56 ValueSets über 14 Analyte, abgestuft danach, was ein Datennutzer zusammenfassen darf: alles, numerisch, einheitenkonvertierbar, qualitativ, semiquantitativ</td>
+      <td>61 ValueSets über 17 Analyte, abgestuft danach, was ein Datennutzer zusammenfassen darf: alles, numerisch, einheitenkonvertierbar, qualitativ, semiquantitativ</td>
       <td>Forschende, Datenintegrationszentren</td>
     </tr>
   </tbody>
@@ -356,7 +356,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>Verwendetes Release: <strong>LOINC Ontology 2026-10-21</strong> (<code class="language-plaintext highlighter-rouge">http://snomed.info/sct/11010000107/version/20261021</code>); LOINC-Aufzählungen gepinnt auf <strong>LOINC 2.83</strong>, das LOINC-Release, auf dem die LOINC Ontology aufbaut. Der eigene LOINC-Pin des Moduls ist 2.83.</li>
-  <li>Jedes ValueSet trägt die LOINC-Aufzählung, die Observables der LOINC Ontology ohne LOINC-Code und die Regel selbst als intensionales SNOMED-CT-Include.</li>
+  <li>Jedes ValueSet trägt die LOINC-Aufzählung, die Observables der LOINC Ontology ohne LOINC-Code und die Regel selbst als intensionales SNOMED-CT-Include. Wo das Release einen LOINC-Code nicht modelliert, der zu einem Parameter gehört (eine Ontologie-Lücke), ist der Code von Hand ergänzt, als solcher markiert und an die Pflege der LOINC Ontology gemeldet.</li>
   <li>Alle Artefakte sind <code class="language-plaintext highlighter-rouge">draft</code> und <code class="language-plaintext highlighter-rouge">experimental</code>. Ihre kanonischen URLs folgen dem Modulmuster und wären stabil, falls das Modul sie übernimmt.</li>
   <li>Generator, Regelwerk und Review-Tabellen je Konzept: <a href="https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts">loincsnomed-lab-concepts</a>.</li>
 </ul>
@@ -365,7 +365,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ol>
   <li>Ist eine berechnete, regelbasierte Definition der richtige Weg für das Modul, festzulegen, welche LOINC-Codes zu einem Test gehören?</li>
-  <li>Sind die zwei Ebenen, klinischer Test und Use Case, die richtige Granularität für Implementierende und für Datennutzer?</li>
+  <li>Sind die zwei Ebenen, Laborparameter und Use Case, die richtige Granularität für Implementierende und für Datennutzer?</li>
   <li>Welche der Pool-Definitionen und Stufenentscheidungen auf den folgenden Seiten sollte das Modul anders treffen? Jede Entscheidung ist als Regel sichtbar und wird durch Ändern dieser Regel geändert.</li>
 </ol>
 
@@ -394,7 +394,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Erstellt <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

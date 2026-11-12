@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.2"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -338,16 +338,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#erythrocyte-count-in-blood" id="markdown-toc-erythrocyte-count-in-blood">Erythrocyte count in blood</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>erythrocytes</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>erythrocytes</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|</code> (107 concepts, 106 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-convertible.html">Convertible</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-qualitative.html">Qualitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-semiquantitative.html">Semi-quantitative</a>.</p>
 
 <h3 id="erythrocyte-count-in-blood">Erythrocyte count in blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-count-standard.html">mii-vs-labor-loinc-ontology-erythrocytes-count-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-erythrocytes-count-standard.html">mii-pr-labor-loinc-ontology-erythrocytes-count-standard</a>. The rule selects 4 of the 107 pool concepts.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-erythrocytes-count-standard.html">mii-vs-labor-loinc-ontology-erythrocytes-count-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-erythrocytes-count-standard.html">mii-pr-labor-loinc-ontology-erythrocytes-count-standard</a>. The rule selects 3 of the 107 pool concepts.</p>
 
 <table>
   <thead>
@@ -363,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -376,13 +377,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="included-4">Included (4)</h4>
+<h4 id="included-3">Included (3)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -414,31 +415,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative value</td>
       <td>Manual count technique</td>
     </tr>
-    <tr>
-      <td>47280-3</td>
-      <td>Erythrocytes [#/volume] in Cord blood</td>
-      <td>Cord blood specimen</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
   </tbody>
 </table>
 
 <ul>
-  <li><strong>Specimens among the included codes</strong>: Blood specimen (3), Cord blood specimen (1)</li>
+  <li><strong>Specimens among the included codes</strong>: Blood specimen (3)</li>
   <li><strong>Techniques among the included codes</strong>: Automated count technique (1), Manual count technique (1)</li>
 </ul>
 
-<h4 id="excluded-from-the-pool-103">Excluded from the pool (103)</h4>
+<h4 id="excluded-from-the-pool-104">Excluded from the pool (104)</h4>
 
-<p><strong>Excluded because Direct site does not match (46)</strong></p>
+<p><strong>Excluded because Direct site does not match (47)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -522,6 +515,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>46092-3</td>
       <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –4th tube</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>47280-3</td>
+      <td>Erythrocytes [#/volume] in Cord blood</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>57841-9</td>
@@ -678,13 +676,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>2 of these have no Direct site attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 62240-7, 67831-8.</p>
 
-<p><strong>Excluded because Direct site and Property do not match (25)</strong></p>
+<p><strong>Excluded because Direct site and Property do not match (27)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -805,6 +803,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Volume fraction</td>
     </tr>
     <tr>
+      <td>11271-4</td>
+      <td>Hematocrit [Volume Fraction] of Cord blood by Automated count</td>
+      <td>Cord blood specimen</td>
+      <td>Volume fraction</td>
+    </tr>
+    <tr>
+      <td>11151-8</td>
+      <td>Hematocrit [Volume Fraction] of Cord blood by calculation</td>
+      <td>Cord blood specimen</td>
+      <td>Volume fraction</td>
+    </tr>
+    <tr>
       <td>47640-8</td>
       <td>Hematocrit [Volume Fraction] of Dialysis fluid by calculation</td>
       <td>Dialysate specimen</td>
@@ -851,7 +861,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -989,13 +999,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>2 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109724-5, SCT 648131000005102.</p>
 
-<p><strong>Excluded because Property does not match (12)</strong></p>
+<p><strong>Excluded because Property does not match (10)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -1041,16 +1051,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Volume fraction</td>
     </tr>
     <tr>
-      <td>11271-4</td>
-      <td>Hematocrit [Volume Fraction] of Cord blood by Automated count</td>
-      <td>Volume fraction</td>
-    </tr>
-    <tr>
-      <td>11151-8</td>
-      <td>Hematocrit [Volume Fraction] of Cord blood by calculation</td>
-      <td>Volume fraction</td>
-    </tr>
-    <tr>
       <td>41655-2</td>
       <td>Hematocrit [Volume Fraction] of Mixed venous blood by calculation</td>
       <td>Volume fraction</td>
@@ -1069,7 +1069,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -1093,7 +1093,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="discussion">Discussion</h4>
 
 <ul>
-  <li><strong>Four codes, one of them cord blood</strong> (47280-3). The routine count is 789-8 (automated), 790-6 (manual) and the method-less 26453-1.</li>
+  <li><strong>Three codes</strong>: 789-8 (automated), 790-6 (manual) and the method-less 26453-1. The cord blood count (47280-3) is out via the blood block.</li>
   <li><strong>Fetal blood</strong> (62240-7) has no Direct site in this release and is invisible to the rule.</li>
   <li><strong>The hematocrit codes</strong> are excluded by Property (volume fraction), as intended; urine and body-fluid erythrocytes by specimen.</li>
 </ul>
@@ -1106,7 +1106,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -2081,6 +2081,83 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<p>Recall check against LOINC 2.83 itself: 88 laboratory terms match the analyte's LOINC pattern (Component ~ ^Erythrocytes$); 78 of them are in the pool, 10 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>115741-1</td>
+      <td>Erythrocytes [DistWidth] in Red Blood Cells by Coefficient of variation</td>
+      <td>DistWidth</td>
+      <td>RBC</td>
+    </tr>
+    <tr>
+      <td>115742-9</td>
+      <td>Erythrocytes [DistWidth] in Red Blood Cells by Standard deviation</td>
+      <td>DistWidth</td>
+      <td>RBC</td>
+    </tr>
+    <tr>
+      <td>11273-0</td>
+      <td>Erythrocytes [Morphology] in Blood by Automated count</td>
+      <td>Morph</td>
+      <td>Bld</td>
+    </tr>
+    <tr>
+      <td>57960-7</td>
+      <td>Erythrocytes [Morphology] in Body fluid by Light microscopy</td>
+      <td>Morph</td>
+      <td>Body fld</td>
+    </tr>
+    <tr>
+      <td>11127-8</td>
+      <td>Erythrocytes [Morphology] in Bone marrow</td>
+      <td>Morph</td>
+      <td>Bone mar</td>
+    </tr>
+    <tr>
+      <td>18289-9</td>
+      <td>Erythrocytes [Morphology] in Cerebrospinal Fluid by Light microscopy</td>
+      <td>Morph</td>
+      <td>CSF</td>
+    </tr>
+    <tr>
+      <td>18290-7</td>
+      <td>Erythrocytes [Morphology] in Synovial fluid by Light microscopy</td>
+      <td>Morph</td>
+      <td>Synv fld</td>
+    </tr>
+    <tr>
+      <td>68903-4</td>
+      <td>Erythrocytes by Light microscopy in Urine sediment collected for unspecified duration</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>68912-5</td>
+      <td>Erythrocytes in 24 hour Urine sediment by Light microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>59830-0</td>
+      <td>Erythrocytes in 3 hour Urine sediment by Light microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -2106,7 +2183,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

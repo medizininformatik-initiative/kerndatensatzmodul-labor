@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.2"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.4"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -338,16 +338,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#hba1c-in-blood" id="markdown-toc-hba1c-in-blood">HbA1c in blood</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>hba1c</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>hba1c</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|</code> (10 concepts, 8 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-hba1c-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hba1c-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hba1c-convertible.html">Convertible</a>.</p>
 
 <h3 id="hba1c-in-blood">HbA1c in blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hba1c-standard.html">mii-vs-labor-loinc-ontology-hba1c-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hba1c-standard.html">mii-pr-labor-loinc-ontology-hba1c-standard</a>. The rule selects 8 of the 10 pool concepts.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hba1c-standard.html">mii-vs-labor-loinc-ontology-hba1c-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hba1c-standard.html">mii-pr-labor-loinc-ontology-hba1c-standard</a>. The rule selects 7 of the 10 pool concepts.</p>
 
 <table>
   <thead>
@@ -363,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -376,13 +377,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="included-8">Included (8)</h4>
+<h4 id="included-7">Included (7)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -439,14 +440,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Calculation technique</td>
     </tr>
     <tr>
-      <td>96595-4</td>
-      <td>Hemoglobin A1c/Hemoglobin.total in DBS</td>
-      <td>Dried blood spot specimen</td>
-      <td>Mass fraction</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
       <td>59261-8</td>
       <td>Hemoglobin A1c/Hemoglobin.total standardized per IFCC-RMP for CDT in Blood</td>
       <td>Blood specimen</td>
@@ -458,11 +451,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><strong>Specimens among the included codes</strong>: Blood specimen (7), Dried blood spot specimen (1)</li>
+  <li><strong>Specimens among the included codes</strong>: Blood specimen (7)</li>
   <li><strong>Techniques among the included codes</strong>: Electrophoresis technique (1), High pressure liquid chromatography (1), Calculation technique (1)</li>
 </ul>
 
-<h4 id="excluded-from-the-pool-2">Excluded from the pool (2)</h4>
+<h4 id="excluded-from-the-pool-3">Excluded from the pool (3)</h4>
 
 <p><strong>Excluded because Direct site and Scale type do not match (2)</strong></p>
 
@@ -470,7 +463,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -495,12 +488,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>2 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: SCT 408591000, SCT 446074002.</p>
 
+<p><strong>Excluded because Direct site does not match (1)</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Direct site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>96595-4</td>
+      <td>Hemoglobin A1c/Hemoglobin.total in DBS</td>
+      <td>Dried blood spot specimen</td>
+    </tr>
+  </tbody>
+</table>
+
 <h4 id="discussion">Discussion</h4>
 
 <ul>
   <li><strong>Both units are in.</strong> Property <code class="language-plaintext highlighter-rouge">&lt;&lt; Measurement property</code> admits the NGSP percentage and the IFCC mmol/mol codes alike; pooling them needs a conversion, not just a unit change. A data user who wants one reporting system constrains Property.</li>
-  <li><strong>Dried blood spot</strong> (one code) is in via <code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code>; screening programmes use it, routine care does not.</li>
-  <li><strong>The two excluded concepts are targets</strong>, not measurements (HbA1c target value); correctly out, and a reminder that the Component pool contains more than results.</li>
+  <li><strong>Dried blood spot</strong> (96595-4) is out via the blood block; screening programmes use it, routine care does not.</li>
+  <li><strong>The two excluded target concepts</strong> are targets, not measurements (HbA1c target value); correctly out, and a reminder that the Component pool contains more than results.</li>
 </ul>
 
 <h3 id="the-pool-and-its-use-case-buckets">The pool and its use-case buckets</h3>
@@ -511,7 +523,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -613,6 +625,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<p>Recall check against LOINC 2.83 itself: 8 laboratory terms match the analyte's LOINC pattern (Component ~ ^Hemoglobin A1c(/Hemoglobin.total)?$); 7 of them are in the pool, 1 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>71875-9</td>
+      <td>Hemoglobin A1c/Hemoglobin.total [Pure mass fraction] in Blood</td>
+      <td>MFr.DF</td>
+      <td>Bld</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -638,7 +673,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

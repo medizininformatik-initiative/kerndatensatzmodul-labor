@@ -8,7 +8,7 @@
 
 ## LOINC Ontology - Analyte Nitrite in urine
 
-This page is the review material for the analyte **nitrite urine** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
+This page is the review material for the analyte **nitrite urine** of the [LOINC Ontology proposal](loinc-ontology-valuesets.md): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.md).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` (9 concepts, 9 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-complete.md), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-quantitative.md), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-convertible.md), [Qualitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-qualitative.md), [Semi-quantitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative.md).
 
@@ -53,7 +53,7 @@ ValueSet [mii-vs-labor-loinc-ontology-nitrite-urine-standard](ValueSet-mii-vs-la
 
 #### Discussion
 
-* **Three presence codes** (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results.
+* **Three presence codes** (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results. Since LOINC Ontology 2026-10-21 these observables carry the property **Threshold** instead of **Presence**; the rule follows the release.
 * **The quantitative strip codes are out.** 2657-5 and 20407-3 (Nitrite [Mass/volume] in Urine, the latter by test strip) are excluded by Property. Some analysers export the dipstick nitrite as a concentration; a site doing so would fall outside this ValueSet and should map to the presence code instead.
 
 ### The pool and its use-case buckets
@@ -71,4 +71,8 @@ One row per pool concept with the attributes the classification uses; the bucket
 | 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
 | 5802-4 | Nitrite [Presence] in Urine by Test strip | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
 | 20407-3 | Nitrite [Mass/volume] in Urine by Test strip | Mass concentration | Semi-quantitative value | Urine specimen | Semi-quantitative | Semi-quantitative scale (test strip) |
+
+### LOINC terms of the analyte outside the pool
+
+Recall check against LOINC 2.83 itself: all 5 laboratory terms that match the analyte's LOINC pattern (Component ~ ^Nitrite$; System ~ Urine) are in the pool.
 

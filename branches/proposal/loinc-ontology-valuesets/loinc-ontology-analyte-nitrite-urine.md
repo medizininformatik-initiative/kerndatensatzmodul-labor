@@ -1,4 +1,4 @@
-This page is the review material for the analyte **nitrite urine** of the [LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.html).
+This page is the review material for the analyte **nitrite urine** of the [LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.html).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 31528005 |Nitrite salt (substance)|` (9 concepts, 9 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-complete.html), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-quantitative.html), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-convertible.html), [Qualitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-qualitative.html), [Semi-quantitative](ValueSet-mii-vs-labor-loinc-ontology-nitrite-urine-semiquantitative.html).
 
@@ -14,7 +14,7 @@ ValueSet [mii-vs-labor-loinc-ontology-nitrite-urine-standard](ValueSet-mii-vs-la
 
 #### Included (3)
 
-| LOINC | Name | Direct site | Property | Scale type | Technique |
+| LOINC | LOINC name | Direct site | Property | Scale type | Technique |
 |---|---|---|---|---|---|
 | 32710-6 | Nitrite [Presence] in Urine | Urine specimen | Threshold | Ordinal value | – |
 | 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Urine specimen | Threshold | Ordinal value | Automated test strip technique |
@@ -27,7 +27,7 @@ ValueSet [mii-vs-labor-loinc-ontology-nitrite-urine-standard](ValueSet-mii-vs-la
 
 **Excluded because Direct site and Property do not match (4)**
 
-| LOINC | Name | Direct site | Property |
+| LOINC | LOINC name | Direct site | Property |
 |---|---|---|---|
 | 18370-7 | Nitrite [Mass/volume] in Blood | Blood specimen | Mass concentration |
 | 55947-6 | Nitrite [Mass/volume] in Dialysis fluid | Dialysate specimen | Mass concentration |
@@ -36,21 +36,21 @@ ValueSet [mii-vs-labor-loinc-ontology-nitrite-urine-standard](ValueSet-mii-vs-la
 
 **Excluded because Property does not match (2)**
 
-| LOINC | Name | Property |
+| LOINC | LOINC name | Property |
 |---|---|---|
 | 2657-5 | Nitrite [Mass/volume] in Urine | Mass concentration |
 | 20407-3 | Nitrite [Mass/volume] in Urine by Test strip | Mass concentration |
 
 #### Discussion
 
-* **Three presence codes** (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results.
+* **Three presence codes** (5802-4, 32710-6 test strip, 50558-6 automated test strip). The profile fixes CodeableConcept; results are coded with the module's coded laboratory results. Since LOINC Ontology 2026-10-21 these observables carry the property *Threshold* instead of *Presence*; the rule follows the release.
 * **The quantitative strip codes are out.** 2657-5 and 20407-3 (Nitrite [Mass/volume] in Urine, the latter by test strip) are excluded by Property. Some analysers export the dipstick nitrite as a concentration; a site doing so would fall outside this ValueSet and should map to the presence code instead.
 
 ### The pool and its use-case buckets
 
 One row per pool concept with the attributes the classification uses; the bucket is the use-case ValueSet the concept lands in.
 
-| LOINC | Name | Property | Scale type | Direct site | Bucket | Reason |
+| LOINC | LOINC name | Property | Scale type | Direct site | Bucket | Reason |
 |---|---|---|---|---|---|---|
 | 18370-7 | Nitrite [Mass/volume] in Blood | Mass concentration | Quantitative value | Blood specimen | Convertible | Quantitative scale + concentration property |
 | 55947-6 | Nitrite [Mass/volume] in Dialysis fluid | Mass concentration | Quantitative value | Dialysate specimen | Convertible | Quantitative scale + concentration property |
@@ -61,3 +61,7 @@ One row per pool concept with the attributes the classification uses; the bucket
 | 50558-6 | Nitrite [Presence] in Urine by Automated test strip | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
 | 5802-4 | Nitrite [Presence] in Urine by Test strip | Threshold | Ordinal value | Urine specimen | Qualitative | Ordinal/Nominal scale → qualitative |
 | 20407-3 | Nitrite [Mass/volume] in Urine by Test strip | Mass concentration | Semi-quantitative value | Urine specimen | Semi-quantitative | Semi-quantitative scale (test strip) |
+
+### LOINC terms of the analyte outside the pool
+
+Recall check against LOINC 2.83 itself: all 5 laboratory terms that match the analyte's LOINC pattern (Component ~ ^Nitrite$; System ~ Urine) are in the pool.

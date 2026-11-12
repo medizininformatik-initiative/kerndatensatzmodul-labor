@@ -3,27 +3,27 @@
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)
 * [**LOINC-Ontology-ValueSets (Vorschlag)**](loinc-ontology-valuesets.md)
-* [**LOINC Ontology - ValueSets je klinischem Test**](loinc-ontology-clinical-tests.md)
+* [**LOINC Ontology - ValueSets je Laborparameter**](loinc-ontology-clinical-tests.md)
 * **LOINC Ontology - Analyt Thrombozyten**
 
 ## LOINC Ontology - Analyt Thrombozyten
 
-Diese Seite ist das Review-Material für den Analyten **platelets** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
+Diese Seite ist das Review-Material für den Analyten **platelets** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.md): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.md) erklärt.
 
 Kandidatenpool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 16378004 |Platelet (cell)|` (19 Konzepte, 19 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-platelets-complete.md), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-platelets-quantitative.md), [Konvertierbar](ValueSet-mii-vs-labor-loinc-ontology-platelets-convertible.md), [Qualitativ](ValueSet-mii-vs-labor-loinc-ontology-platelets-qualitative.md).
 
 ### Platelet count in blood
 
-ValueSet [mii-vs-labor-loinc-ontology-platelets-count-standard](ValueSet-mii-vs-labor-loinc-ontology-platelets-count-standard.md), Profil [mii-pr-labor-loinc-ontology-platelets-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-platelets-count-standard.md). Die Regel wählt 12 der 19 Poolkonzepte aus.
+ValueSet [mii-vs-labor-loinc-ontology-platelets-count-standard](ValueSet-mii-vs-labor-loinc-ontology-platelets-count-standard.md), Profil [mii-pr-labor-loinc-ontology-platelets-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-platelets-count-standard.md). Die Regel wählt 7 der 19 Poolkonzepte aus.
 
 | | |
 | :--- | :--- |
 | Component | Platelet |
-| Direct site | `<< Blood specimen` |
+| Direct site | `<< Blood specimen minus (<< Cord blood specimen or << Fetal blood specimen or << Dried blood spot specimen) minus (<< Plasma specimen)` |
 | Property | `<< Number concentration` |
 | Scale type | `<< Quantitative value` |
 
-#### Enthalten (12)
+#### Enthalten (7)
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -34,16 +34,25 @@ ValueSet [mii-vs-labor-loinc-ontology-platelets-count-standard](ValueSet-mii-vs-
 | 49497-1 | Platelets [#/volume] in Blood by Estimate | Blood specimen | Number concentration | Quantitative value | – |
 | 778-1 | Platelets [#/volume] in Blood by Manual count | Blood specimen | Number concentration | Quantitative value | Manual count technique |
 | 74464-9 | Platelets [#/volume] in Capillary blood by Manual count | Capillary blood specimen | Number concentration | Quantitative value | Manual count technique |
-| 47284-5 | Platelets [#/volume] in Cord blood | Cord blood specimen | Number concentration | Quantitative value | – |
-| 55802-3 | Platelets [#/volume] in Cord blood by Estimate | Cord blood specimen | Number concentration | Quantitative value | – |
-| 26516-5 | Platelets [#/volume] in Plasma | Plasma specimen | Number concentration | Quantitative value | – |
-| 13056-7 | Platelets [#/volume] in Plasma by Automated count | Plasma specimen | Number concentration | Quantitative value | Automated count technique |
-| 74775-8 | Platelets [#/volume] in Platelet rich plasma by Automated count | Platelet rich plasma specimen | Number concentration | Quantitative value | Automated count technique |
 
-* **Materialien unter den enthaltenen Codes**: Blood specimen (6), Cord blood specimen (2), Plasma specimen (2), Capillary blood specimen (1), Platelet rich plasma specimen (1)
-* **Techniken unter den enthaltenen Codes**: Automated count technique (4), Manual count technique (2)
+* **Materialien unter den enthaltenen Codes**: Blood specimen (6), Capillary blood specimen (1)
+* **Techniken unter den enthaltenen Codes**: Automated count technique (2), Manual count technique (2)
 
-#### Aus dem Pool ausgeschlossen (7)
+#### Aus dem Pool ausgeschlossen (12)
+
+**Ausgeschlossen, weil Direct site nicht passt (7)**
+
+| | | |
+| :--- | :--- | :--- |
+| 62244-9 | Platelets [#/volume] in Blood from Fetus by Automated count | – |
+| 40574-6 | Platelets [#/volume] in Body fluid by Automated count | Body fluid specimen |
+| 47284-5 | Platelets [#/volume] in Cord blood | Cord blood specimen |
+| 55802-3 | Platelets [#/volume] in Cord blood by Estimate | Cord blood specimen |
+| 26516-5 | Platelets [#/volume] in Plasma | Plasma specimen |
+| 13056-7 | Platelets [#/volume] in Plasma by Automated count | Plasma specimen |
+| 74775-8 | Platelets [#/volume] in Platelet rich plasma by Automated count | Platelet rich plasma specimen |
+
+1 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 62244-9.
 
 **Ausgeschlossen, weil Property und Scale type nicht passen (3)**
 
@@ -54,15 +63,6 @@ ValueSet [mii-vs-labor-loinc-ontology-platelets-count-standard](ValueSet-mii-vs-
 | 104705-9 | Platelets [Presence] in Blood | Threshold | Ordinal value |
 
 1 davon haben in diesem Release gar kein Attribut Scale type (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 111353-9.
-
-**Ausgeschlossen, weil Direct site nicht passt (2)**
-
-| | | |
-| :--- | :--- | :--- |
-| 62244-9 | Platelets [#/volume] in Blood from Fetus by Automated count | – |
-| 40574-6 | Platelets [#/volume] in Body fluid by Automated count | Body fluid specimen |
-
-1 davon haben in diesem Release gar kein Attribut Direct site (der LOINC-System-Part ist noch nicht modelliert), die Regel kann sie also nicht sehen: 62244-9.
 
 **Ausgeschlossen, weil Direct site und Property nicht passen (1)**
 
@@ -78,9 +78,9 @@ ValueSet [mii-vs-labor-loinc-ontology-platelets-count-standard](ValueSet-mii-vs-
 
 #### Diskussion
 
-* **Plasma und plättchenreiches Plasma sind drin.** 26516-5, 13056-7 (Plasma) und 74775-8 (plättchenreiches Plasma) sind enthalten, weil Plasma in SNOMED CT ein Subtyp des Blutmaterials ist. Es sind transfusionsmedizinische Messungen, nicht die Routinezählung; der Vorschlag ist, sie auszuschließen (`Direct site != << Plasma specimen`).
-* **Nabelschnurblut** (47284-5, 55802-3) ist drin.
-* **Die EDTA-Aggregat-Kontrolle** (107193-5) und die optische Zählung (97995-5) sind Methodenvarianten der Routinezählung und bleiben drin.
+* **Plasma und thrombozytenreiches Plasma sind draußen, und genau das ist der Review-Punkt.** 13056-7 und 26516-5 (Plasma) und 74775-8 (thrombozytenreiches Plasma) sind transfusionsmedizinische Messungen an einem Präparat, nicht die Thrombozytenzahl des Patienten. SNOMED CT modelliert Plasma als azelluläres Blutmaterial, das der Blut-Block für die Serum-/Plasma-Chemie zulässt; diese Regel ergänzt den Block deshalb um `MINUS << Plasma specimen`. Ob dieser Ausschluss gewollt ist oder die drei Codes in einer 10-Code-Menge bleiben sollen, ist mit den klinischen Reviewern zu entscheiden.
+* **Nabelschnurblut** (47284-5, 55802-3) ist über den Blut-Block draußen.
+* **Die EDTA-Clumping-Kontrolle** (107193-5) und die optische Zählung (97995-5) sind Methodenvarianten der Routinezählung und bleiben drin.
 * **Fetales Blut** (62244-9) hat in diesem Release kein Direct site.
 
 ### Der Pool und seine Use-Case-Gruppen
@@ -108,4 +108,13 @@ Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die 
 | 111353-9 | Platelets [Measurement] in Blood | Measurement property | – | Blood specimen | Quantitativ | Mess-Property, keine Skala asserted (generisch) |
 | 9317-9 | Platelet adequacy [Presence] in Blood by Light microscopy | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
 | 104705-9 | Platelets [Presence] in Blood | Threshold | Ordinal value | Blood specimen | Qualitativ | Ordinale/nominale Skala → qualitativ |
+
+### LOINC-Terme des Analyten außerhalb des Pools
+
+Recall-Prüfung gegen LOINC 2.83 selbst: 20 Laborterme passen auf das LOINC-Muster des Analyten (Component ~ ^Platelets$); 18 davon liegen im Pool, 2 nicht. Ein Term liegt außerhalb des Pools, wenn die LOINC Ontology ihn mit einer anderen Component modelliert oder gar nicht. Jeder davon ist entweder ein hinzunehmender Modellierungsunterschied oder ein Change Request an die LOINC Ontology.
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 11125-2 | Platelets [Morphology] in Blood | Morph | Bld |
+| 11126-0 | Platelets [Morphology] in Bone marrow | Morph | Bone mar |
 

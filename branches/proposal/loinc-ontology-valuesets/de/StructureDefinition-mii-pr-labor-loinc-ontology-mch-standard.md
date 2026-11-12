@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/mii-pr-labor-loinc-ontology-mch-standard | *Version*:2027.0.0-ci |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_Labor_LOINC_Ontology_Mch_Standard |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_PR_Labor_LOINC_Ontology_Mch_Standard |
 | **Copyright/Rechtliches**: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. | |
 
  
@@ -214,7 +214,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   "title" : "MII PR Labor LOINC Ontology Mch Standard",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-10",
+  "date" : "2026-11-12",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -273,7 +273,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "path" : "Observation.code",
       "binding" : {
         "strength" : "required",
-        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
+        "description" : "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118535001 |Entitic mass (property) (qualifier value)| OR << 118532003 |Entitic substance amount (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-mch-standard"
       }
     },
@@ -288,7 +288,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
       "id" : "Observation.value[x]:valueQuantity",
       "path" : "Observation.value[x]",
       "sliceName" : "valueQuantity",
-      "comment" : "Expected UCUM unit: pg",
+      "comment" : "Expected UCUM unit: pg or fmol",
       "type" : [{
         "code" : "Quantity"
       }]

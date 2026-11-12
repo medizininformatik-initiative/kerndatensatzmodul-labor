@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.6"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.8"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -339,16 +339,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#leukocyte-count-in-blood" id="markdown-toc-leukocyte-count-in-blood">Leukocyte count in blood</a></li>
   <li><a href="#wbc-differential-panel" id="markdown-toc-wbc-differential-panel">WBC differential (panel)</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>leukocytes</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>leukocytes</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
 <p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|</code> (161 concepts, 158 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-convertible.html">Convertible</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-qualitative.html">Qualitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-semiquantitative.html">Semi-quantitative</a>.</p>
 
 <h3 id="leukocyte-count-in-blood">Leukocyte count in blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html">mii-vs-labor-loinc-ontology-leukocytes-count-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html">mii-pr-labor-loinc-ontology-leukocytes-count-standard</a>. The rule selects 11 of the 161 pool concepts.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html">mii-vs-labor-loinc-ontology-leukocytes-count-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html">mii-pr-labor-loinc-ontology-leukocytes-count-standard</a>. The rule selects 9 of the 161 pool concepts.</p>
 
 <table>
   <thead>
@@ -364,7 +365,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -377,13 +378,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="included-11">Included (11)</h4>
+<h4 id="included-9">Included (9)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -406,14 +407,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Number concentration</td>
       <td>Quantitative value</td>
       <td>Automated count technique</td>
-    </tr>
-    <tr>
-      <td>66768-3</td>
-      <td>Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood</td>
-      <td>Cord blood specimen</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
     </tr>
     <tr>
       <td>26464-8</td>
@@ -448,14 +441,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Manual count technique</td>
     </tr>
     <tr>
-      <td>47281-1</td>
-      <td>Leukocytes [#/volume] in Cord blood</td>
-      <td>Cord blood specimen</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-    </tr>
-    <tr>
       <td>30406-3</td>
       <td>Leukocytes other [#/volume] in Blood</td>
       <td>Blood specimen</td>
@@ -483,19 +468,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><strong>Specimens among the included codes</strong>: Blood specimen (9), Cord blood specimen (2)</li>
+  <li><strong>Specimens among the included codes</strong>: Blood specimen (9)</li>
   <li><strong>Techniques among the included codes</strong>: Automated count technique (3), Manual count technique (2)</li>
 </ul>
 
-<h4 id="excluded-from-the-pool-150">Excluded from the pool (150)</h4>
+<h4 id="excluded-from-the-pool-152">Excluded from the pool (152)</h4>
 
-<p><strong>Excluded because Direct site does not match (75)</strong></p>
+<p><strong>Excluded because Direct site does not match (77)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -524,6 +509,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>48034-3</td>
       <td>Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebrospinal Fluid</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>66768-3</td>
+      <td>Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>70126-8</td>
@@ -629,6 +619,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>806-0</td>
       <td>Leukocytes [#/volume] in Cerebrospinal Fluid by Manual count</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>47281-1</td>
+      <td>Leukocytes [#/volume] in Cord blood</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>53518-7</td>
@@ -886,7 +881,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1174,7 +1169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
     </tr>
@@ -1381,7 +1376,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -1410,7 +1405,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Scale type</th>
     </tr>
@@ -1434,9 +1429,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="discussion">Discussion</h4>
 
 <ul>
-  <li><strong>"Leukocytes other" is in and should not be.</strong> 30406-3, 51383-8 and 729-4 count the <em>other</em> cells of a differential, not the total leukocyte count, yet the LOINC Ontology models their Component as Leukocyte. They need an explicit exclusion or a change request for a more specific Component.</li>
-  <li><strong>Corrected counts are in.</strong> 12227-5, 33256-9 and 66768-3 (corrected for nucleated erythrocytes) are the same measurement after correction; keeping them in the routine test is defensible, pooling them with uncorrected values is a data-user decision.</li>
-  <li><strong>Cord blood</strong> (47281-1, 66768-3) is in.</li>
+  <li><strong>"Leukocytes other" is in and should not be.</strong> 30406-3, 51383-8 and 729-4 count the <em>other</em> cells of a differential, not the total leukocyte count, yet the LOINC Ontology models their Component as Leukocyte. No attribute separates them; they need an explicit exclusion list or a change request for a more specific Component.</li>
+  <li><strong>Corrected counts are in.</strong> 12227-5 and 33256-9 (corrected for nucleated erythrocytes) are the same measurement after correction; keeping them in the routine test is defensible, pooling them with uncorrected values is a data-user decision.</li>
+  <li><strong>Cord blood</strong> (47281-1, 66768-3) is out via the blood block.</li>
   <li><strong>Fetal blood</strong> (61182-2) has no Direct site in this release.</li>
 </ul>
 
@@ -1469,7 +1464,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -1509,7 +1504,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
     </tr>
   </thead>
@@ -2327,7 +2322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -3788,6 +3783,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<p>Recall check against LOINC 2.83 itself: 115 laboratory terms match the analyte's LOINC pattern (Component ~ ^Leukocytes$); 109 of them are in the pool, 6 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11156-7</td>
+      <td>Leukocytes [Morphology] in Blood</td>
+      <td>Morph</td>
+      <td>Bld</td>
+    </tr>
+    <tr>
+      <td>11157-5</td>
+      <td>Leukocytes [Morphology] in Bone marrow</td>
+      <td>Morph</td>
+      <td>Bone mar</td>
+    </tr>
+    <tr>
+      <td>60433-0</td>
+      <td>Leukocytes by Light microscopy in Urine sediment collected for unspecified duration</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>18407-7</td>
+      <td>Leukocytes in 12 hour Urine sediment by Light microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>63554-0</td>
+      <td>Leukocytes in 24 hour Urine sediment by Microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+    <tr>
+      <td>59829-2</td>
+      <td>Leukocytes in 3 hour Urine sediment by Light microscopy</td>
+      <td>NRat</td>
+      <td>Urine sed</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -3813,7 +3861,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

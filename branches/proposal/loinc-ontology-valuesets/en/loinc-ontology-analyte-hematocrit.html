@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.8.2.3"}
-    h3,h4,h5,h6{--heading-prefix:"2.8.2.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.8.2.5"}
+    h3,h4,h5,h6{--heading-prefix:"2.8.2.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -338,16 +338,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#hematocrit-volume-fraction-in-blood" id="markdown-toc-hematocrit-volume-fraction-in-blood">Hematocrit (volume fraction) in blood</a></li>
   <li><a href="#the-pool-and-its-use-case-buckets" id="markdown-toc-the-pool-and-its-use-case-buckets">The pool and its use-case buckets</a></li>
+  <li><a href="#loinc-terms-of-the-analyte-outside-the-pool" id="markdown-toc-loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</a></li>
 </ul>
 
 </div>
-<p>This page is the review material for the analyte <strong>hematocrit</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
+<p>This page is the review material for the analyte <strong>hematocrit</strong> of the <a href="loinc-ontology-valuesets.html">LOINC Ontology proposal</a>: the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under <a href="loinc-ontology-method.html">How the ValueSets are built</a>.</p>
 
-<p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|</code> (107 concepts, 106 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.html">Quantitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-convertible.html">Convertible</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-qualitative.html">Qualitative</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-semiquantitative.html">Semi-quantitative</a>.</p>
+<p>Candidate pool: <code class="language-plaintext highlighter-rouge">&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = &lt;&lt; 118567003 |Volume fraction (property) (qualifier value)|</code> (23 concepts, 23 with a LOINC code). Use-case ValueSets: <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-complete.html">Complete</a>, <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-quantitative.html">Quantitative</a>.</p>
 
 <h3 id="hematocrit-volume-fraction-in-blood">Hematocrit (volume fraction) in blood</h3>
 
-<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-standard.html">mii-vs-labor-loinc-ontology-hematocrit-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hematocrit-standard.html">mii-pr-labor-loinc-ontology-hematocrit-standard</a>. The rule selects 12 of the 107 pool concepts.</p>
+<p>ValueSet <a href="ValueSet-mii-vs-labor-loinc-ontology-hematocrit-standard.html">mii-vs-labor-loinc-ontology-hematocrit-standard</a>, profile <a href="StructureDefinition-mii-pr-labor-loinc-ontology-hematocrit-standard.html">mii-pr-labor-loinc-ontology-hematocrit-standard</a>. The rule selects 10 of the 23 pool concepts.</p>
 
 <table>
   <thead>
@@ -363,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Direct site</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; Blood specimen minus (&lt;&lt; Cord blood specimen or &lt;&lt; Fetal blood specimen or &lt;&lt; Dried blood spot specimen)</code></td>
     </tr>
     <tr>
       <td>Property</td>
@@ -376,13 +377,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="included-12">Included (12)</h4>
+<h4 id="included-10">Included (10)</h4>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
       <th>Property</th>
       <th>Scale type</th>
@@ -455,22 +456,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Calculation technique</td>
     </tr>
     <tr>
-      <td>11271-4</td>
-      <td>Hematocrit [Volume Fraction] of Cord blood by Automated count</td>
-      <td>Cord blood specimen</td>
-      <td>Volume fraction</td>
-      <td>Quantitative value</td>
-      <td>Automated count technique</td>
-    </tr>
-    <tr>
-      <td>11151-8</td>
-      <td>Hematocrit [Volume Fraction] of Cord blood by calculation</td>
-      <td>Cord blood specimen</td>
-      <td>Volume fraction</td>
-      <td>Quantitative value</td>
-      <td>Calculation technique</td>
-    </tr>
-    <tr>
       <td>41655-2</td>
       <td>Hematocrit [Volume Fraction] of Mixed venous blood by calculation</td>
       <td>Mixed venous blood specimen</td>
@@ -490,554 +475,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><strong>Specimens among the included codes</strong>: Blood specimen (6), Cord blood specimen (2), Arterial blood specimen (1), Capillary blood specimen (1), Mixed venous blood specimen (1), Venous blood specimen (1)</li>
-  <li><strong>Techniques among the included codes</strong>: Calculation technique (7), Automated count technique (2), Centrifugation technique (1), Estimation technique (1), Electrical impedance technique (1)</li>
+  <li><strong>Specimens among the included codes</strong>: Blood specimen (6), Arterial blood specimen (1), Capillary blood specimen (1), Mixed venous blood specimen (1), Venous blood specimen (1)</li>
+  <li><strong>Techniques among the included codes</strong>: Calculation technique (6), Automated count technique (1), Centrifugation technique (1), Estimation technique (1), Electrical impedance technique (1)</li>
 </ul>
 
-<h4 id="excluded-from-the-pool-95">Excluded from the pool (95)</h4>
+<h4 id="excluded-from-the-pool-13">Excluded from the pool (13)</h4>
 
-<p><strong>Excluded because Direct site and Property do not match (60)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Direct site</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>104647-3</td>
-      <td>Erythrocyte [#/area] in Urine by Computer assisted method</td>
-      <td>Urine specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>99927-6</td>
-      <td>Erythrocytes [#/area] in Body fluid by Automated count</td>
-      <td>Body fluid specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>96711-7</td>
-      <td>Erythrocytes [#/area] in Body fluid by Light microscopy</td>
-      <td>Body fluid specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>51910-8</td>
-      <td>Erythrocytes [#/area] in Bronchoalveolar lavage by Microscopy high power field</td>
-      <td>Bronchoalveolar lavage fluid specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>96719-0</td>
-      <td>Erythrocytes [#/area] in Prostatic fluid by Light microscopy</td>
-      <td>Prostatic fluid specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>58767-5</td>
-      <td>Erythrocytes [#/area] in Semen by Microscopy high power field</td>
-      <td>Semen sample</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>51382-0</td>
-      <td>Erythrocytes [#/area] in Synovial fluid by Light microscopy</td>
-      <td>Synovial fluid specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>75237-8</td>
-      <td>Erythrocytes [#/area] in Synovial fluid by Microscopy high power field</td>
-      <td>Synovial fluid specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>105107-7</td>
-      <td>Erythrocytes [#/area] in Urine sediment</td>
-      <td>Urine sediment specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>46419-8</td>
-      <td>Erythrocytes [#/area] in Urine sediment by Automated count</td>
-      <td>Urine sediment specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>13945-1</td>
-      <td>Erythrocytes [#/area] in Urine sediment by Microscopy high power field</td>
-      <td>Urine sediment specimen</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>44242-6</td>
-      <td>Erythrocytes [#/area] in Vaginal fluid by Wet preparation</td>
-      <td>Specimen from vagina</td>
-      <td>Number areic</td>
-    </tr>
-    <tr>
-      <td>68902-6</td>
-      <td>Erythrocytes [#/volume] by Light microscopy in Urine sediment collected for unspecified duration</td>
-      <td>Urine sediment specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>55779-3</td>
-      <td>Erythrocytes [#/volume] in Amniotic fluid</td>
-      <td>Amniotic fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>62240-7</td>
-      <td>Erythrocytes [#/volume] in Blood from Fetus by Automated count</td>
-      <td>–</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>26455-6</td>
-      <td>Erythrocytes [#/volume] in Body fluid</td>
-      <td>Body fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>23860-0</td>
-      <td>Erythrocytes [#/volume] in Body fluid by Automated count</td>
-      <td>Body fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>6741-3</td>
-      <td>Erythrocytes [#/volume] in Body fluid by Manual count</td>
-      <td>Body fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>82588-5</td>
-      <td>Erythrocytes [#/volume] in Bone marrow by Automated count</td>
-      <td>Bone marrow specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>99777-5</td>
-      <td>Erythrocytes [#/volume] in Bronchoalveolar lavage by Automated count</td>
-      <td>Bronchoalveolar lavage fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>99050-7</td>
-      <td>Erythrocytes [#/volume] in Bronchoalveolar lavage by Manual count</td>
-      <td>Bronchoalveolar lavage fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>26454-9</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>791-4</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Automated count</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>792-2</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>76673-3</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –1st tube</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>46087-3</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –2nd tube</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>46091-5</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –3rd tube</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>46092-3</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –4th tube</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>57841-9</td>
-      <td>Erythrocytes [#/volume] in Dialysis fluid by Automated count</td>
-      <td>Dialysate specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>53517-9</td>
-      <td>Erythrocytes [#/volume] in Dialysis fluid by Manual count</td>
-      <td>Dialysate specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>30387-5</td>
-      <td>Erythrocytes [#/volume] in Gastric fluid</td>
-      <td>Gastric fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>14372-7</td>
-      <td>Erythrocytes [#/volume] in Gastric fluid by Manual count</td>
-      <td>Gastric fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>96727-3</td>
-      <td>Erythrocytes [#/volume] in Lower respiratory specimen by Manual count</td>
-      <td>Lower respiratory tract specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>30388-3</td>
-      <td>Erythrocytes [#/volume] in Pericardial fluid</td>
-      <td>Pericardial fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>57842-7</td>
-      <td>Erythrocytes [#/volume] in Pericardial fluid by Automated count</td>
-      <td>Pericardial fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>14713-2</td>
-      <td>Erythrocytes [#/volume] in Pericardial fluid by Manual count</td>
-      <td>Pericardial fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>81640-5</td>
-      <td>Erythrocytes [#/volume] in Peritoneal dialysis fluid by Automated count</td>
-      <td>Peritoneal dialysate specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>40534-0</td>
-      <td>Erythrocytes [#/volume] in Peritoneal dialysis fluid by Manual count</td>
-      <td>Peritoneal dialysate specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>26457-2</td>
-      <td>Erythrocytes [#/volume] in Peritoneal fluid</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>57843-5</td>
-      <td>Erythrocytes [#/volume] in Peritoneal fluid by Automated count</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>795-5</td>
-      <td>Erythrocytes [#/volume] in Peritoneal fluid by Manual count</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>26456-4</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid</td>
-      <td>Pleural fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>794-8</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid by Automated count</td>
-      <td>Pleural fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>793-0</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid by Manual count</td>
-      <td>Pleural fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>67831-8</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid from Fetus</td>
-      <td>–</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>43245-0</td>
-      <td>Erythrocytes [#/volume] in Semen by Light microscopy</td>
-      <td>Semen sample</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>30389-1</td>
-      <td>Erythrocytes [#/volume] in Seminal plasma</td>
-      <td>Seminal plasma specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>16828-6</td>
-      <td>Erythrocytes [#/volume] in Seminal plasma by Manual count</td>
-      <td>Seminal plasma specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>23859-2</td>
-      <td>Erythrocytes [#/volume] in Specimen by Light microscopy</td>
-      <td>Specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>26458-0</td>
-      <td>Erythrocytes [#/volume] in Synovial fluid</td>
-      <td>Synovial fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>796-3</td>
-      <td>Erythrocytes [#/volume] in Synovial fluid by Automated count</td>
-      <td>Synovial fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>797-1</td>
-      <td>Erythrocytes [#/volume] in Synovial fluid by Manual count</td>
-      <td>Synovial fluid specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>30391-7</td>
-      <td>Erythrocytes [#/volume] in Urine</td>
-      <td>Urine specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>798-9</td>
-      <td>Erythrocytes [#/volume] in Urine by Automated count</td>
-      <td>Urine specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>799-7</td>
-      <td>Erythrocytes [#/volume] in Urine by Manual count</td>
-      <td>Urine specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>105108-5</td>
-      <td>Erythrocytes [#/volume] in Urine sediment</td>
-      <td>Urine sediment specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>5808-1</td>
-      <td>Erythrocytes [#/volume] in Urine sediment by Microscopy high power field</td>
-      <td>Urine sediment specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>68435-7</td>
-      <td>Erythrocytes [#/volume] in Vitreous fluid by Automated count</td>
-      <td>Vitreous humor specimen</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>30390-9</td>
-      <td>Erythrocytes [Units/volume] in Stool</td>
-      <td>Stool specimen</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-    <tr>
-      <td>14331-3</td>
-      <td>Erythrocytes [Units/volume] in Stool by Manual count</td>
-      <td>Stool specimen</td>
-      <td>Arbitrary concentration</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>2 of these have no Direct site attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 62240-7, 67831-8.</p>
-
-<p><strong>Excluded because Direct site, Property and Scale type do not match (20)</strong></p>
+<p><strong>Excluded because Direct site does not match (13)</strong></p>
 
 <table>
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
-      <th>Direct site</th>
-      <th>Property</th>
-      <th>Scale type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>57747-8</td>
-      <td>Erythrocytes [#/volume] in Urine by Automated test strip</td>
-      <td>Urine specimen</td>
-      <td>Number concentration</td>
-      <td>Semi-quantitative value</td>
-    </tr>
-    <tr>
-      <td>20409-9</td>
-      <td>Erythrocytes [#/volume] in Urine by Test strip</td>
-      <td>Urine specimen</td>
-      <td>Number concentration</td>
-      <td>Semi-quantitative value</td>
-    </tr>
-    <tr>
-      <td>109724-5</td>
-      <td>Erythrocytes [Measurement] in Dialysis fluid</td>
-      <td>Dialysate specimen</td>
-      <td>Measurement property</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>19098-3</td>
-      <td>Erythrocytes [Presence] in Amniotic fluid</td>
-      <td>Amniotic fluid specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>34446-5</td>
-      <td>Erythrocytes [Presence] in Body fluid</td>
-      <td>Body fluid specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>99926-8</td>
-      <td>Erythrocytes [Presence] in Body fluid by Automated</td>
-      <td>Body fluid specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>88113-6</td>
-      <td>Erythrocytes [Presence] in Cerebrospinal Fluid by Gram stain</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>68901-8</td>
-      <td>Erythrocytes [Presence] in Dialysis fluid</td>
-      <td>Dialysate specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>38285-3</td>
-      <td>Erythrocytes [Presence] in Duodenal fluid</td>
-      <td>Duodenal fluid specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>72338-7</td>
-      <td>Erythrocytes [Presence] in Prostatic fluid by Light microscopy</td>
-      <td>Prostatic fluid specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>13627-5</td>
-      <td>Erythrocytes [Presence] in Semen by Light microscopy</td>
-      <td>Semen sample</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>72162-1</td>
-      <td>Erythrocytes [Presence] in Specimen by Gram stain</td>
-      <td>Specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>70124-3</td>
-      <td>Erythrocytes [Presence] in Specimen by Wet preparation</td>
-      <td>Specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>33668-5</td>
-      <td>Erythrocytes [Presence] in Stool</td>
-      <td>Stool specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>33051-4</td>
-      <td>Erythrocytes [Presence] in Urine</td>
-      <td>Urine specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>53292-9</td>
-      <td>Erythrocytes [Presence] in Urine by Automated</td>
-      <td>Urine specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>105090-5</td>
-      <td>Erythrocytes [Presence] in Urine sediment</td>
-      <td>Urine sediment specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>32776-7</td>
-      <td>Erythrocytes [Presence] in Urine sediment by Light microscopy</td>
-      <td>Urine sediment specimen</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>48051-7</td>
-      <td>Erythrocytes [Presence] in Vaginal fluid</td>
-      <td>Specimen from vagina</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-    </tr>
-    <tr>
-      <td>SCT 648131000005102</td>
-      <td>Presence of erythrocytes in urine</td>
-      <td>Urine specimen</td>
-      <td>Presence</td>
-      <td>–</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>2 of these have no Scale type attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 109724-5, SCT 648131000005102.</p>
-
-<p><strong>Excluded because Direct site does not match (11)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Direct site</th>
     </tr>
   </thead>
@@ -1066,6 +516,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>30398-2</td>
       <td>Hematocrit [Volume Fraction] of Cerebrospinal Fluid by calculation</td>
       <td>Cerebrospinal fluid specimen</td>
+    </tr>
+    <tr>
+      <td>11271-4</td>
+      <td>Hematocrit [Volume Fraction] of Cord blood by Automated count</td>
+      <td>Cord blood specimen</td>
+    </tr>
+    <tr>
+      <td>11151-8</td>
+      <td>Hematocrit [Volume Fraction] of Cord blood by calculation</td>
+      <td>Cord blood specimen</td>
     </tr>
     <tr>
       <td>47640-8</td>
@@ -1102,47 +562,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>2 of these have no Direct site attribute in this release at all (the LOINC system part is not modelled yet), so the rule cannot see them: 62241-5, 43416-7.</p>
 
-<p><strong>Excluded because Property does not match (4)</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>LOINC</th>
-      <th>Name</th>
-      <th>Property</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>26453-1</td>
-      <td>Erythrocytes [#/volume] in Blood</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>789-8</td>
-      <td>Erythrocytes [#/volume] in Blood by Automated count</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>790-6</td>
-      <td>Erythrocytes [#/volume] in Blood by Manual count</td>
-      <td>Number concentration</td>
-    </tr>
-    <tr>
-      <td>47280-3</td>
-      <td>Erythrocytes [#/volume] in Cord blood</td>
-      <td>Number concentration</td>
-    </tr>
-  </tbody>
-</table>
-
 <h4 id="discussion">Discussion</h4>
 
 <ul>
-  <li><strong>Calculated and measured are mixed.</strong> Seven of the twelve codes are calculations (from the erythrocyte count and MCV, as every hematology analyser does), the rest centrifugation, impedance and estimates. For the routine test this is right; a study on measured hematocrit would constrain Technique.</li>
-  <li><strong>Cord blood</strong> (two codes) is in, for the same reason as with hemoglobin.</li>
+  <li><strong>Calculated and measured are mixed.</strong> Seven of the ten codes are calculations (from the erythrocyte count and MCV, as every hematology analyser does), the rest centrifugation, impedance and estimates. For the routine test this is right; a study on measured hematocrit would constrain Technique.</li>
+  <li><strong>Cord blood</strong> (11151-8, 11271-4) is out via the blood block, as with hemoglobin.</li>
   <li><strong>Fetal blood</strong> (62241-5) has no Direct site in this release and is invisible to the rule.</li>
-  <li><strong>The use-case pool is the erythrocyte pool.</strong> Hematocrit has no Component of its own in the LOINC Ontology; it is Erythrocyte with the property volume fraction. The per-test rule is exact, the analyte-level pools are shared with the erythrocyte count.</li>
+  <li><strong>The pool is now hematocrit's own.</strong> Hematocrit has no Component of its own in the LOINC Ontology; it is Erythrocyte with the property volume fraction, and the pool is defined on both. The erythrocyte pool still contains these concepts, which is correct: a hematocrit is an erythrocyte observable.</li>
 </ul>
 
 <h3 id="the-pool-and-its-use-case-buckets">The pool and its use-case buckets</h3>
@@ -1153,7 +579,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>LOINC</th>
-      <th>Name</th>
+      <th>LOINC name</th>
       <th>Property</th>
       <th>Scale type</th>
       <th>Direct site</th>
@@ -1162,591 +588,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>68902-6</td>
-      <td>Erythrocytes [#/volume] by Light microscopy in Urine sediment collected for unspecified duration</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Urine sediment specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>55779-3</td>
-      <td>Erythrocytes [#/volume] in Amniotic fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Amniotic fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>26453-1</td>
-      <td>Erythrocytes [#/volume] in Blood</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Blood specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>789-8</td>
-      <td>Erythrocytes [#/volume] in Blood by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Blood specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>790-6</td>
-      <td>Erythrocytes [#/volume] in Blood by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Blood specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>62240-7</td>
-      <td>Erythrocytes [#/volume] in Blood from Fetus by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>26455-6</td>
-      <td>Erythrocytes [#/volume] in Body fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Body fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>23860-0</td>
-      <td>Erythrocytes [#/volume] in Body fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Body fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>6741-3</td>
-      <td>Erythrocytes [#/volume] in Body fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Body fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>82588-5</td>
-      <td>Erythrocytes [#/volume] in Bone marrow by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Bone marrow specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>99777-5</td>
-      <td>Erythrocytes [#/volume] in Bronchoalveolar lavage by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Bronchoalveolar lavage fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>99050-7</td>
-      <td>Erythrocytes [#/volume] in Bronchoalveolar lavage by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Bronchoalveolar lavage fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>26454-9</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>791-4</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>792-2</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>76673-3</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –1st tube</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>46087-3</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –2nd tube</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>46091-5</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –3rd tube</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>46092-3</td>
-      <td>Erythrocytes [#/volume] in Cerebrospinal Fluid by Manual count –4th tube</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>47280-3</td>
-      <td>Erythrocytes [#/volume] in Cord blood</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Cord blood specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>57841-9</td>
-      <td>Erythrocytes [#/volume] in Dialysis fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Dialysate specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>53517-9</td>
-      <td>Erythrocytes [#/volume] in Dialysis fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Dialysate specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>30387-5</td>
-      <td>Erythrocytes [#/volume] in Gastric fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Gastric fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>14372-7</td>
-      <td>Erythrocytes [#/volume] in Gastric fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Gastric fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>96727-3</td>
-      <td>Erythrocytes [#/volume] in Lower respiratory specimen by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Lower respiratory tract specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>30388-3</td>
-      <td>Erythrocytes [#/volume] in Pericardial fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Pericardial fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>57842-7</td>
-      <td>Erythrocytes [#/volume] in Pericardial fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Pericardial fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>14713-2</td>
-      <td>Erythrocytes [#/volume] in Pericardial fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Pericardial fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>81640-5</td>
-      <td>Erythrocytes [#/volume] in Peritoneal dialysis fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Peritoneal dialysate specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>40534-0</td>
-      <td>Erythrocytes [#/volume] in Peritoneal dialysis fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Peritoneal dialysate specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>26457-2</td>
-      <td>Erythrocytes [#/volume] in Peritoneal fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>57843-5</td>
-      <td>Erythrocytes [#/volume] in Peritoneal fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>795-5</td>
-      <td>Erythrocytes [#/volume] in Peritoneal fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Peritoneal fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>26456-4</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Pleural fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>794-8</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Pleural fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>793-0</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Pleural fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>67831-8</td>
-      <td>Erythrocytes [#/volume] in Pleural fluid from Fetus</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>–</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>43245-0</td>
-      <td>Erythrocytes [#/volume] in Semen by Light microscopy</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Semen sample</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>30389-1</td>
-      <td>Erythrocytes [#/volume] in Seminal plasma</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Seminal plasma specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>16828-6</td>
-      <td>Erythrocytes [#/volume] in Seminal plasma by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Seminal plasma specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>23859-2</td>
-      <td>Erythrocytes [#/volume] in Specimen by Light microscopy</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>26458-0</td>
-      <td>Erythrocytes [#/volume] in Synovial fluid</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Synovial fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>796-3</td>
-      <td>Erythrocytes [#/volume] in Synovial fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Synovial fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>797-1</td>
-      <td>Erythrocytes [#/volume] in Synovial fluid by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Synovial fluid specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>30391-7</td>
-      <td>Erythrocytes [#/volume] in Urine</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Urine specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>798-9</td>
-      <td>Erythrocytes [#/volume] in Urine by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Urine specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>799-7</td>
-      <td>Erythrocytes [#/volume] in Urine by Manual count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Urine specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>105108-5</td>
-      <td>Erythrocytes [#/volume] in Urine sediment</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Urine sediment specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>5808-1</td>
-      <td>Erythrocytes [#/volume] in Urine sediment by Microscopy high power field</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Urine sediment specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>68435-7</td>
-      <td>Erythrocytes [#/volume] in Vitreous fluid by Automated count</td>
-      <td>Number concentration</td>
-      <td>Quantitative value</td>
-      <td>Vitreous humor specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>30390-9</td>
-      <td>Erythrocytes [Units/volume] in Stool</td>
-      <td>Arbitrary concentration</td>
-      <td>Quantitative value</td>
-      <td>Stool specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>14331-3</td>
-      <td>Erythrocytes [Units/volume] in Stool by Manual count</td>
-      <td>Arbitrary concentration</td>
-      <td>Quantitative value</td>
-      <td>Stool specimen</td>
-      <td>Convertible</td>
-      <td>Quantitative scale + concentration property</td>
-    </tr>
-    <tr>
-      <td>104647-3</td>
-      <td>Erythrocyte [#/area] in Urine by Computer assisted method</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Urine specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>99927-6</td>
-      <td>Erythrocytes [#/area] in Body fluid by Automated count</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Body fluid specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>96711-7</td>
-      <td>Erythrocytes [#/area] in Body fluid by Light microscopy</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Body fluid specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>51910-8</td>
-      <td>Erythrocytes [#/area] in Bronchoalveolar lavage by Microscopy high power field</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Bronchoalveolar lavage fluid specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>96719-0</td>
-      <td>Erythrocytes [#/area] in Prostatic fluid by Light microscopy</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Prostatic fluid specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>58767-5</td>
-      <td>Erythrocytes [#/area] in Semen by Microscopy high power field</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Semen sample</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>51382-0</td>
-      <td>Erythrocytes [#/area] in Synovial fluid by Light microscopy</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Synovial fluid specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>75237-8</td>
-      <td>Erythrocytes [#/area] in Synovial fluid by Microscopy high power field</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Synovial fluid specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>105107-7</td>
-      <td>Erythrocytes [#/area] in Urine sediment</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Urine sediment specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>46419-8</td>
-      <td>Erythrocytes [#/area] in Urine sediment by Automated count</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Urine sediment specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>13945-1</td>
-      <td>Erythrocytes [#/area] in Urine sediment by Microscopy high power field</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Urine sediment specimen</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>44242-6</td>
-      <td>Erythrocytes [#/area] in Vaginal fluid by Wet preparation</td>
-      <td>Number areic</td>
-      <td>Quantitative value</td>
-      <td>Specimen from vagina</td>
-      <td>Quantitative</td>
-      <td>Quantitative scale</td>
-    </tr>
-    <tr>
-      <td>109724-5</td>
-      <td>Erythrocytes [Measurement] in Dialysis fluid</td>
-      <td>Measurement property</td>
-      <td>–</td>
-      <td>Dialysate specimen</td>
-      <td>Quantitative</td>
-      <td>Measurement property, no scale asserted (generic)</td>
-    </tr>
     <tr>
       <td>32354-3</td>
       <td>Hematocrit [Volume Fraction] of Arterial blood by calculation</td>
@@ -1954,176 +795,77 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Quantitative</td>
       <td>Quantitative scale</td>
     </tr>
+  </tbody>
+</table>
+
+<h3 id="loinc-terms-of-the-analyte-outside-the-pool">LOINC terms of the analyte outside the pool</h3>
+
+<table>
+  <tbody>
     <tr>
-      <td>19098-3</td>
-      <td>Erythrocytes [Presence] in Amniotic fluid</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Amniotic fluid specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>Recall check against LOINC 2.83 itself: 27 laboratory terms match the analyte's LOINC pattern (Component ~ ^Erythrocyte/(Blood</td>
+      <td>Specimen Volume)$; Property ~ ^VFr); 19 of them are in the pool, 8 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>LOINC</th>
+      <th>LOINC name</th>
+      <th>Property</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>71832-0</td>
+      <td>Hematocrit [Pure volume fraction] of Arterial blood by calculation</td>
+      <td>VFr.DF</td>
+      <td>BldA</td>
     </tr>
     <tr>
-      <td>34446-5</td>
-      <td>Erythrocytes [Presence] in Body fluid</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Body fluid specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>71833-8</td>
+      <td>Hematocrit [Pure volume fraction] of Blood by Automated count</td>
+      <td>VFr.DF</td>
+      <td>Bld</td>
     </tr>
     <tr>
-      <td>99926-8</td>
-      <td>Erythrocytes [Presence] in Body fluid by Automated</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Body fluid specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>104826-3</td>
+      <td>Hematocrit [Pure volume fraction] of Blood by calculation</td>
+      <td>VFr.DF</td>
+      <td>Bld</td>
     </tr>
     <tr>
-      <td>88113-6</td>
-      <td>Erythrocytes [Presence] in Cerebrospinal Fluid by Gram stain</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Cerebrospinal fluid specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>71828-8</td>
+      <td>Hematocrit [Pure volume fraction] of Body fluid by calculation</td>
+      <td>VFr.DF</td>
+      <td>Body fld</td>
     </tr>
     <tr>
-      <td>68901-8</td>
-      <td>Erythrocytes [Presence] in Dialysis fluid</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Dialysate specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>71831-2</td>
+      <td>Hematocrit [Pure volume fraction] of Capillary blood by calculation</td>
+      <td>VFr.DF</td>
+      <td>BldC</td>
     </tr>
     <tr>
-      <td>38285-3</td>
-      <td>Erythrocytes [Presence] in Duodenal fluid</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Duodenal fluid specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>98998-8</td>
+      <td>Hematocrit [Pure volume fraction] of Cord blood by Automated count</td>
+      <td>VFr.DF</td>
+      <td>BldCo</td>
     </tr>
     <tr>
-      <td>72338-7</td>
-      <td>Erythrocytes [Presence] in Prostatic fluid by Light microscopy</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Prostatic fluid specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
+      <td>71830-4</td>
+      <td>Hematocrit [Pure volume fraction] of Mixed venous blood by calculation</td>
+      <td>VFr.DF</td>
+      <td>BldMV</td>
     </tr>
     <tr>
-      <td>13627-5</td>
-      <td>Erythrocytes [Presence] in Semen by Light microscopy</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Semen sample</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>72162-1</td>
-      <td>Erythrocytes [Presence] in Specimen by Gram stain</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>70124-3</td>
-      <td>Erythrocytes [Presence] in Specimen by Wet preparation</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>33668-5</td>
-      <td>Erythrocytes [Presence] in Stool</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Stool specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>33051-4</td>
-      <td>Erythrocytes [Presence] in Urine</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Urine specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>53292-9</td>
-      <td>Erythrocytes [Presence] in Urine by Automated</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Urine specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>105090-5</td>
-      <td>Erythrocytes [Presence] in Urine sediment</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Urine sediment specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>32776-7</td>
-      <td>Erythrocytes [Presence] in Urine sediment by Light microscopy</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Urine sediment specimen</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>48051-7</td>
-      <td>Erythrocytes [Presence] in Vaginal fluid</td>
-      <td>Threshold</td>
-      <td>Ordinal value</td>
-      <td>Specimen from vagina</td>
-      <td>Qualitative</td>
-      <td>Ordinal/Nominal scale → qualitative</td>
-    </tr>
-    <tr>
-      <td>SCT 648131000005102</td>
-      <td>Presence of erythrocytes in urine</td>
-      <td>Presence</td>
-      <td>–</td>
-      <td>Urine specimen</td>
-      <td>Qualitative</td>
-      <td>Presence property → qualitative</td>
-    </tr>
-    <tr>
-      <td>57747-8</td>
-      <td>Erythrocytes [#/volume] in Urine by Automated test strip</td>
-      <td>Number concentration</td>
-      <td>Semi-quantitative value</td>
-      <td>Urine specimen</td>
-      <td>Semi-quantitative</td>
-      <td>Semi-quantitative scale (test strip)</td>
-    </tr>
-    <tr>
-      <td>20409-9</td>
-      <td>Erythrocytes [#/volume] in Urine by Test strip</td>
-      <td>Number concentration</td>
-      <td>Semi-quantitative value</td>
-      <td>Urine specimen</td>
-      <td>Semi-quantitative</td>
-      <td>Semi-quantitative scale (test strip)</td>
+      <td>71829-6</td>
+      <td>Hematocrit [Pure volume fraction] of Venous blood by calculation</td>
+      <td>VFr.DF</td>
+      <td>BldV</td>
     </tr>
   </tbody>
 </table>
@@ -2153,7 +895,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 18:13+0000">2026-11-10</span>
+          Generated <span title="Thu, Nov 12, 2026 17:39+0000">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
