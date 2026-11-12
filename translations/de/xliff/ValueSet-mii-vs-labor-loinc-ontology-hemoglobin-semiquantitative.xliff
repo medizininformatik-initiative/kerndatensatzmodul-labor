@@ -77,7 +77,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hemoglobin (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against the LOINC Ontology 2026-03-21. 2 concepts (2 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.</source>
+        <source>Proposal: use-case ValueSet 'Semi-quantitative (test strip)' for the analyte hemoglobin (Semi-quantitative scale — test-strip / dipstick reads that are neither strictly quantitative nor purely qualitative (e.g. nitrite, urine hemoglobin by test strip).). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 2 concepts (2 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-semiquantitative" resname="Coding.display">
@@ -105,7 +105,7 @@
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>2.82</source>
+        <source>2.83</source>
         <target></target>
       </trans-unit>
     </body>

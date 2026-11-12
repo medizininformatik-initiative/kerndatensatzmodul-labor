@@ -66,7 +66,7 @@
     {
       "id" : "ValueSet.description",
       "context" : "ValueSet.description",
-      "source" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hematocrit (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against the LOINC Ontology 2026-03-21. 107 concepts (106 with LOINC). The pool ECL is carried as an intensional include.",
+      "source" : "Proposal: use-case ValueSet 'Complete aggregation' for the analyte hematocrit (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|` against the LOINC Ontology 2026-10-21. 23 concepts (23 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
       "target" : null
     },
     {
@@ -90,25 +90,19 @@
     {
       "id" : "ValueSet.compose.include.version",
       "context" : "ValueSet.compose.include.version",
-      "source" : "2.82",
+      "source" : "2.83",
       "target" : null
     },
     {
       "id" : "ValueSet.compose.include.version",
       "context" : "ValueSet.compose.include.version",
-      "source" : "http://snomed.info/sct/11010000107/version/20260321",
-      "target" : null
-    },
-    {
-      "id" : "ValueSet.compose.include.concept.display",
-      "context" : "ValueSet.compose.include.concept.display",
-      "source" : "Presence of erythrocytes in urine (observable entity)",
+      "source" : "http://snomed.info/sct/11010000107/version/20261021",
       "target" : null
     },
     {
       "id" : "ValueSet.compose.include.filter.value",
       "context" : "ValueSet.compose.include.filter.value",
-      "source" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|",
+      "source" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|",
       "target" : null
     }]
   }]

@@ -66,7 +66,7 @@
     {
       "id" : "ValueSet.description",
       "context" : "ValueSet.description",
-      "source" : "Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (1), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)",
+      "source" : "Proposal: LOINC codes of the clinical test '%Free PSA (free/total ratio)' (specialized tier, specimen Serum/Plasma), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (1, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)`",
       "target" : null
     },
     {
@@ -90,19 +90,19 @@
     {
       "id" : "ValueSet.compose.include.version",
       "context" : "ValueSet.compose.include.version",
-      "source" : "2.82",
+      "source" : "2.83",
       "target" : null
     },
     {
       "id" : "ValueSet.compose.include.version",
       "context" : "ValueSet.compose.include.version",
-      "source" : "http://snomed.info/sct/11010000107/version/20260321",
+      "source" : "http://snomed.info/sct/11010000107/version/20261021",
       "target" : null
     },
     {
       "id" : "ValueSet.compose.include.filter.value",
       "context" : "ValueSet.compose.include.filter.value",
-      "source" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Serum or plasma specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)",
+      "source" : "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 102687007 |Prostate specific antigen (substance)|, << 704327008 |Direct site (attribute)| = << 122592007 |Acellular blood (serum or plasma) specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118586006 |Ratio (property) (qualifier value)| OR << 118542001 |Mass fraction (property) (qualifier value)|)",
       "target" : null
     }]
   }]

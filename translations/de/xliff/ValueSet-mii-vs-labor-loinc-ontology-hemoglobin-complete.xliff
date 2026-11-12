@@ -77,7 +77,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>Proposal: use-case ValueSet 'Complete aggregation' for the analyte hemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against the LOINC Ontology 2026-03-21. 89 concepts (89 with LOINC). The pool ECL is carried as an intensional include.</source>
+        <source>Proposal: use-case ValueSet 'Complete aggregation' for the analyte hemoglobin (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 89 concepts (89 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-complete" resname="Coding.display">
@@ -105,14 +105,14 @@
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>2.82</source>
+        <source>2.83</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-complete" resname="ValueSet.compose.include.version">
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>http://snomed.info/sct/11010000107/version/20260321</source>
+        <source>http://snomed.info/sct/11010000107/version/20261021</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-complete" resname="ValueSet.compose.include.filter.value">

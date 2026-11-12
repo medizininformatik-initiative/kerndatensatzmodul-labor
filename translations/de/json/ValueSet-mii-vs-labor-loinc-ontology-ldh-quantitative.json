@@ -66,7 +66,7 @@
     {
       "id" : "ValueSet.description",
       "context" : "ValueSet.description",
-      "source" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte ldh (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)| against the LOINC Ontology 2026-03-21. 77 concepts (77 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.",
+      "source" : "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte ldh (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 259319003 |Lactate dehydrogenase (substance)|` against the LOINC Ontology 2026-10-21. 77 concepts (77 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.",
       "target" : null
     },
     {
@@ -90,7 +90,7 @@
     {
       "id" : "ValueSet.compose.include.version",
       "context" : "ValueSet.compose.include.version",
-      "source" : "2.82",
+      "source" : "2.83",
       "target" : null
     }]
   }]

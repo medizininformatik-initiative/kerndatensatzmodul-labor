@@ -77,15 +77,15 @@
              <notes>
                <note id="n1">Describes the intended use of this particular set of codes.</note>
              </notes>
-        <source>LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: &lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</source>
-        <target>LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-03-21: &lt;&lt; 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</target>
+        <source>LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `&lt;&lt; 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`</source>
+        <target>LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `&lt;&lt; 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`</target>
       </trans-unit>
       <trans-unit id="StructureDefinition-mii-pr-labor-loinc-ontology-mchc-standard" resname="StructureDefinition.element.Observation.value[x]:valueQuantity/comment">
              <notes>
                <note id="n1">Explanatory notes and implementation guidance about the data element, including notes about how to use the data properly, exceptions to proper use, etc. (Note: The text you are reading is specified in ElementDefinition.comment).</note>
              </notes>
-        <source>Expected UCUM unit: g/dL</source>
-        <target>Expected UCUM unit: g/dL</target>
+        <source>Expected UCUM unit: g/dL or mmol/L</source>
+        <target>Expected UCUM unit: g/dL or mmol/L</target>
       </trans-unit>
     </body>
   </file>

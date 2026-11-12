@@ -77,7 +77,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (0), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: (&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = *)</source>
+        <source>Proposal: LOINC codes of the clinical test 'WBC differential (panel)' (specialized tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (0, LOINC 2.83), LOINC Ontology observables without LOINC code (2), and the ECL as an intensional include. ECL: `(&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = *)`</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-differential-panel" resname="Coding.display">
@@ -105,7 +105,7 @@
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>http://snomed.info/sct/11010000107/version/20260321</source>
+        <source>http://snomed.info/sct/11010000107/version/20261021</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-leukocytes-differential-panel" resname="ValueSet.compose.include.concept.display">
@@ -126,7 +126,7 @@
              <notes>
                <note id="n1">ValueSet.compose.include.filter.value</note>
              </notes>
-        <source>(&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (&lt;&lt; 363787002 |Observable entity (observable entity)| : 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = *)</source>
+        <source>(&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|) MINUS (&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|, &lt;&lt; 370130000 |Property (attribute)| = *)</source>
         <target></target>
       </trans-unit>
     </body>

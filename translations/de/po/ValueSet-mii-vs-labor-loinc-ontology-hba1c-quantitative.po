@@ -51,7 +51,7 @@ msgstr ""
 
 # ValueSet.description
 #: ValueSet.description
-msgid "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hba1c (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)| against the LOINC Ontology 2026-03-21. 10 concepts (8 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+msgid "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hba1c (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 733830002 |Glycated hemoglobin-A1c (substance)|` against the LOINC Ontology 2026-10-21. 10 concepts (8 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above."
 msgstr ""
 
 # Coding.display
@@ -71,12 +71,12 @@ msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "2.82"
+msgid "2.83"
 msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "http://snomed.info/sct/11010000107/version/20260321"
+msgid "http://snomed.info/sct/11010000107/version/20261021"
 msgstr ""
 
 # ValueSet.compose.include.concept.display

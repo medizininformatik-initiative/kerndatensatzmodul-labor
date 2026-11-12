@@ -77,7 +77,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = &lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)| against the LOINC Ontology 2026-03-21. 57 concepts (57 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above.</source>
+        <source>Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hemoglobin (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `&lt;&lt; 363787002 |Observable entity (observable entity)| : &lt;&lt; 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|` against the LOINC Ontology 2026-10-21. 57 concepts (57 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-hemoglobin-quantitative" resname="Coding.display">
@@ -105,7 +105,7 @@
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>2.82</source>
+        <source>2.83</source>
         <target></target>
       </trans-unit>
     </body>

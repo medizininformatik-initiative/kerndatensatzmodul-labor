@@ -51,7 +51,7 @@ msgstr ""
 
 # ValueSet.description
 #: ValueSet.description
-msgid "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)| against the LOINC Ontology 2026-03-21. 88 concepts (88 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+msgid "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the analyte hematocrit (Quantitative-scale measurements PLUS generic measurement-property concepts without an asserted scale. All numeric/measured results, including ratios and fractions.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 41898006 |Erythrocyte (cell)|, << 370130000 |Property (attribute)| = << 118567003 |Volume fraction (property) (qualifier value)|` against the LOINC Ontology 2026-10-21. 23 concepts (23 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above."
 msgstr ""
 
 # Coding.display
@@ -71,6 +71,6 @@ msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "2.82"
+msgid "2.83"
 msgstr ""
 

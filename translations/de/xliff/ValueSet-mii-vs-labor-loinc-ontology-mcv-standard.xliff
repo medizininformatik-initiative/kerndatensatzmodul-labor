@@ -77,7 +77,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: &lt;&lt; 525321010000100 |Mean cell volume (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</source>
+        <source>Proposal: LOINC codes of the clinical test 'Mean cell volume (MCV)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: `&lt;&lt; 525321010000100 |Entitic mean volume of erythrocyte specimen at point in time (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|`</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-mcv-standard" resname="Coding.display">
@@ -105,21 +105,21 @@
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>2.82</source>
+        <source>2.83</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-mcv-standard" resname="ValueSet.compose.include.version">
              <notes>
                <note id="n1">ValueSet.compose.include.version</note>
              </notes>
-        <source>http://snomed.info/sct/11010000107/version/20260321</source>
+        <source>http://snomed.info/sct/11010000107/version/20261021</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-labor-loinc-ontology-mcv-standard" resname="ValueSet.compose.include.filter.value">
              <notes>
                <note id="n1">ValueSet.compose.include.filter.value</note>
              </notes>
-        <source>&lt;&lt; 525321010000100 |Mean cell volume (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</source>
+        <source>&lt;&lt; 525321010000100 |Entitic mean volume of erythrocyte specimen at point in time (observable entity)| : &lt;&lt; 370132008 |Scale type (attribute)| = &lt;&lt; 30766002 |Quantitative value (qualifier value)|</source>
         <target></target>
       </trans-unit>
     </body>

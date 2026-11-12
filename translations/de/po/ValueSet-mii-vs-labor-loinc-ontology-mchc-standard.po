@@ -51,7 +51,7 @@ msgstr ""
 
 # ValueSet.description
 #: ValueSet.description
-msgid "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Blood), computed by ECL over the LOINC Ontology 2026-03-21. Parts: LOINC enumeration (2), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. ECL: << 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+msgid "Proposal: LOINC codes of the clinical test 'Mean cell hemoglobin concentration (MCHC)' (standard tier, specimen Erythrocyte), computed by ECL over the LOINC Ontology 2026-10-21. Parts: LOINC enumeration (2, LOINC 2.83), LOINC Ontology observables without LOINC code (0), and the ECL as an intensional include. Plus 1 hand-added LOINC code(s) the LOINC Ontology release does not model (ontology gap, see the analyte review page): 59467-1. ECL: `<< 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`"
 msgstr ""
 
 # Coding.display
@@ -71,16 +71,16 @@ msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "2.82"
+msgid "2.83"
 msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "http://snomed.info/sct/11010000107/version/20260321"
+msgid "http://snomed.info/sct/11010000107/version/20261021"
 msgstr ""
 
 # ValueSet.compose.include.filter.value
 #: ValueSet.compose.include.filter.value
-msgid "<< 521371010000101 |Mean cell hemoglobin concentration (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
+msgid "<< 521371010000101 |Entitic mass concentration of hemoglobin in erythrocyte at point in time (observable entity)| : << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|"
 msgstr ""
 

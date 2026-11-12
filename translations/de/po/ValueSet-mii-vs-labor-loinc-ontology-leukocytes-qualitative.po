@@ -51,7 +51,7 @@ msgstr ""
 
 # ValueSet.description
 #: ValueSet.description
-msgid "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte leukocytes (Ordinal or Nominal scale, OR Presence property. Presence/absence, +/-, dipstick-style results.). Candidate pool = << 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)| against the LOINC Ontology 2026-03-21. 29 concepts (28 with LOINC). Classification of the pool by Scale type and Property; the rule is stated above."
+msgid "Proposal: use-case ValueSet 'Qualitative (ordinal / nominal / presence)' for the analyte leukocytes (Ordinal or Nominal scale, OR Presence/Threshold property. Presence/absence, +/-, dipstick-style results.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` against the LOINC Ontology 2026-10-21. 34 concepts (33 with LOINC, enumerated at LOINC 2.83). Classification of the pool by Scale type and Property; the rule is stated above."
 msgstr ""
 
 # Coding.display
@@ -71,12 +71,12 @@ msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "2.82"
+msgid "2.83"
 msgstr ""
 
 # ValueSet.compose.include.version
 #: ValueSet.compose.include.version
-msgid "http://snomed.info/sct/11010000107/version/20260321"
+msgid "http://snomed.info/sct/11010000107/version/20261021"
 msgstr ""
 
 # ValueSet.compose.include.concept.display
