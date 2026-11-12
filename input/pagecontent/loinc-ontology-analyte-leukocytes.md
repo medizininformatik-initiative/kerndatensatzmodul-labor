@@ -1,48 +1,47 @@
-This page is the review material for the analyte **leukocytes** of the [LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.html).
+This page is the review material for the analyte **leukocytes** of the [LOINC Ontology proposal](loinc-ontology-valuesets.html): the candidate pool as the LOINC Ontology 2026-10-21 defines it, and for every clinical test (Laborparameter) of the analyte which pool concepts the rule selects, which it leaves out and on which attribute. The method is explained under [How the ValueSets are built](loinc-ontology-method.html).
 
 Candidate pool: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 52501007 |Leukocyte (cell)|` (161 concepts, 158 with a LOINC code). Use-case ValueSets: [Complete](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-complete.html), [Quantitative](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-quantitative.html), [Convertible](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-convertible.html), [Qualitative](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-qualitative.html), [Semi-quantitative](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-semiquantitative.html).
 
 ### Leukocyte count in blood
 
-ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html), profile [mii-pr-labor-loinc-ontology-leukocytes-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html). The rule selects 11 of the 161 pool concepts.
+ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs-labor-loinc-ontology-leukocytes-count-standard.html), profile [mii-pr-labor-loinc-ontology-leukocytes-count-standard](StructureDefinition-mii-pr-labor-loinc-ontology-leukocytes-count-standard.html). The rule selects 9 of the 161 pool concepts.
 
 | Attribute | Value |
 |---|---|
 | Component | Leukocyte |
-| Direct site | `<< Blood specimen` |
+| Direct site | `<< Blood specimen minus (<< Cord blood specimen or << Fetal blood specimen or << Dried blood spot specimen)` |
 | Property | `<< Number concentration` |
 | Scale type | `<< Quantitative value` |
 
-#### Included (11)
+#### Included (9)
 
-| LOINC | Name | Direct site | Property | Scale type | Technique |
+| LOINC | LOINC name | Direct site | Property | Scale type | Technique |
 |---|---|---|---|---|---|
 | 12227-5 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood | Blood specimen | Number concentration | Quantitative value | – |
 | 33256-9 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood by Automated count | Blood specimen | Number concentration | Quantitative value | Automated count technique |
-| 66768-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood | Cord blood specimen | Number concentration | Quantitative value | – |
 | 26464-8 | Leukocytes [#/volume] in Blood | Blood specimen | Number concentration | Quantitative value | – |
 | 6690-2 | Leukocytes [#/volume] in Blood by Automated count | Blood specimen | Number concentration | Quantitative value | Automated count technique |
 | 49498-9 | Leukocytes [#/volume] in Blood by Estimate | Blood specimen | Number concentration | Quantitative value | – |
 | 804-5 | Leukocytes [#/volume] in Blood by Manual count | Blood specimen | Number concentration | Quantitative value | Manual count technique |
-| 47281-1 | Leukocytes [#/volume] in Cord blood | Cord blood specimen | Number concentration | Quantitative value | – |
 | 30406-3 | Leukocytes other [#/volume] in Blood | Blood specimen | Number concentration | Quantitative value | – |
 | 51383-8 | Leukocytes other [#/volume] in Blood by Automated count | Blood specimen | Number concentration | Quantitative value | Automated count technique |
 | 729-4 | Leukocytes other [#/volume] in Blood by Manual count | Blood specimen | Number concentration | Quantitative value | Manual count technique |
 
-* **Specimens among the included codes**: Blood specimen (9), Cord blood specimen (2)
+* **Specimens among the included codes**: Blood specimen (9)
 * **Techniques among the included codes**: Automated count technique (3), Manual count technique (2)
 
-#### Excluded from the pool (150)
+#### Excluded from the pool (152)
 
-**Excluded because Direct site does not match (75)**
+**Excluded because Direct site does not match (77)**
 
-| LOINC | Name | Direct site |
+| LOINC | LOINC name | Direct site |
 |---|---|---|
 | 63555-7 | Leukocytes [#/volume] by Microscopy high power field in Urine sediment collected for unspecified duration | Urine sediment specimen |
 | 61182-2 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood from Fetus | – |
 | 48052-5 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Body fluid | Body fluid specimen |
 | 55784-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Bone marrow | Bone marrow specimen |
 | 48034-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cerebrospinal Fluid | Cerebrospinal fluid specimen |
+| 66768-3 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Cord blood | Cord blood specimen |
 | 70126-8 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Pleural fluid | Pleural fluid specimen |
 | 100849-9 | Leukocytes [#/volume] in Amniotic fluid by Manual count | Amniotic fluid specimen |
 | 33765-9 | Leukocytes [#/volume] in Blood Product unit.platelet pheresis by Automated count | – |
@@ -64,6 +63,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 | 46090-7 | Leukocytes [#/volume] in Cerebrospinal Fluid --4th tube | Cerebrospinal fluid specimen |
 | 805-2 | Leukocytes [#/volume] in Cerebrospinal Fluid by Automated count | Cerebrospinal fluid specimen |
 | 806-0 | Leukocytes [#/volume] in Cerebrospinal Fluid by Manual count | Cerebrospinal fluid specimen |
+| 47281-1 | Leukocytes [#/volume] in Cord blood | Cord blood specimen |
 | 53518-7 | Leukocytes [#/volume] in Dialysis fluid | Dialysate specimen |
 | 68368-0 | Leukocytes [#/volume] in Dialysis fluid by Automated count | Dialysate specimen |
 | 57847-6 | Leukocytes [#/volume] in Dialysis fluid by Manual count | Dialysate specimen |
@@ -118,7 +118,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 
 **Excluded because Direct site, Property and Scale type do not match (38)**
 
-| LOINC | Name | Direct site | Property | Scale type |
+| LOINC | LOINC name | Direct site | Property | Scale type |
 |---|---|---|---|---|
 | SCT 375911000119106 | Differential count of white blood cells by automated method | – | – | – |
 | SCT 376201000119106 | Differential count of white blood cells by manual method | – | – | – |
@@ -167,7 +167,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 
 **Excluded because Direct site and Property do not match (32)**
 
-| LOINC | Name | Direct site | Property |
+| LOINC | LOINC name | Direct site | Property |
 |---|---|---|---|
 | 99929-2 | Leukocytes [#/area] in Body fluid by Automated count | Body fluid specimen | Number areic |
 | 96712-5 | Leukocytes [#/area] in Body fluid by Light microscopy | Body fluid specimen | Number areic |
@@ -204,7 +204,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 
 **Excluded because Property does not match (3)**
 
-| LOINC | Name | Property |
+| LOINC | LOINC name | Property |
 |---|---|---|
 | 26471-3 | Leukocytes other/Leukocytes in Blood | Number fraction |
 | 40646-2 | Leukocytes other/Leukocytes in Blood by Automated count | Number fraction |
@@ -212,16 +212,16 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-count-standard](ValueSet-mii-vs
 
 **Excluded because Direct site and Scale type do not match (2)**
 
-| LOINC | Name | Direct site | Scale type |
+| LOINC | LOINC name | Direct site | Scale type |
 |---|---|---|---|
 | 58805-3 | Leukocytes [#/volume] in Urine by Automated test strip | Urine specimen | Semi-quantitative value |
 | 20408-1 | Leukocytes [#/volume] in Urine by Test strip | Urine specimen | Semi-quantitative value |
 
 #### Discussion
 
-* **"Leukocytes other" is in and should not be.** 30406-3, 51383-8 and 729-4 count the *other* cells of a differential, not the total leukocyte count, yet the LOINC Ontology models their Component as Leukocyte. They need an explicit exclusion or a change request for a more specific Component.
-* **Corrected counts are in.** 12227-5, 33256-9 and 66768-3 (corrected for nucleated erythrocytes) are the same measurement after correction; keeping them in the routine test is defensible, pooling them with uncorrected values is a data-user decision.
-* **Cord blood** (47281-1, 66768-3) is in.
+* **"Leukocytes other" is in and should not be.** 30406-3, 51383-8 and 729-4 count the *other* cells of a differential, not the total leukocyte count, yet the LOINC Ontology models their Component as Leukocyte. No attribute separates them; they need an explicit exclusion list or a change request for a more specific Component.
+* **Corrected counts are in.** 12227-5 and 33256-9 (corrected for nucleated erythrocytes) are the same measurement after correction; keeping them in the routine test is defensible, pooling them with uncorrected values is a data-user decision.
+* **Cord blood** (47281-1, 66768-3) is out via the blood block.
 * **Fetal blood** (61182-2) has no Direct site in this release.
 
 ### WBC differential (panel)
@@ -235,7 +235,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 
 #### Included (2)
 
-| LOINC | Name | Direct site | Property | Scale type | Technique |
+| LOINC | LOINC name | Direct site | Property | Scale type | Technique |
 |---|---|---|---|---|---|
 | SCT 375911000119106 | Differential count of white blood cells by automated method | – | – | – | Automated count technique |
 | SCT 376201000119106 | Differential count of white blood cells by manual method | – | – | – | Manual count technique |
@@ -247,7 +247,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 
 **Excluded because the concept has a Property (159)**
 
-| LOINC | Name | Property |
+| LOINC | LOINC name | Property |
 |---|---|---|
 | 99929-2 | Leukocytes [#/area] in Body fluid by Automated count | Number areic |
 | 96712-5 | Leukocytes [#/area] in Body fluid by Light microscopy | Number areic |
@@ -418,7 +418,7 @@ ValueSet [mii-vs-labor-loinc-ontology-leukocytes-differential-panel](ValueSet-mi
 
 One row per pool concept with the attributes the classification uses; the bucket is the use-case ValueSet the concept lands in.
 
-| LOINC | Name | Property | Scale type | Direct site | Bucket | Reason |
+| LOINC | LOINC name | Property | Scale type | Direct site | Bucket | Reason |
 |---|---|---|---|---|---|---|
 | 63555-7 | Leukocytes [#/volume] by Microscopy high power field in Urine sediment collected for unspecified duration | Number concentration | Quantitative value | Urine sediment specimen | Convertible | Quantitative scale + concentration property |
 | 12227-5 | Leukocytes [#/volume] corrected for nucleated erythrocytes in Blood | Number concentration | Quantitative value | Blood specimen | Convertible | Quantitative scale + concentration property |
@@ -581,3 +581,16 @@ One row per pool concept with the attributes the classification uses; the bucket
 | 20408-1 | Leukocytes [#/volume] in Urine by Test strip | Number concentration | Semi-quantitative value | Urine specimen | Semi-quantitative | Semi-quantitative scale (test strip) |
 | SCT 375911000119106 | Differential count of white blood cells by automated method | – | – | – | Panel / order | no Property attribute → order/panel code |
 | SCT 376201000119106 | Differential count of white blood cells by manual method | – | – | – | Panel / order | no Property attribute → order/panel code |
+
+### LOINC terms of the analyte outside the pool
+
+Recall check against LOINC 2.83 itself: 115 laboratory terms match the analyte's LOINC pattern (Component ~ ^Leukocytes$); 109 of them are in the pool, 6 are not. A term is outside the pool when the LOINC Ontology models it with another Component, or not at all. Each of these is either a modelling difference to accept or a change request to the LOINC Ontology.
+
+| LOINC | LOINC name | Property | System |
+|---|---|---|---|
+| 11156-7 | Leukocytes [Morphology] in Blood | Morph | Bld |
+| 11157-5 | Leukocytes [Morphology] in Bone marrow | Morph | Bone mar |
+| 60433-0 | Leukocytes by Light microscopy in Urine sediment collected for unspecified duration | NRat | Urine sed |
+| 18407-7 | Leukocytes in 12 hour Urine sediment by Light microscopy | NRat | Urine sed |
+| 63554-0 | Leukocytes in 24 hour Urine sediment by Microscopy | NRat | Urine sed |
+| 59829-2 | Leukocytes in 3 hour Urine sediment by Light microscopy | NRat | Urine sed |

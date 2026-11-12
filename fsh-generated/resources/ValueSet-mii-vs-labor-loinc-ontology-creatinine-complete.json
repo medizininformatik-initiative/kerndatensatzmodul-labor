@@ -1,0 +1,836 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_Labor_LOINC_Ontology_Creatinine_Complete",
+  "id": "mii-vs-labor-loinc-ontology-creatinine-complete",
+  "title": "MII VS Labor LOINC Ontology Creatinine Complete",
+  "description": "Proposal: use-case ValueSet 'Complete aggregation' for the analyte creatinine (Everything mapped to the component: any Scale type, any Property, any specimen. Defines the candidate pool = upper bound. Includes the generic 'Measurement of X' grouper concepts.). Candidate pool = `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|` against the LOINC Ontology 2026-10-21. 210 concepts (210 with LOINC, enumerated at LOINC 2.83). The pool ECL is carried as an intensional include.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-loinc-ontology-creatinine-complete",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ],
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+        "extension": [
+          {
+            "url": "packageId",
+            "valueId": "de.medizininformatikinitiative.kerndatensatz.laborbefund"
+          },
+          {
+            "url": "version",
+            "valueString": "2027.0.0-ci"
+          },
+          {
+            "url": "uri",
+            "valueUri": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "2027.0.0-ci",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "semver",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "SemVer"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "package",
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C36292",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C25294",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "pw@gefyra.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    }
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license.",
+  "experimental": true,
+  "date": "2026-11-12",
+  "purpose": "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.83",
+        "concept": [
+          {
+            "code": "44716-9"
+          },
+          {
+            "code": "16285-9"
+          },
+          {
+            "code": "31045-8"
+          },
+          {
+            "code": "109874-8"
+          },
+          {
+            "code": "110903-2"
+          },
+          {
+            "code": "110902-4"
+          },
+          {
+            "code": "110658-2"
+          },
+          {
+            "code": "108024-1"
+          },
+          {
+            "code": "32543-1"
+          },
+          {
+            "code": "2159-2"
+          },
+          {
+            "code": "21232-4"
+          },
+          {
+            "code": "38483-4"
+          },
+          {
+            "code": "12190-5"
+          },
+          {
+            "code": "14398-2"
+          },
+          {
+            "code": "5919-6"
+          },
+          {
+            "code": "96590-5"
+          },
+          {
+            "code": "14402-2"
+          },
+          {
+            "code": "49004-5"
+          },
+          {
+            "code": "12576-5"
+          },
+          {
+            "code": "12574-0"
+          },
+          {
+            "code": "12572-4"
+          },
+          {
+            "code": "12577-3"
+          },
+          {
+            "code": "12578-1"
+          },
+          {
+            "code": "12573-2"
+          },
+          {
+            "code": "12579-9"
+          },
+          {
+            "code": "12580-7"
+          },
+          {
+            "code": "12581-5"
+          },
+          {
+            "code": "12582-3"
+          },
+          {
+            "code": "12583-1"
+          },
+          {
+            "code": "12575-7"
+          },
+          {
+            "code": "57345-1"
+          },
+          {
+            "code": "57726-2"
+          },
+          {
+            "code": "12191-3"
+          },
+          {
+            "code": "12193-9"
+          },
+          {
+            "code": "48626-6"
+          },
+          {
+            "code": "48630-8"
+          },
+          {
+            "code": "12194-7"
+          },
+          {
+            "code": "12192-1"
+          },
+          {
+            "code": "14399-0"
+          },
+          {
+            "code": "2160-0"
+          },
+          {
+            "code": "40251-1"
+          },
+          {
+            "code": "39956-8"
+          },
+          {
+            "code": "39970-9"
+          },
+          {
+            "code": "39971-7"
+          },
+          {
+            "code": "39972-5"
+          },
+          {
+            "code": "39973-3"
+          },
+          {
+            "code": "40258-6"
+          },
+          {
+            "code": "93999-1"
+          },
+          {
+            "code": "40250-3"
+          },
+          {
+            "code": "39957-6"
+          },
+          {
+            "code": "40253-7"
+          },
+          {
+            "code": "40254-5"
+          },
+          {
+            "code": "39974-1"
+          },
+          {
+            "code": "94008-0"
+          },
+          {
+            "code": "40252-9"
+          },
+          {
+            "code": "16188-5"
+          },
+          {
+            "code": "39961-8"
+          },
+          {
+            "code": "39962-6"
+          },
+          {
+            "code": "40249-5"
+          },
+          {
+            "code": "39959-2"
+          },
+          {
+            "code": "40255-2"
+          },
+          {
+            "code": "39964-2"
+          },
+          {
+            "code": "39960-0"
+          },
+          {
+            "code": "39958-4"
+          },
+          {
+            "code": "39975-8"
+          },
+          {
+            "code": "39963-4"
+          },
+          {
+            "code": "39965-9"
+          },
+          {
+            "code": "39966-7"
+          },
+          {
+            "code": "40256-0"
+          },
+          {
+            "code": "39967-5"
+          },
+          {
+            "code": "40257-8"
+          },
+          {
+            "code": "39976-6"
+          },
+          {
+            "code": "39968-3"
+          },
+          {
+            "code": "39969-1"
+          },
+          {
+            "code": "40248-7"
+          },
+          {
+            "code": "72271-0"
+          },
+          {
+            "code": "16189-3"
+          },
+          {
+            "code": "11041-1"
+          },
+          {
+            "code": "39955-0"
+          },
+          {
+            "code": "11042-9"
+          },
+          {
+            "code": "44784-7"
+          },
+          {
+            "code": "14401-4"
+          },
+          {
+            "code": "35674-1"
+          },
+          {
+            "code": "2161-8"
+          },
+          {
+            "code": "39985-7"
+          },
+          {
+            "code": "39979-0"
+          },
+          {
+            "code": "39996-4"
+          },
+          {
+            "code": "39984-0"
+          },
+          {
+            "code": "39980-8"
+          },
+          {
+            "code": "47257-1"
+          },
+          {
+            "code": "39978-2"
+          },
+          {
+            "code": "39987-3"
+          },
+          {
+            "code": "39986-5"
+          },
+          {
+            "code": "58951-5"
+          },
+          {
+            "code": "47256-3"
+          },
+          {
+            "code": "39989-9"
+          },
+          {
+            "code": "39983-2"
+          },
+          {
+            "code": "39981-6"
+          },
+          {
+            "code": "39988-1"
+          },
+          {
+            "code": "47258-9"
+          },
+          {
+            "code": "39991-5"
+          },
+          {
+            "code": "39990-7"
+          },
+          {
+            "code": "47259-7"
+          },
+          {
+            "code": "39993-1"
+          },
+          {
+            "code": "39992-3"
+          },
+          {
+            "code": "47273-8"
+          },
+          {
+            "code": "39994-9"
+          },
+          {
+            "code": "47261-3"
+          },
+          {
+            "code": "39995-6"
+          },
+          {
+            "code": "39982-4"
+          },
+          {
+            "code": "39977-4"
+          },
+          {
+            "code": "57346-9"
+          },
+          {
+            "code": "57344-4"
+          },
+          {
+            "code": "20624-3"
+          },
+          {
+            "code": "1452-2"
+          },
+          {
+            "code": "1455-5"
+          },
+          {
+            "code": "1453-0"
+          },
+          {
+            "code": "1454-8"
+          },
+          {
+            "code": "1456-3"
+          },
+          {
+            "code": "1459-7"
+          },
+          {
+            "code": "1457-1"
+          },
+          {
+            "code": "1458-9"
+          },
+          {
+            "code": "94844-8"
+          },
+          {
+            "code": "12584-9"
+          },
+          {
+            "code": "35242-7"
+          },
+          {
+            "code": "35203-9"
+          },
+          {
+            "code": "35204-7"
+          },
+          {
+            "code": "35251-8"
+          },
+          {
+            "code": "15050-8"
+          },
+          {
+            "code": "59826-8"
+          },
+          {
+            "code": "25386-4"
+          },
+          {
+            "code": "15051-6"
+          },
+          {
+            "code": "97777-7"
+          },
+          {
+            "code": "46086-5"
+          },
+          {
+            "code": "46219-2"
+          },
+          {
+            "code": "46220-0"
+          },
+          {
+            "code": "39472-6"
+          },
+          {
+            "code": "14681-1"
+          },
+          {
+            "code": "78532-9"
+          },
+          {
+            "code": "78533-7"
+          },
+          {
+            "code": "79263-0"
+          },
+          {
+            "code": "39471-8"
+          },
+          {
+            "code": "39474-2"
+          },
+          {
+            "code": "77140-2"
+          },
+          {
+            "code": "54375-1"
+          },
+          {
+            "code": "14682-9"
+          },
+          {
+            "code": "40267-7"
+          },
+          {
+            "code": "40113-3"
+          },
+          {
+            "code": "40122-4"
+          },
+          {
+            "code": "40123-2"
+          },
+          {
+            "code": "40124-0"
+          },
+          {
+            "code": "40125-7"
+          },
+          {
+            "code": "40273-5"
+          },
+          {
+            "code": "40266-9"
+          },
+          {
+            "code": "40114-1"
+          },
+          {
+            "code": "40269-3"
+          },
+          {
+            "code": "40126-5"
+          },
+          {
+            "code": "40268-5"
+          },
+          {
+            "code": "40118-2"
+          },
+          {
+            "code": "40265-1"
+          },
+          {
+            "code": "40116-6"
+          },
+          {
+            "code": "40270-1"
+          },
+          {
+            "code": "40117-4"
+          },
+          {
+            "code": "40115-8"
+          },
+          {
+            "code": "40127-3"
+          },
+          {
+            "code": "40119-0"
+          },
+          {
+            "code": "40271-9"
+          },
+          {
+            "code": "40272-7"
+          },
+          {
+            "code": "40128-1"
+          },
+          {
+            "code": "40120-8"
+          },
+          {
+            "code": "40121-6"
+          },
+          {
+            "code": "40264-4"
+          },
+          {
+            "code": "103616-9"
+          },
+          {
+            "code": "62425-4"
+          },
+          {
+            "code": "51620-3"
+          },
+          {
+            "code": "40112-5"
+          },
+          {
+            "code": "51619-5"
+          },
+          {
+            "code": "22726-4"
+          },
+          {
+            "code": "47610-1"
+          },
+          {
+            "code": "55593-8"
+          },
+          {
+            "code": "14683-7"
+          },
+          {
+            "code": "40136-4"
+          },
+          {
+            "code": "40130-7"
+          },
+          {
+            "code": "40147-1"
+          },
+          {
+            "code": "40135-6"
+          },
+          {
+            "code": "40131-5"
+          },
+          {
+            "code": "40138-0"
+          },
+          {
+            "code": "40137-2"
+          },
+          {
+            "code": "40140-6"
+          },
+          {
+            "code": "40134-9"
+          },
+          {
+            "code": "40132-3"
+          },
+          {
+            "code": "40139-8"
+          },
+          {
+            "code": "40142-2"
+          },
+          {
+            "code": "40141-4"
+          },
+          {
+            "code": "40144-8"
+          },
+          {
+            "code": "40143-0"
+          },
+          {
+            "code": "40145-5"
+          },
+          {
+            "code": "40146-3"
+          },
+          {
+            "code": "40133-1"
+          },
+          {
+            "code": "112592-1"
+          },
+          {
+            "code": "40129-9"
+          },
+          {
+            "code": "53499-0"
+          },
+          {
+            "code": "25886-3"
+          },
+          {
+            "code": "93735-9"
+          },
+          {
+            "code": "39473-4"
+          },
+          {
+            "code": "101475-2"
+          },
+          {
+            "code": "75363-2"
+          },
+          {
+            "code": "112593-9"
+          },
+          {
+            "code": "30004-6"
+          },
+          {
+            "code": "30002-0"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/11010000107/version/20261021",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 15373003 |Creatinine (substance)|"
+          }
+        ]
+      }
+    ]
+  }
+}

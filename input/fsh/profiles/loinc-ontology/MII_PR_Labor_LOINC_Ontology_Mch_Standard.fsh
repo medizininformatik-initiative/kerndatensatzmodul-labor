@@ -10,8 +10,8 @@ Description: "Proposal: Observation profile for the clinical test 'Mean cell hem
 * insert SnomedLicense
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-10"
+* ^date = "2026-11-12"
 * code from MII_VS_Labor_LOINC_Ontology_Mch_Standard (required)
-* code ^binding.description = "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = << 38082009 |Hemoglobin (substance)|, << 370130000 |Property (attribute)| = << 118535001 |Entitic mass (property) (qualifier value)|, << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`"
+* code ^binding.description = "LOINC codes of the clinical test, computed by ECL over the LOINC Ontology 2026-10-21: `<< 363787002 |Observable entity (observable entity)| : << 246093002 |Component (attribute)| = 38082009 |Hemoglobin (substance)|, << 704327008 |Direct site (attribute)| = << 119351004 |Erythrocyte specimen (specimen)|, << 370130000 |Property (attribute)| = (<< 118535001 |Entitic mass (property) (qualifier value)| OR << 118532003 |Entitic substance amount (property) (qualifier value)|), << 370132008 |Scale type (attribute)| = << 30766002 |Quantitative value (qualifier value)|`"
 * value[x] only Quantity
-* valueQuantity ^comment = "Expected UCUM unit: pg"
+* valueQuantity ^comment = "Expected UCUM unit: pg or fmol"

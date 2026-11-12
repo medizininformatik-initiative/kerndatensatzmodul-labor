@@ -18,7 +18,7 @@ Description: "Proposal: use-case ValueSet 'Quantitative (all numeric)' for the a
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-10"
+* ^date = "2026-11-12"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
 // Analyte nitrite_urine, bucket quantitative: LOINC enumeration (5 codes, LOINC 2.83) resolved from the ECL below
 * $loinc-ontology-loinc#18370-7

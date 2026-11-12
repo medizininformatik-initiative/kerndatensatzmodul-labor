@@ -11,20 +11,20 @@ Die LOINC Ontology macht die Regel selbst zum Artefakt. Jeder LOINC-Laborterm is
 | Seite | Inhalt | Für wen |
 |---|---|---|
 | [Wie die ValueSets gebaut werden](loinc-ontology-method.html) | Das Attributmodell der LOINC Ontology, der Aufbau einer ECL-Regel, die drei Teile jedes ValueSets, Expansion und Versionierung | Implementierende, Terminologen |
-| [ValueSets je klinischem Test](loinc-ontology-clinical-tests.html) | 18 ValueSets, eines je klinisch unterscheidbarem Test, jedes mit abgeleitetem Observation-Profil und der Regel in Attributspalten zerlegt | Implementierende, die einen lokalen Katalog mappen; Validierung |
-| [Use-Case-ValueSets je Analyt](loinc-ontology-use-cases.html) | 56 ValueSets über 14 Analyte, abgestuft danach, was ein Datennutzer zusammenfassen darf: alles, numerisch, einheitenkonvertierbar, qualitativ, semiquantitativ | Forschende, Datenintegrationszentren |
+| [ValueSets je Laborparameter](loinc-ontology-clinical-tests.html) | 23 ValueSets, eines je klinisch unterscheidbarem Laborparameter, jedes mit abgeleitetem Observation-Profil und der Regel in Attributspalten zerlegt | Implementierende, die einen lokalen Katalog mappen; Validierung |
+| [Use-Case-ValueSets je Analyt](loinc-ontology-use-cases.html) | 61 ValueSets über 17 Analyte, abgestuft danach, was ein Datennutzer zusammenfassen darf: alles, numerisch, einheitenkonvertierbar, qualitativ, semiquantitativ | Forschende, Datenintegrationszentren |
 
 Eine ausgearbeitete Beispielinstanz, [Laborergebnis: Hämoglobin (LOINC-Ontology-Profil)](Observation-mii-exa-labor-loinc-ontology-hemoglobin.html), zeigt ein Ergebnis, das einem der abgeleiteten Profile entspricht.
 
 ### Auf einen Blick
 
 * Verwendetes Release: **LOINC Ontology 2026-10-21** (`http://snomed.info/sct/11010000107/version/20261021`); LOINC-Aufzählungen gepinnt auf **LOINC 2.83**, das LOINC-Release, auf dem die LOINC Ontology aufbaut. Der eigene LOINC-Pin des Moduls ist 2.83.
-* Jedes ValueSet trägt die LOINC-Aufzählung, die Observables der LOINC Ontology ohne LOINC-Code und die Regel selbst als intensionales SNOMED-CT-Include.
+* Jedes ValueSet trägt die LOINC-Aufzählung, die Observables der LOINC Ontology ohne LOINC-Code und die Regel selbst als intensionales SNOMED-CT-Include. Wo das Release einen LOINC-Code nicht modelliert, der zu einem Parameter gehört (eine Ontologie-Lücke), ist der Code von Hand ergänzt, als solcher markiert und an die Pflege der LOINC Ontology gemeldet.
 * Alle Artefakte sind `draft` und `experimental`. Ihre kanonischen URLs folgen dem Modulmuster und wären stabil, falls das Modul sie übernimmt.
 * Generator, Regelwerk und Review-Tabellen je Konzept: [loincsnomed-lab-concepts](https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts).
 
 ### Was ein Reviewer beurteilen soll
 
 1. Ist eine berechnete, regelbasierte Definition der richtige Weg für das Modul, festzulegen, welche LOINC-Codes zu einem Test gehören?
-2. Sind die zwei Ebenen, klinischer Test und Use Case, die richtige Granularität für Implementierende und für Datennutzer?
+2. Sind die zwei Ebenen, Laborparameter und Use Case, die richtige Granularität für Implementierende und für Datennutzer?
 3. Welche der Pool-Definitionen und Stufenentscheidungen auf den folgenden Seiten sollte das Modul anders treffen? Jede Entscheidung ist als Regel sichtbar und wird durch Ändern dieser Regel geändert.

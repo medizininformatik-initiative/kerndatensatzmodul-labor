@@ -1,4 +1,4 @@
-Diese Seite ist das Review-Material für den Analyten **mcv** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden klinischen Test des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
+Diese Seite ist das Review-Material für den Analyten **mcv** des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html): der Kandidatenpool, wie ihn die LOINC Ontology 2026-10-21 definiert, und für jeden Laborparameter des Analyten, welche Poolkonzepte die Regel auswählt, welche sie auslässt und an welchem Attribut. Die Methode ist unter [Wie die ValueSets gebaut werden](loinc-ontology-method.html) erklärt.
 
 Kandidatenpool: `<< 525321010000100 |Mean cell volume (observable entity)|` (2 Konzepte, 2 mit LOINC-Code). Use-Case-ValueSets: [Vollständig](ValueSet-mii-vs-labor-loinc-ontology-mcv-complete.html), [Quantitativ](ValueSet-mii-vs-labor-loinc-ontology-mcv-quantitative.html).
 
@@ -8,12 +8,12 @@ ValueSet [mii-vs-labor-loinc-ontology-mcv-standard](ValueSet-mii-vs-labor-loinc-
 
 | Attribut | Wert |
 |---|---|
-| Component | `<< Mean cell volume [observable]` |
+| Component | `<< Entitic mean volume of erythrocyte specimen at point in time [observable]` |
 | Scale type | `<< Quantitative value` |
 
 #### Enthalten (2)
 
-| LOINC | Name | Direct site | Property | Scale type | Technique |
+| LOINC | LOINC-Name | Direct site | Property | Scale type | Technique |
 |---|---|---|---|---|---|
 | 30428-7 | MCV [Entitic mean volume] in Red Blood Cells | – | Entitic mean volume | Quantitative value | – |
 | 787-2 | MCV [Entitic mean volume] in Red Blood Cells by Automated count | – | Entitic mean volume | Quantitative value | Automated count technique |
@@ -25,13 +25,17 @@ ValueSet [mii-vs-labor-loinc-ontology-mcv-standard](ValueSet-mii-vs-labor-loinc-
 
 #### Diskussion
 
-* **Eigenes Observable-Konzept.** MCV hat in der LOINC Ontology keine Zerlegung in Component; die Regel wählt das Konzept und seine Subtypen. Zwei Codes, nichts ausgeschlossen. Eine Technique-Einschränkung wäre die einzige mögliche Verfeinerung.
+* **Eigenes Observable-Konzept.** MCV hat in der LOINC Ontology keine Component-Zerlegung; die Regel selektiert das Konzept und seine Subtypen. Zwei Codes (787-2 automatisiert, 30428-7), nichts ausgeschlossen. Eine Technique-Einschränkung wäre die einzige mögliche Verfeinerung.
 
 ### Der Pool und seine Use-Case-Gruppen
 
 Eine Zeile je Poolkonzept mit den Attributen, die die Klassifikation nutzt; die Gruppe ist das Use-Case-ValueSet, in dem das Konzept landet.
 
-| LOINC | Name | Property | Scale type | Direct site | Gruppe | Begründung |
+| LOINC | LOINC-Name | Property | Scale type | Direct site | Gruppe | Begründung |
 |---|---|---|---|---|---|---|
 | 30428-7 | MCV [Entitic mean volume] in Red Blood Cells | Entitic mean volume | Quantitative value | – | Quantitativ | Quantitative Skala |
 | 787-2 | MCV [Entitic mean volume] in Red Blood Cells by Automated count | Entitic mean volume | Quantitative value | – | Quantitativ | Quantitative Skala |
+
+### LOINC-Terme des Analyten außerhalb des Pools
+
+Recall-Prüfung gegen LOINC 2.83 selbst: alle 2 Laborterme, die auf das LOINC-Muster des Analyten passen (Property ~ ^EntMeanVol$; System ~ ^RBC$), liegen im Pool.

@@ -18,7 +18,7 @@ Description: "Proposal: use-case ValueSet 'Quantitative & convertible' for the a
 * insert CRMIArtifactContributors
 * ^status = #draft
 * ^experimental = true
-* ^date = "2026-11-10"
+* ^date = "2026-11-12"
 * ^purpose = "Guidance for use-case-driven aggregation of laboratory results in secondary use; accompanies ballot comments on 2027.0.0-ballot. Generated, not hand-curated."
 // Analyte erythrocytes, bucket quantitative_convertible: LOINC enumeration (52 codes, LOINC 2.83) resolved from the ECL below
 * $loinc-ontology-loinc#30390-9
