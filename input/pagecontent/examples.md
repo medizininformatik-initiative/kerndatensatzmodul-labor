@@ -5,3 +5,4 @@
 - [Laboratory result: creatinine in spot urine without a value (Data Absent Reason)](Observation-mii-exa-labor-laborwert-data-absent-reason.html)
 - [Laboratory result: epithelial cells in urine sediment (range)](Observation-mii-exa-labor-laborwert-range.html)
 - [Laboratory result: albumin in 24-hour urine](Observation-mii-exa-labor-laborwert-ratio.html)
+- [Laboratory result: hemoglobin (LOINC Ontology profile, proposal)](Observation-mii-exa-labor-loinc-ontology-hemoglobin.html)

@@ -1,0 +1,78 @@
+Diese Seite erklärt, wie jedes ValueSet des [LOINC-Ontology-Vorschlags](loinc-ontology-valuesets.html) konstruiert ist, damit eine Leserin eine Regel prüfen, ein ValueSet auf einem Terminologieserver expandieren und die Artefakte für ein neues Release neu erzeugen kann.
+
+### Die LOINC Ontology in einem Absatz
+
+Die [LOINC Ontology](https://loincsnomed.org) wird gemeinsam vom Regenstrief Institute und SNOMED International veröffentlicht. Sie bildet LOINC-Laborterme als SNOMED-CT-Konzepte in einem Extension-Modul ab (Modul-ID `11010000107`), eingehängt unter *Observable entity*. Jedes Konzept trägt seinen LOINC-Code als alternativen Identifikator und ist mit denselben Attributen modelliert, aus denen ein LOINC-Term besteht. Weil die Konzepte in SNOMED CT liegen, kann die SNOMED Expression Constraint Language (ECL) sie über Attributwerte selektieren, einschließlich der Subtyp-Hierarchien des Werts.
+
+| Attribut | SNOMED-CT-Attribut | LOINC-Part | Beispiel für `718-7` Hemoglobin [Mass/volume] in Blood |
+|---|---|---|---|
+| Component | `246093002` | Component | Hemoglobin (substance) |
+| Property | `370130000` | Property | Mass concentration |
+| Scale type | `370132008` | Scale | Quantitative value |
+| Direct site | `704327008` | System | Blood specimen |
+| Technique | `246501002` | Method | (keine) |
+| Time aspect | `370134009` | Time | Single point in time |
+
+### Aufbau einer Regel
+
+Die Regel für den Laborparameter *Hämoglobinkonzentration im Blut* lautet:
+
+```
+<< 363787002 |Observable entity| :
+    246093002 |Component|   = 38082009 |Hemoglobin (substance)|,
+ << 704327008 |Direct site| = (<< 119297000 |Blood specimen|
+                               MINUS (<< 122556008 |Cord blood specimen|
+                                      OR << 737357006 |Fetal blood specimen|
+                                      OR << 440500007 |Dried blood spot specimen|)),
+ << 370130000 |Property|    = (<< 118539007 |Mass concentration|
+                               OR << 118556004 |Substance concentration|
+                               OR << 118569000 |Arbitrary concentration|),
+ << 370132008 |Scale type|  = << 30766002 |Quantitative value|
+```
+
+Zu lesen als: jedes Observable, dessen Component genau Hemoglobin ist, dessen Material Blut oder ein Subtyp von Blut ist (venös, arteriell, kapillär, Serum, Plasma), aber nicht Nabelschnurblut, fetales Blut oder Trockenblut, dessen Property eine der drei Konzentrations-Properties oder ein Subtyp ist und dessen Skala quantitativ ist. `<<` bedeutet „dieses Konzept und alle seine Nachfahren", `<` „nur die Nachfahren"; ohne beides muss der Wert exakt passen. Die Wahl zwischen beidem ist eine sichtbar gemachte klinische Entscheidung: `<< 38082009` würde zusätzlich HbA1c und die Hämoglobin-Varianten einbeziehen, was für einen Hämoglobin-*Pool* gewollt ist, für den Routineparameter Hämoglobin aber nicht.
+
+Dieselbe Regel, zerlegt wie in den Tabellen der folgenden Seiten:
+
+| Attribut | Wert | Lesart |
+|---|---|---|
+| Component | Hemoglobin | genau diese Substanz |
+| Direct site | `<< Blood specimen minus (<< Cord blood specimen or << Fetal blood specimen or << Dried blood spot specimen)` | dieses Material oder ein Subtyp |
+| Property | `<< Mass concentration or << Substance concentration or << Arbitrary concentration` | diese Property oder ein Subtyp |
+| Scale type | `<< Quantitative value` | diese Skala oder ein Subtyp |
+
+### Die gemeinsamen Bausteine
+
+Das klinische Review der ersten Fassung hat zu zwei Bausteinen geführt, die jetzt jeder Routine-Bluttest teilt, damit eine Entscheidung einmal getroffen und überall angewendet wird:
+
+| Baustein | ECL | Entscheidung, die er kodiert |
+|---|---|---|
+| **Blut** (Material) | `<< Blood specimen MINUS (<< Cord blood specimen OR << Fetal blood specimen OR << Dried blood spot specimen)` | Venöses, arterielles, kapilläres und gemischtvenöses Blut, Serum und Plasma sind für einen Laborparameter dasselbe Routinematerial; die Unterschiede bleiben `Observation.specimen` überlassen. Nabelschnurblut ist ein neonataler Wert mit eigenem Referenzbereich und bekommt einen eigenen Test. Fetales Blut und Trockenblut gehören zu Pränatal- und Screening-Programmen, nicht zur Routineversorgung. |
+| **Konzentration** (Property) | `<< Mass concentration OR << Substance concentration OR << Arbitrary concentration` | g/dL-, mmol/L- und U/mL-Codes derselben Messung sind ein Laborparameter; die Einheit ist eine UCUM-Umrechnung, keine Codegrenze. Verhältnisse, Anteile und Raten sind keine Konzentrationen und bleiben draußen. |
+
+Zwei Grenzen der Ontologie zeigen sich an diesen Bausteinen. Observables „in Fetus" tragen in der LOINC Ontology kein Direct site, keine Materialregel kann sie also selektieren oder ausschließen; sie sind schlicht unsichtbar. Und SNOMED CT modelliert Plasma als *azelluläres Blutmaterial* unter Blood specimen, was für die Chemie richtig ist, aber die Plasma-Thrombozytenzählungen der Transfusionsmedizin zulässt; die Thrombozytenregel zieht deshalb `<< Plasma specimen` vom Baustein ab, ein für das klinische Review markierter Punkt.
+
+### Die drei Teile jedes ValueSets
+
+Jedes ValueSet dieses Vorschlags hat dasselbe `compose`:
+
+1. **LOINC-Aufzählung.** Die LOINC-Codes aller Konzepte, die die Regel selektiert, als `include` auf `http://loinc.org` mit der LOINC-Version des Moduls. Diesen Teil kann jeder FHIR-Validator und jeder Terminologieserver heute nutzen.
+2. **Observables ohne LOINC-Code.** Die LOINC Ontology enthält auch Observables, für die noch kein LOINC-Code existiert. Sie sind als SNOMED-CT-Codes aufgeführt, damit das ValueSet vollständig ist und ein Standort sieht, wo ein LOINC-Antrag aussteht.
+3. **Die Regel.** Die ECL als intensionales `include` auf `http://snomed.info/sct` mit `filter.property = constraint`, gepinnt auf das Release `http://snomed.info/sct/11010000107/version/20261021`. Sie dokumentiert, warum die Codes aus Teil 1 enthalten sind, und sie ist der Teil, der sich neu erzeugt.
+
+Teil 1 und 2 sind die Aufzählung von Teil 3 zum genannten Release. Sie sind keine unabhängigen Quellen.
+
+### Expandieren und validieren
+
+* Auf einem Terminologieserver, der das Release der LOINC Ontology hält (etwa Snowstorm mit geladener LOINC-Extension oder der LOINC-Ontology-Browser), expandieren alle drei Teile, und die Expansion entspricht der Aufzählung.
+* Auf einem Server ohne LOINC Ontology, etwa dem öffentlichen HL7-Server, lassen sich die SNOMED-CT-Includes nicht auflösen. Der QA-Report des Builds zeigt das als Warnung für jedes ECL-Include und als Fehler für jeden aufgezählten SNOMED-CT-Code ohne LOINC-Code. Die LOINC-Aufzählung expandiert trotzdem, und die Validierung eines `Observation.code` mit LOINC-Code funktioniert wie gewohnt.
+* Ein Validator, der `Observation.code` gegen ein abgeleitetes Profil prüft, braucht nur die LOINC-Aufzählung.
+* **Die CI des Moduls** validiert über einen Proxy gegen den MII-Terminologieserver (Ontoserver). Seit November 2026 hält dieser Server die LOINC Ontology 2026-10-21, und die ECL-Includes dieses Vorschlags expandieren dort. Drei Klassen von QA-Fehlern bleiben, keine davon ein inhaltlicher Fehler: (1) Der Server weist die Batch-Validierungsanfrage des Publishers zurück, deshalb wird jeder aufgezählte LOINC- und SNOMED-CT-Code einmal gemeldet, auch auf `master`; (2) die Observables der LOINC Ontology ohne LOINC-Code werden gegen die internationale Edition gemeldet; (3) der Publisher prüft jedes ECL-Include, indem er den Server ein Ein-Regel-ValueSet *validieren* lässt, und der Server wertet diese ECL in seiner Standard-Edition aus statt in der Edition, die das Include nennt; jede Regel, die ein Konzept des LOINC-Ontology-Moduls selbst nutzt (*Measurement property*, die Fokuskonzepte MCHC und MCV), wird deshalb als „unknown concept" gemeldet, obwohl dasselbe ValueSet korrekt *expandiert*. Die dritte Klasse ist auf dem öffentlichen Server des Herstellers reproduzierbar und gemeldet. Die Zahlen im QA-Report messen also die Terminologie-Konfiguration; der Build mit dem öffentlichen HL7-Server meldet nur die ersten beiden Klassen.
+
+### Versionen und Neuerzeugung
+
+Die Artefakte sind auf **LOINC Ontology 2026-10-21** gepinnt, ihre LOINC-Aufzählungen auf **LOINC 2.83**, das LOINC-Release, auf dem dieses Ontology-Release aufbaut. Dieser LOINC-Alias liegt neben den ValueSets (`aliases-loinc-ontology.fsh`), nicht in der `aliases.fsh` des Moduls: Das Modul pinnt für seine eigenen ValueSets LOINC 2.83 und erzwingt diese Version im Expansion-Manifest (`force-system-version`); ein IG-Build validiert also jeden LOINC-Code gegen den Pin des Moduls, unabhängig davon, was ein ValueSet deklariert. Die beiden Pins bleiben getrennt, damit ein neues LOINC-Ontology-Release regeneriert werden kann, ohne das Modul anzufassen. Ein Code, den LOINC zwischen beiden Ständen eingeführt oder abgekündigt hat, ist ein Review-Punkt, kein Versagen der Methode. 7 der aufgezählten Codes wurden mit LOINC 2.83 eingeführt und sind unter jedem älteren LOINC-Pin unbekannte Codes: `112592-1` Creatinine [Moles/volume] in Urine by Automated test strip, `112593-9` Creatinine [Mass/volume] in Urine by Automated test strip, `113033-5` Leukocytes [Presence] in Bronchoalveolar lavage, `113044-2` Leukocytes [Presence] in Vaginal fluid, `113052-5` Leukocytes [Presence] in Pleural fluid, `113058-2` Leukocytes [Presence] in Peritoneal fluid by Gram stain, `113077-2` Leukocytes [Presence] in Tissue. Für ein neues Release führt der Generator jede Regel erneut aus, listet die Konzepte, die in jedem ValueSet hinzugekommen oder weggefallen sind, und schreibt diese Seiten neu. Ein Release kann auch die Attribute selbst neu modellieren: Zwischen 2026-03-21 und 2026-10-21 hat die LOINC Ontology über 10.000 Nachweis-Observables von der Property `Presence` (705057003) auf `Threshold (property)` (118589004, ein Subtyp von Measurement property) umgestellt und von „Presence of …" in „Threshold presence of …" umbenannt. Die Nitrit-Regel auf diesem Branch selektiert deshalb `<< 118589004 |Threshold (property)|` statt `<< 705057003 |Presence|`; ihre LOINC-Aufzählung hat sich nicht geändert. Die alte Regel hätte ein leeres ValueSet geliefert, genau die Art von Fehler, die eine Neuerzeugung sichtbar macht. Der Differenzbericht zwischen zwei Releases ist mit dem Generator in [loincsnomed-lab-concepts](https://github.com/medizininformatik-initiative/loincsnomed-lab-concepts) veröffentlicht.
+
+### Die Review-Tabellen lesen
+
+Zu jedem ValueSet veröffentlicht der Generator außerdem eine Tabelle mit einer Zeile je Konzept: LOINC-Code, SCTID, Fully Specified Name, die Use-Case-Gruppe, in die es klassifiziert wurde, und die Attributwerte, die zur Klassifikation geführt haben. Diese Tabellen sind der Ort, einen einzelnen Code anzufechten; die Regel ist der Ort, eine ganze Menge anzufechten.
