@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="4997"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Specimen 4997</b></p><a name="4997"> </a><a name="hc4997"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-specimens</code>/4997</p><p><b>type</b>: <span title="Codes:">Spontanurin</span></p><p><b>subject</b>: <a href="Patient-111.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>receivedTime</b>: 2018-11-20 08:40:00+0100</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td></tr><tr><td style="display: none">*</td><td>2018-11-20 08:15:00+0100</td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Specimen 4997</b></p><a name="de-4997"> </a><a name="de-hc4997"> </a><p><b>identifier</b>: <code>https://example.org/fhir/sid/test-specimens</code>/4997</p><p><b>type</b>: <span title="Codes:">Spontanurin</span></p><p><b>subject</b>: <a href="Patient-111.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/fhir/sid/test-patients#111)</a></p><p><b>receivedTime</b>: 2018-11-20 08:40:00+0100</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td></tr><tr><td style="display: none">*</td><td>2018-11-20 08:15:00+0100</td></tr></table></div></div>
+  </text>
+  <identifier>
+    <system value="https://example.org/fhir/sid/test-specimens"/>
+    <value value="4997"/>
+  </identifier>
+  <type>
+    <text value="Spontanurin"/>
+  </type>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <receivedTime value="2018-11-20T08:40:00+01:00"/>
+  <collection>
+    <collectedDateTime value="2018-11-20T08:15:00+01:00"/>
+  </collection>
+</Specimen>
