@@ -106,7 +106,7 @@ Source: MII_LM_Labor
     * KodeDerLaborgruppe -> "Observation.category.coding.code"
     * BezeichnungDerLaborGruppe -> "Observation.category.coding.display"
   * Laborparameter -> "Observation.valueQuantity"
-    * Bezeichnung -> "Observation.code.text"
+    * Bezeichnung -> "Observation.code.coding.display"
   * KlinischerBezugszeitpunkt -> "Observation.effective[x].extension[QuelleKlinischesBezugsdatum]"
   * Dokumentationsdatum -> "Observation.issued"
   * Untersuchungszeitpunkt -> "Observation.effectiveDateTime"

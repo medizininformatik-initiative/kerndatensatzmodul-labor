@@ -644,7 +644,7 @@
         "mapping": [
           {
             "identity": "FHIR",
-            "map": "Observation.code.text"
+            "map": "Observation.code.coding.display"
           }
         ]
       },

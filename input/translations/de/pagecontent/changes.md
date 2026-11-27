@@ -26,6 +26,9 @@
 - Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als `effectivePeriod` an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme.
 - Die Beispiele der Laboruntersuchung tragen `performer.identifier`; `performer.display` nennt die referenzierte Beispiel-Organisation. Der Referenzbereich des Kreatinin-Beispiels trägt seine Einheit.
 
+##### Logisches Modell
+- MII_LM_Labor: `Laborparameter.Bezeichnung` wird auf `Observation.code.coding.display` abgebildet statt auf `Observation.code.text` (Issue #119).
+
 #### Implementation Guide:
 - Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.html); die eigene Seite Projektkontext entfällt.
 - Die Seiten Laborbefund, Laboruntersuchung und Laboranforderung entfallen; ihre Element-Erläuterungen und die Zuordnung zum logischen Modell stehen auf den Profilseiten.
@@ -33,6 +36,7 @@
 - Hinweise zum Profil Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu `Observation.effective[x]` sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).
 - Hinweise zum Profil Laboruntersuchung: wann `valueRatio` der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als `valueQuantity` mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).
 - Hinweise zum Profil Laboruntersuchung: Eine nicht durchgeführte Untersuchung hat den Status `cancelled`, mit `dataAbsentReason`.
+- Hinweise zum Profil Laboruntersuchung: Der lokale Code des Labors soll als weiteres Coding von `code` neben dem LOINC angegeben werden, nicht in `code.text` (Issue #119).
 
 ### Version: 2027.0.0-ballot
 
