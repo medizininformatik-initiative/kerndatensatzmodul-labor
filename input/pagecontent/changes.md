@@ -33,6 +33,7 @@ Changes compared to the ballot version 2027.0.0-ballot.
 - Notes on the laboratory report profile: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
 - Notes on the laboratory test profile: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
 - Notes on the laboratory test profile: a test that was not performed has the status `cancelled`, with `dataAbsentReason`.
+- Notes on the laboratory test profile: the laboratory's local code should be given as a further coding of `code`, beside LOINC, not in `code.text` (issue #119).
 
 ### Version: 2027.0.0-ballot
 
