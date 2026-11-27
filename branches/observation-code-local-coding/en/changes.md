@@ -40,6 +40,10 @@ Changes compared to the ballot version 2027.0.0-ballot.
 * The 24-hour urine example states its collection period as `effectivePeriod`, the report the period from the earliest to the latest collection.
 * The laboratory test examples carry `performer.identifier`; `performer.display` names the referenced example organization. The reference range of the creatinine example carries its unit.
 
+##### Logical Model
+
+* MII_LM_Labor: `Laborparameter.Bezeichnung` maps to `Observation.code.coding.display` instead of `Observation.code.text` (issue #119).
+
 #### Implementation Guide:
 
 * The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the [home page](index.md); the separate page Project Context has been removed.

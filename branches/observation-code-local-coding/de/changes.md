@@ -42,6 +42,10 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 * Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als `effectivePeriod` an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme.
 * Die Beispiele der Laboruntersuchung tragen `performer.identifier`; `performer.display` nennt die referenzierte Beispiel-Organisation. Der Referenzbereich des Kreatinin-Beispiels trägt seine Einheit.
 
+##### Logisches Modell
+
+* MII_LM_Labor: `Laborparameter.Bezeichnung` wird auf `Observation.code.coding.display` abgebildet statt auf `Observation.code.text` (Issue #119).
+
 #### Implementation Guide:
 
 * Der Projektkontext (Bezüge zu anderen Modulen, mikrobiologische Daten im Modul Mikrobiologie) steht jetzt auf der [Startseite](index.md); die eigene Seite Projektkontext entfällt.

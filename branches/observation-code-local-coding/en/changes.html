@@ -385,6 +385,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The laboratory test examples carry <code class="language-plaintext highlighter-rouge">performer.identifier</code>; <code class="language-plaintext highlighter-rouge">performer.display</code> names the referenced example organization. The reference range of the creatinine example carries its unit.</li>
 </ul>
 
+<h5 id="logical-model">Logical Model</h5>
+<ul>
+  <li>MII_LM_Labor: <code class="language-plaintext highlighter-rouge">Laborparameter.Bezeichnung</code> maps to <code class="language-plaintext highlighter-rouge">Observation.code.coding.display</code> instead of <code class="language-plaintext highlighter-rouge">Observation.code.text</code> (issue #119).</li>
+</ul>
+
 <h4 id="implementation-guide">Implementation Guide:</h4>
 <ul>
   <li>The project context (relationships to other modules, microbiology data in the Microbiology module) is now part of the <a href="index.html">home page</a>; the separate page Project Context has been removed.</li>
@@ -447,7 +452,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The examples are named after what they contain rather than after their resource type: laboratory report and result <em>creatinine</em>, order <em>full blood count</em>, <em>albumin in 24-hour urine</em>, <em>epithelial cells in urine sediment</em>.</li>
 </ul>
 
-<h5 id="logical-model">Logical Model</h5>
+<h5 id="logical-model-1">Logical Model</h5>
 <ul>
   <li>MII_LM_Labor: <code class="language-plaintext highlighter-rouge">experimental</code> set to <code class="language-plaintext highlighter-rouge">false</code>. <code class="language-plaintext highlighter-rouge">status</code> was already <code class="language-plaintext highlighter-rouge">active</code>.</li>
 </ul>
@@ -617,7 +622,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 27, 2026 07:36+0000">2026-11-27</span>
+          Generated <span title="Fri, Nov 27, 2026 07:49+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

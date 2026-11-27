@@ -349,7 +349,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-labor
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-27T07:36:23+00:00",
+  "date" : "2026-11-27T07:49:43+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

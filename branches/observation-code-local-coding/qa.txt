@@ -3,7 +3,7 @@ MII_IG_Labor : Validation Results
 
 err = 806, warn = 90, info = 34
 IG Publisher Version: 2.3.2 Out of date - current version is 3.0.7
-Generated Fri Nov 27 07:39:50 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
+Generated Fri Nov 27 07:53:24 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-labor)
  Build Errors : 0 / 4 / 0
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement : 0 / 4 / 74
  /home/runner/work/kerndatensatzmodul-labor/kerndatensatzmodul-labor/fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund : 0 / 2 / 3
@@ -969,7 +969,7 @@ WARNING: ValueSet/mii-vs-labor-laborbereich: ValueSet.jurisdiction[0].coding[0].
 INFORMATION: ValueSet/mii-vs-labor-laborbereich: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system 'http://loinc.org' is not known, and no terminology service supports it
 WARNING: Resource: The resource ValueSet/mii-vs-labor-laborbereich should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'mii-vs-labor-laborbereich'): Error from http://127.0.0.1:8090/fhir: Error: A definition for CodeSystem 'http://loinc.org' version '2.82' could not be found, so the value set cannot be expanded. Valid versions: 2.83
-Information: X-Request-Id: 2942f27a-cd23-4b6d-af19-6526bd584586
+Information: X-Request-Id: 93abfe6a-2697-4454-b50d-4f2c011b9c37
 == fsh-generated/resources/ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.json ==
 WARNING: ValueSet/mii-vs-labor-laborergbenis-semiquantitativ: ValueSet.extension[6].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' could not be found, so the code cannot be validated
 WARNING: ValueSet/mii-vs-labor-laborergbenis-semiquantitativ: ValueSet.extension[7].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' could not be found, so the code cannot be validated
@@ -994,7 +994,7 @@ WARNING: ValueSet/mii-vs-labor-order-codes: ValueSet.extension[7].value.ofType(C
 WARNING: ValueSet/mii-vs-labor-order-codes: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-labor-order-codes should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'mii-vs-labor-order-codes'): Error from http://127.0.0.1:8090/fhir: Error: A definition for CodeSystem 'http://loinc.org' version '2.82' could not be found, so the value set cannot be expanded. Valid versions: 2.83
-Information: X-Request-Id: 7ccc5427-8b31-4f3c-9bdc-5ed0b61af7a4
+Information: X-Request-Id: 83885b9b-fc9a-4180-b4e9-4913c8367a9d
 == fsh-generated/resources/ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.json ==
 WARNING: ValueSet/mii-vs-labor-quelle-klinisches-bezugsdatum: ValueSet.extension[6].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' could not be found, so the code cannot be validated
 WARNING: ValueSet/mii-vs-labor-quelle-klinisches-bezugsdatum: ValueSet.extension[7].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' could not be found, so the code cannot be validated
