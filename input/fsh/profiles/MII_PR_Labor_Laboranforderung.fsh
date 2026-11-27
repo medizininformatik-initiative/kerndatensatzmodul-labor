@@ -100,7 +100,7 @@ Description: "Dieses Profil beschreibt eine Laboranforderung in der Medizininfor
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, [[Ein LOINC Code für den Laborparameter bzw. Labortest, der beauftragt wurde.]])
 * insert Translation(code ^definition, en-US, [[A LOINC code for the laboratory parameter or test being ordered.]])
-* code from mii-vs-labor-order-codes (example)
+* code from mii-vs-labor-order-codes (preferred)
   * coding MS
     * system 1.. MS
     * version MS
