@@ -221,13 +221,15 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2019+ Medizininformatik Initiative.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on FHIR 4.0.1.
-          Generated 2026-10-13
+          Generated 2026-11-27
           
           
             
 
+
           Links: Table of Contents |
-                 QA Report
+                 QA Report |
+                 Validate an instance
                  
                  | netzwerk-universitaetsmedizin.de
                  | medizininformatik-initiative.de
@@ -237,7 +239,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
                  HL7&reg;, FHIR&reg; and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.
 
           
-         (        <a href="en/version-history.html">src</a>
+         (        <a href="validate.html">src</a>
 )
       </li>
       <li>
@@ -247,13 +249,15 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2019+ Medizininformatik Initiative.  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf FHIR 4.0.1.
-          Erstellt 2026-10-13
+          Erstellt 2026-11-27
           
           
             
 
+
           Links: Inhaltsverzeichnis |
-                 QA-Bericht
+                 QA-Bericht |
+                 Instanz validieren
                  
                  | netzwerk-universitaetsmedizin.de
                  | medizininformatik-initiative.de
@@ -279,7 +283,7 @@ Copyright &copy; 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin (        <
 )
       </li>
       <li>
-HL7&reg;, FHIR&reg; and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7. (        <a href="en/version-history.html">src</a>
+HL7&reg;, FHIR&reg; and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7. (        <a href="validate.html">src</a>
 )
       </li>
       <li>
@@ -720,7 +724,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Tue, Oct 13, 2026 13:04+0000">2026-10-13</span>
+          Erstellt           <span title="Fri, Nov 27, 2026 09:53+0000">2026-11-27</span>
 
                     <br/>
 
@@ -746,10 +750,23 @@ Konformität<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
           Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Instanz validieren</a>
                  
                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/" target="_blank">medizininformatik-initiative.de</a>
@@ -797,12 +814,26 @@ Konformität<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
 
           Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a>
  |
                            <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Instanz validieren</a>
 
                  
                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
@@ -854,12 +885,26 @@ Konformität<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
 
           Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a>
  |
                            <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Instanz validieren</a>
 
                  
                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
@@ -911,12 +956,26 @@ Konformität<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
 
           Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a>
  |
                            <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Instanz validieren</a>
 
                  
                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
@@ -1832,6 +1891,87 @@ Die Maßeinheit muss zwingend in           <a href="https://ucum.org/ucum">UCUM-
       </tr>
       <tr>
         <td>
+          <a href="de/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/hapifhir/org.hl7.fhir.core/releases/latest">github.com</a>
+        </td>
+        <td>
+          <code>validator_cli.jar</code>
+ aus den
+          <a rel="noopener" href="https://github.com/hapifhir/org.hl7.fhir.core/releases/latest" target="_blank">HL7-FHIR-Core-Releases</a>
+
+herunterladen (Java 11 oder neuer), dann:
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://medizininformatik-initiative.github.io/mii-fhir-validator/">medizininformatik-initiative.github.io</a>
+        </td>
+        <td>
+Dokumentation:
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/mii-fhir-validator/" target="_blank">der Leitfaden des Validators</a>
+
+sowie seine
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/dataportal/data-node/mii-fhir-validator.html" target="_blank">Seite in der Data-Node-Dokumentation</a>
+.
+Welche Leitfäden er lädt, steht beim Start des Containers fest und wird über
+          <code>IG_PARAMS</code>
+ gesetzt - dort           <code>-ig de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci</code>
+ ergänzen oder
+auf eine Paketdatei zeigen, wenn die Version nicht in der Registry liegt.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://medizininformatik-initiative.github.io/dataportal/data-node/mii-fhir-validator.html">medizininformatik-initiative.github.io</a>
+        </td>
+        <td>
+Dokumentation:
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/mii-fhir-validator/" target="_blank">der Leitfaden des Validators</a>
+
+sowie seine
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/dataportal/data-node/mii-fhir-validator.html" target="_blank">Seite in der Data-Node-Dokumentation</a>
+.
+Welche Leitfäden er lädt, steht beim Start des Containers fest und wird über
+          <code>IG_PARAMS</code>
+ gesetzt - dort           <code>-ig de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci</code>
+ ergänzen oder
+auf eine Paketdatei zeigen, wenn die Version nicht in der Registry liegt.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/mii-fhir-validator/releases">github.com</a>
+        </td>
+        <td>
+          <strong>Seine Schnittstelle ist nicht die aus Weg C.</strong>
+ Er beantwortet
+          <code>POST /validateResource</code>
+ mit der Ressource als Rumpf, den Optionen
+als Query-Parametern und einem           <code>OperationOutcome</code>
+ als Ergebnis. Er
+passt damit in eine Pipeline oder ein Skript, kann die Live-Box unten aber
+nicht bedienen - eine Browser-Seite benötigt           <code>POST /validate</code>
+ des
+Wrappers. Er erscheint zudem bislang als Vorabversion
+          <a rel="noopener" href="https://github.com/medizininformatik-initiative/mii-fhir-validator/releases" target="_blank">
+(derzeit <code>0.0.1-alpha</code>)
+          </a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="en/CapabilityStatement-mii-cps-labor-capabilitystatement-testing.html">web</a>
         </td>
         <td>
@@ -1944,7 +2084,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Tue, Oct 13, 2026 13:04+0000">2026-10-13</span>
+          Generated           <span title="Fri, Nov 27, 2026 09:53+0000">2026-11-27</span>
 
                     <br/>
 
@@ -1970,10 +2110,23 @@ Conformance<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
           Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Validate an instance</a>
                  
                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/" target="_blank">medizininformatik-initiative.de</a>
@@ -2021,12 +2174,26 @@ Conformance<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
 
           Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
  |
                            <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Validate an instance</a>
 
                  
                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
@@ -2078,12 +2245,26 @@ Conformance<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
 
           Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
  |
                            <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Validate an instance</a>
 
                  
                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
@@ -2135,12 +2316,26 @@ Conformance<b class="caret"> </b>          </a>
      Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
      (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
      the NUM-DIZ counterpart where one exists) - German /impressum and English
-     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14).
+     Instance validation (NUM-DIZ request, 2026-08-31): the utility link
+     "Validate an instance" / "Instanz validieren" points at the
+     template-contributed page content/validate.html (docs/concepts.md
+     section 7). Like the TOC link it is folder-relative (the assets
+     prefix): the publisher copies template content into every language
+     folder, so a reader lands on the copy in the language they are reading
+     (and on the root copy in a single-language build).
+     The QA link is root-relative and carries the rootpath prefix: '../'
+     from a language-folder page, '' on a root page such as the root copy of
+     validate.html - a '../' from the site root would escape the output
+     folder and the publisher's HTML check aborts the build. -->
+
 
 
           Links:           <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
  |
                            <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+ |
+                           <a style="color: var(--footer-hyperlink-text-color)" href="validate.html">Validate an instance</a>
 
                  
                  |           <a style="color: var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de/" target="_blank">netzwerk-universitaetsmedizin.de</a>
@@ -2435,6 +2630,87 @@ Automated, semi-automated and scalable solutions still have to be established in
 The unit of measure must be given in           <a href="https://ucum.org/ucum">UCUM units</a>
  so that results can be converted into one another.           <a href="https://ucum.nlm.nih.gov/ucum-lhc/demo.html">Validators</a>
  should be used to ensure that the units used are admissible.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/hapifhir/org.hl7.fhir.core/releases/latest">github.com</a>
+        </td>
+        <td>
+Download           <code>validator_cli.jar</code>
+ from the
+          <a rel="noopener" href="https://github.com/hapifhir/org.hl7.fhir.core/releases/latest" target="_blank">HL7 FHIR core releases</a>
+
+(Java 11 or newer), then:
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://medizininformatik-initiative.github.io/mii-fhir-validator/">medizininformatik-initiative.github.io</a>
+        </td>
+        <td>
+Documentation:
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/mii-fhir-validator/" target="_blank">the validator's own guide</a>
+
+and its
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/dataportal/data-node/mii-fhir-validator.html" target="_blank">page in the data-node documentation</a>
+.
+Which guides it loads is fixed when the container starts, through
+          <code>IG_PARAMS</code>
+ - add           <code>-ig de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci</code>
+, or point it at a
+package file for a version that is not on the registry.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://medizininformatik-initiative.github.io/dataportal/data-node/mii-fhir-validator.html">medizininformatik-initiative.github.io</a>
+        </td>
+        <td>
+Documentation:
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/mii-fhir-validator/" target="_blank">the validator's own guide</a>
+
+and its
+          <a rel="noopener" href="https://medizininformatik-initiative.github.io/dataportal/data-node/mii-fhir-validator.html" target="_blank">page in the data-node documentation</a>
+.
+Which guides it loads is fixed when the container starts, through
+          <code>IG_PARAMS</code>
+ - add           <code>-ig de.medizininformatikinitiative.kerndatensatz.laborbefund#2027.0.0-ci</code>
+, or point it at a
+package file for a version that is not on the registry.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/validate.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/mii-fhir-validator/releases">github.com</a>
+        </td>
+        <td>
+          <strong>Its interface is not the one route C describes.</strong>
+ It answers
+          <code>POST /validateResource</code>
+ with the bare resource as the body, the
+options as query parameters, and an           <code>OperationOutcome</code>
+ as the
+result. So it fits a pipeline or a script, and it cannot serve the live box
+below - a browser page needs the wrapper's           <code>POST /validate</code>
+. Note
+also that it is published as a pre-release
+          <a rel="noopener" href="https://github.com/medizininformatik-initiative/mii-fhir-validator/releases" target="_blank">
+(<code>0.0.1-alpha</code> at the time of writing)
+          </a>
+.
         </td>
       </tr>
     </table>

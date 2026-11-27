@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum | *Version*:2027.0.0-ci |
-| Active as of 2026-10-13 | *Computable Name*:MII_EX_Labor_Quelle_Klinisches_Bezugsdatum |
+| Active as of 2026-11-27 | *Computable Name*:MII_EX_Labor_Quelle_Klinisches_Bezugsdatum |
 
 Quelle des klinischen Bezugsdatums
 
@@ -192,7 +192,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-labor-quel
   "title" : "MII EX Labor Quelle Klinisches Bezugsdatum",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T13:04:02+00:00",
+  "date" : "2026-11-27T09:53:15+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

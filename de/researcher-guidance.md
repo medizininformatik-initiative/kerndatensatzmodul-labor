@@ -6,7 +6,7 @@
 
 ## Hinweise für Forschende
 
- Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
+Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md).
 
 Laboruntersuchungen sind für die meisten medizinischen Diagnosen zentral. Vorläufige Ergebnisse können in zeitkritischen Anwendungen bereits relevant sein, endgültige Ergebnisse werden sowohl in der Versorgung als auch in der Forschung genutzt. Das zentrale Dokument dieses Moduls ist der Befund eines medizinischen Labors. Da das Modul breit anwendbar ist, gibt es keine konsortiumsspezifischen Szenarien vor.
 

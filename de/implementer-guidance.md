@@ -6,6 +6,8 @@
 
 ## Hinweise für Implementierende
 
+Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md).
+
 Diese Seite fasst zusammen, was für die Implementierung des Moduls Labor in FHIR-basierten Systemen nötig ist.
 
 ### Verständnis der Anforderungen

@@ -6,6 +6,8 @@
 
 ## Zeitpunkte im Labor
 
+Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md).
+
 ### Wichtige Zeitpunkte im Laborbefund
 
 Im Verlauf einer Laboranalyse, von der Abnahme der Probe bis zur Übermittlung des Befundes an den Einsender, können verschiedene reelle Zeitpunkte für die Interpretation relevant werden. Viele dieser Zeitpunkte sind in medizinischen Laboren automatisiert und in hoher Qualität in entsprechenden Zeitstempeln dokumentiert, während manche Zeitstempel aufgrund von z.B. manueller Dokumentation nur ein grobes Surrogat für die reellen Zeitpunkte sein können.

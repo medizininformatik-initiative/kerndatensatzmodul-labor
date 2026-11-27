@@ -6,6 +6,8 @@
 
 ## Extensions
 
+Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md).
+
 ### Übersicht
 
 Diese Seite dokumentiert die spezifischen Extensions für das Modul Laborbefund. Diese Extensions erweitern FHIR Ressourcen um zusätzliche Informationen, die für die Interpretation und Kontextualisierung von Laborbefunden relevant sind.
