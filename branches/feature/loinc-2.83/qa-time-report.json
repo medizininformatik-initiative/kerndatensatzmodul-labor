@@ -1,0 +1,1935 @@
+{
+  "date" : "Fri, 27 Nov, 2026 13:19:38 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-mii-ig-labor.json",
+    "size" : 26130,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 65,
+      "length" : 155
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 68,
+      "length" : 92
+    },
+    {
+      "activity" : "validate",
+      "start" : 134,
+      "length" : 10658
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 20
+    },
+    {
+      "activity" : "generate1",
+      "start" : 154,
+      "length" : 183
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 256
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CapabilityStatement-mii-cps-labor-capabilitystatement.json",
+    "size" : 31230,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 9
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 41
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 68,
+      "length" : 26
+    },
+    {
+      "activity" : "validate",
+      "start" : 133,
+      "length" : 1063
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 144,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 144,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate1",
+      "start" : 154,
+      "length" : 102
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 139
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 184,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 2
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DiagnosticReport-mii-exa-labor-laborbefund.json",
+    "size" : 2625,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 68,
+      "length" : 7095
+    },
+    {
+      "activity" : "validate",
+      "start" : 144,
+      "length" : 1158
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 154,
+      "length" : 24
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 213
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 212,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Encounter-555.json",
+    "size" : 333,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 75,
+      "length" : 57
+    },
+    {
+      "activity" : "validate",
+      "start" : 146,
+      "length" : 3
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 154,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-data-absent-reason.json",
+    "size" : 2919,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 75,
+      "length" : 1477
+    },
+    {
+      "activity" : "validate",
+      "start" : 146,
+      "length" : 2467
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 38
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-haemolyse.json",
+    "size" : 4179,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 77,
+      "length" : 5275
+    },
+    {
+      "activity" : "validate",
+      "start" : 148,
+      "length" : 2425
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 20
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 28
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-range.json",
+    "size" : 2982,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 82,
+      "length" : 979
+    },
+    {
+      "activity" : "validate",
+      "start" : 150,
+      "length" : 970
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 29
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert-ratio.json",
+    "size" : 2796,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 83,
+      "length" : 1891
+    },
+    {
+      "activity" : "validate",
+      "start" : 151,
+      "length" : 974
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 29
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-mii-exa-labor-laborwert.json",
+    "size" : 4135,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 85,
+      "length" : 4790
+    },
+    {
+      "activity" : "validate",
+      "start" : 152,
+      "length" : 952
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 163,
+      "length" : 31
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Organization-7772.json",
+    "size" : 220,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-111.json",
+    "size" : 165,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-mii-exa-labor-laboranforderung.json",
+    "size" : 1625,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 153,
+      "length" : 469
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 32
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Specimen-4997.json",
+    "size" : 386,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 26
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Specimen-4998.json",
+    "size" : 459,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Specimen-4999.json",
+    "size" : 599,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 92
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-labor-interpretationsbeeinflussende-eigenschaft.json",
+    "size" : 7921,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 65,
+      "length" : 21
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 478
+    },
+    {
+      "activity" : "validate",
+      "start" : 121,
+      "length" : 2811
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 101
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 745
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 226
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-labor-quelle-klinisches-bezugsdatum.json",
+    "size" : 7532,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 65,
+      "length" : 17
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 124,
+      "length" : 1069
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 144,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 94
+    },
+    {
+      "activity" : "generate2",
+      "start" : 164,
+      "length" : 319
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 66
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 2
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-lm-labor.json",
+    "size" : 39271,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 22
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 65,
+      "length" : 54
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 70
+    },
+    {
+      "activity" : "validate",
+      "start" : 125,
+      "length" : 1340
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 144,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 416
+    },
+    {
+      "activity" : "generate2",
+      "start" : 165,
+      "length" : 806
+    },
+    {
+      "activity" : "generate2",
+      "start" : 182,
+      "length" : 262
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-labor-laboranforderung.json",
+    "size" : 33864,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 17
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 65,
+      "length" : 87
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 78
+    },
+    {
+      "activity" : "validate",
+      "start" : 127,
+      "length" : 1805
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 144,
+      "length" : 2
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 155,
+      "length" : 462
+    },
+    {
+      "activity" : "generate2",
+      "start" : 166,
+      "length" : 1178
+    },
+    {
+      "activity" : "generate2",
+      "start" : 182,
+      "length" : 390
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 13
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 234,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-labor-laborbefund.json",
+    "size" : 45980,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 21
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 66,
+      "length" : 131
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 87
+    },
+    {
+      "activity" : "validate",
+      "start" : 128,
+      "length" : 2204
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 144,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 144,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 156,
+      "length" : 522
+    },
+    {
+      "activity" : "generate2",
+      "start" : 167,
+      "length" : 1009
+    },
+    {
+      "activity" : "generate2",
+      "start" : 182,
+      "length" : 254
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 15
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-labor-laboruntersuchung.json",
+    "size" : 69049,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 11
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 35
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 66,
+      "length" : 169
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 90,
+      "length" : 109
+    },
+    {
+      "activity" : "validate",
+      "start" : 131,
+      "length" : 2021
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 144,
+      "length" : 3
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 156,
+      "length" : 897
+    },
+    {
+      "activity" : "generate2",
+      "start" : 168,
+      "length" : 9336
+    },
+    {
+      "activity" : "generate2",
+      "start" : 182,
+      "length" : 377
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 24
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-identifier-type-codes.json",
+    "size" : 5759,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 9
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 64
+    },
+    {
+      "activity" : "validate",
+      "start" : 94,
+      "length" : 3671
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 177,
+      "length" : 134
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 196,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-interpretation-eigenschaften-snomedct.json",
+    "size" : 6143,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 497
+    },
+    {
+      "activity" : "validate",
+      "start" : 98,
+      "length" : 3597
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 13
+    },
+    {
+      "activity" : "generate2",
+      "start" : 177,
+      "length" : 588
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-interpretation.json",
+    "size" : 6847,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 5
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 101,
+      "length" : 2862
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 17
+    },
+    {
+      "activity" : "generate2",
+      "start" : 178,
+      "length" : 91
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborbereich.json",
+    "size" : 7834,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 515
+    },
+    {
+      "activity" : "validate",
+      "start" : 104,
+      "length" : 3860
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 178,
+      "length" : 570
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborergbenis-semiquantitativ.json",
+    "size" : 6709,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 4
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 92,
+      "length" : 479
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 2986
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 17
+    },
+    {
+      "activity" : "generate2",
+      "start" : 178,
+      "length" : 69
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborergebnis-codiert.json",
+    "size" : 5776,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 92,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 1992
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 179,
+      "length" : 67
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-laborergebnis-qualitativ.json",
+    "size" : 6799,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 92,
+      "length" : 972
+    },
+    {
+      "activity" : "validate",
+      "start" : 113,
+      "length" : 3445
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 179,
+      "length" : 70
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 234,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-order-codes.json",
+    "size" : 5625,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 5
+    },
+    {
+      "activity" : "scan",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 93,
+      "length" : 509
+    },
+    {
+      "activity" : "validate",
+      "start" : 116,
+      "length" : 2028
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 179,
+      "length" : 932
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 213,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-labor-quelle-klinisches-bezugsdatum.json",
+    "size" : 5824,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 65,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 475
+    },
+    {
+      "activity" : "validate",
+      "start" : 119,
+      "length" : 2932
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 13
+    },
+    {
+      "activity" : "generate2",
+      "start" : 180,
+      "length" : 583
+    }]
+  },
+  {
+    "name" : "input/resources/Parameters-expansion-manifest.json",
+    "size" : 702,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 65,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 68,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 26
+    },
+    {
+      "activity" : "translate",
+      "start" : 154,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 157,
+      "length" : 16
+    },
+    {
+      "activity" : "generate2",
+      "start" : 180,
+      "length" : 1032
+    }]
+  },
+  {
+    "name" : "/input/includes/menu.xml",
+    "size" : 5837,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 2285
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboruntersuchung-notes.md",
+    "size" : 4723,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laborbefund-notes.md",
+    "size" : 2839
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboranforderung-notes.md",
+    "size" : 1631,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/interpretation.md",
+    "size" : 4172,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/value-sets.md",
+    "size" : 1761,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/uml-diagrams.md",
+    "size" : 598
+  },
+  {
+    "name" : "/input/pagecontent/version-history.md",
+    "size" : 237
+  },
+  {
+    "name" : "/input/pagecontent/changes.md",
+    "size" : 17406,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/metadata.md",
+    "size" : 6422,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/specimen.md",
+    "size" : 1643
+  },
+  {
+    "name" : "/input/pagecontent/translationinfo.md",
+    "size" : 143,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/references.md",
+    "size" : 713
+  },
+  {
+    "name" : "/input/pagecontent/laboratory-timestamps.md",
+    "size" : 9477,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/ImplementationGuide-mii-ig-labor.md",
+    "size" : 2972,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/researcher-guidance.md",
+    "size" : 2519
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 7345,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/security-and-privacy.md",
+    "size" : 101
+  },
+  {
+    "name" : "/input/pagecontent/extensions.md",
+    "size" : 5251,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/profiles.md",
+    "size" : 1331
+  },
+  {
+    "name" : "/input/pagecontent/implementer-guidance.md",
+    "size" : 3813
+  },
+  {
+    "name" : "/input/pagecontent/examples.md",
+    "size" : 726,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/downloads.md",
+    "size" : 2505
+  },
+  {
+    "name" : "/input/pagecontent/logical-models.md",
+    "size" : 857
+  },
+  {
+    "name" : "/input/pagecontent/capability-statements.md",
+    "size" : 1585,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/terminology.md",
+    "size" : 4281
+  },
+  {
+    "name" : "/input/pagecontent/guidance.md",
+    "size" : 901
+  },
+  {
+    "name" : "/input/pagecontent",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/interpretation.md",
+    "size" : 4172
+  },
+  {
+    "name" : "/input/pagecontent/value-sets.md",
+    "size" : 1761
+  },
+  {
+    "name" : "/input/pagecontent/uml-diagrams.md",
+    "size" : 598,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/version-history.md",
+    "size" : 237
+  },
+  {
+    "name" : "/input/pagecontent/changes.md",
+    "size" : 17406,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/metadata.md",
+    "size" : 6422,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/specimen.md",
+    "size" : 1643
+  },
+  {
+    "name" : "/input/pagecontent/translationinfo.md",
+    "size" : 143
+  },
+  {
+    "name" : "/input/pagecontent/references.md",
+    "size" : 713,
+    "processes" : [{
+      "activity" : "generateExampleZip",
+      "start" : 212,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/laboratory-timestamps.md",
+    "size" : 9477,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/ImplementationGuide-mii-ig-labor.md",
+    "size" : 2972,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/researcher-guidance.md",
+    "size" : 2519,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 7345
+  },
+  {
+    "name" : "/input/pagecontent/security-and-privacy.md",
+    "size" : 101,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/extensions.md",
+    "size" : 5251,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/profiles.md",
+    "size" : 1331
+  },
+  {
+    "name" : "/input/pagecontent/implementer-guidance.md",
+    "size" : 3813,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/examples.md",
+    "size" : 726,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/downloads.md",
+    "size" : 2505
+  },
+  {
+    "name" : "/input/pagecontent/logical-models.md",
+    "size" : 857
+  },
+  {
+    "name" : "/input/pagecontent/capability-statements.md",
+    "size" : 1585,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/terminology.md",
+    "size" : 4281
+  },
+  {
+    "name" : "/input/pagecontent/guidance.md",
+    "size" : 901,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/intro-notes",
+    "size" : 0
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboruntersuchung-notes.md",
+    "size" : 4723,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laborbefund-notes.md",
+    "size" : 2839,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/intro-notes/StructureDefinition-mii-pr-labor-laboranforderung-notes.md",
+    "size" : 1631
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/Modul_Laborbefund.jpg",
+    "size" : 67409
+  },
+  {
+    "name" : "/input/images/Warning.jpg",
+    "size" : 20393,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 154,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/UML_Laborbefund.png",
+    "size" : 324545,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 22470,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 181,
+      "length" : 1
+    }]
+  }]
+}
