@@ -9,11 +9,7 @@
 ##### MII_PR_Labor_Laborbefund
 - **Breaking Change:** imagingStudy: ausgeschlossen (`0..0`), wie im HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). Ein Laborbefund verweist nicht auf eine ImagingStudy. Das Element war bisher nicht Must Support; Instanzen, die es befüllen, sind nicht mehr valide (Issue #141).
 
-##### MII_PR_Labor_Laboruntersuchung
-- performer: **NEU** als Must Support, für das durchführende Labor (Organisation). Wie im Laborbefund sind auch `reference` und `identifier` Must Support. Kardinalität (`0..*`) und Zieltypen bleiben die der Basisressource (Issue #142).
-
 ##### MII_CPS_Labor_CapabilityStatement
-- Observation: Suchparameter `performer` **NEU**, optional (SHOULD). Für die Suche nach dem durchführenden Labor ist der DiagnosticReport-Suchparameter `performer` verpflichtend (SHALL).
 - Observation: Suchparameter `value-ratio` (composite), `value-ratio-numerator` und `value-ratio-denominator` **NEU**, optional (SHOULD). Sie sind im Modul Meta definiert; `value-quantity` erfasst `valueRatio` nicht (Issue #123).
 
 ##### MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
@@ -31,6 +27,7 @@
 - Die Seiten Laborbefund, Laboruntersuchung und Laboranforderung entfallen; ihre Element-Erläuterungen und die Zuordnung zum logischen Modell stehen auf den Profilseiten.
 - `fix:` Die Hinweise zu `category` entsprechen den Profilen: Bei Laborbefund und Laboruntersuchung ist nur die HL7-Kategorie verpflichtend, LOINC 26436-6 ist erlaubt; die Laboranforderung fixiert `observation-category` `laboratory`, keinen HL7-v2-Code.
 - Hinweise zum Profil Laborbefund: Der klinische Bezugszeitpunkt muss nur dann identisch zu `Observation.effective[x]` sein, wenn alle Untersuchungen aus einer Probe stammen. Ein Befund aus mehreren Proben gibt den Zeitraum von der frühesten bis zur spätesten Entnahme an (Issue #140).
+- Hinweise zum Profil Laborbefund: `DiagnosticReport.performer` gibt das für den Befund verantwortliche Labor an.
 - Hinweise zum Profil Laboruntersuchung: wann `valueRatio` der richtige Typ ist — ein echtes Verhältnis wie ein Titer, Zähler 1 — und dass Raten als `valueQuantity` mit zusammengesetzter UCUM-Einheit angegeben werden (Issue #123).
 - Hinweise zum Profil Laboruntersuchung: Eine nicht durchgeführte Untersuchung hat den Status `cancelled`, mit `dataAbsentReason`.
 

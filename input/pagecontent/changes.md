@@ -9,11 +9,7 @@ Changes compared to the ballot version 2027.0.0-ballot.
 ##### MII_PR_Labor_Laborbefund
 - **Breaking change:** imagingStudy: excluded (`0..0`), as in the HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). A laboratory report does not refer to an ImagingStudy. The element was not Must Support; instances carrying it are no longer valid (issue #141).
 
-##### MII_PR_Labor_Laboruntersuchung
-- performer: **NEW** as Must Support, for the performing laboratory (organization). As on the laboratory report, `reference` and `identifier` are Must Support as well. Cardinality (`0..*`) and target types remain those of the base resource (issue #142).
-
 ##### MII_CPS_Labor_CapabilityStatement
-- Observation: search parameter `performer` **NEW**, optional (SHOULD). For searches by performing laboratory, the DiagnosticReport search parameter `performer` is mandatory (SHALL).
 - Observation: search parameters `value-ratio` (composite), `value-ratio-numerator` and `value-ratio-denominator` **NEW**, optional (SHOULD). They are defined in the Meta module; `value-quantity` does not cover `valueRatio` (issue #123).
 
 ##### MII_EX_Labor_Quelle_Klinisches_Bezugsdatum
@@ -31,6 +27,7 @@ Changes compared to the ballot version 2027.0.0-ballot.
 - The pages Laboratory Report, Laboratory Test and Laboratory Request are dropped; their element notes and the mapping to the logical model appear on the profile pages.
 - `fix:` The notes on `category` match the profiles: on the laboratory report and the laboratory test only the HL7 category is mandatory, LOINC 26436-6 is permitted; the laboratory request fixes `observation-category` `laboratory`, not an HL7 v2 code.
 - Notes on the laboratory report profile: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
+- Notes on the laboratory report profile: `DiagnosticReport.performer` states the laboratory responsible for the report.
 - Notes on the laboratory test profile: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
 - Notes on the laboratory test profile: a test that was not performed has the status `cancelled`, with `dataAbsentReason`.
 
