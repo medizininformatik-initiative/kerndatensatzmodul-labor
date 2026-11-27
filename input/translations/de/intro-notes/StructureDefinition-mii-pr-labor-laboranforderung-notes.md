@@ -8,7 +8,7 @@
 | ServiceRequest.status       | Fixed value, da nur finale Anforderungen abgebildet werden sollen. |
 | ServiceRequest.intent       | Fixed value, ServiceRequest repräsentiert immer die Anforderung der Diagnostik.|
 | ServiceRequest.category       | Festes Coding `laboratory` (observation-category), weitere Codings erlaubt.|
-| ServiceRequest.code       | CodeableConcept, keine Einschränkungen. Falls angeforderte Laborparameter nicht kodiert vorliegen -> CodeableConcept.text |
+| ServiceRequest.code       | Vorzugsweise ein LOINC-Code für Anforderungen aus [MII VS Labor Order Codes](ValueSet-mii-vs-labor-order-codes.html) (Binding preferred); andere Codes sind zulässig. Falls angeforderte Laborparameter nicht kodiert vorliegen -> CodeableConcept.text |
 | ServiceRequest.subject       |  Bezug zum Patienten muss stets gegeben sein|
 | ServiceRequest.authoredOn       |  Erstelldatum der Anforderung, falls nicht vorhanden Eingangsdatum der Anforderung        |
 | ServiceRequest.specimen       | Optionale Referenz, zukünftige Spezifikationen weiterer Kerndatensatzmodule können diesbezüglich Vorgaben ausgestalten.|
