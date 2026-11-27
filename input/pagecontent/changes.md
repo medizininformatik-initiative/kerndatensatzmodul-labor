@@ -4,7 +4,7 @@ Changes compared to the ballot version 2027.0.0-ballot.
 
 #### FHIR / Content Changes:
 ##### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
-- effective[x]: `Period` is allowed alongside `dateTime`; Must Support applies to both types. The element is not sliced, its element ids are unchanged (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a `dateTime` stay valid; systems processing the data must now be able to handle a period.
+- effective[x]: `Period` is allowed alongside `dateTime`; Must Support applies to both types. The element is not sliced, its element ids are unchanged (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a `dateTime` stay valid; systems processing the data must now be able to handle a period. On the laboratory test, constraint mii-lab-1 requires the start and end of a period to be given at least to the day, as for a `dateTime`.
 
 ##### MII_PR_Labor_Laborbefund
 - **Breaking change:** imagingStudy: excluded (`0..0`), as in the HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). A laboratory report does not refer to an ImagingStudy. The element was not Must Support; instances carrying it are no longer valid (issue #141).
