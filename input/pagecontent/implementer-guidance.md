@@ -29,7 +29,7 @@ The conformance rules apply across the whole Core Dataset and are maintained by 
 
 ### Technical Artifacts
 
-* [Profiles](profiles.html) — the four profiles with their constraints, plus the per-resource pages explaining them
+* [Profiles](profiles.html) — the laboratory report, laboratory test and laboratory request profiles with their constraints and notes
 * [Extensions](extensions.html) — source of the clinical reference date, interpretation-affecting property
 * [Value Sets](value-sets.html) — the nine value sets the module defines
 * [Terminology](terminology.html) — LOINC coding, the MII-300 subset, units and UCUM

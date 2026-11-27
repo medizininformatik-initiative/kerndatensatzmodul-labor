@@ -29,7 +29,7 @@ Die Konformitätsregeln gelten für den gesamten Kerndatensatz und werden vom Mo
 
 ### Technische Artefakte
 
-* [Profile](profiles.html) — die vier Profile mit ihren Einschränkungen, dazu die erläuternden Seiten je Ressource
+* [Profile](profiles.html) — die Profile Laborbefund, Laboruntersuchung und Laboranforderung mit ihren Einschränkungen und Hinweisen
 * [Extensions](extensions.html) — Quelle des klinischen Bezugsdatums, interpretationsbeeinflussende Eigenschaft
 * [ValueSets](value-sets.html) — die neun ValueSets des Moduls
 * [Terminologie](terminology.html) — LOINC-Kodierung, das MII-300-Subset, Einheiten und UCUM
