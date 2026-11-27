@@ -26,7 +26,7 @@
 // extensions.r4-Pin in sushi-config.yaml.
 //
 Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
-Alias: $loinc = http://loinc.org|2.82
+Alias: $loinc = http://loinc.org|2.83
 // Versionslose Aliase: für Patterns/fixed values in Profilen — ein Pattern mit
 // versionsbehafteter `system`-URL würde nicht matchen.
 Alias: $sct-no-ver = http://snomed.info/sct
