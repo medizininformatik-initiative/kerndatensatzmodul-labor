@@ -16,6 +16,7 @@ Usage: #example
 * code = http://example.org/fhir/CodeSystem/LabTests#Nierendiagnostik
 * code.text = "Nierendiagnostik"
 * subject.reference = "Patient/111"
+* encounter.reference = "Encounter/555"
 * authoredOn = "2018-11-19T07:30:00+01:00"
 * specimen[0].reference = "Specimen/4999"
 * specimen[1].reference = "Specimen/4998"

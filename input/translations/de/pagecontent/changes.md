@@ -20,7 +20,7 @@
 - Kontext um `effective` vom Typ `Period` an Observation und DiagnosticReport erweitert.
 
 ##### Beispiele
-- Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier; alle Beispiele tragen das versionierte `meta.profile` und das Testdaten-Label (Issues #118, #122).
+- Die Beispiele bilden einen Fall: eine Anforderung Nierendiagnostik, ein Befund mit allen fünf Laboruntersuchungen und drei Proben desselben Patienten (venöses Vollblut, 24-Stunden-Sammelurin, Spontanurin). Anforderung, Befund und jede Untersuchung verweisen auf den Aufenthalt; jede Untersuchung verweist auf die Anforderung und auf ihre Probe und hat einen eigenen Identifier; alle Beispiele tragen das versionierte `meta.profile` und das Testdaten-Label; die Beispielseite zeigt sie nach Anforderung, Befund und Probe gegliedert (Issues #118, #122).
 - Die Blutprobe ist hämolytisch (`condition` `v2-0493#HEM`). **NEU**: `mii-exa-labor-laborwert-haemolyse` — Kalium aus dieser Probe, berichtet mit Wert, Interpretation H und interpretationsbeeinflussender Eigenschaft. Das Kreatinin-Beispiel trägt die Eigenschaft nicht mehr.
 - `mii-exa-labor-laborwert-data-absent-reason` ist Kreatinin im Spontanurin mit dem Status `cancelled`: Das Urinsediment hat die Probe aufgebraucht. Es trägt weder eine Interpretation noch einen Referenzbereich (Issue #117).
 - Das Beispiel aus dem 24-Stunden-Sammelurin gibt seinen Sammelzeitraum als `effectivePeriod` an, der Befund den Zeitraum von der frühesten bis zur spätesten Entnahme.
