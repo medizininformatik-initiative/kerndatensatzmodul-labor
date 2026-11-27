@@ -32,6 +32,7 @@ Changes compared to the ballot version 2027.0.0-ballot.
 - `fix:` The notes on `category` match the profiles: on the laboratory report and the laboratory test only the HL7 category is mandatory, LOINC 26436-6 is permitted; the laboratory request fixes `observation-category` `laboratory`, not an HL7 v2 code.
 - Notes on the laboratory report profile: the clinical reference time must be identical to `Observation.effective[x]` only where all tests come from one specimen. A report from several specimens states the period from the earliest to the latest collection (issue #140).
 - Notes on the laboratory test profile: when `valueRatio` is the right type — a genuine ratio such as a titre, numerator 1 — and that rates take `valueQuantity` with a composed UCUM unit (issue #123).
+- Notes on the laboratory test profile: the reference range given is the one the laboratory assigns to the patient; further ranges state their kind in `type`.
 - Notes on the laboratory test profile: a test that was not performed has the status `cancelled`, with `dataAbsentReason`.
 
 ### Version: 2027.0.0-ballot
