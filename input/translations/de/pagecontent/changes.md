@@ -42,8 +42,6 @@ Ballot-Fassung für 2027.0.0. Sie enthält die folgenden Änderungen gegenüber 
 ##### Generell:
 - Alle Profile, ValueSets, das CapabilityStatement und die ImplementationGuide-Ressource tragen CRMI-Metadaten (shareable, publishable, ValueSets zusätzlich computable), einschließlich Freigabe- und Reviewdatum, Gültigkeitszeitraum, Versionspolitik, Package-Herkunft und Beitragenden. Siehe [Metadatenübersicht](metadata.html).
 - Die Package-ID lautet nun `de.medizininformatikinitiative.kerndatensatz.laborbefund` — die ID, unter der das Modul ausgeliefert wird. Das Repository deklarierte zuvor `…kerndatensatz.labor`; wer der im Leitfaden genannten packageId folgte, konnte das Package nicht auflösen. Die Canonical bleibt unverändert.
-- Pattern- und Fixed-Value-Codings verwenden unversionierte System-URLs; eine versionierte `system`-URL würde in einem Pattern nicht treffen. Die ValueSet-Kompositionen bleiben versionsgebunden.
-- Auch Extension-Referenzen in `type.profile` tragen keine Version. Ein Extension-Slice trifft über `Extension.url`, eine `uri` ohne Version in der Instanz; eine Version dort legt also etwas fest, das beim Matching keine Rolle spielt. Welche Package-Version gilt, steht in den Dependencies; `pin-canonicals` legt die Versionen in der Publikation fest.
 - `Coding.version` ist auf `Observation.code`, `Observation.valueCodeableConcept` und `ServiceRequest.code` als Must Support gekennzeichnet.
 - Die Abhängigkeit zum Modul Meta steigt von 2026.0.0 auf `2027.0.0-ballot`, die Version, neben der dieses Modul ballotiert wird. Das CapabilityStatement referenziert den Observation-Suchparameter `interpretation` jenes Moduls.
 
