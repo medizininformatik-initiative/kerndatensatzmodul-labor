@@ -18,14 +18,14 @@ class "Einrichtungskontakt" as Kontakt FALL
 class Laborbefund LABOR {
   + Identifikation: Identifier [1..*]
   + Status: code [1]
-  + KlinischerBezugszeitpunkt: dateTime [1]
+  + KlinischerBezugszeitpunkt: dateTime | Period [1]
   + Dokumentationsdatum: instant [1]
 }
 
 class Laboruntersuchung LABOR {
   + Identifikation: Identifier [1..*]
   + Status: code [1]
-  + KlinischerBezugszeitpunkt: dateTime [1]
+  + KlinischerBezugszeitpunkt: dateTime | Period [1]
   + Dokumentationsdatum: instant [0..1]
   + Ergebnis: value[x] [0..1]
   + Interpretation: CodeableConcept [0..*]
@@ -83,6 +83,7 @@ Laboranforderung "0..*" -up- "0..*" Probenmaterial : specimen
 Laboranforderung "0..*" -right- "1" Laborparameter : code
 
 Laboruntersuchung "0..*" -up- "0..1" Probenmaterial : specimen
+Laboruntersuchung "0..*" -down- "0..*" Laboranforderung : basedOn
 Laboruntersuchung "0..*" -down- "0..*" Bereich : category
 Bereich "1" o-right- "0..*" Gruppe : gliedert sich in
 Laboruntersuchung "0..*" -down- "0..*" Gruppe : category
