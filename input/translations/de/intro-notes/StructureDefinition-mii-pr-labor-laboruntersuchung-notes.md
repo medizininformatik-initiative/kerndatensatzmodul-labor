@@ -16,7 +16,7 @@
 | Observation.note      | Optionaler Text |
 | Observation.method      | Kodierte Methode zur welche verwendet wurde zur Messung von Observation.value. Nur zu befüllen falls Methode nicht implizit in Observation.code enthalten ist (z.B. im LOINC Code). Es wird keine Codierungsempfehlung angegeben, da diese Information meist nicht strukturiert vorliegt in den Quellsystemen.|
 | Observation.specimen      | Optionale Referenz; Probeninformationen sind im FHIR-Profil Specimen (Specimen Bioprobe Core) des Erweiterungsmoduls Biobank hinterlegt. |
-| Observation.referenceRange      | Sollte - falls vorhanden - als high, low (SimpleQuantity) kodiert werden. Abweichend ansonsten per referenceRange.text.|
+| Observation.referenceRange      | Der Referenzbereich, den das Labor diesem Patienten zuordnet, z. B. nach Alter und Geschlecht; auf ihn bezieht sich die Interpretation. Untergrenze und Obergrenze stehen in `low` und `high`, jeweils als Menge mit Einheit (SimpleQuantity); hat der Bereich nur eine Grenze, z. B. „< 5 mg/l“, wird nur diese angegeben. Nur wenn sich der Bereich so nicht angeben lässt, z. B. „negativ“, steht er in `text`. Weitere Bereiche, z. B. ein therapeutischer Bereich, dürfen zusätzlich angegeben werden; `type` gibt dann an, um welchen Bereich es sich handelt. |
 | Observation.component | Observation.hasMember ist im Bereich der klinischen Chemie zu bevorzugen (passendere Semantik). Element ist für die Harmonisierung mit Genetischen Befunden erlaubt. |
 
 ### Zuordnung zum logischen Modell
