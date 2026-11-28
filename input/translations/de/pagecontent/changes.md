@@ -6,6 +6,9 @@
 ##### MII_PR_Labor_Laborbefund und MII_PR_Labor_Laboruntersuchung
 - effective[x]: Neben `dateTime` ist `Period` zulässig; Must Support gilt für beide Typen. Das Element ist nicht geschnitten, seine Element-IDs bleiben unverändert (Issue #140). Ein Zeitraum gibt ein Sammelintervall an, z. B. bei 24-Stunden-Sammelurin. Instanzen mit `dateTime` bleiben valide; Systeme, die die Daten verarbeiten, müssen nun auch einen Zeitraum verarbeiten können.
 
+##### MII_PR_Labor_Laboranforderung
+- code: Das Binding an [MII VS Labor Order Codes](ValueSet-mii-vs-labor-order-codes.html) — LOINC-Codes für Anforderungen — wird von `example` auf `preferred` angehoben. Andere Codes bleiben zulässig.
+
 ##### MII_PR_Labor_Laborbefund
 - **Breaking Change:** imagingStudy: ausgeschlossen (`0..0`), wie im HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). Ein Laborbefund verweist nicht auf eine ImagingStudy. Das Element war bisher nicht Must Support; Instanzen, die es befüllen, sind nicht mehr valide (Issue #141).
 

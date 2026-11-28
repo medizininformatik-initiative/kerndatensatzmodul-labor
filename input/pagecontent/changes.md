@@ -6,6 +6,9 @@ Changes compared to the ballot version 2027.0.0-ballot.
 ##### MII_PR_Labor_Laborbefund and MII_PR_Labor_Laboruntersuchung
 - effective[x]: `Period` is allowed alongside `dateTime`; Must Support applies to both types. The element is not sliced, its element ids are unchanged (issue #140). A period states a collection interval, for example of 24-hour urine. Instances with a `dateTime` stay valid; systems processing the data must now be able to handle a period.
 
+##### MII_PR_Labor_Laboranforderung
+- code: The binding to [MII VS Labor Order Codes](ValueSet-mii-vs-labor-order-codes.html) — LOINC codes for orders — is raised from `example` to `preferred`. Other codes stay permitted.
+
 ##### MII_PR_Labor_Laborbefund
 - **Breaking change:** imagingStudy: excluded (`0..0`), as in the HL7 Europe Laboratory Report (`DiagnosticReport-eu-lab`). A laboratory report does not refer to an ImagingStudy. The element was not Must Support; instances carrying it are no longer valid (issue #141).
 

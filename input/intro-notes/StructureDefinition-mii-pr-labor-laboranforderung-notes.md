@@ -8,7 +8,7 @@
 | ServiceRequest.status | Fixed value, since only final requests are to be represented. |
 | ServiceRequest.intent | Fixed value, a ServiceRequest always represents the request for diagnostics. |
 | ServiceRequest.category | Fixed coding `laboratory` (observation-category), further codings permitted. |
-| ServiceRequest.code | CodeableConcept, no restrictions. If the laboratory parameters requested are not available in coded form -> CodeableConcept.text |
+| ServiceRequest.code | Preferably a LOINC code for orders from [MII VS Labor Order Codes](ValueSet-mii-vs-labor-order-codes.html) (binding preferred); other codes are permitted. If the laboratory parameters requested are not available in coded form -> CodeableConcept.text |
 | ServiceRequest.subject | A reference to the patient must always be present |
 | ServiceRequest.authoredOn | Creation date of the request; if that is not available, the date the request was received |
 | ServiceRequest.specimen | Optional reference; future specifications of further Core Dataset modules may set out requirements in this regard. |
